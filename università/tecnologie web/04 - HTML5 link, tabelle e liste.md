@@ -207,7 +207,7 @@ Quale elemento può essere correttamente raggiunto dal link `<a href="#primapart
 >> che identifica davvero una parte del documento.
 
 ---
-## Slide 12 – Struttura delle tabelle
+## Slide 12 – Struttura delle tabelle 
 
 - Le **tabelle** HTML5:
 	- Sono realizzate attraverso l'elemento **`<table>`**
@@ -246,10 +246,6 @@ Risultato:
 
 ![[TW04-s013-2.png|400]]
 
-| prof. | Silvia Mirri | Catia Prandi |
-| ----- | ------------ | ------------ |
-| corso | TW           | Mobile       |
-
 ---
 ## Slide 14 – `<table>`
 
@@ -271,10 +267,6 @@ Risultato:
 ```
 
 ![[TW04-s014-1.png|400]]
-
-| Month   | January | February |
-| ------- | ------- | -------- |
-| Savings | $100    | $80      |
 
 ---
 ## Slide 15 – `<table>`
@@ -299,11 +291,6 @@ Risultato:
 ```
 
 ![[TW04-s015-1.png|250]]
-
-| Month    | Savings |
-| -------- | ------- |
-| January  | $100    |
-| February | $80     |
 
 http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test
 
@@ -337,7 +324,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_caption_test
 ---
 ## Slide 17 – `<td><th>`
 
-- Una cella di tipo **`<td>`** o **`<th>`** può occupare più righe o più colonne utilizzando rispettivamente l'attributo **`rowspan`** e **`colspan`**
+- Una cella di tipo **`<td>`** o **`<th>`** può occupare più righe o più colonne utilizzando rispettivamente l'attributo ==**`rowspan`**== e ==**`colspan`**==
 - Esempio:
 
 ```html
@@ -376,7 +363,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 - Una cella di tipo **`<td>`** o **`<th>`** può fare riferimento (tramite l'attributo **`headers`**), ad altre celle, per specificare che queste rappresentano una intestazione della cella corrente:
 	- Lo scopo di questo sistema di relazioni tra celle è quello di supportare gli screen reader usati dalle persone non vedenti nel riferire correttamente alle celle intestazione di una certa cella. Rivediamo questo attributo parlando di accessibilità.
 	- **`headers`** deve avere come valore la lista degli **`id`** delle intestazioni per la cella **SEPARATI DA SPAZIO**
-- Per migliorare la strutturazione semantica e quindi l'**accessibilità** della tabella si possono usare anche elementi strutturali **`<colgroup>`**, **`<thead>`**, **`<tfoot>`**, **`<tbody>`**.
+- Per migliorare la strutturazione semantica e quindi l'**accessibilità** della tabella si possono usare anche elementi strutturali ==**`<colgroup>`**==, ==**`<thead>`**==, ==**`<tfoot>`**==, ==**`<tbody>`**==.
 
 >> Esempio minimo di `headers`: se l'intestazione è
 >> `<th id="mese">Month</th>`, la cella corrispondente si scrive
@@ -389,12 +376,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 - Tabella con nome e cognome, mail e telefono
 
 ![[TW04-s019-1.png|500]]
-
-| Nome           | Email                    | Telefono     |
-| -------------- | ------------------------ | ------------ |
-| Paola Salomoni | paola.salomoni@unibo.it  | 0547 338813  |
-| Silvia Mirri   | silvia.mirri@unibo.it    | 0547 338892  |
-| Catia Prandi   | catia.prandi2@unibo.it   | 0547 338892  |
 
 - Potremmo anche compattare il telefono nelle ultime due righe?
 
@@ -419,7 +400,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 </tr>
 <tr>
   <th> Paola Salomoni </th>
-  <td><a href="mailto:paola.salomoni@unibo.it">
+  <td><a href="mailto:paola.salomoni@unibo.it"> //prefisso per le mail "mailto"
         paola.salomoni@unibo.it</a></td>
   <td> 0547 338813 </td>
 </tr>
@@ -482,12 +463,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ![[TW04-s022-1.png|560]]
 
-| | **Lunedì** | **Martedì** | **Mercoledì** |
-|---|---|---|---|
-| **9-10** | Tecnologie Web *(rowspan 2)* | Analisi | Sistemi multimediali *(rowspan 2)* |
-| **10-11** | | Sistemi multimediali *(rowspan 2)* | |
-| **11-12** | Algebra | | Fisica |
-
 ---
 
 ## Slide 23 – Note
@@ -505,7 +480,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 24 – Soluzione
+## Slide 24 – Soluzione (1)
 
 ```html
 <!DOCTYPE html>
@@ -533,7 +508,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 25 – Soluzione
+## Slide 25 – Soluzione (2)
 
 ```html
       <tbody>
@@ -576,13 +551,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ![[TW04-s026-1.png|600]]
 
-| | **Lunedì** *(colspan 2)* | | **Martedì** *(colspan 2)* | |
-|---|---|---|---|---|
-| | **Aula 2.1** | **Laboratorio 2.2** | **Aula 2.1** | **Laboratorio 2.2** |
-| **9-10** | Sistemi multimediali *(rowspan 2)* | Programmazione | Analisi | Sistemi Multimediali *(rowspan 3)* |
-| **10-11** | | Tecnologie Web *(rowspan 2)* | Programmazione | |
-| **11-12** | Algebra | | Fisica | |
-
 >> Rispetto all'esempio precedente la tabella ha ora **due livelli di
 >> intestazione di colonna**: il giorno (che copre due colonne) e l'aula. È
 >> esattamente il caso in cui `scope` da solo non basta e servono
@@ -590,7 +558,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 27 – Esempio con `scope`
+## Slide 27 – Esempio con `scope` (1)
 
 ```html
 <!DOCTYPE html>
@@ -612,7 +580,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 28 – Esempio con `scope`
+## Slide 28 – Esempio con `scope` (2)
 
 ```html
 <thead>
@@ -643,7 +611,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 29 – Esempio con `scope`
+## Slide 29 – Esempio con `scope`(3)
 
 ```html
 <tbody>
@@ -670,7 +638,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 30 – Esempio con `scope`
+## Slide 30 – Esempio con `scope` (4)
 
 ```html
         <tr>
@@ -690,9 +658,9 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 ## Slide 31 – Liste
 
 - In HTML5 sono previsti tre tipi di liste:
-	- Liste non ordinate, definite da **`<ul></ul>`** (*unordered list*)
-	- Liste ordinate, definite da **`<ol></ol>`** (*ordered list*)
-	- Liste di definizioni, definite da **`<dl></dl>`** (*definition list*)
+	- <u>Liste non ordinate</u>, definite da **`<ul></ul>`** (*unordered list*)
+	- <u>Liste ordinate</u>, definite da **`<ol></ol>`** (*ordered list*)
+	- <u>Liste di definizioni</u>, definite da **`<dl></dl>`** (*definition list*)
 - Nelle liste ordinate e non ordinate ogni item è definito da **`<li></li>`**
 
 ---
@@ -701,9 +669,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 - Per liste ordinate (**`<ol>`**) e non ordinate (**`<ul>`**), ogni item è definito da un **`<li>`**
 
-![[TW04-s032-1.png|420]]
-
-![[TW04-s032-2.png|300]]
+![[TW04-s032-1.png|346]]![[TW04-s032-2.png|248]]
 
 >> Il diagramma mostra la struttura ad albero: l'elemento lista (`<ol>` o
 >> `<ul>`) è il padre e gli `<li>` sono i suoi figli diretti. Il markup è
@@ -776,9 +742,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_lists4
 </ul>
 ```
 
-![[TW04-s035-1.png|300]]
-
-![[TW04-s035-2.png|450]]
+![[TW04-s035-1.png|249]]![[TW04-s035-2.png|311]]
 
 >> Punto cruciale: la lista annidata va messa **dentro un `<li>`**, non
 >> direttamente dentro `<ul>`/`<ol>`. Nell'albero a destra il secondo `<ol>` è
@@ -789,8 +753,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_lists4
 ---
 
 ## Slide 36 – Seconda domanda
-
-*BONUS*
 
 **DOMANDA 2:**
 Considerare il seguente codice. Come viene visualizzata la lista corrispondente dal browser?
@@ -810,9 +772,7 @@ Considerare il seguente codice. Come viene visualizzata la lista corrispondente 
 
 ## Slide 37 – Seconda domanda
 
-*BONUS*
-
-![[TW04-s037-1.png|600]]
+![[TW04-s037-1.png|367]]
 
 >> La risposta corretta è la terza opzione (in basso a sinistra): la lista
 >> esterna è un `<ol>`, quindi "Tecnologie Web" e "Reti" sono numerati 1. e 2.;

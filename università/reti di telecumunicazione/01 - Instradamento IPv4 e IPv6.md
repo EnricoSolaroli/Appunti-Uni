@@ -578,14 +578,6 @@ Normalmente non esiste un collegamento «diretto» fra sorgente e destinazione
 
 ![[RT01-s031-1.png|550]]
 
-Collegamento fra router:
-- Può essere una tecnologia simile a quella delle network oppure molto diversa
-
-Gateway o Router (i ponti fra le isole):
-- Nodo di rete che interconnette due network IP
-- Deve poter parlare diverse tecnologie specifiche
-- Ha funzioni dal livello 1 al livello 3 OSI
-
 >> Il router termina i livelli 1 e 2 su ciascuna interfaccia (può avere un'interfaccia Ethernet, una in fibra, una radio, ecc.), estrae il datagramma IP e lo reincapsula nel formato di livello 2 dell'interfaccia di uscita: è per questo che può interconnettere tecnologie diverse.
 
 ---
@@ -646,9 +638,6 @@ Gateway o Router (i ponti fra le isole):
 
 ![[RT01-s038-1.png|600]]
 
-- Fumetto: "Ho un pacchetto da trasmettere. Deve andare sulla mia network oppure devo usare un gateway?"
-- Network IP (x3)
-
 ---
 ## Slide 39 – La risposta
 
@@ -667,11 +656,6 @@ Gateway o Router (i ponti fra le isole):
 ## Slide 40 – L'instradamento IP
 
 ![[RT01-s040-1.png|600]]
-
-- Il singolo calcolatore terminale sceglie un router come gateway verso la network IP di destinazione: **invia** il datagramma verso il router
-- Il router decide in che direzione inviare il datagramma: **instrada** il datagramma
-- Il singolo salto viene solitamente detto **hop**
-- Network IP (x4)
 
 ---
 ## Slide 41 – Da ricordare
@@ -713,13 +697,6 @@ Internet rete di reti
 	- Al numero IP viene associata una **maschera** di 32 bit
 
 ![[RT01-s044-1.png|450]]
-
-```
-            137.204.191.85
-10001001.11001100.10111111.01010101
-11111111.11111111.11111111.11000000
-|<-------------- Net-ID -------->|Host-ID|
-```
 
 - I bit a 1 della netmask identificano i bit dell'indirizzo IP che fanno parte del net-ID
 - La netmask si può rappresentare
@@ -848,13 +825,6 @@ $$I' = I - 2 = 2^H - 2$$
 
 ![[RT01-s053-1.png|550]]
 
-- A quale network appartengo?
-	- IP Address + Netmask → Mio Network ID
-- Devo inviare un datagramma
-	- IP Destination + Netmask → Destination Network ID = Mio Network ID ?
-- Se **SI** apparteniamo alla stessa Network
-- se **NO** apparteniamo a network diverse
-
 >> Nel confronto l'host usa la *propria* netmask anche sull'indirizzo di destinazione: calcola $(IP_{dest} \text{ AND } N_{mia}) = (IP_{mio} \text{ AND } N_{mia})$?
 >>
 >> Esempio: io sono 137.204.191.85/26. Per la destinazione 137.204.191.100 ottengo $100 \text{ AND } 192 = 64$, quindi stessa network e consegna diretta. Per 137.204.191.130 ottengo $130 \text{ AND } 192 = 128 \neq 64$, quindi consegna indiretta.
@@ -863,10 +833,6 @@ $$I' = I - 2 = 2^H - 2$$
 ## Slide 54 – Come inviare il pacchetto
 
 ![[RT01-s054-1.png|600]]
-
-- Network IP
-- Indirect delivery
-- Direct delivery
 
 ---
 ## Slide 55 – Instradamento diretto e indiretto
@@ -888,20 +854,12 @@ $$I' = I - 2 = 2^H - 2$$
 
 ![[RT01-s056-1.png|650]]
 
-- HOST1, HOST2, HOST3, ROUTER1 (ETHERNET)
-- MAN – WAN
-- ROUTER2, HOST4
-
 >> HOST1 e HOST3 sono sulla stessa Ethernet, quindi il datagramma viaggia direttamente dall'uno all'altro senza passare da ROUTER1.
 
 ---
 ## Slide 57 – Indirect Delivery
 
 ![[RT01-s057-1.png|650]]
-
-- HOST1, HOST2, HOST3, ROUTER1 (ETHERNET)
-- MAN – WAN
-- ROUTER2, HOST4
 
 >> HOST4 è su un'altra network. HOST1 consegna quindi il datagramma a ROUTER1 (freccia rossa, una consegna diretta a livello Ethernet). Da lì il pacchetto attraversa la MAN/WAN fino a ROUTER2, che lo consegna direttamente a HOST4 (freccia blu).
 

@@ -1804,7 +1804,7 @@ allora $\mathbf{x}^* \in X$ è la soluzione ottima (o minimo globale).
 ## Slide 120 – Algoritmi euristici e metaeuristici
 
 - L'obiettivo è quello di determinare tra le soluzioni ammissibili una **soluzione ottima** o una **soluzione di "buona qualità"**.
-- Molti problemi di ottimizzazione sono ==**NP-difficili**== e spesso le istanze di interesse pratico hanno **dimensioni** tali da rendere proibitivo l'uso di algoritmi esatti di soluzione.
+- Molti problemi di ottimizzazione sono **NP-difficili** e spesso le istanze di interesse pratico hanno **dimensioni** tali da rendere proibitivo l'uso di algoritmi esatti di soluzione.
 - Per risolvere quei problemi dove non si possono usare metodi esatti si possono utilizzare **algoritmi euristici**, che permettono di ottenere buone soluzioni in tempi di calcolo ridotti (e l'uso della memoria?).
 - In generale, gli algoritmi euristici **non garantiscono l'ottimalità** della soluzione prodotta e di norma non sono in grado di fornire neanche una **stima della distanza dalla soluzione ottima**.
 - L'**uso della matematica nelle euristiche** potrebbe consentire di avere una stima della distanza dalla soluzione ottima e/o fornire strumenti utili a migliorarne le prestazioni.
@@ -1815,9 +1815,9 @@ allora $\mathbf{x}^* \in X$ è la soluzione ottima (o minimo globale).
 ## Slide 121 – Algoritmi euristici e metaeuristici
 
 - Gli algoritmi euristici possono essere classificati come segue:
-	a) **Algoritmi costruttivi e di ricerca locale**: sfruttano le proprietà strutturali delle soluzioni ammissibili per ottenere rapidamente una soluzione di buona qualità.
-	b) **Metaeuristiche**: gestiscono il trade-off tra **diversificazione** della ricerca, quando la ricerca è effettuata in regioni dello spazio di ricerca poco promettenti, e **intensificazione** nella regione dello spazio più promettente.
-	c) **Algoritmi basati sulla programmazione matematica**: sfruttano alcuni risultati della programmazione matematica (per esempio, **metodi di decomposizione**, **lower/upper bounds**, etc.).
+	a) ==**Algoritmi costruttivi e di ricerca locale**==: sfruttano le proprietà strutturali delle soluzioni ammissibili per ottenere rapidamente una soluzione di buona qualità.
+	b) ==**Metaeuristiche**==: gestiscono il trade-off tra **diversificazione** della ricerca, quando la ricerca è effettuata in regioni dello spazio di ricerca poco promettenti, e **intensificazione** nella regione dello spazio più promettente.
+	c) ==**Algoritmi basati sulla programmazione matematica**== (Matheuristic): sfruttano alcuni risultati della programmazione matematica (per esempio, **metodi di decomposizione**, **lower/upper bounds**, etc.).
 - Caratteristica fondamentale degli algoritmi metaeuristici è quella di fornire un **framework generale** che può essere facilmente utilizzato (e adattato) per risolvere problemi di tipo diverso.
 
 >> Intuizione: *diversificare* significa esplorare zone nuove dello spazio delle soluzioni (per non restare intrappolati), *intensificare* significa esaminare a fondo i dintorni delle soluzioni migliori già trovate.
@@ -1828,9 +1828,9 @@ allora $\mathbf{x}^* \in X$ è la soluzione ottima (o minimo globale).
 - Gli **algoritmi costruttivi** e di **ricerca locale** possono spesso funzionare molto bene, ma possono "bloccarsi" in soluzioni di scarsa qualità.
 - A partire dalla metà degli anni '70 sono stati proposti nuovi approcci, chiamati metaeuristici, che possono guidare gli algoritmi costruttivi e di ricerca locale per trovare soluzioni di migliore qualità.
 - In letteratura sono state proposte diverse **tipologie di metaeuristiche**:
-	- **Single Solution Metaheuristics**: Simulated Annealing, Tabu Search, Iterated Local Search, Variable Neighborhood Search, GRASP, etc.
-	- **Population Based Metaheuristics**: Algoritmi Genetici, Ant Colony Optimization (ACO, ANTS), Scatter Search, etc.
-	- **Matheuristics**: Diving Heuristics, Very Large-Scale Neighborhood Search, Decomposition-Based Heuristics, etc.
+	- ==**Single Solution Metaheuristics**==: Simulated Annealing, Tabu Search, Iterated Local Search, Variable Neighborhood Search, GRASP, etc.
+	- ==**Population Based Metaheuristics**==: Algoritmi Genetici, Ant Colony Optimization (ACO, ANTS), Scatter Search, etc.
+	- ==**Matheuristics**==: Diving Heuristics, Very Large-Scale Neighborhood Search, Decomposition-Based Heuristics, etc.
 - Anche le metaeuristiche "tradizionali" possono usare la matematica.
 
 ---
@@ -1840,8 +1840,7 @@ allora $\mathbf{x}^* \in X$ è la soluzione ottima (o minimo globale).
 
 - Per ogni soluzione $\mathbf{x} \in X$, si definisce l'insieme di vicinanza $N(\mathbf{x}) \subset X$, (noto anche come **neighborhood**), che rappresenta le soluzioni vicine alla soluzione $\mathbf{x}$.
 
-**Algoritmo Ricerca Locale**
-
+**Algoritmo Ricerca Locale:**
 **Step 1.** Genera una soluzione iniziale $\mathbf{x} \in X$.
 **Step 2.** Trova $\mathbf{x}' \in N(\mathbf{x})$ tale che $f(\mathbf{x}') = \min\{f(\mathbf{x}'') : \forall \mathbf{x}'' \in N(\mathbf{x})\}$.
 **Step 3.** Se $f(\mathbf{x}') < f(\mathbf{x})$, allora $\mathbf{x} = \mathbf{x}'$ e vai allo Step 2.
@@ -1870,9 +1869,8 @@ che può essere migliorato semplicemente applicando l'algoritmo di ricerca local
 ## Slide 125 – Ricerca Locale
 
 **Esempio: Travelling Salesman Problem (TSP)**
-
 - Un possibile algoritmo di ricerca locale per il TSP può svolgere i seguenti due passi principali:
-	1) **Costruzione di una soluzione iniziale:** per esempio applicando un algoritmo "**nearest neighbor**" (i.e., parte da un nodo iniziale e mette in soluzione l'arco che lo congiunge al nodo più vicino, poi il principio viene riapplicato all'ultimo nodo inserito finché non si sono visitati tutti i nodi).
+	1) **Costruzione di una soluzione iniziale:** per esempio applicando un algoritmo               "**nearest neighbor**" (i.e., parte da un nodo iniziale e mette in soluzione l'arco che lo congiunge al nodo più vicino, poi il principio viene riapplicato all'ultimo nodo inserito finché non si sono visitati tutti i nodi).
 	2) **Miglioramento della soluzione:** per migliorare una soluzione $\mathbf{x}$, partendo da quella iniziale, si potrebbero applicare degli scambi. Gli scambi che vengono considerati definiscono il **neighborhood** e lo spostamento viene svolto utilizzando lo scambio "migliore".
 - Lo scambio migliore potrebbe essere quello che riduce il costo della nuova soluzione risultante (vi sono alternative?).
 
@@ -1885,19 +1883,17 @@ che può essere migliorato semplicemente applicando l'algoritmo di ricerca local
 
 ![[RO02-s126-1.png|500]]
 
-**3-opt** (Lin and Kernighan (1973))
-
 >> Nel 3-opt si rimuovono tre archi del tour (in figura $(j,k)$, $(l,m)$, $(n,i)$, tratteggiati) e si ricollegano i tre segmenti ottenuti in modo diverso (in figura con $(j,l)$, $(k,n)$, $(i,m)$). L'intorno ha $O(n^3)$ elementi: più potente del 2-opt ma più costoso da esplorare.
 
+- minimo sindacale da applicare
 ---
 ## Slide 127 – Ricerca Locale
 
 ![[RO02-s127-1.png|500]]
 
-**Or-opt** (Or (1976))
-
 >> L'Or-opt sposta un segmento di nodi consecutivi (in figura $m$–$n$–$p$, tipicamente lungo 1, 2 o 3 nodi) in un'altra posizione del tour: il segmento viene tolto tra $a$ e $b$ (che vengono ricollegati) e inserito tra $i$ e $j$. È un caso particolare di 3-opt, ma con un intorno di dimensione $O(n^2)$.
 
+ - riesce a fare un balzo più ampio del 3-opt, la complessità è molto simile però
 ---
 ## Slide 128 – Tabu Search
 
@@ -1906,14 +1902,14 @@ che può essere migliorato semplicemente applicando l'algoritmo di ricerca local
 
 $$f(\mathbf{x}') = \min\{f(\mathbf{x}'') : \ \forall \mathbf{x}'' \in N(\mathbf{x})\}$$
 
-- Il Tabu search consente di uscire dai minimi locali muovendosi anche in soluzioni peggiori di quella corrente.
+- Il Tabu search <u>consente di uscire dai minimi locali</u> muovendosi anche in soluzioni peggiori di quella corrente.
 - Una struttura di memoria chiamata **Tabu List** impedisce di tornare su soluzioni già visitate.
 - La ricerca locale si modifica come segue:
 
 $$f(\mathbf{x}') = \min\{f(\mathbf{x}'') : \ \forall \mathbf{x}'' \in N(\mathbf{x}), \mathbf{x}'' \notin TL\}$$
 
 dove l'insieme $TL$ rappresenta la tabu list.
-La **tabu list ha una lunghezza massima**, per cui dopo un certo numero di iterazioni alcune soluzioni potrebbero essere riconsiderate.
+La tabu list ha una **lunghezza massima**, per cui dopo un certo numero di iterazioni alcune soluzioni potrebbero essere riconsiderate.
 
 >> Senza la tabu list, dopo essersi spostato da un minimo locale $\mathbf{x}$ a un vicino peggiore $\mathbf{x}'$, l'algoritmo tornerebbe subito in $\mathbf{x}$ (che è il migliore nell'intorno di $\mathbf{x}'$), ciclando. In pratica spesso non si memorizzano soluzioni intere ma *attributi delle mosse* (es. "arco appena rimosso"), e si usa un *criterio di aspirazione*: una mossa tabu è comunque ammessa se porta a una soluzione migliore della migliore trovata finora.
 
@@ -1923,13 +1919,13 @@ La **tabu list ha una lunghezza massima**, per cui dopo un certo numero di itera
 **Algoritmo Tabu Search**
 
 **Step 1.** Genera una soluzione iniziale $\mathbf{x} \in X$.
-Poni $\mathbf{x}^* = \mathbf{x}$ e inizializza la Tabu List vuota $TL = \emptyset$.
+	Poni $\mathbf{x}^* = \mathbf{x}$ e inizializza la Tabu List vuota $TL = \emptyset$.
 **Step 2.** Trova $\mathbf{x}' \in N(\mathbf{x})$, tale che:
 
 $$f(\mathbf{x}') = \min\{f(\mathbf{x}'') : \ \forall \mathbf{x}'' \in N(\mathbf{x}), \mathbf{x}'' \notin TL\}$$
 
 **Step 3.** Poni $\mathbf{x} = \mathbf{x}'$, $TL = TL \cup \{\mathbf{x}\}$.
-Se $f(\mathbf{x}) < f(\mathbf{x}^*)$ allora $\mathbf{x}^* = \mathbf{x}$.
+	Se $f(\mathbf{x}) < f(\mathbf{x}^*)$ allora $\mathbf{x}^* = \mathbf{x}$.
 **Step 4.** Se la **condizione di terminazione** non è soddisfatta goto Step 2.
 
 >> Condizioni di terminazione tipiche: numero massimo di iterazioni, tempo massimo, numero di iterazioni senza miglioramento di $\mathbf{x}^*$, oppure intorno interamente tabu. A differenza della ricerca locale, qui la soluzione corrente $\mathbf{x}$ e la migliore $\mathbf{x}^*$ sono distinte, perché $f(\mathbf{x})$ può peggiorare.
@@ -1956,6 +1952,7 @@ Se $f(\mathbf{x}) < f(\mathbf{x}^*)$ allora $\mathbf{x}^* = \mathbf{x}$.
 ## Slide 132 – Simulated Annealing
 
 ![[RO02-s132-1.png|600]]
+- metauristica a singola soluzione.
 
 **Algorithm 6:** Generic Simulated Annealing
 1. **function** SimulatedAnnealing($T$);
@@ -2003,6 +2000,7 @@ Fonte: https://en.wikipedia.org/wiki/D-Wave_Systems
 
 ---
 ## Slide 135 – Algoritmi Genetici
+ - considerano più soluzioni contemporaneamente.
 
 - Gli **algoritmi genetici** sono stati proposti per la prima volta da Holland (1992) e si ispirano al processo evolutivo degli organismi in natura.
 - Questi algoritmi definiscono un **insieme di soluzioni** (detti **individui**), che costituiscono la **popolazione** che ad ogni iterazione è "aggiornata".
@@ -2018,18 +2016,18 @@ Fonte: https://en.wikipedia.org/wiki/D-Wave_Systems
 
 **Algoritmo Genetico**
 
-**Step 1.** Genera una popolazione $P$ di soluzioni iniziali.
-**Step 2.** Valuta il costo $f(\mathbf{x})$, $\forall \mathbf{x} \in P$ (**funzione di fitness**).
-**Step 3.** **Selezione dei genitori**: seleziona un sottoinsieme $G$ di soluzioni dall'insieme $P$.
+**Step 1.** Genera una popolazione $P$ (generalmente casuale) di soluzioni iniziali.
+**Step 2.** Valuta il costo $f(\mathbf{x})$, $\forall \mathbf{x} \in P$ (**funzione di fitness**) -> mi indica quanto sia buona una soluzione.
+**Step 3.** **Selezione dei genitori**: seleziona un sottoinsieme $G$ di soluzioni dall'insieme $P$ (entrambi i migliori/ uno a caso e uno migliore/ entrambi a caso).
 **Step 4.** **Crossover**: costruisci un insieme $P_G$ di soluzioni combinando fra loro i genitori in $G$.
 **Step 5.** **Mutazione**: modifica casualmente alcune soluzioni in $P_G$.
-**Step 6.** **Selezione della popolazione**: la nuova popolazione è selezionata sostituendo tutti o alcuni individui della popolazione $P$ con gli individui nel nuovo insieme $P_G$ utilizzando la funzione di fitness.
+**Step 6.** **Selezione della popolazione**: la nuova popolazione è selezionata sostituendo tutti o alcuni individui della popolazione $P$ con gli individui nel nuovo insieme $P_G$ utilizzando la funzione di fitness (diverse strategie anche qui).
 **Step 7.** Se la **condizione di terminazione** non è soddisfatta vai allo Step 3.
+
+N.B. -> molti problemi semplici hanno molte soluzioni, invece molto problemi difficili hanno poche soluzioni.
 
 ---
 ## Slide 137 – Algoritmi Genetici
-
-![[RO02-s137-1.png|450]]
 
 **Single Crossover**
 
@@ -2047,6 +2045,7 @@ $$
 \begin{matrix} (0\ 0\ 0\ 1\ 1\ 1\ 1) \\ (0\ 1\ 0\ 0\ 0\ 1\ 0) \end{matrix}
 $$
 
+
 >> Nel *single (one-point) crossover* si sceglie un punto di taglio (qui dopo il 4° bit) e i due figli si ottengono scambiando le "code" dei genitori. Nel *double (two-point) crossover* si scelgono due punti di taglio (qui dopo il 2° e il 4° bit) e si scambia il segmento centrale: il primo figlio è $(0\ 0 \mid 0\ 1 \mid 1\ 1\ 1)$, il secondo $(0\ 1 \mid 0\ 0 \mid 0\ 1\ 0)$.
 
 ---
@@ -2054,9 +2053,7 @@ $$
 
 - L'**operatore di mutazione** consente di introdurre nella popolazione delle nuove caratteristiche che possono essere utili all'evoluzione, generando nelle future generazioni individui con fitness migliore.
 
-![[RO02-s138-1.png|300]]
-
-**Mutazione**: $(0\ 1\ 0\ 0\ 0\ 1\ 0) \ \downarrow \ (0\ 1\ 1\ 0\ 0\ 1\ 0)$
+**Mutazione**: $(0\ 1\ *0*\ 0\ 0\ 1\ 0) \ \downarrow \ (0\ 1\ *1*\ 0\ 0\ 1\ 0)$
 
 - La **selezione della popolazione** può essere svolta seguendo numerosi schemi che comunque dipendono dalla funzione di fitness (perché?).
 - La **funzione di fitness** deve valutare sia il **"costo" della soluzione** che il suo **"grado" di non ammissibilità** (aggiungendo una penalità).
@@ -2070,7 +2067,8 @@ $$
 ---
 ## Slide 139 – Set Covering Problem
 
-- Il Set Covering Problem (SCP) è il problema di coprire le righe di una matrice $A = (a_{ij})$ di dimensioni $m \times n$ con coefficienti 0 ed 1, con un sottoinsieme di colonne di costo minimo.
+- Il Set Covering Problem (SCP) è il problema di coprire le righe di una <u>matrice</u> $A = (a_{ij})$ di dimensioni $m \times n$ con coefficienti 0 ed 1, con un sottoinsieme di colonne di costo minimo.
+- vincolo principale: ogni riga sia coperta almeno una volta!f
 - Sia $x_j$ una variabile binaria 0-1 definita per ogni colonna come segue:
 
 $$
@@ -2134,10 +2132,6 @@ $$
 
 ![[RO02-s142-1.png|500]]
 
-| 1 | 2 | 3 | 4 | 5 | $\cdots$ | $n-1$ | $n$ |
-|---|---|---|---|---|---|---|---|
-| 1 | 0 | 1 | 1 | 0 | $\cdots$ | 1 | 0 |
-
 **Definizione della funzione di fitness**
 
 - La funzione di fitness $f_{P_k}$ di una soluzione $P_k$ è data da:
@@ -2153,7 +2147,7 @@ dove $s_{ij}$ è il valore del $j$-esimo bit nella stringa corrispondete alla so
 
 **Selezione dei genitori**
 
-- La tecnica utilizzata per selezionare i genitori è la **binary tournament selection**.
+- La tecnica utilizzata per selezionare i genitori è la **binary tournament selection** (si può fare un po quello che si vuole, non ha un impatto determinante).
 - Dalla popolazione vengono selezionati in modo casuale due gruppi di soluzioni di una cardinalità prestabilita. Poi, a turno, vengono estratte due soluzioni $P_1$ e $P_2$ con fitness migliore.
 - Esistono molte altre tecniche per selezionare i genitori da utilizzare nel crossover.
 - **Cosa proporreste come criterio di selezione?**
@@ -2181,12 +2175,6 @@ dove $s_{ij}$ è il valore del $j$-esimo bit nella stringa corrispondete alla so
 **Esempio di operazione di crossover**
 
 ![[RO02-s145-1.png|450]]
-
-| | 1 | 2 | 3 | 4 | 5 | $\dots$ | $n-1$ | $n$ | |
-|---|---|---|---|---|---|---|---|---|---|
-| $P_1 =$ | 1 | **0** | **0** | 1 | 0 | $\dots$ | 0 | 0 | $f_{P_1}$ |
-| $P_2 =$ | 1 | **1** | **1** | 1 | 0 | $\dots$ | 0 | 0 | $f_{P_2}$ |
-| $C =$ | 1 | **1** | **0** | 1 | 0 | $\dots$ | 0 | 0 | $F_C$ |
 
 - Nel caso in cui $f_{P_1} = 4$ e $f_{P_2} = 6$, se $P_1[i] \ne P_2[i]$, la probabilità che $C[i] = P_1[i]$ è $p = \frac{6}{4+6} = 0.6$, mentre la probabilità che $C[i] = P_2[i]$ è $1 - p = 1 - 0.6 = 0.4$.
 
@@ -2237,6 +2225,7 @@ dove $s_{ij}$ è il valore del $j$-esimo bit nella stringa corrispondete alla so
 
 ---
 ## Slide 149 – Vehicle Routing Problem
+- **==non lo vediamo, ne ha parlato leggermente perché è un problema nobile!==**
 
 - Dato un grafo $G = (V, A)$, dove il vertice $0$ rappresenta il **deposito** e i vertici $V' = \{1, \dots, n\}$ rappresentano i **clienti**.
 - Ad ogni cliente $i \in V'$ è associata una **domanda** positiva $q_i$.
@@ -2268,7 +2257,7 @@ dove $s_{ij}$ è il valore del $j$-esimo bit nella stringa corrispondete alla so
 
 ![[RO02-s151-1.png|450]]
 
-$n = 30$ - $M = 3$ - $Q = 200$ (accanto a ogni cliente è indicata la sua domanda; il quadrato nero è il deposito).
+(accanto a ogni cliente è indicata la sua domanda).
 
 >> Domanda totale / capacità dà un limite inferiore al numero di veicoli necessari: $\lceil \sum_i q_i / Q \rceil$; con $M = 3$ e $Q = 200$ la domanda totale deve essere al massimo $600$ perché l'istanza sia ammissibile.
 
@@ -2278,8 +2267,6 @@ $n = 30$ - $M = 3$ - $Q = 200$ (accanto a ogni cliente è indicata la sua domand
 **Esempio**
 
 ![[RO02-s152-1.png|600]]
-
-Legenda: Vehicle 1, Vehicle 2, Vehicle 3; DEPOT a Cesena (località: Ravenna, Faenza, Forlì, Cervia, Rimini).
 
 ---
 ## Slide 153 – Vehicle Routing Problem

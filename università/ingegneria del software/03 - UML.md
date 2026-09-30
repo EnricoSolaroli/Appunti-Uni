@@ -130,7 +130,7 @@
 ---
 ## Slide 3 – UML …
 
-- è un **==linguaggio==**, non un metodo (come quelli di Yourdon e DeMarco, o di Rumbaugh o Jacobson)
+- è un **linguaggio**, non un metodo (come quelli di Yourdon e DeMarco, o di Rumbaugh o Jacobson)
 - definisce una notazione standard, basata su un **metamodello** integrato degli "oggetti" che compongono un sistema software
 - non prescrive una sequenza di processo, cioè non dice "prima bisogna fare questa attività, poi quest'altra"
 - quindi può essere (ed è) utilizzato da persone e gruppi che seguono metodi diversi (è "indipendente dai metodi")
@@ -235,238 +235,47 @@ Una piccola porzione del metamodello UML 2 ...
  [registrazione sull'esame]![[Recording 20260922115827.m4a]]
   
 ---
-## Slide 11 – Diagrammi (diagramma delle classi)
+## Slide 11-20 – Diagrammi (descrizione generale)
 
 - **Statici**:
-	- Diagramma delle classi
+	- Diagramma delle ==classi==
 		- *descrive la struttura dati degli oggetti del sistema e le loro relazioni; è il diagramma più importante, da cui si può generare il codice*
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 12 – Diagrammi (diagramma degli oggetti)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
+	- Diagramma degli ==oggetti==
 		- *mostra un insieme di oggetti di interesse e le loro relazioni*
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
+	- Diagramma dei ==package==
+		- *mostra i package e le loro relazioni di dipendenza, contenimento e specializzazione*
+	- Diagramma dei ==componenti==
+		- *descrive l'architettura software del sistema*
+	- Diagramma di ==deployment==
+		- *descrive la struttura del sistema hardware e l'allocazione dei vari moduli software*
+	- Diagramma delle ==strutture composite==
+		- *mostra la struttura interna di classificatori strutturati*
 - **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
+	- Diagramma dei ==casi d'uso==
+		- *elenca i casi d'uso del sistema e le loro relazioni*
+			- da disegnare per primo, perché è l'unico non "tecnico"
+	- Diagramma degli ==stati==
+		- *usa la notazione degli automi di Harel per descrivere gli stati degli oggetti di una classe*
+			- un'automa a stati finiti sono macchine astratte per fare il parsing di un linguaggio
+			- in che modo gli oggetti di una classe reagiscono agli eventi esterni cambiando di stato
+	- Diagramma di ==attività== (simile a quello degli stati)
+		- *descrive le sequenze eventi-azioni-transizioni di una funzione*
+			- chi fa qualcosa all'interno di un workflow
+		- ibrido dinamico-funzionale
+	- Diagramma di ==interazione==
+			- *mostra le interazioni tra gli oggetti durante scenari di funzionamento del sistema*
+		- Diagramma di sequenza (unico che analizziamo, il + usato)
 		- Diagramma di comunicazione
 		- Diagramma di sintesi dell'interazione
 		- Diagramma dei tempi
 
 >> Il diagramma degli oggetti è una "fotografia" (*snapshot*) del sistema in un istante: le istanze concrete con i valori dei loro attributi, mentre il diagramma delle classi ne descrive lo schema generale.
 
----
-## Slide 13 – Diagrammi (diagramma dei package)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-		- *mostra i package e le loro relazioni di dipendenza, contenimento e specializzazione*
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 14 – Diagrammi (diagramma dei componenti)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-		- *descrive l'architettura software del sistema*
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 15 – Diagrammi (diagramma di deployment)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-		- *descrive la struttura del sistema hardware e l'allocazione dei vari moduli software*
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
 >> Componenti vs. deployment: il primo dice *quali* moduli software esistono e come si incastrano, il secondo su *quale macchina/nodo fisico* ciascun modulo viene installato ed eseguito.
-
----
-## Slide 16 – Diagrammi (diagramma delle strutture composite)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-		- *mostra la struttura interna di classificatori strutturati*
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 17 – Diagrammi (diagramma dei casi d'uso)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-		- *elenca i casi d'uso del sistema e le loro relazioni*
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 18 – Diagrammi (diagramma degli stati)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-		- *usa la notazione degli automi di Harel per descrivere gli stati degli oggetti di una classe*
-	- Diagramma di attività
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
 
 >> Gli *statecharts* di Harel estendono gli automi a stati finiti con stati annidati, stati concorrenti (ortogonali) e memoria (*history*): servono a evitare l'esplosione combinatoria degli stati di un automa piatto.
 
----
-## Slide 19 – Diagrammi (diagramma di attività)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-		- *descrive le sequenze eventi-azioni-transizioni di una funzione*
-	- Diagramma di interazione
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
-
----
-## Slide 20 – Diagrammi (diagramma di interazione)
-
-*Sono viste sul modello UML*
-
-- **Statici**:
-	- Diagramma delle classi
-	- Diagramma degli oggetti
-	- Diagramma dei package
-	- Diagramma dei componenti
-	- Diagramma di deployment
-	- Diagramma delle strutture composite
-- **Dinamici**:
-	- Diagramma dei casi d'uso
-	- Diagramma degli stati
-	- Diagramma di attività
-	- Diagramma di interazione
-		- *mostra le interazioni tra gli oggetti durante scenari di funzionamento del sistema*
-		- Diagramma di sequenza
-		- Diagramma di comunicazione
-		- Diagramma di sintesi dell'interazione
-		- Diagramma dei tempi
+![[Recording 20260929093633.m4a]]
 
 ---
 ## Slide 21 – Specifiche
@@ -475,33 +284,15 @@ Una piccola porzione del metamodello UML 2 ...
 
 ![[ISW3-s021-1.png|600]]
 
-Contenuto della specifica mostrata in figura:
-
-Caso d'uso: "APRI CONTO CORRENTE BANCARIO"
-
-Scenario base:
-1. il cliente si presenta in banca per aprire un nuovo c/c
-2. l'addetto riceve il cliente e fornisce spiegazioni
-3. se il cliente accetta fornisce i propri dati
-4. l'addetto verifica se il cliente è censito in anagrafica
-5. l'addetto crea il nuovo conto corrente
-6. l'addetto segnala il numero di conto al cliente
-
-Varianti:
-- 3(a) se il cliente non accetta il caso d'uso termina
-- 3(b) se il conto va intestato a più persone vanno forniti i dati di tutte
-- 4(a) se il cliente (o uno dei diversi intestatari) non è censito l'addetto provvede a registrarlo, richiede al cliente la firma dello specimen e ne effettua la memorizzazione via scanner
-
 >> L'ellisse (l'elemento grafico "caso d'uso") è solo il nome: tutta la semantica vera sta nel testo della specifica associata. Il diagramma è un indice, la specifica è il contenuto.
 
 ---
 ## Slide 22 – Ornamenti
 
 - Rendono visibili gli aspetti particolari della specifica dell'elemento
+- aggiunte alla specifica di un elemento
 
 ![[ISW3-s022-1.png|600]]
-
-La classe `Finestra`, "ornata", mostra il valore etichettato `{autore = Smith}`, gli attributi `+dimensioni: Rettangolo=(100,100)`, `#visibile: Booleano=falso`, `+dimensioniPredefinite: Rettangolo` (sottolineato perché di classe) e le operazioni `+crea()` (sottolineata) e `+nascondi()`.
 
 >> Convenzioni di visibilità: `+` pubblico, `#` protetto, `-` privato; il **sottolineato** indica un membro *statico* (di classe, non di istanza).
 
@@ -525,13 +316,15 @@ Nella figura: l'interfaccia `«interface» Stack` (nome in corsivo perché astra
 ---
 ## Slide 24 – Meccanismi di estendibilità
 
-- Uno **stereotipo** rappresenta una variazione di un elemento di modellazione esistente, con la stessa forma ma diverso scopo. Permette quindi di introdurre nuovi elementi di modellazione a partire da quelli esistenti
+- Uno **stereotipo** rappresenta una variazione di un elemento di modellazione esistente, con la stessa forma ma diverso scopo. Permette quindi di introdurre nuovi elementi di modellazione a partire da quelli esistenti, principale meccanismo di estendibilità per UML.
 	- predefiniti
-	- introdotti dall'utente
+	- introdotti dall'utente (programmatore)
+	- si rappresenta in forma testuale  <<>> o con un disegno
 
-![[ISW3-s024-1.png|400]]
+![[ISW3-s024-1.png|342]]
 
 - Una **proprietà** è un valore associato a un elemento del modello, espresso da una stringa associata all'elemento
+	- sono tra parentesi graffe
 
 `{ author = "Joe Smith", status = analysis }`   `{ abstract }`
 
@@ -545,7 +338,7 @@ Nella figura: l'interfaccia `«interface» Stack` (nome in corsivo perché astra
 
 ---
 ## Slide 25 – Architettura
-
+- viste diverse che possiamo creare sul nostro modello durante la vita del sistema:
 - **Vista dei casi d'uso**
 	- *Descrive le funzionalità del sistema come vengono percepite dagli utenti, dagli analisti e dagli esecutori del testing. Non specifica l'organizzazione del software ma è la base per le altre viste*
 - **Vista logica**
@@ -566,8 +359,9 @@ Nella figura: l'interfaccia `«interface» Stack` (nome in corsivo perché astra
 	- esseri umani (dipendenti, clienti)
 	- organizzazioni, enti, istituzioni
 	- altre applicazioni o sistemi (hardware e software), sottosistemi
+- non ce nessuna descrizione di come il caso d'uso viene attuato
 - Descrivono l'**interazione** tra attori e sistema, non la logica interna della funzione né la struttura del sistema
-- Sono espressi in forma **testuale**, comprensibile anche per i non "addetti ai lavori"
+- Sono espressi in forma **testuale**, comprensibile anche per i non "addetti ai lavori" (cliente)
 - Possono essere definiti a livelli diversi (l'intero sistema o parti del sistema), ma sempre dal punto di vista dell'utente
 
 ---
@@ -576,13 +370,13 @@ Nella figura: l'interfaccia `«interface» Stack` (nome in corsivo perché astra
 - Un **attore** identifica il ruolo che un'entità esterna assume quando interagisce direttamente con il sistema
 	- … è sempre esterno al sistema, anche se il sistema ne può mantenere una rappresentazione interna
 	- … spedisce o riceve messaggi dal sistema, o scambia informazioni con esso
-	- … esegue i casi d'uso
+	- … esegue/attiva i casi d'uso
 	- … è modellato con una classe, non un oggetto
 - Un **caso d'uso** è la specifica di una sequenza di azioni che un sistema, un sottosistema o una classe può eseguire interagendo con attori esterni
-	- … è una funzionalità come percepita da un attore
-	- … produce un risultato osservabile utile all'attore
+	- … è una <u>funzionalità</u> come percepita da un attore -> come la vede l'utente non il progettista
+	- … produce un <u>risultato osservabile</u> utile all'attore
 	- … viene sempre attivato da un attore
-	- … è completo
+	- … è completo -> fa qualcosa di sensanto a se stante
 
 >> "Attore = ruolo, non persona": la stessa persona fisica può essere Cliente in un caso d'uso e Impiegato in un altro; per questo l'attore si modella con una classe (il ruolo) e non con un oggetto (l'individuo).
 
@@ -598,27 +392,30 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 
 ![[ISW3-s029-1.png|600]]
 
-- **generalizzazione tra attori**: Utente registrato è un Utente
-- **comunicazione unidirezionale**: Stampa estratto conto → Cliente
-- **inclusione tra casi d'uso** (il caso d'uso principale non è completo senza il caso d'uso incluso): Prelievo bancomat `«include»` Verifica identità
-- **estensione di casi d'uso** (il caso d'uso principale è completo anche senza il caso d'uso d'estensione): Liberatoria per libri rari `«extend»` Richiesta prestito
-- **generalizzazione tra casi d'uso**: Controllo password e Controllo impronta sono specializzazioni di Verifica identità
-
+- **generalizzazione tra attori**: Utente registrato è un Utente, semantica: "Is a"
+- **comunicazione unidirezionale**: Stampa estratto conto → Cliente, il flusso di dati è unidirezionale dal sistema verso l'attore, è importante non abusare l'uso di questo simbolo, normalmente le comunicazione sono bidirezionali.
+-  le dipendenze vanno in quasi tutti i casi stereotipate: con `include` e `extend`:
+	- **inclusione tra casi d'uso** (il caso d'uso principale non è completo senza il caso d'uso incluso): Prelievo bancomat `«include»` Verifica identità con generalità tra casi d'uso*, semantica: "is a".
+		- `include` come una chiamata di procedura, non è una precondizione.
+	- **estensione di casi d'uso** (il caso d'uso principale è completo anche senza il caso d'uso d'estensione): Liberatoria per libri rari `«extend»` Richiesta prestito
+		- quando le chiamate sono <u>opzionali</u>.
+	- **generalizzazione tra casi d'uso**:* Controllo password e Controllo impronta sono specializzazioni di Verifica identità
+	
 >> Verso delle frecce: in `«include»` la freccia va dal caso d'uso *base* a quello *incluso*; in `«extend»` va, al contrario, dall'*estensione* al caso d'uso *base* (è l'estensione che "sa" dove agganciarsi, tramite un punto di estensione).
 
 ---
 ## Slide 30 – Punti di vista
 
-![[ISW3-s030-1.png|200]]
-
-| UTILIZZATORE | PROGETTISTA |
-| --- | --- |
-| **Casi d'uso** | **Funzionalità interne** |
-| telefonare | trasmissione / ricezione |
-| ricevere telefonate | alimentazione (batteria) |
-| inviare messaggi | I/O (display, tasti, ...) |
-| memorizzare un numero | gestione rubrica |
-| …. | ….. |
+| UTILIZZATORE          | PROGETTISTA               |
+| --------------------- | ------------------------- |
+| **Casi d'uso**        | **Funzionalità interne**  |
+| telefonare            | trasmissione / ricezione  |
+| ricevere telefonate   | alimentazione (batteria)  |
+| inviare messaggi      | I/O (display, tasti, ...) |
+| memorizzare un numero | gestione rubrica          |
+| ….                    | …..                       |
+- i casi d'uso devo esprimere le necessità dell'utilizzatore!!
+- la colonna di destra rappresenta un tipo di visione che non dobbiamo rappresentare con i diagrammi di casi d'uso.
 
 >> Esempio del telefono cellulare: l'utilizzatore ragiona per obiettivi ("telefonare"), il progettista per sottosistemi ("trasmissione/ricezione"). I casi d'uso devono stare rigorosamente sulla colonna di sinistra, altrimenti si smette di raccogliere requisiti e si inizia a progettare.
 
@@ -637,9 +434,10 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 ---
 ## Slide 32 – Identificare i casi d'uso
 
-1. Individuare i confini del sistema
-2. Identificare tutte le tipologie di utilizzatori del sistema (esseri umani o altri sistemi), che verranno modellati come attori
-3. Per ogni tipologia di attore, rilevare in quale modo utilizzerà il sistema, partendo dagli obiettivi che egli deve raggiungere. A ogni modalità di utilizzo corrisponde un caso d'uso
+1. Individuare i <u>confini</u> del sistema
+2. Identificare tutte le tipologie di utilizzatori del sistema (esseri umani o altri sistemi), che verranno modellati come <u>attori</u>
+3. Per ogni tipologia di attore, rilevare in quale modo utilizzerà il sistema, partendo dagli obiettivi che egli deve raggiungere. A ogni modalità di utilizzo corrisponde un <u>caso d'uso</u>
+	- negli es si arriva a rappresentare solo questi primi 3 punti. 
 4. Per ogni caso d'uso, descrivere lo scenario base (la sequenza di passi più semplice possibile che conduce al successo del caso d'uso, le risposte attese dal sistema), e le principali varianti a tale scenario. Così facendo, tipicamente, possono emergere necessità di interazione del sistema con altri soggetti (esseri umani o altri sistemi), che verranno rappresentati nel modello come attori aggiuntivi
 
 >> Il procedimento è deliberatamente "dall'esterno verso l'interno": prima si fissa il confine
@@ -721,8 +519,6 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 
 ![[ISW3-s037-1.png|500]]
 
-Apri conto corrente — Collaborazione apri conto corrente
-
 >> La freccia tratteggiata con punta a triangolo vuoto è la *realizzazione*: la
 >> collaborazione (ellisse tratteggiata) realizza il caso d'uso (ellisse continua).
 >> È il ponte tra il modello dei requisiti e il modello di progetto.
@@ -731,7 +527,6 @@ Apri conto corrente — Collaborazione apri conto corrente
 ## Slide 38 – Diagrammi delle classi
 
 **4**
-
 - Sono il nucleo fondamentale di UML
 - Descrivono la struttura statica del sistema in termini di classi e loro relazioni reciproche
 	- Una ***classe*** descrive un gruppo di oggetti con proprietà, comportamento e relazioni comuni
