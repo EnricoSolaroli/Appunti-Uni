@@ -20,6 +20,11 @@
 - Le immagini vanno nella sottocartella `immagini/` della cartella del corso.
 - Salvo richiesta diversa, **salta la presentazione del corso** (es. "Course Presentation.pdf").
 - Prima di iniziare controlla quali PDF sono **già stati trascritti**, per non rifarli.
+- **Pagine HTML** (es. approfondimenti su Virtuale): io salvo la pagina con Chrome come "Pagina web, completa" nella cartella `slide/` del corso. Tu la converti in una nota con le stesse regole, tranne che:
+  - i titoli seguono le sezioni della pagina (`## 2.1 …`) invece di `## Slide N – …`;
+  - le immagini si chiamano `<PREFISSO>-<nome originale>` (es. `RT03-dhcp-base.gif`);
+  - le GIF animate si tengono come GIF e si trascrivono fotogramma per fotogramma in una tabella.
+  Esempio: `reti di telecumunicazione/03 - Approfondimento DHCP.md`.
 
 ## 2. Struttura della nota
 

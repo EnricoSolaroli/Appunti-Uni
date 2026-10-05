@@ -3,6 +3,8 @@
 # Instradamento IPv4 e IPv6
 
 >> Questa lezione ha slide di approfondimento in [[02 - Approfondimenti IP]]: nei punti in cui conviene aprirle trovi una riga **Approfondimento in 02** con il link diretto alla slide giusta.
+>> Per il DHCP (slide 124–130) c'è anche l'approfondimento [[03 - Approfondimento DHCP]], con righe **Approfondimento in 03**.
+>> Come i router costruiscono le tabelle di instradamento lo vedi nella lezione successiva [[04 - Instradamento nelle reti a pacchetto e in Internet]]: le righe **Continua in 04** ti portano al punto giusto.
 
 ## Indice
 
@@ -657,6 +659,8 @@ Normalmente non esiste un collegamento «diretto» fra sorgente e destinazione
 
 ![[RT01-s040-1.png|600]]
 
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 3 – Funzioni di IP|slide 3–12: che cos'è l'instradamento e gli algoritmi possibili (flooding, con tabella…)]]
+
 ---
 ## Slide 41 – Da ricordare
 
@@ -873,7 +877,7 @@ $$I' = I - 2 = 2^H - 2$$
 ---
 ## Slide 59 – Come posso sapere quale gateway usare per la consegna indiretta?
 
-***Come posso sapere quale gateway usare per la consegna indiretta?***
+
 
 ---
 ## Slide 60 – La tabella di instradamento IP
@@ -889,6 +893,8 @@ $$I' = I - 2 = 2^H - 2$$
 		- Il modo di presentarle ed elaborarle può essere diverso
 
 >> Esempi pratici: su Linux la tabella si vede con `ip route` (o il vecchio `route -n`), su macOS con `netstat -rn`, su Windows con `route print`.
+
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 13 – Nell'instradamento con tabelle come si compila la tabella?|slide 13 in poi: come i router riempiono questa tabella (shortest path, distance vector, link state, RIP)]]
 
 ---
 ## Slide 61 – Route
@@ -1004,12 +1010,6 @@ s## Slide 69 – Esempio di lookup – 2
 
 ![[RT01-s069-1.png|300]]
 
-|   | Prefix | Etc. |
-|---|---|---|
-| 1 | 0.0.0.0/0 | … |
-| 2 | 192.168.2.0/24 | … |
-| 3 | 192.168.2.0/30 | … |
-
 - Datagramma con IP dest. = 192.168.2.21
 
 ```
@@ -1030,12 +1030,6 @@ s## Slide 69 – Esempio di lookup – 2
 ## Slide 70 – Esempio di lookup – 3
 
 ![[RT01-s070-1.png|300]]
-
-|   | Prefix | Etc. |
-|---|---|---|
-| 1 | 0.0.0.0/0 | … |
-| 2 | 192.168.2.0/24 | … |
-| 3 | 192.168.2.0/30 | … |
 
 - Datagramma con IP dest. = 80.48.15.170
 
@@ -1101,13 +1095,6 @@ s## Slide 69 – Esempio di lookup – 2
 
 ![[RT01-s074-1.png|600]]
 
-| Prefix | Gateway | Interface |
-|---|---|---|
-| 0.0.0.0/0 | 137.204.72.254 | en0 |
-| 137.204.72.0/24 | On link | en0 |
-
-Host 137.204.72.14 (interfaccia en0), host 137.204.72.35, router 137.204.72.254 verso Internet.
-
 >> Entrambe le righe usano en0: la riga *on-link* (blu) porta a una consegna diretta verso gli host della 137.204.72.0/24 (es. .35), la riga di default (rossa) porta a una consegna indiretta tramite il router .254 per tutto il resto.
 
 ---
@@ -1151,13 +1138,6 @@ Il **longest prefix match** è l'algoritmo che ci dice quali informazioni usare 
 
 ![[RT01-s079-1.png|550]]
 
-| Modello | Protocolli | Strato |
-|---|---|---|
-| Application | Applicazioni: e-mail, ftp, telnet, www… | Strati superiori |
-| Transport | TCP, UDP | Strato 4 |
-| Network | IP (con ICMP e ARP) | Strato 3 |
-| Data Link | Non specificato (ad es. IEEE 802-Ethernet-X25-Aloha ecc.) | Strato 2 |
-| Physical | Non specificato – Collegamento fisico | Strato 1 |
 
 >> ARP è disegnato a cavallo tra strato 3 e strato 2: serve al livello di rete, ma i suoi messaggi viaggiano direttamente dentro le trame L2 (in Ethernet con EtherType 0x0806), non dentro datagrammi IP.
 
@@ -1194,41 +1174,6 @@ visualizza il contenuto della cache ARP con le diverse corrispondenze tra indiri
 
 ![[RT01-s083-1.png|600]]
 
-```
-C:\>arp -a
-
-Interface: 137.204.57.174 on Interface 0x1000003
-  Internet Address      Physical Address      Type
-  137.204.57.1          08-00-20-9c-9c-93     dynamic
-  137.204.57.88         00-60-b0-78-e8-fd     dynamic
-  137.204.57.180        00-10-4b-db-0a-3a     dynamic
-  137.204.57.181        00-30-c1-d5-ee-9b     dynamic
-  137.204.57.254        00-50-54-d9-ba-00     dynamic
-
-C:\>ping -n 1 137.204.57.177
-
-Pinging 137.204.57.177 with 32 bytes of data:
-
-Reply from 137.204.57.177: bytes=32 time<10ms TTL=128
-
-Ping statistics for 137.204.57.177:
-    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 0ms, Maximum =  0ms, Average =  0ms
-
-C:\>arp -a
-
-Interface: 137.204.57.174 on Interface 0x1000003
-  Internet Address      Physical Address      Type
-  137.204.57.1          08-00-20-9c-9c-93     dynamic
-  137.204.57.177        00-b0-d0-ec-46-62     dynamic
-  137.204.57.180        00-10-4b-db-0a-3a     dynamic
-  137.204.57.181        00-30-c1-d5-ee-9b     dynamic
-  137.204.57.254        00-50-54-d9-ba-00     dynamic
-
-C:\>
-```
-
 >> Il ping verso 137.204.57.177 (stessa network, consegna diretta) ha richiesto prima una risoluzione ARP: dopo il comando la voce di .177 compare nella cache. La voce di .88, invece, è scaduta nel frattempo ed è sparita.
 
 ---
@@ -1236,16 +1181,12 @@ C:\>
 
 ![[RT01-s084-1.png|600]]
 
-Trama: | L2 ADDRESS: HOST3 | IP ADDRESS: HOST3 | DATI |
-
 >> Consegna diretta: HOST1 e HOST3 sono sulla stessa Ethernet, quindi sia l'indirizzo L2 sia l'indirizzo IP di destinazione sono quelli di HOST3.
 
 ---
 ## Slide 85 – Indirect Delivery
 
 ![[RT01-s085-1.png|600]]
-
-Trama: | L2 ADDRESS: ROUTER1 | IP ADDRESS: HOST4 | DATI |
 
 >> Consegna indiretta: l'IP di destinazione resta quello del destinatario finale (HOST4), mentre l'indirizzo L2 è quello del next hop (ROUTER1), ottenuto con ARP sull'IP del gateway. Ad ogni salto l'intestazione L2 viene riscritta, quella IP no (a parte TTL e checksum).
 
@@ -1261,21 +1202,11 @@ Trama: | L2 ADDRESS: ROUTER1 | IP ADDRESS: HOST4 | DATI |
 >> In figura: da HOST1 a HOST3 una sola consegna diretta (blu); da HOST1 a HOST4 una serie di consegne indirette (rosse, HOST1→ROUTER1→…→ROUTER2) e infine la consegna diretta ROUTER2→HOST4. L'ultimo salto è sempre diretto.
 
 ---
-## Slide 87 – Esempio 1
+## Slide 87-88 – Esempio 1
 
 - Un host connesso solamente ad una network con un solo gateway verso l'esterno
 
 ![[RT01-s087-1.png|600]]
-
-Host 137.204.64.1 (interfaccia en0) sulla network 137.204.64.0/24; gateway 137.204.64.254 verso Internet.
-
-| Prefix | Next Hop | Interface | Metric |
-|---|---|---|---|
-| 0.0.0.0/0 | 137.204.64.254 | en0 | 1 |
-| 137.204.64.0/24 | On link | en0 | 1 |
-
----
-## Slide 88 – Esempio 1
 
 - 137.204.64.1 deve inviare un datagramma a 137.204.64.95
 	- La destinazione è sulla sua stessa network
@@ -1293,22 +1224,11 @@ Host 137.204.64.1 (interfaccia en0) sulla network 137.204.64.0/24; gateway 137.2
 >> Longest prefix match: 137.204.64.95 corrisponde sia a 0.0.0.0/0 sia a 137.204.64.0/24, vince /24 (on link). 137.204.67.3 corrisponde solo a 0.0.0.0/0 (il terzo byte 67 ≠ 64), quindi next hop 137.204.64.254. "Direttamente" significa quando l'indirizzo L2 è già nella cache ARP; altrimenti prima si lancia ARP.
 
 ---
-## Slide 89 – Esempio 2
+## Slide 89-90 – Esempio 2
 
 - Un host connesso a due network con un solo gateway verso l'esterno
 
 ![[RT01-s089-1.png|600]]
-
-Host con interfaccia en1 (10.0.0.1, network 10.0.0.0/24) e interfaccia en0 (137.204.64.1, network 137.204.64.0/24); gateway 137.204.64.254 verso Internet.
-
-| Prefix | Next Hop | Interface | Metric |
-|---|---|---|---|
-| 0.0.0.0/0 | 137.204.64.254 | en0 | 1 |
-| 137.204.64.0/24 | On link | en0 | 1 |
-| 10.0.0.0/24 | On link | en1 | 1 |
-
----
-## Slide 90 – Esempio 2
 
 - Valgono gli stessi casi dell'esempio precedente, ma in più ve ne è un terzo
 - 10.0.0.1 deve inviare un datagramma a 10.0.0.15
@@ -1374,20 +1294,12 @@ Dalla tabella di instradamento ottengo:
 	- I router riconoscono la classe di una rete dai primi bit dell'indirizzo
 		- Ricavano di conseguenza il Net-ID
 
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 55 – IP Multicast|slide 55: indirizzi multicast usati dai protocolli di routing (224.0.0.9 RIPv2, 224.0.0.5/6 OSPF)]]
+
 ---
 ## Slide 96 – Classi di indirizzi
 
 ![[RT01-s096-1.png|550]]
-
-| Classe | Bit iniziali | Net-ID | Host-ID |
-|---|---|---|---|
-| Classe A | 0 | 8 bit | 24 bit |
-| Classe B | 10 | 16 bit | 16 bit |
-| Classe C | 110 | 24 bit | 8 bit |
-| Classe D (multicast) | 1110 | – | – |
-| Classe E (sperimentale) | 1111 | – | – |
-
-(32 bit in totale)
 
 - **Network ID**: identifica una rete IP
 - **Host ID**: identifica i singoli calcolatori della rete
@@ -1435,11 +1347,6 @@ Dalla tabella di instradamento ottengo:
 ![[RT01-s099-1.png|550]]
 
 Primo byte, Secondo byte → Network ID; Terzo byte e primi 2 bit del Quarto byte → Subnetwork ID; ultimi 6 bit → Host ID
-
-```
-11111111 11111111  1111111111 000000
-Netmask /26
-```
 
 >> Netmask /26 = 255.255.255.192. Su una classe B il subnet-ID è lungo $26-16=10$ bit → $2^{10}=1024$ sottoreti, ciascuna con $2^6-2=62$ host utilizzabili.
 
@@ -1490,6 +1397,8 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 	- Le tabelle di routing devono **comprendere anche le Netmask**
 	- Generalizzazione del subnetting/supernetting
 		- reti IP definite da **Net-ID/Netmask**
+
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 67 – La mancanza di CIDR|slide 67–69: RIP v1 non supporta il CIDR, RIP v2 sì]]
 
 ---
 ## Slide 104 – Obiettivi del CIDR
@@ -1556,30 +1465,6 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 
 ![[RT01-s108-1.png|600]]
 
-- R1: 137.204.66.100 appartiene alle Network IP 137.204.66.0/24
-- R2: 137.204.66.100 appartiene alle Network IP 137.204.64.0/22
-
-Reti collegate a R1: 137.204.64.0/24, 137.204.65.0/24, 137.204.66.0/24, 137.204.67.0/24
-
-Tabella di instradamento di R1:
-
-| Dest | Netmask | Gateway | Interface |
-|---|---|---|---|
-| 0.0.0.0 | 0.0.0.0 | 192.168.10.1 | ppp0 |
-| 137.204.64.0 | 255.255.255.0 | 137.204.64.254 | en0 |
-| 137.204.65.0 | 255.255.255.0 | 137.204.65.254 | en1 |
-| 137.204.66.0 | 255.255.255.0 | 137.204.66.254 | en2 |
-| 137.204.67.0 | 255.255.255.0 | 137.204.67.254 | en3 |
-| 192.168.10.0 | 255.255.255.252 | 192.168.10.2 | ppp0 |
-
-Tabella di instradamento di R2:
-
-| Dest | Netmask | Gateway | Interface |
-|---|---|---|---|
-| 0.0.0.0 | 0.0.0.0 | -.-.-.- | ppp1 |
-| 137.204.64.0 | 255.255.252.0 | 192.168.10.2 | ppp0 |
-| 192.168.10.0 | 255.255.255.252 | 192.168.10.1 | ppp0 |
-
 >> R2 vede le quattro /24 di R1 come un'unica rete 137.204.64.0/22 (supernetting): 255.255.252.0 lascia liberi gli ultimi 2 bit del terzo ottetto, che coprono i valori 64–67. Così R2 ha una sola riga invece di quattro. R1 invece deve distinguere le quattro reti, perché ognuna è su un'interfaccia diversa.
 >> Il link punto-punto R1–R2 è un /30 (255.255.255.252): 4 indirizzi, cioè la rete .0, due host (.1 e .2) e il broadcast .3.
 
@@ -1591,13 +1476,13 @@ Tabella di instradamento di R2:
 
 Indirizzamento «classful»
 - PRO: semplifica l'implementazione dei gateway
-- CON: le network devono per forza avere alcune dimensioni prefissate
+- CONTRO: le network devono per forza avere alcune dimensioni prefissate
 
 **Massimizza semplicità di implementazione penalizzando la flessibilità**
 
 CIDR
 - PRO: massima flessibilità nella dimensione delle network, contenimento della dimensione delle tabelle di instradamento
-- CON: complessità implementativa
+- CONTRO: complessità implementativa
 
 **Massimizza flessibilità penalizzando semplicità di implementazione**
 
@@ -1614,14 +1499,6 @@ CIDR
 ## Slide 111 – Architettura
 
 ![[RT01-s111-1.png|500]]
-
-| Strato OSI | Protocolli | Strato |
-|---|---|---|
-| Application | Applicazioni: e-mail, ftp, telnet, www… ; DHCP | Strati superiori |
-| Transport | TCP, UDP | Strato 4 |
-| Network | IP (con ICMP e ARP) | Strato 3 |
-| Data Link | Non specificato (ad es. IEEE 802-Ethernet-X25-Aloha ecc.) | Strato 2 |
-| Physical | Non specificato. Collegamento fisico | Strato 1 |
 
 >> Nel disegno DHCP è un'applicazione che usa UDP. ICMP è incapsulato in IP, ma nell'architettura fa parte dello strato di rete. Anche ARP è associato allo strato 3, anche se in realtà viaggia direttamente nelle trame di strato 2.
 
@@ -1648,23 +1525,12 @@ CIDR
 
 ![[RT01-s113-1.png|500]]
 
-Frame Strato 2 ⊃ Datagramma IP Strato 3 ⊃ Pacchetto ICMP
-
 >> Nell'header IP il campo Protocol vale 1 per ICMP. Per evitare cascate di messaggi, un errore ICMP non viene mai generato in risposta a un altro messaggio di errore ICMP. Allo stesso modo si genera solo per il primo frammento di un datagramma.
 
 ---
 ## Slide 114 – Pacchetto ICMP
 
 ![[RT01-s114-1.png|400]]
-
-| Campo | Dimensione |
-|---|---|
-| IP header | 20 - 60 byte |
-| Message Type | 1 byte |
-| Message Code | 1 byte |
-| Checksum | 2 byte |
-| Additional Fields (optional) | variabile |
-| Data | variabile |
 
 - **Type**: definisce il tipo di messaggio ICMP
 	- messaggi di errore
@@ -1825,6 +1691,8 @@ Configurazione **automatica** e **dinamica** di
 Server su porta **67** UDP, client su porta **68** UDP
 
 >> "Dinamica" significa che l'indirizzo viene dato in *lease*, cioè in prestito per un tempo limitato, e il client deve rinnovarlo. Così gli indirizzi degli host non più attivi tornano disponibili.
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP#2.1 Modalità Allocazione|allocazione automatica, dinamica e manuale; relay agent]]
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP#3.1 Stati del client|lease, timer T1/T2 e stati del client (renew, rebinding)]]
 
 ---
 ## Slide 125 – DHCP – 1
@@ -1834,6 +1702,7 @@ Server su porta **67** UDP, client su porta **68** UDP
 ![[RT01-s125-1.png|500]]
 
 >> Il client non ha ancora un indirizzo: il DHCPDISCOVER parte con IP sorgente 0.0.0.0 e destinazione 255.255.255.255 (broadcast limitato). Per questo un server DHCP deve stare sulla stessa LAN, oppure serve un *DHCP relay* sul router.
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP#3.2 Prima Assegnazione|le cinque fasi della prima assegnazione, porte 67/68]] e [[03 - Approfondimento DHCP#5.1.1 Assegnazione standard|cattura animata dello scambio DORA]]
 
 ---
 ## Slide 126 – DHCP – 2
@@ -1850,6 +1719,7 @@ Server su porta **67** UDP, client su porta **68** UDP
 ![[RT01-s127-1.png|500]]
 
 >> Anche il DHCPREQUEST è inviato in broadcast: così anche i server la cui offerta non è stata scelta vengono a saperlo e possono liberare l'indirizzo che avevano proposto.
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP#5.1.3 Ricezione offerte multiple|cattura con due server che fanno offerte]]
 
 ---
 ## Slide 128 – DHCP – 4
@@ -1859,6 +1729,7 @@ Server su porta **67** UDP, client su porta **68** UDP
 ![[RT01-s128-1.png|500]]
 
 >> Riassunto dello scambio "DORA": **D**iscover → **O**ffer → **R**equest → **A**ck. Se l'indirizzo non è più disponibile, il server risponde con DHCPNAK e il client ricomincia da capo.
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP#2.4 Tipo Messaggi|tutti gli 8 tipi di messaggio]] e [[03 - Approfondimento DHCP#5.1.6 Rifiuto di una richiesta, DHCPNAK|cattura di un DHCPNAK]]
 
 ---
 ## Slide 129 – Ulteriori dettagli
@@ -1867,6 +1738,8 @@ Server su porta **67** UDP, client su porta **68** UDP
 	- Esempi operativi
 	- Catture di traffico
 - Si può trovare su virtuale
+
+>> **Approfondimento in 03** → [[03 - Approfondimento DHCP|è la nota 03 – Approfondimento DHCP]]: formato del messaggio, rinnovo, rilascio, configurazione del server e 11 catture.
 
 ---
 ## Slide 130 – Da ricordare

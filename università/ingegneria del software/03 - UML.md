@@ -524,9 +524,8 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 >> È il ponte tra il modello dei requisiti e il modello di progetto.
 
 ---
-## Slide 38 – Diagrammi delle classi
+## Slide 38 –  4 - Diagrammi delle classi
 
-**4**
 - Sono il nucleo fondamentale di UML
 - Descrivono la struttura statica del sistema in termini di classi e loro relazioni reciproche
 	- Una ***classe*** descrive un gruppo di oggetti con proprietà, comportamento e relazioni comuni
@@ -535,19 +534,20 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 
 ![[ISW3-s038-1.png|500]]
 
-Nell'esempio: stereotipo `«entità»`, nome della classe `Persona`, proprietà `{Abstract}`; attributi `-nome: String`, `-cognome: String`, `-dataNascita: Date`, `-numeroPersone: Integer=0` (sottolineato = ambito di classe); operazioni `+create(nome,cognome,data)`, `#leggiNome(): String`, `+mostraDati(OutputDevice)`, `+etàInAnni(): Integer`.
+>a partire dal quale si può generare direttamente il codice;
+>modello completamente statico.
 
 ---
-## Slide 39 – Notazione
+## Slide 39 – Notazione (Attributi)
 
 - Per gli **attributi** della classe:
 
 `visibilità nome : tipo molteplicità = valoreDefault`
 
 - Visibilità
-	- pubblica `+`
+	- pubblica `+` (violi l'incapsulamento!!)
 	- privata `-`
-	- protetta `#`
+	- protetta `#` (visibilità all'interno della gerarchia 'is a')
 	- package `~`
 - Molteplicità
 	- per esempio: `String [5]`, `Real [2..*]`, `Boolean [0..1]`
@@ -557,19 +557,17 @@ Nell'esempio: stereotipo `«entità»`, nome della classe `Persona`, proprietà 
 	- `String`
 - Ambito
 	- istanza
-	- **classe**
+	- <u>classe</u> -> sono attributi in cui il nome viene sottolineato. sono gli attributi statici che abbiamo presente da java, unico valore a livello di classe che vale per tutti gli oggetti.
 
 >> L'ambito "classe" (quello che in Java è `static`) si indica graficamente sottolineando
 >> l'attributo: il valore è condiviso da tutte le istanze, non replicato in ciascuna.
 
 ---
-## Slide 40 – Notazione
+## Slide 40 – Notazione (Operazioni)
 
 - Per le **operazioni** della classe:
 
-`visibilità nome (parametro, ...): tipoRestituito`
-
-La parte `nome (parametro, ...): tipoRestituito` costituisce la *signature*.
+`visibilità nome (parametro, ...): tipoRestituito` -> esclusa la visibilità abbiamo la **signature** (non si può avere più operazioni con la stessa signature, però si può comunque implementare overloading)
 
 - Parametri
 
@@ -582,7 +580,7 @@ La parte `nome (parametro, ...): tipoRestituito` costituisce la *signature*.
 	- `return` (si usa quando l'operazione restituisce più valori)
 - Ambito
 	- istanza
-	- **classe**
+	- ~~classe~~ 
 
 >> La *signature* non comprende la visibilità: due operazioni con stessa signature ma
 >> visibilità diversa sarebbero comunque in conflitto. È proprio la signature a essere
@@ -593,7 +591,9 @@ La parte `nome (parametro, ...): tipoRestituito` costituisce la *signature*.
 
 ![[ISW3-s041-1.png|600]]
 
-La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/decrescente: classe con stereotipo `«attore»` completa di attributi (`nome`, `cognome`) e operazioni (`acquista`, `vende`); poi senza operazioni; poi solo nome e stereotipo; poi solo nome; infine con la notazione iconica dell'attore (omino).
+La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/decrescente: 
+
+>il comportamento della classe in genere non viene mai chiesto di essere aggiunto
 
 >> Il livello di dettaglio non è una proprietà del modello ma una scelta comunicativa:
 >> si mostra solo ciò che serve al lettore di quel diagramma. È l'applicazione del
@@ -602,22 +602,13 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 ---
 ## Slide 42 – Le relazioni tra classi
 
-- **Generalizzazione**
-- **Associazione**
-- **Dipendenza**
-- **Aggregazione**
-- **Composizione**
-- **Raffinamento**
-
-![[ISW3-s042-1.png|500]]
-
-Notazione: generalizzazione = linea continua con punta a triangolo vuoto; associazione = linea continua semplice; dipendenza = linea tratteggiata con punta a freccia aperta; aggregazione = linea continua con rombo vuoto; composizione = linea continua con rombo pieno; raffinamento = linea tratteggiata con punta a triangolo vuoto.
+![[ISW3-s042-1.png|436]]
 
 ---
 ## Slide 43 – Associazione
 
-- E' una connessione tra classi, tipicamente bidirezionale
-- **Molteplicità**:
+- E' una connessione tra classi, tipicamente **bidirezionale** (99% dei casi non ci sono frecce sulle associazioni)
+- **Molteplicità** (si ~~leggono in entrata~~, al contrario dell E/R):
 	- Esattamente 1 → `1`
 	- Opzionale 1 → `0..1`
 	- Da x a y inclusi → `x..y`
@@ -627,7 +618,7 @@ Notazione: generalizzazione = linea continua con punta a triangolo vuoto; associ
 
 ![[ISW3-s043-1.png|550]]
 
-Esempi: `Persona 1..* — possiede — * Casa`, `Casa 1..* — in — 0..1 Città`; `Poligono * — haLati — 3..* Linea`, `Linea * — haEstremi — 2 Punto`.
+>devono avere un nome che ne esprima la semantica!!
 
 >> Attenzione al verso di lettura delle molteplicità: il numero scritto vicino a una classe
 >> dice quante istanze di *quella* classe sono collegate a una istanza dell'altra. In
@@ -641,9 +632,11 @@ Esempi: `Persona 1..* — possiede — * Casa`, `Casa 1..* — in — 0..1 Citt�
 
 ![[ISW3-s044-1.png|600]]
 
-Esempi: `PaginaWeb — puntaA → * Immagine` (monodirezionale); `Società 1 (datoreLavoro) ◀ lavoraPer * (impiegato) Persona`; associazioni riflessive su `Persona`: `sposa` (ruoli *marito* 0..1 / *moglie* 0..1) e `dirige` (ruoli *dirigente* 0..1 / *sottoposto* \*).
+>il triangolino indica il lato in cui leggere il nome dell'associazione: generalmente lo faccio quando vado verso corrente, dal basso verso l'alto e da destra verso sinistra
 
->> I ruoli sono indispensabili nelle associazioni riflessive: senza le etichette *dirigente* e
+>le associazioni monodirezionali (con la freccia finale) si utilizzano pochissimo, farci molta attenzione! si utilizza in progettazione non in questa fase.
+
+>> I ~~ruoli sono indispensabili nelle associazioni riflessive~~ : senza le etichette *dirigente* e
 >> *sottoposto* non si saprebbe quale estremità dell'associazione `dirige` rappresenti il capo.
 
 ---
@@ -655,7 +648,20 @@ Esempi: `PaginaWeb — puntaA → * Immagine` (monodirezionale); `Società 1 (da
 
 *l'identità delle istanze della classe associativa è stabilita solo dalle identità degli oggetti alle sue estremità*
 
-Esempi: classe associativa `Posizione` (con attributo `stipendio`) sull'associazione `Azienda * (datore) ◀ lavora per 1..* (impiegato) Persona`; vincolo `{or}` su `Conto — Intestato a → Azienda / Privato`; vincolo `{subset}` tra `a capo di` e `membro di` su `persona`/`comitato`; vincolo espresso con nota `{persona.datore = persona.capo.datore}`.
+>{...} o sono property o sono vincoli, nel caso dell {or} indica un vincolo di esclusività.
+>
+>{subset} -> le istanze dell'associazione sotto sono un sottoinsieme delle istanze delle associazioni sopra. 
+>Che cosa è un'istanza di una associazione? l'accoppiata degli id che partecipano all'associazione. 
+>Nell'es: per essere a campo di un comitato ne devo essere anche membro.
+>
+>il post it (basso a dx): nei compiti si scrivono frasi in linguaggio naturale durante il compito, in questo caso usa una 'dote-notation' sfruttando i ruoli.
+>
+>alto a sx: ~~**classe associativa**~~: (il corrispettivo in e/r di avere un attributo su una associazione, nasce così ma diventa una cosa più importante) La ~~riga tratteggiata esprime un vincolo~~: ce una ~~corrispondenza 1:1 tra le istanze della classe associativa e le istanze della associazione~~
+>Da anche un modo per reificare l'associazione.
+>
+>In UML non ce il vincolo di unicità delle istanze nelle associazioni ~~tranne nel caso in cui a quella associazione c'è attaccata una classe associativa~~!! -> se voglio continuare a poter inserire più volte la stessa istanza devo fare una reificazione vera! es: matrimonio non più come classe associativa ma come classe stand alone che poi collegherò alle altre entità, in questo modo posso rappresentare la stessa coppia nel caso si sposi più volte.
+>
+>le classi associative le useremo anche solo per poter reificare l'associazione.
 
 >> La classe associativa serve quando un attributo non appartiene né all'una né all'altra
 >> classe ma alla *coppia*: lo stipendio non è della persona né dell'azienda, ma del
@@ -668,8 +674,6 @@ Esempi: classe associativa `Posizione` (con attributo `stipendio`) sull'associaz
 - Le **associazioni qualificate** riducono un'associazione molti-a-molti a una del tipo uno-a-uno, specificando un attributo che permette di selezionare un unico oggetto destinazione svolgendo il ruolo di identificatore o chiave di ricerca
 
 ![[ISW3-s046-1.png|400]]
-
-A sinistra `Club * — * Socio`; a destra la stessa associazione qualificata con `idSocio`, che diventa `Club[idSocio] * — 0..1 Socio`.
 
 >> Il qualificatore si comporta come la chiave di un dizionario: fissato il club e il valore
 >> di `idSocio`, si ottiene al più un socio. La molteplicità `0..1` (invece di `1`) indica che
@@ -684,8 +688,6 @@ A sinistra `Club * — * Socio`; a destra la stessa associazione qualificata con
 	- I numeri di istanze dell'associazione quando è fissato un solo oggetto sono implicitamente assunti essere tutti a "molti"
 
 ![[ISW3-s047-1.png|550]]
-
-Associazione ternaria tra `Aula` (1), `Corso` (1) e `GiornoEOra` (\*), con classe associativa `Lezione` (attributo `argomento`).
 
 >> Il rombo indica l'associazione n-aria. Letta l'associazione: fissati un'aula e un giorno/ora
 >> si ha esattamente 1 corso; fissati corso e giorno/ora si ha esattamente 1 aula; fissati

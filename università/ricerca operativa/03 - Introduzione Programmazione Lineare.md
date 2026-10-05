@@ -416,7 +416,7 @@ Una rappresentazione più compatta del problema è la seguente¹:
 
 $$
 \begin{aligned}
-\min\ z = & \ \mathbf{c}\mathbf{x} \\
+\min\ z = & \ \mathbf{c}\mathbf{x}\\
 \text{s.t. }\ & \mathbf{A}\mathbf{x} \ge \mathbf{b} \\
 & \mathbf{x} \ge \mathbf{0}
 \end{aligned}
@@ -443,6 +443,8 @@ La matrice $\mathbf{A}$ è anche detta, semplicemente, **matrice dei vincoli**.
 
 ¹ per non appesantire la notazione, qui e nel proseguo, dove non è indispensabile non si esplicitano i *trasposti* di vettori e matrici (e.g., $\mathbf{c}^T\mathbf{x}$)
 
+>cx -> indica il prodotto scalare
+
 >> Dimensioni: $\mathbf{c}, \mathbf{x} \in \mathbb{R}^n$, $\mathbf{b} \in \mathbb{R}^m$, $\mathbf{A} \in \mathbb{R}^{m \times n}$ (una riga per vincolo, una colonna per variabile). La riga $i$ di $\mathbf{A}\mathbf{x} \ge \mathbf{b}$ è esattamente il vincolo $\sum_j a_{ij}x_j \ge b_i$, e $\mathbf{c}\mathbf{x}$ sta per $\mathbf{c}^T\mathbf{x} = \sum_j c_jx_j$. Le disuguaglianze tra vettori si intendono componente per componente.
 
 ---
@@ -464,7 +466,7 @@ Nella formulazione di un problema di programmazione lineare sono implicite alcun
 - **Dati deterministici**
 	- I coefficienti $c_j$, $a_{ij}$ e $b_i$ devono essere noti.
 	- Nel caso in cui alcuni dati fossero, ad esempio, di natura stocastica, essi devono essere *approssimati* con dati deterministici.
-- **Continuità delle variabili**
+- **Continuità delle variabili** (indispensabile)
   Le variabili possono assumere tutti i valori reali che soddisfano i vincoli.
 
 >> Nel caso (b) la funzione vale $f(x_j) = k_j + c_jx_j$ per $x_j > 0$ e $0$ per $x_j = 0$: c'è un costo fisso $k_j$ (es. costo di attivazione di un impianto) che si paga appena $x_j > 0$. Questo salto in $0$ non è lineare e non si può modellare con la sola LP continua; servono variabili binarie aggiuntive (programmazione lineare mista intera).
@@ -525,6 +527,7 @@ $$
 
 >> Il motivo: la funzione obiettivo è parallela al vincolo (b), infatti $2x_1 + 3x_2 = \frac{1}{2}(4x_1 + 6x_2) \le \frac{24}{2} = 12$, con uguaglianza lungo tutto il lato di (b), cioè il segmento (in grassetto nel grafico) da $C=(3,2)$ a $B=(6,0)$ (i punti $P_1$, $P_2$ del testo corrispondono quindi a questi due estremi). Anche qui almeno una soluzione ottima è un vertice: esistono infinite soluzioni ottime, ma tra queste ci sono i vertici $B$ e $C$.
 
+>le soluzioni ottime potrebbero stare anche su una faccia del poliedro non per forza su una retta
 ---
 ## Slide 29 – Esempio: Soluzione illimitata
 
@@ -563,6 +566,7 @@ $$
 
 >> Stessa regione ammissibile della slide 29, ma ora l'obiettivo peggiora andando all'infinito ($c_1, c_2 > 0$ e $\mathbf{x} \ge \mathbf{0}$). Confrontando i vertici: $A = (0,3)$ dà $z = 3$, $B = (0,1)$ dà $z = 1$, $C = (2,0)$ dà $z = 4$. L'ottimo è $\mathbf{x}^* = B = (0,1)$ con $z^* = 1$. Quindi una regione illimitata non implica un problema illimitato: dipende dalla direzione dell'obiettivo.
 
+>il fatto di avere un poliedro illimitato per avere una soluzione limitata è solo una condizione necessaria.
 ---
 ## Slide 31 – Esempio: Problema senza soluzione
 
@@ -582,8 +586,11 @@ $$
 >> Nel grafico la retta di (a) passa per $C = (0,4)$ e $B = (6,0)$ (ammissibili i punti sopra), quella di (b) per $E = (0,3)$ e $D = (4,0)$ (ammissibili i punti sotto): nel primo quadrante i due semipiani non si intersecano.
 >> Dimostrazione algebrica: per $\mathbf{x} \ge \mathbf{0}$ vale $2x_1 + 3x_2 \le \frac{9}{4}x_1 + 3x_2 = \frac{3}{4}(3x_1 + 4x_2) \le \frac{3}{4}\cdot 12 = 9 < 12$, quindi (b) e la non negatività rendono impossibile (a).
 
+>prima si risolvono le prime due equazioni, poi capisco se la parte ammissibile sta a dx o sx.
 ---
 ## Slide 32 – Programmazione Lineare Intera (MIP)
+
+- cosa cambia se aggiungo il vincolo di interezza?
 
 Un problema di programmazione lineare intera è un problema di programmazione lineare nel quale tutte le variabili decisionali sono vincolate ad assumere valori interi.
 
@@ -598,11 +605,12 @@ $$
 
 ![[RO03-s032-1.png|285]] ![[RO03-s032-2.png|202]]
 
-(a): ottimo PLI, ottimo PLC, arrotondamento PLC – (b): ottimo LP, ottimo MIP
+(a): ottimo PLI, ottimo PLC, arrotondamento PLC; (b): ottimo LP, ottimo MIP
 
 >> PLC = programmazione lineare continua (il rilassamento, senza vincoli di interezza), PLI = programmazione lineare intera. I punti neri sono le soluzioni intere. Le figure mostrano che risolvere il rilassamento continuo e **arrotondare** non funziona in generale: in (a) l'arrotondamento dell'ottimo PLC è un punto intero ammissibile ma diverso dall'ottimo PLI; in (b) il punto intero più vicino all'ottimo LP cade fuori dalla regione ammissibile e l'ottimo MIP si trova altrove. In generale arrotondare può dare soluzioni non ammissibili oppure ammissibili ma non ottime.
 >> Il rilassamento continuo resta però utile come bound: per un problema di minimo $z_{PLC} \le z_{PLI}$ (è la stessa idea di $LKP$ per il knapsack).
 
+>con il vincolo di interezza il problema passa da essere polinomiale da non polinomiale
 ---
 ## Slide 33 – Il problema della dieta
 
@@ -649,13 +657,15 @@ $$
 ## Slide 35 – Il problema della dieta (3)
 
 - Per formulare matematicamente il problema facciamo uso delle seguenti variabili decisionali:
+	- $x_{j}$: N. di porzioni per l'alimento
 	- $x_1$: N. porzioni di Fiocchi avena
 	- $x_2$: N. porzioni di Pollo
 	- $x_3$: N. porzioni di Uova
 	- $x_4$: N. porzioni di Latte
 	- $x_5$: N. porzioni di Torta ciliegie
 	- $x_6$: N. porzioni di Maiale e piselli
-
+	
+>modellando in porzioni si evita anche il problema dell'unità di misura, che in caso contrario sarebbe stato da uniformare
 ---
 ## Slide 36 – Il problema della dieta (4)
 
@@ -678,7 +688,8 @@ $$
 $$
 
 >> I tre vincoli $\ge$ sono i fabbisogni minimi giornalieri di energia (kcal), proteine (g) e calcio (mg); i sei vincoli $\le$ sono i limiti superiori della slide precedente (vincoli di tipo *bound* sulle singole variabili).
->> Risolvendo il rilassamento continuo si ottiene $\mathbf{x}^* = (4,\ 1.56,\ 0,\ 8,\ 0,\ 0)$ con $z^* \approx 6.60$: 4 porzioni di avena, 8 di latte e circa 1.56 di pollo, cioè il pollo serve solo a coprire l'energia mancante ($2000 - 400 - 1280 = 320$ kcal, $320/205 \approx 1.56$). Imponendo porzioni intere l'ottimo diventa $(4, 0, 2, 8, 0, 0)$ con $z = 6.80$.
+>> (non conosciamo ancora il metodo per risolverlo)
+>> Risolvendo  il rilassamento continuo si ottiene $\mathbf{x}^* = (4,\ 1.56,\ 0,\ 8,\ 0,\ 0)$ con $z^* \approx 6.60$: 4 porzioni di avena, 8 di latte e circa 1.56 di pollo, cioè il pollo serve solo a coprire l'energia mancante ($2000 - 400 - 1280 = 320$ kcal, $320/205 \approx 1.56$). Imponendo porzioni intere l'ottimo diventa $(4, 0, 2, 8, 0, 0)$ con $z = 6.80$.
 
 ---
 ## Slide 37 – Il problema della selezione dei fondi di investimento
@@ -811,6 +822,9 @@ $$
 	- *$n$ origini* con disponibilità pari a $a_i$ unità, $i = 1, \dots, n$;
 	- *$m$ destinazioni* con richiesta di $b_j$ unità, $j = 1, \dots, m$;
 	- il costo $c_{ij}$ per trasferire una unità della commodity (e.g., 1 Euro) dalla sorgente $i$ alla destinazione $j$.
+	
+>es di commodity: gas, petrolio, prodotto...
+>**"multi commodity"** -> il problema diventa molto difficile, nella realtà sono quasi tutti multi commodity
 
 ---
 ## Slide 46 – Il problema dei trasporti con costi fissi (3)
@@ -841,6 +855,9 @@ $$
 	- $x_{ij}$ rappresenta le unità trasferite da $i$ a $j$;
 	- $y_{ij}$ è una variabile binaria $0-1$ uguale a 1 se e solo se $x_{ij} > 0$;
 	- $M_{ij}$ è un numero sufficientemente grande, i.e., $M_{ij} = \min\{a_i, b_j\}$.
+	
+>vincoli dei trasporti rimangono inalterati, cambia che ce anche la componente di costo fisso oltre a quella di costo variabile. 
+>appena tolgono i vincoli di interezza diventa frazionaria.
 
 >> Il vincolo $x_{ij} \le M_{ij} y_{ij}$ (vincolo "big-M") realizza la logica: se $y_{ij} = 0$ allora $x_{ij} = 0$; se $y_{ij} = 1$ il vincolo non limita $x_{ij}$, perché comunque $x_{ij} \le a_i$ e $x_{ij} \le b_j$. L'implicazione inversa ($x_{ij} = 0 \Rightarrow y_{ij} = 0$) non è imposta da un vincolo ma dalla minimizzazione: se $f_{ij} > 0$ conviene porre $y_{ij} = 0$ ogni volta che è possibile.
 >> Scegliere $M_{ij}$ il più piccolo possibile (qui $\min\{a_i, b_j\}$) è importante: un $M$ enorme rende il rilassamento continuo molto debole (con $y_{ij} = x_{ij}/M_{ij}$ frazionario il costo fisso viene quasi azzerato).
@@ -875,8 +892,11 @@ $$
 \end{aligned}
 $$
 
+>1 riga dei vincoli -> il bilancio fra ciò che arriva e ciò che parte deve essere uguale a $b_{i}$ 
+
 - Se aggiungiamo un costo fisso $f_{ij}$ e le variabili $y_{ij}$ che indicano se l'arco $(i, j)$ è usato, otteniamo il modello matematico per il problema del network design.
-- **Modello matematico: problema del network design**
+- **Modello matematico: problema del ~~network design~~**
+	- aggiungendo il costo fisso cambia il tipo di problema!
 
 $$
 \begin{aligned}
@@ -898,17 +918,17 @@ $$
 	- assemblaggio e inserimento vetri (Rep. V).
 - I tempi di produzione (in minuti) in ciascun reparto sono:
 
-| | Rep. L | Rep. A | Rep. V |
-|---|:---:|:---:|:---:|
-| Infisso in alluminio | - | 10 | 8 |
-| Infisso in legno | 21 | - | 12 |
+|                      | Rep. L | Rep. A | Rep. V |
+| -------------------- | :----: | :----: | :----: |
+| Infisso in alluminio |   0    | 10 min | 8 min  |
+| Infisso in legno     | 21 min |   0    | 12 min |
 
 - Il guadagno netto (in Euro) per infisso è:
 
-| | |
-|---|:---:|
-| Infisso in alluminio | 60 |
-| Infisso in legno | 180 |
+|                      | soldi |
+| -------------------- | :---: |
+| Infisso in alluminio |  60   |
+| Infisso in legno     |  180  |
 
 ---
 ## Slide 52 – Mix ottimale di produzione (2)
@@ -941,9 +961,7 @@ $$
 \end{array}
 $$
 
-![[RO03-s053-1.png]]
-
-$\mathbf{x}^* = \left(\frac{7200}{7}, \frac{3600}{7}\right) = (1028.5,\ 514.2)$
+![[RO03-s053-1.png|478]]
 
 >> Le ore sono convertite in minuti (×60) perché i tempi di lavorazione sono in minuti. Nel grafico: la retta verticale è $x_1 \le 1440$ (Rep. A), quella orizzontale $x_2 \le 10800/21 = 3600/7 \approx 514.3$ (Rep. L), la retta obliqua $8x_1 + 12x_2 \le 14400$ (Rep. V, intercette $x_1 = 1800$ e $x_2 = 1200$); la freccia dall'origine indica la direzione di crescita dell'obiettivo, il gradiente $(60, 180)$.
 >> L'ottimo del rilassamento continuo è il vertice in cui si intersecano i vincoli di Rep. L e Rep. V: da $x_2 = 3600/7$ si ha $8x_1 = 14400 - 12 \cdot 3600/7 = 57600/7$, cioè $x_1 = 7200/7 \approx 1028.57$, con $z^* = 1080000/7 \approx 154285.71$ €. (I valori $1028.5$ e $514.2$ in slide sono troncati.)

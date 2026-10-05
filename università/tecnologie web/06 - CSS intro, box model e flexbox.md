@@ -80,18 +80,7 @@
 13. **Layout responsive con flexbox e riferimenti** (slide 97–103)
 	- [[#Slide 97 – Responsive flexbox|Esempio di layout responsive]]
 	- [[#Slide 101 – Riferimenti|Riferimenti e risorse]]
-
-
----
-## Slide 1 – CSS
-
-**CSS**
-
-Introduzione, sintassi e concetti di base
-Box Model e Flexbox
-
-*3 punti bonus* – *BONUS*
-
+	
 ---
 ## Slide 2 – Premessa
 
@@ -175,10 +164,6 @@ Selettore {
 https://codepen.io/editor/Silvia-Mirri/pen/01a0e7ea-3380-7516-99d0-56f13c69ceed
 
 ![[TW06-s009-1.png|500]]
-
-- **Selector**: Indica a quali elementi si applica la regola. → `h1`: In questo caso la regola si applica a tutti gli elementi `<h1>` della pagina.
-- **Property**: Indica la caratteristica da impostare. → `color`: La proprietà **color** imposta il colore del testo.
-- **Value**: Specifica il valore da assegnare. → `darkred`: Il valore **darkred** (indica un colore rosso scuro).
 
 ```css
 h1 { color : darkred ; }
@@ -300,11 +285,11 @@ Funzionano anche nel caso in cui l’attributo dichiarato non sia valido (codice
 - **,**: **raggruppamento di selettori** (selettori diversi possono usare lo stesso blocco se separati da virgola)
 
 >> Esempi:
->> ```css
->> a:hover { text-decoration: underline; }
->> input:focus { outline: 2px solid blue; }
->> h1, h2, h3 { font-family: Georgia, serif; }  /* raggruppamento */
->> ```
+```css
+a:hover { text-decoration: underline; }
+input:focus { outline: 2px solid blue; }
+h1, h2, h3 { font-family: Georgia, serif; }  /* raggruppamento */
+```
 >> Per i link si consiglia l'ordine `:link`, `:visited`, `:hover`, `:active` (regola mnemonica "LoVe HAte"): a parità di specificità vince l'ultima regola, quindi un ordine diverso può "nascondere" gli stati successivi.
 
 ---
@@ -415,7 +400,7 @@ Qual è la specificità del seguente selettore
 `aside#left p.first a img[src=‘logo.png’]`
 
 - [ ] 1114
-- [ ] 124
+- [x] 124
 - [ ] 34
 - [ ] 214
 
@@ -491,7 +476,7 @@ Qual è la specificità del seguente selettore
 ---
 ## Slide 29 – Box Model
 
-![[TW06-s029-1.png|500]]
+![[TW06-s029-1.png|346]]
 
 https://bit.ly/2ZCj5uX
 
@@ -546,7 +531,7 @@ p{margin: 5px } /*all*/
 
 - Nel caso in cui due elementi siano allineati **orizzontalmente**, la distanza tra i due è data dalla somma dei due margini (il margine destro del primo elemento e il margine sinistro del secondo).
 
-![[TW06-s033-1.png|300]]
+![[TW06-s033-1.png|209]]
 
 - Nel caso in cui due elementi siano allineati **verticalmente**, si ha il cosiddetto **margin collpasing**: la distanza tra i due è data dal valore massimo fra il margine inferiore del primo elemento e quello superiore del secondo.
 - **NB**: stesso comportamento che ritroviamo anche in Word.
@@ -623,14 +608,7 @@ border-right-width + margin-right
 - Permette di far rientrare le dimensioni di padding e bordi nel computo di `width` e `height` (`border-box`).
 - Valore di default: `content-box`
 
-![[TW06-s038-1.png|600]]
-
-- **box-sizing: content-box** – La larghezza e l'altezza specificate (width e height) si riferiscono **solo all'area del contenuto**.
-	- margin (20px), border (5px), padding (15px), contenuto (width: 300px) → 340px (300 + 15 + 15 + 5 + 5)
-	- Se imposti `width: 300px`, la larghezza totale dell'elemento sarà maggiore, perché si sommano padding, border e margin.
-- **box-sizing: border-box** – La larghezza e l'altezza specificate (width e height) si riferiscono **all'intera area dell'elemento, inclusi padding e border**.
-	- margin (20px), border (5px), padding (15px), contenuto (280px) → 300px
-	- Se imposti `width: 300px`, questa è la larghezza totale dell'elemento (contenuto + padding + border).
+![[TW06-s038-1.png|700]]
 
 >> Con `border-box` il contenuto si "restringe": $300 - 2\cdot15 - 2\cdot5 = 260\text{px}$ se padding e bordo valgono su entrambi i lati (la figura riporta 280px, valore che si otterrebbe sottraendo padding e bordo di un solo lato: $300 - 15 - 5$). Il margin resta comunque fuori dal computo in entrambi i casi.
 >> Molti fogli di stile iniziano con un reset globale:
@@ -646,7 +624,7 @@ border-right-width + margin-right
 **DOMANDA 2**:
 Quale di queste forme abbreviate non è equivalente alle altre:
 - [ ] `margin: 20px 10px 20px 10px;`
-- [ ] `margin: 20px 10px 10px;`
+- [x] `margin: 20px 10px 10px;`
 - [ ] `margin: 20px 10px;`
 - [ ] `margin: 20px 10px 20px;`
 
@@ -855,7 +833,7 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 ---
 ## Slide 56 – Box Model
 
-![[TW06-s056-1.png|500]]
+![[TW06-s056-1.png|470]]
 
 >> Richiamo del box model tradizionale (dall'interno verso l'esterno): *content area* (`width` × `height`), `padding`, `border`, `margin`. Con il valore predefinito `box-sizing: content-box`, la larghezza effettivamente occupata è
 >> $$L = \text{margin-left} + \text{border-left} + \text{padding-left} + \text{width} + \text{padding-right} + \text{border-right} + \text{margin-right}$$
@@ -972,8 +950,6 @@ body {
 
 ![[TW06-s064-1.png|500]]
 
-- Etichette della figura: *Row* (1 2 3 4 5 da sinistra a destra), *Row-reverse* (1 2 3 4 5 da destra a sinistra), *Column* (dall'alto in basso), *Column-reverse* (dal basso in alto).
-
 >> Con `column` e `column-reverse` il main axis diventa verticale. Da quel momento `justify-content` agisce in verticale e `align-items` in orizzontale.
 >> I valori `-reverse` cambiano solo l'ordine visivo, non quello nel codice HTML (quindi nemmeno l'ordine letto da screen reader e tastiera).
 
@@ -1059,8 +1035,6 @@ body {
 
 ![[TW06-s068-1.png|500]]
 
-- Etichette della figura (dall'alto): *Flex-start*, *Flex-end*, *Center*, *Space-between*, *Space-around*, *Space-evenly*.
-
 ---
 ## Slide 69 – `justify-content: flex-end`
 
@@ -1140,8 +1114,6 @@ body {
 
 ![[TW06-s072-1.png|500]]
 
-- Etichette della figura: *Flex-start*, *Flex-end*, *Center*, *Baseline*, *Stretch*.
-
 ---
 ## Slide 73 – `align-items: center`
 
@@ -1218,8 +1190,6 @@ body {
 
 ![[TW06-s076-1.png|500]]
 
-- Etichette della figura: *nowrap* (8 item su una sola riga), *wrap* (1–6 sulla prima riga, 7–8 sulla seconda), *Wrap-reverse* (7–8 sulla riga superiore, 1–6 su quella inferiore).
-
 ---
 ## Slide 77 – `flex_wrap_06.html`
 
@@ -1294,8 +1264,6 @@ body {
 ## Slide 79 – `align-content`
 
 ![[TW06-s079-1.png|600]]
-
-Valori mostrati: Flex-start, Flex-end, Center, Space-between, Space-around, Stretch.
 
 >> `align-content` distribuisce lo spazio tra le **righe** (linee di flex item) lungo l'asse trasversale: ha effetto solo se il container è multi-riga, cioè con `flex-wrap: wrap` e più righe effettivamente presenti.
 >> Non va confuso con `align-items`, che allinea i singoli item **all'interno** della propria riga.
@@ -1554,59 +1522,6 @@ gap: 20px 30px;
 
 ![[TW06-s088-1.png|700]]
 
-**Esempio di gap**: Con **gap: 20px** viene inserito uno spazio di 20 pixel tra ogni flex item.
-
-```css
-.container {
-  display: flex;
-  gap: 20px;
-}
-```
-
-**1 Confronto: gap vs margin**
-
-**Con gap** – *Nessuno spazio ai bordi esterni*
-
-```css
-.container {
-  display: flex;
-  gap: 20px;
-}
-```
-
-**Con margin** – *Spazio anche ai bordi esterni (dovuto al margin degli item)*
-
-```css
-.item {
-  margin: 10px;
-}
-.container {
-  display: flex;
-}
-```
-
-**2 Confronto: gap senza wrap vs gap con wrap**
-
-**Senza wrap (impostazione predefinita)**
-
-```css
-.container {
-  display: flex;
-  gap: 20px;
-  /* flex-wrap: nowrap; */
-}
-```
-
-**Con wrap**
-
-```css
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-```
-
 >> Nel confronto con i margin: con `margin: 10px` su ogni item tra due item adiacenti si ottengono comunque $10 + 10 = 20$ px (i margini orizzontali non collassano), ma compaiono anche 10 px ai bordi esterni. Con `wrap`, il gap si applica anche tra le righe (spazio verticale di 20 px).
 
 ---
@@ -1818,7 +1733,7 @@ Quale affermazione è corretta?
     gap: 20px;}
 ```
 
-- [ ] I flex item sono centrati lungo l'asse principale e sono separati tra loro da 20px
+- [x] I flex item sono centrati lungo l'asse principale e sono separati tra loro da 20px
 - [ ] Ogni flex item ha un margine di 20px su tutti i lati
 - [ ] I flex item sono centrati lungo l'asse trasversale e separati da 20px
 - [ ] I flex item vanno automaticamente a capo quando non c'è spazio sufficiente
@@ -1844,7 +1759,6 @@ Quale affermazione è corretta?
 
 ![[TW06-s098-1.png|600]]
 
-Etichette: Header, Nav, Aside, Main, Footer.
 
 >> Senza CSS gli elementi semantici sono blocchi che si impilano verticalmente nell'ordine del sorgente, ciascuno a tutta larghezza (normal flow).
 
@@ -1894,7 +1808,7 @@ Etichette: Header, Nav, Aside, Main, Footer.
 >> - Oggi CSS evolve per **moduli indipendenti** raccolti in snapshot, non per versioni monolitiche.
 >>
 >> **Selettori**
->> - Universale `*`, di tipo `E`, combinatori `E F` (discendente), `E>F` (figlio), `E+F`, `E~F` (fratelli).
+>> - Universale `*`, di tipo `E`, combinatori `E F` (F discendente di E, a qualsiasi profondità), `E>F` (F figlio diretto di E), `E+F` (F fratello **immediatamente successivo** a E), `E~F` (F **qualsiasi** fratello successivo a E).
 >> - Attributo `E[foo]`, `E[foo="bar"]`; classe `.bar`; id `#bar` (unico nella pagina).
 >> - Pseudo-classi (`:hover`, `:focus`, `:visited`, …), pseudo-elementi (`::before`, `::after`, `::first-line`, `::first-letter`); la virgola raggruppa selettori.
 >>
