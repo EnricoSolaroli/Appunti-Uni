@@ -689,11 +689,19 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 ![[ISW3-s047-1.png|550]]
 
+> una ternaria con molteplicità al massimo 1 è equivalente ad avere due binare. Quindi quando disegni una ternaria la molteplicità deve sempre essere * per essere valida.
+> concetto di moltiplicità di 'andata' e di 'ritorno'-> partendo da Aula quante accoppiate lezione corrispondono rispetto le altre n-1 classi oppure al contrario?
+> ![[Recording 20261006092831.m4a]]
+
+>i rami possono essere tutti a * oppure ci possono essere anche degli 1, significa che ho dei vincoli da rispettare
+
 >> Il rombo indica l'associazione n-aria. Letta l'associazione: fissati un'aula e un giorno/ora
 >> si ha esattamente 1 corso; fissati corso e giorno/ora si ha esattamente 1 aula; fissati
 >> aula e corso si hanno molti giorni/ore. È esattamente la semantica di una tabella con
 >> chiave composta.
 
+![[Screenshot 2026-10-06 at 10.14.06.png|603]]
+>soluzione corretta quella in basso a sx
 ---
 ## Slide 48 – Elementi derivati
 
@@ -703,7 +711,11 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 ![[ISW3-s048-1.png|600]]
 
-Esempi: attributo derivato `/age` in `Person` con nota `{age = currentDate – birthDate}`; associazione derivata `/worksForCompany` con vincolo `{Person.employer = Person.department.employer}`.
+>lo slash significa derivazione: qualcosa che è ottenibile da qualcos'altro.
+>Quale è il vantaggio? lo devo ricalcolare ogni anno non va materializzato
+
+>esempio a dx: associazione derivata, se so che la query che farò più spesso sarà verificare quali persone lavorano per l'azienda già a livello di progettazione posso rappresentarla.
+>quando vengono aggiornati tutti i riferimenti? quando aggiungo o tolgo una persona ad un reparto, che rispetto al paradigma ad oggetti viene fatta con un operazione che se fatta bene viene mantenuta la consistenza mantenendo il principio di incapsulamentoa.
 
 >> Un elemento derivato è ridondanza *dichiarata*: si documenta che il dato esiste nel
 >> modello ma che la sua unica fonte di verità è la formula. In implementazione diventa
@@ -712,14 +724,10 @@ Esempi: attributo derivato `/age` in `Person` con nota `{age = currentDate – b
 ---
 ## Slide 49 – Aggregazione
 
-- E' un caso speciale di associazione con semantica *part-of*
+- E' un caso speciale di associazione con semantica **part-of**
 	- Sia il tutto che le parti esistono indipendentemente
 
 ![[ISW3-s049-1.png|600]]
-
-Esempi: `Squadra` 1 aggrega `Giocatore` (10), `Portiere` (1), `Riserva` (\*); `SequenzaVideo * ◇— * Scena {ordered}`.
-
-**connessione per riferimento**
 
 >> "Connessione per riferimento" significa che il tutto possiede solo un puntatore alle parti:
 >> distruggere la squadra non distrugge i giocatori. È l'analogo di un campo che contiene
@@ -734,13 +742,14 @@ Esempi: `Squadra` 1 aggrega `Giocatore` (10), `Portiere` (1), `Riserva` (\*); `S
 
 ![[ISW3-s050-1.png|650]]
 
-Esempi: `Poligono 1 ◆— contiene —3..* Punto {ordered}`, con nota "Questo è un commento associato alla classe Poligono."; `EDIFICIO 1 ◆— 1..* STANZA`; scomposizione di `Finestra` in `BarraTitolo` (che contiene `Etichetta` e `Pulsante Chiusura`), `Pannello` (1..\*) e `Bordo`; composizione del database `school.db` nelle tabelle `course`, `department`, `instructor`, `school`, `student`.
+>es: le tabelle non esistono senza database: se elimino il database elimino anche le tabelle, però posso avere un database vuoto senza tabelle. Quindi lo modello con un rombo nero                    -> composizione.
 
-**connessione per valore**
+>es della finestra: una finestra è costituita esattamente da una 'BarraTitolo', uno o più 'Panelli' e esattamente 1 'Bordo', a livello grafico quindi significa composizione
 
->> Regola pratica per distinguere: se cancellando il tutto devo per forza cancellare le parti,
+
+>> Regola pratica per distinguere: ~~se cancellando il tutto devo per forza cancellare le parti,
 >> è composizione (rombo pieno); se le parti sopravvivono o possono essere condivise,
->> è aggregazione (rombo vuoto). Il vincolo "esattamente un tutto" implica che la
+>> è aggregazione (rombo vuoto)~~. Il vincolo "esattamente un tutto" implica che la
 >> molteplicità dal lato del contenitore è sempre 1 (o 0..1).
 
 ---
@@ -750,21 +759,20 @@ Esempi: `Poligono 1 ◆— contiene —3..* Punto {ordered}`, con nota "Questo �
 
 ![[ISW3-s051-1.png|650]]
 
-`Figura {abstract}` con attributi `posizione`, `colore` e operazione `display {abstract}`; sottoclassi `Arco` (`raggio`, `angoloIniziale`, `angoloFinale`, `display`), `Segmento` (`estremo`, `spessore`, `display`), `Rettangolo` (`vertice`, `tessitura`, `display`). Le due notazioni mostrate (frecce separate oppure frecce raggruppate in un unico tronco) sono equivalenti.
-
 ---
 ## Slide 52 – Generalizzazione
 
-- E' supportata l'**ereditarietà multipla**
+- E' supportata l'**ereditarietà multipla** -> una sottoclasse può ereditare contemporaneamente più superclassi.
 - Possono essere indicati **insiemi di generalizzazione** e **vincoli** (*overlapping*, *disjoint*, *complete*, *incomplete*)
 
 ![[ISW3-s052-1.png|600]]
 
-`Veicolo` è specializzato secondo due insiemi di generalizzazione: `propulsione {overlapping}` → `VeicoloAVento`, `VeicoloAMotore`; `utilizzo {overlapping}` → `VeicoloDiTerra`, `VeicoloDiAcqua`. `Camion` eredita da `VeicoloAMotore` e `VeicoloDiTerra`; `Barca` eredita da `VeicoloAVento`, `VeicoloAMotore` e `VeicoloDiAcqua`.
+> 'propulsioni' e 'utilizzo' -> divido la generalizzazione perché specificano due aspetti diversi. Le parentesi graffe '{}' indicano che sto rappresentando un vincolo.
+> se nelle parentesi graffe non indichi niente implica: overlapping e incomplete.
 
 >> I quattro vincoli vanno a coppie su due dimensioni indipendenti:
->> *disjoint/overlapping* dice se un oggetto può appartenere a più sottoclassi
->> dello stesso insieme; *complete/incomplete* dice se le sottoclassi elencate
+>> **disjoint/overlapping** dice se un oggetto può appartenere a più sottoclassi
+>> dello stesso insieme; **complete/incomplete** dice se le sottoclassi elencate
 >> esauriscono tutti i casi possibili della superclasse.
 
 ---
@@ -775,24 +783,27 @@ Esempi: `Poligono 1 ◆— contiene —3..* Punto {ordered}`, con nota "Questo �
 
 ![[ISW3-s053-1.png|350]]
 
-`Figura {abstract}` con sottoclassi `Ellisse` e `Poligono`.
+>obbiettivo dell'utilizzo della classe stratta è l'utilizzo del ~~polimorfismo~~ per avere riusabilità ed estendibilità.
 
 ---
 ## Slide 54 – Un esempio
 
 ![[ISW3-s054-1.png|600]]
 
-Elementi principali: `Dipartimento 1 — afferisceA — * Docente`; `Corso * — insegna — 1 Docente`; `Docente * — di — 1 SSD`; associazione riflessiva `mutuatoDa` su `Corso` (0..1 / 0..1); `Corso 1..* ◆— 1 CorsoDiStudio`; `CorsoDiStudio 1..* ◇— 1..* Facoltà`; `Facoltà 1 — incardinatoIn — * Docente`; generalizzazione `{disjoint}` di `Docente` in `ProfOrdinario`, `ProfAssociato`, `Ricercatore`.
+>docente può appartenere a solo un dipartimento e può essere o un prof ordinario o un prof associato o un ricercatore o anche nessuna dei tre (il vincolo è incomplete). Un docente è di un SSD, può insegnare in più corsi. ogni facoltà è costituita da 1 o più corso di studio e un corso di studio può appartenere a 1 o più facoltà. corso di studio è composto da uno o più corsi ma un corso appartiene solo ad un corso di studio. un corso può essere muttuato da un altro corso. un docente è incardinato in una facoltà.
+![[Recording 20261006114152.m4a]]
+
 
 ---
 ## Slide 55 – Powertyping
 
 - Un ***powertype*** è una (meta)classe le cui istanze sono classi che specializzano un'altra classe
+![[Screenshot 2026-10-06 at 11.56.22.png|320]]![[ISW3-s055-1.png|312]]
+>(in pc c'è un attributo S.O.)
+>esempio del prof a sx, due casi in cui o due necessità diverse, nel caso in cui ho bisogno di modellare entrambe le necessità nella stessa soluzione devo usare il **powertype**
 
-![[ISW3-s055-1.png|550]]
-
-*in UML 2*: `Articolo * — di — 1 TipoArticolo`, con l'insieme di generalizzazione `:TipoArticolo` che raggruppa le sottoclassi `HiFi`, `Telefonia`, `PC`.
-*in UML 1.4*: la stessa struttura con lo stereotipo `<<powertype>>` sulla classe `TipoArticolo`.
+>si usa raramente, esprime una cosa molto specifica e particolare.
+>es: in questo esempio lo sconto dipende dal tipo dell'articolo quindi lo indichiamo come attributo di 'tipo articolo'.  
 
 >> Il punto chiave è il salto di livello: `HiFi`, `Telefonia`, `PC` sono contemporaneamente
 >> *sottoclassi* di `Articolo` e *istanze* di `TipoArticolo`. Il powertype serve quando la

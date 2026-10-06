@@ -769,6 +769,8 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 
 >> Il margin collapse "tra padre e primo figlio": il `margin-top` dell'`<h2>` dentro `article` (nel flusso) "esce" dal contenitore e sposta in basso tutto l'article; negli elementi float questo non accade perché un float crea un nuovo contesto di formattazione (BFC) che contiene i margini dei figli.
 
+>> **Continua in 07** → [[07 - CSS testo, colori e responsiveness#Slide 21 – Ancora sui layout|nota 07, slide 21 e seguenti: perché il layout fluido non basta e come renderlo responsive con le media query]]
+
 ---
 ## Slide 51 – Clear
 

@@ -968,7 +968,7 @@ $$
 >> La soluzione è frazionaria, quindi non rispetta il vincolo di interezza: arrotondando per difetto si ottiene $(1028, 514)$, ammissibile con $z = 154200$, ma l'ottimo intero è $(1029, 514)$ con $z = 154260$ (infatti $8 \cdot 1029 + 12 \cdot 514 = 14400$ esatto). Qui arrotondare è quasi ottimo perché i valori sono grandi, ma in generale l'arrotondamento può essere molto lontano dall'ottimo intero o addirittura non ammissibile.
 
 ---
-## Slide 54 – Manipolazioni di un problema
+## Slide 54-55-56 – Manipolazioni di un problema
 
 - **Minimizzazione e Massimizzazione**
   Un problema di massimo può essere convertito in un problema di minimo e viceversa:
@@ -978,16 +978,14 @@ $$
 $$
 
 - **Inversione di una disequazione**
-  Una disequazione del tipo "$\ge$" si converte in una disequazione del tipo "$\le$" moltiplicando entrambe i membri per $-1$:
+  Una disequazione del tipo "$\ge$" si converte in una disequazione del tipo "$\le$" ~~moltiplicando entrambe i membri per $-1$~~:
 
 $$
 \sum_{j=1}^{n} a_{ij} x_j \ge b_i \implies \sum_{j=1}^{n} -a_{ij} x_j \le -b_i
 $$
+>bisogna stare attenti a fare operazioni lecite!
 
 >> Nella prima trasformazione cambia solo il valore ottimo (di segno), non la soluzione ottima: il punto $\mathbf{x}^*$ che massimizza $\mathbf{c}\mathbf{x}$ è lo stesso che minimizza $-\mathbf{c}\mathbf{x}$. Esempio: $\max\{x : 0 \le x \le 3\} = 3$ e $-\min\{-x : 0 \le x \le 3\} = -(-3) = 3$.
-
----
-## Slide 55 – Manipolazioni di un problema (2)
 
 - **Equazioni in disequazioni**
   Ad una equazione corrispondono 2 disequazioni:
@@ -1001,7 +999,7 @@ $$
 $$
 
 - **Disequazioni in equazioni**
-  Una disequazione può essere trasformata in una equazione utilizzando una *variabile di scarto* non-negativa:
+  Una disequazione può essere trasformata in una equazione utilizzando una ~~*variabile di scarto* non-negativa~~ (compensano quello che ho nella parte a sx in più rispetto a quello che ho nel termine noto, vincolo: devono essere $\geq$ 0):
 
 $$
 \sum_{j=1}^{n} a_{ij} x_j \ge b_i \implies \sum_{j=1}^{n} a_{ij} x_j - x_{n+i} = b_i
@@ -1011,11 +1009,9 @@ $$
 \sum_{j=1}^{n} a_{ij} x_j \le b_i \implies \sum_{j=1}^{n} a_{ij} x_j + x_{n+i} = b_i
 $$
 
->> Si introduce una nuova variabile $x_{n+i} \ge 0$ per ogni vincolo $i$ (indice $n+i$ per non confondersi con le $n$ variabili originali) e con coefficiente nullo nella funzione obiettivo. Il suo valore misura "quanto manca" al vincolo per essere soddisfatto all'uguaglianza: $x_{n+i} = 0$ significa vincolo *attivo* (saturo). Nel caso "$\ge$" si parla anche di variabile di *surplus*.
+>> Si introduce una nuova variabile $x_{n+i} \ge 0$ per ogni vincolo $i$ (indice $n+i$ per non confondersi con le $n$ variabili originali) e con coefficiente nullo nella funzione obiettivo. Il suo valore misura "quanto manca" al vincolo per essere soddisfatto all'uguaglianza: $x_{n+i} = 0$ significa vincolo *attivo* (saturo). Nel caso "$\ge$" si parla anche di variabile di *surplus*. 
+>> modo diverso per vederla: "aggiungi delle colonne in coda al problema", se il vincolo è $\leq$ il segno cambia.
 >> Esempio: $2x_1 + 3x_2 \le 12$ diventa $2x_1 + 3x_2 + x_3 = 12$, $x_3 \ge 0$; nel punto $(3, 1)$ si ha $x_3 = 12 - 9 = 3$.
-
----
-## Slide 56 – Manipolazioni di un problema (3)
 
 - **Non negatività delle variabili**
   Se nel modello del problema una variabile $x_j$ può assumere qualsiasi valore, allora può essere sostituita con 2 variabili $x_j^+$ e $x_j^-$ non-negative:
@@ -1040,7 +1036,7 @@ z = \min\ & \sum_{j=1}^{n} c_j x_j \\
 \end{aligned}
 $$
 
-  Utile per illustrare le relazioni di dualità.
+  Utile per illustrare le relazioni di dualità -> tutte disequazioni.
 
 - **Forma "standard"**
 
@@ -1052,13 +1048,13 @@ z = \min\ & \sum_{j=1}^{n} c_j x_j \\
 \end{aligned}
 $$
 
-  Necessaria per risolvere il problema con algoritmi come il simplesso.
+  Necessaria per risolvere il problema con algoritmi come il simplesso -> tutte equazioni.
 
->> In forma matriciale: canonica $\min\{\mathbf{c}\mathbf{x} : \mathbf{A}\mathbf{x} \ge \mathbf{b},\ \mathbf{x} \ge \mathbf{0}\}$, standard $\min\{\mathbf{c}\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b},\ \mathbf{x} \ge \mathbf{0}\}$. Grazie alle manipolazioni delle slide precedenti **qualunque** problema di PL si può portare in entrambe le forme.
+>> In forma matriciale: canonica $\min\{\mathbf{c}\mathbf{x} : \mathbf{A}\mathbf{x} \ge \mathbf{b},\ \mathbf{x} \ge \mathbf{0}\}$, standard $\min\{\mathbf{c}\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b},\ \mathbf{x} \ge \mathbf{0}\}$. ~~Grazie alle manipolazioni delle slide precedenti **qualunque** problema di PL si può portare in entrambe le forme.~~
 >> Esempio: $\max\{3x_1 + 2x_2 : x_1 + x_2 \le 4,\ x_1 \ge 1,\ x_1 \ge 0,\ x_2 \text{ libera}\}$ in forma standard diventa $\min\{-3x_1 - 2x_2^+ + 2x_2^- : x_1 + x_2^+ - x_2^- + x_3 = 4,\ x_1 - x_4 = 1,\ x_1, x_2^+, x_2^-, x_3, x_4 \ge 0\}$ (e il valore ottimo va cambiato di segno).
 
 ---
-## Slide 58 – Definizione di Soluzione Base Ammissibile
+## Slide 58-59 – Definizione di Soluzione Base Ammissibile
 
 - Si consideri il seguente problema:
 
@@ -1072,8 +1068,8 @@ $$
 
   dove $\mathbf{A} \in \mathbb{R}^{m,n}$, $\mathbf{c}, \mathbf{x} \in \mathbb{R}^n$, e $\mathbf{b} \in \mathbb{R}^m$.
 
-- Il problema deve essere definito necessariamente in forma *standard*. Per cui se eventualmente alcuni vincoli sono disequazioni devono essere trasformati in equazioni.
-- Si suppone per semplicità che:
+- Il problema deve essere definito necessariamente in ~~forma *standard*~~. Per cui se eventualmente alcuni vincoli sono disequazioni devono essere trasformati in equazioni.
+- Si suppone per semplicità che (ipotesi che non mi toglie generalità grazie al modo in cui il metodo del simplesso funziona):
 
 $$
 \mathit{Rango}(\mathbf{A}, \mathbf{b}) = \mathit{Rango}(\mathbf{A}) = m
@@ -1082,8 +1078,8 @@ $$
 >> $\text{Rango}(\mathbf{A},\mathbf{b}) = \text{Rango}(\mathbf{A})$ è la condizione di Rouché–Capelli: il sistema $\mathbf{A}\mathbf{x} = \mathbf{b}$ ha soluzioni. $\text{Rango}(\mathbf{A}) = m$ significa che le $m$ righe sono linearmente indipendenti, cioè non ci sono vincoli ridondanti (implica $m \le n$). Non è una vera restrizione: i vincoli ridondanti si possono eliminare, e se si parte da vincoli $\le$ con variabili di scarto la matrice contiene l'identità $\mathbf{I}_m$ e ha automaticamente rango $m$.
 >> Qui $\mathbf{c}$ è un vettore riga, per cui $\mathbf{c}\mathbf{x} = \sum_j c_j x_j$ (altrove si scrive $\mathbf{c}^T\mathbf{x}$).
 
----
-## Slide 59 – Definizione di Soluzione Base Ammissibile (2)
+>il gradiente è c, noi per minimizzare dobbiamo andare in direzione -c.
+>N.B: a parità di vincoli posso avere funzioni obbiettivo diverse!
 
 - La matrice $\mathbf{A}$ può essere riscritta per comodità nella forma
 
