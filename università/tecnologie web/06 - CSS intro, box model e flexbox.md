@@ -5,7 +5,6 @@
 ## Indice
 
 1. **Introduzione, origine e versioni del CSS** (slide 1–8)
-	- [[#Slide 1 – CSS|Presentazione della lezione]]
 	- [[#Slide 3 – L’origine|Origine: separazione contenuto/presentazione, cascata]]
 	- [[#Slide 4 – Vantaggi|Vantaggi (CSS Zen Garden, dispositivi diversi)]]
 	- [[#Slide 6 – Versioni|Versioni: Level 1, 2, 2.1 e moduli/snapshot]]

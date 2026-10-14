@@ -28,12 +28,12 @@
 	- [[#Slide 18 – Cosa e come modellare|Processo incrementale e aspetti statici, dinamici, funzionali]]
 6. **I metodi di analisi** (slide 19–26)
 	- [[#Slide 19 – Metodi di analisi|I tre approcci: oggetti, funzioni, stati]]
-	- [[#Slide 20 – Analisi orientata agli oggetti|Oggetti e interrelazioni, stabilità delle strutture]]
-	- [[#Slide 22 – Analisi orientata alle funzioni|Flussi informativi, processi e gerarchia funzionale]]
-	- [[#Slide 24 – Analisi orientata agli stati|Stati operativi e transizioni di stato]]
+	- [[#Slide 20 – Analisi orientata agli oggetti (statica)|Oggetti e interrelazioni, stabilità delle strutture]]
+	- [[#Slide 22 – Analisi orientata alle funzioni (funzionale)|Flussi informativi, processi e gerarchia funzionale]]
+	- [[#Slide 24 – Analisi orientata agli stati (modellazione dinamica)|Stati operativi e transizioni di stato]]
 	- [[#Slide 26 – Uso dei metodi d'analisi|Integrazione dei metodi secondo la tipologia di applicazione]]
 7. **L'astrazione e i suoi meccanismi** (slide 27–32)
-	- [[#Slide 27 – Il ruolo dell'astrazione|Livelli di dettaglio per oggetti, funzioni e stati]]
+	- [[#Slide 27 – Il ruolo dell'==astrazione==|Livelli di dettaglio per oggetti, funzioni e stati]]
 	- [[#Slide 28 – Meccanismi di astrazione|I quattro meccanismi di astrazione]]
 	- [[#Slide 29 – Classificazione|Classificazione (istanza-di)]]
 	- [[#Slide 30 – Generalizzazione|Generalizzazione (è-un) e superclassi]]
@@ -42,17 +42,17 @@
 8. **Linguaggi per la specifica dei requisiti** (slide 33)
 	- [[#Slide 33 – Linguaggi per la specifica dei requisiti|Linguaggi informali, semiformali e formali]]
 9. **La progettazione** (slide 34–35)
-	- [[#Slide 34 – 4. Progettazione|Dal "che cosa" al "come": ponte tra specifica e codifica]]
+	- [[#Slide 34 – 4. <u>Progettazione</u>|Dal "che cosa" al "come": ponte tra specifica e codifica]]
 	- [[#Slide 35 – Obiettivi della progettazione|Obiettivi di qualità e peso della manutenzione]]
 10. **Principi di progettazione** (slide 36–43)
 	- [[#Slide 36 – Principi di progettazione|Dai principi agli strumenti; architettura del software]]
-	- [[#Slide 37 – Principi di progettazione: formalità|Formalità]]
-	- [[#Slide 38 – Principi di progettazione: anticipazione dei cambiamenti|Anticipazione dei cambiamenti]]
-	- [[#Slide 39 – Principi di progettazione: separazione degli argomenti|Separazione degli argomenti]]
-	- [[#Slide 40 – Principi di progettazione: modularità|Modularità: benefici e linee guida]]
+	- [[#Slide 37 – Principi di progettazione: <u>formalità</u>|Formalità]]
+	- [[#Slide 38 – Principi di progettazione: <u>anticipazione dei cambiamenti</u>|Anticipazione dei cambiamenti]]
+	- [[#Slide 39 – Principi di progettazione: <u>separazione degli argomenti</u>|Separazione degli argomenti]]
+	- [[#Slide 40 – Principi di progettazione: <u>modularità</u>|Modularità: benefici e linee guida]]
 	- [[#Slide 41 – Principi di progettazione: modularità|Interfacce e information hiding]]
-	- [[#Slide 42 – Principi di progettazione: astrazione|Astrazione]]
-	- [[#Slide 43 – Principi di progettazione: generalità|Generalità e software off-the-shelf]]
+	- [[#Slide 42 – Principi di progettazione: <u>astrazione</u>|Astrazione]]
+	- [[#Slide 43 – Principi di progettazione: <u>generalità</u>|Generalità e software off-the-shelf]]
 
 
 ---

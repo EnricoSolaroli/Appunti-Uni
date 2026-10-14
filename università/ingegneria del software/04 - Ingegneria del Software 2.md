@@ -458,11 +458,11 @@ dove e ed n sono rispettivamente archi e nodi del grafo nel suo insieme, p è il
 
 2. *Determinazione della classe del software*: i sw sono suddivisi in tre categorie con caratteristiche di difficoltà crescente. Per ogni categoria è stata sviluppata una diversa formula per il calcolo del costo, espresso in mesi uomo:
 
-$$\begin{aligned}
-\textit{Organic} \quad & M_{Nom} = 3.2 \times KDSI^{1.05}\\
-\textit{Semi-detached} \quad & M_{Nom} = 3.0 \times KDSI^{1.12}\\
-\textit{Embedded} \quad & M_{Nom} = 2.8 \times KDSI^{1.2}
-\end{aligned}$$
+$$\begin{array}{ll}
+\textit{Organic} \qquad & M_{Nom} = 3.2 \times KDSI^{1.05}\\
+\textit{Semi-detached} \qquad & M_{Nom} = 3.0 \times KDSI^{1.12}\\
+\textit{Embedded} \qquad & M_{Nom} = 2.8 \times KDSI^{1.2}
+\end{array}$$
 
 L'appartenenza ad uno dei tre profili viene determinata sulla base dei seguenti parametri:
 

@@ -5,7 +5,7 @@
 ## Indice
 
 1. **Introduzione a UML** (slide 2–6)
-	- [[#Slide 2 – 1. Introduzione|Nascita di UML, i tres amigos e lo standard OMG]]
+	- [[#Slide 2 –  Introduzione|Nascita di UML, i tres amigos e lo standard OMG]]
 	- [[#Slide 3 – UML …|È un linguaggio, non un metodo: notazione e metamodello]]
 	- [[#Slide 4 – Generalità|Fasi dello sviluppo coperte e ruolo dei diagrammi]]
 	- [[#Slide 5 – Diagramma vs. modello|Differenza tra modello e diagramma]]
@@ -15,7 +15,7 @@
 	- [[#Slide 8 – Entità|Strutture, comportamenti, raggruppamenti, informazioni]]
 	- [[#Slide 9 – Relazioni|Le sette relazioni e la loro notazione grafica]]
 	- [[#Slide 10 – Diagrammi|Elenco dei diagrammi statici e dinamici]]
-	- [[#Slide 11 – Diagrammi (diagramma delle classi)|Descrizione uno a uno dei singoli diagrammi (slide 11–20)]]
+	- [[#Slide 11-20 – Diagrammi (descrizione generale)|Descrizione uno a uno dei singoli diagrammi (slide 11–20)]]
 3. **Meccanismi comuni e architettura** (slide 21–25)
 	- [[#Slide 21 – Specifiche|Le specifiche: la semantica testuale di un elemento]]
 	- [[#Slide 22 – Ornamenti|Ornamenti, visibilità e membri di classe]]
@@ -34,9 +34,9 @@
 	- [[#Slide 35 – Specifiche del caso d'uso|Come si documenta un caso d'uso e template]]
 	- [[#Slide 37 – Realizzare i casi d'uso|Collaborazioni che realizzano un caso d'uso]]
 5. **Diagrammi delle classi: notazione e relazioni** (slide 38–61)
-	- [[#Slide 38 – Diagrammi delle classi|Classe, attributo, operazione]]
-	- [[#Slide 39 – Notazione|Attributi: visibilità, tipo, molteplicità, ambito]]
-	- [[#Slide 40 – Notazione|Operazioni, signature, direzione dei parametri]]
+	- [[#Slide 38 –  4 - Diagrammi delle classi|Classe, attributo, operazione]]
+	- [[#Slide 39 – Notazione (Attributi)|Attributi: visibilità, tipo, molteplicità, ambito]]
+	- [[#Slide 40 – Notazione (Operazioni)|Operazioni, signature, direzione dei parametri]]
 	- [[#Slide 41 – Diversi livelli di astrazione|Rappresentare la stessa classe a dettaglio variabile]]
 	- [[#Slide 42 – Le relazioni tra classi|Elenco e notazione grafica delle relazioni]]
 	- [[#Slide 43 – Associazione|Associazioni e molteplicità]]
@@ -66,7 +66,7 @@
 	- [[#Slide 75 – Identificare le associazioni di progettazione|Navigabilità e trasformazione delle associazioni]]
 	- [[#Slide 78 – Identificare le associazioni di progettazione|Reificazione delle classi associative]]
 7. **Diagrammi degli oggetti e dei package** (slide 79–84)
-	- [[#Slide 79 – 5. Diagrammi degli oggetti|Oggetti, oggetti composti, forme abbreviate]]
+	- [[#Slide 79 – Diagrammi degli oggetti|Oggetti, oggetti composti, forme abbreviate]]
 	- [[#Slide 80 – Diagrammi degli oggetti|Istanza di un diagramma delle classi]]
 	- [[#Slide 81 – 6. Diagrammi dei package|Package, contenimento e spazi dei nomi]]
 	- [[#Slide 82 – Diagrammi dei package|I quattro tipi di dipendenza tra package]]
@@ -797,31 +797,38 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 ---
 ## Slide 55 – Powertyping
 
-- Un ***powertype*** è una (meta)classe le cui istanze sono classi che specializzano un'altra classe
+- Un ***powertype*** è una ~~(meta)classe~~ le cui istanze sono classi che specializzano un'altra classe
+- metaclasse -> classe in cui le istanze sono altre classi e non oggetti.
 ![[Screenshot 2026-10-06 at 11.56.22.png|320]]![[ISW3-s055-1.png|312]]
 >(in pc c'è un attributo S.O.)
->esempio del prof a sx, due casi in cui o due necessità diverse, nel caso in cui ho bisogno di modellare entrambe le necessità nella stessa soluzione devo usare il **powertype**
+>esempio del prof a sx, due casi in cui o due necessità diverse, nel caso in cui ho bisogno di modellare entrambe le necessità nella stessa soluzione devo usare il **powertype**, perché senza un powertype e collegando semplicemente le due soluzioni della foto di sx non ho nessun vincolo che mi tieni ... **da completare** 
 
->si usa raramente, esprime una cosa molto specifica e particolare.
+>si usa raramente, esprime una cosa molto specifica e particolare -> quando mi chiedono di creare sia sottoclassi sia i tipi.
 >es: in questo esempio lo sconto dipende dal tipo dell'articolo quindi lo indichiamo come attributo di 'tipo articolo'.  
 
 >> Il punto chiave è il salto di livello: `HiFi`, `Telefonia`, `PC` sono contemporaneamente
 >> *sottoclassi* di `Articolo` e *istanze* di `TipoArticolo`. Il powertype serve quando la
 >> classificazione stessa deve essere un dato manipolabile a runtime (per esempio per
 >> aggiungere una nuova categoria di articoli senza ricompilare).
+![[Recording 20261009142156.m4a]]
+
 
 ---
 ## Slide 56 – Dipendenza
 
-- In generale, *A dipende da B quando una variazione in B può comportare una variazione in A*
+- def(**DIpendenza**):  ~~*A dipende da B quando una variazione in B può comportare una variazione in A*~~
 - Nel caso delle classi, una dipendenza indica che una classe cliente dipende da alcuni servizi di una classe fornitore, ma non ha una struttura interna che dipende da quest'ultima
 	- Lo stereotipo più comunemente usato è `«use»`
+	- A utilizza dei servizi di B
 
 ![[ISW3-s056-1.png|350]]
 
 - (segue) Più specificamente, si può rappresentare il fatto che un'operazione della classe cliente ha argomenti che appartengono al tipo di un'altra classe
+- in A ho un parametro che è una caratteristica di B
 
 ![[ISW3-s056-2.png|350]]
+
+>solo nei quiz!!
 
 >> La differenza rispetto all'associazione è la persistenza del legame: nella dipendenza la
 >> classe cliente non conserva un riferimento al fornitore (lo usa come parametro, variabile
@@ -832,12 +839,14 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 - Un ***template*** (o ***classe parametrizzata***) è utilizzato per descrivere una classe in cui uno o più parametri formali non sono istanziati
 	- Un template definisce una famiglia di classi in cui ogni classe è specificata istanziando i parametri con i valori attuali
-	- Un template non è utilizzabile direttamente
+	- Un template non è utilizzabile direttamente -> devo fare il binding
 - Un ***bound element*** è una classe che istanzia i parametri di un template, e può essere utilizzato esattamente come una classe
 
 ![[ISW3-s057-1.png|600]]
+- utile per creare dei modelli riutilizzabili
+- a sx ce un'annotazione alternativa
 
-`Array` con parametri formali `T, k:Integer=5` (**tipo default: classificatore**); i bound element `Array <T->Point k->3>` e `AddressList`, quest'ultimo legato tramite `«bind» <T->Address k->24>`.
+>solo nei quiz!!
 
 >> Due notazioni equivalenti per il bound element: scrivere esplicitamente i valori attuali
 >> nel nome (`Array <T->Point k->3>`) oppure dare un nome proprio alla classe e collegarla
@@ -852,15 +861,17 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 	- Tra una implementazione semplice e una complessa della stessa cosa
 
 ![[ISW3-s058-1.png|450]]
+- sotto: significato di realizzazione, ho un'interfaccia "ArrayStack" e la realizzo con "Stack"
+- sopra: raffinamento -> classe di progetto che raffina la classe di analisi.
 
-`Classe di progetto ⇢▷ Classe di analisi`; `Stack ◁⇠ ArrayStack`.
+>solo quiz!!
 
 ---
 ## Slide 59 – Interfaccia
 
 - Una ***interfaccia*** è un insieme di funzionalità pubbliche identificate da un nome
 - Specifica le operazioni pubbliche di una classe, di un componente, di un pacchetto o di altre entità, separandone le specifiche dall'implementazione
-- Un'interfaccia non ha alcuna specifica di struttura interna (attributi, stato o associazioni); è una classe astratta, senza attributi né associazioni e con solo operazioni astratte (senza implementazione)
+- ~~Un'interfaccia **non ha alcuna specifica di struttura interna~~** solo un comportamento (attributi, stato o associazioni); è una **classe astratta**, senza attributi né associazioni e con solo operazioni astratte (senza implementazione)
 	- La notazione estesa prevede una rappresentazione simile a quella delle classi, con `«interface»` come stereotipo e senza compartimento per gli attributi; la notazione minimizzata prevede un piccolo cerchio collegato all'entità (classe, componente o package) che la supporta, col nome dell'interfaccia vicino (*lollypop notation*)
 	- Un'altra classe che usa l'interfaccia può essere collegata ad essa da una freccia di dipendenza, eventualmente con lo stereotipo `«use»`
 
@@ -869,8 +880,19 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 ![[ISW3-s060-1.png|650]]
 
-In alto, notazione estesa: `Calcolatrice ⇢ «interface» Stackable` (operazioni `+pop :Obj`, `+push(Obj)`, `+empty():Boolean`), realizzata da `ArrayStack` (`elementi: array of Obj`, `+pop:Obj`, `+push(Obj)`, `+empty():Boolean`).
-In basso, notazione minimizzata (*lollypop*): `Calcolatrice ⇢ ○ Stackable — ArrayStack`.
+>> Lo stesso esempio è disegnato due volte, con le due notazioni per le interfacce descritte nella slide 59.
+>>
+>> **Sopra: notazione estesa.**
+>> - `Stackable` è disegnata come una classe con lo stereotipo `«interface»`. Il nome e le operazioni sono in *corsivo* perché sono astratti: l'interfaccia dichiara `pop`, `push(Obj)` ed `empty(): Boolean` ma non li implementa. Il compartimento centrale degli attributi è vuoto, perché un'interfaccia non ha stato.
+>> - `ArrayStack` è la classe concreta che **realizza** l'interfaccia. Il legame è la freccia **tratteggiata con il triangolo vuoto** (realizzazione), che va da `ArrayStack` verso `Stackable`. La classe ha la struttura interna (l'attributo `elementi: array of Obj`) e implementa le tre operazioni, che qui non sono più in corsivo.
+>> - `Calcolatrice` **usa** l'interfaccia: la freccia **tratteggiata con la punta aperta** è una dipendenza (eventualmente con lo stereotipo `«use»`). La calcolatrice dipende solo da `Stackable` e non sa che sotto c'è un `ArrayStack`.
+>>
+>> **Sotto: notazione minimizzata (*lollipop*).**
+>> - L'interfaccia è solo un cerchietto con il nome `Stackable`, attaccato con una linea continua alla classe che la realizza (`ArrayStack`).
+>> - `Calcolatrice` è collegata al cerchietto con la stessa freccia di dipendenza.
+>> - Il significato è identico a quello di sopra, ma le operazioni dell'interfaccia non si vedono: è la notazione più compatta, utile quando contano solo i collegamenti.
+>>
+>> **Perché è utile.** `Calcolatrice` è disaccoppiata dall'implementazione. Si può sostituire `ArrayStack` con, ad esempio, un `ListStack` basato su una lista collegata senza toccare `Calcolatrice`, purché la nuova classe realizzi `Stackable`.
 
 ---
 ## Slide 61 – Interfaccia vs. ereditarietà
@@ -906,6 +928,7 @@ A destra, soluzione con interfaccia: `Biblioteca ◆— ElementoBiblioteca`, spe
 ---
 ## Slide 63 – Identificare le classi d'analisi
 
+>regole che vengono da UMT non UML
 - Le classi corrispondono a **entità fisiche** e a **concetti** del dominio applicativo
 	- Evitare di rappresentare soluzioni implementative
 
@@ -917,12 +940,11 @@ Nel primo caso (NO) la classe `Elenco` è solo una struttura dati: `Banchetto �
 >> memorizzerebbe gli invitati (una lista). In analisi si modella *cosa* esiste nel dominio,
 >> non *come* lo si realizzerà: la molteplicità `1..*` esprime già la stessa informazione.
 
-- Evitare le classi ridondanti, irrilevanti, vaghe
-- Evitare le classi "onnipotenti"
+- Evitare le classi ridondanti, irrilevanti, ~~vaghe~~ (senza chiedersi cosa sono le istanze, rischio di far convergere su quella classe due concetti diversi)
+- ~~sempre chiedersi quali sono le istanze di una classe prima di crearla.~~
+- Evitare le classi "onnipotenti" 
 
 ![[ISW3-s063-2.png|350]]
-
-Classi come `Sistema` o `Controllore` sono troppo vaghe/onnipotenti: NO.
 
 ---
 ## Slide 64 – Identificare le classi d'analisi
@@ -930,15 +952,6 @@ Classi come `Sistema` o `Controllore` sono troppo vaghe/onnipotenti: NO.
 - Una classe è associata a un piccolo e ben definito insieme di responsabilità (normalmente tra 3 e 5)
 
 ![[ISW3-s064-1.png|500]]
-
-| SI – `CarrelloSpesa` | NO – `CarrelloSpesa` |
-| --- | --- |
-| aggiungiProdotto | aggiungiProdotto |
-| rimuoviProdotto | rimuoviProdotto |
-| mostraProdotti | mostraProdotti |
-| | verificaCartaCredito |
-| | accettaPagamento |
-| | stampaRicevuta |
 
 >> Le tre operazioni di destra (pagamento, carta di credito, ricevuta) appartengono ad altri
 >> concetti (`Pagamento`, `Ordine`): metterle nel carrello ne rompe la coesione e lo rende
@@ -957,6 +970,8 @@ Classi come `Sistema` o `Controllore` sono troppo vaghe/onnipotenti: NO.
 - NO: `Marito —1— sposa —1— Moglie`
 - SI: `Uomo —0..1— sposa —0..1— Donna`, con i ruoli `marito` e `moglie` sugli estremi dell'associazione
 
+>se voglio modellare ruolo ho le gerarchie apposta
+
 >> "Marito" e "moglie" non sono ciò che una persona *è*, ma il ruolo che assume in una
 >> particolare associazione: un uomo non sposato smetterebbe di essere istanza della classe.
 >> Per questo la molteplicità corretta è `0..1` e i nomi dei ruoli vanno sull'associazione.
@@ -972,9 +987,18 @@ Classi come `Sistema` o `Controllore` sono troppo vaghe/onnipotenti: NO.
 
 Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'attributo `colore`.
 
+>devo usare la soluzione sopra se:
+> - la classe colore è associata ad altre classi.
+> - concetto importante
+> - voglio sottolineare il fatto che ho un determinato numero di colori
+> - se ha degli attributi
+
 - Se una proprietà esiste indipendentemente, o compare più volte all'interno del diagramma, dovrebbe essere espressa come classe
 
 ![[ISW3-s066-2.png|400]]
+
+>la soluzione sopra non va bene perché:
+> - proprietario è un ruolo
 
 - NO: `Auto` con attributo `proprietario`
 - SI: `Auto —*— di —1— Persona`
@@ -987,8 +1011,7 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 
 ![[ISW3-s067-1.png|400]]
 
-- NO: `CartaCredito` con attributo `proprietario` e classe `Persona` separata
-- SI: `CartaCredito —*— di —1— Persona`
+>se nell'esempio sotto: ruolo "proprietario" per la classe persona
 
 	- Un'aggregazione è un'associazione con semantica *part-of*
 
@@ -1011,7 +1034,7 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 ![[ISW3-s068-1.png|550]]
 
 - NO: `Biblioteca —0..1— presta —*— Libro`
-- preferibile: `Biblioteca —1— contiene —1..*— Libro —*— inPrestitoA —0..1— Cliente`
+- preferibile: `Biblioteca —1— contiene (qui ci dovrebbe essere un rombo, è un piccolo errore)—1..*— Libro —*— inPrestitoA —0..1— Cliente`
 
 >> "Prestare" è un evento che accade in un istante; "contenere" ed "essere in prestito a"
 >> sono invece stati strutturali che valgono nel tempo. Il diagramma delle classi descrive
@@ -1021,8 +1044,10 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 
 ![[ISW3-s068-2.png|400]]
 
-- NO: associazione ternaria `Squadra (1) – Squadra (1) – Partita (1)` con rombo
+- NO: associazione ternaria `Squadra (1) – Squadra (1) – Partita (1)` con rombo -> non hai il vincolo che una partita deve essere giocata da esattamente due squadre
 - SI: due associazioni binarie `Squadra —1— giocaInCasa —15— Partita` e `Squadra —1— giocaFuoriCasa —15— Partita`
+
+>spesso nei testi degli esercizi vengono descritti gli oggetti in modo funzionale, noi dobbiamo trovare un modo più statico per rappresentare lo stesso concetto.
 
 ---
 ## Slide 69 – Identificare le associazioni d'analisi
@@ -1052,10 +1077,6 @@ Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `d
 
 ![[ISW3-s070-1.png|550]]
 
-| NO | SI | SI |
-| --- | --- | --- |
-| `Persona`: dataNascita, età | `Persona`: dataNascita | `Persona`: dataNascita, `/ età` |
-
 >> L'età si calcola dalla data di nascita: tenerla come attributo normale significa avere
 >> due dati che possono diventare incoerenti. La barra `/` è la notazione UML per
 >> "attributo derivato".
@@ -1064,19 +1085,12 @@ Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `d
 
 ![[ISW3-s070-2.png|550]]
 
-- `Esperto —3 (revisore)— *— Libro` con classe associativa `Revisione` (attributo `giudizio`)
-- `Cliente —0..1— inPrestitoA —*— Libro` con classe associativa `Prestito` (attributo `data`)
-
 ---
 ## Slide 71 – Identificare gli attributi
 
 - Non aggiungere agli attributi gli identificatori degli oggetti, a meno che non risultino esplicitamente dalle specifiche
 
 ![[ISW3-s071-1.png|550]]
-
-| NO | SI | SI |
-| --- | --- | --- |
-| `Prodotto`: idProgressivo, nome | `Prodotto`: nome | `Prodotto`: codProdotto, nome |
 
 >> L'identità dell'oggetto in UML è implicita: un `idProgressivo` inventato è una scelta
 >> implementativa (la chiave primaria del DB). Un `codProdotto` invece è accettabile se è
@@ -1085,6 +1099,8 @@ Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `d
 - Quando gli attributi di una classe possono essere raggruppati in due o più insiemi, probabilmente la classe dovrebbe essere suddivisa in due o più classi
 
 ![[ISW3-s071-2.png|600]]
+
+>se lo spezzo ho il vantaggio che ho due classi più piccole e se devo accedere solo a una delle due ottimizzo. 
 
 `Persona` (nome, cognome, dataNascita, indirizzo, redditoLordo, redditoNetto, aliquotaMax) → preferibile: `PersonaAnagrafica` (nome, cognome, dataNascita, indirizzo) `—1——1—` `PersonaFiscale` (redditoLordo, redditoNetto, aliquotaMax)
 
@@ -1160,7 +1176,7 @@ Da `A —n— B`, `A —n— C`, `C —m— D`, `B —m— D` si passa a una ger
 ---
 ## Slide 76 – Identificare le associazioni di progettazione
 
-- Associazioni molti-a-uno o molti-a-molti
+- ~~Associazioni molti-a-uno o molti-a-molti~~
 
 ![[ISW3-s076-1.png|650]]
 
@@ -1176,28 +1192,39 @@ Da `A —n— B`, `A —n— C`, `C —m— D`, `B —m— D` si passa a una ger
 >> Il verso di navigabilità si implementa con un riferimento: `datore` diventa un campo in
 >> `Persona`, `impiegati` una collezione in `Azienda`. La versione bidirezionale è comoda
 >> ma obbliga a tenere sincronizzate le due estremità a ogni modifica.
+>>
+>> **In breve.** Nell'analisi `lavoraPer` dice solo che persone e aziende sono collegate. In progettazione si decide **chi conosce chi**. Il rombo vuoto (aggregazione) sta dalla parte della classe che tiene il riferimento, la freccia punta verso la classe raggiunta.
+>> - **Sinistra:** ogni `Persona` conosce il suo `datore`. Dal lato "molti" basta un solo riferimento a un'`Azienda`, perché la molteplicità è 1.
+>> - **Destra:** ogni `Azienda` conosce i suoi `impiegati`. Dal lato "uno" verso il lato "molti" (1..*) serve una **collezione** di persone.
+>> - **Tra parentesi:** la stessa scelta con la collezione esplicita. L'`Azienda` possiede (composizione, rombo pieno) un oggetto `Collezione`, che a sua volta raccoglie le `Persona`. In codice è il campo `List<Persona> impiegati`.
+>> - **Bidirezionale:** ci sono entrambi i riferimenti, `datore` in `Persona` e `impiegati` in `Azienda`. La navigazione è comoda in tutti e due i versi, ma ogni modifica va fatta su entrambi i lati.
+
 
 ---
 ## Slide 77 – Identificare le associazioni di progettazione
 
-- Associazioni uno-a-uno
+- ~~Associazioni uno-a-uno~~
 
 ![[ISW3-s077-1.png|600]]
 
 - `Iscritto —1— ha —1— Tessera` diventa, tramite «trace», `Iscritto —1—◆———1— Tessera` (composizione monodirezionale)
 - oppure, se la tessera non ha vita propria, si assorbe come attributo: `Iscritto` con `numeroTessera`
+>si può fare il merge delle due classi
 
-- Associazioni ternarie
+- ~~Associazioni ternarie~~
 
 ![[ISW3-s077-2.png|700]]
 
 L'associazione ternaria `Corso – Aula – Orario` (rombo) si trasforma («trace») nella classe `Lezione`: `Corso —1—◆———1..*— Lezione —*——1— Aula` e `Lezione —*——1— Orario`; nella variante a destra la navigabilità è esplicitata su entrambi i versi tra `Lezione` e `Aula`.
+>bisogna per forza creare la classe 'Lezione' non ce altra soluzione lecita. 
+>soluzione di dx: freccia da aula verso lezione è leggermente ridondante, serve data un aula sapere che orario è occupata senza per forza dover sapere anche il corso.
 
 ---
 ## Slide 78 – Identificare le associazioni di progettazione
 
-- Classi associative
+- ~~Classi associative~~
 
+>è a tutti gli effetti una classe. 
 ![[ISW3-s078-1.png|650]]
 
 La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*——*— Parte` si trasforma («trace») in una classe ordinaria interposta: `Fornitore —1——1..*— Fornitura —*——1— Parte` (a destra la versione con navigabilità in entrambi i versi tra `Fornitura` e `Parte`).
@@ -1207,14 +1234,16 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 >> associazione in un database relazionale.
 
 ---
-## Slide 79 – 5. Diagrammi degli oggetti
+## Slide 79 – Diagrammi degli oggetti
 
 - Un *oggetto* rappresenta una particolare istanza di una classe.
 - Un *oggetto composto* è un oggetto di alto livello che contiene altri oggetti.
+>si rappresentano come le classi ma con il nome ~~sottolineato~~
 
 ![[ISW3-s079-1.png|650]]
 
 - `triangolo : Poligono` con `centro = (0,0)`, `vertici = ((0,0),(4,0),(4,3))`, `coloreBordo = nero`, `coloreRiempimento = bianco`; relazione «instance» verso la classe `Poligono` (centro, vertici, coloreBordo, coloreRiempimento)
+>significa oggetto "triangolo" della classe "Poligono"
 - Forme abbreviate: `triangolo : Poligono`, `triangolo`, `: Poligono`
 - Oggetto composto `awindow : Window` che contiene `horizontalBar:ScrollBar`, `verticalBar:ScrollBar`, `surface:Pane`, `title:TitleBar`, con i collegamenti `moves`
 

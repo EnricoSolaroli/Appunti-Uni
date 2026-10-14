@@ -33,14 +33,14 @@
 6. **Esercizio: orario delle lezioni accessibile** (slide 22–25)
 	- [[#Slide 22 – Esempio|Traccia d'esame: tabella con caption e rowspan]]
 	- [[#Slide 23 – Note|Indicazioni su caption, rowspan e celle mancanti]]
-	- [[#Slide 24 – Soluzione|Soluzione: `<caption>` e `<thead>` con `id`]]
-	- [[#Slide 25 – Soluzione|Soluzione: `<tbody>` con `rowspan` e `headers`]]
+	- [[#Slide 24 – Soluzione (1)|Soluzione: `<caption>` e `<thead>` con `id`]]
+	- [[#Slide 25 – Soluzione (2)|Soluzione: `<tbody>` con `rowspan` e `headers`]]
 7. **Tabelle a doppia intestazione con `scope`** (slide 26–30)
 	- [[#Slide 26 – Esempio con `scope`|Orario con due livelli di intestazione (giorno e aula)]]
-	- [[#Slide 27 – Esempio con `scope`|Scheletro del documento e stile dei bordi]]
-	- [[#Slide 28 – Esempio con `scope`|`scope="colgroup"` e `scope="col"` nel `<thead>`]]
-	- [[#Slide 29 – Esempio con `scope`|`scope="row"` e celle dati con più coordinate]]
-	- [[#Slide 30 – Esempio con `scope`|Ultima riga e chiusura del documento]]
+	- [[#Slide 27 – Esempio con `scope` (1)|Scheletro del documento e stile dei bordi]]
+	- [[#Slide 28 – Esempio con `scope` (2)|`scope="colgroup"` e `scope="col"` nel `<thead>`]]
+	- [[#Slide 29 – Esempio con `scope`(3)|`scope="row"` e celle dati con più coordinate]]
+	- [[#Slide 30 – Esempio con `scope` (4)|Ultima riga e chiusura del documento]]
 8. **Liste** (slide 31–35)
 	- [[#Slide 31 – Liste|I tre tipi di lista: `<ul>`, `<ol>`, `<dl>`]]
 	- [[#Slide 32 – Struttura delle liste|Struttura ad albero lista → `<li>`]]

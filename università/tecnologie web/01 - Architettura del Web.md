@@ -37,8 +37,8 @@
 	- [[#Slide 27 – LAMP|LAMP e la variante Windows WAMP]]
 	- [[#Slide 29 – PHP|PHP: scripting interpretato lato server]]
 	- [[#Slide 30 – Architettura PHP|Esecuzione dello script sul server e HTML generato]]
-	- [[#Slide 32 – WISA|Lo stack interamente Microsoft]]
-	- [[#Slide 33 – MEAN|MongoDB, Express, Angular, Node.js]]
+	- [[#Slide 32 – WISA (microsoft)|Lo stack interamente Microsoft]]
+	- [[#Slide 33 – MEAN (m. e. a. n.)|MongoDB, Express, Angular, Node.js]]
 	- [[#Slide 34 – Confronto MEAN-L(W)AMP|Differenze tra MEAN e L(W)AMP]]
 7. **Da AJAX ai servizi: il Web moderno** (slide 35–39)
 	- [[#Slide 35 – AJAX|Scambio dati in background e Rich Internet Application]]
@@ -57,7 +57,7 @@
 	- [[#Slide 51 – Beyond REST|GraphQL, WebSocket, serverless, OpenAPI]]
 11. **Riepilogo finale e tecnologie del corso** (slide 52–56)
 	- [[#Slide 52 – Web tradizionale vs Web moderno|I principi originari sotto la complessità attuale]]
-	- [[#Slide 53 – Ma quindi?|REST e JSON rispettano ancora i principi del Web]]
+	- [[#Slide 54 – Ma quindi?|REST e JSON rispettano ancora i principi del Web]]
 	- [[#Slide 55 – Seconda domanda|Domanda di verifica sulle REST API]]
 	- [[#Slide 56 – Concludendo… quali tecnologie Web?|HTML5, CSS3, JavaScript e PHP]]
 

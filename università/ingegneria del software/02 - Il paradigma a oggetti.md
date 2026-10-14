@@ -6,10 +6,9 @@
 ## Indice
 
 1. **Introduzione e concetti fondamentali** (slide 1–2)
-	- [[#Slide 1 – Il paradigma a oggetti (copertina)|Copertina del modulo]]
 	- [[#Slide 2 – 1. Il paradigma a oggetti|I sette concetti chiave del paradigma]]
 2. **Oggetti: identità, stato e comportamento** (slide 3–4)
-	- [[#Slide 3 – Oggetti|Definizione di oggetto, OID, attributi e operazioni]]
+	- [[#Slide 3 – <u>Oggetti</u>|Definizione di oggetto, OID, attributi e operazioni]]
 	- [[#Slide 4 – Oggetti (2)|Esempi di oggetti: attributi reali vs identificatori]]
 3. **Operazioni, interfaccia e tipi di dati astratti** (slide 5–6)
 	- [[#Slide 5 – Operazioni e interfaccia|Signature e interfaccia dell'oggetto]]

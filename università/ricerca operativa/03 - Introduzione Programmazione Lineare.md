@@ -12,12 +12,12 @@
 	- [[#Slide 10 – Esempio: il Knapsack Problem|Definizione e modello KP]]
 	- [[#Slide 11 – Il Problema del Knapsack: Upper Bound|Upper bound: rilassamento continuo e algoritmo di Dantzig]]
 	- [[#Slide 13 – Il Problema del Knapsack: Euristico|Euristico greedy]]
-	- [[#Slide 15 – Il Problema del Knapsack: Esatti|Metodi esatti: stati del Branch & Bound]]
+	- [[#Slide 15-16 – Il Problema del Knapsack: Esatti|Metodi esatti: stati del Branch & Bound]]
 	- [[#Slide 17 – Il Problema del Knapsack: Branch and Bound|Algoritmo Branch & Bound]]
 	- [[#Slide 19 – Il Problema del Knapsack: Programmazione Dinamica|Programmazione dinamica (complessità pseudopolinomiale)]]
 3. **Formulazione della programmazione lineare** (slide 22–32)
 	- [[#Slide 22 – Programmazione Lineare (LP)|Formulazione LP e forma matriciale]]
-	- [[#Slide 24 – Assunzioni implicite per LP|Assunzioni: proporzionalità, additività, determinismo, continuità]]
+	- [[#Slide 24-25 – Assunzioni implicite per LP|Assunzioni: proporzionalità, additività, determinismo, continuità]]
 	- [[#Slide 26 – Soluzione di un problema LP|Soluzione ammissibile, regione ammissibile, ottimo]]
 	- [[#Slide 27 – Esempio: Soluzione ottima unica|Esempi grafici: ottimo unico e ottimi equivalenti]]
 	- [[#Slide 29 – Esempio: Soluzione illimitata|Esempi grafici: soluzione illimitata e regione illimitata]]
@@ -31,48 +31,48 @@
 	- [[#Slide 49 – Problema del flusso a costo minimo|Flusso a costo minimo e network design]]
 	- [[#Slide 51 – Mix ottimale di produzione|Mix ottimale di produzione]]
 5. **Manipolazioni, forma canonica e forma standard** (slide 54–57)
-	- [[#Slide 54 – Manipolazioni di un problema|Min/max e inversione delle disequazioni]]
-	- [[#Slide 55 – Manipolazioni di un problema (2)|Equazioni, disequazioni e variabili di scarto]]
-	- [[#Slide 56 – Manipolazioni di un problema (3)|Variabili libere]]
+	- [[#Slide 54-55-56 – Manipolazioni di un problema|Min/max e inversione delle disequazioni]]
+	- [[#Slide 54-55-56 – Manipolazioni di un problema|Equazioni, disequazioni e variabili di scarto]]
+	- [[#Slide 54-55-56 – Manipolazioni di un problema|Variabili libere]]
 	- [[#Slide 57 – Forma canonica e forma standard|Forma canonica e forma standard]]
 6. **Soluzioni base e poliedri convessi** (slide 58–67)
-	- [[#Slide 58 – Definizione di Soluzione Base Ammissibile|Ipotesi di rango e matrice di base]]
-	- [[#Slide 60 – Definizione di Soluzione Base Ammissibile (3)|Soluzione base ammissibile]]
-	- [[#Slide 61 – Insieme Poliedrico Convesso|Insieme poliedrico convesso e punti estremi]]
-	- [[#Slide 62 – Insieme Poliedrico Convesso (2)|Punti estremi = soluzioni base ammissibili]]
-	- [[#Slide 63 – Insieme Poliedrico Convesso (3)|Direzioni e direzioni estreme]]
-	- [[#Slide 64 – Insieme Poliedrico Convesso (4)|Teorema della rappresentazione]]
-	- [[#Slide 66 – Insieme Poliedrico Convesso (6)|Ottimo finito e teorema fondamentale della PL]]
+	- [[#Slide 58-59-60 – Definizione di Soluzione Base Ammissibile|Ipotesi di rango e matrice di base]]
+	- [[#Slide 58-59-60 – Definizione di Soluzione Base Ammissibile|Soluzione base ammissibile]]
+	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Insieme poliedrico convesso e punti estremi]]
+	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Punti estremi = soluzioni base ammissibili]]
+	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Direzioni e direzioni estreme]]
+	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Teorema della rappresentazione]]
+	- [[#Slide 66-67 – Insieme Poliedrico Convesso (6-7)|Ottimo finito e teorema fondamentale della PL]]
 7. **Metodo del simplesso primale** (slide 68–75)
-	- [[#Slide 68 – Migliorare una Soluzione Base|Funzione obiettivo in termini delle variabili non base]]
-	- [[#Slide 69 – Migliorare una Soluzione Base (2)|Costi ridotti e condizione di ottimalità]]
-	- [[#Slide 70 – Migliorare una Soluzione Base (3)|Variazione delle variabili in base]]
-	- [[#Slide 72 – Migliorare una Soluzione Base (5)|Rapporto minimo e illimitatezza]]
-	- [[#Slide 74 – Algoritmo del Simplesso Primale|Algoritmo del simplesso primale]]
+	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Funzione obiettivo in termini delle variabili non base]]
+	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Costi ridotti e condizione di ottimalità]]
+	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Variazione delle variabili in base]]
+	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Rapporto minimo e illimitatezza]]
+	- [[#Slide 74-75 – Algoritmo del Simplesso Primale !!!|Algoritmo del simplesso primale]]
 8. **Dualità** (slide 76–98)
 	- [[#Slide 76 – Definizione del Problema Duale|Definizione del problema duale]]
-	- [[#Slide 77 – Come si ottiene il duale?|Derivazione del duale dalle condizioni di ottimalità]]
-	- [[#Slide 80 – Dualità debole|Dualità debole]]
+	- [[#Slide 77-78-79 – Come si ottiene il duale?|Derivazione del duale dalle condizioni di ottimalità]]
+	- [[#Slide 80-81 – Dualità debole|Dualità debole]]
 	- [[#Slide 82 – Dualità debole|Corollario: certificato di ottimalità]]
-	- [[#Slide 83 – Dualità Forte|Dualità forte]]
-	- [[#Slide 86 – Relazione tra Primale e Duale|Relazioni tra primale e duale]]
-	- [[#Slide 88 – Forme Miste del Primale|Forme miste del primale]]
-	- [[#Slide 90 – Forme Miste del Primale (3)|Tabella di corrispondenza primale-duale ed esempio]]
-	- [[#Slide 92 – Condizioni di Complementarietà|Condizioni di complementarietà]]
+	- [[#Slide 83-84-85 – Dualità Forte|Dualità forte]]
+	- [[#Slide 86-87 – Relazione tra Primale e Duale|Relazioni tra primale e duale]]
+	- [[#Slide 88-89-90 – Forme Miste del Primale|Forme miste del primale]]
+	- [[#Slide 88-89-90 – Forme Miste del Primale|Tabella di corrispondenza primale-duale ed esempio]]
+	- [[#Slide 92-93-94-95 – Condizioni di Complementarietà|Condizioni di complementarietà]]
 	- [[#Slide 96 – Interpretazione economica della dualità|Interpretazione economica (shadow price, dieta)]]
 9. **Esempi di simplesso e dualità** (slide 99–119)
-	- [[#Slide 99 – Esempio n. 1|Esempio 1: verifica di ottimalità di una base]]
-	- [[#Slide 102 – Esempio n. 2|Esempio 2: soluzione illimitata]]
-	- [[#Slide 107 – Esempio n. 3|Esempio 3: iterazioni del simplesso]]
-	- [[#Slide 117 – Esempio n. 4|Esempio 4: verifica con la complementarietà]]
+	- [[#Slide 99-100-101 – Esempio n. 1|Esempio 1: verifica di ottimalità di una base]]
+	- [[#Slide 102 -> 106 – Esempio n. 2|Esempio 2: soluzione illimitata]]
+	- [[#Slide 107 -> 116 – Esempio n. 3|Esempio 3: iterazioni del simplesso]]
+	- [[#Slide 117-118-119 – Esempio n. 4|Esempio 4: verifica con la complementarietà]]
 10. **Simplesso in formato tableau e base iniziale** (slide 120–151)
 	- [[#Slide 120 – Il Metodo del Simplesso Formato Tableau|Costruzione del tableau]]
 	- [[#Slide 123 – L'operazione di Pivoting|Operazione di pivoting]]
-	- [[#Slide 124 – Simplesso Primale in Formato Tableau by Examples|Esempio in formato tableau]]
+	- [[#Slide 124 -> 129 – Simplesso Primale in Formato Tableau by Examples|Esempio in formato tableau]]
 	- [[#Slide 130 – Come determinare una base iniziale: caso facile|Base iniziale: caso facile]]
-	- [[#Slide 131 – Come determinare una base iniziale: Metodo Big-M|Metodo Big-M]]
-	- [[#Slide 133 – Come determinare una base iniziale: Metodo 2-Fasi|Metodo delle due fasi]]
-	- [[#Slide 136 – Come determinare una base iniziale: Esempio 1|Esempi del metodo delle due fasi]]
+	- [[#Slide 131-132 – Come determinare una base iniziale: ~~Metodo Big-M~~|Metodo Big-M]]
+	- [[#Slide 133->135 – Come determinare una base iniziale: ~~Metodo 2-Fasi~~|Metodo delle due fasi]]
+	- [[#Slide 136->140 – Come determinare una base iniziale: Esempio 1|Esempi del metodo delle due fasi]]
 	- [[#Slide 149 – Metodo del Simplesso: Degenerazione e Convergenza|Degenerazione, cicli e regola di Bland]]
 11. **Metodo del simplesso duale** (slide 152–165)
 	- [[#Slide 152 – Il Metodo del Simplesso Duale|Idea: ammissibilità duale e complementarietà]]
@@ -128,13 +128,12 @@
 - Un modello matematico si può rappresentare come segue:
 
 $$
-(P)\qquad
-\begin{aligned}
-z_P = \min\ & f(\mathbf{x}) \\
-\text{s.t. }\ & g_i(\mathbf{x}) \le b_i, && i = 1,\dots,n \\
-& h_j(\mathbf{x}) = d_j, && j = 1,\dots,m \\
-& \mathbf{x} \ge \mathbf{0}
-\end{aligned}
+\begin{array}{lrlr}
+(P)\qquad & z_P = \min & f(\mathbf{x}) & \\
+ & \textit{s.t.} & g_i(\mathbf{x}) \le b_i, & \qquad i = 1,\dots,n \\
+ & & h_j(\mathbf{x}) = d_j, & j = 1,\dots,m \\
+ & & \mathbf{x} \ge \mathbf{0} &
+\end{array}
 $$
 
 - La funzione $f(\mathbf{x})$ è detta ***funzione obiettivo***, mentre le espressioni $g_i(\mathbf{x}) \le b_i$ e $h_j(\mathbf{x}) = d_j$ rappresentano i ***vincoli***.
@@ -185,12 +184,11 @@ $$
 - Il modello matematico classico per il problema del knapsack (0–1) è il seguente:
 
 $$
-(KP)\qquad
-\begin{aligned}
-z_{KP} = \max\ & \sum_{i=1}^{n} p_i x_i \\
-\text{s.t. }\ & \sum_{i=1}^{n} w_i x_i \le W \\
-& x_i \in \{0,1\}, \quad i = 1,\dots,n
-\end{aligned}
+\begin{array}{lrl}
+(KP)\qquad & z_{KP} = \max & \displaystyle\sum_{i=1}^{n} p_i x_i \\
+ & \textit{s.t.} & \displaystyle\sum_{i=1}^{n} w_i x_i \le W \\
+ & & x_i \in \{0,1\}, \quad i = 1,\dots,n
+\end{array}
 $$
 
 >> Knapsack = "zaino". La variabile binaria $x_i$ vale $1$ se l'oggetto $i$ viene inserito nello zaino e $0$ altrimenti; il vincolo impone che il peso totale degli oggetti scelti non superi la capacità $W$.
@@ -201,12 +199,11 @@ $$
 - Un valido upper bound per il problema del knapsack può essere calcolato risolvendo il **rilassamento continuo** (i.e., LP-relaxation) della formulazione matematica $KP$:
 
 $$
-(LKP)\qquad
-\begin{aligned}
-z_{LKP} = \max\ & \sum_{i=1}^{n} p_i x_i \\
-\text{s.t. }\ & \sum_{i=1}^{n} w_i x_i \le W \\
-& 0 \le x_i \le 1, \quad i = 1,\dots,n
-\end{aligned}
+\begin{array}{lrl}
+(LKP)\qquad & z_{LKP} = \max & \displaystyle\sum_{i=1}^{n} p_i x_i \\
+ & \textit{s.t.} & \displaystyle\sum_{i=1}^{n} w_i x_i \le W \\
+ & & 0 \le x_i \le 1, \quad i = 1,\dots,n
+\end{array}
 $$
 
 - Il problema $LKP$ corrisponde a un problema di programmazione lineare continua, che in generale può essere risolto con il **Metodo del Simplesso** o **A Punti Interni**. Ma in questo caso il problema è molto più facile e ha complessità $O(n \log n)$.
@@ -292,12 +289,11 @@ $$
 - Per calcolare un upper bound ad ogni nodo del Branch & Bound si definisca il seguente rilassamento lineare del knapsack (0–1):
 
 $$
-(LKP)\qquad
-\begin{aligned}
-z_{LKP}(L, F_0, F_1) = \max\ & \sum_{i \in L} p_i x_i + \sum_{i \in F_1} p_i \\
-\text{s.t. }\ & \sum_{i \in L} w_i x_i \le W - \sum_{i \in F_1} w_i \\
-& 0 \le x_i \le 1, \qquad i \in L
-\end{aligned}
+\begin{array}{lrll}
+(LKP)\qquad & z_{LKP}(L, F_0, F_1) = \max & \displaystyle\sum_{i \in L} p_i x_i + \sum_{i \in F_1} p_i & \\
+ & \textit{s.t.} & \displaystyle\sum_{i \in L} w_i x_i \le W - \sum_{i \in F_1} w_i & \\
+ & & 0 \le x_i \le 1, & i \in L
+\end{array}
 $$
 
 >> Gli oggetti in $F_1$ sono già nello zaino: contribuiscono al profitto con la costante $\sum_{i\in F_1} p_i$ e consumano capacità, che quindi si riduce a $W - \sum_{i\in F_1} w_i$. Gli oggetti in $F_0$ semplicemente spariscono. Il rilassamento resta un $LKP$ sulle sole variabili libere e si risolve ancora con l'algoritmo di slide 12.
@@ -346,12 +342,11 @@ $$
 - Ad ogni stadio $j \in \{1,\dots,n\}$ e per ogni stato $w \in \{0,\dots,W\}$ si risolve il seguente sottoproblema:
 
 $$
-(KP_j(w))\qquad
-\begin{aligned}
-z_j(w) = \max\ & \sum_{i=1}^{j} p_i x_i \\
-\text{s.t. }\ & \sum_{i=1}^{j} w_i x_i \le w \\
-& x_i \in \{0,1\}, \quad i = 1,\dots,j
-\end{aligned}
+\begin{array}{lrl}
+(KP_j(w))\qquad & z_j(w) = \max & \displaystyle\sum_{i=1}^{j} p_i x_i \\
+ & \textit{s.t.} & \displaystyle\sum_{i=1}^{j} w_i x_i \le w \\
+ & & x_i \in \{0,1\}, \quad i = 1,\dots,j
+\end{array}
 $$
 
 >> $z_j(w)$ è il miglior profitto ottenibile usando solo i primi $j$ oggetti e uno zaino di capacità $w$. Lo stadio $0$ (nessun oggetto) spiega il "$+1$" negli stadi, lo stato $w = 0$ il "$+1$" negli stati. La soluzione del problema originale è $z_{KP} = z_n(W)$. Qui si assume che pesi e capacità siano interi.
@@ -395,11 +390,11 @@ $$
 - Si consideri un problema di programmazione lineare *continua* con $n$ variabili decisionali e $m$ vincoli:
 
 $$
-\begin{aligned}
-\min\ z = & \sum_{j=1}^{n} c_j x_j \\
-\text{s.t. }\ & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, && i = 1,\dots,m \\
-& x_j \ge 0, && j = 1,\dots,n
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{j=1}^{n} c_j x_j & \\
+\textit{s.t.} & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, & i = 1,\dots,m \\
+ & x_j \ge 0, & j = 1,\dots,n
+\end{array}
 $$
 
 dove
@@ -415,11 +410,11 @@ dove
 Una rappresentazione più compatta del problema è la seguente¹:
 
 $$
-\begin{aligned}
-\min\ z = & \ \mathbf{c}\mathbf{x}\\
-\text{s.t. }\ & \mathbf{A}\mathbf{x} \ge \mathbf{b} \\
-& \mathbf{x} \ge \mathbf{0}
-\end{aligned}
+\begin{array}{rl}
+\min\ z = & \mathbf{c}\mathbf{x}\\
+\textit{s.t.} & \mathbf{A}\mathbf{x} \ge \mathbf{b} \\
+ & \mathbf{x} \ge \mathbf{0}
+\end{array}
 $$
 
 dove
@@ -491,12 +486,12 @@ Nella formulazione di un problema di programmazione lineare sono implicite alcun
 ## Slide 27 – Esempio: Soluzione ottima unica
 
 $$
-\begin{array}{rrcrcrl}
-\min z = & -x_1 & - & 3x_2 & & & \\
- & -x_1 & - & x_2 & \ge & -6 & (a) \\
- & x_1 & - & 2x_2 & \ge & -8 & (b) \\
- & x_1 & + & x_2 & \ge & 2 & (c) \\
- & x_1, & & x_2 & \ge & 0 &
+\begin{array}{rcrcrcrl}
+\min z = & - & x_1 & - & 3x_2 & & & \\
+ & - & x_1 & - & x_2 & \ge & -6 & (a) \\
+ & & x_1 & - & 2x_2 & \ge & -8 & (b) \\
+ & & x_1 & + & x_2 & \ge & 2 & (c) \\
+ & & x_1, & & x_2 & \ge & 0 &
 \end{array}
 $$
 
@@ -532,11 +527,11 @@ $$
 ## Slide 29 – Esempio: Soluzione illimitata
 
 $$
-\begin{array}{rrcrcrl}
-\min z = & -2x_1 & - & 5x_2 & & & \\
- & -3x_1 & + & 2x_2 & \le & 6 & (a) \\
- & x_1 & + & 2x_2 & \ge & 2 & (b) \\
- & x_1, & & x_2 & \ge & 0 &
+\begin{array}{rcrcrcrl}
+\min z = & - & 2x_1 & - & 5x_2 & & & \\
+ & - & 3x_1 & + & 2x_2 & \le & 6 & (a) \\
+ & & x_1 & + & 2x_2 & \ge & 2 & (b) \\
+ & & x_1, & & x_2 & \ge & 0 &
 \end{array}
 $$
 
@@ -551,11 +546,11 @@ $$
 ## Slide 30 – Esempio: Regione amm. illimitata ma sol. limitata
 
 $$
-\begin{array}{rrcrcrl}
-\min z = & 2x_1 & + & x_2 & & & \\
- & -3x_1 & + & 2x_2 & \le & 6 & (a) \\
- & x_1 & + & 2x_2 & \ge & 2 & (b) \\
- & x_1, & & x_2 & \ge & 0 &
+\begin{array}{rcrcrcrl}
+\min z = & & 2x_1 & + & x_2 & & & \\
+ & - & 3x_1 & + & 2x_2 & \le & 6 & (a) \\
+ & & x_1 & + & 2x_2 & \ge & 2 & (b) \\
+ & & x_1, & & x_2 & \ge & 0 &
 \end{array}
 $$
 
@@ -595,12 +590,12 @@ $$
 Un problema di programmazione lineare intera è un problema di programmazione lineare nel quale tutte le variabili decisionali sono vincolate ad assumere valori interi.
 
 $$
-\begin{aligned}
-\min\ z = & \sum_{j=1}^{n} c_j x_j \\
-\text{s.t. }\ & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, && i = 1,\dots,m \\
-& x_j \ge 0, && j = 1,\dots,n \\
-& x_j \text{ intera}, && j = 1,\dots,n
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{j=1}^{n} c_j x_j & \\
+\textit{s.t.} & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, & i = 1,\dots,m \\
+ & x_j \ge 0, & j = 1,\dots,n \\
+ & x_j \text{ intera}, & j = 1,\dots,n
+\end{array}
 $$
 
 ![[RO03-s032-1.png|285]] ![[RO03-s032-2.png|202]]
@@ -729,15 +724,15 @@ $$
 - **Modello matematico:**
 
 $$
-\begin{aligned}
-\max\ z = {} & \sum_{i \in F} r_i x_i \\
-\text{s.t. } & \sum_{i \in F} x_i = 100 \\
-& \sum_{i \in F} \alpha_i x_i \ge 100\alpha \\
-& \sum_{i \in F} \beta_i x_i \ge 100\beta \\
-& \sum_{i \in F} \gamma_i x_i \ge 100\gamma \\
-& \sum_{i \in F} \rho_i x_i \le 100\rho \\
-& x_i \ge 0, \quad i \in F
-\end{aligned}
+\begin{array}{rl}
+\max\ z = & \sum_{i \in F} r_i x_i \\
+\textit{s.t.} & \sum_{i \in F} x_i = 100 \\
+ & \sum_{i \in F} \alpha_i x_i \ge 100\alpha \\
+ & \sum_{i \in F} \beta_i x_i \ge 100\beta \\
+ & \sum_{i \in F} \gamma_i x_i \ge 100\gamma \\
+ & \sum_{i \in F} \rho_i x_i \le 100\rho \\
+ & x_i \ge 0, \quad i \in F
+\end{array}
 $$
 
 - Esiste una soluzione ammissibile per ogni combinazione dei valori $\alpha$, $\beta$ e $\gamma$?
@@ -778,12 +773,12 @@ $$
 - **Modello matematico:**
 
 $$
-\begin{aligned}
-\min\ z = {} & \sum_{i=1}^{n} \sum_{j=1}^{m} c_{ij} x_{ij} \\
-\text{s.t. } & \sum_{j=1}^{m} x_{ij} = a_i, && i = 1, \dots, n \\
-& \sum_{i=1}^{n} x_{ij} = b_j, && j = 1, \dots, m \\
-& x_{ij} \ge 0, \text{ intera}, && i = 1, \dots, n,\ j = 1, \dots, m
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{i=1}^{n} \sum_{j=1}^{m} c_{ij} x_{ij} & \\
+\textit{s.t.} & \sum_{j=1}^{m} x_{ij} = a_i, & i = 1, \dots, n \\
+ & \sum_{i=1}^{n} x_{ij} = b_j, & j = 1, \dots, m \\
+ & x_{ij} \ge 0, \text{ intera}, & i = 1, \dots, n,\ j = 1, \dots, m
+\end{array}
 $$
 
   dove $x_{ij}$ rappresenta la quantità di merce trasportata dall'origine $i$ alla destinazione $j$.
@@ -841,14 +836,14 @@ $$
 - **Modello matematico:**
 
 $$
-\begin{aligned}
-\min\ z = {} & \sum_{i=1}^{n} \sum_{j=1}^{m} c_{ij} x_{ij} + \sum_{i=1}^{n} \sum_{j=1}^{m} f_{ij} y_{ij} \\
-\text{s.t. } & \sum_{j=1}^{m} x_{ij} = a_i, && i = 1, \dots, n \\
-& \sum_{i=1}^{n} x_{ij} = b_j, && j = 1, \dots, m \\
-& x_{ij} \le M_{ij} y_{ij}, && i = 1, \dots, n,\ j = 1, \dots, m \\
-& x_{ij} \ge 0, \text{ intera}, && i = 1, \dots, n,\ j = 1, \dots, m \\
-& y_{ij} \in \{0, 1\}, && i = 1, \dots, n,\ j = 1, \dots, m
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{i=1}^{n} \sum_{j=1}^{m} c_{ij} x_{ij} + \sum_{i=1}^{n} \sum_{j=1}^{m} f_{ij} y_{ij} & \\
+\textit{s.t.} & \sum_{j=1}^{m} x_{ij} = a_i, & i = 1, \dots, n \\
+ & \sum_{i=1}^{n} x_{ij} = b_j, & j = 1, \dots, m \\
+ & x_{ij} \le M_{ij} y_{ij}, & i = 1, \dots, n,\ j = 1, \dots, m \\
+ & x_{ij} \ge 0, \text{ intera}, & i = 1, \dots, n,\ j = 1, \dots, m \\
+ & y_{ij} \in \{0, 1\}, & i = 1, \dots, n,\ j = 1, \dots, m
+\end{array}
 $$
 
   dove:
@@ -885,11 +880,11 @@ $$
 - **Modello matematico: problema del flusso a costo minimo**
 
 $$
-\begin{aligned}
-\min\ z = {} & \sum_{(i,j) \in A} c_{ij} x_{ij} \\
-\text{s.t. } & \sum_{j \in \Gamma_i^+} x_{ij} - \sum_{j \in \Gamma_i^-} x_{ji} = b_i, && i \in V \\
-& 0 \le x_{ij} \le u_{ij}, && (i, j) \in A
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{(i,j) \in A} c_{ij} x_{ij} & \\
+\textit{s.t.} & \sum_{j \in \Gamma_i^+} x_{ij} - \sum_{j \in \Gamma_i^-} x_{ji} = b_i, & i \in V \\
+ & 0 \le x_{ij} \le u_{ij}, & (i, j) \in A
+\end{array}
 $$
 
 >1 riga dei vincoli -> il bilancio fra ciò che arriva e ciò che parte deve essere uguale a $b_{i}$ 
@@ -899,11 +894,11 @@ $$
 	- aggiungendo il costo fisso cambia il tipo di problema!
 
 $$
-\begin{aligned}
-\min\ z = {} & \sum_{(i,j) \in A} c_{ij} x_{ij} + \sum_{(i,j) \in A} f_{ij} y_{ij} \\
-\text{s.t. } & \sum_{j \in \Gamma_i^+} x_{ij} - \sum_{j \in \Gamma_i^-} x_{ji} = b_i, && i \in V \\
-& 0 \le x_{ij} \le u_{ij} y_{ij}, && (i, j) \in A
-\end{aligned}
+\begin{array}{rll}
+\min\ z = & \sum_{(i,j) \in A} c_{ij} x_{ij} + \sum_{(i,j) \in A} f_{ij} y_{ij} & \\
+\textit{s.t.} & \sum_{j \in \Gamma_i^+} x_{ij} - \sum_{j \in \Gamma_i^-} x_{ji} = b_i, & i \in V \\
+ & 0 \le x_{ij} \le u_{ij} y_{ij}, & (i, j) \in A
+\end{array}
 $$
 
 >> $\Gamma_i^+ = \{j : (i,j) \in A\}$ è l'insieme dei successori di $i$ (archi uscenti) e $\Gamma_i^- = \{j : (j,i) \in A\}$ quello dei predecessori (archi entranti): il vincolo dice "flusso uscente − flusso entrante = flusso immesso nel nodo" (vincolo di conservazione del flusso). Sommando su tutti i nodi ogni $x_{ij}$ compare una volta con $+$ e una con $-$, quindi il problema può essere ammissibile solo se $\sum_{i \in V} b_i = 0$.
@@ -1029,11 +1024,11 @@ $$
 - **Forma "canonica"**
 
 $$
-\begin{aligned}
-z = \min\ & \sum_{j=1}^{n} c_j x_j \\
-\text{s.t. } & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, && i = 1, \dots, m \\
-& x_j \ge 0, && j = 1, \dots, n
-\end{aligned}
+\begin{array}{rll}
+z = \min & \sum_{j=1}^{n} c_j x_j & \\
+\textit{s.t.} & \sum_{j=1}^{n} a_{ij} x_j \ge b_i, & i = 1, \dots, m \\
+ & x_j \ge 0, & j = 1, \dots, n
+\end{array}
 $$
 
   Utile per illustrare le relazioni di dualità -> tutte disequazioni.
@@ -1041,11 +1036,11 @@ $$
 - **Forma "standard"**
 
 $$
-\begin{aligned}
-z = \min\ & \sum_{j=1}^{n} c_j x_j \\
-\text{s.t. } & \sum_{j=1}^{n} a_{ij} x_j = b_i, && i = 1, \dots, m \\
-& x_j \ge 0, && j = 1, \dots, n
-\end{aligned}
+\begin{array}{rll}
+z = \min & \sum_{j=1}^{n} c_j x_j & \\
+\textit{s.t.} & \sum_{j=1}^{n} a_{ij} x_j = b_i, & i = 1, \dots, m \\
+ & x_j \ge 0, & j = 1, \dots, n
+\end{array}
 $$
 
   Necessaria per risolvere il problema con algoritmi come il simplesso -> tutte equazioni.
@@ -1054,16 +1049,16 @@ $$
 >> Esempio: $\max\{3x_1 + 2x_2 : x_1 + x_2 \le 4,\ x_1 \ge 1,\ x_1 \ge 0,\ x_2 \text{ libera}\}$ in forma standard diventa $\min\{-3x_1 - 2x_2^+ + 2x_2^- : x_1 + x_2^+ - x_2^- + x_3 = 4,\ x_1 - x_4 = 1,\ x_1, x_2^+, x_2^-, x_3, x_4 \ge 0\}$ (e il valore ottimo va cambiato di segno).
 
 ---
-## Slide 58-59 – Definizione di Soluzione Base Ammissibile
+## Slide 58-59-60 – Definizione di Soluzione Base Ammissibile
 
 - Si consideri il seguente problema:
 
 $$
-\begin{aligned}
-\min\ z = {} & \mathbf{c}\mathbf{x} \\
-\text{s.t. } & \mathbf{A}\mathbf{x} = \mathbf{b} \\
-& \mathbf{x} \ge \mathbf{0}
-\end{aligned}
+\begin{array}{rl}
+\min\ z = & \mathbf{c}\mathbf{x} \\
+\textit{s.t.} & \mathbf{A}\mathbf{x} = \mathbf{b} \\
+ & \mathbf{x} \ge \mathbf{0}
+\end{array}
 $$
 
   dove $\mathbf{A} \in \mathbb{R}^{m,n}$, $\mathbf{c}, \mathbf{x} \in \mathbb{R}^n$, e $\mathbf{b} \in \mathbb{R}^m$.
@@ -1094,19 +1089,18 @@ $$
 $$
 [\mathbf{B}, \mathbf{N}] \begin{bmatrix} \mathbf{x}_\mathbf{B} \\ \mathbf{x}_\mathbf{N} \end{bmatrix} = \mathbf{b} \quad \Rightarrow \quad \mathbf{B}\mathbf{x}_\mathbf{B} + \mathbf{N}\mathbf{x}_\mathbf{N} = \mathbf{b}
 $$
+>prod. scalare
 
   e poichè $\mathbf{B}$ è invertibile si ha:
 
 $$
 \mathbf{x}_\mathbf{B} = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_\mathbf{N}
 $$
+>per rappresentarmi le variabili che sono in base rispetto le variabili non in base.
 
 >> $\mathbf{B}$ si chiama **matrice di base**: le variabili $\mathbf{x}_\mathbf{B}$ (associate alle sue colonne) sono le *variabili in base*, le $\mathbf{x}_\mathbf{N}$ le *variabili fuori base*. Scrivere $\mathbf{A} = [\mathbf{B}, \mathbf{N}]$ presuppone di aver riordinato le colonne: in pratica si sceglie un qualunque sottoinsieme di $m$ colonne linearmente indipendenti. L'ultima formula dice che, fissati liberamente i valori delle $n - m$ variabili fuori base, le variabili in base sono determinate univocamente.
 
----
-## Slide 60 – Definizione di Soluzione Base Ammissibile (3)
-
-- Se fissiamo $\mathbf{x}_\mathbf{N} = \mathbf{0}$, la soluzione $\mathbf{x} = [\mathbf{x}_\mathbf{B}, \mathbf{x}_\mathbf{N}] = [\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}]$ rappresenta una ***Soluzione Base***.
+- Se fissiamo $\mathbf{x}_\mathbf{N} = \mathbf{0}$ (passaggio utile per garantire la numerazione di tutti i punti estremi), la soluzione $\mathbf{x} = [\mathbf{x}_\mathbf{B}, \mathbf{x}_\mathbf{N}] = [\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}]$ rappresenta una ***Soluzione Base***.
 - Nel caso in cui $\mathbf{x}_\mathbf{B} \ge \mathbf{0}$ (i.e., soddisfa i vincoli di non negatività) diremo che $\mathbf{x}$ è una ***Soluzione Base Ammissibile***.
 
 >> **Esempio.** Vincoli $x_1 + x_2 \le 4$, $x_1 \le 3$, $x_1, x_2 \ge 0$. In forma standard: $x_1 + x_2 + x_3 = 4$, $x_1 + x_4 = 3$, quindi
@@ -1125,7 +1119,7 @@ $$
 >> Le 4 soluzioni base ammissibili sono esattamente i 4 vertici del quadrilatero ammissibile nel piano $(x_1, x_2)$; la soluzione base non ammissibile $(4,0)$ è l'intersezione delle rette $x_1 + x_2 = 4$ e $x_2 = 0$, che cade fuori dalla regione (viola $x_1 \le 3$).
 
 ---
-## Slide 61 – Insieme Poliedrico Convesso
+## Slide 61-62-63-64-65 – Insieme Poliedrico Convesso
 
 - Un ***Insieme Poliedrico Convesso*** è definito dall'intersezione di un numero finito di sottospazi chiusi:
 
@@ -1144,12 +1138,9 @@ $$
 >> I "sottospazi chiusi" sono **semispazi** chiusi, cioè insiemi del tipo $\{\mathbf{x} : \mathbf{a}_i\mathbf{x} \ge b_i\}$; un'uguaglianza equivale a due semispazi (slide 55). L'intersezione di insiemi convessi è convessa, quindi $X$ è convesso.
 >> Combinazione convessa di $\mathbf{x}^1, \mathbf{x}^2$: $\mathbf{x} = \lambda\mathbf{x}^1 + (1-\lambda)\mathbf{x}^2$ con $\lambda \in [0,1]$, cioè un punto del segmento che li unisce. Un punto estremo è quindi un punto che non sta "in mezzo" a nessun segmento contenuto in $X$: geometricamente, un **vertice**. In un quadrato sono estremi solo i 4 vertici; in un cerchio (convesso ma non poliedrico) lo sono tutti i punti della circonferenza.
 
----
-## Slide 62 – Insieme Poliedrico Convesso (2)
+**Teorema.** L'insieme dei punti estremi dell'insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$ corrisponde all'insieme delle soluzioni base ammissibili (non vediamo la dim.).
 
-**Teorema.** L'insieme dei punti estremi dell'insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$ corrisponde all'insieme delle soluzioni base ammissibili.
-
-**Teorema.** Un insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$ ha un numero finito di punti estremi.
+**Teorema.** Un insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$ ha un numero finito di punti estremi (requisito che per il metodo del simplesso può garantire alla convergenza).
 
 **Dimostrazione.** Se la matrice $\mathbf{A}$ di ordine $(m \times n)$ è di rango pieno, allora il numero massimo di basi è pari al numero di possibili scelte di $m$ delle $n$ colonne di $\mathbf{A}$; ossia:
 
@@ -1163,10 +1154,7 @@ $$
 >> Il bound $\binom{n}{m}$ cresce però in modo esponenziale (es. $\binom{40}{20} \approx 1.38 \cdot 10^{11}$), per cui enumerare tutte le basi non è praticabile: il simplesso le visita in modo "intelligente", passando da una base a una adiacente che migliora l'obiettivo.
 >> Il teorema dice "almeno uno": l'ottimo può essere anche un intero lato (o faccia) di $X$, quando la funzione obiettivo è parallela a esso; anche in quel caso tra i punti ottimi c'è almeno un vertice.
 
----
-## Slide 63 – Insieme Poliedrico Convesso (3)
-
-- Un vettore non nullo $\mathbf{d}$ è detto *direzione* dell'insieme convesso $X$, se dato un qualsiasi punto $\mathbf{x}_0 \in X$ ogni altro punto $\mathbf{x} = \mathbf{x}_0 + \lambda\mathbf{d}$, $\lambda \ge 0$, appartiene a $X$.
+- **def(Direzione)**: Un vettore non nullo $\mathbf{d}$ è detto *~~direzione~~* dell'insieme convesso $X$, se dato un qualsiasi punto $\mathbf{x}_0 \in X$ ogni altro punto $\mathbf{x} = \mathbf{x}_0 + \lambda\mathbf{d}$, $\lambda \ge 0$, appartiene a $X$.
 
 **Teorema.** Dato un insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$, il vettore $\mathbf{d}$ è direzione di $X$ se e solo se:
 
@@ -1181,21 +1169,18 @@ $$
 >> "Distinti" significa non proporzionali: $\mathbf{d}$ e $2\mathbf{d}$ individuano la stessa direzione. La combinazione lineare nella definizione di direzione estrema va intesa con coefficienti positivi ($\mathbf{d} = \mu_1\mathbf{d}_1 + \mu_2\mathbf{d}_2$, $\mu_1, \mu_2 > 0$): le direzioni estreme sono gli "spigoli" del cono delle direzioni.
 >> Esempio: $X = \{(x_1, x_2) \ge \mathbf{0} : x_2 \le 1\}$ (una striscia infinita). La sola direzione estrema è $(1, 0)$; nel primo ortante $\{\mathbf{x} \ge \mathbf{0}\}$ di $\mathbb{R}^2$ le direzioni estreme sono $(1,0)$ e $(0,1)$, mentre $(1,1) = (1,0) + (0,1)$ è una direzione ma non estrema.
 
----
-## Slide 64 – Insieme Poliedrico Convesso (4)
-
 **Teorema della Rappresentazione.**
-Sia dato un insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$.
+Sia dato un insieme poliedrico convesso $X = \{\mathbf{x} : \mathbf{A}\mathbf{x} = \mathbf{b}, \mathbf{x} \ge \mathbf{0}\}$ (dato dall'insieme dei vincoli).
 Sia $P = \{\mathbf{x}_i : i = 1, \dots, np\}$ l'insieme di tutti i punti estremi di $X$ e sia $D = \{\mathbf{d}_j : j = 1, \dots, nd\}$ l'insieme di tutte le direzione estreme di $X$.
 Ogni punto di $X$ può essere rappresentato come:
 
 $$
-\begin{aligned}
-\mathbf{x} = {} & \sum_{i=1}^{np} \lambda_i \mathbf{x}_i + \sum_{j=1}^{nd} \mu_j \mathbf{d}_j \\
-\text{s.t. } & \sum_{i=1}^{np} \lambda_i = 1 \\
-& \lambda_i \ge 0, && i = 1, \dots, np \\
-& \mu_j \ge 0, && j = 1, \dots, nd
-\end{aligned}
+\begin{array}{rll}
+\mathbf{x} = & \displaystyle\sum_{i=1}^{np} \lambda_i \mathbf{x}_i + \sum_{j=1}^{nd} \mu_j \mathbf{d}_j & \\
+\textit{s.t.} & \displaystyle\sum_{i=1}^{np} \lambda_i = 1 & \\
+ & \lambda_i \ge 0, & i = 1, \dots, np \\
+ & \mu_j \ge 0, & j = 1, \dots, nd
+\end{array}
 $$
 
 **NOTA:** Se il poliedro è limitato, allora $D = \emptyset$.
@@ -1203,19 +1188,19 @@ $$
 >> In parole: ogni punto di $X$ è "una combinazione convessa dei vertici" (un punto del poligono dei vertici) "più una combinazione a coefficienti non negativi delle direzioni estreme" (uno spostamento verso l'infinito lungo il cono delle direzioni). Se $X$ è limitato (politopo) resta solo la prima parte: ogni punto è combinazione convessa dei suoi vertici.
 >> Esempio: nella striscia $X = \{(x_1, x_2) \ge \mathbf{0} : x_2 \le 1\}$ i punti estremi sono $(0,0)$ e $(0,1)$, la direzione estrema è $(1,0)$; il punto $(5, 0.3)$ si scrive $0.7\,(0,0) + 0.3\,(0,1) + 5\,(1,0)$.
 
----
-## Slide 65 – Insieme Poliedrico Convesso (5)
-
 **Teorema della Rappresentazione**
 
 ![[RO03-s065-1.png]]
 
+>punto p è il risultato della combinazione convessa dei tre estremi a cui applico una combinazione lineare per la direzione da prendere.
+
 >> La figura mostra un poliedro illimitato $X$ con punti estremi $\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3$ e direzioni estreme $\mathbf{d}_1, \mathbf{d}_2$. Un generico punto $\mathbf{x} \in X$ si ottiene partendo da un punto $\mathbf{p} = \sum_i \lambda_i \mathbf{x}_i$ del triangolo formato dai vertici e spostandosi lungo $\sum_j \mu_j \mathbf{d}_j$, cioè in una direzione del "cono" generato da $\mathbf{d}_1$ e $\mathbf{d}_2$.
 
 ---
-## Slide 66 – Insieme Poliedrico Convesso (6)
+## Slide 66-67 – Insieme Poliedrico Convesso (6-7)
 
-**Teorema.** La soluzione ottima di un problema di programmazione lineare è finita se e solo se $\mathbf{c}\mathbf{d}_j \ge 0$, $j = 1, \dots, nd$. In questo caso il minimo si ottiene in corrispondenza di almeno uno dei punti estremi.
+**Teorema.** La soluzione ottima di un problema di programmazione lineare è finita se e solo se        $\mathbf{c}\mathbf{d}_j \ge 0$, $j = 1, \dots, nd$.  In questo caso il minimo si ottiene in corrispondenza di almeno uno dei punti estremi.
+>$cd_{j}$ prodotto scalare
 
 **Dimostrazione.** Dal Teorema della Rappresentazione deriva si ottiene che la funzione obiettivo può essere riscritto come:
 
@@ -1228,29 +1213,26 @@ Se per almeno una direzione estrema $\mathbf{d}_j$ abbiamo che $\mathbf{c}\mathb
 >> Il teorema presuppone $X \ne \emptyset$. L'altra metà della dimostrazione: se $\mathbf{c}\mathbf{d}_j \ge 0$ per ogni $j$, conviene porre tutti i $\mu_j = 0$ (i termini con le direzioni non possono che aumentare $z$). Resta $\sum_i (\mathbf{c}\mathbf{x}_i)\lambda_i$ con $\lambda_i \ge 0$, $\sum_i \lambda_i = 1$: una media pesata dei valori $\mathbf{c}\mathbf{x}_i$, che è minima mettendo tutto il peso ($\lambda_k = 1$) sul vertice con $\mathbf{c}\mathbf{x}_k = \min_i \mathbf{c}\mathbf{x}_i$. Quindi il minimo esiste finito ed è raggiunto in un punto estremo: è la dimostrazione del terzo teorema della slide 62.
 >> Interpretazione: $\mathbf{c}\mathbf{d}_j < 0$ significa che muovendosi lungo $\mathbf{d}_j$ (sempre restando in $X$) il costo diminuisce senza limite. Esempio: $\min\{-x_1 : \mathbf{x} \in X\}$ sulla striscia della slide 64 è illimitato, perché $\mathbf{c}\mathbf{d} = (-1, 0) \cdot (1, 0) = -1 < 0$; invece $\min\{x_1 + x_2\}$ sulla stessa striscia ha ottimo finito nel vertice $(0,0)$.
 
----
-## Slide 67 – Insieme Poliedrico Convesso (7)
-
 Invece, se per ogni direzione $\mathbf{d}_j$ abbiamo che $\mathbf{c}\mathbf{d}_j \geq 0$ oppure non ne abbiamo, allora nella soluzione ottima avremo $\mu_j = 0$, per ogni $j = 1, \dots, nd$.
 In questo caso la funzione obiettivo si riduce a:
 
 $$\min z = \mathbf{c}\mathbf{x} = \sum_{i=1}^{np} (\mathbf{c}\mathbf{x}_i)\lambda_i$$
 
 Siccome $\sum_{i=1}^{np} \lambda_i = 1$ e $\lambda_i \geq 0$, allora la soluzione è sicuramente finita.
-Sia $x_p$ il punto extremo tale che $\mathbf{c}\mathbf{x}_p \leq \mathbf{c}\mathbf{x}_i$, per ogni $i = 1, \dots, np$.
+Sia $x_p$ il punto extremo (prendiamo quello che vale di meno) tale che $\mathbf{c}\mathbf{x}_p \leq \mathbf{c}\mathbf{x}_i$, per ogni $i = 1, \dots, np$.
 Se ora consideriamo un qualsiasi punto $\mathbf{x} \in X$ avremo:
 
 $$\mathbf{c}\mathbf{x} = \sum_{i=1}^{np} (\mathbf{c}\mathbf{x}_i)\lambda_i \geq \sum_{i=1}^{np} (\mathbf{c}\mathbf{x}_p)\lambda_i = (\mathbf{c}\mathbf{x}_p)\sum_{i=1}^{np} \lambda_i = \mathbf{c}\mathbf{x}_p$$
+>sostituisco nelle np componenti $cx_{i}$ con $cx_{p}$ vado a sottostimare quel valore quindi metto $\geq$ 
 
-quindi
-
+quindi:
 $$\mathbf{c}\mathbf{x} \geq \mathbf{c}\mathbf{x}_p$$
 
 >> **Intuizione:** una media pesata (con pesi non negativi a somma 1) di numeri non può essere più piccola del più piccolo di essi. Poiché ogni punto di $X$ è (a meno delle direzioni, che qui non aiutano) una combinazione convessa dei punti estremi, il suo costo è una media dei costi dei vertici, quindi almeno pari al costo del vertice migliore $\mathbf{x}_p$.
 >> Questo è il **teorema fondamentale della PL**: se il problema ha ottimo finito, allora almeno un punto estremo (vertice) è ottimo. Per questo il simplesso può limitarsi a esplorare le soluzioni base ammissibili.
 
 ---
-## Slide 68 – Migliorare una Soluzione Base
+## Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base
 
 - Il valore della funzione obiettivo corrispondente alla soluzione base $\mathbf{x} = [\mathbf{x}_B, \mathbf{x}_N] = [\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}]$, è dato dall'espressione:
 $$z = [\mathbf{c}_B, \mathbf{c}_N]\begin{bmatrix} \mathbf{x}_B \\ \mathbf{x}_N \end{bmatrix} = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b}$$
@@ -1260,11 +1242,15 @@ z &= \mathbf{c}_B\mathbf{x}_B + \mathbf{c}_N\mathbf{x}_N \\
 &= \mathbf{c}_B(\mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N) + \mathbf{c}_N\mathbf{x}_N \\
 &= \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} - (\mathbf{c}_B\mathbf{B}^{-1}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N
 \end{aligned}$$
+>per capire se è la soluzione ottima ora la dobbiamo confrontare con tutti gli altri punti, che ottengo modificando $x_{b}$ modificando il valore delle variabili non base ($N_{x}$).
+
+>- $\mathbf{c}_B\mathbf{B}^{-1}\mathbf{b}$ -> valore corrente della soluzione base
+>- $(\mathbf{c}_B\mathbf{B}^{-1}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N$ -> come cambia il valore della soluzione se vario almeno una variabile non base
+>la domanda quindi diventa -> è possibile cambiare almeno una variabile non base e migliorare il valore di quella funzione?
 
 >> L'espressione $\mathbf{x}_B = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N$ deriva semplicemente dai vincoli $\mathbf{B}\mathbf{x}_B + \mathbf{N}\mathbf{x}_N = \mathbf{b}$, moltiplicati a sinistra per $\mathbf{B}^{-1}$. In pratica si "eliminano" le variabili base dalla funzione obiettivo, esprimendo $z$ solo in funzione delle variabili non base: il primo termine è il costo attuale, il secondo dice come cambia $z$ se "accendiamo" qualche variabile non base.
 
----
-## Slide 69 – Migliorare una Soluzione Base (2)
+>w -> non è una scelta casuale, può avere anche un altro significato che vedremo più avanti.
 
 - Se definiamo $\mathbf{w} = \mathbf{c}_B\mathbf{B}^{-1}$ possiamo scrivere:
 $$z = \mathbf{w}\mathbf{b} - (\mathbf{w}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N = \mathbf{w}\mathbf{b} - \sum_{k \in N}(\mathbf{w}\mathbf{a}_k - c_k)x_k$$
@@ -1281,20 +1267,18 @@ $$z = z_0 - (\mathbf{w}\mathbf{a}_k - c_k)x_k$$
 >>
 >> Il vettore $\mathbf{w} = \mathbf{c}_B\mathbf{B}^{-1}$ è il vettore dei *moltiplicatori del simplesso*: come si vedrà nella parte sulla dualità, all'ottimo è proprio la soluzione duale ottima.
 
----
-## Slide 70 – Migliorare una Soluzione Base (3)
+>quale è il valore giusto di $x_{k}$?
 
 - L'entità del miglioramento della funzione obiettivo dipende dal valore massimo che la variabile $x_k$ può assumere, garantendo che la nuova soluzione sia sempre Base Ammissibile.
 - Per determinare di quanto posso aumentare la variabile $x_k$ per avere un nuova soluzione Base Ammissibile, dobbiamo considerare l'equazione che dermina la soluzione $\mathbf{x}_B$ in funzione di $\mathbf{x}_N$:
 $$\mathbf{x}_B = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N$$
 	che possiamo riscrivere come:
 $$\mathbf{x}_B = \bar{\mathbf{b}} - \mathbf{y}^k x_k$$
-	dove $\bar{\mathbf{b}} = \mathbf{B}^{-1}\mathbf{b}$ e $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$ (ipotizzando che $x_j = 0,\ \forall j \in N \setminus \{k\}$).
+	dove $\bar{\mathbf{b}} = \mathbf{B}^{-1}\mathbf{b}$ e $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$ (ipotizzando che $x_j = 0,\ \forall j \in N \setminus \{k\}$). 
+
+>no dim.-> ci accontentiamo del fatto che io faccio aumentare $x_{k}$ fino al valore per cui una variabile in base diventa nulla, e sostituendo quella che diventa nulla con quella $x_{k}$ che sto facendo entrare mi genera la nuova base voluta.
 
 >> $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$ contiene i coefficienti con cui la colonna $\mathbf{a}_k$ si scrive come combinazione lineare delle colonne di base: $\mathbf{a}_k = \mathbf{B}\mathbf{y}^k$. Aumentando $x_k$ di una unità, per restare su $\mathbf{A}\mathbf{x} = \mathbf{b}$ le variabili base devono diminuire di $\mathbf{y}^k$. Geometricamente ci si muove lungo uno *spigolo* del poliedro che parte dal vertice corrente, nella direzione $\mathbf{d} = \begin{bmatrix} -\mathbf{y}^k \\ \mathbf{e}_k \end{bmatrix}$ (componenti base e non base).
-
----
-## Slide 71 – Migliorare una Soluzione Base (4)
 
 - Per ogni componente $i$-esima di $\mathbf{x}_B$, $i = 1, \dots, m$, abbiamo che:
 $$x_i = \bar{b}_i - y_i^k x_k$$
@@ -1302,22 +1286,19 @@ $$x_i = \bar{b}_i - y_i^k x_k$$
 $$x_i = \bar{b}_i - y_i^k x_k \geq 0$$
 - Quindi per ogni $i$ la variabile $x_k$ deve rispettare la condizione:
 $$x_k \leq \frac{\bar{b}_i}{y_i^k}$$
+>semplice passaggio algebrico.
 
 >> Attenzione: la divisione per $y_i^k$ conserva il verso della disuguaglianza solo se $y_i^k > 0$. Se $y_i^k \leq 0$, allora $x_i = \bar{b}_i - y_i^k x_k \geq \bar{b}_i \geq 0$ per ogni $x_k \geq 0$: la componente $i$ non pone alcun limite alla crescita di $x_k$. Per questo nella slide successiva il rapporto si considera solo sulle righe con $y_i^k > 0$.
 
----
-## Slide 72 – Migliorare una Soluzione Base (5)
-
-- Il valore massimo che la variabile $x_k$ può assumere è dato dal cosiddetto ***Rapporto Minimo***:
+- Il valore massimo che la variabile $x_k$ può assumere è dato dal cosiddetto (criterio) ***Rapporto Minimo***:
 $$x_k = \frac{\bar{b}_r}{y_r^k} = \min_{i=1,\dots,m}\left[\frac{\bar{b}_i}{y_i^k} : y_i^k > 0\right]$$
 - Nel caso in cui $\mathbf{y}^k \leq \mathbf{0}$ la funzione obiettivo è ***illimitata***, in quanto $(\mathbf{w}\mathbf{a}_k - c_k) > 0$ e $x_k$ può arbitrariamente crescere garantendo l'ammissibilità della soluzione.
+
+>$y_{k}$ è un informazione che ci risulterà utile per calcolare la direzione
 
 >> **Esempio:** se $\bar{\mathbf{b}} = (4, 1, 6)$ e $\mathbf{y}^k = (1, -2, 3)$, i rapporti validi sono $4/1 = 4$ e $6/3 = 2$ (la riga 2 ha $y_2^k < 0$ e si ignora). Il minimo è $2$, raggiunto per $r = 3$: $x_k = 2$ e la terza variabile base si azzera ed esce dalla base. La nuova soluzione è $\mathbf{x}_B = (4-2,\ 1+4,\ 6-6) = (2, 5, 0)$.
 >>
 >> Se $\bar{b}_r = 0$ (soluzione **degenere**) il passo è nullo: la base cambia ma il vertice e il valore di $z$ restano gli stessi. In caso di parità nel rapporto minimo, dopo il cambio base un'altra variabile base resta a zero (degenerazione).
-
----
-## Slide 73 – Migliorare una Soluzione Base (6)
 
 - Una volta aggiornato il valore della variabile $x_k$ tutte le variabili $x_i$ in base sono aggiornate come segue:
 $$x_i = \bar{b}_i - y_i^k \frac{\bar{b}_r}{y_r^k}$$
@@ -1328,40 +1309,39 @@ $$x_i = \bar{b}_i - y_i^k \frac{\bar{b}_r}{y_r^k}$$
 >> Per $i = r$ si ottiene $x_r = \bar{b}_r - y_r^k \frac{\bar{b}_r}{y_r^k} = 0$. La nuova matrice di base resta invertibile perché $y_r^k \neq 0$: la colonna $\mathbf{a}_k = \mathbf{B}\mathbf{y}^k$ ha una componente non nulla lungo $\mathbf{a}_r$, quindi sostituendo $\mathbf{a}_r$ con $\mathbf{a}_k$ le colonne restano linearmente indipendenti. Il nuovo valore dell'obiettivo è $z = z_0 - (\mathbf{w}\mathbf{a}_k - c_k)\,\frac{\bar{b}_r}{y_r^k} \leq z_0$.
 
 ---
-## Slide 74 – Algoritmo del Simplesso Primale
+## Slide 74-75 – Algoritmo del Simplesso Primale !!!
 
 *Step*1. **Inizializzazione:**
-	Definisce una soluzione base ammissibile
+	Definisce una soluzione base ammissibile (in futuro determineremo un metodo che ce la farà calcolare in autonomia)
 	$\mathbf{x} = [\mathbf{x}_B, \mathbf{x}_N] = [\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}] = [\bar{\mathbf{b}}, \mathbf{0}]$ di costo $z = \mathbf{c}_B\mathbf{x}_B = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b}$.
 
-*Step*2. **Pricing:**
+*Step*2. **Pricing:** (cerchiamo di capire se possiamo guadagnare ancora)
 	Calcola $\mathbf{w} = \mathbf{c}_B\mathbf{B}^{-1}$, che equivale a risolvere $\mathbf{w}\mathbf{B} = \mathbf{c}_B$.
-	Calcola i *costi ridotti* $\mathbf{w}\mathbf{a}_j - c_j$ per le variabili non-base $j \in N$ e determina:
+	Calcola i ~~*costi ridotti*~~ $\mathbf{w}\mathbf{a}_j - c_j$ per le variabili non-base $j \in N$ e determina:
 $$\mathbf{w}\mathbf{a}_k - c_k = \max_{j \in N}\left\{\mathbf{w}\mathbf{a}_j - c_j\right\}$$
+>$c_{j}-w_{j}$ -> viene chiamato **costo ridotto**.
 
 *Step*3. **Condizioni di ottimalità:**
 	Se $\mathbf{w}\mathbf{a}_k - c_k < 0$, allora STOP la soluzione è *ottima*.
 
 *Step*4. **La variabile $k$ è candidata a entrare in base:**
-	Calcola $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$, che equivale a risolvere $\mathbf{B}\mathbf{y}^k = \mathbf{a}_k$.
-	Se $\mathbf{y}^k \leq \mathbf{0}$, allora STOP la soluzione è *illimitata*.
+	Calcola $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$, che equivale a risolvere $\mathbf{B}\mathbf{y}^k = \mathbf{a}_k$ (risolvo il sistema lineare).
+	Se $\mathbf{y}^k \leq \mathbf{0}$, allora STOP la soluzione è *illimitata* (la cui interpretazione del significato dipende dal modello).
 
 >> Nello Step 3 la condizione di ottimalità vale anche con l'uguaglianza: se $\max_{j \in N}\{\mathbf{w}\mathbf{a}_j - c_j\} \leq 0$ la soluzione è ottima (come nella slide 69). Un costo ridotto nullo per una variabile non base segnala tipicamente la presenza di **ottimi alternativi** (farla entrare non cambia $z$).
 >>
 >> La regola di scelta "massimo costo ridotto" è la *regola di Dantzig*; qualunque $k$ con costo ridotto positivo va bene. Nella pratica non si calcola mai $\mathbf{B}^{-1}$ esplicitamente: si risolvono i sistemi lineari $\mathbf{w}\mathbf{B} = \mathbf{c}_B$ e $\mathbf{B}\mathbf{y}^k = \mathbf{a}_k$ (ad es. con fattorizzazione LU).
-
----
-## Slide 75 – Algoritmo del Simplesso Primale (2)
 
 *Step*5. **Rapporto minimo:**
 	Calcola il valore da assegnare a $x_k$:
 $$x_k = \frac{\bar{b}_r}{y_r^k} = \min\left\{\frac{\bar{b}_i}{y_i^k} : y_i^k > 0,\ i = 1, \dots, m\right\}$$
 	La variabile $x_r$ esce dalla base e $x_k$ entra al suo posto.
 	Aggiorna $\mathbf{B}$, $\mathbf{N}$ e la soluzione base $\mathbf{x} = [\mathbf{x}_B, \mathbf{x}_N] = [\bar{\mathbf{b}}, \mathbf{0}]$.
-	Ritorna allo Step 2.
+	Ritorna allo Step 2 a fare il Pricing.
 
 >> A ogni iterazione non degenere $z$ diminuisce strettamente, e siccome le basi sono in numero finito (al più $\binom{n}{m}$) nessuna base si ripete: l'algoritmo termina in un numero finito di passi. In presenza di degenerazione il simplesso può invece **ciclare** (ripetere basi con lo stesso $z$); si evita con regole anti-ciclo come la *regola di Bland* (scegliere sempre l'indice più piccolo tra i candidati a entrare e a uscire).
 
+>all'esame come domande teoriche può chiedere di implementare qualche passaggio intermedio, ma quando si va per risolvere un esercizio ce un metodo molto più semplice e immediato.
 ---
 ## Slide 76 – Definizione del Problema Duale
 
@@ -1380,10 +1360,13 @@ s.t.\ & \mathbf{w}\mathbf{A} \leq \mathbf{c} \\
 \end{aligned}$$
 	dove l'insieme dei sui punti ammissibili è $W = \{\mathbf{w} : \mathbf{w}\mathbf{A} \leq \mathbf{c}, \mathbf{w} \geq \mathbf{0}\}$.
 
->> Qui $\mathbf{w}$ è un vettore **riga** di $m$ componenti (una variabile duale per ogni vincolo del primale), mentre $\mathbf{x}$ è un vettore colonna di $n$ componenti. Il duale ha un vincolo per ogni variabile del primale: i ruoli di $\mathbf{b}$ e $\mathbf{c}$ si scambiano e la matrice è "letta per colonne" ($\mathbf{w}\mathbf{A} \leq \mathbf{c}$ equivale a $\mathbf{A}^T\mathbf{w}^T \leq \mathbf{c}^T$). Il duale del duale è di nuovo il primale.
+>soluzione ottima del 'primale' coincide con quella del 'duale'. 
+>costruiremo il 'duale' partendo dalle condizioni ottimali del primale.
+
+>> Qui $\mathbf{w}$ è un vettore **riga** di $m$ componenti (una variabile duale per ogni vincolo del primale), mentre $\mathbf{x}$ è un vettore colonna di $n$ componenti. Il duale ha un vincolo per ogni variabile del primale: i ruoli di $\mathbf{b}$ e $\mathbf{c}$ si scambiano e la matrice è "letta per colonne" **($\mathbf{w}\mathbf{A} \leq \mathbf{c}$ equivale a $\mathbf{A}^T\mathbf{w}^T \leq \mathbf{c}^T$).** Il duale del duale è di nuovo il primale.
 
 ---
-## Slide 77 – Come si ottiene il duale?
+## Slide 77-78-79 – Come si ottiene il duale?
 
 - Partendo dal problema primale in forma canonica:
 $$\begin{aligned}
@@ -1391,7 +1374,7 @@ z_P = \min\ & \mathbf{c}\mathbf{x} \\
 s.t.\ & \mathbf{A}\mathbf{x} \geq \mathbf{b} \\
 & \mathbf{x} \geq \mathbf{0}
 \end{aligned}$$
-- Aggiungendo $m$ variabili $\mathbf{x}_S$ di ***slack*** alle $n$ variabili originarie, il primale equivale al problema in forma standard:
+- Aggiungendo $m$ variabili $\mathbf{x}_S$ di ***slack*** (con il segno '-' dovuto al maggiore sopra) alle $n$ variabili originarie, il primale equivale al problema in forma standard:
 $$\begin{aligned}
 z_P = \min\ & \mathbf{c}\mathbf{x} \\
 s.t.\ & \mathbf{A}\mathbf{x} - \mathbf{I}\mathbf{x}_S = \mathbf{b} \\
@@ -1400,9 +1383,6 @@ s.t.\ & \mathbf{A}\mathbf{x} - \mathbf{I}\mathbf{x}_S = \mathbf{b} \\
 	dove $\mathbf{I} = [\mathbf{a}_{n+1}, \dots, \mathbf{a}_{n+m}] = [\mathbf{e}_1, \dots, \mathbf{e}_m]$ è la matrice identità di ordine $m$.
 
 >> Nota: nella matrice dei vincoli del problema standard, $[\mathbf{A}, -\mathbf{I}]$, le colonne delle variabili di slack sono in realtà $-\mathbf{e}_1, \dots, -\mathbf{e}_m$ (con costo $c_{n+i} = 0$): è per questo che nella slide seguente compare $-\mathbf{w}\mathbf{e}_i$. Poiché sottraggono l'eccedenza, queste variabili si chiamano anche variabili di *surplus*.
-
----
-## Slide 78 – Come si ottiene il duale? (2)
 
 - In corrispondenza di una soluzione ottima del primale deve esistere una base $\mathbf{B}$ per cui:
 $$\mathbf{w}\mathbf{a}_j - c_j \leq 0, \quad j = 1, \dots, n+m$$
@@ -1420,20 +1400,19 @@ $$\begin{aligned}
 
 >> Per le colonne di base il costo ridotto è automaticamente nullo ($\mathbf{c}_B\mathbf{B}^{-1}\mathbf{B} - \mathbf{c}_B = \mathbf{0}$), quindi la condizione può essere scritta su tutte le $n+m$ colonne. Siccome $\mathbf{w}\mathbf{e}_i = w_i$, la seconda riga dice $-w_i \leq 0$, cioè $w_i \geq 0$: il segno delle variabili duali "nasce" dalle colonne di slack. In sintesi: *le condizioni di ottimalità del primale sono esattamente le condizioni di ammissibilità del duale*.
 
----
-## Slide 79 – Come si ottiene il duale? (3)
-
-- Quindi abbiamo mostrato perché l'insieme delle soluzioni ammissibili del duale è definito come:
+- Quindi abbiamo mostrato perché l'insieme delle soluzioni ammissibili del duale è definito come: (dato dalle condizioni ottimali che dovrebbe raggiungere la base)
 $$W = \{\mathbf{w} : \mathbf{w}\mathbf{A} \leq \mathbf{c}, \mathbf{w} \geq \mathbf{0}\}$$
-- Ora si vuole mostrare perché la funzione obiettivo da massimizzare è rappresentata da $\mathbf{w}\mathbf{b}$ (i.e., $z_D = \max\{\mathbf{w}\mathbf{b} : \mathbf{w} \in W\}$).
+- Ora si vuole mostrare perché la funzione obiettivo da massimizzare è rappresentata da $\mathbf{w}\mathbf{b}$ (i.e., $z_D = \max\{\mathbf{w}\mathbf{b} : \mathbf{w} \in W\}$). (wb è sempre un lower bound)
 
 ---
-## Slide 80 – Dualità debole
+## Slide 80-81 – Dualità debole
 
 **Lemma 1 (Dualità Debole).**
 Se $\tilde{\mathbf{x}} \in X = \{\mathbf{x} : \mathbf{A}\mathbf{x} \geq \mathbf{b}, \mathbf{x} \geq \mathbf{0}\}$ e $\tilde{\mathbf{w}} \in W = \{\mathbf{w} : \mathbf{w}\mathbf{A} \leq \mathbf{c}, \mathbf{w} \geq \mathbf{0}\}$ allora $\tilde{\mathbf{w}}\mathbf{b} \leq \mathbf{c}\tilde{\mathbf{x}}$.
 
-**Dimostrazione.**
+>se $\tilde{\mathbf{x}}$ è un punto ammissibile per il primale e $\tilde{\mathbf{w}}$ e un punto ammissibile per il duale, wb è sempre una stima per difetto di dove potrebbe essere la stima per il primale, compresa quella ottima.
+
+**Dimostrazione.** (~~banale~~ -> possibile domande all'esame)
 Siccome $\tilde{\mathbf{x}} \in X$ allora $\mathbf{A}\tilde{\mathbf{x}} \geq \mathbf{b}$. Poichè $\tilde{\mathbf{w}} \geq \mathbf{0}$, si ha:
 $$\tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} \geq \tilde{\mathbf{w}}\mathbf{b} \tag{1}$$
 Siccome $\tilde{\mathbf{w}} \in W$ allora $\tilde{\mathbf{w}}\mathbf{A} \leq \mathbf{c}$. Poichè $\tilde{\mathbf{x}} \geq \mathbf{0}$, si ha:
@@ -1441,9 +1420,6 @@ $$\tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} \leq \mathbf{c}\tilde{\mathbf{x
 Dalle espressioni (1) e (2) si ottiene $\tilde{\mathbf{w}}\mathbf{b} \leq \mathbf{c}\tilde{\mathbf{x}}$. $\square$
 
 >> Il punto chiave è che moltiplicare una disuguaglianza vettoriale per un vettore **non negativo** ne preserva il verso: $\mathbf{A}\tilde{\mathbf{x}} - \mathbf{b} \geq \mathbf{0}$ e $\tilde{\mathbf{w}} \geq \mathbf{0}$ implicano $\tilde{\mathbf{w}}(\mathbf{A}\tilde{\mathbf{x}} - \mathbf{b}) = \sum_i \tilde{w}_i(\mathbf{a}^i\tilde{\mathbf{x}} - b_i) \geq 0$ (somma di prodotti di numeri $\geq 0$). Per questo i segni delle variabili duali sono legati al verso dei vincoli primali.
-
----
-## Slide 81 – Dualità debole (2)
 
 - Dalla dualità debole si deduce che il valore $\mathbf{w}\mathbf{b}$ di qualsiasi soluzione $\mathbf{w} \in W$ è un lower bound alla soluzione ottima del primale.
 - Il miglior lower bound $\mathbf{w}^*\mathbf{b}$ alla soluzione ottima del primale lo si può ottenere risolvendo il seguente problema "*duale*":
@@ -1458,7 +1434,7 @@ s.t.\ & \mathbf{w}\mathbf{A} \leq \mathbf{c} \\
 ---
 ## Slide 82 – Dualità debole
 
-**Corollario 1.** Se $\mathbf{x}^* \in X$ e $\mathbf{w}^* \in W$ soddisfano $\mathbf{w}^*\mathbf{b} = \mathbf{c}\mathbf{x}^*$ allora $\mathbf{x}^*$ è soluzione ottima del primale e $\mathbf{w}^*$ è soluzione ottima del duale.
+**Corollario 1.** Se $\mathbf{x}^* \in X$ e $\mathbf{w}^* \in W$ soddisfano $\mathbf{w}^*\mathbf{b} = \mathbf{c}\mathbf{x}^*$ (le due funzioni obbiettivo sono uguali) allora $\mathbf{x}^*$ è soluzione ottima del primale e $\mathbf{w}^*$ è soluzione ottima del duale.
 
 **Dimostrazione.** Per il *lemma della dualità debole* si ha $\mathbf{w}\mathbf{b} \leq \mathbf{c}\mathbf{x}$, $\forall \mathbf{w} \in W$ e $\forall \mathbf{x} \in X$.
 Quindi, $\mathbf{c}\mathbf{x} \geq \mathbf{w}^*\mathbf{b}$, $\forall \mathbf{x} \in X$, ma poichè per ipotesi $\mathbf{w}^*\mathbf{b} = \mathbf{c}\mathbf{x}^*$ si ha:
@@ -1471,7 +1447,7 @@ Per cui $\mathbf{w}^* \in W$ è soluzione ottima del duale. $\square$
 >> Il corollario fornisce un **certificato di ottimalità**: per convincere qualcuno che $\mathbf{x}^*$ è ottima basta esibire un $\mathbf{w}^*$ duale ammissibile con lo stesso valore; la verifica richiede solo prodotti matrice-vettore, senza rieseguire l'algoritmo.
 
 ---
-## Slide 83 – Dualità Forte
+## Slide 83-84-85 – Dualità Forte
 
 Il *teorema della dualità forte* stabilisce che se esistono soluzioni ammissibili sia per il primale che per il duale, allora esistono due soluzioni ottime i cui valori coincidono.
 
@@ -1484,9 +1460,6 @@ Siccome $W \neq \emptyset$, per il lemma della dualità debole il valore $\mathb
 Quindi, $X \neq \emptyset$ e $\mathbf{c}\mathbf{x}$ limitata, implica che il primale ha soluzione ottima limitata.
 
 >> Più precisamente: preso un qualunque $\bar{\mathbf{w}} \in W$, si ha $\mathbf{c}\mathbf{x} \geq \bar{\mathbf{w}}\mathbf{b}$ per ogni $\mathbf{x} \in X$, quindi $\mathbf{c}\mathbf{x}$ non può tendere a $-\infty$. Per il teorema fondamentale della PL, un problema ammissibile e limitato ha una soluzione ottima in un vertice, cioè una soluzione base ammissibile ottima (quella trovata dal simplesso, usando una regola anti-ciclo per garantirne la terminazione).
-
----
-## Slide 84 – Dualità Forte (2)
 
 Riscriviamo il primale in forma standard:
 $$\begin{aligned}
@@ -1503,31 +1476,28 @@ $$\begin{aligned}
 \mathbf{w}^* &\geq \mathbf{0}
 \end{aligned}$$
 
----
-## Slide 85 – Dualità Forte (3)
-
 Per cui la soluzione $\mathbf{w}^* = \mathbf{c}_B\mathbf{B}^{-1}$ è duale ammissibile, i.e. $\mathbf{w}^* \in W$.
 Infine, siccome $\mathbf{w}^* = \mathbf{c}_B\mathbf{B}^{-1}$ e $\mathbf{x}^* = (\mathbf{B}^{-1}\mathbf{b}, \mathbf{0})$, si ha:
 $$\mathbf{w}^*\mathbf{b} = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} = \mathbf{c}\mathbf{x}^*$$
 Per cui il teorema è dimostrato. $\square$
 
+>variabile di slack e di scarto sono la stessa cosa.
+
 >> Conseguenza pratica: quando il simplesso termina con una base ottima $\mathbf{B}$, fornisce "gratis" anche la soluzione duale ottima $\mathbf{w}^* = \mathbf{c}_B\mathbf{B}^{-1}$ (i moltiplicatori del simplesso calcolati nello Step 2 dell'ultima iterazione). Nota: la $\mathbf{x}^*$ qui include anche le slack, e poiché esse hanno costo nullo $\mathbf{c}\mathbf{x}^*$ coincide con $\mathbf{c}_B\mathbf{x}_B^*$.
 
 ---
-## Slide 86 – Relazione tra Primale e Duale
+## Slide 86-87 – Relazione tra Primale e Duale
 
 - Dal teorema della dualità debole abbiamo:
 $$\mathbf{c}\mathbf{x} \geq \mathbf{w}\mathbf{A}\mathbf{x} \geq \mathbf{w}\mathbf{b}$$
-	Se supponiamo che il primale ha soluzione ottima non limitata allora:
+	Se supponiamo che il ~~primale ha soluzione ottima non limitata~~ allora:
 $$\mathbf{c}\mathbf{x} \to -\infty \quad \Rightarrow \quad -\infty \geq \mathbf{w}\mathbf{b}, \forall \mathbf{w} \in W$$
-	allora il duale non ha soluzioni ammissibili, i.e. $W = \emptyset$.
-- È vero anche il viceversa: se il duale ha soluzione ottima non limitata:
+	allora il ~~duale non ha soluzioni ammissibili~~, i.e. $W = \emptyset$.
+- È vero ~~anche il viceversa~~: se il duale ha soluzione ottima non limitata:
 $$\mathbf{w}\mathbf{b} \to +\infty \quad \Rightarrow \quad \mathbf{c}\mathbf{x} \geq +\infty, \forall \mathbf{x} \in X$$
 	allora il primale non ha soluzioni ammissibili, i.e. $X = \emptyset$.
 
----
-## Slide 87 – Relazione tra Primale e Duale (2)
-
+Riassunto:
 - Se il primale non ha soluzioni ammissibili, i.e. $X = \emptyset$, allora il duale o non ha soluzioni ammissibili o ha una soluzione ottima non limitata.
 - Possiamo riassumere tutti i possibili casi nella seguente tabella:
 
@@ -1542,7 +1512,7 @@ $$\mathbf{w}\mathbf{b} \to +\infty \quad \Rightarrow \quad \mathbf{c}\mathbf{x} 
 >> Lettura della tabella: se uno dei due ha ottimo finito, anche l'altro lo ha (dualità forte); se uno è illimitato, l'altro è non ammissibile (dualità debole).
 
 ---
-## Slide 88 – Forme Miste del Primale
+## Slide 88-89-90 – Forme Miste del Primale
 
 - Un problema di programmazione lineare si può presentare nella seguente forma:
 $$\begin{aligned}
@@ -1555,24 +1525,21 @@ s.t.\ & \mathbf{A}_1\mathbf{x} \geq \mathbf{b}_1 \\
 - Per scrivere il duale portiamo il primale in forma standard:
 $$\begin{array}{rlllll}
 \min z_P = & \mathbf{c}\mathbf{x} & & & & \\
-s.t. & \mathbf{A}_1\mathbf{x} & -\mathbf{I}\mathbf{x}_S & & = \mathbf{b}_1 & : \mathbf{w}_1 \\
+\textit{s.t.} & \mathbf{A}_1\mathbf{x} & -\mathbf{I}\mathbf{x}_S & & = \mathbf{b}_1 & : \mathbf{w}_1 \\
 & \mathbf{A}_2\mathbf{x} & & & = \mathbf{b}_2 & : \mathbf{w}_2 \\
 & \mathbf{A}_3\mathbf{x} & & +\mathbf{I}\mathbf{x}_T & = \mathbf{b}_3 & : \mathbf{w}_3 \\
-& \mathbf{x},\ \mathbf{x}_S,\ \mathbf{x}_T \geq \mathbf{0} & & & &
+& \rlap{\mathbf{x},\ \mathbf{x}_S,\ \mathbf{x}_T \geq \mathbf{0}} & & & &
 \end{array}$$
 
 >> La notazione "$: \mathbf{w}_i$" associa a ciascun blocco di vincoli il corrispondente vettore di variabili duali.
 
----
-## Slide 89 – Forme Miste del Primale (2)
-
 - Dato il primale in forma standard:
 $$\begin{array}{rlllll}
 \min z_P = & \mathbf{c}\mathbf{x} & & & & \\
-s.t. & \mathbf{A}_1\mathbf{x} & -\mathbf{I}\mathbf{x}_S & & = \mathbf{b}_1 & : \mathbf{w}_1 \\
+\textit{s.t.} & \mathbf{A}_1\mathbf{x} & -\mathbf{I}\mathbf{x}_S & & = \mathbf{b}_1 & : \mathbf{w}_1 \\
 & \mathbf{A}_2\mathbf{x} & & & = \mathbf{b}_2 & : \mathbf{w}_2 \\
 & \mathbf{A}_3\mathbf{x} & & +\mathbf{I}\mathbf{x}_T & = \mathbf{b}_3 & : \mathbf{w}_3 \\
-& \mathbf{x},\ \mathbf{x}_S,\ \mathbf{x}_T \geq \mathbf{0} & & & &
+& \rlap{\mathbf{x},\ \mathbf{x}_S,\ \mathbf{x}_T \geq \mathbf{0}} & & & &
 \end{array}$$
 - Il duale è il seguente:
 $$\begin{aligned}
@@ -1588,22 +1555,19 @@ s.t.\ & \mathbf{w}_1\mathbf{A}_1 + \mathbf{w}_2\mathbf{A}_2 + \mathbf{w}_3\mathb
 >> - colonne di $\mathbf{x}_T$ (pari a $+\mathbf{I}$ nel terzo blocco): $\mathbf{w}_3 \leq \mathbf{0}$;
 >> - il blocco di uguaglianze non ha slack, quindi nessun vincolo di segno su $\mathbf{w}_2$.
 
----
-## Slide 90 – Forme Miste del Primale (3)
-
 - Possiamo riassumere tutti i possibili casi nella seguente tabella:
 
-| Primale | Duale |
-|:---:|:---:|
-| min | max |
-| **Vincolo $i$** | **Variabile $w_i$** |
-| $\geq$ | $w_i \geq 0$ |
-| $=$ | qualsiasi |
-| $\leq$ | $w_i \leq 0$ |
-| **Variabile $x_j$** | **Vincolo $j$** |
-| $x_j \geq 0$ | $\leq$ |
-| qualsiasi | $=$ |
-| $x_j \leq 0$ | $\geq$ |
+|       Primale       |        Duale        |
+| :-----------------: | :-----------------: |
+|         min         |         max         |
+|   **Vincolo $i$**   | **Variabile $w_i$** |
+|       $\geq$        |    $w_i \geq 0$     |
+|         $=$         |      qualsiasi      |
+|       $\leq$        |    $w_i \leq 0$     |
+| **Variabile $x_j$** |   **Vincolo $j$**   |
+|    $x_j \geq 0$     |       $\leq$        |
+|      qualsiasi      |         $=$         |
+|    $x_j \leq 0$     |       $\geq$        |
 
 >> Un modo per ricordarla: per un problema di **min**, i casi "naturali" sono vincoli $\geq$ e variabili $\geq 0$ (la forma canonica), e a essi corrispondono nel duale variabili $\geq 0$ e vincoli $\leq$ (i casi naturali per un max). Le uguaglianze corrispondono a variabili libere e viceversa; i casi "innaturali" ($\leq$ in un min, $x_j \leq 0$) si corrispondono con segni invertiti. Letta da destra a sinistra, la tabella dà il duale di un problema di max.
 
@@ -1638,37 +1602,34 @@ s.t. & w_1 - w_2 = 1 & : x_1 \\
 >>
 >> Verifica numerica: $\mathbf{x}^* = (1, 1, -1)$ è ammissibile per il primale con $z_P = 1 - 2 - 3 = -4$, e $\mathbf{w}^* = (0, -1, -1)$ è ammissibile per il duale con $z_D = 0 - 1 - 3 = -4$. Valori uguali $\Rightarrow$ per il corollario 1 sono entrambe ottime.
 
+>se faccio il duale del primale e poi rifaccio il duale del duale ritorno al primale di origine -> loop 
+
 ---
-## Slide 92 – Condizioni di Complementarietà
+## Slide 92-93-94-95 – Condizioni di Complementarietà
 
 Dai teoremi relativi alla dualità è possibile derivare delle condizioni di ottimalità.
 
-**Corollario 2 (Complementarietà).** Le soluzioni $\tilde{\mathbf{x}} \in X$ del primale e $\tilde{\mathbf{w}} \in W$ del duale sono ottime se e solo se
-$$\begin{aligned}
-(a) \quad & \tilde{\mathbf{w}}(\mathbf{A}\tilde{\mathbf{x}} - \mathbf{b}) = 0 \\
-(b) \quad & (\mathbf{c} - \tilde{\mathbf{w}}\mathbf{A})\tilde{\mathbf{x}} = 0
-\end{aligned}$$
+**Corollario 2 (Th. Complementarietà).** Le soluzioni $\tilde{\mathbf{x}} \in X$ del primale e $\tilde{\mathbf{w}} \in W$ del duale sono ottime se e solo se:
+$$\begin{array}{llcl}
+(a) & \tilde{\mathbf{w}}(\mathbf{A}\tilde{\mathbf{x}} - \mathbf{b}) & = & 0 \\
+(b) & (\mathbf{c} - \tilde{\mathbf{w}}\mathbf{A})\tilde{\mathbf{x}} & = & 0
+\end{array}$$
+>per come è costruito il vincolo vuol dire che le componenti dentro le parentesi tonde devono essere uguali a zero
 
 **Dimostrazione.**
 Si vuole dimostrare che:
 - Se (a) e (b) sono soddisfatte, allora le soluzioni $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$ sono ottime.
 - Se le soluzioni $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$ sono ottime, allora le condizioni (a) e (b) devono essere soddisfatte.
 
----
-## Slide 93 – Condizioni di Complementarietà (2)
-
 - **(a) e (b) sono soddisfatte le soluzioni $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$ sono ottime.**
 	Dal lemma della dualità debole si ha che per ogni $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$:
 $$\tilde{\mathbf{w}}\mathbf{b} \leq \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} \leq \mathbf{c}\tilde{\mathbf{x}}$$
 	Ma se (a) e (b) sono soddisfatte si ha anche:
-$$\begin{aligned}
-(a) \quad \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} &= \tilde{\mathbf{w}}\mathbf{b} \\
-(b) \quad \mathbf{c}\tilde{\mathbf{x}} &= \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}}
-\end{aligned}$$
+$$\begin{array}{lrcl}
+(a) & \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} & = & \tilde{\mathbf{w}}\mathbf{b} \\
+(b) & \mathbf{c}\tilde{\mathbf{x}} & = & \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}}
+\end{array}$$
 	Per cui $\tilde{\mathbf{w}}\mathbf{b} = \mathbf{c}\tilde{\mathbf{x}}$ e, per il corollario 1, $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$ sono ottime.
-
----
-## Slide 94 – Condizioni di Complementarietà (3)
 
 - **Se le soluzioni $\tilde{\mathbf{x}}$ e $\tilde{\mathbf{w}}$ sono ottime allora le condizioni (a) e (b) devono essere soddisfatte.**
 	Se una delle due condizioni di complementarietà non è soddisfatta allora almeno una delle due soluzioni non è ottima.
@@ -1680,19 +1641,16 @@ Per cui il corollario è dimostrato. $\square$
 
 >> Il passaggio chiave: se entrambe sono ottime, per la dualità forte $\tilde{\mathbf{w}}\mathbf{b} = \mathbf{c}\tilde{\mathbf{x}}$, quindi nella catena $\tilde{\mathbf{w}}\mathbf{b} \leq \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} \leq \mathbf{c}\tilde{\mathbf{x}}$ tutte le disuguaglianze devono valere con l'uguaglianza, e questo è esattamente (a) e (b). Se invece $\tilde{\mathbf{w}}(\mathbf{A}\tilde{\mathbf{x}} - \mathbf{b}) > 0$, si ha $\tilde{\mathbf{w}}\mathbf{b} < \tilde{\mathbf{w}}\mathbf{A}\tilde{\mathbf{x}} \leq \mathbf{c}\tilde{\mathbf{x}}$, in contraddizione con la dualità forte.
 
----
-## Slide 95 – Condizioni di Complementarietà (4)
-
 Le condizioni di complementarietà:
-$$\begin{aligned}
-(a) \quad \mathbf{w}(\mathbf{A}\mathbf{x} - \mathbf{b}) &= 0 \\
-(b) \quad (\mathbf{c} - \mathbf{w}\mathbf{A})\mathbf{x} &= 0
-\end{aligned}$$
+$$\begin{array}{llcl}
+(a) & \mathbf{w}(\mathbf{A}\mathbf{x} - \mathbf{b}) & = & 0 \\
+(b) & (\mathbf{c} - \mathbf{w}\mathbf{A})\mathbf{x} & = & 0
+\end{array}$$
 corrispondono alle equazioni:
-$$\begin{aligned}
-(a') \quad w_i(\mathbf{a}^i\mathbf{x} - b_i) &= 0, & i &= 1, \dots, m \\
-(b') \quad (c_j - \mathbf{w}\mathbf{a}_j)x_j &= 0, & j &= 1, \dots, n
-\end{aligned}$$
+$$\begin{array}{llcll}
+(a') & w_i(\mathbf{a}^i\mathbf{x} - b_i) & = & 0, & i = 1, \dots, m \\
+(b') & (c_j - \mathbf{w}\mathbf{a}_j)x_j & = & 0, & j = 1, \dots, n
+\end{array}$$
 dalle quali si derivano le seguenti osservazioni:
 - $w_i > 0$ implica che $\mathbf{a}^i\mathbf{x} = b_i$ ($\mathbf{a}^i$ è la riga $i$-esima della matrice $\mathbf{A}$);
 - $\mathbf{a}^i\mathbf{x} > b_i$ implica che $w_i = 0$;
@@ -1703,12 +1661,16 @@ dalle quali si derivano le seguenti osservazioni:
 >>
 >> In parole: **un vincolo "lasco" ha variabile duale nulla, una variabile duale non nulla richiede un vincolo "attivo"**. Nota che le implicazioni non si invertono: $\mathbf{a}^i\mathbf{x} = b_i$ non implica $w_i > 0$ (può essere $w_i = 0$ con vincolo attivo, ad es. in caso di degenerazione).
 
+>dovrebbe essere un es facile da quanto dice il prof?!
+
 ---
 ## Slide 96 – Interpretazione economica della dualità
 
 - Il valore di ciascuna variabile duale corrisponde al valore della risorsa espressa dal termine noto del corrispondente vincolo (**shadow price**)
 - In altre parole, il valore della variabile duale indica il potenziale peggioramento/miglioramento del valore della soluzione ottima se modifico di una unità il termine noto del corrispondente vincolo.
 - Una interpretazione economica alternativa della dualità la possiamo ottenere dal seguente esempio.
+
+>se la variabile duale è uguale a zero vuol dire che il suo corrispondente vincolo non è importante e non mi va ad influenzare la soluzione ottima.
 
 >> Perché: all'ottimo $z^* = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} = \mathbf{w}^*\mathbf{b} = \sum_i w_i^* b_i$. Se si cambia $b_i$ di una piccola quantità $\Delta$ e la base $\mathbf{B}$ resta ottima (cioè $\mathbf{B}^{-1}(\mathbf{b} + \Delta\mathbf{e}_i) \geq \mathbf{0}$), allora $z^*$ cambia esattamente di $w_i^*\Delta$: $w_i^* = \partial z^*/\partial b_i$. Per un vincolo $\geq$ in un problema di min, $w_i^* \geq 0$ è il costo aggiuntivo per unità di "requisito" in più; un vincolo non attivo ha shadow price nullo (aumentare un po' la risorsa non serve).
 
@@ -1724,11 +1686,11 @@ Siano dati $n$ alimenti e $m$ nutrienti:
 - $r_i$: quantità minima dell'$i$-esimo nutriente.
 
 La formulazione matematica del problema può essere la seguente:
-$$\begin{aligned}
-(P) \quad \min z_P = \ & \sum_{j=1}^{n} c_j x_j \\
-s.t.\ & \sum_{j=1}^{n} a_{ij}x_j \geq r_i, & i &= 1, \dots, m \\
-& x_j \geq 0, & j &= 1, \dots, n
-\end{aligned}$$
+$$\begin{array}{lrll}
+(P) \quad & \min z_P = & \sum_{j=1}^{n} c_j x_j & \\
+ & \textit{s.t.} & \sum_{j=1}^{n} a_{ij}x_j \geq r_i, & i = 1, \dots, m \\
+ & & x_j \geq 0, & j = 1, \dots, n
+\end{array}$$
 
 ---
 ## Slide 98 – Interpretazione economica della dualità (3)
@@ -1738,11 +1700,11 @@ Si vuole produrre una *pillola* sostitutiva che contenga gli $m$ nutrienti.
 L'obiettivo è quello di fissare il costo $w_i$ per ogni unità di nutriente $i$, in modo da massimizzare il costo della pillola, mantenendolo competitivo con quello del cibo reale.
 
 Il problema può essere formulato come segue:
-$$\begin{aligned}
-(D) \quad \max z_D = \ & \sum_{i=1}^{m} w_i r_i \\
-s.t.\ & \sum_{i=1}^{m} w_i a_{ij} \leq c_j, & j &= 1, \dots, n \\
-& w_i \geq 0, & i &= 1, \dots, m
-\end{aligned}$$
+$$\begin{array}{lrll}
+(D) \quad & \max z_D = & \sum_{i=1}^{m} w_i r_i & \\
+ & \textit{s.t.} & \sum_{i=1}^{m} w_i a_{ij} \leq c_j, & j = 1, \dots, n \\
+ & & w_i \geq 0, & i = 1, \dots, m
+\end{array}$$
 
 Il problema D è il duale del problema P.
 
@@ -1750,30 +1712,32 @@ Il problema D è il duale del problema P.
 >> Per la dualità forte, il massimo ricavo ottenibile dal venditore coincide con il costo minimo della dieta. Per la complementarietà, gli alimenti effettivamente acquistati ($x_j > 0$) hanno prezzo "equo" ($\sum_i w_i a_{ij} = c_j$), e i nutrienti assunti in eccesso ($\sum_j a_{ij}x_j > r_i$) hanno prezzo $w_i = 0$.
 
 ---
-## Slide 99 – Esempio n. 1
+## Slide 99-100-101 – Esempio n. 1
 
 Si consideri il seguente problema di programmazione lineare continua:
-$$\begin{array}{rrcrcrcl}
-\min z = & -3x_1 & + & x_2 & & & & \\
-s.t. & x_1 & + & 2x_2 & \leq & +4 & (a) & \\
-& -x_1 & + & x_2 & \leq & +1 & (b) & \\
-& x_1 & , & x_2 & \geq & 0 & &
+$$\begin{array}{rcrcrcrl}
+\min z = & - & 3x_1 & + & x_2 & & & \\
+\textit{s.t.} & & x_1 & + & 2x_2 & \leq & +4 & (a) \\
+ & - & x_1 & + & x_2 & \leq & +1 & (b) \\
+ & & x_1 & , & x_2 & \geq & 0 &
 \end{array}$$
 
-Il problema si può riscrivere in forma standard:
-$$\begin{array}{rrcrcrcrcrl}
-\min z = & -3x_1 & + & x_2 & & & & & & & \\
-s.t. & x_1 & + & 2x_2 & + & x_3 & & & = & +4 & (a) \\
-& -x_1 & + & x_2 & & & + & x_4 & = & +1 & (b) \\
-& x_1 & , & x_2 & , & x_3 & , & x_4 & \geq & 0 &
+Il problema si può riscrivere in ~~forma standard~~:
+$$\begin{array}{rcrcrcrcrcrl}
+\min z = & - & 3x_1 & + & x_2 & & & & & & & \\
+\textit{s.t.} & & x_1 & + & 2x_2 & + & x_3 & & & = & +4 & (a) \\
+ & - & x_1 & + & x_2 & & & + & x_4 & = & +1 & (b) \\
+ & & x_1 & , & x_2 & , & x_3 & , & x_4 & \geq & 0 &
 \end{array}$$
 
-dove $x_3$ e $x_4$ sono le variabili di slack (scarto).
+>dove $x_3$ e $x_4$ sono le variabili di slack (scarto) -> ne serve una per ogni vincolo.
+>- caso di $\geq$ -> aggiungo **+** x
+>- caso di $\leq$ -> aggiungo **-** x
+>- caso di $=$ -> non devo fare nulla
+
+>nel caso in cui o tutti vincoli di $\leq$ mi si crea grazie alle variabili di scarto già una base da cui partire per il passaggio successivo.
 
 >> Poiché i vincoli sono $\leq$ con termini noti non negativi, le slack forniscono subito una base ammissibile iniziale: $\mathbf{B} = [\mathbf{a}_3, \mathbf{a}_4] = \mathbf{I}$, con $\mathbf{x}_B = (x_3, x_4) = (4, 1)$, $\mathbf{x}_N = (x_1, x_2) = (0, 0)$ e $z = 0$ (l'origine del piano $x_1, x_2$). Da qui si può avviare direttamente il simplesso primale.
-
----
-## Slide 100 – Esempio n. 1
 
 Data la base $\mathbf{B} = \left[\mathbf{a}_1, \mathbf{a}_4\right]$, la corrispondente soluzione base $\mathbf{x} = [\mathbf{x}_\mathbf{B}, \mathbf{x}_\mathbf{N}] = \left[\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}\right]$[^2] è la seguente:
 
@@ -1792,9 +1756,6 @@ Per saperlo dobbiamo verificare se $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni
 >> Il problema è quello della slide precedente: $\min z = -3x_1 + x_2$ con $x_1 + 2x_2 + x_3 = 4$, $-x_1 + x_2 + x_4 = 1$. Quindi $\mathbf{c} = [-3, 1, 0, 0]$, $\mathbf{c}_\mathbf{B} = [c_1, c_4] = [-3, 0]$ e $z = -3 \cdot 4 + 0 \cdot 5 = -12$.
 >> La quantità $\mathbf{w}\mathbf{a}_j - c_j$ è l'opposto del costo ridotto $\bar c_j = c_j - \mathbf{w}\mathbf{a}_j$: se è $\le 0$ per ogni variabile non base, far crescere una qualsiasi $x_j$ non base non può diminuire $z$ (in un problema di minimo), quindi la base è ottima.
 
----
-## Slide 101 – Esempio n. 1
-
 Calcoliamo $\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1}$:
 
 $$\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1} = [-3, 0] \begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix} = [-3, 0]$$
@@ -1810,30 +1771,27 @@ Quindi la soluzione è ottima.
 >> Soluzione ottima: $x_1 = 4$, $x_2 = 0$ (slack $x_3 = 0$, $x_4 = 5$), con $z^* = -12$. Si noti che $\mathbf{w} = [-3, 0]$ è anche una soluzione duale ammissibile con $\mathbf{w}\mathbf{b} = -3 \cdot 4 + 0 \cdot 1 = -12 = z^*$: primale e duale hanno lo stesso valore, come previsto dalla dualità forte.
 
 ---
-## Slide 102 – Esempio n. 2
+## Slide 102 -> 106 – Esempio n. 2
 
 Si consideri il seguente problema di programmazione lineare continua:
 
-$$\begin{aligned}
-\min z = &-x_1 - 3x_2 \\
-\text{s.t. } & \phantom{-}x_1 - 2x_2 \le +4 \quad (a) \\
-& -x_1 + \phantom{2}x_2 \le +3 \quad (b) \\
-& \phantom{-}x_1, \ x_2 \ge 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcrl}
+\min z = & - & x_1 & - & 3x_2 & & & \\
+\textit{s.t.} & & x_1 & - & 2x_2 & \le & +4 & (a) \\
+ & - & x_1 & + & x_2 & \le & +3 & (b) \\
+ & & x_1 & , & x_2 & \ge & 0 &
+\end{array}$$
 
 Il problema si può riscrivere in forma standard:
-
-$$\begin{aligned}
-\min z = &-x_1 - 3x_2 \\
-\text{s.t. } & \phantom{-}x_1 - 2x_2 + x_3 \phantom{{}+x_4} = +4 \quad (a) \\
-& -x_1 + \phantom{2}x_2 \phantom{{}+x_3} + x_4 = +3 \quad (b) \\
-& \phantom{-}x_1, \ x_2, \ x_3, \ x_4 \ge 0
-\end{aligned}$$
+  
+$$\begin{array}{rcrcrcrcrcrl}
+\min z = & - & x_1 & - & 3x_2 & & & & & & & \\
+\textit{s.t.} & & x_1 & - & 2x_2 & + & x_3 & & & = & +4 & (a) \\
+ & - & x_1 & + & x_2 & & & + & x_4 & = & +3 & (b) \\
+ & & x_1 & , & x_2 & , & x_3 & , & x_4 & \ge & 0 &
+\end{array}$$
 
 dove $x_3$ e $x_4$ sono le variabili di slack (scarto).
-
----
-## Slide 103 – Esempio n. 2
 
 Data la base $\mathbf{B} = [\mathbf{a}_3, \mathbf{a}_2]$, la corrispondente soluzione base $\mathbf{x} = [\mathbf{x}_\mathbf{B}, \mathbf{x}_\mathbf{N}] = \left[\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}\right]$ è la seguente:
 
@@ -1849,9 +1807,6 @@ Per saperlo dobbiamo verificare se $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni
 
 >> L'ordine delle colonne in $\mathbf{B}$ conta: la prima riga di $\mathbf{x}_\mathbf{B}$ corrisponde a $x_3$ (colonna $\mathbf{a}_3 = [1, 0]^T$), la seconda a $x_2$ (colonna $\mathbf{a}_2 = [-2, 1]^T$); di conseguenza $\mathbf{c}_\mathbf{B} = [c_3, c_2] = [0, -3]$.
 
----
-## Slide 104 – Esempio n. 2
-
 Calcoliamo $\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1}$:
 
 $$\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1} = [0, -3] \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} = [0, -3]$$
@@ -1865,9 +1820,6 @@ $$\mathbf{w}\mathbf{a}_1 - c_1 = [0, -3] \begin{bmatrix} 1 \\ -1 \end{bmatrix} +
 Quindi la soluzione non è ottima e la variabile $x_1$ è candidata a entrare in base.
 
 >> Interpretazione: $\mathbf{w}\mathbf{a}_1 - c_1 = +4$ significa che ogni unità di aumento di $x_1$ (mantenendo i vincoli soddisfatti aggiustando le variabili in base) fa diminuire $z$ di 4.
-
----
-## Slide 105 – Esempio n. 2
 
 Quando una variabile $x_k$ non base aumenta le variabili in base vengono modificate come segue:
 
@@ -1886,9 +1838,6 @@ $$\mathbf{x}_\mathbf{B} = \begin{bmatrix} x_3 \\ x_2 \end{bmatrix} = \bar{\mathb
 >> La formula deriva da $\mathbf{B}\mathbf{x}_\mathbf{B} + \mathbf{a}_k x_k = \mathbf{b}$ (tutte le altre non base restano a 0): moltiplicando per $\mathbf{B}^{-1}$ si ottiene $\mathbf{x}_\mathbf{B} = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{a}_k x_k$.
 >> Qui tutte le componenti di $\mathbf{y}^1$ sono $\le 0$: nessuna variabile in base diminuisce al crescere di $x_1$, quindi il criterio del rapporto minimo non ha alcun candidato.
 
----
-## Slide 106 – Esempio n. 2
-
 Come si può notare la variabile $x_1$ può aumentare illimitatamente senza rendere la soluzione non ammissibile, perché a loro volta le variabili in base $x_2$ e $x_3$ aumentano. Infatti la soluzione è la seguente:
 
 $$\mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} = \begin{bmatrix} x_1 \\ 3 + x_1 \\ 10 + x_1 \\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \\ 10 \\ 0 \end{bmatrix} + \begin{bmatrix} 1 \\ 1 \\ 1 \\ 0 \end{bmatrix} x_1$$
@@ -1897,38 +1846,38 @@ che equivale a
 
 $$\mathbf{x} = \bar{\mathbf{b}} + \mathbf{d}x_1 = \mathbf{x}_0 + \mathbf{d}x_1$$
 
-dove $\mathbf{d}$ è una direzione.
+dove $\mathbf{d}$ è una direzione [1,1,1,0].
 
 Pertanto la soluzione è illimitata.
+
+>all'esame potrebbe chiedere di indicare anche quale è la direzione.
 
 >> Verifica: $\mathbf{d} = [1, 1, 1, 0]^T$ è una direzione ammissibile perché $\mathbf{d} \ge \mathbf{0}$ e $\mathbf{A}\mathbf{d} = \mathbf{a}_1 + \mathbf{a}_2 + \mathbf{a}_3 = [1 - 2 + 1, \ -1 + 1 + 0]^T = \mathbf{0}$. Lungo di essa $z = -9 + \mathbf{c}\mathbf{d}\,x_1 = -9 - 4x_1$ (con $\mathbf{c}\mathbf{d} = -1 - 3 = -4 = -(\mathbf{w}\mathbf{a}_1 - c_1)$), che tende a $-\infty$ per $x_1 \to +\infty$.
 >> Regola generale: se una variabile $x_k$ ha $\mathbf{w}\mathbf{a}_k - c_k > 0$ e $\mathbf{y}^k \le \mathbf{0}$, il problema (di minimo) è illimitato inferiormente.
 
 ---
-## Slide 107 – Esempio n. 3
+## Slide 107 -> 116 – Esempio n. 3
 
 Si consideri il seguente problema di programmazione lineare continua:
 
-$$\begin{aligned}
-\min z = &-x_1 - 3x_2 \\
-\text{s.t. } & \phantom{-}2x_1 + 3x_2 \le +6 \quad (a) \\
-& -\phantom{2}x_1 + \phantom{3}x_2 \le +1 \quad (b) \\
-& \phantom{-2}x_1, \ x_2 \ge 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcrl}
+\min z = & - & x_1 & - & 3x_2 & & & \\
+\textit{s.t.} & & 2x_1 & + & 3x_2 & \le & +6 & (a) \\
+ & - & x_1 & + & x_2 & \le & +1 & (b) \\
+ & & x_1 & , & x_2 & \ge & 0 &
+\end{array}$$
+>quando il termine noto è positivo e vincoli sono tutti <= io so già che sono nel caso fortunato in cui la base è la matrice identità definita dalle variabili di scarto.
 
 Il problema si può riscrivere in forma standard:
 
-$$\begin{aligned}
-\min z = &-x_1 - 3x_2 \\
-\text{s.t. } & \phantom{-}2x_1 + 3x_2 + x_3 \phantom{{}+x_4} = +6 \quad (a) \\
-& -\phantom{2}x_1 + \phantom{3}x_2 \phantom{{}+x_3} + x_4 = +1 \quad (b) \\
-& \phantom{-2}x_1, \ x_2, \ x_3, \ x_4 \ge 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcrcrcrl}
+\min z = & - & x_1 & - & 3x_2 & & & & & & & \\
+\textit{s.t.} & & 2x_1 & + & 3x_2 & + & x_3 & & & = & +6 & (a) \\
+ & - & x_1 & + & x_2 & & & + & x_4 & = & +1 & (b) \\
+ & & x_1 & , & x_2 & , & x_3 & , & x_4 & \ge & 0 &
+\end{array}$$
 
 dove $x_3$ e $x_4$ sono le variabili di slack (scarto).
-
----
-## Slide 108 – Esempio n. 3
 
 I parametri del problema sono i vettori dei termini noti $\mathbf{b}$ e dei costi $\mathbf{c}$:
 
@@ -1944,9 +1893,6 @@ $$\mathbf{A} = [\mathbf{N}, \mathbf{B}] = \begin{bmatrix} 2 & 3 & 1 & 0 \\ -1 & 
 
 >> Le colonne delle variabili di slack formano sempre la matrice identità: è la scelta naturale di base iniziale, ammissibile perché $\mathbf{b} \ge \mathbf{0}$ (si veda la slide 130).
 
----
-## Slide 109 – Esempio n. 3
-
 **Iterazione n. 1**
 
 Data la base $\mathbf{B} = \mathbf{I} = \left[\mathbf{a}_3, \mathbf{a}_4\right]$, la corrispondente soluzione base $\mathbf{x} = [\mathbf{x}_\mathbf{B}, \mathbf{x}_\mathbf{N}] = \left[\mathbf{B}^{-1}\mathbf{b}, \mathbf{0}\right]$ è la seguente:
@@ -1961,9 +1907,6 @@ Per sapere se la soluzione corrente è ottima oppure se può essere migliorata d
 
 >> Geometricamente la base iniziale corrisponde al vertice $(x_1, x_2) = (0, 0)$ della regione ammissibile nel piano delle variabili originarie.
 
----
-## Slide 110 – Esempio n. 3
-
 Calcoliamo $\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1}$:
 
 $$\mathbf{w} = \mathbf{c}_\mathbf{B}\mathbf{B}^{-1} = [0, 0] \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = [0, 0]$$
@@ -1973,15 +1916,14 @@ Per cui verifichiamo che $\mathbf{w}\mathbf{a}_1 - c_1 \le 0$ e $\mathbf{w}\math
 $$\mathbf{w}\mathbf{a}_1 - c_1 = [0, 0] \begin{bmatrix} 2 \\ -1 \end{bmatrix} - (-1) = 0 + 1 = +1$$
 
 $$\mathbf{w}\mathbf{a}_2 - c_2 = [0, 0] \begin{bmatrix} 3 \\ 1 \end{bmatrix} - (-3) = 0 + 3 = +3$$
-
+ 
 Quindi la soluzione non è ottima e la variabile $x_2$ è candidata a entrare in base, perché:
 
 $$\mathbf{w}\mathbf{a}_2 - c_2 = \max\left\{\mathbf{w}\mathbf{a}_1 - c_1, \mathbf{w}\mathbf{a}_2 - c_2\right\}$$
 
->> È la regola di Dantzig: si fa entrare la variabile con il costo ridotto "più promettente", cioè quella che fa diminuire $z$ più rapidamente per unità di aumento. Anche $x_1$ sarebbe stata una scelta valida (ha $\mathbf{w}\mathbf{a}_1 - c_1 > 0$).
+>prendere quello senza massimo non significa non convergere ma semplicemente convergere più lentamente.
 
----
-## Slide 111 – Esempio n. 3
+>> È la regola di Dantzig: si fa entrare la variabile con il costo ridotto "più promettente", cioè quella che fa diminuire $z$ più rapidamente per unità di aumento. Anche $x_1$ sarebbe stata una scelta valida (ha $\mathbf{w}\mathbf{a}_1 - c_1 > 0$).
 
 Quando una variabile $x_k$ non base aumenta le variabili in base vengono modificate come segue:
 
@@ -1989,16 +1931,13 @@ $$\mathbf{x}_\mathbf{B} = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{a}_
 
 dove $\bar{\mathbf{b}} = \mathbf{B}^{-1}\mathbf{b}$ e $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$.
 
-Nel nostro caso
+Nel nostro caso (scegliamo il massimo)
 
 $$\mathbf{y}^2 = \mathbf{B}^{-1}\mathbf{a}_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$$
 
 quindi:
 
 $$\mathbf{x}_\mathbf{B} = \begin{bmatrix} x_3 \\ x_4 \end{bmatrix} = \bar{\mathbf{b}} - \mathbf{y}^2 x_2 = \begin{bmatrix} 6 \\ 1 \end{bmatrix} - \begin{bmatrix} 3 \\ 1 \end{bmatrix} x_2 = \begin{bmatrix} 6 - 3x_2 \\ 1 - x_2 \end{bmatrix} = \begin{bmatrix} \bar b_1 - y_1^2 x_2 \\ \bar b_2 - y_2^2 x_2 \end{bmatrix}$$
-
----
-## Slide 112 – Esempio n. 3
 
 Per calcolare il valore da assegnare a $x_2$ si applica il criterio del rapporto minimo:
 
@@ -2012,15 +1951,14 @@ La variabile $x_4$ si annulla, quindi esce dalla base e $x_2$ entra al suo posto
 
 $$\mathbf{x}_\mathbf{B} = \begin{bmatrix} x_3 \\ x_4 \end{bmatrix} = \begin{bmatrix} 6 - 3x_2 \\ 1 - x_2 \end{bmatrix} \ \Rightarrow \ \mathbf{x}_\mathbf{B} = \begin{bmatrix} x_3 \\ x_2 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \bar{\mathbf{b}}$$
 
+>stare attenti all'ordine!! x2 prende il posto di x4, non va messo in ordine prima di x3 
+
 Il nuovo valore della funzione obiettivo è:
 
 $$z_1 = z_0 - (\mathbf{w}\mathbf{a}_2 - c_2)x_2 = 0 - 3x_2 = -3$$
 
 >> Il rapporto minimo garantisce che nessuna variabile in base diventi negativa: $x_3 = 6 - 3x_2 \ge 0$ richiede $x_2 \le 2$, $x_4 = 1 - x_2 \ge 0$ richiede $x_2 \le 1$; il vincolo più stringente è il secondo, quindi esce $x_4$.
 >> Nel piano $(x_1, x_2)$ ci si è spostati dal vertice $(0, 0)$ al vertice $(0, 1)$, dove il vincolo (b) è saturo. La nuova base è $\mathbf{B} = [\mathbf{a}_3, \mathbf{a}_2]$.
-
----
-## Slide 113 – Esempio n. 3
 
 **Iterazione n. 2**
 
@@ -2038,9 +1976,6 @@ Quindi la soluzione non è ottima e la variabile $x_1$ è candidata a entrare in
 
 $$\mathbf{w}\mathbf{a}_1 - c_1 = \max\left\{\mathbf{w}\mathbf{a}_1 - c_1, \mathbf{w}\mathbf{a}_4 - c_4\right\}$$
 
----
-## Slide 114 – Esempio n. 3
-
 Quando la variabile $x_1$ aumenta le variabili in base vengono modificate come segue:
 
 $$\mathbf{x}_\mathbf{B} = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{a}_k x_k = \bar{\mathbf{b}} - \mathbf{y}^1 x_1$$
@@ -2054,9 +1989,6 @@ $$\mathbf{y}^1 = \mathbf{B}^{-1}\mathbf{a}_1 = \begin{bmatrix} 1 & -3 \\ 0 & 1 \
 quindi:
 
 $$\mathbf{x}_\mathbf{B} = \begin{bmatrix} x_3 \\ x_2 \end{bmatrix} = \bar{\mathbf{b}} - \mathbf{y}^1 x_1 = \begin{bmatrix} 3 \\ 1 \end{bmatrix} - \begin{bmatrix} 5 \\ -1 \end{bmatrix} x_1 = \begin{bmatrix} 3 - 5x_1 \\ 1 + x_1 \end{bmatrix} = \begin{bmatrix} \bar b_1 - y_1^1 x_1 \\ \bar b_2 - y_2^1 x_1 \end{bmatrix}$$
-
----
-## Slide 115 – Esempio n. 3
 
 Per calcolare il valore da assegnare a $x_1$ si applica il criterio del rapporto minimo:
 
@@ -2076,9 +2008,6 @@ $$z_2 = z_1 - (\mathbf{w}\mathbf{a}_1 - c_1)x_1 = -3 - 4\left(\frac{3}{5}\right)
 
 >> Nel rapporto minimo compare solo la prima riga perché $y_2^1 = -1 < 0$: al crescere di $x_1$ la variabile $x_2 = 1 + x_1$ aumenta e non può mai annullarsi.
 >> Ora $x_3 = x_4 = 0$: entrambi i vincoli (a) e (b) sono saturi, cioè ci si trova nel vertice $(x_1, x_2) = (3/5, 8/5)$ dato dall'intersezione di $2x_1 + 3x_2 = 6$ e $-x_1 + x_2 = 1$.
-
----
-## Slide 116 – Esempio n. 3
 
 **Iterazione n. 3**
 
@@ -2100,17 +2029,17 @@ La soluzione è ottima!
 >> Il vettore $\mathbf{w} = [-4/5, -3/5]$ è la soluzione ottima del duale (con vincoli primali $\le$ in un problema di minimo le variabili duali sono $\le 0$): infatti $\mathbf{w}\mathbf{b} = -\tfrac{4}{5} \cdot 6 - \tfrac{3}{5} \cdot 1 = -\tfrac{27}{5} = z^*$.
 
 ---
-## Slide 117 – Esempio n. 4
+## Slide 117-118-119 – Esempio n. 4
 
 Si consideri il seguente problema di programmazione lineare continua:
 
-$$\begin{aligned}
-\min z = &-x_1 + 3x_2 \\
-\text{s.t. } & -x_1 + x_2 \ge +3 \\
-& \phantom{-}3x_1 + x_2 \le +6 \\
-& \phantom{-3x_1} + x_2 \le +5 \\
-& \phantom{-}x_1, \ x_2 \ge 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcr}
+\min z = & - & x_1 & + & 3x_2 & & \\
+\textit{s.t.} & - & x_1 & + & x_2 & \ge & +3 \\
+ & & 3x_1 & + & x_2 & \le & +6 \\
+ & & & + & x_2 & \le & +5 \\
+ & & x_1 & , & x_2 & \ge & 0
+\end{array}$$
 
 Si vuole verificare se la soluzione $\mathbf{x} = [x_1, x_2] = [0, 3]$ è ottima.
 
@@ -2122,34 +2051,29 @@ Possiamo considerare due possibilità:
 
 >> Il secondo approccio è molto più rapido: basta costruire il duale, dedurre dalle condizioni di complementarietà (ortogonalità) i valori delle variabili duali e controllare che siano duali ammissibili. Se lo sono, $\mathbf{x}$ è ottima; se il sistema non ha soluzione duale ammissibile, $\mathbf{x}$ non è ottima.
 
----
-## Slide 118 – Esempio n. 4
-
 Partendo dal problema primale:
 
-$$\begin{aligned}
-\min z = &-x_1 + 3x_2 \\
-\text{s.t. } & -x_1 + x_2 \ge +3 \quad : \boldsymbol{w_1} \\
-& \phantom{-}3x_1 + x_2 \le +6 \quad : \boldsymbol{w_2} \\
-& \phantom{-3x_1} + x_2 \le +5 \quad : \boldsymbol{w_3} \\
-& \phantom{-}x_1, \ x_2 \ge 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcrl}
+\min z = & - & x_1 & + & 3x_2 & & & \\
+\textit{s.t.} & - & x_1 & + & x_2 & \ge & +3 & :\ \color{red}{w_1} \\
+ & & 3x_1 & + & x_2 & \le & +6 & :\ \color{red}{w_2} \\
+ & & & + & x_2 & \le & +5 & :\ \color{red}{w_3} \\
+ & & x_1 & , & x_2 & \ge & 0 &
+\end{array}$$
 
 Si definisce il suo problema duale:
 
-$$\begin{aligned}
-\max z = &+3w_1 + 6w_2 + 5w_3 \\
-\text{s.t. } & -w_1 + 3w_2 \phantom{{}+w_3} \le -1 \quad : \boldsymbol{x_1} \\
-& \phantom{-}w_1 + \phantom{3}w_2 + w_3 \le +3 \quad : \boldsymbol{x_2} \\
-& \phantom{-}w_1 \ge 0 \\
-& \phantom{-}w_2 \le 0 \\
-& \phantom{-}w_3 \le 0
-\end{aligned}$$
+$$\begin{array}{rcrcrcrcrl}
+\max z = & + & 3w_1 & + & 6w_2 & + & 5w_3 & & & \\
+\textit{s.t.} & - & w_1 & + & 3w_2 & & & \le & -1 & :\ \color{red}{x_1} \\
+ & & w_1 & + & w_2 & + & w_3 & \le & +3 & :\ \color{red}{x_2} \\
+ & & w_1 & & & & & \ge & 0 & \\
+ & & & & w_2 & & & \le & 0 & \\
+ & & & & & & w_3 & \le & 0 &
+\end{array}$$
+>bisogna essere sicuri che la soluzione sia ammissibile: 
 
 >> Regole usate (primale di minimo): vincolo $\ge$ $\Rightarrow$ $w_i \ge 0$; vincolo $\le$ $\Rightarrow$ $w_i \le 0$; variabile $x_j \ge 0$ $\Rightarrow$ vincolo duale $\sum_i w_i a_{ij} \le c_j$. I termini noti primali diventano i coefficienti dell'obiettivo duale e viceversa.
-
----
-## Slide 119 – Esempio n. 4
 
 Si verifica la *saturazione* dei vincoli del problema primale per la soluzione $\mathbf{x} = [x_1, x_2] = [0, 3]$:
 - $-x_1 + x_2 \ge +3$: è saturo $\Rightarrow$ **$w_1 \ge 0$**;
@@ -2172,20 +2096,20 @@ Quindi partendo dalla soluzione primale $\mathbf{x}$ si è ottenuta una soluzion
 
 - Il "*simplesso primale in formato tableau*" permette di semplificare le operazioni di aggiornamento della base, della corrispondente soluzione e dei costi ridotti $\mathbf{w}\mathbf{a}_j - c_j$ ad ogni iterazione:
 
-$$\begin{aligned}
-\min \ z = {} & \mathbf{c}_B\mathbf{x}_B + \mathbf{c}_N\mathbf{x}_N \\
-& \mathbf{B}\mathbf{x}_B + \mathbf{N}\mathbf{x}_N = \mathbf{b} \\
-& \mathbf{x}_B, \ \mathbf{x}_N \ge \mathbf{0}
-\end{aligned}$$
+$$\begin{array}{rrcrcr}
+\min \ z = & \mathbf{c}_B\mathbf{x}_B & + & \mathbf{c}_N\mathbf{x}_N & & \\
+ & \mathbf{B}\mathbf{x}_B & + & \mathbf{N}\mathbf{x}_N & = & \mathbf{b} \\
+ & \mathbf{x}_B & , & \mathbf{x}_N & \ge & \mathbf{0}
+\end{array}$$
 
 che si può riscrivere come:
 
-$$\begin{aligned}
-\min \ & z \\
-& z - \mathbf{c}_B\mathbf{x}_B - \mathbf{c}_N\mathbf{x}_N = 0 \\
-& \mathbf{x}_B + \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N = \mathbf{B}^{-1}\mathbf{b} \\
-& \mathbf{x}_B, \ \mathbf{x}_N \ge \mathbf{0}
-\end{aligned}$$
+$$\begin{array}{rrcrcrcr}
+\min & z & & & & & & \\
+ & z & - & \mathbf{c}_B\mathbf{x}_B & - & \mathbf{c}_N\mathbf{x}_N & = & 0 \\
+ & & & \mathbf{x}_B & + & \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N & = & \mathbf{B}^{-1}\mathbf{b} \\
+ & & & \mathbf{x}_B & , & \mathbf{x}_N & \ge & \mathbf{0}
+\end{array}$$
 
 >> Il secondo sistema si ottiene portando tutto a sinistra nella definizione di $z$ e moltiplicando i vincoli $\mathbf{B}\mathbf{x}_B + \mathbf{N}\mathbf{x}_N = \mathbf{b}$ a sinistra per $\mathbf{B}^{-1}$.
 
@@ -2194,12 +2118,12 @@ $$\begin{aligned}
 
 Moltiplicando la seconda equazione per $\mathbf{c}_B$ e sommandola per la prima si ottiene:
 
-$$\begin{aligned}
-\min \ & z \\
-& z + \mathbf{0}\mathbf{x}_B + (\mathbf{c}_B\mathbf{B}^{-1}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} \\
-& \mathbf{x}_B + \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N = \mathbf{B}^{-1}\mathbf{b} \\
-& \mathbf{x}_B, \ \mathbf{x}_N \ge \mathbf{0}
-\end{aligned}$$
+$$\begin{array}{rrcrcrcr}
+\min & z & & & & & & \\
+ & z & + & \mathbf{0}\mathbf{x}_B & + & (\mathbf{c}_B\mathbf{B}^{-1}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N & = & \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} \\
+ & & & \mathbf{x}_B & + & \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N & = & \mathbf{B}^{-1}\mathbf{b} \\
+ & & & \mathbf{x}_B & , & \mathbf{x}_N & \ge & \mathbf{0}
+\end{array}$$
 
 - Il risultato può essere inserito in un "*tableau*" come segue:
 
@@ -2247,36 +2171,33 @@ z & 1 & 0 & \ldots & 0 & \ldots & 0 & & \mathbf{w}\mathbf{a}_{m+1} - c_{m+1} & \
 >> Aggiornare la riga 0 in questo modo equivale a ricalcolare $\mathbf{w} = \mathbf{c}_B\mathbf{B}^{-1}$ e tutti i costi ridotti per la nuova base, e il RHS della riga 0 passa da $z$ a $z - (\mathbf{w}\mathbf{a}_k - c_k)\,\bar b_i / y_i^k$, la stessa formula vista negli esempi.
 
 ---
-## Slide 124 – Simplesso Primale in Formato Tableau by Examples
+## Slide 124 -> 129 – Simplesso Primale in Formato Tableau by Examples
 
 Si consideri il problema:
 
-$$\begin{aligned}
-\min \ z = {} & x_1 - 2x_2 - 6x_3 \\
-\text{s.t. } & x_1 \le 2 \\
-& x_2 \le 3 \\
-& x_3 \le 3 \\
-& x_1 + x_2 + x_3 \le 4 \\
-& x_1, \ x_2, \ x_3 \ge 0
-\end{aligned}$$
+$$\begin{array}{llrcrcrll}
+\min & z = & x_1 & & -2x_2 & & -6x_3 & & \\
+\text{s.t.} & & x_1 & & & & & \le & 2 \\
+ & & & & x_2 & & & \le & 3 \\
+ & & & & & & x_3 & \le & 3 \\
+ & & x_1 & & +x_2 & & +x_3 & \le & 4 \\
+ & & x_1 & , & x_2 & , & x_3 & \ge & 0
+\end{array}$$
 
-![[RO03-s124-1.png|450]]
+![[RO03-s124-1.png|345]]
 
 >> La figura mostra il poliedro ammissibile: il tetraedro $x_1 + x_2 + x_3 \le 4$, $\mathbf{x} \ge \mathbf{0}$ (vertici $(0,0,0)$, $(4,0,0)$, $(0,4,0)$, $(0,0,4)$) "tagliato" dai piani $x_1 = 2$, $x_2 = 3$ e $x_3 = 3$, che generano i vertici $(2,0,2)$, $(2,2,0)$, $(1,3,0)$, $(0,3,1)$, $(0,3,0)$, $(0,1,3)$, $(1,0,3)$.
 
----
-## Slide 125 – Simplesso Primale in Formato Tableau by Examples
-
 In forma standard il problema è il seguente:
 
-$$\begin{aligned}
-\min \ z = {} & x_1 - 2x_2 - 6x_3 \\
-\text{s.t. } & x_1 + x_4 = 2 \\
-& x_2 + x_5 = 3 \\
-& x_3 + x_6 = 3 \\
-& x_1 + x_2 + x_3 + x_7 = 4 \\
-& x_1, \ x_2, \ x_3, \ x_4, \ x_5, \ x_6, \ x_7 \ge 0
-\end{aligned}$$
+$$\begin{array}{llrcrcrcrcrcrcrll}
+\min & z = & x_1 & & -2x_2 & & -6x_3 & & & & & & & & & & \\
+\text{s.t.} & & x_1 & & & & & & +x_4 & & & & & & & = & 2 \\
+ & & & & x_2 & & & & & & +x_5 & & & & & = & 3 \\
+ & & & & & & x_3 & & & & & & +x_6 & & & = & 3 \\
+ & & x_1 & & +x_2 & & +x_3 & & & & & & & & +x_7 & = & 4 \\
+ & & x_1 & , & x_2 & , & x_3 & , & x_4 & , & x_5 & , & x_6 & , & x_7 & \ge & 0
+\end{array}$$
 
 Per cui il primo tableau è il seguente:
 
@@ -2344,6 +2265,9 @@ Cosa succede se scegliamo $k = 2$ invece di $k = 3$?
 
 La soluzione è ottima!
 
+>se mentre faccio un pivotaggio un termine noto diventa negativo -> implica che ho fatto un errore! tornare indietro e ricontrollare. 
+>NB: in sede di esame se non si riesce a trovare l'errore, scrivere comunque che qualcosa non torna per avere qualche punto.
+
 >> Dopo il secondo pivot si è nel vertice $(0,3,1)$ con $z = -2 \cdot 3 - 6 \cdot 1 = -12$. Ora l'unico costo ridotto positivo è quello di $x_5$ ($+4$): nella sua colonna i coefficienti positivi sono nelle righe 2 e 3, con rapporti $3/1 = 3$ e $2/1 = 2$, quindi il pivot è nella riga 3 ed esce $x_6$.
 >> Nel tableau finale tutti i valori della riga 0 sono $\le 0$: base ottima $\{x_4, x_2, x_5, x_3\}$ con $x_2 = 1$, $x_3 = 3$ (e $x_4 = 2$, $x_5 = 2$), cioè il vertice $(0,1,3)$ con $z^* = -2 - 18 = -20$. Con la scelta $k = 2$ sono servite 3 iterazioni: $(0,0,0) \to (0,3,0) \to (0,3,1) \to (0,1,3)$.
 
@@ -2404,7 +2328,7 @@ Scegliendo $\mathbf{w}\mathbf{a}_k - c_k = \max_j\left\{\mathbf{w}\mathbf{a}_j -
 
 $$\begin{aligned}
 z_P = \min \ & \mathbf{c}\mathbf{x} \\
-\text{s.t. } & \mathbf{A}\mathbf{x} \le \mathbf{b} \\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} \le \mathbf{b} \\
 & \mathbf{x} \ge \mathbf{0}
 \end{aligned}$$
 
@@ -2412,7 +2336,7 @@ z_P = \min \ & \mathbf{c}\mathbf{x} \\
 
 $$\begin{aligned}
 z_P = \min \ & \mathbf{c}\mathbf{x} \\
-\text{s.t. } & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x}_\mathbf{S} = \mathbf{b} \\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x}_\mathbf{S} = \mathbf{b} \\
 & \mathbf{x}, \mathbf{x}_\mathbf{S} \ge \mathbf{0}
 \end{aligned}$$
 
@@ -2421,32 +2345,32 @@ dove $\mathbf{I} = [\mathbf{e}_1, \ldots, \mathbf{e}_m]$ è la matrice identità
 >> Con $\mathbf{B} = \mathbf{I}$ si ha $\mathbf{x}_\mathbf{B} = \mathbf{x}_\mathbf{S} = \mathbf{b}$ e $\mathbf{x} = \mathbf{0}$: la base iniziale corrisponde all'origine. Se invece qualche $b_i < 0$, moltiplicando il vincolo per $-1$ si ottiene un vincolo $\ge$ la cui slack entra con coefficiente $-1$: la colonna identità si perde e serve un metodo come il Big-M (o le due fasi).
 
 ---
-## Slide 131 – Come determinare una base iniziale: Metodo Big-M
+## Slide 131-132 – Come determinare una base iniziale: ~~Metodo Big-M~~
 
 - Se il problema ha la seguente forma:
 
 $$\begin{aligned}
 z_P = \min \ & \mathbf{c}\mathbf{x} \\
-\text{s.t. } & \mathbf{A}\mathbf{x} = \mathbf{b} \\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} = \mathbf{b} \\
 & \mathbf{x} \ge \mathbf{0}
 \end{aligned}$$
 
 non è detto che sia facile individuare una base $\mathbf{B}$ tra le colonne di $\mathbf{A}$.
 - Nell'ipotesi che $\mathbf{b} \ge \mathbf{0}$, si possono aggiungere $m$ variabili $\mathbf{x}_\mathbf{A}$, dette ***artificiali***, alle $n$ variabili originarie, e risolvere il seguente problema:
+>se b non è >= di 0 moltiplico per -1 entrambi i lati.
 
 $$\begin{aligned}
 z_{P(M)} = \min \ & \mathbf{c}\mathbf{x} + \mathbf{M}\mathbf{x}_\mathbf{A} \\
-\text{s.t. } & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x}_\mathbf{A} = \mathbf{b} \\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x}_\mathbf{A} = \mathbf{b} \\
 & \mathbf{x}, \mathbf{x}_\mathbf{A} \ge \mathbf{0}
 \end{aligned}$$
 
 dove $\mathbf{I}$ è la matrice identità di ordine $m$ e $\mathbf{M} = M\mathbf{I}$, con $M > 0$ scelto *sufficientemente grande*.
 
+>le variabili artificiali: non le vorrei usare ma sono "costretto" infatti gli do un costo molto elevato per evitare che finiscano in base della soluzione ottimale.
+
 >> Idea: le colonne delle artificiali formano la base iniziale ammissibile $\mathbf{B} = \mathbf{I}$ con $\mathbf{x}_\mathbf{A} = \mathbf{b} \ge \mathbf{0}$. Il costo $M$ molto grande penalizza fortemente ogni artificiale positiva, quindi il simplesso tende a farle uscire dalla base: se il problema originale è ammissibile, all'ottimo di $P(M)$ (per $M$ abbastanza grande) si avrà $\mathbf{x}_\mathbf{A} = \mathbf{0}$.
 >> In pratica il termine $\mathbf{M}\mathbf{x}_\mathbf{A}$ vale $M \sum_{i=1}^m x_{A,i}$. Un'alternativa che evita di fissare un valore numerico di $M$ è il metodo delle due fasi (prima si minimizza $\sum_i x_{A,i}$, poi si ottimizza $\mathbf{c}\mathbf{x}$ partendo dalla base trovata).
-
----
-## Slide 132 – Come determinare una base iniziale: Metodo Big-M (2)
 
 - Se risolviamo il problema $P(M)$ con le variabili artificiali, possiamo avere i seguenti casi:
 	- Il problema $P(M)$ ha una soluzione ottima $(\mathbf{x}^*, \mathbf{x}_\mathbf{A}{}^*)$:
@@ -2462,14 +2386,14 @@ Omettiamo la dimostrazione.
 >> Intuizione per il primo caso: se $(\mathbf{x}^*, \mathbf{0})$ è ottima per $P(M)$, per ogni $\mathbf{x}$ ammissibile di P si ha $\mathbf{c}\mathbf{x}^* \le \mathbf{c}\mathbf{x} + M \cdot 0 = \mathbf{c}\mathbf{x}$, quindi $\mathbf{x}^*$ è ottima anche per P.
 
 ---
-## Slide 133 – Come determinare una base iniziale: Metodo 2-Fasi
+## Slide 133->135 – Come determinare una base iniziale: ~~Metodo 2-Fasi~~
 
 - Sia dato un problema della seguente forma:
 
 $$
 \begin{aligned}
 (P)\quad z_P = \min\ & \mathbf{c}\mathbf{x}\\
-\text{s.t. } & \mathbf{A}\mathbf{x} = \mathbf{b}\\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} = \mathbf{b}\\
 & \mathbf{x} \ge \mathbf{0}
 \end{aligned}
 $$
@@ -2479,7 +2403,7 @@ $$
 $$
 \begin{aligned}
 (P')\quad z_{P'} = \min\ & \mathbf{1}\mathbf{x_A}\\
-\text{s.t. } & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x_A} = \mathbf{b}\\
+\textit{s.t.}\ & \mathbf{A}\mathbf{x} + \mathbf{I}\mathbf{x_A} = \mathbf{b}\\
 & \mathbf{x}, \mathbf{x_A} \ge \mathbf{0}
 \end{aligned}
 $$
@@ -2490,38 +2414,29 @@ $$
 >> Il vantaggio di $P'$ è che una base ammissibile è disponibile subito: $B = \mathbf{I}$ (colonne delle artificiali), con $\mathbf{x} = \mathbf{0}$ e $\mathbf{x_A} = \mathbf{b} \ge \mathbf{0}$.
 >> Le artificiali servono solo nelle righe che non hanno già una variabile "pronta" per la base (ad es. una slack con coefficiente $+1$ di un vincolo $\le$ con $b_i \ge 0$).
 
----
-## Slide 134 – Come determinare una base iniziale: Metodo 2-Fasi (2)
-
 - In questo caso i problemi $P$ e $P'$ non sono equivalenti.
 - Risolvere il problema $P'$ serve solo a determinare una soluzione base ammissibile per il problema $P$.
 - Sia $(\mathbf{x}^*, \mathbf{x}^*_{\mathbf{A}})$ la soluzione ottima del problema $P'$ di valore $z_{P'}$. Si possono presentare tre casi:
-	- $z_{P'} > 0$
-	  $\Rightarrow$ **il problema $P$ non ha una base ammissibile**;
-	- $z_{P'} = 0$ e nessuna variabile artificiale è in base
-	  $\Rightarrow$ **il problema $P$ ha una base ammissibile**;
-	- $z_{P'} = 0$ e almeno una variabile artificiale è in base
-	  $\Rightarrow$ **il problema $P$ ha una base ammissibile, ma bisogna *estrarla***.
+	- $z_{P'} > 0$ $\Rightarrow$ **il problema $P$ non ha una base ammissibile**;
+	- $z_{P'} = 0$ e nessuna variabile artificiale è in base $\Rightarrow$ **il problema $P$ ha una base ammissibile**;
+	- $z_{P'} = 0$ e almeno una variabile artificiale è in base $\Rightarrow$ **il problema $P$ ha una base ammissibile, ma bisogna *estrarla***.
 
 >> Perché funziona: poiché $\mathbf{x_A} \ge \mathbf{0}$, si ha sempre $z_{P'} = \sum_i x^A_i \ge 0$. Inoltre $z_{P'} = 0 \iff \mathbf{x_A} = \mathbf{0} \iff \mathbf{A}\mathbf{x} = \mathbf{b},\ \mathbf{x}\ge\mathbf{0}$, cioè $\mathbf{x}$ è ammissibile per $P$.
 >> Quindi se l'ottimo di $P'$ è strettamente positivo, nessun $\mathbf{x}$ ammissibile per $P$ esiste (altrimenti $(\mathbf{x}, \mathbf{0})$ avrebbe valore $0$).
 
----
-## Slide 135 – Come determinare una base iniziale: Metodo 2-Fasi (3)
-
 - Se $z_{P'} = 0$ e una variabile artificiale è in base, per generare una base senza variabili artificiali è necessario farla uscire.
 - Questo caso si verifica quando la soluzione è ***degenere***, ossia una variabile in base ha valore nullo:
 
-![[RO03-s135-1.png]]
+![[RO03-s135-1.png|659]]
 
 - Se esiste un $y_i^j \neq 0$, allora possiamo ***pivotare*** su questo coefficiente e la variabile $x_j$ entra in base al posto della variabile artificiale $x_h^A$.
-- Se $y_i^j = 0$, per ogni $j = 1, \dots, n$, allora possiamo eliminare dal tableau sia la riga $i$ che la colonna della variabile artificiale $x_h^A$.
+- Se $y_i^j = 0$, per ogni $j = 1, \dots, n$, allora possiamo eliminare dal tableau sia la riga $i$ che la colonna della variabile artificiale $x_h^A$. -> equazione ridondante.
 
 >> Nel pivot su $y_i^j$ è ammesso anche un coefficiente **negativo**: dato che $\bar b_i = 0$, la riga $i$ divisa per $y_i^j$ ha ancora termine noto $0$ e gli altri $\bar b$ non cambiano (si sottrae un multiplo di $0$). L'ammissibilità è quindi preservata e cambia solo la base, non il punto.
 >> Se invece tutti gli $y_i^j$ delle variabili originarie sono nulli, la riga $i$ (ristretta alle variabili originarie) è combinazione lineare delle altre: il vincolo corrispondente di $P$ è **ridondante** e può essere eliminato.
 
 ---
-## Slide 136 – Come determinare una base iniziale: Esempio 1
+## Slide 136->140 – Come determinare una base iniziale: Esempio 1
 
 Si consideri il problema:
 
@@ -2547,9 +2462,6 @@ $$
 
 >> Qui entrambi i vincoli sono di uguaglianza, quindi non ci sono slack da sfruttare: servono due artificiali, $x_4$ e $x_5$.
 
----
-## Slide 137 – Come determinare una base iniziale: Esempio 1
-
 Il primo tableau è il seguente:
 
 $$
@@ -2574,9 +2486,6 @@ $$
 
 >> In pratica la nuova riga 0 si ottiene sommando alla riga 0 tutte le righe in cui c'è un'artificiale in base (costo 1): $(0,0,0,-1,-1\,|\,0) + (2,1,2,1,0\,|\,10) + (6,-3,0,0,1\,|\,8) = (8,-2,2,0,0\,|\,18)$.
 >> Il valore $+18 = 10 + 8$ è proprio $z_{P'}$ nella base iniziale $\mathbf{x_A} = \mathbf{b}$.
-
----
-## Slide 138 – Come determinare una base iniziale: Esempio 1
 
 Risolviamo la fase 1:
 
@@ -2611,9 +2520,6 @@ $$
 >> Poi $x_2$ e $x_3$ hanno entrambi $+2$: si sceglie $x_2$ (indice minimo); l'unico $y_i^2 > 0$ è nella riga 1, con rapporto $(22/3)/2 = 11/3$ ⇒ esce $x_4$.
 >> Nell'ultimo tableau tutti i costi ridotti sono $\le 0$ e $z_{P'} = 0$: fase 1 conclusa con base $\{x_2, x_1\}$.
 
----
-## Slide 139 – Come determinare una base iniziale: Esempio 1
-
 Siccome la fase 1 è terminata con $z_{P'} = 0$ e le variabili artificiali sono fuori dalla base, abbiamo individuato la base per $P$.
 
 Eliminiamo le variabili artificiali e ripristinando la funzione obiettivo originale nella riga 0, otteniamo il seguente tableau per la fase 2:
@@ -2641,9 +2547,6 @@ $$
 >> La riga 0 iniziale contiene $-c_j$ (con $\mathbf{w} = \mathbf{0}$): da $\mathbf{c} = (-4, 1, -3)$ si ha $(+4, -1, +3)$.
 >> Per azzerare i costi ridotti di $x_2$ (riga 1) e $x_1$ (riga 2): nuova riga 0 $=$ riga 0 $+ 1\cdot$ riga 1 $- 4\cdot$ riga 2. Il termine noto diventa $0 + 11/3 - 4\cdot 19/6 = -9$, cioè il valore $\mathbf{c_B}\mathbf{B}^{-1}\mathbf{b} = 1\cdot\frac{11}{3} - 4\cdot\frac{19}{6} = -9$ della soluzione di partenza.
 
----
-## Slide 140 – Come determinare una base iniziale: Esempio 1 (2)
-
 Dopo aver azzerando i costi ridotti delle variabili in base, abbiamo:
 
 $$
@@ -2668,37 +2571,35 @@ x_1 & x_2 & x_3 & \\
 $$
 
 >> Entra $x_3$ (unico costo ridotto positivo); rapporti $\frac{11/3}{1} = \frac{11}{3}$ e $\frac{19/6}{1/2} = \frac{19}{3}$ ⇒ esce la riga 1 ($x_2$).
->> Soluzione ottima: $\mathbf{x}^* = \left(\frac{4}{3}, 0, \frac{11}{3}\right)$, con $z_P^* = -4\cdot\frac{4}{3} - 3\cdot\frac{11}{3} = -\frac{16}{3} - 11 = -\frac{49}{3}$ (verificato anche numericamente).
+>> ~~Soluzione ottima: $\mathbf{x}^* = \left(\frac{4}{3}, 0, \frac{11}{3}\right)$~~, con $z_P^* = -4\cdot\frac{4}{3} - 3\cdot\frac{11}{3} = -\frac{16}{3} - 11 = -\frac{49}{3}$ (verificato anche numericamente).
 
+>all'esame un esercizio di questo modo c'è sempre.
 ---
-## Slide 141 – Come determinare una base iniziale: Esempio 2
+## Slide 141->143 – Come determinare una base iniziale: Esempio 2
 
 Si consideri il problema:
 
 $$
-\begin{array}{rrrcr}
-\min z_P = & -2x_1 & +x_2 & & \\
-\text{s.t.} & +x_1 & -2x_2 & \ge & +5\\
- & +2x_1 & +5x_2 & = & +6\\
- & x_1\ , & x_2 & \ge & 0
+\begin{array}{rrcrcr}
+\min z_P = & -2x_1 & & +x_2 & & \\
+\text{s.t.} & +x_1 & & -2x_2 & \ge & +5 \\
+ & +2x_1 & & +5x_2 & = & +6 \\
+ & x_1 & , & x_2 & \ge & 0
 \end{array}
 $$
 
 Il problema per la fase 1, aggiungendo le variabili di slack e artificiali, è il seguente:
 
 $$
-\begin{array}{rrrrrrcr}
-\min z_{P'} = & & & & +x_4 & +x_5 & & \\
-\text{s.t.} & +x_1 & -2x_2 & -x_3 & +x_4 & & = & +5\\
- & +2x_1 & +5x_2 & & & +x_5 & = & +6\\
- & x_1\ , & x_2\ , & x_3\ , & x_4\ , & x_5 & \ge & 0
+\begin{array}{rrcrcrcrcrcr}
+\min z_{P'} = & & & & & & & +x_4 & & +x_5 & & \\
+\text{s.t.} & +x_1 & & -2x_2 & & -x_3 & & +x_4 & & & = & +5 \\
+ & +2x_1 & & +5x_2 & & & & & & +x_5 & = & +6 \\
+ & x_1 & , & x_2 & , & x_3 & , & x_4 & , & x_5 & \ge & 0
 \end{array}
 $$
 
 >> Il vincolo $\ge$ riceve una variabile di surplus $x_3$ con coefficiente $-1$: non può fare da variabile di base (avrebbe valore $-5$), per questo serve comunque l'artificiale $x_4$.
-
----
-## Slide 142 – Come determinare una base iniziale: Esempio 2
 
 Il primo tableau è il seguente:
 
@@ -2721,9 +2622,6 @@ x_1 & x_2 & x_3 & x_4 & x_5 & \\
 2 & 5 & 0 & 0 & 1 & 6\\ \hline
 \end{array}
 $$
-
----
-## Slide 143 – Come determinare una base iniziale: Esempio 2
 
 Risolviamo la fase 1:
 
@@ -2751,32 +2649,29 @@ Purtroppo la fase 1 termina con $z_{P'} > 0$, quindi il problema originale non h
 >> Verifica diretta: dal vincolo di uguaglianza $x_1 = \frac{6 - 5x_2}{2} \le 3$, quindi $x_1 - 2x_2 \le 3 < 5$ per ogni $x_2 \ge 0$: il vincolo $x_1 - 2x_2 \ge 5$ non può mai essere soddisfatto. Il "deficit" minimo è proprio $5 - 3 = 2 = z_{P'}$.
 
 ---
-## Slide 144 – Come determinare una base iniziale: Esempio 3
+## Slide 144->148 – Come determinare una base iniziale: Esempio 3
 
 Si consideri il problema:
 
 $$
-\begin{array}{rrrcr}
-\min z_P = & -3x_1 & -2x_2 & & \\
-\text{s.t.} & +x_1 & -2x_2 & \ge & +8\\
- & +3x_1 & +2x_2 & \ge & +5\\
- & x_1\ , & x_2 & \ge & 0
+\begin{array}{rrcrcr}
+\min z_P = & -3x_1 & & -2x_2 & & \\
+\text{s.t.} & +x_1 & & -2x_2 & \ge & +8 \\
+ & +3x_1 & & +2x_2 & \ge & +5 \\
+ & x_1 & , & x_2 & \ge & 0
 \end{array}
 $$
 
 Il problema per la fase 1, aggiungendo le variabili di slack e artificiali, è il seguente:
 
 $$
-\begin{array}{rrrrrrrcr}
-\min z_{P'} = & & & & & +x_5 & +x_6 & & \\
-\text{s.t.} & +x_1 & -2x_2 & -x_3 & & +x_5 & & = & +8\\
- & +3x_1 & +2x_2 & & -x_4 & & +x_6 & = & +5\\
- & x_1\ , & x_2\ , & x_3\ , & x_4\ , & x_5\ , & x_6 & \ge & 0
+\begin{array}{rrcrcrcrcrcrcr}
+\min z_{P'} = & & & & & & & & & +x_5 & & +x_6 & & \\
+\text{s.t.} & +x_1 & & -2x_2 & & -x_3 & & & & +x_5 & & & = & +8 \\
+ & +3x_1 & & +2x_2 & & & & -x_4 & & & & +x_6 & = & +5 \\
+ & x_1 & , & x_2 & , & x_3 & , & x_4 & , & x_5 & , & x_6 & \ge & 0
 \end{array}
 $$
-
----
-## Slide 145 – Come determinare una base iniziale: Esempio 3
 
 Il primo tableau è il seguente:
 
@@ -2799,9 +2694,6 @@ x_1 & x_2 & x_3 & x_4 & x_5 & x_6 & \\
 3 & 2 & 0 & -1 & 0 & 1 & 5\\ \hline
 \end{array}
 $$
-
----
-## Slide 146 – Come determinare una base iniziale: Esempio 3
 
 Risolviamo la fase 1:
 
@@ -2835,9 +2727,6 @@ $$
 >> Primo pivot: entra $x_1$ ($+4$), rapporti $\min\{8/1,\ 5/3\} = 5/3$ ⇒ esce $x_6$. Secondo pivot: l'unico costo ridotto positivo è quello di $x_4$ ($+1/3$) e l'unico $y_i^4 > 0$ è nella riga 1 ⇒ esce $x_5$.
 >> Si noti che la variabile di surplus $x_4$ entra in base: la base finale $\{x_4, x_1\}$ non contiene artificiali.
 
----
-## Slide 147 – Come determinare una base iniziale: Esempio 3
-
 Siccome la fase 1 è terminata con $z_{P'} = 0$ e le variabili artificiali sono fuori dalla base, abbiamo individuato la base per $P$.
 
 Eliminiamo le variabili artificiali e ripristinando la funzione obiettivo originale nella riga 0, otteniamo il seguente tableau per la fase 2:
@@ -2863,9 +2752,6 @@ x_1 & x_2 & x_3 & x_4 & \\
 $$
 
 >> Solo $x_1$ (in base nella riga 2) ha costo ridotto non nullo: nuova riga 0 $=$ riga 0 $- 3\cdot$ riga 2. Il valore $-24 = -3\cdot 8$ è $z_P$ nel punto $(x_1, x_2) = (8, 0)$.
-
----
-## Slide 148 – Come determinare una base iniziale: Esempio 3 (2)
 
 Purtroppo se si sceglie la variable entrante $x_2$ si scopre che $\mathbf{y}^2 < \mathbf{0}$, quindi il problema ha soluzione *illimitata*.
 
@@ -3068,22 +2954,22 @@ $$
 Si consideri il problema:
 
 $$
-\begin{array}{rrrrcr}
-\min z_P = & 2x_1 & +3x_2 & 4x_3 & & \\
-\text{s.t.} & +x_1 & +2x_2 & +x_3 & \ge & +3\\
- & +2x_1 & -x_2 & +3x_3 & \ge & +4\\
- & x_1\ , & x_2\ , & x_3 & \ge & 0
+\begin{array}{rrcrcrcr}
+\min z_P = & 2x_1 & & +3x_2 & & 4x_3 & & \\
+\text{s.t.} & +x_1 & & +2x_2 & & +x_3 & \ge & +3 \\
+ & +2x_1 & & -x_2 & & +3x_3 & \ge & +4 \\
+ & x_1 & , & x_2 & , & x_3 & \ge & 0
 \end{array}
 $$
 
 Aggiungendo le variabili di slack il problema è seguente:
 
 $$
-\begin{array}{rrrrrrcr}
-\min z_P = & 2x_1 & +3x_2 & 4x_3 & & & & \\
-\text{s.t.} & -x_1 & -2x_2 & -x_3 & +x_4 & & = & -3\\
- & -2x_1 & +x_2 & -3x_3 & & +x_5 & = & -4\\
- & x_1\ , & x_2\ , & x_3\ , & x_4\ , & x_5 & \ge & 0
+\begin{array}{rrcrcrcrcrcr}
+\min z_P = & 2x_1 & & +3x_2 & & 4x_3 & & & & & & \\
+\text{s.t.} & -x_1 & & -2x_2 & & -x_3 & & +x_4 & & & = & -3 \\
+ & -2x_1 & & +x_2 & & -3x_3 & & & & +x_5 & = & -4 \\
+ & x_1 & , & x_2 & , & x_3 & , & x_4 & , & x_5 & \ge & 0
 \end{array}
 $$
 
@@ -3152,22 +3038,22 @@ La soluzione ottima è $\mathbf{x}^* = \left(\frac{11}{5}, \frac{2}{5}, 0\right)
 Si consideri il problema:
 
 $$
-\begin{array}{rrrcr}
-\min z_P = & -x_1 & -6x_2 & & \\
-\text{s.t.} & +x_1 & +x_2 & \ge & 2\\
- & +x_1 & +3x_2 & \le & 3\\
- & x_1\ , & x_2 & \ge & 0
+\begin{array}{rrcrcr}
+\min z_P = & -x_1 & & -6x_2 & & \\
+\text{s.t.} & +x_1 & & +x_2 & \ge & 2 \\
+ & +x_1 & & +3x_2 & \le & 3 \\
+ & x_1 & , & x_2 & \ge & 0
 \end{array}
 $$
 
 Aggiungendo le variabili di slack il problema è seguente:
 
 $$
-\begin{array}{rrrrrcr}
-\min z_P = & -x_1 & -6x_2 & & & & \\
-\text{s.t.} & -x_1 & -x_2 & +x_3 & & = & -2\\
- & +x_1 & +3x_2 & & +x_4 & = & 3\\
- & x_1\ , & x_2\ , & x_3\ , & x_4 & \ge & 0
+\begin{array}{rrcrcrcrcr}
+\min z_P = & -x_1 & & -6x_2 & & & & & & \\
+\text{s.t.} & -x_1 & & -x_2 & & +x_3 & & & = & -2 \\
+ & +x_1 & & +3x_2 & & & & +x_4 & = & 3 \\
+ & x_1 & , & x_2 & , & x_3 & , & x_4 & \ge & 0
 \end{array}
 $$
 

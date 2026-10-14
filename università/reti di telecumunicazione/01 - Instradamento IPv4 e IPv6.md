@@ -54,7 +54,7 @@
 	- [[#Slide 77 – Relazione Indirizzi L2 – Indirizzi IP|Indirizzi L2 e indirizzi IP]]
 	- [[#Slide 80 – Address Resolution Protocol – ARP (RFC 826)|Protocollo ARP e cache ARP]]
 	- [[#Slide 84 – Direct Delivery|Indirizzi L2 e IP nella consegna diretta e indiretta]]
-	- [[#Slide 87 – Esempio 1|Esempi con tabelle di instradamento]]
+	- [[#Slide 87-88 – Esempio 1|Esempi con tabelle di instradamento]]
 8. **Classi di indirizzi, subnetting e CIDR** (slide 92–109)
 	- [[#Slide 92 – La domanda di oggi|Evoluzione della logica di instradamento]]
 	- [[#Slide 94 – IP e netmask|Netmask come informazione locale]]
@@ -894,7 +894,7 @@ $$I' = I - 2 = 2^H - 2$$
 
 >> Esempi pratici: su Linux la tabella si vede con `ip route` (o il vecchio `route -n`), su macOS con `netstat -rn`, su Windows con `route print`.
 
->> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 13 – Nell'instradamento con tabelle come si compila la tabella?|slide 13 in poi: come i router riempiono questa tabella (shortest path, distance vector, link state, RIP)]]
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 13 – Nell'instradamento con tabelle come si compila la tabella?|slide 13 in poi: come i router riempiono questa tabella (shortest path, distance vector, link state, RIP, OSPF)]] e [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 25 – Tabella di Routing e di forwarding|slide 25–28: dalla RIB alla FIB usata per il longest prefix match]]
 
 ---
 ## Slide 61 – Route
@@ -1294,7 +1294,7 @@ Dalla tabella di instradamento ottengo:
 	- I router riconoscono la classe di una rete dai primi bit dell'indirizzo
 		- Ricavano di conseguenza il Net-ID
 
->> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 55 – IP Multicast|slide 55: indirizzi multicast usati dai protocolli di routing (224.0.0.9 RIPv2, 224.0.0.5/6 OSPF)]]
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 63 – IP Multicast|slide 63: indirizzi multicast usati dai protocolli di routing (224.0.0.9 RIPv2, 224.0.0.5/6 OSPF)]]
 
 ---
 ## Slide 96 – Classi di indirizzi
@@ -1398,7 +1398,7 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 	- Generalizzazione del subnetting/supernetting
 		- reti IP definite da **Net-ID/Netmask**
 
->> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 67 – La mancanza di CIDR|slide 67–69: RIP v1 non supporta il CIDR, RIP v2 sì]]
+>> **Continua in 04** → [[04 - Instradamento nelle reti a pacchetto e in Internet#Slide 54 – La mancanza di CIDR|slide 54–56: RIP v1 non supporta il CIDR, RIP v2 sì]]
 
 ---
 ## Slide 104 – Obiettivi del CIDR
@@ -1764,14 +1764,6 @@ La configurazione iniziale dell'interfaccia IP può essere manuale o automatica
 
 ![[RT01-s132-1.png|600]]
 
-Gerarchia: ICANN (IANA) → RIR (ARIN, RIPE NCC, APNIC, LACNIC, AFRINIC) → NIR → LIR → ISP → EU
-
-- RIR: Regional Internet Registry
-- NIR: National Internet Registry
-- LIR: Local Internet Registry
-- ISP: Internet Service Provider
-- EU: End User
-
 >> Aree dei RIR: ARIN (Nord America), RIPE NCC (Europa, Medio Oriente, Asia centrale), APNIC (Asia-Pacifico), LACNIC (America Latina e Caraibi), AFRINIC (Africa). Non tutti i livelli sono sempre presenti: in Europa, per esempio, i LIR (spesso gli ISP stessi) ricevono gli indirizzi direttamente dal RIPE NCC.
 
 ---
@@ -1865,8 +1857,6 @@ Indirect references to such addresses should be contained within the enterprise.
 
 ![[RT01-s137-1.png|500]]
 
-Rete privata 192.168.10.0/24 — NAT/NAPT — rete pubblica 137.204.191.0/24
-
 ---
 ## Slide 138 – Motivazioni
 
@@ -1883,10 +1873,6 @@ Rete privata 192.168.10.0/24 — NAT/NAPT — rete pubblica 137.204.191.0/24
 
 ![[RT01-s139-1.png|550]]
 
-A — Rete privata — **N** — Internet — B
-
-Nel nodo N: Trasporto | Funzione di mappatura | IP; Stack protocollare di Rete (lato rete privata) / Stack protocollare di Rete (lato Internet)
-
 >> Il NAT non è un router "puro": per fare la mappatura deve leggere e modificare anche campi di strato superiore (le porte TCP/UDP nel NAPT). Deve anche ricalcolare i checksum IP e TCP/UDP, perché il checksum TCP/UDP include uno pseudo-header con gli indirizzi IP. Per questo il NAT rompe il principio end-to-end.
 
 ---
@@ -1898,14 +1884,7 @@ Nel nodo N: Trasporto | Funzione di mappatura | IP; Stack protocollare di Rete (
 ![[RT01-s140-1.png|550]]
 
 Host privati 192.168.10.1 e 192.168.10.2; gateway NAT con interfaccia interna 192.168.10.254 e indirizzi pubblici 137.204.191.141, 137.204.191.142; server 137.204.191.140.
-
-| Sorgente | Destinazione |
-|---|---|
-| 192.168.10.1:3123 (prima del NAT) | 137.204.191.140:80 |
-| 137.204.191.141:3123 (dopo il NAT) | 137.204.191.140:80 |
-| 192.168.10.2:5039 (prima del NAT) | 137.204.191.140:22 |
-| 137.204.191.142:5039 (dopo il NAT) | 137.204.191.140:22 |
-
+	
 >> Nel Basic NAT c'è una corrispondenza 1:1 fra indirizzo privato e indirizzo pubblico, mentre le porte restano invariate (3123 e 5039). Con 2 indirizzi pubblici possono quindi uscire contemporaneamente al massimo 2 host interni. Il NAPT supera questo limite perché traduce anche le porte: molti host possono condividere un solo indirizzo pubblico.
 
 ---
@@ -2117,13 +2096,13 @@ https://343networks.wordpress.com/2010/06/02/ipv4-vs-ipv6-header/
 ---
 ## Slide 156 – Tipologie di indirizzi
 
-| Tipo | Prefisso o esempio | Significato |
-|---|---|---|
-| **Global unicast** | 2000::/3 | Instradabile globalmente |
-| **Link-local** | fe80::/10 | Valido soltanto sul link |
-| **Multicast** | ff00::/8 | Uno-a-molti; sostituisce molti usi del broadcast |
-| **Anycast** | stesso formato unicast | Raggiunge una delle interfacce del gruppo |
-| **Unspecified / loopback** | :: / ::1 | Nessun indirizzo / nodo locale |
+| Tipo                       | Prefisso o esempio     | Significato                                      |
+| -------------------------- | ---------------------- | ------------------------------------------------ |
+| **Global unicast**         | 2000::/3               | Instradabile globalmente                         |
+| **Link-local**             | fe80::/10              | Valido soltanto sul link                         |
+| **Multicast**              | ff00::/8               | Uno-a-molti; sostituisce molti usi del broadcast |
+| **Anycast**                | stesso formato unicast | Raggiunge una delle interfacce del gruppo        |
+| **Unspecified / loopback** | :: / ::1               | Nessun indirizzo / nodo locale                   |
 
 **Non vengono definiti indirizzi broadcast**
 
@@ -2270,18 +2249,6 @@ Il /64 è il caso più tipico ma non è una divisione universale per ogni colleg
 ## Slide 166 – NS/NA
 
 ![[RT01-s166-1.png|500]]
-
-Solicited node multicast address:
-ff02::1:ff00:0/104
-\+
-Ultimi 24 bit dell'indirizzo cercato
-
-Neighbour Solicitation (multicast)
-Verso l'indirizzo multicast ff02::1:ff00:20
-
-Host: 2001:db8:1::10, 2001:db8:1::20, 2001:db8:1::30
-
-Solo questo host appartiene al gruppo multicast ff02::1:ff00:20
 
 >> Esempio: l'host 2001:db8:1::10 vuole conoscere il MAC di 2001:db8:1::20. Gli ultimi 24 bit di 2001:db8:1::20 sono 00:0020, quindi l'indirizzo solicited-node è ff02::1:ff00:20 ($104 + 24 = 128$ bit).
 >> A differenza di ARP, che va in broadcast a tutti, la NS arriva solo ai nodi iscritti a quel gruppo (a livello Ethernet l'indirizzo multicast IPv6 è mappato sul MAC 33:33:ff:00:00:20, filtrabile dalla scheda di rete). Gli altri host (::30) scartano la trama senza disturbare la CPU.

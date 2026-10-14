@@ -76,7 +76,7 @@
 	- [[#Slide 87 – Travelling Salesman Problem|Istanze record risolte all'ottimo]]
 	- [[#Slide 89 – Travelling Salesman Problem|Confronto con i metodi dell'intelligenza artificiale (SOM)]]
 9. **Metodi di soluzione, risolutori e linguaggi di modellazione (AMPL)** (slide 90–118)
-	- [[#Slide 90 – Metodi di soluzione|Algoritmi per la PL continua e per la PL intera]]
+	- [[#Slide 90 – <u>Metodi di soluzione</u>|Algoritmi per la PL continua e per la PL intera]]
 	- [[#Slide 91 – Metodi di soluzione|Programmazione non lineare e risolutori commerciali e open source]]
 	- [[#Slide 92 – Linguaggi di Modellazione|A cosa servono i linguaggi di modellazione]]
 	- [[#Slide 93 – Linguaggi di Modellazione|AMPL e le alternative disponibili]]
@@ -420,13 +420,13 @@ $$n! = 1 \times 2 \times 3 \times 4 \times 5 \times \cdots \times n$$
 
 **Esempi:**
 
-$$\begin{aligned}
-n = 5 &\implies 5! = 1 \times 2 \times 3 \times 4 \times 5 = 120 \\
-n = 10 &\implies 10! = 1 \times 2 \times \cdots \times 9 \times 10 = 3.628.800 \\
-n = 20 &\implies 20! = 1 \times 2 \times \cdots \times 19 \times 20 = 2.432.902.008.176.640.000 \\
-n = 100 &\implies 100! = 1 \times 2 \times \cdots \times 99 \times 100 = 9{,}33262 \times 10^{157} \\
-n = 200 &\implies 200! = 1 \times 2 \times \cdots \times 199 \times 200 = 7{,}88658 \times 10^{374}
-\end{aligned}$$
+$$\begin{array}{lcl}
+n = 5 & \implies & 5! = 1 \times 2 \times 3 \times 4 \times 5 = 120 \\
+n = 10 & \implies & 10! = 1 \times 2 \times \cdots \times 9 \times 10 = 3.628.800 \\
+n = 20 & \implies & 20! = 1 \times 2 \times \cdots \times 19 \times 20 = 2.432.902.008.176.640.000 \\
+n = 100 & \implies & 100! = 1 \times 2 \times \cdots \times 99 \times 100 = 9{,}33262 \times 10^{157} \\
+n = 200 & \implies & 200! = 1 \times 2 \times \cdots \times 199 \times 200 = 7{,}88658 \times 10^{374}
+\end{array}$$
 
 >> Per dare un'idea: anche valutando $10^9$ soluzioni al secondo, enumerare le $20! \approx 2{,}4 \times 10^{18}$ sequenze richiederebbe circa $2{,}4 \times 10^9$ secondi, cioè circa 77 anni. Per $n = 100$ il numero supera di gran lunga il numero stimato di atomi nell'universo osservabile (circa $10^{80}$). L'enumerazione completa è quindi impraticabile già per istanze di dimensione modesta.
 >>
@@ -641,7 +641,11 @@ $$R = -2000p^2 + 150000p = -2000(37.5)^2 + 150000(37.5)$$
 ## Slide 42 – Ottimizzazione Vincolata
 
 - Il sistema lineare risultante è:
-$$\begin{cases} 2x_1 + 3x_2 \phantom{{}+3x_3} = 800 \\ 2x_1 \phantom{{}+3x_2} + 3x_3 = 650 \\ \phantom{2x_1} + 1x_2 + 1x_3 = 350 \end{cases}$$
+$$\left\{\begin{array}{rcrcrcr}
+2x_1 & + & 3x_2 & & & = & 800 \\
+2x_1 & & & + & 3x_3 & = & 650 \\
+ & + & 1x_2 & + & 1x_3 & = & 350
+\end{array}\right.$$
 - Si può risolvere il sistema lineare con il metodo di eliminazione di Gauss-Jordan oppure uno dei tanti algoritmi alternativi.
 - La soluzione del sistema lineare è:
 $$(x_1, x_2, x_3) = (100, 200, 150)$$
@@ -698,7 +702,11 @@ si vuole capire quante auto transito per le strade A, B e C.
 ## Slide 46 – Ottimizzazione Vincolata
 
 - Il sistema lineare risultante è:
-$$\begin{cases} 1x_1 + 1x_2 \phantom{{}-1x_3} = 200 \\ 1x_1 \phantom{{}+1x_2} - 1x_3 = 100 \\ \phantom{1x_1} + 1x_2 + 1x_3 = 100 \end{cases}$$
+$$\left\{\begin{array}{rcrcrcr}
+1x_1 & + & 1x_2 & & & = & 200 \\
+1x_1 & & & - & 1x_3 & = & 100 \\
+ & + & 1x_2 & + & 1x_3 & = & 100
+\end{array}\right.$$
 - Se risolviamo il sistema lineare (e.g., con il metodo di eliminazione di Gauss-Jordan) scopriremo che una delle tre equazioni è ridondante (i.e., è combinazione lineare delle altre 2). **Cosa significa?**
 - La soluzione del sistema lineare è:
 	- $x_1 = x_3 + 100$
@@ -770,7 +778,13 @@ $$10x_{AB} + 20x_{AD} + 5x_{CB} + 10x_{CD} = 475$$
 ## Slide 51 – Ottimizzazione Vincolata
 
 - Il sistema lineare risultante è:
-$$\begin{cases} 1x_{AB} + 1x_{AD} = 20 \\ 1x_{AB} + 1x_{CB} = 10 \\ 1x_{CB} + 1x_{CD} = 15 \\ 1x_{AD} + 1x_{CD} = 25 \\ 10x_{AB} + 20x_{AD} + 5x_{CB} + 10x_{CD} = 475 \end{cases}$$
+$$\left\{\begin{array}{rcrcrcrcr}
+1x_{AB} & + & 1x_{AD} & & & & & = & 20 \\
+1x_{AB} & & & + & 1x_{CB} & & & = & 10 \\
+ & & & + & 1x_{CB} & + & 1x_{CD} & = & 15 \\
+ & + & 1x_{AD} & & & + & 1x_{CD} & = & 25 \\
+10x_{AB} & + & 20x_{AD} & + & 5x_{CB} & + & 10x_{CD} & = & 475
+\end{array}\right.$$
 - Se risolviamo il sistema lineare, scopriremo che una equazione è <u>ridondante</u> e la soluzione è:
 $$(x_{AB}, x_{AD}, x_{CB}, x_{CD}) = (5, 15, 5, 10)$$
 - **Nel caso la soluzione fosse frazionaria (possibilità causata dall'aggiunta del budget), come possiamo utilizzarla?**
@@ -949,7 +963,12 @@ $$\begin{aligned} z = \max\ & \sum_{i=1}^{n} p_i x_i \\ s.t.\ & \sum_{i=1}^{n} a
 
 - Il primo passo per determinare l'algoritmo di ottimizzazione per un problema consiste nel definire il modello matematico.
 - Un modello matematico si può rappresentare come segue:
-$$(P) \qquad \begin{aligned} z_P = \min\ & f(\mathbf{x}) \\ s.t.\ & g_i(\mathbf{x}) \le b_i, && i = 1, \dots, n \\ & h_j(\mathbf{x}) = d_j, && j = 1, \dots, m \\ & \mathbf{x} \ge \mathbf{0} \end{aligned}$$
+$$\begin{array}{lrrcll}
+(P) \qquad & z_P = \min & f(\mathbf{x}) & & & \\
+ & \textit{s.t.} & g_i(\mathbf{x}) & \le & b_i, & \qquad i = 1, \dots, n \\
+ & & h_j(\mathbf{x}) & = & d_j, & \qquad j = 1, \dots, m \\
+ & & \mathbf{x} & \ge & \mathbf{0} &
+\end{array}$$
 - La funzione $f(\mathbf{x})$ è detta funzione obiettivo, le espressioni $g_i(\mathbf{x}) \le b_i$ e $h_j(\mathbf{x}) = d_j$ rappresentano i vincoli e $\mathbf{x} = (x_1, \dots, x_\ell)$ sono le variabili.
 - L'espressione $\mathbf{x} \ge \mathbf{0}$ rappresenta i vincoli di non negatività.
 - Se le funzioni $f(\mathbf{x})$, $g_i(\mathbf{x}) \le b_i$ e $h_j(\mathbf{x}) = d_j$ sono lineari parliamo di **programmazione lineare continua**.
@@ -1287,7 +1306,14 @@ Per l'istanza **World TSP**, costituita da 1.904.711 vertici, nel dicembre 2003 
 - Impariamo a usare AMPL utilizzando degli esempi.
 - Consideriamo il seguente problema di programmazione lineare relativo a un'applicazione in ambito finanziario:
 
-$$\begin{aligned} z = \text{Max}\ & 3x_1 + 4x_2 && \textit{Rendimento} \\ \text{tale che:}\ & \\ & x_1 + x_2 \le 100 && \textit{Capitale} \\ & 2x_1 + x_2 \le 150 && \textit{Rating medio} \\ & 3x_1 + 4x_2 \le 360 && \textit{Scadenza media} \\ & x_1, x_2 \ge 0 && \textit{Non negatività} \end{aligned}$$
+$$\begin{array}{rrcrcll}
+z = \text{Max} & 3x_1 & + & 4x_2 & & & \qquad \textit{Rendimento} \\
+\text{tale che:} & & & & & & \\
+ & x_1 & + & x_2 & \le & 100 & \qquad \textit{Capitale} \\
+ & 2x_1 & + & x_2 & \le & 150 & \qquad \textit{Rating medio} \\
+ & 3x_1 & + & 4x_2 & \le & 360 & \qquad \textit{Scadenza media} \\
+ & x_1 & , & x_2 & \ge & 0 & \qquad \textit{Non negatività}
+\end{array}$$
 
 - Il modello può essere inserito direttamente utilizzando la console "ampl" (eseguibile) richiamabile da linea di comando Linux digitando quanto segue:
 

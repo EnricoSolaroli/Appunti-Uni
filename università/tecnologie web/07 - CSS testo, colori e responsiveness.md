@@ -1,5 +1,4 @@
 [7_css_visualeffect_responsiveness](<file:///Users/enrico/Library/Mobile Documents/com~apple~CloudDocs/Universita/terzo anno/tecnologie web/slide/7_css_visualeffect_responsiveness.pdf>)
-
 # CSS – Testo, colori ed effetti visivi, Responsiveness
 
 ## Indice
@@ -724,7 +723,7 @@ animation: nome durata;
 >> - **Desktop First**: il CSS di base descrive il layout per desktop; le media query con `max-width` lo modificano man mano che lo schermo si restringe.
 >> - **Mobile First**: il CSS di base descrive il layout per smartphone (di solito il più semplice, a una colonna); le media query con `min-width` aggiungono complessità man mano che lo schermo si allarga. È l'approccio oggi consigliato (ad es. da Bootstrap): i dispositivi mobili caricano solo le regole essenziali e si progetta partendo dai contenuti indispensabili.
 
->> **Vedi anche** → [[08 - Tailwind CSS#Slide 38 – Mobile first|nota 08, slide 38–39: Tailwind è mobile first e ha i breakpoint predefiniti]]
+>> **Vedi anche** → [[08 - Tailwind CSS#Slide 38 – Mobile first !!|nota 08, slide 38–39: Tailwind è mobile first e ha i breakpoint predefiniti]]
 
 ---
 ## Slide 34 – Desktop First vs Mobile First - Esempi

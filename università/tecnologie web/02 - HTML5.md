@@ -18,7 +18,6 @@
 	- [[#Slide 11 – Fine della prima guerra|Vittoria di Microsoft e apertura del codice Netscape (1998)]]
 	- [[#Slide 12 – Seconda guerra dei browser|Dal 2004 a Chrome (2008) e quote di mercato]]
 	- [[#Slide 13 – La fine di un'era|Fine del supporto a Internet Explorer 11]]
-	- [[#Slide 14 – Uso dei browser oggi|Quote d'uso attuali dei browser]]
 4. **W3C, WHATWG e il Living Standard** (slide 15–21)
 	- [[#Slide 15 – W3C|Frammentazione dello standard e fondazione del W3C]]
 	- [[#Slide 16 – W3C e HTML|Stop a HTML, svolta su XHTML e XHTML2]]

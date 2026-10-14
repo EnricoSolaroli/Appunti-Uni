@@ -1,5 +1,4 @@
 [Tailwind-CSS_Tecnologie-Web_2026-2027](<file:///Users/enrico/Library/Mobile Documents/com~apple~CloudDocs/Universita/terzo anno/tecnologie web/slide/Tailwind-CSS_Tecnologie-Web_2026-2027.pdf>)
-
 # Tailwind CSS
 
 ## Indice
@@ -39,7 +38,7 @@
 	- [[#Slide 29 – Parte 04: Utility classes|Introduzione alla parte]]
 	- [[#Slide 30 – Display, flexbox e grid|Display, flexbox e grid]]
 	- [[#Slide 31 – Position e offset|Position e offset]]
-	- [[#Slide 32 – Margin e padding|Margin, padding e scala delle spaziature]]
+	- [[#Slide 32 – Margin e padding !!!|Margin, padding e scala delle spaziature]]
 	- [[#Slide 33 – Larghezza e altezza|Larghezza e altezza]]
 	- [[#Slide 34 – Da CSS a Tailwind: un layout con sidebar|Esempio: layout con sidebar]]
 6. **Utility classes: tipografia, colori e bordi** (slide 35–37)
@@ -47,11 +46,11 @@
 	- [[#Slide 36 – Colori|Palette di colori e tonalità]]
 	- [[#Slide 37 – Bordi e arrotondamenti|Bordi e arrotondamenti]]
 7. **Responsive design mobile first** (slide 38–40)
-	- [[#Slide 38 – Mobile first|Approccio mobile first]]
+	- [[#Slide 38 – Mobile first !!|Approccio mobile first]]
 	- [[#Slide 39 – I breakpoint|I cinque breakpoint predefiniti]]
 	- [[#Slide 40 – Responsive senza media query|Prefissi responsive al posto delle media query]]
 8. **Tips: valori arbitrari, centratura e strumenti** (slide 41–44)
-	- [[#Slide 41 – Parte 05: Tips|Introduzione alla parte]]
+	- [[#Slide 41 – Parte 05: Tips !!|Introduzione alla parte]]
 	- [[#Slide 42 – Valori arbitrari|Valori arbitrari tra parentesi quadre]]
 	- [[#Slide 43 – Centrare un elemento con flexbox|Centrare un elemento con flexbox]]
 	- [[#Slide 44 – Strumenti per lo sviluppo|IntelliSense e plugin Prettier]]
@@ -59,15 +58,15 @@
 	- [[#Slide 45 – Parte 06: Tailwind su misura|Introduzione alla parte]]
 	- [[#Slide 46 – Il blocco di stile di Tailwind|Blocco `<style type="text/tailwindcss">`]]
 	- [[#Slide 47 – Colori personalizzati|Colori personalizzati con --color-*]]
-	- [[#Slide 48 – Font personalizzati|Font personalizzati con --font-*]]
+	- [[#Slide 48 – Font personalizzati !!|Font personalizzati con --font-*]]
 	- [[#Slide 49 – Non solo colori e font|Altri namespace del tema: text, radius, shadow, breakpoint, spacing]]
-	- [[#Slide 50 – Una pagina su misura, solo con il CDN|Esempio di pagina personalizzata]]
+	- [[#Slide 50 – Una pagina su misura, solo con il CDN !!|Esempio di pagina personalizzata]]
 10. **Il problema: struttura e stile mescolati** (slide 51–53)
 	- [[#Slide 51 – Parte 07: Il problema|Introduzione alla parte]]
-	- [[#Slide 52 – Svantaggi e vantaggi|Svantaggi e vantaggi di Tailwind]]
+	- [[#Slide 52 – Svantaggi e vantaggi !!|Svantaggi e vantaggi di Tailwind]]
 	- [[#Slide 53 – Il problema in pratica|Esempio: 38 classi per tre card]]
 11. **L'approccio purista: @apply, variabili del tema e CLI** (slide 54–60)
-	- [[#Slide 54 – Parte 08: Per i puristi|Introduzione alla parte]]
+	- [[#Slide 54 – Parte 08: Per i puristi **!!!!!**|Introduzione alla parte]]
 	- [[#Slide 55 – HTML semantico, stile nel CSS|HTML semantico e @apply in @layer components]]
 	- [[#Slide 56 – Stati e breakpoint dentro `@apply`|Varianti hover, focus-visible e md dentro @apply]]
 	- [[#Slide 57 – Oppure CSS classico, con le variabili del tema|CSS classico con var() e --spacing()]]
@@ -331,17 +330,6 @@ Lo sviluppo continuo ha reso Tailwind uno standard del frontend moderno.
 
 ![[TW08-s016-1.png]]
 
-| Versione | Data |
-|---|---|
-| v1.0 | mag 2019 |
-| v2.0 | nov 2020 |
-| v3.0 | dic 2021 |
-| v3.4 | dic 2023 |
-| v4.0 | gen 2025 |
-| v4.1 | apr 2025 |
-| v4.2 | feb 2026 |
-| **v4.3** | mag 2026 — **ATTUALE** |
-
 *9 settembre 2026* — **Tailwind Labs entra in Shopify.** Il framework resta open source con licenza MIT ed è ancora sviluppato dal team originale.
 
 >> Le tappe principali: la v3.0 ha reso il motore Just-In-Time (slide 19) il comportamento predefinito; la v4.0 ha riscritto il motore e spostato la configurazione dal file JavaScript `tailwind.config.js` direttamente nel CSS (direttiva `@theme`, vista più avanti). La licenza MIT è una licenza open source permissiva: il codice si può usare, modificare e ridistribuire liberamente, anche in progetti commerciali.
@@ -474,8 +462,6 @@ Una **Content Delivery Network** è un sistema di server distribuiti che permett
 </html>
 ```
 
-*Anteprima*
-
 ![[TW08-s023-1.png|300]]
 
 Le classi Tailwind vengono applicate **direttamente agli elementi HTML**.
@@ -492,11 +478,6 @@ Le classi Tailwind vengono applicate **direttamente agli elementi HTML**.
 Nelle applicazioni web moderne, Tailwind si usa insieme a strumenti di sviluppo avanzati.
 
 ![[TW08-s024-1.png]]
-
-- **Node.js** – ambiente di esecuzione
-- **npm** – gestore dei pacchetti
-- **Vite** – build e server di sviluppo
-- **Vue** – o un altro framework JS
 
 **Questo ambiente permette di**
 - **Ottimizzare il CSS** – solo le classi usate, file finale più piccolo
@@ -679,7 +660,7 @@ In verde le classi usate nell'esempio (`relative`, `absolute`, `top-0`, `right-0
 >> `inset-0` → `inset: 0`, cioè `top`, `right`, `bottom` e `left` tutti a 0: con `absolute` fa coprire all'elemento l'intero contenitore (utile per overlay).
 
 ---
-## Slide 32 – Margin e padding
+## Slide 32 – Margin e padding !!!
 
 ![[TW08-s032-1.png|300]]
 
@@ -762,31 +743,13 @@ Da conoscere anche: **`size-16`** imposta larghezza e altezza insieme, **`h-dvh`
 ---
 ## Slide 35 – Tipografia
 
-**Dimensione**
-
+**Dimensione:**
 ![[TW08-s035-1.png|450]]
 
-| Classe | Anteprima |
-|---|---|
-| `text-sm` | Utility classes |
-| `text-base` | Utility classes |
-| `text-xl` | Utility classes |
-| `text-3xl` | Utility classes |
-| `text-5xl` | Utility |
-
-**Peso**
-
+**Peso:**
 ![[TW08-s035-2.png|300]]
 
-| Classe | Anteprima |
-|---|---|
-| `font-light` | Tailwind |
-| `font-normal` | Tailwind |
-| `font-semibold` | **Tailwind** |
-| `font-bold` | **Tailwind** |
-
-**Allineamento**
-
+**Allineamento:**
 `text-left` `text-center` `text-right`
 
 Anteprime in scala ×2: text-sm = 14px, text-base = 16px, text-5xl = 48px.
@@ -802,13 +765,8 @@ Tailwind offre una palette pronta all'uso: ogni colore ha **11 tonalità**, da 5
 
 ![[TW08-s036-1.png]]
 
-Tonalità: 50 · 100 · 200 · 300 · 400 · **500** · 600 · 700 · 800 · 900 · 950
-
-![[TW08-s036-2.png|500]]
-
-**Per i testi**: `text-blue-500` `text-red-600` `text-gray-800`
-
-**Per gli sfondi**: `bg-blue-500` `bg-gray-200` `bg-black`
+per i **testi** e per gli **sfondi**:
+![[TW08-s036-2.png|700]]
 
 >> Lo schema è `{proprietà}-{colore}-{tonalità}`: lo stesso colore si applica a proprietà diverse cambiando solo il prefisso (`text-` → `color`, `bg-` → `background-color`, `border-` → `border-color`). Più il numero è alto, più il colore è scuro; 500 è la tonalità "centrale".
 >> Si può aggiungere l'opacità con lo slash: `bg-blue-500/50` = blu 500 al 50% di opacità. `black` e `white` non hanno tonalità.
@@ -818,29 +776,15 @@ Tonalità: 50 · 100 · 200 · 300 · 400 · **500** · 600 · 700 · 800 · 900
 
 ![[TW08-s037-1.png]]
 
-- `border` – bordo di 1px, nel colore del testo
-- `border-blue-500` – bordo colorato di blu
-- `border-gray-300` – bordo colorato di grigio
-- `rounded-md` – angoli arrotondati di 6px
-- `rounded-lg` – angoli arrotondati di 8px
-- `rounded-full` – forma a pillola, o cerchio se l'elemento è quadrato
-
 >> `border` → `border-width: 1px; border-style: solid`; in Tailwind v4 il colore di default è `currentColor` (quello del testo), mentre in v3 era un grigio. Spessori diversi: `border-2`, `border-4`…; solo un lato: `border-t`, `border-b`…
 >> `rounded-md` = `border-radius: 0.375rem` (6px), `rounded-lg` = `0.5rem` (8px). `rounded-full` imposta un raggio "infinito": su un rettangolo i lati corti diventano semicerchi (pillola), su un quadrato (es. `size-16 rounded-full`) si ottiene un cerchio.
 
 ---
-## Slide 38 – Mobile first
+## Slide 38 – Mobile first !!
 
 Tailwind adotta l'approccio **mobile first**: si progetta prima per lo schermo più piccolo, poi si aggiungono le regole per adattare gli elementi ai dispositivi più grandi.
 
 ![[TW08-s038-1.png]]
-
-| Dispositivo | Prefisso |
-|---|---|
-| Smartphone | senza prefisso |
-| Tablet | `md:` |
-| Laptop | `lg:` |
-| TV | `2xl:` |
 
 >> Le classi **senza prefisso** valgono per tutte le larghezze; quelle con prefisso le sovrascrivono solo da una certa larghezza in su. Esempio coerente con la figura: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4` → 1 colonna su smartphone, 2 su tablet, 3 su laptop, 4 su schermi molto larghi.
 >> "Smartphone/tablet/laptop" sono solo indicativi: i prefissi dipendono dalla larghezza della finestra, non dal tipo di dispositivo.
@@ -852,15 +796,7 @@ Tailwind adotta l'approccio **mobile first**: si progetta prima per lo schermo p
 
 Cinque soglie predefinite: ogni prefisso si attiva **da quella larghezza in su**.
 
-![[TW08-s039-1.png]]
-
-| PREFISSO | LARGHEZZA MINIMA | CSS GENERATO |
-|---|---|---|
-| `sm` | 40rem (640px) | `@media (width >= 40rem)` |
-| `md` | 48rem (768px) | `@media (width >= 48rem)` |
-| `lg` | 64rem (1024px) | `@media (width >= 64rem)` |
-| `xl` | 80rem (1280px) | `@media (width >= 80rem)` |
-| `2xl` | 96rem (1536px) | `@media (width >= 96rem)` |
+![[TW08-s039-1.png|700]]
 
 >> `(width >= 40rem)` è la *range syntax* moderna delle media query, equivalente a `(min-width: 40rem)`. Nelle media query `rem` si riferisce alla dimensione del font di default del browser (normalmente 16px), quindi 40rem = 640px.
 >> Poiché le soglie sono tutte `min-width`, più prefissi si sommano: a 1100px sono attivi `sm:`, `md:` e `lg:`, e vince il breakpoint più grande (Tailwind genera le media query in ordine crescente, quindi a parità di specificità prevale quella che viene dopo nel CSS).
@@ -894,7 +830,7 @@ Niente media query da riscrivere ogni volta: basta anteporre alla utility class 
 >> Errore tipico: usare `sm:` pensando "solo smartphone". `sm:text-center` significa invece "da 640px in su"; per il mobile si usa la classe senza prefisso.
 
 ---
-## Slide 41 – Parte 05: Tips
+## Slide 41 – Parte 05: Tips !!
 
 Piccoli trucchi per il lavoro di tutti i giorni
 ---
@@ -982,6 +918,9 @@ Plugin ufficiale per Prettier: ordina le classi automaticamente, sempre nello st
 
 >> La riga in fondo all'immagine è l'anteprima mostrata da IntelliSense: in Tailwind v4 la palette predefinita è definita nello spazio colore `oklch` (luminosità, croma, tonalità) invece che in esadecimale.
 
+>div bisogna utilizzarle nel modo corretto, non a priori
+![[Recording 20261006135631.m4a]]
+
 ---
 ## Slide 45 – Parte 06: Tailwind su misura
 
@@ -1049,7 +988,9 @@ Ogni variabile **--color-\*** diventa una famiglia di classi, come quelle della 
 >> I numeri 100/500/900 sono solo una convenzione (chiaro → scuro) copiata dalla palette di Tailwind: si potrebbe chiamare il colore anche `--color-brand`, e la classe sarebbe `bg-brand`.
 
 ---
-## Slide 48 – Font personalizzati
+## Slide 48 – Font personalizzati !!
+
+>in una pagina non ci dovrebbero essere più di due font diversi e dovrebbero visivamente 'meciare' -> per il contenuto font "inter"
 
 1. **Carica il font nella `<head>`, per esempio da Google Fonts**
 
@@ -1094,7 +1035,7 @@ L'elenco completo delle variabili è nella documentazione: tailwindcss.com/docs/
 >> `--spacing` è un'unica unità di base: ogni classe di spaziatura è un multiplo, ad es. `p-4` = 4 × 0.25rem = 1rem = 16px, `w-80` = 80 × 0.25rem = 20rem. Cambiando `--spacing` si riscala in un colpo solo tutta la spaziatura del sito.
 
 ---
-## Slide 50 – Una pagina su misura, solo con il CDN
+## Slide 50 – Una pagina su misura, solo con il CDN !!
 
 *index.html · … = indirizzi completi visti prima*
 ```html
@@ -1121,13 +1062,15 @@ L'elenco completo delle variabili è nella documentazione: tailwindcss.com/docs/
 >> `space-y-6` aggiunge un margine verticale di 1.5rem tra i figli diretti del `body` (non prima del primo), `text-5xl` imposta `font-size: 3rem`, `px-5 py-2` = padding orizzontale 1.25rem e verticale 0.5rem.
 >> Le classi `font-display`, `text-brand-500` e `bg-brand-500` esistono solo grazie al blocco `@theme`: senza di esso non avrebbero alcun effetto.
 
+>rimane il problema della ripetitività e dello stille collegato direttamente al Html !!
+
 ---
-## Slide 51 – Parte 07: Il problema
+## Slide 51 – Parte 07: Il problema 
 
 Struttura e stile tornano nello stesso file
 
 ---
-## Slide 52 – Svantaggi e vantaggi
+## Slide 52 – Svantaggi e vantaggi !!
 
 **Svantaggi**
 - − Markup HTML più lungo
@@ -1179,7 +1122,7 @@ Struttura e stile mescolati: è facile perdersi.
 >> Il conto: 8 classi sulla `<section>` + 3 card × (6 sul `div` + 3 sull'`h3` + 1 sul `p`) = 8 + 30 = 38. Le stesse 10 classi sono ripetute identiche tre volte: per cambiare l'ombra delle card bisogna modificare tre punti.
 
 ---
-## Slide 54 – Parte 08: Per i puristi
+## Slide 54 – Parte 08: Per i puristi **!!!!!**
 
 Separare HTML e CSS ed evitare le ripetizioni
 
@@ -1342,6 +1285,8 @@ Le classi create con **@utility** funzionano anche con le varianti, per esempio 
 ---
 ## Slide 60 – Purista o utility-first?
 
+>consiglia il livello purista
+
 **Con l'approccio purista guadagni**
 - \+ HTML pulito e semantico
 - \+ Lo stile di un elemento sta in un solo punto
@@ -1364,16 +1309,6 @@ Utility nell'HTML per imparare e prototipare, @apply per ciò che si ripete davv
 Tantissime utility class non sono state citate in questo materiale. Qualche esempio:
 
 ![[TW08-s061-1.png|600]]
-
-- **Animazioni** – `animate-spin`
-- **Ombre** – `shadow-xl`
-- **Effetti** – `opacity-50` · `blur-sm`
-- **Object-fit** – `object-cover`
-- **Background-position** – `bg-center`
-
-**Per approfondire**
-La documentazione ufficiale, completa ed esaustiva
-tailwindcss.com
 
 >> Corrispondenze CSS: `animate-spin` applica un'animazione di rotazione continua (`@keyframes spin`, utile per gli indicatori di caricamento); `opacity-50` → `opacity: 0.5` (rende semitrasparente l'intero elemento, contenuto compreso); `blur-sm` → `filter: blur(…)`; `object-cover` → `object-fit: cover` (l'immagine riempie il riquadro ritagliandosi senza deformarsi); `bg-center` → `background-position: center`.
 

@@ -5,7 +5,6 @@
 ## Indice
 
 1. **Introduzione e categorie di contenuto** (slide 1–2)
-	- [[#Slide 1 – HTML5|Apertura della lezione]]
 	- [[#Slide 2 – Argomenti|Le tre categorie: sectioning, phrasing, embedded]]
 2. **Elementi di sectioning: la struttura della pagina** (slide 3–8)
 	- [[#Slide 3 – Sectioning|Elenco degli elementi con funzione strutturale]]

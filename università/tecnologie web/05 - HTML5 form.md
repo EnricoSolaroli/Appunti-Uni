@@ -5,7 +5,6 @@
 ## Indice
 
 1. **Introduzione alle form HTML** (slide 1–4)
-	- [[#Slide 1 – HTML5|Presentazione della lezione]]
 	- [[#Slide 2 – Argomenti|Argomenti: elementi interattivi, Web API, validazione]]
 	- [[#Slide 3 – Cosa sono le form?|Cosa sono le form e flusso dei dati]]
 	- [[#Slide 4 – Come progettare una form|Come progettare una form]]
@@ -49,7 +48,7 @@
 	- [[#Slide 41 – Limiti di Web Storage|Limiti del Web Storage]]
 	- [[#Slide 42 – Terza domanda|Domanda 3: ricordare il tema scelto]]
 8. **Scrivere e validare il codice** (slide 43–46)
-	- [[#Slide 43 – Scrivere il codice|I 4 requisiti del codice per le consegne]]
+	- [[#Slide 43 – Scrivere il codice -> regole esame e elaborato|I 4 requisiti del codice per le consegne]]
 	- [[#Slide 44 – Controllare con validator|Validatore W3C]]
 	- [[#Slide 45 – Controllare con Achecker|AChecker per l'accessibilità]]
 	- [[#Slide 46 – Controllo manuale|Controllo manuale]]
@@ -58,7 +57,6 @@
 	- [[#Slide 48 – Esempio|Soluzione errata: mancano `<thead>`, `<tbody>`, `scope`]]
 	- [[#Slide 50 – Esempio|Soluzione corretta con `scope` e `headers`]]
 10. **Conclusione** (slide 52)
-	- [[#Slide 52 – Concludendo …|HTML non è un linguaggio di programmazione]]
 ---
 ## Slide 2 – Argomenti
 
