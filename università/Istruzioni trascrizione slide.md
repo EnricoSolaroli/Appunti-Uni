@@ -39,6 +39,7 @@
      ## Slide N – Titolo della slide
      ```
   5. `## Riassunto` in fondo (vedi §6)
+- **Slide consecutive con lo stesso titolo** (es. dalla 1 alla 10 tutte "Esempio"): un solo titolo per tutto il gruppo, nella forma `## Slide 1 -> 10 – Esempio`, seguito dal contenuto delle slide una dopo l'altra, senza i titoli ripetuti e senza `---` intermedi. Il `---` va solo prima del titolo del gruppo. Vale anche per titoli quasi uguali che differiscono solo per un numero, es. "Esempio (2)", "(3)". Nell'indice il link punta al titolo del gruppo.
 
 ## 3. Regole di trascrizione
 
@@ -63,6 +64,7 @@
   - `IOT11` / `IOT12` → IoT, moduli 1.1 e 1.2
   - `TW01` → Tecnologie Web, lezione 1
 - **Inserimento nella nota**: `![[RO02-s014-1.png]]`, con eventuale larghezza, es. `![[RO02-s014-1.png|500]]`.
+- **Immagini piccole consecutive**: se due (o più) immagini piccole sono una dopo l'altra, mettile **affiancate sulla stessa riga**, senza spazi né a capo in mezzo e con una larghezza a ciascuna, es. `![[RT04-s009-1.png|250]]![[RT04-s009-2.png|250]]`. Le immagini grandi restano su righe separate.
 - **Diagrammi o tabelle con testo**: metti l'immagine e trascrivi anche il testo essenziale (per le tabelle, anche in markdown).
 - **Formule**: se una "figura" è solo una formula o del testo formattato, scrivila in LaTeX invece di ritagliarla.
 - Controlla sempre a occhio ogni ritaglio.

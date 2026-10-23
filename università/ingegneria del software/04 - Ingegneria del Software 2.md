@@ -5,28 +5,28 @@
 ## Indice
 
 1. **Misurazione e stima dei costi** (slide 2–5)
-	- [[#Slide 2 – Misurazione|Perché si misura: previsione, stima, decisioni]]
-	- [[#Slide 3 – Misurazione|Scopi e fasi della misurazione nel ciclo di vita]]
+	- [[#Slide 2 -> 3 – Misurazione|Perché si misura: previsione, stima, decisioni]]
+		- Scopi e fasi della misurazione nel ciclo di vita
 	- [[#Slide 4 – Stima dei costi|Fonti e fattori di costo]]
 	- [[#Slide 5 – Le dimensioni del software|Metriche dimensionali (LOC/DSI) e indici di qualità]]
 2. **Il metodo dei Function Points** (slide 6–16)
-	- [[#Slide 6 – Il metodo Function Points|Caratteristiche: parametro adimensionale e indipendente dalla tecnologia]]
-	- [[#Slide 8 – Conteggio dei Function Point|I 5 tipi di funzione, i pesi e il numero non pesato]]
+	- [[#Slide 6 -> 7 – Il metodo Function Points|Caratteristiche: parametro adimensionale e indipendente dalla tecnologia]]
+	- [[#Slide 8 -> 9 – Conteggio dei Function Point|I 5 tipi di funzione, i pesi e il numero non pesato]]
 	- [[#Slide 10 – Tipi di conteggio|Sviluppo, manutenzione evolutiva, applicazione esistente]]
 	- [[#Slide 11 – Ambito del conteggio e confine delle applicazioni|Ambito e confine dell'applicazione]]
 	- [[#Slide 12 – Funzioni di tipo dati|Funzioni di tipo dati: ILF ed EIF]]
 	- [[#Slide 14 – Funzioni di tipo transazione|Funzioni di tipo transazione: EI, EO, EQ]]
-	- [[#Slide 15 – Fattore di aggiustamento|Fattore di aggiustamento e le 14 caratteristiche generali]]
+	- [[#Slide 15 -> 16 – Fattore di aggiustamento|Fattore di aggiustamento e le 14 caratteristiche generali]]
 3. **Il numero ciclomatico di McCabe** (slide 17–22)
-	- [[#Slide 17 – Il numero ciclomatico|Definizione di complessità del flusso di controllo]]
-	- [[#Slide 18 – Il numero ciclomatico|Calcolo su grafo fortemente connesso: e − n + 1]]
-	- [[#Slide 19 – Il numero ciclomatico|Cammini linearmente indipendenti: v(G) = e − n + 2]]
-	- [[#Slide 21 – Il numero ciclomatico|Teorema di Mills e grafi con più procedure]]
-	- [[#Slide 22 – Il numero ciclomatico|Validità sperimentale e soglia raccomandata di 10]]
+	- [[#Slide 17 -> 22 – Il numero ciclomatico|Definizione di complessità del flusso di controllo]]
+		- Calcolo su grafo fortemente connesso: e − n + 1
+		- Cammini linearmente indipendenti: v(G) = e − n + 2
+		- Teorema di Mills e grafi con più procedure
+		- Validità sperimentale e soglia raccomandata di 10
 4. **COCOMO: modello costruttivo dei costi** (slide 23–25)
-	- [[#Slide 23 – Constructive Cost Model|Stima della dimensione in KDSI e conversione da FP]]
-	- [[#Slide 24 – Constructive Cost Model (2)|Classi Organic, Semi-detached, Embedded e formule dello sforzo]]
-	- [[#Slide 25 – Constructive Cost Model (3)|I 15 stimatori di costo moltiplicativi]]
+	- [[#Slide 23 -> 25 – Constructive Cost Model|Stima della dimensione in KDSI e conversione da FP]]
+		- Classi Organic, Semi-detached, Embedded e formule dello sforzo
+		- I 15 stimatori di costo moltiplicativi
 5. **Modelli di processo prescrittivi** (slide 26–31)
 	- [[#Slide 26 – Modelli di produzione|Il processo di produzione e le famiglie di modelli]]
 	- [[#Slide 27 – I modelli prescrittivi|Le cinque attività strutturali generiche]]
@@ -36,18 +36,18 @@
 	- [[#Slide 31 – Incrementale vs. iterativo|Incrementale vs. iterativo]]
 6. **Modelli evolutivi, prototipazione e MDD** (slide 32–40)
 	- [[#Slide 32 – I modelli evolutivi|Requisiti che cambiano e sviluppo evolutivo]]
-	- [[#Slide 33 – Prototipazione|Prototipo: obiettivi e benefici]]
-	- [[#Slide 34 – Prototipazione|Il processo di prototipazione: attività e prodotti]]
-	- [[#Slide 35 – Prototipazione|Prototipazione evolutiva vs. usa-e-getta]]
+	- [[#Slide 33 -> 35 – Prototipazione|Prototipo: obiettivi e benefici]]
+		- Il processo di prototipazione: attività e prodotti
+		- Prototipazione evolutiva vs. usa-e-getta
 	- [[#Slide 38 – Prototipazione dell'interfaccia utente|Prototipazione dell'interfaccia utente]]
 	- [[#Slide 39 – Il modello a spirale|Modello a spirale e analisi dei rischi]]
 	- [[#Slide 40 – Model-Driven Development|MDD e i modelli CIM, PIM, PSM]]
 7. **Modelli agili ed Extreme Programming** (slide 41–45)
 	- [[#Slide 41 – I modelli agili|Caratteristiche dei processi agili]]
-	- [[#Slide 42 – Extreme Programming|Pianificazione e user story]]
-	- [[#Slide 43 – Extreme Programming|Design: semplicità, schede CRC, refactoring]]
-	- [[#Slide 44 – Extreme Programming|Pair programming, unit test e test di regressione]]
-	- [[#Slide 45 – Extreme Programming|Velocità del progetto]]
+	- [[#Slide 42 -> 45 – Extreme Programming|Pianificazione e user story]]
+		- Design: semplicità, schede CRC, refactoring
+		- Pair programming, unit test e test di regressione
+		- Velocità del progetto
 8. **Unified Process** (slide 46–52)
 	- [[#Slide 46 – Unified Process|Caratteristiche di UP]]
 	- [[#Slide 47 – Un modello di UP|Ruoli, attività, manufatti, flussi di lavoro]]
@@ -59,24 +59,24 @@
 9. **Verifica del software e testing** (slide 53–61)
 	- [[#Slide 53 – Verifica del software|Tecniche dinamiche e statiche]]
 	- [[#Slide 54 – Testing|Limiti del testing e impossibilità del testing esaustivo]]
-	- [[#Slide 55 – Testing in the small|Grafi di controllo dei costrutti elementari]]
-	- [[#Slide 56 – Testing in the small|Copertura delle istruzioni (statement test)]]
-	- [[#Slide 57 – Testing in the small|Copertura delle decisioni (branch test)]]
-	- [[#Slide 58 – Testing in the small|Copertura di decisioni e condizioni]]
-	- [[#Slide 60 – Testing in the large|Testing in the large e black-box testing]]
-	- [[#Slide 61 – Testing in the large|Test di modulo, di integrazione e di sistema]]
+	- [[#Slide 55 -> 59 – Testing in the small|Grafi di controllo dei costrutti elementari]]
+		- Copertura delle istruzioni (statement test)
+		- Copertura delle decisioni (branch test)
+		- Copertura di decisioni e condizioni
+	- [[#Slide 60 -> 61 – Testing in the large|Testing in the large e black-box testing]]
+		- Test di modulo, di integrazione e di sistema
 10. **Analisi statica del codice** (slide 62–70)
 	- [[#Slide 62 – Analisi del software|Analisi vs. testing]]
 	- [[#Slide 63 – Code walk-through|Code walk-through]]
 	- [[#Slide 64 – Code inspection|Code inspection e classi di errori]]
 	- [[#Slide 65 – Analisi di flusso dei dati|Operazioni sulle variabili: definizione, uso, annullamento]]
 	- [[#Slide 66 – Analisi di flusso dei dati: esempio|Esempio: la procedura swap]]
-	- [[#Slide 68 – Analisi di flusso dei dati|Le due regole generali e le sequenze anomale]]
-	- [[#Slide 70 – Analisi di flusso dei dati|Falsi positivi delle sequenze au e dd]]
+	- [[#Slide 67 -> 70 – Analisi di flusso dei dati|Le due regole generali e le sequenze anomale]]
+		- Falsi positivi delle sequenze au e dd
 11. **Certificazione e qualità** (slide 71–75)
 	- [[#Slide 71 – 4. Certificazione|Certificazione e accreditamento]]
-	- [[#Slide 72 – La certificazione ISO 9000|Iter di certificazione secondo ISO 10011]]
-	- [[#Slide 73 – La certificazione ISO 9000|Manuale qualità, verifica ispettiva, visite di sorveglianza]]
+	- [[#Slide 72 -> 73 – La certificazione ISO 9000|Iter di certificazione secondo ISO 10011]]
+		- Manuale qualità, verifica ispettiva, visite di sorveglianza
 	- [[#Slide 74 – I documenti del progetto|Archivio del progetto e documenti]]
 	- [[#Slide 75 – Vision 2000|Vision 2000 e ISO 9001:2000]]
 12. **La manutenzione del software** (slide 76–81)
@@ -87,14 +87,13 @@
 	- [[#Slide 80 – Manutenzione perfettiva|Manutenzione perfettiva]]
 	- [[#Slide 81 – Manutenzione evolutiva|Manutenzione evolutiva]]
 
-
 ---
 ## Slide 1 – Ingegneria del Software - 2
 
 INGEGNERIA DEL SOFTWARE - 2
 
 ---
-## Slide 2 – Misurazione
+## Slide 2 -> 3 – Misurazione
 
 - Nel ciclo di vita del software la misurazione serve a prevedere o stimare tempi di consegna, costo di lavorazione, qualità del prodotto
 - Come in ogni altro settore ingegneristico, alle misure viene assegnato il compito di normalizzazione tra oggetti e fenomeni distinti, per un loro confronto o per effettuare correlazioni, al fine di valutare e prendere decisioni
@@ -103,9 +102,6 @@ INGEGNERIA DEL SOFTWARE - 2
 >> "Normalizzazione" qui significa ricondurre oggetti diversi a una stessa scala: senza una
 >> unità comune non si possono confrontare due progetti, né correlare una causa (es. la
 >> complessità) a un effetto (es. il numero di difetti).
-
----
-## Slide 3 – Misurazione
 
 - Scopi:
 	- la previsione delle caratteristiche che avrà il software in una fase del ciclo di vita diversa da quella in cui si effettua la valutazione
@@ -170,7 +166,7 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 >> motiva le metriche funzionali.
 
 ---
-## Slide 6 – Il metodo Function Points
+## Slide 6 -> 7 – Il metodo Function Points
 
 - Fra le metriche del software riguardanti la dimensione, i FP sono la più vecchia (Allan Albrecht, metà degli anni 70) e tuttora la più diffusa:
 	- Restituisce un *parametro adimensionale*
@@ -184,9 +180,6 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 >> *come* è scritto. Per questo si possono calcolare già sui requisiti, cioè quando il codice
 >> non esiste ancora e le LOC sarebbero impossibili da contare.
 
----
-## Slide 7 – Il metodo Function Points
-
 - Può essere usato da un'organizzazione come:
 	- Uno strumento per determinare la *complessità* di un pacchetto applicativo acquistato attraverso la quantificazione di tutte le sue funzioni
 	- Uno strumento che aiuti gli utenti a determinare il *beneficio* per le loro organizzazioni derivante da un pacchetto applicativo commerciale, attraverso la quantificazione delle sole funzioni che soddisfano i loro requisiti
@@ -195,7 +188,7 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 	- Un *fattore di normalizzazione* per effettuare confronti sul software
 
 ---
-## Slide 8 – Conteggio dei Function Point
+## Slide 8 -> 9 – Conteggio dei Function Point
 
 - Il metodo consiste nell'identificare 5 tipi di funzioni (funzionalità):
 	- **funzioni di tipo dati**
@@ -225,9 +218,6 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 >> dove la sommatoria è il numero di FP non pesato (UFP) e $FA$ è il fattore di aggiustamento.
 >> Si noti che i file (ILF, EIF) "pesano" più delle transazioni: mantenere dati costa più che
 >> muoverli.
-
----
-## Slide 9 – Conteggio dei Function Point
 
 ![[ISW4-s009-1.png|600]]
 
@@ -315,13 +305,10 @@ Flusso del conteggio:
 >> visualizzazione è una EQ.
 
 ---
-## Slide 15 – Fattore di aggiustamento
+## Slide 15 -> 16 – Fattore di aggiustamento
 
 - Il numero totale di FP viene moltiplicato per un **fattore di aggiustamento** per tenere conto di quelle funzionalità generali del sistema non sufficientemente rappresentate dalle funzioni dati e transazionali
 - Il valore del fattore di aggiustamento varia fra 0.65 e 1.35 (+/-35%) e viene calcolato sulla base del grado di influenza di ciascuna delle 14 Caratteristiche Generali del Sistema
-
----
-## Slide 16 – Fattore di aggiustamento
 
 - Il grado di influenza di una caratteristica è compreso tra 0 (nessuna influenza) e 5 (forte influenza):
 
@@ -349,16 +336,13 @@ con TDI (Total Degree of Influence) somma dei gradi di influenza per ciascuna ca
 >> $\pm 35\%$ annunciato nella slide precedente.
 
 ---
-## Slide 17 – Il numero ciclomatico
+## Slide 17 -> 22 – Il numero ciclomatico
 
 - Modello di metrica del software proposto da McCabe nel 1976
 - Il numero ciclomatico è una definizione operativa di complessità del flusso di controllo di un programma, ed è legato all'identificazione di tutti i cammini che permettono di raggiungere una copertura accettabile del programma
 	- Misura della sola complessità del software intesa in riferimento alla sua produzione, comprensione e modifica
 	- Viene preso in considerazione il solo flusso di controllo, senza alcun riferimento alla complessità dei dati (grafo del flusso di controllo)
 	- Metrica svincolata dalle particolarità di un linguaggio
-
----
-## Slide 18 – Il numero ciclomatico
 
 - Il numero ciclomatico di un grafo fortemente connesso è il numero minimo di archi che occorre eliminare per trasformarlo in un albero
 
@@ -376,9 +360,6 @@ dove e è il numero degli archi ed n è il numero dei nodi
 >> archi bisogna toglierne $e-(n-1) = e-n+1$. Il numero ciclomatico conta quindi i "cicli
 >> indipendenti" del grafo.
 
----
-## Slide 19 – Il numero ciclomatico
-
 - Se un programma è ben formato esistono sempre un nodo iniziale e uno terminale. Inoltre, esiste sempre almeno un cammino che permette di collegare il nodo iniziale con uno qualunque degli altri nodi ed almeno un cammino che permette di collegare uno qualunque dei nodi con il nodo terminale
 - Si rende fortemente connesso il grafo del flusso di controllo del programma aggiungendo un arco orientato che va dal nodo terminale al nodo iniziale (+ 1 arco)
 - Il numero ciclomatico del programma, assunto come misura della complessità del suo flusso di controllo, è il numero ciclomatico del grafo G modificato, v(G), ed esprime il ***numero di cammini linearmente indipendenti nel grafo di controllo***:
@@ -387,9 +368,6 @@ $$v(G) = e - n + 2$$
 
 >> Da dove viene il "+2": sul grafo reso fortemente connesso ci sono $e+1$ archi, quindi
 >> $v(G) = (e+1) - n + 1 = e - n + 2$, dove $e$ ed $n$ sono archi e nodi del grafo *originale*.
-
----
-## Slide 20 – Il numero ciclomatico
 
 **ESEMPI:**
 
@@ -403,9 +381,6 @@ $$v(G) = e - n + 2$$
 >> Verifica sul primo caso: due nodi e un arco, $v(G) = 1 - 2 + 2 = 1$; un programma
 >> puramente sequenziale ha un solo cammino, e infatti $v(G)=1$. Ogni punto di decisione
 >> aggiunge 1.
-
----
-## Slide 21 – Il numero ciclomatico
 
 - ***Teorema di Mills***:
 
@@ -422,9 +397,6 @@ dove e ed n sono rispettivamente archi e nodi del grafo nel suo insieme, p è il
 >> Il teorema di Mills è la versione "pratica": non serve disegnare il grafo, basta contare
 >> `if`, `while`, `for` e le condizioni composte. Uno `switch` con k rami vale $k-1$.
 
----
-## Slide 22 – Il numero ciclomatico
-
 - Il numero ciclomatico cattura almeno in parte ciò che intuitivamente è la complessità del flusso di controllo
 - Esistono conferme sperimentali che indicano che si ha un buon grado di correlazione tra il numero ciclomatico e grandezze sicuramente influenzate notevolmente dalla complessità del flusso di controllo, come ad esempio il numero degli errori riscontrati
 - Raccomandazione: *la complessità ciclomatica di un modulo non dovrebbe superare il valore 10*
@@ -434,7 +406,7 @@ dove e ed n sono rispettivamente archi e nodi del grafo nel suo insieme, p è il
 >> che rende la soglia di 10 una regola pratica sensata.
 
 ---
-## Slide 23 – Constructive Cost Model
+## Slide 23 -> 25 – Constructive Cost Model
 
 - Si calcola una stima iniziale dei costi di sviluppo in base alla dimensione del software da produrre, poi la si migliora sulla base di un insieme di parametri
 
@@ -452,9 +424,6 @@ dove e ed n sono rispettivamente archi e nodi del grafo nel suo insieme, p è il
 >> CLang è il numero di linee di codice che servono, in quel linguaggio, per realizzare un
 >> Function Point: è il "tasso di cambio" fra misura funzionale e misura dimensionale. Più il
 >> linguaggio è di alto livello, minore è CLang.
-
----
-## Slide 24 – Constructive Cost Model (2)
 
 2. *Determinazione della classe del software*: i sw sono suddivisi in tre categorie con caratteristiche di difficoltà crescente. Per ogni categoria è stata sviluppata una diversa formula per il calcolo del costo, espresso in mesi uomo:
 
@@ -483,9 +452,6 @@ L'appartenenza ad uno dei tre profili viene determinata sulla base dei seguenti 
 >> dimensione (diseconomia di scala, dovuta al costo di comunicazione e coordinamento). E
 >> l'esponente cresce passando da Organic a Embedded, cioè i progetti più vincolati
 >> peggiorano più in fretta al crescere della taglia.
-
----
-## Slide 25 – Constructive Cost Model (3)
 
 3. *Applicazione degli stimatori di costo*:
 
@@ -632,7 +598,7 @@ Comunicazione → Pianificazione → (Modellazione → Costruzione) in parallelo
 	- Si fa largo uso di **tecniche di prototipazione**
 
 ---
-## Slide 33 – Prototipazione
+## Slide 33 -> 35 – Prototipazione
 
 - Un prototipo è una versione approssimata, parziale (funzionante), dell'applicazione che deve essere sviluppata
 - Obiettivi:
@@ -645,9 +611,6 @@ Comunicazione → Pianificazione → (Modellazione → Costruzione) in parallelo
 	- Un sistema funzionante è disponibile molto presto nel processo
 	- Il prototipo può servire come base per derivare una specifica del sistema
 
----
-## Slide 34 – Prototipazione
-
 ![[ISW4-s034-1.png|560]]
 
 Il processo di prototipazione (in ovale le attività, in rettangolo i prodotti):
@@ -658,9 +621,6 @@ Il processo di prototipazione (in ovale le attività, in rettangolo i prodotti):
 | definire la funzionalità del prototipo | sketch della definizione |
 | sviluppare il prototipo | prototipo eseguibile |
 | valutare il prototipo | rapporto di valutazione |
-
----
-## Slide 35 – Prototipazione
 
 - Due tecniche:
 	- L'obiettivo della **prototipazione evolutiva** è di fornire un sistema funzionante all'utente finale
@@ -764,7 +724,7 @@ Flusso: Raccolta e specifica dei requisiti → Design ad alto livello → Design
 	- richiedono comunicazione continua tra sviluppatori e utenti
 
 ---
-## Slide 42 – Extreme Programming
+## Slide 42 -> 45 – Extreme Programming
 
 - E' il più diffuso modello di processo agile, nato nel 1999
 - XP adotta un approccio object-oriented e include 4 attività strutturali:
@@ -775,9 +735,6 @@ Flusso: Raccolta e specifica dei requisiti → Design ad alto livello → Design
 		- se una user story richiede più di 3 settimane di sviluppo, si chiede al cliente di frammentarla
 		- il cliente e i progettisti decidono quali user story inserire nella prossima release, e le ordinano per valore o per rischio decrescenti
 
----
-## Slide 43 – Extreme Programming
-
 - E' il più diffuso modello di processo agile, nato nel 1999
 - XP adotta un approccio object-oriented e include 4 attività strutturali:
 	- **Design**
@@ -787,9 +744,6 @@ Flusso: Raccolta e specifica dei requisiti → Design ad alto livello → Design
 		- se viene individuato un problema di design, si crea immediatamente un prototipo operativo (*spike solution*) che viene poi valutato
 		- incoraggia il *refactoring*, ossia un processo di "ripulitura" e riorganizzazione del software che non ne altera il comportamento esterno
 		- l'architettura viene considerata un elemento transitorio
-
----
-## Slide 44 – Extreme Programming
 
 - E' il più diffuso modello di processo agile, nato nel 1999
 - XP adotta un approccio object-oriented e include 4 attività strutturali:
@@ -802,9 +756,6 @@ Flusso: Raccolta e specifica dei requisiti → Design ad alto livello → Design
 >> Definire gli unit test *prima* del codice (test-first) non è solo disciplina di
 >> verifica: il test è la specifica eseguibile del componente, quindi sostituisce
 >> parte della documentazione di design che XP volutamente non produce.
-
----
-## Slide 45 – Extreme Programming
 
 - Dopo il primo rilascio del progetto, il team XP calcola la **velocità del progetto**, intesa come il numero di user story implementate nella prima release
 - La velocità del progetto è utilizzata per
@@ -941,7 +892,7 @@ Il grafico incrocia le *Phases* (Inception, Elaboration, Construction, Transitio
 >> selezionino un sottoinsieme finito e significativo di casi.
 
 ---
-## Slide 55 – Testing in the small
+## Slide 55 -> 59 – Testing in the small
 
 - Valuta il corretto funzionamento di una porzione del codice analizzando in modo approfondito il suo comportamento in relazione all'input
 
@@ -955,9 +906,6 @@ I quattro costrutti elementari e i rispettivi grafi di controllo: **assegnamento
 >> white-box: i nodi sono blocchi di istruzioni, gli archi i possibili passaggi di controllo.
 >> "Coprire" il codice significa allora coprire nodi (statement test) o archi (branch test)
 >> di questo grafo.
-
----
-## Slide 56 – Testing in the small
 
 **Criterio di copertura dei programmi (statement test)**
 
@@ -979,9 +927,6 @@ y:=y/x;
 >> Un solo caso di prova basta a eseguire tutte le istruzioni, ma non scopre l'errore:
 >> con $x=0$ l'if non viene preso e `y:=y/x` divide per zero. La copertura delle
 >> istruzioni è quindi il criterio più debole.
-
----
-## Slide 57 – Testing in the small
 
 **Criterio di copertura delle decisioni (branch test)**
 
@@ -1006,9 +951,6 @@ if (x=0 or y>0)
 >> percorsi. Però il caso $x=0$ non viene mai provato: la divisione per zero in
 >> `y:=y/x` resta nascosta. Da qui la necessità del criterio successivo.
 
----
-## Slide 58 – Testing in the small
-
 **Criterio di copertura delle decisioni e delle condizioni**
 
 *"Selezionare un insieme di test T tali che, a seguito dell'esecuzione del programma P su tutti i casi di T, ogni arco del grafo di controllo di P sia attraversato e tutti i possibili valori delle condizioni composte siano valutati almeno una volta"*
@@ -1020,9 +962,6 @@ if (x=0 or y>0)
 >> Sulla condizione `(x=0 or y>0)` non basta più che l'intera espressione sia vera e falsa:
 >> ciascuna sotto-condizione (`x=0` e `y>0`) deve assumere entrambi i valori. Serve quindi
 >> anche un caso con $x=0$, quello che il branch test lasciava scoperto.
-
----
-## Slide 59 – Testing in the small
 
 ```
 1. read(x);
@@ -1054,7 +993,7 @@ Grafo di controllo: `1 read(x)` → `2 read(y)`; da 2, con $y=0$ si va a `4 x:=x
 >> non garantisce di scegliere *i valori* che fanno emergere il difetto.
 
 ---
-## Slide 60 – Testing in the large
+## Slide 60 -> 61 – Testing in the large
 
 - L'esplosione combinatoria delle possibili situazioni che si hanno quando si esaminano sistemi di grandi dimensioni rende impossibile l'utilizzo di tecniche white-box
 - Si rende quindi necessario valutare il funzionamento del sistema sulla base delle corrispondenze input-output. Il sistema è considerato una scatola nera (***black-box testing***)
@@ -1073,9 +1012,6 @@ Grafo di controllo: `1 read(x)` → `2 read(y)`; da 2, con $y=0$ si va a `4 x:=x
 >> I casi di prova black-box si ricavano partizionando l'input in *classi di equivalenza*
 >> (qui: posizione temporale della data, presenza di fatture omonime, presenza del cliente)
 >> e scegliendo un rappresentante per classe, più i valori di confine.
-
----
-## Slide 61 – Testing in the large
 
 - **Test di modulo**: verifica se un modulo è stato implementato correttamente in base al suo comportamento esterno
 - **Test d'integrazione**: verifica il comportamento di sottoparti del sistema sulla base del loro comportamento esterno. Viene solitamente svolto simulando il comportamento dei moduli che producono l'input del sottosistema in analisi
@@ -1176,7 +1112,7 @@ I due principali approcci all'analisi del software sono *Code walk-through* e *C
 >> e **ddd** segnalano quindi proprio lo scambio sbagliato alla linea 4.
 
 ---
-## Slide 67 – Analisi di flusso dei dati
+## Slide 67 -> 70 – Analisi di flusso dei dati
 
 - L'esame delle sequenze ottenute per ogni variabile può rilevare la presenza di anomalie
 	- La sequenza **auu**, ad esempio, ottenuta per la variabile x permette di dedurre che il valore usato nei due comandi di assegnamento alle linee 4 e 6 non è definito, i due usi della variabile sono infatti preceduti da un annullamento
@@ -1184,9 +1120,6 @@ I due principali approcci all'analisi del software sono *Code walk-through* e *C
 	- Nel programma swap, che dovrebbe scambiare il contenuto dei parametri x1 e x2 facendo uso di una variabile locale x, le variabili x ed x2 nell'assegnamento di linea 4 (`x2 := x;`) sono state erroneamente invertite
 	- Anche la sequenza **ddd** ottenuta per la variabile x2 permette di rilevare l'anomalia nel programma swap: il valore associato a x2 all'atto della chiamata non è usato prima di essere sostituito da un nuovo valore, è quindi assegnato inutilmente alla variabile
 - In generale, ogni sequenza contenente due definizioni consecutive è sintomo di una possibile anomalia
-
----
-## Slide 68 – Analisi di flusso dei dati
 
 - Regole generali, la cui violazione permette di dedurre la presenza di possibili anomalie nel programma:
 
@@ -1199,9 +1132,6 @@ I due principali approcci all'analisi del software sono *Code walk-through* e *C
 >> In sintesi: le due sotto-stringhe "proibite" sono **au** (uso di valore non definito) e
 >> **dd** (definizione inutile, valore sovrascritto senza essere letto).
 
----
-## Slide 69 – Analisi di flusso dei dati
-
 - Esempio:
 	- **aduduu**, **duadudu** sono legali secondo le regole (1) e (2)
 	- **aduddu**, **dauduu**, **duaudu** non soddisfanno invece le regole (1) e (2)
@@ -1211,9 +1141,6 @@ I due principali approcci all'analisi del software sono *Code walk-through* e *C
 
 >> Verifica rapida: basta cercare le coppie `dd` e `au` dentro la stringa.
 >> In `aduddu` compare `dd` (posizioni 4-5); in `dauduu` e in `duaudu` compare `au`.
-
----
-## Slide 70 – Analisi di flusso dei dati
 
 - Non tutte le sequenze **au** e **dd** corrispondono necessariamente ad anomalie:
 	- La sequenza **au** può per esempio comparire in un generatore di numeri casuali, che legge il contenuto non inizializzato di una cella di memoria per determinare il seme della generazione
@@ -1243,7 +1170,7 @@ I due principali approcci all'analisi del software sono *Code walk-through* e *C
 >> *certifica* l'azienda. Sono due livelli distinti di riconoscimento.
 
 ---
-## Slide 72 – La certificazione ISO 9000
+## Slide 72 -> 73 – La certificazione ISO 9000
 
 L'iter di valutazione dell'azienda da parte degli enti di certificazione deve seguire le prescrizioni stabilite dalla norma **ISO 10011**.
 
@@ -1258,9 +1185,6 @@ Flusso (a sinistra le attività dell'**Azienda**, a destra quelle dell'**Ente ce
 - Attuazione azioni correttive → Verifica ispettiva → **Conforme?**
 	- No → Rifiuto Motivato → Azioni Correttive (azienda)
 	- Sì → Concessione certificazione → Certificato ISO 9000 all'azienda e Visite di sorveglianza
-
----
-## Slide 73 – La certificazione ISO 9000
 
 - La certificazione ISO 9000 può essere rilasciata anche su sotto-porzioni dell'azienda oggetto di valutazione. La definizione dell'estensione dell'analisi e quindi la scelta degli elementi e dei processi oggetto di verifica sono un problema controverso e motivo di discussione tra le parti. È compito dell'organismo di certificazione, in collaborazione con l'azienda da certificare, definire i confini e l'estensione della certificazione
 	- Il ***manuale qualità*** comprende la specifica di tutti i processi su cui è applicato il sistema qualità. Esso comprende inoltre la descrizione di tutta la documentazione che viene redatta a supporto di tale sistema

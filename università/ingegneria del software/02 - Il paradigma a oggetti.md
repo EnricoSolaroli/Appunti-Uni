@@ -14,20 +14,20 @@
 	- [[#Slide 5 – Operazioni e interfaccia|Signature e interfaccia dell'oggetto]]
 	- [[#Slide 6 – Tipo di dati astratto|ADT, sottotipo e supertipo]]
 4. **La classe** (slide 7–8)
-	- [[#Slide 7 – Classe|Classe come realizzazione di un tipo astratto]]
-	- [[#Slide 8 – Classe|Esempi: ESAME, DOCENTE, STUDENTE]]
+	- [[#Slide 7 -> 8 – Classe|Classe come realizzazione di un tipo astratto]]
+		- Esempi: ESAME, DOCENTE, STUDENTE
 5. **Incapsulamento** (slide 9–10)
 	- [[#Slide 9 – Incapsulamento|Principio di incapsulamento e interfaccia pubblica]]
 	- [[#Slide 10 – Vantaggi dell'incapsulamento|Scatola nera, riduzione errori, debugging]]
 6. **Operazioni e metodi** (slide 11)
 	- [[#Slide 11 – Operazioni e metodi|Costruttori, distruttori, accessori, trasformatori e visibilità]]
 7. **Ereditarietà** (slide 12–14)
-	- [[#Slide 12 – Ereditarietà|Specializzazione/generalizzazione, superclasse e sottoclasse]]
-	- [[#Slide 13 – Ereditarietà (2)|Esempio di gerarchia: PERSONA, DOCENTE, STUDENTE]]
-	- [[#Slide 14 – Ereditarietà (3)|Ereditarietà multipla, gerarchie e relazione is-a]]
+	- [[#Slide 12 -> 14 – Ereditarietà|Specializzazione/generalizzazione, superclasse e sottoclasse]]
+		- Esempio di gerarchia: PERSONA, DOCENTE, STUDENTE
+		- Ereditarietà multipla, gerarchie e relazione is-a
 8. **Polimorfismo e late binding** (slide 15–17)
-	- [[#Slide 15 – Polimorfismo|Overload: stesso nome, signature diverse]]
-	- [[#Slide 16 – Polimorfismo (2)|Override in sottoclasse: esempio figure geometriche]]
+	- [[#Slide 15 -> 16 – Polimorfismo|Overload: stesso nome, signature diverse]]
+		- Override in sottoclasse: esempio figure geometriche
 	- [[#Slide 17 – Istanziamento dinamico (*late binding*)|Scelta dell'implementazione a run-time]]
 9. **Delegazione** (slide 18)
 	- [[#Slide 18 – Delegazione|Oggetti complessi e associazioni tra classi]]
@@ -36,8 +36,8 @@
 	- [[#Slide 20 – Dall'approccio funzionale…|Decomposizione funzionale e suoi limiti]]
 	- [[#Slide 21 – …all'approccio a oggetti|Analisi, design, implementazione e modello a fontana]]
 11. **Benefici dell'approccio a oggetti** (slide 22–23)
-	- [[#Slide 22 – Benefici dell'approccio a oggetti|Decomposizione orientata alla modellazione]]
-	- [[#Slide 23 – Benefici dell'approccio a oggetti|Stabilità, produttività, prototipi, costi di manutenzione]]
+	- [[#Slide 22 -> 23 – Benefici dell'approccio a oggetti|Decomposizione orientata alla modellazione]]
+		- Stabilità, produttività, prototipi, costi di manutenzione
 12. **Analisi e progettazione a oggetti** (slide 24–26)
 	- [[#Slide 24 – Object-oriented analysis|Quali classi e quali responsabilità]]
 	- [[#Slide 25 – Object-oriented design|Come le classi realizzano le responsabilità]]
@@ -113,7 +113,7 @@ Esempi di oggetti con il loro stato e comportamento:
 
 ---
 
-## Slide 7 – Classe
+## Slide 7 -> 8 – Classe
 
 - Fornisce una realizzazione di un tipo di dati astratto, specifica cioè un'implementazione per i metodi a esso associati
 	- **Esempi**: classe delle sedie, degli studenti, dei professori, dei corsi
@@ -123,10 +123,6 @@ Esempi di oggetti con il loro stato e comportamento:
 - Tutti gli oggetti di una classe hanno gli stessi attributi e metodi. Esistono <u>metodi di due tipi</u>: quelli che restituiscono <u>astrazioni</u> significative sullo stato dell'oggetto cui sono applicati, e quelli che ne <u>alterano lo stato</u>
 
 >> I due tipi di metodi corrispondono ad *accessori* (o "osservatori": leggono e astraggono, non modificano) e *trasformatori* (modificano lo stato) — classificazione ripresa nella slide 11.
-
----
-
-## Slide 8 – Classe
 
 ![[ISW2-s008-1.png|600]]
 
@@ -181,26 +177,18 @@ Le classi corrispondenti agli oggetti della slide 4:
 
 ---
 
-## Slide 12 – Ereditarietà
+## Slide 12 -> 14 – Ereditarietà
 
 - *Il meccanismo di ereditarietà permette di basare la definizione e implementazione di una classe su quelle di altre classi.*
 - E' possibile definire relazioni di specializzazione/ generalizzazione tra classi: la classe generalizzante viene detta **superclasse**, la classe specializzante viene detta *sottoclasse* o *classe derivata*
 	- **Esempio**: le classi studente e professore sono entrambe derivate dalla classe persona
 - Ciascuna sottoclasse eredita dalla sua superclasse la struttura ed i comportamenti, ovvero gli attributi, i metodi e l'interfaccia; può però specializzare le caratteristiche ereditate e aggiungere caratteristiche specifiche non presenti nella superclasse
 
----
-
-## Slide 13 – Ereditarietà (2)
-
 ![[ISW2-s013-1.png|600]]
 
 Gerarchia di ereditarietà (DOCENTE **è un** PERSONA, STUDENTE **è un** PERSONA):
 
 >> Nella figura le caratteristiche in corsivo rosso sono quelle ereditate da PERSONA, quelle in nero sono le aggiunte specifiche della sottoclasse: si "vede" così che l'ereditarietà evita di riscrivere la parte comune.
-
----
-
-## Slide 14 – Ereditarietà (3)
 
 - Si parla di ==*ereditarietà multipla*== quando una sottoclasse può essere derivata contemporaneamente da più superclassi
 	- in caso di conflitti tra attributi o metodi ereditati da due superclassi, occorre individuare opportune strategie di risoluzione
@@ -216,7 +204,7 @@ Gerarchia di ereditarietà (DOCENTE **è un** PERSONA, STUDENTE **è un** PERSON
 
 ---
 
-## Slide 15 – Polimorfismo
+## Slide 15 -> 16 – Polimorfismo
 
 > *capacità di assumere forme molteplici*
 
@@ -225,10 +213,6 @@ Gerarchia di ereditarietà (DOCENTE **è un** PERSONA, STUDENTE **è un** PERSON
 	- A fronte di un messaggio inviato per invocare il metodo, sarà il sistema a scegliere l'implementazione da considerare, sulla base della struttura del messaggio stesso
 
 >> L'overload si risolve a *compile-time*, guardando i tipi statici degli argomenti (è quindi "polimorfismo apparente"); l'override della slide successiva si risolve invece a *run-time*, guardando la classe effettiva dell'oggetto ricevente.
-
----
-
-## Slide 16 – Polimorfismo (2)
 
 - Possibilità di ridefinire, all'interno di una sottoclasse, l'implementazione di un metodo ereditato (*==override==*)
 
@@ -322,7 +306,7 @@ class quadrato:figuraGeometrica     class cerchio:figuraGeometrica
 
 ---
 
-## Slide 22 – Benefici dell'approccio a oggetti
+## Slide 22 -> 23 – Benefici dell'approccio a oggetti
 
 - La decomposizione è orientata alla modellazione
 	- I blocchi di base dell'applicazione sono entità che interagiscono, modellate come classi di oggetti, e sono legate alla formulazione originale del problema
@@ -330,10 +314,6 @@ class quadrato:figuraGeometrica     class cerchio:figuraGeometrica
 - Il progetto dettagliato è rimandato nel tempo e nascosto all'interno di ciascuna classe
 	- Algoritmi e strutture dati non sono più "congelati" a un alto livello del progetto
 	- Si ha più flessibilità, poiché un cambiamento nell'implemen-tazione non implica variazioni consistenti alla struttura del sistema
-
----
-
-## Slide 23 – Benefici dell'approccio a oggetti
 
 - I sistemi sviluppati a oggetti risultano più stabili nel tempo di quelli progettati per decomposizione funzionale
 	- Le caratteristiche dei domini applicativi variano più lentamente nel tempo rispetto alle funzionalità richieste ai sistemi

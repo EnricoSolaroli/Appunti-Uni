@@ -23,8 +23,8 @@
 	- [[#Slide 16 – W3C e HTML|Stop a HTML, svolta su XHTML e XHTML2]]
 	- [[#Slide 17 – WHAT WG|Nascita del WHATWG (2004) e Web Applications 1.0]]
 	- [[#Slide 18 – HTML 5|Riapertura del WG (2007) e Recommendation HTML5 (2014)]]
-	- [[#Slide 19 – HTML, the living standard|HTML come standard vivente]]
-	- [[#Slide 21 – HTML, the living standard|Fork W3C/WHATWG e problema della conformità]]
+	- [[#Slide 19 -> 21 – HTML, the living standard|HTML come standard vivente]]
+		- Fork W3C/WHATWG e problema della conformità
 5. **Eredità di XML: XHTML e JSON** (slide 22–23)
 	- [[#Slide 22 – XML e HTML|Perché XHTML non ha vinto e cosa resta di XML]]
 	- [[#Slide 23 – XML e JSON|JSON come formato dominante nelle Web API]]
@@ -52,7 +52,6 @@
 11. **Verifica e riferimenti** (slide 40–41)
 	- [[#Slide 40 – Domanda|Domanda bonus sui metadati]]
 	- [[#Slide 41 – Riferimenti|Specifiche WHATWG e W3C]]
-
 
 ---
 ## Slide 1 – HTML5
@@ -245,7 +244,7 @@ Cronologia (1990–2014):
 | WHATWG | WHATWG (dal 2004) |
 
 ---
-## Slide 19 – HTML, the living standard
+## Slide 19 -> 21 – HTML, the living standard
 
 - Nonostante la presenza di una Recommendation (*This specification defines the 5th major revision of the core language of the World Wide Web: the Hypertext Markup Language, HTML*), la specifica di HTML è una attività che WHAT WG sta continuando definendo HTML come **standard vivente.**
 - Il fatto che HTML non si stabilizzi è considerato **una feature, non un bug**.
@@ -254,16 +253,10 @@ Cronologia (1990–2014):
 
 WHATWG — HTML: The Living Standard — *A technical specification for Web developers*
 
----
-## Slide 20 – HTML, the living standard
-
 - Il WHAT WG non si propone di stabilizzare una specifica:
 	- *Because the specification is now a living document, we are today announcing two changes:*
 		- *The HTML specification will henceforth just be known as "**HTML**".*
 		- *The WHATWG HTML spec can now be considered a "**living standard**". It's more mature than any version of the HTML specification to date, so it made no sense for us to keep referring to it as merely a draft.*
-
----
-## Slide 21 – HTML, the living standard
 
 - La relazione tra lo sviluppo continuo del WHAT WG e la standardizzazione operata dal W3C non è semplice:
 	- *The W3C also publishes parts of this specification as separate documents that are forked subsets of the "HTML Living Standard". There are numerous differences between the HTML Living Standard and the W3C forks; some minor, some major.*

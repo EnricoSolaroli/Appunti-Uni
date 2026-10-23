@@ -8,18 +8,18 @@
 	- [[#Slide 2 – Introduzione|Nascita dell'ingegneria del software e timeline storica]]
 	- [[#Slide 3 – Definizioni|Le tre definizioni di ingegneria del software]]
 2. **La qualità del software** (slide 4–6)
-	- [[#Slide 4 – La qualità del software|Classificazione: interne/esterne, prodotto/processo]]
-	- [[#Slide 5 – La qualità del software|Correttezza, affidabilità, robustezza, efficienza, portabilità]]
-	- [[#Slide 6 – La qualità del software|Manutenibilità, interoperabilità e qualità di processo]]
+	- [[#Slide 4 -> 6 – La qualità del software|Classificazione: interne/esterne, prodotto/processo]]
+		- Correttezza, affidabilità, robustezza, efficienza, portabilità
+		- Manutenibilità, interoperabilità e qualità di processo
 3. **Il ciclo di vita dei sistemi informatici** (slide 7–9)
 	- [[#Slide 7 – 1. Il ciclo di vita dei sistemi informatici|Elenco delle attività del ciclo di vita]]
-	- [[#Slide 8 – Il ciclo di vita|Dalla definizione strategica al collaudo in fabbrica]]
-	- [[#Slide 9 – Il ciclo di vita|Dalla certificazione all'evoluzione e ai tipi di manutenzione]]
+	- [[#Slide 8 -> 9 – Il ciclo di vita|Dalla definizione strategica al collaudo in fabbrica]]
+		- Dalla certificazione all'evoluzione e ai tipi di manutenzione
 4. **Definizione strategica, pianificazione e studio di fattibilità** (slide 10–13)
 	- [[#Slide 10 – 2. Definizione strategica e pianificazione|Definizione degli interventi e valutazione dei costi]]
-	- [[#Slide 11 – Studio di fattibilità|Scopo e contenuti dello studio di fattibilità]]
-	- [[#Slide 12 – Studio di fattibilità|Fattibilità tecnica, economica, temporale e obiettivi]]
-	- [[#Slide 13 – Studio di fattibilità|Struttura in 7 punti: AS-IS, TO-BE, rischi, costi-benefici]]
+	- [[#Slide 11 -> 13 – Studio di fattibilità|Scopo e contenuti dello studio di fattibilità]]
+		- Fattibilità tecnica, economica, temporale e obiettivi
+		- Struttura in 7 punti: AS-IS, TO-BE, rischi, costi-benefici
 5. **Analisi dei requisiti** (slide 14–18)
 	- [[#Slide 14 – 3. Analisi dei requisiti|Scopo e oggetto dell'analisi]]
 	- [[#Slide 15 – Specifica dei requisiti|Specifica come accordo: chiarezza, non ambiguità, consistenza]]
@@ -53,7 +53,6 @@
 	- [[#Slide 41 – Principi di progettazione: modularità|Interfacce e information hiding]]
 	- [[#Slide 42 – Principi di progettazione: <u>astrazione</u>|Astrazione]]
 	- [[#Slide 43 – Principi di progettazione: <u>generalità</u>|Generalità e software off-the-shelf]]
-
 
 ---
 
@@ -99,7 +98,7 @@
 
 ---
 
-## Slide 4 – La qualità del software
+## Slide 4 -> 6 – La qualità del software
 
 - Le qualità su cui si basa la valutazione di un sw possono essere classificate in:
 	- **Interne**: riguardano le caratteristiche legate allo sviluppo del sw; non sono visibili agli utenti (I)
@@ -111,10 +110,6 @@
 >> Le due classificazioni sono ortogonali: ogni qualità si colloca su entrambi
 >> gli assi (interna/esterna × prodotto/processo). Per questo nelle slide
 >> successive ogni voce porta due o più marcatori, ad es. (E, P) oppure (I, P, PC).
-
----
-
-## Slide 5 – La qualità del software
 
 - **Correttezza**: un sw è corretto se rispetta le specifiche di progetto (E, P)
 - **Affidabilità**: un sw è affidabile se l'utente può dipendere da esso (E, P)
@@ -130,10 +125,6 @@
 >> rispetto alle specifiche, l'affidabilità è statistica (probabilità di
 >> funzionare senza guasti in un intervallo di tempo). Un sw scorretto in un caso
 >> raro può essere comunque molto affidabile nell'uso reale.
-
----
-
-## Slide 6 – La qualità del software
 
 - **Facilità di manutenzione**: un sw è facile da manutenere non solo se è strutturato in modo tale da facilitare la ricerca degli errori (*modifiche correttive*) ma anche se la sua struttura permette di aggiungere nuove funzionalità al sistema (*modifiche perfettive*) o di adattarlo ai cambiamenti del dominio applicativo (*modifiche adattative*) (I, P)
 
@@ -180,7 +171,7 @@
 
 ---
 
-## Slide 8 – Il ciclo di vita
+## Slide 8 -> 9 – Il ciclo di vita
 
 **Definizione strategica**
 - Vengono prese decisioni sull'area aziendale che deve essere oggetto di automazione
@@ -202,10 +193,6 @@
 
 **Realizzazione e collaudo in fabbrica**
 - Il sistema viene implementato sulla piattaforma prescelta e viene testato internamente ($\alpha$-*test*) sulla base dei casi prova definiti durante la fase di analisi
-
----
-
-## Slide 9 – Il ciclo di vita
 
 **Certificazione**
 - L'attività di certificazione del software ha lo scopo di verificare che esso sia stato sviluppato secondo i criteri previsti dal metodo tecnico di progetto, in conformità alle specifiche di sistema e a tutta la documentazione di progetto
@@ -246,7 +233,7 @@
 
 ---
 
-## Slide 11 – Studio di fattibilità
+## Slide 11 -> 13 – Studio di fattibilità
 
 - Nasce in presenza di un'idea progettuale già esistente che comprende gli elementi essenziali dell'individuazione del problema e dell'area di intervento, le principali linee di intervento previste, una definizione preliminare del progetto
 - E' volto a determinare la convenienza della realizzazione di un intervento, ossia a fornire ai responsabili le informazioni necessarie alla decisione per l'effettivo avvio della realizzazione di un progetto e quindi sull'investimento necessario
@@ -257,10 +244,6 @@
 	- *progetto di massima*
 	- *stima dell'impegno e dei costi*
 	- *definizione dei tempi di realizzazione e delle modalità operative*
-
----
-
-## Slide 12 – Studio di fattibilità
 
 - **Fattibilità tecnica**
 	- *Esistono strumenti idonei? La proposta è realizzabile nell'ambito dell'organizzazione esistente? Il sistema sarà accettato e utilizzato?*
@@ -273,10 +256,6 @@
 	- Consentire di valutare i benefici attesi a fronte dei costi richiesti
 	- Diminuire l'incertezza dei progetti e fornire strumenti per governarne la complessità e ridurre i rischi
 	- Dare concretezza al progetto, fornendo tutti gli elementi per l'avvio della fase realizzativa
-
----
-
-## Slide 13 – Studio di fattibilità
 
 1. **Situazione AS-IS**: contesto, problema, analisi e diagnosi, vincoli, definizione obiettivi
 2. **Progetto di massima della soluzione TO-BE**: requisiti, specifiche, modalità di realizzazione

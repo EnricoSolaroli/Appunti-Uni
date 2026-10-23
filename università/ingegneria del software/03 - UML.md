@@ -30,8 +30,8 @@
 	- [[#Slide 30 – Punti di vista|Punto di vista dell'utilizzatore vs. del progettista]]
 	- [[#Slide 31 – Ruolo dei casi d'uso|A cosa servono nel progetto di sviluppo]]
 	- [[#Slide 32 – Identificare i casi d'uso|Il procedimento in quattro passi]]
-	- [[#Slide 33 – Scenari|Scenario base e varianti]]
-	- [[#Slide 35 – Specifiche del caso d'uso|Come si documenta un caso d'uso e template]]
+	- [[#Slide 33 -> 34 – Scenari|Scenario base e varianti]]
+	- [[#Slide 35 -> 36 – Specifiche del caso d'uso|Come si documenta un caso d'uso e template]]
 	- [[#Slide 37 – Realizzare i casi d'uso|Collaborazioni che realizzano un caso d'uso]]
 5. **Diagrammi delle classi: notazione e relazioni** (slide 38–61)
 	- [[#Slide 38 –  4 - Diagrammi delle classi|Classe, attributo, operazione]]
@@ -39,38 +39,38 @@
 	- [[#Slide 40 – Notazione (Operazioni)|Operazioni, signature, direzione dei parametri]]
 	- [[#Slide 41 – Diversi livelli di astrazione|Rappresentare la stessa classe a dettaglio variabile]]
 	- [[#Slide 42 – Le relazioni tra classi|Elenco e notazione grafica delle relazioni]]
-	- [[#Slide 43 – Associazione|Associazioni e molteplicità]]
-	- [[#Slide 44 – Associazione|Verso di lettura, navigabilità, ruoli]]
-	- [[#Slide 45 – Associazione|Vincoli e classi associative]]
-	- [[#Slide 46 – Associazione|Associazioni qualificate]]
-	- [[#Slide 47 – Associazione|Associazioni n-arie]]
+	- [[#Slide 43 -> 47 – Associazione|Associazioni e molteplicità]]
+		- Verso di lettura, navigabilità, ruoli
+		- Vincoli e classi associative
+		- Associazioni qualificate
+		- Associazioni n-arie
 	- [[#Slide 48 – Elementi derivati|Attributi e associazioni derivate]]
 	- [[#Slide 49 – Aggregazione|Part-of per riferimento (rombo vuoto)]]
 	- [[#Slide 50 – Composizione|Part-of per valore (rombo pieno)]]
-	- [[#Slide 51 – Generalizzazione|Ereditarietà degli attributi e delle operazioni]]
-	- [[#Slide 52 – Generalizzazione|Ereditarietà multipla, insiemi di generalizzazione e vincoli]]
+	- [[#Slide 51 -> 52 – Generalizzazione|Ereditarietà degli attributi e delle operazioni]]
+		- Ereditarietà multipla, insiemi di generalizzazione e vincoli
 	- [[#Slide 53 – Classi astratte|Classi non istanziabili come radici di gerarchie]]
 	- [[#Slide 55 – Powertyping|Powertype: classi che sono anche istanze]]
 	- [[#Slide 56 – Dipendenza|Dipendenza e stereotipo di uso]]
 	- [[#Slide 57 – Template|Classi parametrizzate e bound element]]
 	- [[#Slide 58 – Raffinamento|Descrizioni dello stesso concetto a livelli diversi]]
-	- [[#Slide 59 – Interfaccia|Interfacce: notazione estesa e lollypop]]
+	- [[#Slide 59 -> 60 – Interfaccia|Interfacce: notazione estesa e lollypop]]
 	- [[#Slide 61 – Interfaccia vs. ereditarietà|Quando usare un'interfaccia al posto dell'ereditarietà]]
 6. **Dalle classi d'analisi alle classi di progettazione** (slide 62–78)
 	- [[#Slide 62 – Analisi vs. progettazione|Caratteristiche delle classi di analisi e di progettazione]]
-	- [[#Slide 63 – Identificare le classi d'analisi|Regole per individuare buone classi d'analisi]]
-	- [[#Slide 67 – Identificare le associazioni d'analisi|Regole per le associazioni d'analisi]]
-	- [[#Slide 70 – Identificare gli attributi|Regole per gli attributi e attributi derivati]]
-	- [[#Slide 72 – Raffinamenti|Raffinamento iterativo del modello]]
+	- [[#Slide 63 -> 66 – Identificare le classi d'analisi|Regole per individuare buone classi d'analisi]]
+	- [[#Slide 67 -> 69 – Identificare le associazioni d'analisi|Regole per le associazioni d'analisi]]
+	- [[#Slide 70 -> 71 – Identificare gli attributi|Regole per gli attributi e attributi derivati]]
+	- [[#Slide 72 -> 73 – Raffinamenti|Raffinamento iterativo del modello]]
 	- [[#Slide 74 – Identificare le classi di progettazione|Completezza, sufficienza, coesione, accoppiamento]]
-	- [[#Slide 75 – Identificare le associazioni di progettazione|Navigabilità e trasformazione delle associazioni]]
-	- [[#Slide 78 – Identificare le associazioni di progettazione|Reificazione delle classi associative]]
+	- [[#Slide 75 -> 78 – Identificare le associazioni di progettazione|Navigabilità e trasformazione delle associazioni]]
+		- Reificazione delle classi associative
 7. **Diagrammi degli oggetti e dei package** (slide 79–84)
-	- [[#Slide 79 – Diagrammi degli oggetti|Oggetti, oggetti composti, forme abbreviate]]
-	- [[#Slide 80 – Diagrammi degli oggetti|Istanza di un diagramma delle classi]]
+	- [[#Slide 79 -> 80 – Diagrammi degli oggetti|Oggetti, oggetti composti, forme abbreviate]]
+		- Istanza di un diagramma delle classi
 	- [[#Slide 81 – 6. Diagrammi dei package|Package, contenimento e spazi dei nomi]]
-	- [[#Slide 82 – Diagrammi dei package|I quattro tipi di dipendenza tra package]]
-	- [[#Slide 83 – Diagrammi dei package|Generalizzazione tra package]]
+	- [[#Slide 82 -> 83 – Diagrammi dei package|I quattro tipi di dipendenza tra package]]
+		- Generalizzazione tra package
 	- [[#Slide 84 – Individuare i package d'analisi|Criteri di raggruppamento e dipendenze circolari]]
 8. **Diagrammi di interazione e di sequenza** (slide 85–95)
 	- [[#Slide 85 – 7. Diagrammi di interazione|I quattro tipi di diagramma di interazione]]
@@ -78,9 +78,9 @@
 	- [[#Slide 87 – Linee di vita|Sintassi delle linee di vita]]
 	- [[#Slide 88 – Messaggi|Messaggi sincroni, asincroni, di ritorno, create e destroy]]
 	- [[#Slide 89 – Diagrammi di sequenza|Dimensioni, attivazioni, note]]
-	- [[#Slide 90 – Richiesta prestito|Esempi svolti di diagramma di sequenza]]
+	- [[#Slide 90 -> 91 – Richiesta prestito|Esempi svolti di diagramma di sequenza]]
 	- [[#Slide 93 – Invarianti di stato e vincoli|Invarianti di stato e vincoli temporali]]
-	- [[#Slide 94 – Frammenti combinati|Frammenti opt, alt e loop]]
+	- [[#Slide 94 -> 95 – Frammenti combinati|Frammenti opt, alt e loop]]
 9. **Diagrammi di stato** (slide 96–104)
 	- [[#Slide 96 – Diagrammi di stato|Notazione di Harel ed esempio dello studente]]
 	- [[#Slide 97 – Stati ed eventi|Stati, azioni, attività, entry/do/exit]]
@@ -88,7 +88,7 @@
 	- [[#Slide 99 – La linea telefonica|Esempio completo di automa]]
 	- [[#Slide 100 – Pseudo-stato di selezione|Il rombo di scelta]]
 	- [[#Slide 101 – Tipi di eventi|Variazione, segnale, chiamata, temporale]]
-	- [[#Slide 102 – Stati compositi|Stati compositi semplici e ortogonali]]
+	- [[#Slide 102 -> 103 – Stati compositi|Stati compositi semplici e ortogonali]]
 	- [[#Slide 104 – Comunicazione tra automi|Sincronizzazione tramite variabile condivisa]]
 10. **Diagrammi di attività** (slide 105–111)
 	- [[#Slide 105 – Diagrammi di attività|Semantica basata sulle reti di Petri]]
@@ -109,7 +109,6 @@
 	- [[#Slide 120 – Complessità|Complessità del metamodello e numero di diagrammi]]
 	- [[#Slide 121 – Personalizzazioni|Adattare UML al contesto e al progetto]]
 	- [[#Slide 122 – Quindi:|Sintesi conclusiva]]
-
 
 ---
 ## Slide 1 – Unified Modeling Language (UML)
@@ -447,7 +446,7 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 >> avviano nulla ma vengono invocati durante lo scenario: sono gli attori secondari.
 
 ---
-## Slide 33 – Scenari
+## Slide 33 -> 34 – Scenari
 
 - Ogni specifica esecuzione (istanza) di un caso d'uso è detta **scenario**
 	- Ad esempio, in un caso d'uso "acquisto di un prodotto", ogni specifico acquisto effettuato da uno specifico cliente in uno specifico momento costituisce uno scenario particolare
@@ -460,9 +459,6 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 >> descrizione generale, lo scenario una sua istanza concreta. Poiché gli scenari sono
 >> potenzialmente infiniti, non si enumerano: si descrive un "cammino felice" e si elencano
 >> i punti di diramazione (le varianti), esattamente come i rami di un albero di esecuzione.
-
----
-## Slide 34 – Scenari
 
 **Caso d'uso**: "APRI CONTO CORRENTE BANCARIO"
 
@@ -485,14 +481,11 @@ Elementi indicati nel diagramma: **attore** (l'omino, es. Cliente, Impiegato, Ca
 >> diventa un caso di test distinto.
 
 ---
-## Slide 35 – Specifiche del caso d'uso
+## Slide 35 -> 36 – Specifiche del caso d'uso
 
 - UML non suggerisce il modo per specificare un caso d'uso, lasciando spazio libero a tutte le possibili forme di documentazione testuale
 - La specifica del caso d'uso, comunque effettuata, ha un ruolo centrale nella comunicazione tra i diversi soggetti coinvolti nello sviluppo di un sistema, dal committente agli utilizzatori, dai progettisti agli specialisti di test
 - Un caso d'uso può essere anche descritto da un **diagramma di attività** o **di sequenza**
-
----
-## Slide 36 – Specifiche del caso d'uso
 
 | Nome | |
 |---|---|
@@ -605,7 +598,7 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 ![[ISW3-s042-1.png|436]]
 
 ---
-## Slide 43 – Associazione
+## Slide 43 -> 47 – Associazione
 
 - E' una connessione tra classi, tipicamente **bidirezionale** (99% dei casi non ci sono frecce sulle associazioni)
 - **Molteplicità** (si ~~leggono in entrata~~, al contrario dell E/R):
@@ -625,9 +618,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >> `Poligono * — 3..* Linea`, ogni poligono ha almeno 3 linee, e ogni linea può essere
 >> lato di un numero qualsiasi di poligoni.
 
----
-## Slide 44 – Associazione
-
 - E' possibile indicare il **verso di lettura** di una associazione, definire associazioni **monodirezionali**, specificare **ruoli**
 
 ![[ISW3-s044-1.png|600]]
@@ -638,9 +628,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 >> I ~~ruoli sono indispensabili nelle associazioni riflessive~~ : senza le etichette *dirigente* e
 >> *sottoposto* non si saprebbe quale estremità dell'associazione `dirige` rappresenti il capo.
-
----
-## Slide 45 – Associazione
 
 - E' possibile specificare **vincoli** e **classi associative**
 
@@ -668,9 +655,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >> rapporto di lavoro. Conseguenza dell'identità "per estremità": tra una data persona e
 >> una data azienda può esistere al più una istanza di `Posizione`.
 
----
-## Slide 46 – Associazione
-
 - Le **associazioni qualificate** riducono un'associazione molti-a-molti a una del tipo uno-a-uno, specificando un attributo che permette di selezionare un unico oggetto destinazione svolgendo il ruolo di identificatore o chiave di ricerca
 
 ![[ISW3-s046-1.png|400]]
@@ -678,9 +662,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >> Il qualificatore si comporta come la chiave di un dizionario: fissato il club e il valore
 >> di `idSocio`, si ottiene al più un socio. La molteplicità `0..1` (invece di `1`) indica che
 >> non tutti i valori possibili della chiave sono necessariamente associati a un oggetto.
-
----
-## Slide 47 – Associazione
 
 - E' possibile definire **associazioni n-arie** (cioè tra n classi)
 	- Ogni istanza dell'associazione è una tupla formata da n oggetti delle rispettive classi
@@ -746,21 +727,17 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 
 >es della finestra: una finestra è costituita esattamente da una 'BarraTitolo', uno o più 'Panelli' e esattamente 1 'Bordo', a livello grafico quindi significa composizione
 
-
 >> Regola pratica per distinguere: ~~se cancellando il tutto devo per forza cancellare le parti,
 >> è composizione (rombo pieno); se le parti sopravvivono o possono essere condivise,
 >> è aggregazione (rombo vuoto)~~. Il vincolo "esattamente un tutto" implica che la
 >> molteplicità dal lato del contenitore è sempre 1 (o 0..1).
 
 ---
-## Slide 51 – Generalizzazione
+## Slide 51 -> 52 – Generalizzazione
 
 - Tutti gli attributi, le operazioni e le relazioni della superclasse vengono **ereditati** dalle sottoclassi
 
 ![[ISW3-s051-1.png|650]]
-
----
-## Slide 52 – Generalizzazione
 
 - E' supportata l'**ereditarietà multipla** -> una sottoclasse può ereditare contemporaneamente più superclassi.
 - Possono essere indicati **insiemi di generalizzazione** e **vincoli** (*overlapping*, *disjoint*, *complete*, *incomplete*)
@@ -793,7 +770,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >docente può appartenere a solo un dipartimento e può essere o un prof ordinario o un prof associato o un ricercatore o anche nessuna dei tre (il vincolo è incomplete). Un docente è di un SSD, può insegnare in più corsi. ogni facoltà è costituita da 1 o più corso di studio e un corso di studio può appartenere a 1 o più facoltà. corso di studio è composto da uno o più corsi ma un corso appartiene solo ad un corso di studio. un corso può essere muttuato da un altro corso. un docente è incardinato in una facoltà.
 ![[Recording 20261006114152.m4a]]
 
-
 ---
 ## Slide 55 – Powertyping
 
@@ -811,7 +787,6 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >> classificazione stessa deve essere un dato manipolabile a runtime (per esempio per
 >> aggiungere una nuova categoria di articoli senza ricompilare).
 ![[Recording 20261009142156.m4a]]
-
 
 ---
 ## Slide 56 – Dipendenza
@@ -867,16 +842,13 @@ La stessa entità `Cliente` può essere rappresentata con dettaglio crescente/de
 >solo quiz!!
 
 ---
-## Slide 59 – Interfaccia
+## Slide 59 -> 60 – Interfaccia
 
 - Una ***interfaccia*** è un insieme di funzionalità pubbliche identificate da un nome
 - Specifica le operazioni pubbliche di una classe, di un componente, di un pacchetto o di altre entità, separandone le specifiche dall'implementazione
 - ~~Un'interfaccia **non ha alcuna specifica di struttura interna~~** solo un comportamento (attributi, stato o associazioni); è una **classe astratta**, senza attributi né associazioni e con solo operazioni astratte (senza implementazione)
 	- La notazione estesa prevede una rappresentazione simile a quella delle classi, con `«interface»` come stereotipo e senza compartimento per gli attributi; la notazione minimizzata prevede un piccolo cerchio collegato all'entità (classe, componente o package) che la supporta, col nome dell'interfaccia vicino (*lollypop notation*)
 	- Un'altra classe che usa l'interfaccia può essere collegata ad essa da una freccia di dipendenza, eventualmente con lo stereotipo `«use»`
-
----
-## Slide 60 – Interfaccia
 
 ![[ISW3-s060-1.png|650]]
 
@@ -926,7 +898,7 @@ A destra, soluzione con interfaccia: `Biblioteca ◆— ElementoBiblioteca`, spe
 >> utilità. Le classi di analisi, invece, devono restare comprensibili a chi non programma.
 
 ---
-## Slide 63 – Identificare le classi d'analisi
+## Slide 63 -> 66 – Identificare le classi d'analisi
 
 >regole che vengono da UMT non UML
 - Le classi corrispondono a **entità fisiche** e a **concetti** del dominio applicativo
@@ -946,9 +918,6 @@ Nel primo caso (NO) la classe `Elenco` è solo una struttura dati: `Banchetto �
 
 ![[ISW3-s063-2.png|350]]
 
----
-## Slide 64 – Identificare le classi d'analisi
-
 - Una classe è associata a un piccolo e ben definito insieme di responsabilità (normalmente tra 3 e 5)
 
 ![[ISW3-s064-1.png|500]]
@@ -959,9 +928,6 @@ Nel primo caso (NO) la classe `Elenco` è solo una struttura dati: `Banchetto �
 
 - Nessuna classe può essere isolata
 - Evitare di avere poche classi troppo complesse, ma anche tante classi troppo semplici
-
----
-## Slide 65 – Identificare le classi d'analisi
 
 - I nomi delle classi devono riflettere la loro natura intrinseca e non il ruolo giocato nelle associazioni
 
@@ -977,9 +943,6 @@ Nel primo caso (NO) la classe `Elenco` è solo una struttura dati: `Banchetto �
 >> Per questo la molteplicità corretta è `0..1` e i nomi dei ruoli vanno sull'associazione.
 
 - Evitare le gerarchie di specializzazione profonde
-
----
-## Slide 66 – Identificare le classi d'analisi
 
 - I nomi che descrivono oggetti dovrebbero essere espressi come attributi
 
@@ -1004,7 +967,7 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 - SI: `Auto —*— di —1— Persona`
 
 ---
-## Slide 67 – Identificare le associazioni d'analisi
+## Slide 67 -> 69 – Identificare le associazioni d'analisi
 
 - Le associazioni sono tipicamente indicate da **verbi** che esprimono collocazione fisica (*contenuto in*), azioni (*gestisce*), comunicazioni (*parla a*), proprietà (*possiede*), soddisfacimento di condizioni (*sposato a*)
 	- Ogni riferimento da una classe a un'altra è un'associazione
@@ -1026,9 +989,6 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 >> è ridondante. Il rombo pieno sarebbe invece composizione (parte non condivisa e con
 >> vita legata al tutto).
 
----
-## Slide 68 – Identificare le associazioni d'analisi
-
 - Un'associazione deve descrivere una proprietà strutturale del dominio, non un evento transitorio
 
 ![[ISW3-s068-1.png|550]]
@@ -1049,9 +1009,6 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 
 >spesso nei testi degli esercizi vengono descritti gli oggetti in modo funzionale, noi dobbiamo trovare un modo più statico per rappresentare lo stesso concetto.
 
----
-## Slide 69 – Identificare le associazioni d'analisi
-
 - Evidenziare le associazioni derivate, che cioè possono essere espresse in termini di altre associazioni
 
 ![[ISW3-s069-1.png|550]]
@@ -1069,7 +1026,7 @@ Invece di `Auto —*— di —1— Colore`, si scrive la classe `Auto` con l'att
 Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `daFareDopo`, e `incompatibileCon`.
 
 ---
-## Slide 70 – Identificare gli attributi
+## Slide 70 -> 71 – Identificare gli attributi
 
 - Le **proprietà** di classi e associazioni sono attributi
 - Gli attributi spesso corrispondono a nomi seguiti da possessivi (ad esempio, *il colore della macchina*)
@@ -1084,9 +1041,6 @@ Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `d
 	- Se una proprietà dipende dalla presenza di un'associazione, rappresentarla con un attributo dell'associazione
 
 ![[ISW3-s070-2.png|550]]
-
----
-## Slide 71 – Identificare gli attributi
 
 - Non aggiungere agli attributi gli identificatori degli oggetti, a meno che non risultino esplicitamente dalle specifiche
 
@@ -1105,7 +1059,7 @@ Auto-associazioni su `Prestazione`: `propedeuticaA` con ruoli `daFarePrima` / `d
 `Persona` (nome, cognome, dataNascita, indirizzo, redditoLordo, redditoNetto, aliquotaMax) → preferibile: `PersonaAnagrafica` (nome, cognome, dataNascita, indirizzo) `—1——1—` `PersonaFiscale` (redditoLordo, redditoNetto, aliquotaMax)
 
 ---
-## Slide 72 – Raffinamenti
+## Slide 72 -> 73 – Raffinamenti
 
 - La possibilità di raffinare il modello deriva dalla natura iterativa dell'approccio a oggetti
 - I raffinamenti tramite ereditarietà possono avvenire top-down (definizione di specializzazioni di classi esistenti) o bottom-up (generalizzazione di due o più classi con caratteristiche comuni)
@@ -1124,9 +1078,6 @@ Le classi `A` e `B` non generalizzabili diventano `C`, superclasse di `A'`, `A''
 >> L'asimmetria è un campanello d'allarme: se un'associazione parte dalla superclasse ma
 >> "in realtà" riguarda solo alcune sottoclassi, conviene rendere esplicita con una nuova
 >> classe intermedia la parte di gerarchia che quell'associazione riguarda davvero.
-
----
-## Slide 73 – Raffinamenti
 
 - Se esistono più associazioni con lo stesso nome e scopo, conviene generalizzare per creare la superclasse che le unisce
 
@@ -1159,7 +1110,7 @@ Da `A —n— B`, `A —n— C`, `C —m— D`, `B —m— D` si passa a una ger
 >> due metriche classiche di qualità del progetto a oggetti.
 
 ---
-## Slide 75 – Identificare le associazioni di progettazione
+## Slide 75 -> 78 – Identificare le associazioni di progettazione
 
 - Costrutti come le associazioni bidirezionali o le classi associative non sono direttamente implementabili
 - Le associazioni di progettazione si ottengono da quelle di analisi attraverso una trasformazione basata principalmente sul carico di lavoro cui ciascuna associazione è sottoposta
@@ -1172,9 +1123,6 @@ Da `A —n— B`, `A —n— C`, `C —m— D`, `B —m— D` si passa a una ger
 >> "Carico di lavoro" significa: in quale verso e con quale frequenza il codice percorrerà
 >> l'associazione. Si rende navigabile solo il verso effettivamente usato, perché ogni
 >> verso navigabile costa un attributo/riferimento da mantenere aggiornato.
-
----
-## Slide 76 – Identificare le associazioni di progettazione
 
 - ~~Associazioni molti-a-uno o molti-a-molti~~
 
@@ -1199,10 +1147,6 @@ Da `A —n— B`, `A —n— C`, `C —m— D`, `B —m— D` si passa a una ger
 >> - **Tra parentesi:** la stessa scelta con la collezione esplicita. L'`Azienda` possiede (composizione, rombo pieno) un oggetto `Collezione`, che a sua volta raccoglie le `Persona`. In codice è il campo `List<Persona> impiegati`.
 >> - **Bidirezionale:** ci sono entrambi i riferimenti, `datore` in `Persona` e `impiegati` in `Azienda`. La navigazione è comoda in tutti e due i versi, ma ogni modifica va fatta su entrambi i lati.
 
-
----
-## Slide 77 – Identificare le associazioni di progettazione
-
 - ~~Associazioni uno-a-uno~~
 
 ![[ISW3-s077-1.png|600]]
@@ -1219,9 +1163,6 @@ L'associazione ternaria `Corso – Aula – Orario` (rombo) si trasforma («trac
 >bisogna per forza creare la classe 'Lezione' non ce altra soluzione lecita. 
 >soluzione di dx: freccia da aula verso lezione è leggermente ridondante, serve data un aula sapere che orario è occupata senza per forza dover sapere anche il corso.
 
----
-## Slide 78 – Identificare le associazioni di progettazione
-
 - ~~Classi associative~~
 
 >è a tutti gli effetti una classe. 
@@ -1234,7 +1175,7 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 >> associazione in un database relazionale.
 
 ---
-## Slide 79 – Diagrammi degli oggetti
+## Slide 79 -> 80 – Diagrammi degli oggetti
 
 - Un *oggetto* rappresenta una particolare istanza di una classe.
 - Un *oggetto composto* è un oggetto di alto livello che contiene altri oggetti.
@@ -1247,9 +1188,6 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 - Forme abbreviate: `triangolo : Poligono`, `triangolo`, `: Poligono`
 - Oggetto composto `awindow : Window` che contiene `horizontalBar:ScrollBar`, `verticalBar:ScrollBar`, `surface:Pane`, `title:TitleBar`, con i collegamenti `moves`
 
----
-## Slide 80 – Diagrammi degli oggetti
-
 - E' un grafo di istanze di elementi, e rappresenta un'istanza di un diagramma delle classi
 	- Il suo utilizzo è limitato principalmente a mostrare esempi di strutture dati
 	- Poiché un diagramma delle classi può contenere anche istanze, un diagramma degli oggetti può essere considerato come un caso particolare di diagramma delle classi in cui compaiono solo oggetti
@@ -1257,6 +1195,13 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 ![[ISW3-s080-1.png|550]]
 
 `Rotary:Club` è collegato a `Jill : Persona` (età=35) con i ruoli `ufficiale` e `membro`, a `Joe : Persona` (età=28) con il ruolo `membro`, a `Chris : Persona` (età=57) con i ruoli `membro` e `ufficiale`; i ruoli sul lato club sono `tesoriere` e `presidente`.
+
+>puntiamo a fare reverse engeeniring.
+>tesoriere e presidente sono dei valori specifici del mio qualificatore, nel diagrammi delle classi il mio classificatore è il "ruolo", dato un club e un ruolo specifico becco sempre solo una persona. 
+>tra club e persona ci saranno due associazioni con 'membro' e uno con 'ufficiale.'
+>gli ufficiali sono anche membri -> vincolo subset nel diagrammi delle classi
+>![[WhatsApp Image 2026-10-16 at 14.30.41.jpeg|553]]
+![[Recording 20261016142552.m4a]]
 
 ---
 ## Slide 81 – 6. Diagrammi dei package
@@ -1266,18 +1211,18 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 	- Si possono rappresentare relazioni di **contenimento**; si consiglia di mostrare massimo due livelli. I package annidati vedono lo spazio dei nomi dei package che li contengono, il contrario non è vero
 
 ![[ISW3-s081-1.png|600]]
-
+>semantica molto simile al "part of"
 - Notazione "ad albero" con il simbolo ⊕: `Specifica dei requisiti` contiene `Modello dei requisiti` e `Modello dei casi d'uso`; `Modello dei requisiti` contiene `Requisiti funzionali` e `Requisiti non funzionali`
 - Notazione per annidamento grafico: `Biblioteca` contiene `Utenti`, che contiene `Bibliotecario` e `Tesserato`
 
 ---
-## Slide 82 – Diagrammi dei package
+## Slide 82 -> 83 – Diagrammi dei package
 
 - Esistono quattro tipi principali di **dipendenza** tra package
-	- «use» (default), quando un elemento del package cliente usa in qualche modo un elemento del package fornitore
-	- «import», quando gli elementi pubblici dello spazio dei nomi del package fornitore vengono aggiunti come elementi pubblici allo spazio dei nomi del package cliente
-	- «access», quando gli elementi privati dello spazio dei nomi del package fornitore vengono aggiunti come elementi privati allo spazio dei nomi del package cliente
-	- «trace» rappresenta l'evoluzione di un elemento in un altro elemento più dettagliato
+	- ~~«use»~~ (default), quando un elemento del package cliente usa in qualche modo un elemento del package fornitore
+	- ~~«import»~~, quando gli elementi pubblici dello spazio dei nomi del package fornitore vengono aggiunti come elementi pubblici allo spazio dei nomi del package cliente
+	- ~~«access»~~, quando gli elementi privati dello spazio dei nomi del package fornitore vengono aggiunti come elementi privati allo spazio dei nomi del package cliente
+	- ~~«trace»~~ rappresenta l'evoluzione di un elemento in un altro elemento più dettagliato, es: quando si lega la classe di analisi a quella di progettazione
 
 ![[ISW3-s082-1.png|650]]
 
@@ -1286,12 +1231,10 @@ La classe associativa `Fornitura` (attributo `quantità`) su `Fornitore —*—�
 >> La freccia tratteggiata della dipendenza punta sempre dal **cliente** al **fornitore**:
 >> chi sta alla coda è quello che "soffre" se il fornitore cambia.
 
----
-## Slide 83 – Diagrammi dei package
-
 - Esiste una **generalizzazione** tra due package quando il package specifico si deve conformare all'interfaccia del package generale
 
-![[ISW3-s083-1.png|500]]
+![[ISW3-s083-1.png|407]]
+>es: nucleo windows è un caso specifico di nucleo grafico.
 
 Nel package `Editor`: `Nucleo Motif` e `Nucleo Windows` sono specializzazioni di `Nucleo grafico`; `Motif` e `Windows` sono specializzazioni di `Sistema finestre`; `Nucleo grafico` dipende da `Sistema finestre`, `Nucleo Motif` da `Motif`, `Nucleo Windows` da `Windows`.
 
@@ -1311,6 +1254,8 @@ Nel package `Editor`: `Nucleo Motif` e `Nucleo Windows` sono specializzazioni di
 - Numero ideali di classi per package: tra 4 e 10
 - Conviene evitare la dipendenze circolari
 
+>non bisogna saper disegnare diagrammi di packege, ci sono solo nei quiz!
+
 >> Le dipendenze circolari tra package rendono impossibile compilarli, testarli e
 >> rilasciarli separatamente: due package che si citano a vicenda sono di fatto un
 >> package solo.
@@ -1320,11 +1265,12 @@ Nel package `Editor`: `Nucleo Motif` e `Nucleo Windows` sono specializzazioni di
 
 - Rappresentano la struttura dell'interazione tra oggetti durante uno scenario
 - Esistono quattro tipi di diagrammi di interazione, ognuno rivolto a un particolare aspetto:
-	- *Diagramma di sequenza*: enfatizza la sequenza temporale degli scambi di messaggi
+	- *~~Diagramma di sequenza*~~: enfatizza la sequenza temporale degli scambi di messaggi, unico che useremo;
 	- *Diagramma di comunicazione*: enfatizza le relazioni strutturali tra gli oggetti che interagiscono
 	- *Diagramma di sintesi dell'interazione*: illustra come un comportamento complesso viene realizzato da un insieme di interazioni più semplici
 	- *Diagramma di temporizzazione*: enfatizza gli aspetti real-time di un'interazione
-
+	
+>diagrammi funzionali e dinamici.
 ---
 ## Slide 86 – Terminologia
 
@@ -1332,7 +1278,7 @@ Nel package `Editor`: `Nucleo Motif` e `Nucleo Windows` sono specializzazioni di
 - Il **contesto** può essere dato dall'intero sistema, da un sottosistema, da un caso d'uso, da un'operazione, da una classe
 - Una **linea di vita** rappresenta come un'istanza di un classificatore partecipa all'interazione
 - Un **messaggio** rappresenta un tipo specifico di comunicazione istantanea tra due linee di vita in un'interazione, e trasporta informazione nella prospettiva che seguirà una attività
-
+>linea di vita è un oggetto(piu o meno) istanza di un classificatore.
 ---
 ## Slide 87 – Linee di vita
 
@@ -1340,12 +1286,12 @@ Nel package `Editor`: `Nucleo Motif` e `Nucleo Windows` sono specializzazioni di
 
 ![[ISW3-s087-1.png|650]]
 
-Sintassi: `nome [selettore] : tipo`, per esempio `contoDiGianni [id="333"] : Conto`; altri esempi: `gianni : Persona`, `:ElaborazioneOrdine`, il componente `ORDINI.EXE`.
+Sintassi: `nome [selettore] : tipo`, per esempio `contoDiGianni [id="333"] : Conto`; altri esempi: `gianni : Persona`, `:ElaborazioneOrdine`, il componente `ORDINI.EXE` (istanza di un componente).
 
 - Sono disegnate con lo stesso simbolo del loro classificatore
-- Possono avere una "coda" a forma di riga verticale tratteggiata
+- Possono avere una "coda" a forma di riga verticale tratteggiata 
 - Non rappresentano specifiche istanze del classificatore, ma *modi* in cui le istanze partecipano all'interazione
-
+>finche dura la riga tratteggiata significa che l'oggetto c'è ancora, per questo si chiama linea di vita
 ---
 ## Slide 88 – Messaggi
 
@@ -1354,27 +1300,25 @@ Sintassi: `nome [selettore] : tipo`, per esempio `contoDiGianni [id="333"] : Con
 - **messaggi di distruzione**
 - **invio di segnali**
 - Per ogni messaggio di chiamata ricevuto da una linea di vita, deve esistere un'operazione corrispondente nel classificatore di quella linea di vita
-
+>usiamo solo i primi 3:
 ![[ISW3-s088-1.png|650]]
 
-- freccia con punta piena, `msg(par)` → **messaggio sincrono** (il mittente aspetta che il destinatario ritorni)
-- freccia con punta aperta, `msg(par)` → **messaggio asincrono** (il mittente continua l'esecuzione)
-- freccia tratteggiata → **messaggio di ritorno** (il destinatario restituisce il controllo al mittente)
-- freccia «create»`msg()` verso il box `:A` → **creazione di un oggetto** (si crea un'istanza del classificatore destinatario)
-- freccia «destroy» terminata da una X → **distruzione di un oggetto** (il mittente distrugge il destinatario)
+- ~~freccia con punta piena, `msg(par)` → **messaggio sincrono** (il mittente aspetta che il destinatario ritorni)~~ -> sopra il nome dell'associazione che chiamo
+- ~~freccia con punta aperta, `msg(par)` → **messaggio asincrono** (il mittente continua l'esecuzione)~~ 
+- ~~freccia tratteggiata → **messaggio di ritorno** (il destinatario restituisce il controllo al mittente)~~
 
 ---
 ## Slide 89 – Diagrammi di sequenza
 
 - Mostrano le interazioni tra linee di vita come una sequenza di messaggi ordinati temporalmente
 - Sono la forma più ricca e flessibile di diagramma di interazione
-	- Hanno due **dimensioni**: la dimensione verticale rappresenta il tempo mentre quella orizzontale rappresenta le linee di vita
-	- Un'**attivazione** mostra il periodo durante il quale una linea di vita esegue un'azione o direttamente o attraverso una procedura subordinata; rappresenta sia la durata dell'azione nel tempo sia la relazione di controllo tra l'attivazione e i suoi chiamanti
+	- Hanno due **dimensioni**: la dimensione verticale rappresenta il ~~tempo~~ (dall'alto verso il basso) mentre quella orizzontale rappresenta le ~~linee di vita~~
+	- Un'**attivazione** (rettangolo lungo bianco) mostra il periodo durante il quale una linea di vita esegue un'azione o direttamente o attraverso una procedura subordinata; rappresenta sia la durata dell'azione nel tempo sia la relazione di controllo tra l'attivazione e i suoi chiamanti
 	- Si possono specificare **nodi decisionali**, **iterazioni**, **attivazioni annidate**
 	- È consigliato descrivere il flusso tramite un'insieme di **note** poste accanto agli elementi
 
 ---
-## Slide 90 – Richiesta prestito
+## Slide 90 -> 91 – Richiesta prestito
 
 ![[ISW3-s090-1.png|700]]
 
@@ -1389,19 +1333,23 @@ Flusso e note:
 - Si crea un nuovo prestito → «create» `:Prestito`
 - ritorno del controllo con messaggi di ritorno tratteggiati
 
----
-## Slide 91 – Richiesta prestito
+>l'utente esiste all'inizio e continua ad esistere anche alla fine
+>fra tutte le istanze di libro mostro quello con titolo "UML", anche lui continua ad esistere
+>idem per prestito.
+>i messaggi sono tutti asincroni quindi utente resta attivo in attesa.
+>attivazione annidata -> corrisponde alla chiamata del metodo 'richiesta presisto'
+>eccc....
+>
+![[Recording 20261016150233.m4a]]
+
+>La linea di vita che da vita al tutto è l'utente che si attiva mandato un messaggio al form, un operazione 'richiedi' passando come parametro 'UML', 
+
+>i diagrammi di sequenza non nascono per mostrare in maniera esaustiva tutti i casi d'uso, è possibile modellare dei switch o dei loop, ma non bisogna avere la pretesa di mostrare tutte le possibili varianti seno perde di senso
+![[Recording 20261016150415.m4a]]
 
 ![[ISW3-s091-1.png|700]]
 
-Stesso scenario della slide precedente, ma senza le barre di attivazione:
-
-- L'utente richiede un libro → `richiedi("UML")`
-- Il libro viene cercato → `trova("UML")`
-- Si verifica che il libro sia disponibile → `inPrestito()`
-- Si crea un nuovo prestito → «create» `:Prestito`
-
-**molti analisti preferiscono non mostrare le attivazioni...**
+Stesso scenario della slide precedente, ma senza le barre di attivazione (~~meglio disegnarle sempre è molto più facile sbagliare seno~~):
 
 ---
 ## Slide 92 – Gestione undo/redo
@@ -1432,25 +1380,24 @@ Flusso con note:
 - Un **vincolo** posto sulla linea di vita indica una condizione sulle istanze che deve essere vera da lì in avanti
 
 ![[ISW3-s093-1.png|650]]
-
-Linee di vita: `:Cliente`, `:GestoreOrdini`, `:GestoreConsegne`, `:Ordine`.
-Messaggi: `avviaOrdine()` → «create» `:Ordine` → invariante `nonpagato`; `riceviPagamento()` (Cliente → GestoreOrdini) e `riceviPagamento()` (GestoreOrdini → Ordine) → invariante `pagato`; `consegna()` (GestoreOrdini → GestoreConsegne) e `consegna()` (GestoreConsegne → Ordine) → invariante `consegnato`.
+  
 Annotazioni: **vincolo** `{B–A <= 28 giorni}` tra gli istanti `A` e `B` sulla linea di vita del Cliente; **invariante di stato** sui riquadri posti sulla linea di vita di `:Ordine`.
+
+>gli stati qui sono un contorno. faccio vedere che ordine nel suo momento di creazione si trova nello stato 'non pagato'. Abbiamo visto che ci sono legami fra le linee di vita e il diagramma delle classi e anche far il diagramma di sequenza e il diagramma degli stati.
 
 >> L'invariante di stato (il riquadro sulla linea di vita) è un'asserzione: "da questo punto
 >> in poi l'oggetto si trova in questo stato". Il vincolo temporale `{B–A <= 28 giorni}`
->> vincola invece la distanza fra due istanti marcati sulla stessa linea di vita: dal
->> pagamento alla consegna non devono passare più di 28 giorni.
+>> vincola invece la distanza fra due istanti marcati sulla stessa linea di vita: ~~dal
+>> pagamento alla consegna non devono passare più di 28 giorni.~~
 
 ---
-## Slide 94 – Frammenti combinati
+## Slide 94 -> 95 – Frammenti combinati
 
+>modo per gestire: if, switch e loop
 ![[ISW3-s094-1.png|650]]
 
-Linee di vita: `:A`, `:B`, `:C`, `:D`.
-
-- Frammento `opt [condiz]`: contiene `msg ()` da `:A` a `:B`
-- Frammento `alt`, diviso in tre partizioni da linee tratteggiate:
+- Frammento **`opt [condiz]`**(~~if-else~~): contiene `msg ()` da `:A` a `:B`
+- Frammento **`alt`** (~~switch~~), diviso in tre partizioni da linee tratteggiate:
 	- `[condiz] msg()` da `:A` a `:B`
 	- `[condiz] msg()` da `:B` a `:C`
 	- `[else] msg()` da `:A` a `:D`
@@ -1459,13 +1406,10 @@ Linee di vita: `:A`, `:B`, `:C`, `:D`.
 >> ramo); `alt` è la scelta fra rami mutuamente esclusivi, con il ramo `[else]` eseguito
 >> quando nessuna delle altre guardie è vera.
 
----
-## Slide 95 – Frammenti combinati
-
 ![[ISW3-s095-1.png|650]]
 
 Linee di vita: `:Order`, `careful : Distributor`, `regular : Distributor`, `:Messenger`.
-Struttura: frammento `loop [for each line item]` che contiene un frammento `alt` con guardia `[value > $10000]` → `dispatch` verso `careful : Distributor`, e ramo `[else]` → `dispatch` verso `regular : Distributor`; segue un frammento `opt [needsConfirmation]` con `confirm` verso `:Messenger`.
+Struttura: frammento **`loop [for each line item]`** (~~for~~) che contiene un frammento `alt` con guardia `[value > $10000]` → `dispatch` verso `careful : Distributor`, e ramo `[else]` → `dispatch` verso `regular : Distributor`; segue un frammento `opt [needsConfirmation]` con `confirm` verso `:Messenger`.
 Etichette di annotazione: `operator` (indica l'operatore del frammento), `guard` (indica la guardia), `frame` (indica il riquadro del frammento).
 
 >> Questo esempio mostra l'annidamento: un `alt` dentro un `loop`. Il `loop` viene ripetuto
@@ -1473,8 +1417,6 @@ Etichette di annotazione: `operator` (indica l'operatore del frammento), `guard`
 
 ---
 ## Slide 96 – Diagrammi di stato
-
-**8**
 
 - I diagrammi di stato descrivono in modo esaustivo l'evoluzione temporale delle istanze di un classificatore (classe, caso d'uso, sottosistema) in risposta alle interazioni con altri oggetti
 - Ogni classe può avere associato un diagramma di stato
@@ -1490,22 +1432,12 @@ Stati: `In corso`, `Ritirato`, `Fuori corso`, `Laureato`. Transizioni: `iscrizio
 - Lo *stato* di un oggetto in un certo istante è un'astrazione dell'insieme dei valori dei suoi attributi e dei suoi collegamenti
 	- Le differenti configurazioni di valori e collegamenti vengono raggruppate in stati a seconda di come incidono sul comportamento macroscopico dell'oggetto
 - Un *evento* provoca la transizione tra uno stato e l'altro; un oggetto rimane in uno stato per un tempo finito non istantaneo corrispondente all'intervallo tra due eventi
-- Uno stato può contenere azioni e attività:
-	- Le *azioni* sono operazioni istantanee, atomiche e non interrompibili; sono associate a transizioni attivate da eventi
-	- Le *attività* sono operazioni che richiedono un certo tempo per essere completate e possono quindi essere interrotte da un evento
+- Uno stato può contenere azioni e attività (importante comprendere la differenza):
+	- Le **azioni** sono ~~operazioni istantanee~~, atomiche e non interrompibili; sono associate a transizioni attivate da eventi
+	- Le **attività** sono operazioni che richiedono un certo ~~tempo~~ per essere completate e possono quindi essere interrotte da un evento (le attività posso terminare come no, quando terminano si può avere una transizione in uscita senza essere etichettata con l'attività dell'evento perché è implicito)
 
 ![[ISW3-s097-1.png|380]]
-
-Notazione di uno stato:
-
-```
-NomeStato
------------------------------------------
-entry / azione
-do / attività
-exit / azione
-evento(parametri) [condizione] / azione
-```
+>rettangolo stondato!!!
 
 >> `entry` si esegue all'ingresso nello stato, `exit` all'uscita, `do` per tutta la
 >> permanenza (ed è interrompibile); l'ultima riga è una transizione interna: l'azione
@@ -1514,11 +1446,11 @@ evento(parametri) [condizione] / azione
 ---
 ## Slide 98 – Transizioni
 
-- Una *transizione* marca il passaggio di un oggetto da uno stato a un altro, ed è associata a uno o più eventi e, opzionalmente, a condizioni e azioni
-- Un *evento* avviene a un preciso istante di tempo, e si assume che abbia durata nulla
+- Una **transizione** marca il ~~passaggio di un oggetto da uno stato a un altro~~, ed è ~~associata a uno o più eventi~~ (tranne quando l'evento è implicito ~~*audio sotto*~~) e, opzionalmente, a condizioni e azioni.
+- Un **evento** avviene a un preciso istante di tempo, e si assume che abbia durata nulla
 	- Gli eventi possono essere raggruppati in classi, eventualmente descritte da attributi
-- Una *condizione* è un'espressione booleana che deve risultare vera affinché la transizione possa avvenire
-- Un'*azione* è un'operazione istantanea, atomica e non interrompibile che viene eseguita all'atto della transizione
+- Una **condizione** è un'espressione booleana che deve risultare vera affinché la transizione possa avvenire (paradigma e.c.a.)
+- Un'**azione** è un'operazione ~~istantanea~~, ~~atomica~~ e ~~non interrompibile~~ che viene eseguita all'atto della transizione
 
 `evento(parametri) [condizione] / azione`
 
@@ -1526,7 +1458,7 @@ evento(parametri) [condizione] / azione
 
 ![[ISW3-s098-1.png|450]]
 
-Stato `InSalita` con `do / sali`, transizione `/ apriPorta` verso lo stato `AlSecondoPiano`.
+![[Recording 20261020111910.m4a]]
 
 ---
 ## Slide 99 – La linea telefonica
@@ -1534,14 +1466,13 @@ Stato `InSalita` con `do / sali`, transizione `/ apriPorta` verso lo stato `AlSe
 ![[ISW3-s099-1.png|700]]
 
 Stati e transizioni principali:
-
 - Stato iniziale → `Agganciato`
 - `Agganciato` --`sgancia`--> `InAttesa` (`do/suonaTonoChiamata`)
 - `InAttesa` --`timeOut`--> `TimeOut` (`do/suonaTonoContinuo`)
 - `InAttesa` --`cifra(n)`--> `ComposizioneNumero`; `ComposizioneNumero` --`cifra(n)`--> se stesso
 - `TimeOut` --`timeOut`--> `MessaggioRegistrato` (`do/riproduciMessaggio`)
-- `ComposizioneNumero` --`numeroNonValido`--> `MessaggioRegistrato`
-- `ComposizioneNumero` --`numeroValido`--> `InConnessione` (`do/connetti`)
+- `ComposizioneNumero` --`numeroNonValido`--> `MessaggioRegistrato` (ciclico)
+- `ComposizioneNumero` --`numeroValido`--> `InConnessione` (`do/connetti`) (connessione è un attività che prima o poi termina ed è legato a tre attività possibili in uscita in base a delle condizioni)
 - `InConnessione` --`[numero occupato]`--> `NumeroOccupato` (`do/suonaTonoLento`)
 - `InConnessione` --`[linea occupata]`--> `LineaOccupata` (`do/suonaTonoVeloce`)
 - `InConnessione` --`[libero]`--> `Suona` (`do/azionaSuoneria`)
@@ -1554,6 +1485,10 @@ Stati e transizioni principali:
 >> stato contenitore basta una sola transizione `riaggancia` uscente dal contenitore
 >> (è quello che mostra la slide 102).
 
+riassunto dell'esempio:
+>occhio di bue: chiuso, oggetto cancellato
+![[Recording 20261020113157.m4a]]
+
 ---
 ## Slide 100 – Pseudo-stato di selezione
 
@@ -1561,28 +1496,31 @@ Stati e transizioni principali:
 
 ![[ISW3-s100-1.png|650]]
 
-Da `InConnessione` (`do/connetti`) si arriva al rombo di selezione, da cui escono `[numero occupato]` → `NumeroOccupato` (`do/suonaTonoLento`) e `[linea occupata]` → `LineaOccupata` (`do/suonaTonoVeloce`).
+Da `InConnessione` (`do/connetti`) si arriva al rombo di selezione, da cui escono `[numero occupato]` → `NumeroOccupato` (`do/suonaTonoLento`) e `[linea occupata]` → 
+`LineaOccupata` (`do/suonaTonoVeloce`).
 
->> Il rombo (choice) valuta le guardie *dopo* aver eseguito l'attività dello stato
+>automa deterministico.
+
+>> Il **rombo** (choice) valuta le guardie *dopo* aver eseguito l'attività dello stato
 >> precedente: è una decisione dinamica, diversa dalla semplice etichettatura con guardie
 >> di più transizioni uscenti, che invece viene valutata al momento dell'evento.
 
 ---
 ## Slide 101 – Tipi di eventi
 
-- *Evento di variazione*: si verifica nel momento in cui una condizione diventa vera
+- **Evento di variazione**: si verifica nel ~~momento in cui una condizione diventa vera~~ (come se l'oggetto facesse un costante polling sulla variabile)
 	- è denotato da un'espressione booleana, ad esempio: `bilancio<0`
 	- può essere considerato come una condizione verificata continuamente sebbene in realtà verrà controllata solo al variare dei parametri coinvolti
-- *Evento di segnale*: si verifica nel momento in cui un oggetto riceve un *oggetto segnale* da un altro oggetto
-- *Evento di chiamata*: è l'invocazione di una specifica operazione nell'istanza del classificatore che fa da contesto al diagramma
+- *Evento di segnale*: si verifica nel momento in cui un oggetto riceve un *oggetto segnale* da un altro oggetto (non li useremo)
+- **Evento di chiamata** (+ frequente): è l'invocazione di una ~~specifica operazione nell'istanza del classificatore che fa da contesto al diagramma~~
 	- è denotato dalla signature dell'operazione
 	- può essere associato a una sequenza di azioni separate da ";"
-- *Evento temporale*: si verifica allo scadere di un periodo di tempo
+- **Evento temporale**: si verifica allo ~~scadere di un periodo di tempo~~
 	- **when**(data=01/01/2008): specifica il momento della transizione
 	- **after**(10 seconds): specifica che la transizione deve avvenire dopo 10 secondi dall'entrata dell'automa nello stato attuale; è anche possibile specificare il momento in cui inizia a decorrere il periodo aggiungendo una frase del tipo "since…"
 
 ---
-## Slide 102 – Stati compositi
+## Slide 102 -> 103 – Stati compositi
 
 - Uno stato composito è uno stato che contiene altri stati annidati, organizzati in uno o più automi
 - Ogni stato annidato eredita tutte le transizioni dello stato che lo contiene
@@ -1593,9 +1531,6 @@ Da `InConnessione` (`do/connetti`) si arriva al rombo di selezione, da cui escon
 
 Vista compressa: stato `ComposizioneNumero` (con l'icona di stato annidato) con transizione uscente `riaggancia`.
 Vista espansa: dentro `ComposizioneNumero`, stato iniziale → `Inizio` (`entry / inizioTono`, `exit / fineTono`) --`cifra(n)`--> `NumeroParziale` (`entry / appendi(n)`), con autotransizione `cifra(n)`, e uscita `numeroValido` verso lo stato finale.
-
----
-## Slide 103 – Stati compositi
 
 - Lo pseudo-stato finale di un automa viene applicato solo a quell'automa
 

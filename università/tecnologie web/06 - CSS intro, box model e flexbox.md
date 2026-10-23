@@ -6,7 +6,7 @@
 
 1. **Introduzione, origine e versioni del CSS** (slide 1–8)
 	- [[#Slide 3 – L’origine|Origine: separazione contenuto/presentazione, cascata]]
-	- [[#Slide 4 – Vantaggi|Vantaggi (CSS Zen Garden, dispositivi diversi)]]
+	- [[#Slide 4 -> 5 – Vantaggi|Vantaggi (CSS Zen Garden, dispositivi diversi)]]
 	- [[#Slide 6 – Versioni|Versioni: Level 1, 2, 2.1 e moduli/snapshot]]
 	- [[#Slide 7 – Supporto da parte dei browser|Supporto dei browser e verifica]]
 2. **Sintassi e inclusione in HTML** (slide 9–11)
@@ -14,35 +14,35 @@
 	- [[#Slide 10 – Sintassi|Sintassi]]
 	- [[#Slide 11 – Usare CSS con HTML|Fogli inline, interni ed esterni]]
 3. **Selettori** (slide 12–16)
-	- [[#Slide 12 – I selettori|Universale, di tipo, di prossimità]]
-	- [[#Slide 13 – I selettori|Selettori di attributo, classe e id]]
+	- [[#Slide 12 -> 13 – I selettori|Universale, di tipo, di prossimità]]
+		- Selettori di attributo, classe e id
 	- [[#Slide 14 – Nota sui selettori di attributi|Attributi non validi]]
-	- [[#Slide 15 – I selettori|Pseudo-classi e raggruppamento]]
-	- [[#Slide 16 – I selettori|Pseudo-elementi]]
+	- [[#Slide 15 -> 16 – I selettori|Pseudo-classi e raggruppamento]]
+		- Pseudo-elementi
 4. **Cascata e specificità** (slide 17–23)
 	- [[#Slide 17 – Conflitti di stile|Conflitti di stile]]
 	- [[#Slide 18 – La cascata – Ordinamento regole|Ordinamento delle regole nella cascata]]
 	- [[#Slide 19 – Origine della dichiarazione|Origine: author, user, user agent]]
 	- [[#Slide 20 – Specificità del selettore|Calcolo della specificità (x, y, w, z)]]
-	- [[#Slide 21 – Specificità del selettore - Esempi|Esempi di specificità]]
+	- [[#Slide 21 -> 22 – Specificità del selettore - Esempi|Esempi di specificità]]
 	- [[#Slide 23 – Prima domanda|Domanda 1 sulla specificità]]
 5. **Valori, unità di misura ed ereditarietà** (slide 24–27)
-	- [[#Slide 24 – Valori|Unità relative e assolute (em, rem, px, pt)]]
-	- [[#Slide 25 – Valori|Percentuali, URL, stringhe, colori]]
+	- [[#Slide 24 -> 25 – Valori|Unità relative e assolute (em, rem, px, pt)]]
+		- Percentuali, URL, stringhe, colori
 	- [[#Slide 26 – Valori assoluti e valori relativi|Riferimenti delle unità (viewport vw/vh)]]
 	- [[#Slide 27 – Ereditarietà|Ereditarietà e inherit]]
 6. **Box model** (slide 28–39)
-	- [[#Slide 28 – Box Model|Il modello a scatola]]
+	- [[#Slide 28 -> 29 – Box Model|Il modello a scatola]]
 	- [[#Slide 30 – Contenuto|Dimensioni del contenuto e overflow]]
-	- [[#Slide 32 – Margin|Margin e forme abbreviate]]
-	- [[#Slide 33 – Margin|Margin collapsing]]
+	- [[#Slide 32 -> 33 – Margin|Margin e forme abbreviate]]
+		- Margin collapsing
 	- [[#Slide 34 – Padding|Padding]]
 	- [[#Slide 35 – Border|Border e relativi valori]]
 	- [[#Slide 37 – Dimensioni del Box|Larghezza complessiva del box]]
 	- [[#Slide 38 – `box-sizing`|box-sizing: content-box vs border-box]]
 	- [[#Slide 39 – Seconda domanda|Domanda 2 sulle forme abbreviate]]
 7. **Posizionamento e display** (slide 40–47)
-	- [[#Slide 40 – Posizionamento|Il problema del posizionamento]]
+	- [[#Slide 40 -> 41 – Posizionamento|Il problema del posizionamento]]
 	- [[#Slide 42 – Posizionamento – Comportamento 1|Elementi di blocco]]
 	- [[#Slide 43 – Posizionamento – Comportamento 2|Elementi di linea]]
 	- [[#Slide 45 – Display|La proprietà display]]
@@ -53,8 +53,8 @@
 	- [[#Slide 51 – Clear|La proprietà clear]]
 9. **Position e z-index** (slide 52–54)
 	- [[#Slide 52 – Position|static, fixed, sticky]]
-	- [[#Slide 53 – `position`|relative e absolute]]
-	- [[#Slide 54 – `position`|z-index]]
+	- [[#Slide 53 -> 54 – `position`|relative e absolute]]
+		- z-index
 10. **Flexbox: concetti di base** (slide 55–62)
 	- [[#Slide 55 – FlexBox|Introduzione ai flexbox]]
 	- [[#Slide 57 – Concetti principali dei Flexbox|Flex container e flex item]]
@@ -62,16 +62,16 @@
 	- [[#Slide 60 – `Display: block;` vs `Display: flex;`|display: block vs display: flex]]
 	- [[#Slide 61 – Un esempio|Primo esempio]]
 11. **Proprietà del flex container** (slide 63–80)
-	- [[#Slide 63 – `flex-direction`|flex-direction]]
-	- [[#Slide 67 – `justify-content`|justify-content]]
-	- [[#Slide 71 – `align-items`|align-items]]
-	- [[#Slide 75 – `flex-wrap`|flex-wrap]]
-	- [[#Slide 78 – `align-content`|align-content]]
+	- [[#Slide 63 -> 64 – `flex-direction`|flex-direction]]
+	- [[#Slide 67 -> 68 – `justify-content`|justify-content]]
+	- [[#Slide 71 -> 72 – `align-items`|align-items]]
+	- [[#Slide 75 -> 76 – `flex-wrap`|flex-wrap]]
+	- [[#Slide 78 -> 79 – `align-content`|align-content]]
 12. **Proprietà dei flex item, centering e gap** (slide 81–96)
 	- [[#Slide 81 – `order`|order]]
 	- [[#Slide 83 – `margin`|margin: auto negli item]]
 	- [[#Slide 85 – Perfect Centering|Perfect centering]]
-	- [[#Slide 87 – `gap`|gap (row-gap, column-gap)]]
+	- [[#Slide 87 -> 88 – `gap`|gap (row-gap, column-gap)]]
 	- [[#Slide 89 – `align-self`|align-self]]
 	- [[#Slide 92 – `flex-grow`|flex-grow]]
 	- [[#Slide 94 – `flex-shrink`|flex-shrink]]
@@ -101,7 +101,7 @@
 >> "Cascading" si riferisce proprio a questo: più fogli di stile (del browser, dell'utente, dell'autore) e più regole possono riferirsi allo stesso elemento; un algoritmo preciso (la *cascata*, vedi slide 18–20) decide quale dichiarazione vince.
 
 ---
-## Slide 4 – Vantaggi
+## Slide 4 -> 5 – Vantaggi
 
 - Lo stesso contenuto Web può essere presentato in modi diversi:
 	- http://www.csszengarden.com/219/
@@ -112,9 +112,6 @@
 ![[TW06-s004-2.png]]
 
 >> CSS Zen Garden usa sempre **lo stesso identico file HTML**: cambia solo il foglio di stile. È la dimostrazione pratica della separazione fra contenuto e presentazione.
-
----
-## Slide 5 – Vantaggi
 
 - Lo stesso contenuto può essere presentato *correttamente* su dispositivi diversi (pc, tablet e smartphone) o su media diversi (video o carta)
 - Si può dividere il lavoro fra chi gestisce il contenuto e chi la presentazione
@@ -206,7 +203,7 @@ h1 { color : darkred ; }
 >> L'inline mescola contenuto e presentazione e non è riutilizzabile; il foglio esterno è condiviso da tutte le pagine del sito e viene messo in cache.
 
 ---
-## Slide 12 – I selettori
+## Slide 12 -> 13 – I selettori
 
 - **Selettore universale** (**`*`**): fa match con qualsiasi elemento
 - **Selettore di tipo** (**E**): fa match con gli elementi E
@@ -226,9 +223,6 @@ p>strong { color: red; }
 
 >> I combinatori sono: `E F` (F discendente a qualsiasi profondità di E), `E > F` (F figlio diretto di E), `E + F` (F fratello immediatamente successivo a E), `E ~ F` (F qualsiasi fratello successivo a E).
 >> Attenzione: nel CSS reale fra numero e unità **non** ci va lo spazio: si scrive `12pt`, non `12 pt` (altrimenti la dichiarazione è invalida e viene ignorata).
-
----
-## Slide 13 – I selettori
 
 - **Selettori di attributi** (**E[foo], E[foo="bar"], …**): Fanno match con gli elementi E che possiedono l'attributo specificato o che ha un valore particolare.
 
@@ -274,7 +268,7 @@ Funzionano anche nel caso in cui l’attributo dichiarato non sia valido (codice
 >> Risultato: il primo `div` ha sfondo verde lime, il secondo sfondo giallo. Il browser costruisce comunque il DOM includendo l'attributo sconosciuto, e il selettore lavora sul DOM, non sulla validità del documento. (Per attributi personalizzati "leciti" HTML5 prevede il prefisso `data-`, es. `data-stato`.)
 
 ---
-## Slide 15 – I selettori
+## Slide 15 -> 16 – I selettori
 
 - **Selettori di pseudo-classi** (**E:link, E:visited, E:active, E:hover, E:focus, E:enabled, E:checked, E:lang(c)**):
 	- **link, visited**: vero se l'elemento E è un link non ancora visitato o un link già visitato.
@@ -290,9 +284,6 @@ input:focus { outline: 2px solid blue; }
 h1, h2, h3 { font-family: Georgia, serif; }  /* raggruppamento */
 ```
 >> Per i link si consiglia l'ordine `:link`, `:visited`, `:hover`, `:active` (regola mnemonica "LoVe HAte"): a parità di specificità vince l'ultima regola, quindi un ordine diverso può "nascondere" gli stati successivi.
-
----
-## Slide 16 – I selettori
 
 - **Selettori di pseudo-elementi** (**E::first-line  E::first-letter E::before  E::after**): Vengono attivati in corrispondenza di certe parti degli elementi E.
 	- **before, after**: vero prima e dopo il contenuto dell'elemento E.
@@ -366,7 +357,7 @@ class=‘provaClasse’></div>
 >> Il confronto va fatto componente per componente, da sinistra a destra (ordine lessicografico), non come numero decimale: ad esempio 11 classi danno $(0,0,11,0)$, che resta **meno** specifico di un solo id $(0,1,0,0)$. Scrivere la quadrupla come numero (es. "23") funziona solo finché ogni componente è minore di 10. Il selettore universale `*` e i combinatori (spazio, `>`, `+`, `~`) non contano.
 
 ---
-## Slide 21 – Specificità del selettore - Esempi
+## Slide 21 -> 22 – Specificità del selettore - Esempi
 
 - **`li`** ?
 - **`nav ul li:first-line`** ?
@@ -374,9 +365,6 @@ class=‘provaClasse’></div>
 - **`nav ul li a[href=‘/home’]`** ?
 - **`nav#menu ul.sec li#st a`** ?
 - **`style="li a"`** ?
-
----
-## Slide 22 – Specificità del selettore - Esempi
 
 - **`li`** /* x=0 y=0 w=0 z=1 => 1 */
 - **`nav ul li:first-line`** /* x=0 y=0 w=0 z=4 => 4 */
@@ -406,7 +394,7 @@ Qual è la specificità del seguente selettore
 >> Risposta: **124**. x=0 (non è in `style`); y=1 (`#left`); w=2 (la classe `.first` e l'attributo `[src=...]`); z=4 (`aside`, `p`, `a`, `img`).
 
 ---
-## Slide 24 – Valori
+## Slide 24 -> 25 – Valori
 
 - Grandezze: numeri seguiti da unità di misura
 - Numeri interi e reali (il punto è il separatore dei decimali)
@@ -421,9 +409,6 @@ Qual è la specificità del seguente selettore
 
 >> Differenza pratica fra `em` e `rem`: `em` si **compone** con l'annidamento. Se `html` ha `font-size: 16px` e sia `section` sia il `p` al suo interno hanno `font-size: 1.5em`, il paragrafo risulta $16 \cdot 1.5 \cdot 1.5 = 36\text{px}$; con `1.5rem` sarebbe sempre $16 \cdot 1.5 = 24\text{px}$.
 >> In CSS le unità assolute sono legate fra loro in modo fisso: $1\text{in} = 96\text{px} = 72\text{pt}$, quindi $1\text{pt} = \tfrac{4}{3}\text{px}$. Su schermi ad alta densità un CSS pixel corrisponde a più pixel fisici (es. 2 o 3, il *device pixel ratio*).
-
----
-## Slide 25 – Valori
 
 - Percentuali: percentuale del valore che assume la proprietà stessa nell’elemento padre
 - URL assoluti o relativi `url(path)`
@@ -467,13 +452,10 @@ Qual è la specificità del seguente selettore
 >> Esempio: se `div { color: red; border: 1px solid black; }`, un `<p>` al suo interno sarà rosso ma senza bordo; con `p { border: inherit; }` il paragrafo prende anche il bordo del padre.
 
 ---
-## Slide 28 – Box Model
+## Slide 28 -> 29 – Box Model
 
 - Ogni elemento è definito da una scatola (box) all'interno della quale si trova il contenuto.
 - La visualizzazione di un documento con CSS avviene identificando lo spazio di visualizzazione di ciascun box presente nella pagina.
-
----
-## Slide 29 – Box Model
 
 ![[TW06-s029-1.png|346]]
 
@@ -506,7 +488,7 @@ https://bit.ly/2ZCj5uX
 >> Esistono anche `overflow-x` e `overflow-y` per gestire separatamente le due direzioni.
 
 ---
-## Slide 32 – Margin
+## Slide 32 -> 33 – Margin
 
 - Permette di impostare lo spazio tra un elemento e gli altri elementi della pagina.
 - Quattro proprietà singole: `margin-top`, `margin-right`, `margin-bottom`, e `margin-left`
@@ -524,9 +506,6 @@ p{margin: 5px } /*all*/
 
 >> Regola mnemonica: i valori vanno in senso **orario** partendo dall'alto (top → right → bottom → left, "TRouBLe"). Se un valore manca, si copia quello del lato opposto: left = right, bottom = top.
 >> Nota: le percentuali di `margin` (anche verticali) sono calcolate rispetto alla **larghezza** del contenitore. Il valore `auto` sui lati (`margin: 0 auto`) è il modo classico per centrare orizzontalmente un blocco con `width` fissata.
-
----
-## Slide 33 – Margin
 
 - Nel caso in cui due elementi siano allineati **orizzontalmente**, la distanza tra i due è data dalla somma dei due margini (il margine destro del primo elemento e il margine sinistro del secondo).
 
@@ -630,14 +609,11 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 >> Risposta: `margin: 20px 10px 10px;`. Con tre valori si ha top = 20px, right/left = 10px, **bottom = 10px**. Le altre tre danno tutte top = bottom = 20px e right = left = 10px.
 
 ---
-## Slide 40 – Posizionamento
+## Slide 40 -> 41 – Posizionamento
 
 - La disposizione degli elementi all'interno della pagina è una delle questione più complesse e che provocano più frustrazione negli sviluppatori!
 
 ![[TW06-s040-1.png|450]]
-
----
-## Slide 41 – Posizionamento
 
 - In base a cosa vengono disposti gli elementi?
 - Quanti comportamenti diversi possiamo osservare?
@@ -768,7 +744,7 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 
 >> Il margin collapse "tra padre e primo figlio": il `margin-top` dell'`<h2>` dentro `article` (nel flusso) "esce" dal contenitore e sposta in basso tutto l'article; negli elementi float questo non accade perché un float crea un nuovo contesto di formattazione (BFC) che contiene i margini dei figli.
 
->> **Continua in 07** → [[07 - CSS testo, colori e responsiveness#Slide 21 – Ancora sui layout|nota 07, slide 21 e seguenti: perché il layout fluido non basta e come renderlo responsive con le media query]]
+>> **Continua in 07** → [[07 - CSS testo, colori e responsiveness#Slide 21 -> 22 – Ancora sui layout|nota 07, slide 21 e seguenti: perché il layout fluido non basta e come renderlo responsive con le media query]]
 
 ---
 ## Slide 51 – Clear
@@ -797,7 +773,7 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 >> Esistono anche `relative` (spostamento rispetto alla posizione normale, lasciando lo spazio originale occupato) e `absolute` (fuori dal flusso, posizionato rispetto al primo antenato con `position` diverso da `static`).
 
 ---
-## Slide 53 – `position`
+## Slide 53 -> 54 – `position`
 
 - Altri possibili valori (**usati per problemi specifici, non come tecnica primaria per costruire il layout generale**):
 	- **`relative`**:
@@ -814,9 +790,6 @@ Quale di queste forme abbreviate non è equivalente alle altre:
 >> .badge { position: absolute; top: 0; right: 0; } /* angolo in alto a destra di .card */
 >> ```
 >> Con `relative` lo spazio originale dell'elemento resta "riservato" nel flusso (gli altri elementi non si spostano); con `absolute` invece gli altri elementi si comportano come se l'elemento non esistesse.
-
----
-## Slide 54 – `position`
 
 - In caso di elementi sovrapposti, è possibile gestire quale elemento deve essere visualizzato «sopra» con la proprietà `z-index`. Verrà visualizzato l'elemento con `z-index` maggiore (che si andrà a sovrapporre agli elementi con `z-index` inferiore).
 - **NB**: `z-index` funziona SOLO con elementi che non abbiano `static` come posizione.
@@ -937,7 +910,7 @@ body {
 >> Ogni item occupa $30\%$ della larghezza del container più $2\cdot10\text{px}$ di padding e $2\cdot10\text{px}$ di margine, cioè $0{,}3W + 40\text{px}$ (con $W$ = larghezza del container). I tre item insieme richiedono $0{,}9W + 120\text{px}$, che supera $W$ quando $W < 1200\text{px}$. In quel caso, per default (`flex-shrink: 1`), gli item vengono **ristretti** per stare sulla singola flex line invece di andare a capo.
 
 ---
-## Slide 63 – `flex-direction`
+## Slide 63 -> 64 – `flex-direction`
 
 - La proprietà ***flex-direction*** permette di specificare la direzione dei ***flex item*** all'interno del ***flex container***
 - Il valore di default per ***flex-direction*** è ***row*** (left-to-right, top-to-bottom)
@@ -945,9 +918,6 @@ body {
 	- **row-reverse**
 	- **column**
 	- **column-reverse**
-
----
-## Slide 64 – `flex-direction`
 
 ![[TW06-s064-1.png|500]]
 
@@ -1014,7 +984,7 @@ body {
 >> Risultato: "flex item 1" è attaccato al bordo **destro** del container e alla sua sinistra seguono "flex item 2" e "flex item 3" (da sinistra a destra si legge quindi 3, 2, 1). Con `row-reverse` il *main start* è sulla destra, quindi anche lo spazio libero rimane a sinistra.
 
 ---
-## Slide 67 – `justify-content`
+## Slide 67 -> 68 – `justify-content`
 
 - La proprietà ***justify-content*** allinea orizzontalmente gli elementi di un ***flexible container*** quando questi elmenti non utilizzano tutto lo spazio a disposizione lungo l'asse delle ascisse
 - Il valore di default è ***flex-start***: gli elementi sono posizionati all'inizio del container
@@ -1030,9 +1000,6 @@ body {
 >> - `space-between`: nessuno spazio ai bordi, spazio tra item consecutivi $= \frac{S}{n-1}$;
 >> - `space-around`: ogni item riceve $\frac{S}{2n}$ per lato, quindi tra due item c'è $\frac{S}{n}$ e ai bordi solo $\frac{S}{2n}$ (la metà);
 >> - `space-evenly`: tutti gli $n+1$ spazi (bordi inclusi) valgono $\frac{S}{n+1}$.
-
----
-## Slide 68 – `justify-content`
 
 ![[TW06-s068-1.png|500]]
 
@@ -1096,7 +1063,7 @@ body {
 >> Differenza rispetto a `row-reverse` (slide 66): anche qui gli item si raccolgono a destra, ma restano nell'ordine 1, 2, 3. `flex-end` sposta il gruppo di item senza invertirlo.
 
 ---
-## Slide 71 – `align-items`
+## Slide 71 -> 72 – `align-items`
 
 - La proprietà ***align-items*** allinea verticalmente gli elementi del ***flex container*** quando gli item non usano tutto lo spazio disponibile lungo l'asse delle ordinate
 - Il valore di default è **stretch**: gli item vengono "stretchati" per riempire opportunamente il ***container***
@@ -1109,9 +1076,6 @@ body {
 >> In generale `align-items` agisce lungo il **cross axis** (verticale con `row`, orizzontale con `column`).
 >> `stretch` ha effetto solo se l'item **non** ha una dimensione fissata lungo il cross axis: con `height: 100px` esplicito (come negli esempi) l'item non viene allungato.
 >> `baseline` allinea gli item in modo che la **prima riga di testo** di ciascuno stia sulla stessa linea di base, anche se gli item hanno altezze o font diversi.
-
----
-## Slide 72 – `align-items`
 
 ![[TW06-s072-1.png|500]]
 
@@ -1175,7 +1139,7 @@ body {
 >> Ogni item occupa in verticale $100 + 2\cdot10 = 120\text{px}$ (content + padding) e $140\text{px}$ contando i margini. Nel container alto $250\text{px}$ restano $110\text{px}$, divisi in $55\text{px}$ sopra e $55\text{px}$ sotto. Per centrare un elemento sia orizzontalmente sia verticalmente basta combinare `justify-content: center;` e `align-items: center;`.
 
 ---
-## Slide 75 – `flex-wrap`
+## Slide 75 -> 76 – `flex-wrap`
 
 - La proprietà **flex-wrap** specifica se il ***flex items*** debba andare automaticamente a capo oppure no, nel caso in cui non ci sia spazio sufficiente su un'unica ***flex line***
 - Il valore di default è **nowrap**: e corrisponde al non andare a capo automaticamente, comprimendo lo spazio
@@ -1185,9 +1149,6 @@ body {
 
 >> Con `wrap-reverse` si inverte l'ordine delle **righe** (cross start e cross end si scambiano): la prima flex line viene disegnata in basso e le successive sopra. All'interno di ogni riga gli item restano nell'ordine 1, 2, 3…, come mostra la figura della slide successiva.
 >> La scorciatoia `flex-flow` imposta insieme direzione e wrap, per esempio `flex-flow: row wrap;`.
-
----
-## Slide 76 – `flex-wrap`
 
 ![[TW06-s076-1.png|500]]
 
@@ -1246,7 +1207,7 @@ body {
 >> In verticale il container è alto $400\text{px}$ e le due righe si dividono lo spazio (`align-content: stretch`, default): ogni flex line è alta $200\text{px}$ e gli item stanno in cima alla propria riga.
 
 ---
-## Slide 78 – `align-content`
+## Slide 78 -> 79 – `align-content`
 
 - La proprietà **align-content** modifica il comportamento della proprietà **flex-wrap**
 - E' simile a **align-items**, ma invece di allineare i ***flex item***, allinea le ***flex line***
@@ -1260,9 +1221,6 @@ body {
 
 >> `align-content` ha effetto **solo se ci sono più flex line** (quindi con `flex-wrap: wrap` o `wrap-reverse` e item che vanno effettivamente a capo) e se il container ha spazio libero lungo il cross axis. Con una sola riga non fa nulla.
 >> Sintesi: `align-items` posiziona gli item **dentro** la propria riga, `align-content` posiziona le **righe** dentro il container. Riprendendo l'esempio della slide 77 con `align-content: center`, le due righe (alte $140\text{px}$ ciascuna, margini inclusi, $280\text{px}$ in tutto) verrebbero raccolte al centro del container, lasciando $60\text{px}$ sopra e $60\text{px}$ sotto.
-
----
-## Slide 79 – `align-content`
 
 ![[TW06-s079-1.png|600]]
 
@@ -1498,7 +1456,7 @@ body {
 ```
 
 ---
-## Slide 87 – `gap`
+## Slide 87 -> 88 – `gap`
 
 - Definisce lo spazio tra gli elementi del container, senza dover assegnare manualmente dei `margin` ai singoli elementi
 - `gap: 20px;` significa *"lascia 20 pixel di spazio tra un flex item e il successivo"*
@@ -1518,9 +1476,6 @@ gap: 20px 30px;
 >> Nella forma a due valori il primo è `row-gap` (spazio tra le righe, cioè in verticale in un layout a righe) e il secondo è `column-gap` (spazio tra le colonne/item affiancati). Con un solo valore entrambi assumono lo stesso valore.
 >> Differenza chiave rispetto ai margin: il gap viene inserito **solo tra** gli item, mai tra gli item e i bordi del container.
 
----
-## Slide 88 – `gap`
-
 ![[TW06-s088-1.png|700]]
 
 >> Nel confronto con i margin: con `margin: 10px` su ogni item tra due item adiacenti si ottengono comunque $10 + 10 = 20$ px (i margini orizzontali non collassano), ma compaiono anche 10 px ai bordi esterni. Con `wrap`, il gap si applica anche tra le righe (spazio verticale di 20 px).
@@ -1535,7 +1490,7 @@ gap: 20px 30px;
 >> Il valore di default di `align-self` è `auto`, che significa "usa il valore di `align-items` del container". Serve quindi a trattare in modo diverso un singolo item lungo l'asse trasversale.
 
 ---
-## Slide 90 – `align_self_11.html`
+## Slide 90 -> 91 – `align_self_11.html`
 
 ```html
 <!DOCTYPE html>
@@ -1555,9 +1510,6 @@ gap: 20px 30px;
 </body>
 </html>
 ```
-
----
-## Slide 91 – `align_self_11.html`
 
 ```css
 body {
@@ -1745,7 +1697,7 @@ Quale affermazione è corretta?
 >> - La quarta è falsa: il default è `flex-wrap: nowrap`, quindi gli item non vanno a capo (semmai si restringono).
 
 ---
-## Slide 97 – Responsive flexbox
+	## Slide 97 – Responsive flexbox
 
 - Questo è un esempio di un layout responsive in cui vogliamo usare i flexbox per gli elementi:
 	- `<header>`
@@ -1759,7 +1711,6 @@ Quale affermazione è corretta?
 ## Slide 98 – No CSS
 
 ![[TW06-s098-1.png|600]]
-
 
 >> Senza CSS gli elementi semantici sono blocchi che si impilano verticalmente nell'ordine del sorgente, ciascuno a tutta larghezza (normal flow).
 

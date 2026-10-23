@@ -10,9 +10,9 @@
 	- [[#Slide 4 – I paradigmi di interazione|I cinque paradigmi storici di interazione]]
 	- [[#Slide 5 – Dalla parte dell'utente|Le GUI sfruttano riconoscimento e associazione]]
 2. **Riconoscere o ricordare?** (slide 6–11)
-	- [[#Slide 6 – Riconoscere o ricordare?|Test 1: rievocazione di codici alfabetici]]
-	- [[#Slide 8 – Riconoscere o ricordare?|Test 2: rievocazione di icone familiari]]
-	- [[#Slide 10 – Riconoscere o ricordare?|Test 3: riconoscimento icona–funzione]]
+	- [[#Slide 6 -> 11 – Riconoscere o ricordare?|Test 1: rievocazione di codici alfabetici]]
+		- Test 2: rievocazione di icone familiari
+		- Test 3: riconoscimento icona–funzione
 3. **Fattori chiave e scelta della tecnologia** (slide 12–13)
 	- [[#Slide 12 – Fattori chiave nel progetto dell'interfaccia|Chi usa l'interfaccia e per cosa: persone, tecnologia, obiettivi]]
 	- [[#Slide 13 – Scelta della tecnologia per l'interfaccia|Criteri in funzione di obiettivi e utenti]]
@@ -30,18 +30,18 @@
 	- [[#Slide 23 – Modello multi-paned|Multi-paned: pane monofunzionali e self-service]]
 6. **Project standard** (slide 24–26)
 	- [[#Slide 24 – Project standard|Standard di terminologia, metafore e finestre]]
-	- [[#Slide 25 – Esempio|Caso del bottone con etichetta troppo lunga]]
-	- [[#Slide 26 – Esempio|Priorità consigliate tra le soluzioni]]
+	- [[#Slide 25 -> 26 – Esempio|Caso del bottone con etichetta troppo lunga]]
+		- Priorità consigliate tra le soluzioni
 7. **Comunicazione visiva nelle GUI** (slide 27–38)
 	- [[#Slide 27 – Comunicazione visiva nelle GUI|I sei strumenti: affordance, metafora, layout, colori, icone, font]]
 	- [[#Slide 28 – Affordance|Affordance: tridimensionalità, ombreggiatura, puntamento]]
 	- [[#Slide 29 – Metafore|Metafore comuni e relative associazioni]]
 	- [[#Slide 30 – Layout|Layout: distanze e grado di associazione]]
-	- [[#Slide 31 – Colori|Significato culturale dei colori]]
-	- [[#Slide 32 – Colori|Colore come decorazione o come codifica]]
-	- [[#Slide 33 – Colori|Linee guida sull'uso del colore]]
-	- [[#Slide 34 – Icone|Struttura, caratteristiche e linee guida delle icone]]
-	- [[#Slide 35 – Icone|I tre tipi: desktop, menu/palette, button icon]]
+	- [[#Slide 31 -> 33 – Colori|Significato culturale dei colori]]
+		- Colore come decorazione o come codifica
+		- Linee guida sull'uso del colore
+	- [[#Slide 34 -> 37 – Icone|Struttura, caratteristiche e linee guida delle icone]]
+		- I tre tipi: desktop, menu/palette, button icon
 	- [[#Slide 38 – Font|Font: serif, sans serif, maiuscolo e spaziatura]]
 8. **Usabilità e i suoi criteri** (slide 39–45)
 	- [[#Slide 39 – Usabilità|Definizione: efficacia, efficienza, soddisfazione]]
@@ -54,7 +54,6 @@
 9. **Metodologia di progetto e test con l'utente** (slide 46–47)
 	- [[#Slide 46 – Metodologia di progetto|Le nove attività dallo studio di fattibilità allo sviluppo]]
 	- [[#Slide 47 – Test con l'utente|Simulatore, dimostratore, prototipo]]
-
 
 ---
 ## Slide 1 – Progettazione di interfacce utente
@@ -132,14 +131,11 @@
 >> sono un esperimento che misura proprio questa differenza.
 
 ---
-## Slide 6 – Riconoscere o ricordare?
+## Slide 6 -> 11 – Riconoscere o ricordare?
 
 - Lista di codici registrazione ordinazioni al ristorante, facili da ricordare e raggruppati per significato.
 	1. Leggerli per 30 secondi
 	2. Chiudere le dispense e cercare di riscriverli correttamente anche se in un qualunque ordine
-
----
-## Slide 7 – Riconoscere o ricordare?
 
 - Lista di codici registrazione ordinazioni al ristorante, facili da ricordare e raggruppati per significato.
 	1. Leggerli per 30 secondi
@@ -159,15 +155,9 @@ PUNTEGGIO: \_\_\_ /14
 >> e riso, secondi di carne e pesce, bevande. Il raggruppamento aiuta, ma resta
 >> un compito di **rievocazione** pura: bisogna riprodurre a memoria i codici.
 
----
-## Slide 8 – Riconoscere o ricordare?
-
 - Un insieme di icone d'aspetto familiare raggruppate per significato
 	1. Osservarle per 30 secondi
 	2. Chiudere le dispense e cercare di riscriverne i nomi (secondo la propria interpretazione) in un qualunque ordine
-
----
-## Slide 9 – Riconoscere o ricordare?
 
 - Un insieme di icone d'aspetto familiare raggruppate per significato
 	1. Osservarle per 30 secondi
@@ -181,9 +171,6 @@ PUNTEGGIO: \_\_\_ /14
 >> familiare (stella, freccia, croce, computer, floppy, stampante, mouse,
 >> fulmine, cuore, penna, lettere, siringa, schedario, cerotto): tipicamente
 >> il punteggio sale rispetto ai codici alfabetici della slide 7.
-
----
-## Slide 10 – Riconoscere o ricordare?
 
 - Un insieme di icone che associano oggetti del mondo reale alle più diffuse funzioni computerizzate
 	1. Osservarle per 30 secondi
@@ -200,9 +187,6 @@ Testo delle etichette (14 funzioni):
 | freccia indietro | Indietro | busta | Posta elettronica | floppy disk | Salva |
 | mano che indica | Seleziona | penna | Video scrittura | stampante | Stampa |
 | lente | Zoom | barra | Aggiungi | | |
-
----
-## Slide 11 – Riconoscere o ricordare?
 
 - Un insieme di icone che associano oggetti del mondo reale alle più diffuse funzioni computerizzate
 	1. Osservarle per 30 secondi
@@ -458,7 +442,7 @@ Le due alternative a confronto: **Alta e Stretta** – **Bassa e Larga**
 >> l'utente a disimparare ciò che già sa.
 
 ---
-## Slide 25 – Esempio
+## Slide 25 -> 26 – Esempio
 
 ![[ISW5-s025-1.png|550]]
 
@@ -484,9 +468,6 @@ Project standard | Situazione contingente
 ![[ISW5-s025-3.png|380]]
 
 Risultati corrispondenti (dall'alto in basso): `OK` → `Stampa bolla di accompagnamento` → menù `Stampa` con le voci **Bolla di accompagnamento** / **Bolla di trasferimento** → `Stampa bolla` → `Stampa B.A.M.`
-
----
-## Slide 26 – Esempio
 
 - Priorità consigliate
 	1. Testo più corto compreso ed approvato dall'utente
@@ -574,7 +555,7 @@ Risultati corrispondenti (dall'alto in basso): `OK` → `Stampa bolla di accompa
 >> logici diversi.
 
 ---
-## Slide 31 – Colori
+## Slide 31 -> 33 – Colori
 
 | Culture | Rosso | Blu | Verde | Bianco | Giallo |
 | --- | --- | --- | --- | --- | --- |
@@ -595,9 +576,6 @@ Il colore è comunicazione!
 >> l'unico portatore di informazione (rosso = errore), va sempre
 >> affiancato a testo o simbolo.
 
----
-## Slide 32 – Colori
-
 ![[ISW5-s032-1.png|380]]
 
 decorazione — codifica
@@ -606,9 +584,6 @@ decorazione — codifica
 >> arbitrari (decorazione): non dicono nulla e affaticano. A destra la
 >> gradazione di uno stesso colore codifica un ordine/una gerarchia tra
 >> le voci: qui il colore porta informazione.
-
----
-## Slide 33 – Colori
 
 - Non abusare dei colori in un "ambiente" monocromatico: il risalto è eccessivo
 - Se il colore è usato come codice: solo 3-5 colori, ricordarsi la semantica
@@ -622,7 +597,7 @@ decorazione — codifica
 >> cliente di un chiosco pochi secondi (servono colori che attirino).
 
 ---
-## Slide 34 – Icone
+## Slide 34 -> 37 – Icone
 
 - Struttura
 	- immagine
@@ -646,9 +621,6 @@ Piscina — Servizio Elicotteri — Traghetti
 
 ![[ISW5-s034-2.png|320]]
 
----
-## Slide 35 – Icone
-
 1. *Desktop icon*
 	- Obiettivo: partenza, riapertura
 	- Per applicazioni collegate per l'utente, icone simili graficamente
@@ -659,9 +631,6 @@ Piscina — Servizio Elicotteri — Traghetti
 
 ![[ISW5-s035-1.png|450]]
 
----
-## Slide 36 – Icone
-
 2. *Menu icon - Palette Icon*
 	- Sempre visibili accanto ai menu
 		- overview di funzioni sempre attivabili
@@ -670,9 +639,6 @@ Piscina — Servizio Elicotteri — Traghetti
 		- invito alla sperimentazione
 
 ![[ISW5-s036-1.png|550]]
-
----
-## Slide 37 – Icone
 
 3. *Button icon*
 	- In aggiunta al testo di un bottone
@@ -785,9 +751,7 @@ Evitare i puzzle di font diversi
 
 **FLESSIBILITÀ** (primi tre casi) — **RIGIDITÀ** (ultimi due casi)
 
-![[ISW5-s043-1.png|500]]
-
-![[ISW5-s043-2.png|300]]
+![[ISW5-s043-1.png|406]]![[ISW5-s043-2.png|243]]
 
 >> La metafora è chiara: al ristorante il cliente decide quando e in che
 >> ordine, quindi l'interfaccia deve permettere salti liberi tra le

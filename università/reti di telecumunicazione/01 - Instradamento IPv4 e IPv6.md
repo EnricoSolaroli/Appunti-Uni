@@ -14,7 +14,7 @@
 	- [[#Slide 4 – IPv4- RFC 791|Caratteristiche: connectionless e best effort]]
 	- [[#Slide 5 – Struttura degli indirizzi IPv4|Indirizzi a 32 bit e notazione dotted decimal]]
 	- [[#Slide 6 – Formato del pacchetto|Formato dell'intestazione]]
-	- [[#Slide 7 – Significato delle PCI (1)|Significato dei campi (PCI)]]
+	- [[#Slide 7 -> 10 – Significato delle PCI|Significato dei campi (PCI)]]
 2. **Frammentazione e riassemblaggio** (slide 11–22)
 	- [[#Slide 11 – Fragment offset|Fragment offset in blocchi da 8 byte]]
 	- [[#Slide 12 – La frammentazione IPv4|Frammentazione e MTU]]
@@ -27,7 +27,7 @@
 	- [[#Slide 23 – Applicazioni residenti in calcolatori a grande distanza|Il problema dell'instradamento]]
 	- [[#Slide 25 – Come funziona Internet|Network IP, host e router]]
 	- [[#Slide 30 – Interconnettere le isole|Interconnessione delle network e router]]
-	- [[#Slide 34 – Le network fra i gateway|Collegamenti fra router come network e forwarding]]
+	- [[#Slide 34 -> 36 – Le network fra i gateway|Collegamenti fra router come network e forwarding]]
 	- [[#Slide 37 – Cosa fa IP|Ruolo di IP e decisione di instradamento]]
 	- [[#Slide 40 – L'instradamento IP|Instradamento hop-by-hop]]
 4. **Indirizzamento: Net-ID, Host-ID e netmask** (slide 42–50)
@@ -62,14 +62,14 @@
 	- [[#Slide 97 – Intervalli di indirizzi|Intervalli e indirizzi riservati]]
 	- [[#Slide 98 – Le sottoreti|Subnetting]]
 	- [[#Slide 103 – CIDR|CIDR e suoi obiettivi]]
-	- [[#Slide 105 – Supernetting|Supernetting e aggregazione]]
+	- [[#Slide 105 -> 106 – Supernetting|Supernetting e aggregazione]]
 	- [[#Slide 107 – Oggi|Esempio di tabelle con aggregazione]]
 	- [[#Slide 109 – Da ricordare|Classful e CIDR a confronto]]
 9. **Protocolli di controllo: ICMP e DHCP** (slide 110–130)
 	- [[#Slide 110 – Domanda|Funzioni di controllo in IPv4]]
 	- [[#Slide 113 – ICMP|ICMP e formato del pacchetto]]
-	- [[#Slide 115 – Tipi di errori|Messaggi di errore]]
-	- [[#Slide 117 – Informazioni|Messaggi informativi: echo e timestamp]]
+	- [[#Slide 115 -> 116 – Tipi di errori|Messaggi di errore]]
+	- [[#Slide 117 -> 118 – Informazioni|Messaggi informativi: echo e timestamp]]
 	- [[#Slide 119 – Le applicazioni|Ping e traceroute]]
 	- [[#Slide 124 – DHCP – RFC 2131,2132|DHCP e scambio DORA]]
 10. **Esaurimento di IPv4, indirizzi privati e NAT** (slide 131–148)
@@ -80,7 +80,7 @@
 	- [[#Slide 137 – NAT|NAT e motivazioni]]
 	- [[#Slide 140 – Basic NAT – Conversione di indirizzo IP|Basic NAT e NAPT]]
 	- [[#Slide 142 – Direzione delle connessioni|Connessioni entranti e port forwarding]]
-	- [[#Slide 144 – Analisi di connessioni attraverso NAT|Catture attraverso il NAT]]
+	- [[#Slide 144 -> 145 – Analisi di connessioni attraverso NAT|Catture attraverso il NAT]]
 	- [[#Slide 146 – NAT e applicazioni di rete|Problemi del NAT e limiti di IPv4]]
 11. **IPv6: intestazione e indirizzi** (slide 149–161)
 	- [[#Slide 149 – Cosa viene dopo IPv4?|Motivazioni e caratteristiche di IPv6]]
@@ -88,19 +88,18 @@
 	- [[#Slide 155 – L'indirizzo IPv6|Notazione degli indirizzi]]
 	- [[#Slide 156 – Tipologie di indirizzi|Tipi di indirizzi: unicast, multicast, anycast]]
 	- [[#Slide 158 – Il prefisso ha lo stesso significato|Prefisso e Interface Identifier]]
-	- [[#Slide 159 – Anycast (1)|Anycast]]
+	- [[#Slide 159 -> 161 – Anycast|Anycast]]
 12. **ICMPv6, Neighbor Discovery e autoconfigurazione** (slide 162–175)
 	- [[#Slide 162 – ICMPv6|ICMPv6 e sue funzioni]]
 	- [[#Slide 164 – Discovery e configurazione|Discovery e configurazione]]
 	- [[#Slide 165 – Neighbor Discovery Protocol (NDP)|Neighbor Discovery Protocol]]
-	- [[#Slide 166 – NS/NA|Neighbor Solicitation e Advertisement]]
+	- [[#Slide 166 -> 167 – NS/NA|Neighbor Solicitation e Advertisement]]
 	- [[#Slide 168 – Il router di default|Router di default]]
 	- [[#Slide 169 – Duplicate Address Detection (DAD)|Duplicate Address Detection]]
 	- [[#Slide 170 – Stateless Address Autoconfiguration (SLAAC)|SLAAC]]
 	- [[#Slide 172 – DHCPv6|DHCPv6]]
 	- [[#Slide 173 – Avvio di un host IPv6|Avvio di un host IPv6]]
 	- [[#Slide 174 – Assegnazione indirizzi IPv6|Assegnazione dei blocchi IPv6]]
-
 
 ---
 ## Slide 1 – Instradamento IPv4 e IPv6
@@ -166,7 +165,7 @@ $$2^{32} = 4.294.967.296$$
 >> Dimensioni dei campi: Version 4 bit, IHL 4 bit, Type of Service 8 bit, Total Length 16 bit, Identification 16 bit, Flags 3 bit, Fragment Offset 13 bit, TTL 8 bit, Protocol 8 bit, Header Checksum 16 bit, indirizzi 32 bit ciascuno. Senza opzioni l'intestazione è lunga $5 \times 32 = 160$ bit $= 20$ byte.
 
 ---
-## Slide 7 – Significato delle PCI (1)
+## Slide 7 -> 10 – Significato delle PCI
 
 - **Version** : indica il formato dell'intestazione, attualmente la versione in uso è la 4
 - **IHL** : lunghezza dell'intestazione, espressa in parole di 32 bit; lunghezza minima = 5
@@ -176,9 +175,6 @@ $$2^{32} = 4.294.967.296$$
 >> PCI = Protocol Control Information, cioè i campi di intestazione del protocollo.
 >> IHL è su 4 bit, quindi vale al massimo 15: l'intestazione va da $5\cdot 4 = 20$ byte a $15 \cdot 4 = 60$ byte (40 byte di opzioni al massimo). Total Length è su 16 bit, da cui il massimo $2^{16}-1 = 65535$ byte.
 >> Oggi il campo Type of Service è stato ridefinito come DSCP (6 bit, Differentiated Services) + ECN (2 bit), come si vede nelle catture Wireshark più avanti ("Differentiated Services Field").
-
----
-## Slide 8 – Significato delle PCI (2)
 
 - **Identification** : Valore utilizzato per associare fra loro i frammenti dello stesso datagramma
 - **Flag** :
@@ -194,8 +190,6 @@ $$2^{32} = 4.294.967.296$$
 >> Il Fragment Offset è su 13 bit: in unità da 8 byte può indicare posizioni fino a $(2^{13}-1)\cdot 8 = 65528$ byte, coerente con la lunghezza massima del datagramma. Usare blocchi da 8 byte "risparmia" 3 bit rispetto a contare i singoli byte (che richiederebbe 16 bit).
 >> Un datagramma non frammentato ha MF = 0 e Offset = 0; il primo frammento ha MF = 1 e Offset = 0; l'ultimo ha MF = 0 e Offset > 0.
 
----
-## Slide 9 – Significato delle PCI (3)
 *(slide marcata "A")*
 
 - **Time to live (TTL)** : max numero di nodi attraversabili
@@ -210,8 +204,6 @@ $$2^{32} = 4.294.967.296$$
 >> Valori tipici del campo Protocol: 1 = ICMP, 6 = TCP, 17 = UDP.
 >> Il checksum va ricalcolato a ogni hop perché almeno il TTL cambia a ogni nodo (e con esso l'intestazione).
 
----
-## Slide 10 – Significato delle PCI (4)
 *(slide marcata "A")*
 
 - **Options** : contiene opzioni relative al trasferimento del datagramma (registrazione del percorso, meccanismi di sicurezza), è perciò di lunghezza variabile
@@ -478,7 +470,7 @@ Quando arriva l'ultimo frammento (MF=0) si controlla di avere la sequenza di off
 >> La quaterna (sorgente, destinazione, protocollo, identification) identifica univocamente il datagramma originale a cui appartengono i frammenti. Il ricevente ordina i frammenti per offset e verifica che non ci siano "buchi": il frammento che parte all'offset $O$ con $L$ byte di dati deve essere seguito da uno con offset $O + L/8$.
 >> Il riassemblaggio avviene con un timer: se non arrivano tutti i frammenti entro un tempo limite, quelli ricevuti vengono scartati e l'intero datagramma è perso (basta perdere un frammento per perdere tutto).
 
->> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 5 – Riassemblamento (RFC 791)|slide 5–8: l'algoritmo di riassemblamento della RFC 791 (BUFID, bit table, timer)]]
+>> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 5 -> 7 – Riassemblamento (RFC 791)|slide 5–8: l'algoritmo di riassemblamento della RFC 791 (BUFID, bit table, timer)]]
 >> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 9 – RFC 815|slide 9–12: l'algoritmo migliorato della RFC 815 con la lista dei "buchi"]]
 
 ---
@@ -597,7 +589,7 @@ Normalmente non esiste un collegamento «diretto» fra sorgente e destinazione
 >> Nella rete esistono più percorsi fra la stessa coppia sorgente-destinazione (rosso e verde): la scelta di quale usare è compito dell'instradamento, e la presenza di alternative permette anche di aggirare eventuali guasti.
 
 ---
-## Slide 34 – Le network fra i gateway
+## Slide 34 -> 36 – Le network fra i gateway
 
 - Per uniformità consideriamo i collegamenti fra i router come network (in molti casi con solamente due calcolatori connessi)
 - Ne consegue che quindi un gateway è un calcolatore:
@@ -606,17 +598,11 @@ Normalmente non esiste un collegamento «diretto» fra sorgente e destinazione
 
 >> Un collegamento punto-punto fra due router è quindi una network IP con due soli host (le due interfacce dei router): in IPv4 si usano spesso subnet /30 (2 indirizzi utilizzabili) o /31 per questo scopo.
 
----
-## Slide 35 – Le network fra i gateway
-
 ![[RT01-s035-1.png|500]]
 
 - Network IP
 
 >> Tratteggiate in rosso sono evidenziate le network costituite dai collegamenti fra i router, che si aggiungono alle network degli host.
-
----
-## Slide 36 – Le network fra i gateway
 
 ![[RT01-s036-1.png|600]]
 
@@ -877,8 +863,6 @@ $$I' = I - 2 = 2^H - 2$$
 ---
 ## Slide 59 – Come posso sapere quale gateway usare per la consegna indiretta?
 
-
-
 ---
 ## Slide 60 – La tabella di instradamento IP
 
@@ -1138,7 +1122,6 @@ Il **longest prefix match** è l'algoritmo che ci dice quali informazioni usare 
 
 ![[RT01-s079-1.png|550]]
 
-
 >> ARP è disegnato a cavallo tra strato 3 e strato 2: serve al livello di rete, ma i suoi messaggi viaggiano direttamente dentro le trame L2 (in Ethernet con EtherType 0x0806), non dentro datagrammi IP.
 
 ---
@@ -1367,7 +1350,7 @@ Primo byte, Secondo byte → Network ID; Terzo byte e primi 2 bit del Quarto byt
 >> Es. 137.204.57.0/24 e 137.204.59.0/24 sono due sottoreti diverse (subnet-ID 57 e 59), ciascuna con 254 host utilizzabili.
 
 ---
-## Slide 101 – Subnetting
+## Slide 101 -> 102 – Subnetting
 
 - Subnet diverse sono di fatto Network diverse e quindi non comunicano
 - È necessario un gateway
@@ -1377,9 +1360,6 @@ Primo byte, Secondo byte → Network ID; Terzo byte e primi 2 bit del Quarto byt
 Host delle subnet 137.204.59.0/24 (es. 137.204.59.4) e 137.204.57.0/24 (es. 137.204.57.18): comunicazione SI all'interno della stessa subnet, NO fra subnet diverse, anche se condividono lo stesso mezzo fisico.
 
 >> Anche se i cavi sono collegati, un host della .59 che vuole raggiungere 137.204.57.18 trova la destinazione fuori dalla propria network (netmask /24) e quindi non tenta la consegna diretta: serve una riga di tabella con un gateway.
-
----
-## Slide 102 – Subnetting
 
 - Il Gateway permette instradamento indiretto fra le Subnetwork
 
@@ -1414,7 +1394,7 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 >> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 21 – Scelta di netmask diverse|slide 21–26: netmask di lunghezza diversa (VLSM) per non sprecare indirizzi, con link punto-punto /30]]
 
 ---
-## Slide 105 – Supernetting
+## Slide 105 -> 106 – Supernetting
 
 - Raggruppare più reti con indirizzi consecutivi
 	- Indicarle nelle tabelle di routing con una sola entry accompagnata dalla opportuna Netmask
@@ -1432,9 +1412,6 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 >> L'accorpamento funziona solo perché i blocchi sono allineati: ad esempio 194.24.1.0–194.24.8.0 non sarebbero aggregabili in un unico prefisso.
 
 >> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 36 – Analizziamo gli indirizzi delle 4 reti|slide 36–40: aggregazione delle quattro /24 in una /22 e semplificazione della tabella di R2]]
-
----
-## Slide 106 – Supernetting
 
 - Subnetting e Supernetting sono operazioni duali
 	- Subnetting → **n** bit del Host-ID diventano parte del Net-ID
@@ -1468,8 +1445,8 @@ Subnet 137.204.59.0/24 e 137.204.57.0/24 collegate da un router: SI all'interno 
 >> R2 vede le quattro /24 di R1 come un'unica rete 137.204.64.0/22 (supernetting): 255.255.252.0 lascia liberi gli ultimi 2 bit del terzo ottetto, che coprono i valori 64–67. Così R2 ha una sola riga invece di quattro. R1 invece deve distinguere le quattro reti, perché ognuna è su un'interfaccia diversa.
 >> Il link punto-punto R1–R2 è un /30 (255.255.255.252): 4 indirizzi, cioè la rete .0, due host (.1 e .2) e il broadcast .3.
 
->> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 29 – Esempio|slide 29–35: la stessa rete (R1, R2, 137.204.64.0/22) sviluppata passo passo, con le tabelle dei due router]]
->> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 42 – Eccezioni|slide 42–43: eccezioni, cioè una rotta più specifica dentro il prefisso aggregato]]
+>> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 29 -> 32 – Esempio|slide 29–35: la stessa rete (R1, R2, 137.204.64.0/22) sviluppata passo passo, con le tabelle dei due router]]
+>> **Approfondimento in 02** → [[02 - Approfondimenti IP#Slide 42 -> 43 – Eccezioni|slide 42–43: eccezioni, cioè una rotta più specifica dentro il prefisso aggregato]]
 
 ---
 ## Slide 109 – Da ricordare
@@ -1543,7 +1520,7 @@ CIDR
 >> Nei messaggi di errore il campo Data contiene l'header IP e i primi 8 byte del datagramma che ha causato l'errore. Bastano a includere le porte TCP/UDP, così la sorgente può capire a quale connessione o applicazione si riferisce l'errore.
 
 ---
-## Slide 115 – Tipi di errori
+## Slide 115 -> 116 – Tipi di errori
 
 - **Destination Unreachable** (Type = 3)
 	- Generato da un gateway quando la sottorete o l'host non sono raggiungibili
@@ -1557,9 +1534,6 @@ CIDR
 
 >> Il codice 4 è alla base del *Path MTU Discovery*: la sorgente invia datagrammi con DF=1 e, quando riceve questo errore (che riporta anche l'MTU del link successivo), riduce la dimensione dei pacchetti.
 
----
-## Slide 116 – Tipi di errori
-
 - Time Exceeded (Type = 11)
 	- generato da un router quando il Time-to-Live di un datagramma si azzera ed il datagramma viene distrutto (Code = 0)
 	- generato da un host quando un timer si azzera in attesa dei frammenti per riassemblare un datagramma ricevuto in parte (Code = 1)
@@ -1569,7 +1543,7 @@ CIDR
 >> Esempio di Redirect: un host ha come default gateway R1, ma per una certa destinazione R1 inoltrerebbe il pacchetto a R2, che si trova sulla stessa LAN dell'host. R1 inoltra comunque il pacchetto e manda all'host un Redirect: i pacchetti successivi per quella destinazione andranno direttamente a R2.
 
 ---
-## Slide 117 – Informazioni
+## Slide 117 -> 118 – Informazioni
 
 - Echo (Type = 8)
 - Echo Reply (Type = 0)
@@ -1580,9 +1554,6 @@ CIDR
 	- Identifier: identifica l'insieme degli echo appartenenti allo stesso test
 	- Sequence Number: identifica ciascun echo nell'insieme
 	- Optional Data: usato per inserire eventuali dati di verifica
-
----
-## Slide 118 – Informazioni
 
 - Timestamp Request (Type = 13)
 - Timestamp Reply (Type = 14)
@@ -1824,7 +1795,7 @@ Grafico "IPv4 Waiting List Graph" (2019–2026): LIRs in queue; Days that first 
 >> Dimensioni: /8 → $2^{24} \approx 16{,}7$ milioni di indirizzi; /12 → $2^{20} \approx 1$ milione (da 172.16 a 172.31, cioè 16 reti /16); /16 → $2^{16} = 65536$ indirizzi.
 
 ---
-## Slide 135 – RFC1918
+## Slide 135 -> 136 – RFC1918
 
 **Hosts within enterprises that use IP can be partitioned into three categories:**
 
@@ -1838,9 +1809,6 @@ We will refer to the hosts in the first and second categories as "**private**".
 We will refer to the hosts in the third category as "**public**".
 
 >> In breve: un indirizzo privato è unico solo all'interno dell'organizzazione. Organizzazioni diverse possono usare gli stessi indirizzi, e per questo non possono comparire su Internet.
-
----
-## Slide 136 – RFC1918
 
 Because private addresses have no global meaning, **routing information about private networks shall not be propagated on inter-enterprise links**, and packets with private source or destination addresses should not be forwarded across such links. Routers in networks not using private address space, especially those of Internet service providers, are expected to be configured **to reject (filter out) routing information about private networks**. If such a router receives such information the rejection shall not be treated as a routing protocol error.
 
@@ -1936,14 +1904,11 @@ Host privati 192.168.10.1 e 192.168.10.2; gateway NAT con interfaccia interna 19
 >> Il port forwarding è una regola statica del tipo "tutto ciò che arriva sulla porta X dell'IP pubblico va inoltrato a IP privato:porta Y". Così un server web interno (192.168.10.1) è raggiungibile dall'esterno come 137.204.191.141:80, e un secondo servizio su un altro host come 137.204.191.141:8080. Limite: una data porta pubblica può essere associata a un solo host interno.
 
 ---
-## Slide 144 – Analisi di connessioni attraverso NAT
+## Slide 144 -> 145 – Analisi di connessioni attraverso NAT
 
 ![[RT01-s144-1.png|600]]
 
 >> Cattura (Ethereal, oggi Wireshark) effettuata sull'interfaccia *interna* del NAT (file NAT-int.cap): l'host privato 192.168.10.174 dialoga via HTTP con il server 137.204.24.12 usando il proprio indirizzo privato.
-
----
-## Slide 145 – Analisi di connessioni attraverso NAT
 
 ![[RT01-s145-1.png|600]]
 
@@ -1993,7 +1958,7 @@ Grazie a questo IPv4 continua ad essere estremamente diffuso nonostante l'esauri
 ***Cosa viene dopo IPv4?***
 
 ---
-## Slide 150 – IPv6
+## Slide 150 -> 151 – IPv6
 
 - Standardizzato da IETF in RFC 2460 (1998), sostituita da RFC 8200 (2017)
 	- Capacità di indirizzamento estesa a 128 bit --> spazio di indirizzamento $2^{128} \simeq 3.4 \times 10^{38}$
@@ -2008,9 +1973,6 @@ Grazie a questo IPv4 continua ad essere estremamente diffuso nonostante l'esauri
 >> Verifica del conto: la superficie terrestre è circa $5{,}1 \times 10^{14}\ \text{m}^2$, quindi $\dfrac{3{,}4 \times 10^{38}}{5{,}1 \times 10^{14}} \approx 6{,}7 \times 10^{23}$ indirizzi per m².
 >> Confronto: IPv4 ha $2^{32} \approx 4{,}3 \times 10^{9}$ indirizzi, cioè IPv6 ne ha $2^{96} \approx 7{,}9 \times 10^{28}$ volte di più.
 >> "Non retrocompatibile" significa che un host solo-IPv4 e uno solo-IPv6 non possono comunicare direttamente: servono meccanismi di transizione (dual stack, tunnel, traduttori come NAT64).
-
----
-## Slide 151 – IPv6
 
 - Indirizzi di 128 bit
 - **Semplificazione dell'intestazione** obbligatoria
@@ -2143,7 +2105,7 @@ Il /64 è il caso più tipico ma non è una divisione universale per ogni colleg
 >> Esattamente come in IPv4, il prefisso è la parte usata dai router per il longest prefix match.
 
 ---
-## Slide 159 – Anycast (1)
+## Slide 159 -> 161 – Anycast
 
 - Un concetto inedito (RFC 4291 sez. 2.6)
 	- Un normale indirizzo IPv6 assegnato contemporaneamente a più interfacce, generalmente appartenenti a nodi collocati in punti diversi della rete.
@@ -2152,9 +2114,6 @@ Il /64 è il caso più tipico ma non è una divisione universale per ogni colleg
 - "Più vicina" significa più conveniente secondo le logiche del piano di controllo della rete (routing)
 
 >> "Più vicina" non significa necessariamente più vicina geograficamente: dipende dalle metriche e dalle politiche del protocollo di routing (numero di hop, costo dei link, politiche BGP tra operatori).
-
----
-## Slide 160 – Anycast (2)
 
 - Supponiamo che lo stesso servizio DNS sia disponibile in tre sedi
 	- DNS A	Bologna	2001:db8:53::53
@@ -2169,9 +2128,6 @@ Il /64 è il caso più tipico ma non è una divisione universale per ogni colleg
 
 >> È esattamente il modo in cui funzionano i root server DNS e molte CDN (in pratica anche con IPv4): centinaia di istanze fisiche condividono lo stesso indirizzo. Vantaggi: minore latenza, distribuzione del carico, resilienza (se un'istanza cade, il routing la ritira e il traffico va automaticamente a un'altra).
 >> Si presta bene a servizi basati su scambi brevi (come le query DNS su UDP); con connessioni lunghe c'è il rischio che un cambio di routing sposti i pacchetti successivi su un'altra istanza.
-
----
-## Slide 161 – Anycast (3)
 
 - IPv6 non riserva un prefisso generale per gli indirizzi anycast
 	- Un indirizzo anycast ha la stessa forma di un indirizzo unicast.
@@ -2246,16 +2202,13 @@ Il /64 è il caso più tipico ma non è una divisione universale per ogni colleg
 >> Tipi ICMPv6 da 0 a 127 sono messaggi di errore, da 128 a 255 informativi (Echo Request = 128, Echo Reply = 129, NDP = 133–137).
 
 ---
-## Slide 166 – NS/NA
+## Slide 166 -> 167 – NS/NA
 
 ![[RT01-s166-1.png|500]]
 
 >> Esempio: l'host 2001:db8:1::10 vuole conoscere il MAC di 2001:db8:1::20. Gli ultimi 24 bit di 2001:db8:1::20 sono 00:0020, quindi l'indirizzo solicited-node è ff02::1:ff00:20 ($104 + 24 = 128$ bit).
 >> A differenza di ARP, che va in broadcast a tutti, la NS arriva solo ai nodi iscritti a quel gruppo (a livello Ethernet l'indirizzo multicast IPv6 è mappato sul MAC 33:33:ff:00:00:20, filtrabile dalla scheda di rete). Gli altri host (::30) scartano la trama senza disturbare la CPU.
 >> Ogni host si iscrive automaticamente al gruppo solicited-node di ciascuno dei propri indirizzi.
-
----
-## Slide 167 – NS/NA
 
 ![[RT01-s167-1.png|500]]
 

@@ -9,8 +9,8 @@
 	- [[#Slide 3 – Cosa sono le form?|Cosa sono le form e flusso dei dati]]
 	- [[#Slide 4 – Come progettare una form|Come progettare una form]]
 2. **L'elemento form e l'invio dei dati** (slide 5–10)
-	- [[#Slide 5 – `<form>`|Elemento `<form>` e famiglie di controlli]]
-	- [[#Slide 6 – `<form>`|Attributi `action` e `method`]]
+	- [[#Slide 5 -> 6 – `<form>`|Elemento `<form>` e famiglie di controlli]]
+		- Attributi `action` e `method`
 	- [[#Slide 7 – `GET` e `POST`|Confronto GET vs POST e ruolo di HTTPS]]
 	- [[#Slide 8 – Attributo `name`|Attributo `name` e coppie nome=valore]]
 	- [[#Slide 9 – Altri attributi comuni|`required`, `autofocus`, `autocomplete`]]
@@ -25,18 +25,18 @@
 	- [[#Slide 18 – `tel`, `url`, `email`|Dati personali: `tel`, `url`, `email`]]
 	- [[#Slide 19 – `radio`|Scelte: `radio` e `checkbox`]]
 	- [[#Slide 21 – `number` e `range`|Numeri: `number` e `range`]]
-	- [[#Slide 22 – Data e ora|Data e ora: `time`, `week`, `date`, `datetime-local`]]
+	- [[#Slide 22 -> 23 – Data e ora|Data e ora: `time`, `week`, `date`, `datetime-local`]]
 	- [[#Slide 24 – `color`|Altri tipi: `color` e `file`]]
 5. **Textarea e menu a tendina** (slide 26–29)
 	- [[#Slide 26 – `<textarea>`|`<textarea>` per testo multilinea]]
-	- [[#Slide 27 – `<select>` e `<option>`|`<select>` e `<option>`]]
-	- [[#Slide 28 – `<select>` e `<option>`|Attributi `multiple`, `size`, `selected`, `value`]]
+	- [[#Slide 27 -> 28 – `<select>` e `<option>`|`<select>` e `<option>`]]
+		- Attributi `multiple`, `size`, `selected`, `value`
 	- [[#Slide 29 – Seconda domanda|Domanda 2: scegliere una quantità da 1 a 5]]
 6. **Esercizio: form accessibile** (slide 30–33)
 	- [[#Slide 30 – Esempio|Testo dell'esercizio]]
-	- [[#Slide 31 – Soluzione|Soluzione: struttura del documento]]
-	- [[#Slide 32 – Soluzione|Fieldset anagrafica]]
-	- [[#Slide 33 – Soluzione|Fieldset tipo elaborato]]
+	- [[#Slide 31 -> 33 – Soluzione|Soluzione: struttura del documento]]
+		- Fieldset anagrafica
+		- Fieldset tipo elaborato
 7. **Web API e Web Storage** (slide 34–42)
 	- [[#Slide 34 – HTML e Web API|Web API del browser]]
 	- [[#Slide 35 – Web Storage|Web Storage: coppie chiave-valore]]
@@ -54,8 +54,8 @@
 	- [[#Slide 46 – Controllo manuale|Controllo manuale]]
 9. **Esercizio d'esame: tabella accessibile** (slide 47–51)
 	- [[#Slide 47 – Esempio di ESERCIZIO (compito)|Testo dell'esercizio]]
-	- [[#Slide 48 – Esempio|Soluzione errata: mancano `<thead>`, `<tbody>`, `scope`]]
-	- [[#Slide 50 – Esempio|Soluzione corretta con `scope` e `headers`]]
+	- [[#Slide 48 -> 51 – Esempio|Soluzione errata: mancano `<thead>`, `<tbody>`, `scope`]]
+		- Soluzione corretta con `scope` e `headers`
 10. **Conclusione** (slide 52)
 ---
 ## Slide 2 – Argomenti
@@ -95,7 +95,7 @@ Schema: UTENTE → Controlli della form (Nome…, Scelta, Opzione 1 / Opzione 2,
 >> Scegliere il tipo giusto non è solo estetica: con `type="email"` il browser valida automaticamente il formato dell'indirizzo e sugli smartphone mostra una tastiera con `@`; con `type="number"` mostra il tastierino numerico. La "descrizione associata" di cui si parla è l'elemento `<label>` (vedi slide 11).
 
 ---
-## Slide 5 – `<form>`
+## Slide 5 -> 6 – `<form>`
 
 - Le form sono realizzate dall'elemento `<form>`
 - In HTML5 la form può anche avere campi per l'output
@@ -112,9 +112,6 @@ Schema: UTENTE → Controlli della form (Nome…, Scelta, Opzione 1 / Opzione 2,
 
 >> Il "campo per l'output" è l'elemento `<output>`, che mostra il risultato di un calcolo (tipicamente fatto via JavaScript) sui valori degli altri controlli, es. `<output name="somma" for="a b"></output>`.
 >> Tutti i tipi in tabella sono valori dell'attributo `type` di `<input>`; oltre a `<input>` una form può contenere anche `<select>`, `<textarea>`, `<button>`, `<fieldset>`, `<label>`, ecc.
-
----
-## Slide 6 – `<form>`
 
 - Attributi di `<form>` sono:
 	- `action`: specifica l'URL dell'applicazione server-side che riceverà i dati.
@@ -454,7 +451,7 @@ min="1" max="5"/></label><br/><br/>
 >> Attenzione: la validazione del browser non sostituisce quella lato server, perché la richiesta può essere costruita a mano.
 
 ---
-## Slide 22 – Data e ora
+## Slide 22 -> 23 – Data e ora
 
 - Per codificare data e ora sono disponibili vari tipi di **`input`**:
 	- **`time`**: orario
@@ -468,9 +465,6 @@ min="1" max="5"/></label><br/><br/>
 ![[TW05-s022-2.png|333]]![[TW05-s022-3.png|336]]
 
 >> Qualunque sia l'aspetto grafico, il valore inviato ha un formato standard indipendente dalla lingua: `time` → `14:30`, `date` → `2015-08-30`, `week` → `2015-W35`, `datetime-local` → `2015-08-30T14:30`. Anche qui si possono usare `min` e `max` (es. `min="2015-01-01"`).
-
----
-## Slide 23 – Data e ora
 
 - Esempio:
 
@@ -569,7 +563,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea
 >> A differenza di `<input>`, `<textarea>` non è un elemento vuoto: il valore iniziale è il **contenuto** tra i tag, non un attributo `value`. Per un suggerimento che sparisce quando si scrive si usa invece `placeholder`. Per essere inviata, come ogni controllo, deve avere un `name` (nell'esempio manca).
 
 ---
-## Slide 27 – `<select>` e `<option>`
+## Slide 27 -> 28 – `<select>` e `<option>`
 
 - L'elemento **`<select>`** è usato per realizzare menù a tendina.
 - Le diverse opzioni sono introdotte attraverso l'elemento **`<option>`**.
@@ -591,9 +585,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea
 http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
 
 >> L'utente vede il testo dell'opzione ("Tecnologie Web"), ma al server viene inviato il `value`: `insegnamento=TW`. Il `name` va sulla `<select>`, non sulle singole `<option>`.
-
----
-## Slide 28 – `<select>` e `<option>`
 
 - Attributi per **`<select>`** sono:
 	- **`multiple`**, booleano per effettuare selezioni multiple
@@ -631,7 +622,7 @@ Scrivere il codice HTML5 accessibile e semanticamente corretto per realizzare un
 >> Traduzione dei requisiti in elementi HTML: "gruppo di campi" → `<fieldset>` con `<legend>`; "accessibile" → ogni controllo associato a una `<label>`; email → `type="email"`; "scelta alternativa" → `<select>` (o `radio` con lo stesso `name`); "quantità tra 1 e 4" → `type="number"` con `min="1" max="4"`; metodo GET → `method="GET"` sulla `<form>`.
 
 ---
-## Slide 31 – Soluzione
+## Slide 31 -> 33 – Soluzione
 
 ```html
 <!DOCTYPE html>
@@ -656,9 +647,6 @@ Scrivere il codice HTML5 accessibile e semanticamente corretto per realizzare un
 
 >> `lang="it"` serve anche all'accessibilità (i lettori di schermo scelgono la pronuncia corretta). Con GET i dati finiranno nella query string, es. `script.php?nome=Mario&cognome=Rossi&...`.
 
----
-## Slide 32 – Soluzione
-
 ```html
 <fieldset>
         <legend>Anagrafica</legend>
@@ -678,9 +666,6 @@ Scrivere il codice HTML5 accessibile e semanticamente corretto per realizzare un
 ```
 
 >> `type="email"` fa sì che il browser verifichi il formato dell'indirizzo (e sui dispositivi mobili mostri una tastiera con `@`); `required` impedisce l'invio se il campo è vuoto. Il `placeholder` è solo un suggerimento e non sostituisce la `<label>`.
-
----
-## Slide 33 – Soluzione
 
 ```html
 <fieldset>
@@ -897,7 +882,7 @@ Quale soluzione è più adatta?
 ![[TW05-s047-1.png|400]]
 
 ---
-## Slide 48 – Esempio
+## Slide 48 -> 51 – Esempio
 
 ```html
 <!DOCTYPE html>
@@ -925,9 +910,6 @@ Quale soluzione è più adatta?
 
 >> Nota: nel codice mostrato manca anche l'attributo `lang` su `<html>` (es. `<html lang="it">`) e la dichiarazione `<meta charset="utf-8">` nell'`<head>`: sono dettagli richiesti per un documento corretto e accessibile (la lingua serve, ad esempio, agli screen reader per la pronuncia).
 
----
-## Slide 49 – Esempio
-
 ```html
 <tr>
   <th id="es1">Esercizio 1</th>
@@ -950,9 +932,6 @@ Quale soluzione è più adatta?
 ```
 
 >> L'attributo `headers` elenca gli `id` di tutte le celle di intestazione che si riferiscono a quella cella di dati: ad es. la cella "3" è associata a "Valutazione" (`val`), "minimo" (`min`) ed "Esercizio 1" (`es1`), così uno screen reader può leggere "Valutazione, minimo, Esercizio 1: 3".
-
----
-## Slide 50 – Esempio
 
 ```html
 <!DOCTYPE html>
@@ -977,9 +956,6 @@ Quale soluzione è più adatta?
 ```
 
 >> `scope="col"` indica che l'intestazione vale per l'intera colonna sottostante; `scope="colgroup"` che vale per un gruppo di colonne (qui le due colonne "minimo" e "massimo" coperte dal `colspan="2"`); `scope="row"` (slide successiva) che vale per la riga. `scope` e `headers` sono due modi complementari di collegare dati e intestazioni: `headers` è più esplicito ed è utile nelle tabelle con intestazioni su più livelli come questa.
-
----
-## Slide 51 – Esempio
 
 ```html
 <tbody>

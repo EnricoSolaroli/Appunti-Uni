@@ -7,19 +7,19 @@
 	- [[#Slide 1 – CSS: Gestione di testo e colori, Responsiveness|Titolo della lezione]]
 	- [[#Slide 2 – CSS|Panoramica degli argomenti]]
 2. **Colori e notazioni** (slide 3–4)
-	- [[#Slide 3 – Colore - Valori|Keyword, esadecimale, rgb/rgba e opacity]]
-	- [[#Slide 4 – Colore - Valori|Spazio colore HSL e HSLA]]
+	- [[#Slide 3 -> 4 – Colore - Valori|Keyword, esadecimale, rgb/rgba e opacity]]
+		- Spazio colore HSL e HSLA
 3. **Sfondi, bordi e ombre** (slide 5–9)
-	- [[#Slide 5 – Sfondo|Proprietà background e forma abbreviata]]
-	- [[#Slide 6 – Sfondo|Immagini multiple, background-size e blend mode]]
+	- [[#Slide 5 -> 6 – Sfondo|Proprietà background e forma abbreviata]]
+		- Immagini multiple, background-size e blend mode
 	- [[#Slide 7 – Bordi|border-image e border-radius]]
 	- [[#Slide 8 – Ombreggiatura|box-shadow e text-shadow]]
 	- [[#Slide 9 – Prima domanda|Domanda bonus su bordi, ombre e sfondi]]
 4. **Gestione del testo e liste** (slide 10–14)
 	- [[#Slide 10 – Gestione del testo|Panoramica delle proprietà del testo]]
 	- [[#Slide 11 – Aspetto dei caratteri|Proprietà font (family, style, weight, size)]]
-	- [[#Slide 12 – Formattazione del testo|Colore, allineamento, decorazione, trasformazione]]
-	- [[#Slide 13 – Formattazione del testo (2)|white-space, word-wrap, vertical-align]]
+	- [[#Slide 12 -> 13 – Formattazione del testo|Colore, allineamento, decorazione, trasformazione]]
+		- white-space, word-wrap, vertical-align
 	- [[#Slide 14 – Liste|Proprietà list-style]]
 5. **Filtri per immagini** (slide 15–17)
 	- [[#Slide 15 – Filtri per immagini|La proprietà filter]]
@@ -30,12 +30,12 @@
 	- [[#Slide 19 – Animazioni - Keyframes|Regola @keyframes e proprietà animation]]
 	- [[#Slide 20 – Animazioni - Proprietà|Sotto-proprietà delle animazioni]]
 7. **Media query e breakpoint** (slide 21–29)
-	- [[#Slide 21 – Ancora sui layout|Limiti del layout fluido]]
+	- [[#Slide 21 -> 22 – Ancora sui layout|Limiti del layout fluido]]
 	- [[#Slide 23 – Media Query|Media query: definizione e sintassi]]
 	- [[#Slide 24 – Media Query – Media Type|Media type]]
 	- [[#Slide 25 – Media Query – Media Features|Media feature: width e orientation]]
 	- [[#Slide 26 – Breakpoints|Breakpoint standard]]
-	- [[#Slide 27 – Media Query – Esempi|Esempi di media query]]
+	- [[#Slide 27 -> 28 – Media Query – Esempi|Esempi di media query]]
 	- [[#Slide 29 – Media Query – Esercizio|Esercizio sull'immagine flottante]]
 8. **Viewport virtuale e meta tag viewport** (slide 30–32)
 	- [[#Slide 30 – Viewport Virtuale|Il viewport virtuale]]
@@ -69,7 +69,7 @@ Responsiveness
 *2 punti bonus* – *BONUS*
 
 ---
-## Slide 3 – Colore - Valori
+## Slide 3 -> 4 – Colore - Valori
 
 - I colori possono essere specificati nei seguenti modi:
 	- Keyword (es: **red**, **green**, …). Lista completa: https://www.w3.org/wiki/CSS/Properties/color/keywords
@@ -84,9 +84,6 @@ Responsiveness
 >> Sintassi del canale alpha: quella "classica" usa le virgole, `rgba(255, 0, 0, 0.5)`; quella moderna (CSS Colors 4) usa gli spazi e la barra, `rgb(255 0 0 / 50%)`, e in essa `rgb` e `rgba` sono sinonimi. La forma con le virgole + `/` della slide va presa come notazione schematica.
 >> Differenza chiave: `rgba(...)` rende trasparente solo quel colore (es. solo lo sfondo), mentre `opacity: 0.5` rende semitrasparente l'intero elemento, testo e figli compresi.
 
----
-## Slide 4 – Colore - Valori
-
 - HSL (Hue, Saturation e Lightness) rappresenta uno spazio colorimetrico diverso. Specificato come
   `hsl(h, s, l)`
   I tre valori indicano:
@@ -94,9 +91,7 @@ Responsiveness
 	- **s**: saturazione del colore (in percentuale)
 	- **l**: luminosità (in percentuale)
 
-![[TW07-s004-1.png]]
-
-![[TW07-s004-2.png]]
+![[TW07-s004-1.png|216]]![[TW07-s004-2.png|335]]
 
 ```css
 hsl(0, 100%, 30%);
@@ -111,7 +106,7 @@ hsl(0, 100%, 90%);
 >> HSL è comodo per creare varianti più chiare/scure dello stesso colore cambiando solo $l$, come nell'esempio (rosso scuro → rosa chiaro). Esempio HSLA: `hsla(0, 100%, 50%, 0.5)` = rosso al 50% di opacità.
 
 ---
-## Slide 5 – Sfondo
+## Slide 5 -> 6 – Sfondo
 
 - È possibile gestire lo sfondo di un elemento usando le seguenti proprietà:
 	- `background-color`: permette di specificare il colore di sfondo.
@@ -127,9 +122,6 @@ hsl(0, 100%, 90%);
 >> }
 >> ```
 >> equivale a `background-color: #eee; background-image: url(...); background-repeat: no-repeat; background-position: right top;`. Le sotto-proprietà non indicate tornano al valore iniziale.
-
----
-## Slide 6 – Sfondo
 
 ***Sfondi con immagini multiple***: è possibile dichiarare più immagini come sfondo.
 Il risultato è la sovrapposizione di tutte le immagini
@@ -308,7 +300,7 @@ font-style: italic;
 >> Nella forma abbreviata `font`, dimensione e famiglia sono obbligatorie e vanno in fondo, es. `font: italic bold 16px/1.5 Verdana, sans-serif;` (`/1.5` è la `line-height`).
 
 ---
-## Slide 12 – Formattazione del testo
+## Slide 12 -> 13 – Formattazione del testo
 
 - `color`: colore del testo espresso con: nome del colore (es: red) o valori esadecimali (es: #rrggbb) o rgb (es: rgb(0,255,2).
 - `letter-spacing`: *normal* o valore in pixel.
@@ -326,9 +318,6 @@ font-style: italic;
 >> p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 >> ```
 >> `line-height` può anche essere un numero senza unità (es. `1.5`), moltiplicato per il font-size: è la forma consigliata perché si eredita bene.
-
----
-## Slide 13 – Formattazione del testo (2)
 
 - `white-space`: specifica come sono gestiti spazi bianchi e andate a capo. Possibili valori:
 	- *normal*: sequenze di spazi bianchi collassati in uno solo, il testo va a capo quando necessario.
@@ -535,15 +524,12 @@ animation: nome durata;
 >> Nella forma abbreviata il primo valore temporale è sempre la durata, il secondo il ritardo. `forwards` fa sì che, a fine animazione, l'elemento mantenga lo stile dell'ultimo fotogramma invece di tornare allo stato iniziale.
 
 ---
-## Slide 21 – Ancora sui layout
+## Slide 21 -> 22 – Ancora sui layout
 
 - Ritorniamo sull'esempio di layout della lezione precedente.
 - Perché secondo voi non è sufficiente impostare un layout fluido?
 
 >> **Vedi anche** → [[06 - CSS intro, box model e flexbox#Slide 46 – Layout multi colonna liquido - Display|nota 06, slide 46–50: il layout multi colonna liquido della lezione precedente]]
-
----
-## Slide 22 – Ancora sui layout
 
 - Ritorniamo sull'esempio di layout della lezione precedente.
 - Perché secondo voi non è sufficiente impostare un layout fluido?
@@ -633,16 +619,13 @@ animation: nome durata;
 >> In pratica, più che dal dispositivo, il breakpoint "giusto" dipende dai contenuti: si mette dove il layout comincia a rompersi.
 
 ---
-## Slide 27 – Media Query – Esempi
+## Slide 27 -> 28 – Media Query – Esempi
 
 - `@media print{ }`
 - `@media screen and (min-width: 480px) { }`
 - `@media screen and (max-width: 699px) and (min-width: 520px) {}`
 - `@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) { }`
 - `@media only screen and (orientation: landscape) { }`
-
----
-## Slide 28 – Media Query – Esempi
 
 - `@media print{ }`
   Le regole vengono applicate se il dispositivo di riferimento è la stampante.

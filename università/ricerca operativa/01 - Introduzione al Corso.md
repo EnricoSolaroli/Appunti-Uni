@@ -8,17 +8,16 @@
 	- [[#Slide 2 – Presentazione del Corso|Sommario]]
 	- [[#Slide 3 – Il Corso di Ricerca Operativa|Il corso e la mutuazione con Algoritmi di Ottimizzazione]]
 2. **Programma** (slide 4–5)
-	- [[#Slide 4 – Cosa faremo|Modelli matematici e problemi di ottimizzazione]]
-	- [[#Slide 5 – Cosa faremo|Programmazione lineare continua/intera e teoria dei grafi]]
+	- [[#Slide 4 -> 5 – Cosa faremo|Modelli matematici e problemi di ottimizzazione]]
+		- Programmazione lineare continua/intera e teoria dei grafi
 3. **Materiale e testi** (slide 6–7)
 	- [[#Slide 6 – Materiale Didattico|Materiale didattico e versioning delle slide]]
 	- [[#Slide 7 – Testi di riferimento|Testi di riferimento]]
 4. **Organizzazione** (slide 8–11)
 	- [[#Slide 8 – Orario delle lezioni|Orario delle lezioni]]
-	- [[#Slide 9 – Modalità di esame|Modalità d'esame ed elaborato]]
-	- [[#Slide 10 – Modalità di esame|Date degli appelli]]
+	- [[#Slide 9 -> 10 – Modalità di esame|Modalità d'esame ed elaborato]]
+		- Date degli appelli
 	- [[#Slide 11 – Ricevimento|Ricevimento]]
-
 
 ---
 ## Slide 2 – Presentazione del Corso
@@ -42,7 +41,7 @@
 - Suggerimenti, richieste, critiche, etc. sono e saranno benvenuti.
 
 ---
-## Slide 4 – Cosa faremo
+## Slide 4 -> 5 – Cosa faremo
 
 Al termine del corso, lo studente conosce i principali modelli, metodi e algoritmi per la programmazione lineare (continua e intera) e la teoria dei grafi.
 
@@ -53,9 +52,6 @@ Al termine del corso, lo studente conosce i principali modelli, metodi e algorit
 	- Esempi di modelli matematici per problemi del mondo reale.
 	- Modelli lineari e non-lineari.
 	- Linguaggi di modellazione, solver, etc.
-
----
-## Slide 5 – Cosa faremo
 
 2. **Programmazione Lineare Continua e Intera.**
 	- Modelli di programmazione lineare con variabili continue, risoluzione geometrica, teoria di base, dualità e algoritmo del simplesso.
@@ -94,7 +90,7 @@ Al termine del corso, lo studente conosce i principali modelli, metodi e algorit
 	- Mercoledì dalle 13 alle 15 (Aula Magna 3.4).
 
 ---
-## Slide 9 – Modalità di esame
+## Slide 9 -> 10 – Modalità di esame
 
 - La **prova finale** consiste in uno **scritto** contenente sia esercizi che domande teoriche e un **orale opzionale**, in cui lo studente dovrà dimostrare le conoscenze e le abilità apprese durante il corso.
 - Durante lo **scritto** lo studente potrà usare solo penne e pennarelli (anche colorati) e una calcolatrice scientifica non programmabile. **Non sarà consentito l'uso di libri, appunti o altri materiali.**
@@ -103,9 +99,6 @@ Al termine del corso, lo studente conosce i principali modelli, metodi e algorit
 - Il **punteggio massimo dell'elaborato** dipenderà dalla sua complessità e sarà definito quando l'elaborato sarà concordato con il docente.
 
 >> Attenzione: l'orale fa **media** con lo scritto, quindi può anche abbassare il voto. Conviene richiederlo solo se si è sicuri di fare meglio dello scritto.
-
----
-## Slide 10 – Modalità di esame
 
 - **Date appelli**:
 	- Da definire

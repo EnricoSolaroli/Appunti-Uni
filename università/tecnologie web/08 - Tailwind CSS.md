@@ -678,7 +678,7 @@ In verde le classi usate nell'esempio (`relative`, `absolute`, `top-0`, `right-0
 >> Lo schema dei nomi è sempre `{proprietà}{lato}-{valore}`: `t`/`r`/`b`/`l` = top/right/bottom/left, `x` = orizzontale (sinistra+destra), `y` = verticale (sopra+sotto). Quindi esistono anche `mx-4`, `my-4`, `pr-4`, `pl-4`, ecc.
 >> Esempi con la scala: `p-2` = 0.5rem = 8px, `m-6` = 1.5rem = 24px, `p-8` = 2rem = 32px. `mx-auto` → `margin-left: auto; margin-right: auto` (centra orizzontalmente un blocco con larghezza definita). Sono ammessi anche margini negativi: `-mt-4` → `margin-top: -1rem`.
 
->> **Vedi anche** → [[06 - CSS intro, box model e flexbox#Slide 28 – Box Model|nota 06, slide 28: il box model]]
+>> **Vedi anche** → [[06 - CSS intro, box model e flexbox#Slide 28 -> 29 – Box Model|nota 06, slide 28: il box model]]
 
 ---
 ## Slide 33 – Larghezza e altezza

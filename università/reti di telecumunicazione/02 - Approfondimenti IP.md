@@ -9,29 +9,29 @@
 1. **Riassemblamento IPv4 secondo RFC 791** (slide 2–8)
 	- [[#Slide 2 – Approfondiamo gli algoritmi utilizzati per riassemblare i pacchetti IPv4 al ricevitore|Il problema dei frammenti fuori ordine e duplicati]]
 	- [[#Slide 4 – Algoritmi per il riassemblamento IPv4|RFC 791 e RFC 815, datagramma minimo di 68 byte]]
-	- [[#Slide 5 – Riassemblamento (RFC 791)|Procedura RFC 791: BUFID, RCVBT, TDL e timer]]
+	- [[#Slide 5 -> 7 – Riassemblamento (RFC 791)|Procedura RFC 791: BUFID, RCVBT, TDL e timer]]
 	- [[#Slide 8 – In sintesi|Limiti dell'algoritmo di RFC 791]]
 2. **Riassemblamento con la lista dei buchi (RFC 815)** (slide 9–12)
 	- [[#Slide 9 – RFC 815|Il concetto di buco: hole.first e hole.last]]
 	- [[#Slide 10 – Algoritmo|Aggiornamento della lista dei buchi]]
-	- [[#Slide 11 – Graficamente|Casi grafici di intersezione frammento/buco]]
+	- [[#Slide 11 -> 12 – Graficamente|Casi grafici di intersezione frammento/buco]]
 3. **Indirizzamento: progetto di una rete aziendale** (slide 13–16)
 	- [[#Slide 13 – Approfondiamo la conoscenza delle politiche di indirizzamento e della costruzione della tabella di instradamento|Politiche di indirizzamento e subnetting]]
 	- [[#Slide 15 – Esempio|Esempio: tre siti su una /24 di classe C]]
 	- [[#Slide 16 – Architettura|Architettura con LAN e MAN]]
 4. **Subnetting con netmask uniforme** (slide 17–20)
 	- [[#Slide 17 – La scelta della netmask|Tabella netmask, numero di host e di sottoreti]]
-	- [[#Slide 18 – Soluzione 1|Soluzione 1: quattro /26, indirizzi e broadcast]]
-	- [[#Slide 20 – Soluzione 1|Indirizzi di router e host]]
+	- [[#Slide 18 -> 20 – Soluzione 1|Soluzione 1: quattro /26, indirizzi e broadcast]]
+		- Indirizzi di router e host
 5. **Netmask a lunghezza variabile (VLSM)** (slide 21–26)
 	- [[#Slide 21 – Scelta di netmask diverse|Scelta di netmask diverse]]
 	- [[#Slide 22 – Soluzione 2|Soluzione 2: /26, /27 e /29]]
 	- [[#Slide 23 – Soluzione 1|Rete dei router ridotta a una /29]]
-	- [[#Slide 25 – Soluzione 3|Soluzione 3: link punto-punto con /30]]
+	- [[#Slide 25 -> 26 – Soluzione 3|Soluzione 3: link punto-punto con /30]]
 6. **Tabelle di instradamento nei router lontani** (slide 27–32)
 	- [[#Slide 27 – Approfondiamo l'analisi dell'uso della tabella di instradamento|Uso della tabella di instradamento]]
-	- [[#Slide 29 – Esempio|Esempio: quattro /24 dietro R1, uscita verso R2]]
-	- [[#Slide 31 – Esempio|Tabella di R2: tutti i prefissi esplicitati]]
+	- [[#Slide 29 -> 32 – Esempio|Esempio: quattro /24 dietro R1, uscita verso R2]]
+		- Tabella di R2: tutti i prefissi esplicitati
 7. **Inoltro con longest prefix match** (slide 33–35)
 	- [[#Slide 33 – (senza titolo: inoltro in R2 verso 192.168.10.2)|R2: consegna diretta sulla /30]]
 	- [[#Slide 34 – (senza titolo: inoltro in R2 verso 137.204.65.210)|R2: consegna indiretta tramite R1]]
@@ -40,12 +40,11 @@
 	- [[#Slide 36 – Analizziamo gli indirizzi delle 4 reti|Bit comuni delle quattro reti: prefisso /22]]
 	- [[#Slide 37 – Un altro esempio|Aggregazione a passi: due /23 in una /22]]
 	- [[#Slide 38 – Semplificazione delle tabelle|Semplificazione della tabella di R2]]
-	- [[#Slide 40 – Aggregazione|Inoltro con la rotta aggregata]]
+	- [[#Slide 39 -> 40 – Aggregazione|Inoltro con la rotta aggregata]]
 9. **Ordinamento delle rotte ed eccezioni** (slide 41–43)
 	- [[#Slide 41 – Perché ordinare i route?|Ordinamento per netmask decrescente]]
-	- [[#Slide 42 – Eccezioni|Eccezione /24 dentro la /22]]
-	- [[#Slide 43 – Eccezioni|Eccezione /30 dentro la /24]]
-
+	- [[#Slide 42 -> 43 – Eccezioni|Eccezione /24 dentro la /22]]
+		- Eccezione /30 dentro la /24
 
 ---
 ## Slide 1 – Approfondimenti
@@ -77,7 +76,7 @@
 >> Conseguenza: in tutti i frammenti tranne l'ultimo la lunghezza del campo dati deve essere un multiplo di 8 byte.
 
 ---
-## Slide 5 – Riassemblamento (RFC 791)
+## Slide 5 -> 7 – Riassemblamento (RFC 791)
 *(slide marcata "A")*
 
 ![[RT02-s005-1.png|700]]
@@ -132,8 +131,6 @@ Garantiscono che si considerino solamente frammenti dello stesso datagramma orig
 
 >> Il campo Identification da solo non basta: due sorgenti diverse possono usare lo stesso valore, e la stessa sorgente può usarlo verso destinazioni o protocolli diversi. Per questo la chiave del buffer (BUFID) è la quadrupla sorgente, destinazione, protocollo, identification.
 
----
-## Slide 6 – Riassemblamento (RFC 791)
 *(slide marcata "A")*
 
 ![[RT02-s006-1.png|700]]
@@ -191,8 +188,6 @@ Allora tutto il datagramma è stato ricostruito e può essere consegnato
 
 >> In pratica è il caso di un datagramma **non frammentato**: il "frammento" è l'intero datagramma. Eventuali risorse di riassemblamento già allocate con lo stesso BUFID (righe 3-4) vengono scartate e il datagramma viene passato subito al livello superiore.
 
----
-## Slide 7 – Riassemblamento (RFC 791)
 *(slide marcata "A")*
 
 ![[RT02-s007-1.png|700]]
@@ -294,15 +289,13 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 >> Duplicati e sovrapposizioni non creano problemi: un frammento già ricevuto non interseca alcun buco (casi "si passa al successivo") e quindi non modifica la lista.
 
 ---
-## Slide 11 – Graficamente
+## Slide 11 -> 12 – Graficamente
 *(slide marcata "A")*
 
 ![[RT02-s011-1.png|600]]
 
 >> Le righe mostrano il buco (tra `hole.first` e `hole.last`) e alcuni frammenti in arrivo (in verde). Nei primi due casi il frammento sta interamente prima del buco ($\text{fragment.last} < \text{hole.first}$) o interamente dopo ($\text{fragment.first} > \text{hole.last}$): non c'è intersezione e si passa al buco successivo. Nell'ultimo caso il frammento si sovrappone all'inizio del buco: il buco va sostituito (vedi slide successiva).
 
----
-## Slide 12 – Graficamente
 *(slide marcata "A")*
 
 ![[RT02-s012-1.png|600]]
@@ -359,7 +352,7 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 >> La riga evidenziata è quella scelta: servono 4 sottoreti (S1, S2, S3, M) e almeno 50 host nelle più grandi, quindi una maschera /26 (255.255.255.192) basta.
 
 ---
-## Slide 18 – Soluzione 1
+## Slide 18 -> 20 – Soluzione 1
 
 - Subnets:
 	- 196.200.96.0/26 (S1)
@@ -376,15 +369,9 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 >> Il broadcast di ogni sottorete si ottiene mettendo a 1 tutti i 6 bit di host: indirizzo di rete $+ 63$ (es. $.64 + 63 = .127$).
 >> Questa soluzione, con la stessa maschera per tutte le sottoreti, è semplice ma spreca indirizzi: S3 ha 20 host su 62 disponibili e M ne usa solo 3 (i router) su 62, e non resta spazio per altre sottoreti.
 
----
-## Slide 19 – Soluzione 1
-
 ![[RT02-s019-1.png|600]]
 
 >> Nella figura: S1 = 196.200.96.0/26, S2 = 196.200.96.64/26, M = 196.200.96.192/26, S3 = 196.200.96.128/26.
-
----
-## Slide 20 – Soluzione 1
 
 - Routers LAN:
 	- 196.200.96.62 (S1)
@@ -469,7 +456,7 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 >> Le righe evidenziate (verde /26, rosa /27, giallo /30) sono le maschere usate nella Soluzione 3 (colori corrispondenti nelle slide successive).
 
 ---
-## Slide 25 – Soluzione 3
+## Slide 25 -> 26 – Soluzione 3
 
 ![[RT02-s025-1.png|500]]
 
@@ -489,9 +476,6 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 >> È un esempio di VLSM (Variable Length Subnet Mask): la /24 viene divisa in blocchi di dimensione diversa. Il conteggio torna: $2\cdot 64 + 3\cdot 32 + 16 + 4\cdot 4 = 256$ indirizzi.
 >> Regola pratica: si assegnano prima i blocchi più grandi, così ogni blocco inizia a un indirizzo multiplo della propria dimensione (allineamento), condizione necessaria perché rete/maschera siano validi.
 >> Le /30 (2 soli host) sono ideali per i collegamenti punto-punto tra due router.
-
----
-## Slide 26 – Soluzione 3
 
 ![[RT02-s026-1.png|500]]
 
@@ -518,7 +502,7 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 - ***Cosa accade alle tabelle di instradamento nei router lontani dalla network considerata?***
 
 ---
-## Slide 29 – Esempio
+## Slide 29 -> 32 – Esempio
 
 - 4 network sono interconnesse da un singolo router denominato R1
 - Il router R1 fornisce il collegamento ad Internet tramite un secondo router R2
@@ -527,9 +511,6 @@ F0\*8 perché si ragiona a blocchi di 8 byte (64 bit)
 	- 137.204.65.0/24
 	- 137.204.66.0/24
 	- 137.204.67.0/24
-
----
-## Slide 30 – Esempio
 
 ![[RT02-s030-1.png|500]]
 
@@ -554,9 +535,6 @@ Tabella R1
 
 >> "On link" significa che la rete è direttamente connessa a un'interfaccia del router: per quelle destinazioni si fa consegna diretta (ARP sull'indirizzo di destinazione). La default route 0.0.0.0/0 manda tutto il resto verso R2 (192.168.10.1).
 
----
-## Slide 31 – Esempio
-
 ![[RT02-s031-1.png|500]]
 
 Tabella R2
@@ -571,9 +549,6 @@ Tabella R2
 | 192.168.10.0/30 | On link | ppp0 |
 
 >> Per R2 le quattro network non sono direttamente connesse: sono raggiungibili solo tramite R1 (192.168.10.2), quindi compaiono con gateway R1 e interfaccia ppp0. Il gateway della default route ("…") è il router del provider verso Internet, raggiungibile su ppp1.
-
----
-## Slide 32 – Esempio
 
 ![[RT02-s032-1.png|500]]
 
@@ -729,7 +704,7 @@ Pacchetto IP: **137.204.65.210**
 >> 255.255.252.0 corrisponde a /22 ($8+8+6 = 22$ bit a 1). I due bit meno significativi del terzo byte (00, 01, 10, 11) sono proprio quelli che distinguono le quattro /24: mascherandoli, tutte e quattro danno 137.204.64.0.
 >> Perché l'aggregazione sia esatta servono $2^k$ reti contigue e allineate: qui $4 = 2^2$ reti e 64 è multiplo di 4. Il blocco /22 copre esattamente 137.204.64.0 – 137.204.67.255.
 
->> **Torna alla nota principale** → [[01 - Instradamento IPv4 e IPv6#Slide 105 – Supernetting|slide 105–106 – Supernetting]]
+>> **Torna alla nota principale** → [[01 - Instradamento IPv4 e IPv6#Slide 105 -> 106 – Supernetting|slide 105–106 – Supernetting]]
 
 ---
 ## Slide 37 – Un altro esempio
@@ -758,7 +733,7 @@ Pacchetto IP: **137.204.65.210**
 	- Il gateway verso quelle destinazioni è R1
 
 ---
-## Slide 39 – Aggregazione
+## Slide 39 -> 40 – Aggregazione
 
 ![[RT02-s039-1.png|500]]
 
@@ -780,9 +755,6 @@ Vengono aggregate in un unico prefisso 137.204.64.0/22
 
 >> Nell'elenco della slide la quarta rete è ripetuta per refuso: si tratta di 137.204.67.0/24.
 >> Le 4 righe /24 di R2 (tutte con lo stesso gateway 192.168.10.2 e la stessa interfaccia) diventano un'unica riga /22: la tabella di R1 invece non cambia, perché R1 deve comunque sapere su quale interfaccia si trova ciascuna /24. Questo meccanismo (supernetting / route aggregation, alla base del CIDR) è ciò che tiene sotto controllo la dimensione delle tabelle nei router del backbone.
-
----
-## Slide 40 – Aggregazione
 
 ![[RT02-s040-1.png|500]]
 
@@ -819,7 +791,7 @@ Pacchetto IP: **137.204.65.210**
 >> **Torna alla nota principale** → [[01 - Instradamento IPv4 e IPv6#Slide 64 – Lettura della tabella|slide 64 – Lettura della tabella (ordinamento delle righe)]]
 
 ---
-## Slide 42 – Eccezioni
+## Slide 42 -> 43 – Eccezioni
 
 ![[RT02-s042-1.png|500]]
 
@@ -848,9 +820,6 @@ La rotta per 137.204.66.0/24 viene cancellata e non è necessario modificarla pe
 
 >> In R1: la riga di 137.204.66.0/24 sparisce e per quella rete non serve aggiungere nulla, perché i pacchetti verso 137.204.66.x seguono la default route verso R2, che è proprio il router giusto.
 >> In R2: la /22 verso R1 resta (continua a coprire .64, .65 e .67), e si aggiunge la /24 "On link" come eccezione. Per 137.204.66.x entrambe le righe fanno match, ma la /24 è più specifica e vince: i pacchetti vengono consegnati direttamente su en0 invece che rimandati a R1.
-
----
-## Slide 43 – Eccezioni
 
 ![[RT02-s043-1.png|500]]
 

@@ -5,16 +5,16 @@
 ## Indice
 
 1. **Modelli, bound, euristici e algoritmi esatti** (slide 4–9)
-	- [[#Slide 4 – Algoritmi di Ottimizzazione: Modelli|Modello matematico e tipi di programmazione lineare]]
-	- [[#Slide 6 – Algoritmi di Ottimizzazione: Lower e Upper Bounds|Lower e upper bound (problemi di minimo e di massimo)]]
+	- [[#Slide 4 -> 5 – Algoritmi di Ottimizzazione: Modelli|Modello matematico e tipi di programmazione lineare]]
+	- [[#Slide 6 -> 8 – Algoritmi di Ottimizzazione: Lower e Upper Bounds|Lower e upper bound (problemi di minimo e di massimo)]]
 	- [[#Slide 9 – Algoritmi di Ottimizzazione: Esatti|Algoritmi esatti]]
 2. **Il problema del knapsack (0–1)** (slide 10–21)
 	- [[#Slide 10 – Esempio: il Knapsack Problem|Definizione e modello KP]]
-	- [[#Slide 11 – Il Problema del Knapsack: Upper Bound|Upper bound: rilassamento continuo e algoritmo di Dantzig]]
-	- [[#Slide 13 – Il Problema del Knapsack: Euristico|Euristico greedy]]
+	- [[#Slide 11 -> 12 – Il Problema del Knapsack: Upper Bound|Upper bound: rilassamento continuo e algoritmo di Dantzig]]
+	- [[#Slide 13 -> 14 – Il Problema del Knapsack: Euristico|Euristico greedy]]
 	- [[#Slide 15-16 – Il Problema del Knapsack: Esatti|Metodi esatti: stati del Branch & Bound]]
-	- [[#Slide 17 – Il Problema del Knapsack: Branch and Bound|Algoritmo Branch & Bound]]
-	- [[#Slide 19 – Il Problema del Knapsack: Programmazione Dinamica|Programmazione dinamica (complessità pseudopolinomiale)]]
+	- [[#Slide 17 -> 18 – Il Problema del Knapsack: Branch and Bound|Algoritmo Branch & Bound]]
+	- [[#Slide 19 -> 21 – Il Problema del Knapsack: Programmazione Dinamica|Programmazione dinamica (complessità pseudopolinomiale)]]
 3. **Formulazione della programmazione lineare** (slide 22–32)
 	- [[#Slide 22 – Programmazione Lineare (LP)|Formulazione LP e forma matriciale]]
 	- [[#Slide 24-25 – Assunzioni implicite per LP|Assunzioni: proporzionalità, additività, determinismo, continuità]]
@@ -24,66 +24,65 @@
 	- [[#Slide 31 – Esempio: Problema senza soluzione|Problema inammissibile]]
 	- [[#Slide 32 – Programmazione Lineare Intera (MIP)|Programmazione lineare intera e arrotondamento]]
 4. **Esempi di modelli LP e MIP** (slide 33–53)
-	- [[#Slide 33 – Il problema della dieta|Problema della dieta]]
-	- [[#Slide 37 – Il problema della selezione dei fondi di investimento|Selezione dei fondi di investimento]]
-	- [[#Slide 41 – Il problema dei trasporti|Problema dei trasporti e totale unimodularità]]
-	- [[#Slide 44 – Il problema dei trasporti con costi fissi|Trasporti con costi fissi (vincoli big-M)]]
-	- [[#Slide 49 – Problema del flusso a costo minimo|Flusso a costo minimo e network design]]
-	- [[#Slide 51 – Mix ottimale di produzione|Mix ottimale di produzione]]
+	- [[#Slide 33 -> 36 – Il problema della dieta|Problema della dieta]]
+	- [[#Slide 37 -> 40 – Il problema della selezione dei fondi di investimento|Selezione dei fondi di investimento]]
+	- [[#Slide 41 -> 43 – Il problema dei trasporti|Problema dei trasporti e totale unimodularità]]
+	- [[#Slide 44 -> 48 – Il problema dei trasporti con costi fissi|Trasporti con costi fissi (vincoli big-M)]]
+	- [[#Slide 49 -> 50 – Problema del flusso a costo minimo|Flusso a costo minimo e network design]]
+	- [[#Slide 51 -> 53 – Mix ottimale di produzione|Mix ottimale di produzione]]
 5. **Manipolazioni, forma canonica e forma standard** (slide 54–57)
 	- [[#Slide 54-55-56 – Manipolazioni di un problema|Min/max e inversione delle disequazioni]]
-	- [[#Slide 54-55-56 – Manipolazioni di un problema|Equazioni, disequazioni e variabili di scarto]]
-	- [[#Slide 54-55-56 – Manipolazioni di un problema|Variabili libere]]
+		- Equazioni, disequazioni e variabili di scarto
+		- Variabili libere
 	- [[#Slide 57 – Forma canonica e forma standard|Forma canonica e forma standard]]
 6. **Soluzioni base e poliedri convessi** (slide 58–67)
 	- [[#Slide 58-59-60 – Definizione di Soluzione Base Ammissibile|Ipotesi di rango e matrice di base]]
-	- [[#Slide 58-59-60 – Definizione di Soluzione Base Ammissibile|Soluzione base ammissibile]]
-	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Insieme poliedrico convesso e punti estremi]]
-	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Punti estremi = soluzioni base ammissibili]]
-	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Direzioni e direzioni estreme]]
-	- [[#Slide 61-62-63-64-65 – Insieme Poliedrico Convesso|Teorema della rappresentazione]]
-	- [[#Slide 66-67 – Insieme Poliedrico Convesso (6-7)|Ottimo finito e teorema fondamentale della PL]]
+		- Soluzione base ammissibile
+	- [[#Slide 61 -> 67 – Insieme Poliedrico Convesso|Insieme poliedrico convesso e punti estremi]]
+		- Punti estremi = soluzioni base ammissibili
+		- Direzioni e direzioni estreme
+		- Teorema della rappresentazione
+		- Ottimo finito e teorema fondamentale della PL
 7. **Metodo del simplesso primale** (slide 68–75)
 	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Funzione obiettivo in termini delle variabili non base]]
-	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Costi ridotti e condizione di ottimalità]]
-	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Variazione delle variabili in base]]
-	- [[#Slide 68-69-70-71-72-73 – Migliorare una Soluzione Base|Rapporto minimo e illimitatezza]]
+		- Costi ridotti e condizione di ottimalità
+		- Variazione delle variabili in base
+		- Rapporto minimo e illimitatezza
 	- [[#Slide 74-75 – Algoritmo del Simplesso Primale !!!|Algoritmo del simplesso primale]]
 8. **Dualità** (slide 76–98)
 	- [[#Slide 76 – Definizione del Problema Duale|Definizione del problema duale]]
 	- [[#Slide 77-78-79 – Come si ottiene il duale?|Derivazione del duale dalle condizioni di ottimalità]]
-	- [[#Slide 80-81 – Dualità debole|Dualità debole]]
-	- [[#Slide 82 – Dualità debole|Corollario: certificato di ottimalità]]
+	- [[#Slide 80 -> 82 – Dualità debole|Dualità debole]]
+		- Corollario: certificato di ottimalità
 	- [[#Slide 83-84-85 – Dualità Forte|Dualità forte]]
 	- [[#Slide 86-87 – Relazione tra Primale e Duale|Relazioni tra primale e duale]]
 	- [[#Slide 88-89-90 – Forme Miste del Primale|Forme miste del primale]]
-	- [[#Slide 88-89-90 – Forme Miste del Primale|Tabella di corrispondenza primale-duale ed esempio]]
+		- Tabella di corrispondenza primale-duale ed esempio
 	- [[#Slide 92-93-94-95 – Condizioni di Complementarietà|Condizioni di complementarietà]]
-	- [[#Slide 96 – Interpretazione economica della dualità|Interpretazione economica (shadow price, dieta)]]
+	- [[#Slide 96 -> 98 – Interpretazione economica della dualità|Interpretazione economica (shadow price, dieta)]]
 9. **Esempi di simplesso e dualità** (slide 99–119)
 	- [[#Slide 99-100-101 – Esempio n. 1|Esempio 1: verifica di ottimalità di una base]]
 	- [[#Slide 102 -> 106 – Esempio n. 2|Esempio 2: soluzione illimitata]]
 	- [[#Slide 107 -> 116 – Esempio n. 3|Esempio 3: iterazioni del simplesso]]
 	- [[#Slide 117-118-119 – Esempio n. 4|Esempio 4: verifica con la complementarietà]]
 10. **Simplesso in formato tableau e base iniziale** (slide 120–151)
-	- [[#Slide 120 – Il Metodo del Simplesso Formato Tableau|Costruzione del tableau]]
+	- [[#Slide 120 -> 122 – Il Metodo del Simplesso Formato Tableau|Costruzione del tableau]]
 	- [[#Slide 123 – L'operazione di Pivoting|Operazione di pivoting]]
 	- [[#Slide 124 -> 129 – Simplesso Primale in Formato Tableau by Examples|Esempio in formato tableau]]
 	- [[#Slide 130 – Come determinare una base iniziale: caso facile|Base iniziale: caso facile]]
 	- [[#Slide 131-132 – Come determinare una base iniziale: ~~Metodo Big-M~~|Metodo Big-M]]
 	- [[#Slide 133->135 – Come determinare una base iniziale: ~~Metodo 2-Fasi~~|Metodo delle due fasi]]
 	- [[#Slide 136->140 – Come determinare una base iniziale: Esempio 1|Esempi del metodo delle due fasi]]
-	- [[#Slide 149 – Metodo del Simplesso: Degenerazione e Convergenza|Degenerazione, cicli e regola di Bland]]
+	- [[#Slide 149 -> 151 – Metodo del Simplesso: Degenerazione e Convergenza|Degenerazione, cicli e regola di Bland]]
 11. **Metodo del simplesso duale** (slide 152–165)
-	- [[#Slide 152 – Il Metodo del Simplesso Duale|Idea: ammissibilità duale e complementarietà]]
-	- [[#Slide 155 – Il Metodo del Simplesso Duale (4)|Rapporto minimo duale]]
-	- [[#Slide 156 – Algoritmo del Simplesso Duale|Algoritmo del simplesso duale]]
-	- [[#Slide 158 – Algoritmo del Simplesso Duale (3)|Base non duale ammissibile: vincolo artificiale]]
-	- [[#Slide 159 – Simplesso Duale: Esempio 1|Esempio 1]]
-	- [[#Slide 162 – Simplesso Duale: Esempio 2|Esempio 2]]
+	- [[#Slide 152 -> 155 – Il Metodo del Simplesso Duale|Idea: ammissibilità duale e complementarietà]]
+		- Rapporto minimo duale
+	- [[#Slide 156 -> 158 – Algoritmo del Simplesso Duale|Algoritmo del simplesso duale]]
+		- Base non duale ammissibile: vincolo artificiale
+	- [[#Slide 159->161 – Simplesso Duale: Esempio 1|Esempio 1]]
+	- [[#Slide 162->165 – Simplesso Duale: Esempio 2|Esempio 2]]
 12. **Riferimenti bibliografici** (slide 166)
 	- [[#Slide 166 – Riferimenti bibliografici|Testi di riferimento e AMPL]]
-
 
 ---
 ## Slide 1 – Introduzione alla Programmazione Lineare
@@ -122,7 +121,7 @@
 6. Riferimenti bibliografici
 
 ---
-## Slide 4 – Algoritmi di Ottimizzazione: Modelli
+## Slide 4 -> 5 – Algoritmi di Ottimizzazione: Modelli
 
 - Il primo passo per definire un algoritmo di ottimizzazione per un problema consiste nel definire il **modello matematico**.
 - Un modello matematico si può rappresentare come segue:
@@ -142,16 +141,13 @@ $$
 
 >> "s.t." sta per *subject to* ("soggetto a"). Non è restrittivo scrivere il modello come minimo: un problema di massimo si riconduce a uno di minimo perché $\max f(\mathbf{x}) = -\min\,(-f(\mathbf{x}))$ (stessa soluzione ottima, valore cambiato di segno).
 
----
-## Slide 5 – Algoritmi di Ottimizzazione: Modelli (2)
-
 - Se le funzioni $f(\mathbf{x})$, $g_i(\mathbf{x})$ e $h_j(\mathbf{x})$ sono lineari parliamo di **programmazione lineare continua**.
 - Nel caso vi sia il vincolo aggiuntivo che la soluzione $\mathbf{x}$ deve avere componenti intere, parliamo di **programmazione lineare intera**, mentre se solo alcune componenti di $\mathbf{x}$ devono essere intere, parliamo di **programmazione lineare mista intera**.
 
 >> Lineare significa della forma $f(\mathbf{x}) = c_1x_1 + \dots + c_nx_n$: niente prodotti tra variabili ($x_1x_2$), potenze ($x_1^2$) o altre funzioni non lineari. In inglese: LP (*Linear Programming*), ILP/IP (*Integer*), MILP/MIP (*Mixed Integer*).
 
 ---
-## Slide 6 – Algoritmi di Ottimizzazione: Lower e Upper Bounds
+## Slide 6 -> 8 – Algoritmi di Ottimizzazione: Lower e Upper Bounds
 
 - Dato un problema di programmazione lineare $P$ di "minimo", un valido **lower bound** $z_{LB}$ è una stima per difetto del valore della soluzione ottima $z_P$, i.e., $z_{LB} \le z_P$. Le procedure per calcolare i lower bound sono dette **procedure di bounding**.
 - Dato un problema di programmazione lineare $P$ di "minimo", una soluzione ammissibile corrisponde a un valido **upper bound** $z_{UB}$ ed è, quindi, una stima per eccesso del valore della soluzione ottima $z_P$, i.e., $z_P \le z_{UB}$. Le procedure per calcolare soluzioni ammissibili sono dette **euristici**.
@@ -159,13 +155,8 @@ $$
 >> Perché una soluzione ammissibile è un upper bound in un problema di minimo: l'ottimo è il minimo tra *tutti* i valori ammissibili, quindi non può superare il valore di nessuna di esse.
 >> Avere entrambi i bound permette di stimare la qualità di una soluzione euristica anche senza conoscere $z_P$: il gap $z_{UB} - z_{LB}$ (o $\frac{z_{UB}-z_{LB}}{z_{LB}}$ in termini relativi) limita dall'alto l'errore commesso. Se $z_{LB} = z_{UB}$ la soluzione euristica è ottima.
 
----
-## Slide 7 – Algoritmi di Ottimizzazione: Lower e Upper Bounds
-
 ![[RO03-s007-1.png|400]]
 - tutti i metodi esatti cercano di chiudere il gap
----
-## Slide 8 – Algoritmi di Ottimizzazione: Lower e Upper Bounds
 
 ![[RO03-s008-1.png|420]]
  
@@ -194,7 +185,7 @@ $$
 >> Knapsack = "zaino". La variabile binaria $x_i$ vale $1$ se l'oggetto $i$ viene inserito nello zaino e $0$ altrimenti; il vincolo impone che il peso totale degli oggetti scelti non superi la capacità $W$.
 
 ---
-## Slide 11 – Il Problema del Knapsack: Upper Bound
+## Slide 11 -> 12 – Il Problema del Knapsack: Upper Bound
 
 - Un valido upper bound per il problema del knapsack può essere calcolato risolvendo il **rilassamento continuo** (i.e., LP-relaxation) della formulazione matematica $KP$:
 
@@ -209,9 +200,6 @@ $$
 - Il problema $LKP$ corrisponde a un problema di programmazione lineare continua, che in generale può essere risolto con il **Metodo del Simplesso** o **A Punti Interni**. Ma in questo caso il problema è molto più facile e ha complessità $O(n \log n)$.
 
 >> Perché è un upper bound: sostituire $x_i \in \{0,1\}$ con $0 \le x_i \le 1$ allarga la regione ammissibile (ogni soluzione di $KP$ è ammissibile anche per $LKP$). Massimizzando su un insieme più grande non si può ottenere di meno, quindi $z_{KP} \le z_{LKP}$.
-
----
-## Slide 12 – Il Problema del Knapsack: Upper Bound
 
 - Un valido upper bound per il problema del knapsack può essere calcolato con il seguente algoritmo:
 
@@ -233,7 +221,7 @@ $$
 >> Se i profitti $p_i$ sono interi anche $z_{KP}$ è intero, quindi si può usare l'upper bound più stretto $\lfloor z_{LKP} \rfloor$.
 
 ---
-## Slide 13 – Il Problema del Knapsack: Euristico
+## Slide 13 -> 14 – Il Problema del Knapsack: Euristico
 
 - Una soluzione ammissibile (valido lower bound) per il problema del knapsack può essere calcolato con il seguente algoritmo "greedy" derivato dall'upper bound:
 
@@ -258,9 +246,6 @@ $$
 >>
 >> Quindi $9 \le 14 \le 14.6$: il greedy può essere anche molto lontano dall'ottimo.
 
----
-## Slide 14 – Il Problema del Knapsack: Euristico (2)
-
 - L'algoritmo euristico può essere migliorato applicando delle permutazioni all'ordinamento originario. Esiste una permutazione per cui si ottiene la soluzione ottima.
 
 >> Nell'esempio precedente basta l'ordine $(2, 3, 1)$: il greedy inserisce gli oggetti 2 e 3 ($W' = 0$) e ottiene $14$, cioè l'ottimo. In generale basta mettere in testa gli oggetti della soluzione ottima; il problema è che le permutazioni sono $n!$, quindi provarle tutte non è praticabile.
@@ -282,7 +267,7 @@ $$
 >> Nel caso (b) il sottoproblema è risolto all'ottimo (la soluzione del rilassamento è già ammissibile per il problema originale), quindi non serve esplorarlo oltre. Nel knapsack (0–1) il branching tipico usa $k = 2$: si fissa una variabile frazionaria a $0$ in un figlio e a $1$ nell'altro (vedi slide successive).
 
 ---
-## Slide 17 – Il Problema del Knapsack: Branch and Bound
+## Slide 17 -> 18 – Il Problema del Knapsack: Branch and Bound
 
 - Per ogni nodo dell'albero di ricerca si definisce l'insieme $F_0 \subseteq \{1,\dots,n\}$ delle variabili fissate a $0$ (oggetti che non devono essere caricati) e l'insieme $F_1 \subseteq \{1,\dots,n\}$ delle variabili fissate a $1$ (oggetti che devono essere caricati). Ovviamente, $F_0 \cap F_1 = \emptyset$.
 - L'insieme delle variabili "libere" è $L = \{1,\dots,n\} \setminus (F_0 \cup F_1)$.
@@ -297,9 +282,6 @@ $$
 $$
 
 >> Gli oggetti in $F_1$ sono già nello zaino: contribuiscono al profitto con la costante $\sum_{i\in F_1} p_i$ e consumano capacità, che quindi si riduce a $W - \sum_{i\in F_1} w_i$. Gli oggetti in $F_0$ semplicemente spariscono. Il rilassamento resta un $LKP$ sulle sole variabili libere e si risolve ancora con l'algoritmo di slide 12.
-
----
-## Slide 18 – Il Problema del Knapsack: Branch and Bound
 
 - Un algoritmo Branch & Bound per il knapsack (0–1) è il seguente:
 
@@ -324,7 +306,7 @@ $$
 >> Se basta trovare *una* soluzione ottima, alla riga 3 si può potare anche quando $z_{LKP} = z$ (usando $\le$): il nodo non può produrre soluzioni strettamente migliori.
 
 ---
-## Slide 19 – Il Problema del Knapsack: Programmazione Dinamica
+## Slide 19 -> 21 – Il Problema del Knapsack: Programmazione Dinamica
 
 - La Programmazione Dinamica risolve il problema componendo le soluzioni a "***stadi***" partendo dalle soluzioni parziali di sottoproblemi, seguendo un approccio di tipo "*bottom-up*".
 - La programmazione dinamica si applica ai problemi di ottimizzazione che hanno le seguenti caratteristiche:
@@ -334,9 +316,6 @@ $$
 	- (d) Da ogni stato $s_i^k$ dello stadio $k$ può essere calcolato ogni possibile stato dello stadio $k+1$.
 
 >> La proprietà (c) è il *principio di ottimalità* (Bellman): il valore ottimo di uno stato si ottiene combinando i valori ottimi degli stati dello stadio precedente, senza dover ricordare *come* ci si è arrivati. È ciò che permette di riutilizzare le soluzioni dei sottoproblemi invece di ricalcolarle.
-
----
-## Slide 20 – Il Problema del Knapsack: Programmazione Dinamica
 
 - La Programmazione Dinamica per risolve il problema del knapsack (0–1) prevede $n+1$ stadi (il numero di oggetti $+\,1$) e ad ogni stadio un numero di stati pari a $W+1$ (la capacità del knapsack $+\,1$).
 - Ad ogni stadio $j \in \{1,\dots,n\}$ e per ogni stato $w \in \{0,\dots,W\}$ si risolve il seguente sottoproblema:
@@ -350,9 +329,6 @@ $$
 $$
 
 >> $z_j(w)$ è il miglior profitto ottenibile usando solo i primi $j$ oggetti e uno zaino di capacità $w$. Lo stadio $0$ (nessun oggetto) spiega il "$+1$" negli stadi, lo stato $w = 0$ il "$+1$" negli stati. La soluzione del problema originale è $z_{KP} = z_n(W)$. Qui si assume che pesi e capacità siano interi.
-
----
-## Slide 21 – Il Problema del Knapsack: Programmazione Dinamica
 
 - Risolvere per ogni stato $w$ dello stadio $j$ i problemi $KP_j(w)$ equivale a utilizzare la seguente recursione:
 	- (a) Inizializza $KP_0(w) = 0$, per ogni $w \in \{0,\dots,W\}$;
@@ -607,7 +583,7 @@ $$
 
 >con il vincolo di interezza il problema passa da essere polinomiale da non polinomiale
 ---
-## Slide 33 – Il problema della dieta
+## Slide 33 -> 36 – Il problema della dieta
 
 - Determinare la composizione della dieta di costo minimo, che garantisca un contributo minimo giornaliero di energia (2000 Kcal), di proteine (55 g) e di calcio (800 mg) scegliendo tra:
 
@@ -621,9 +597,6 @@ $$
 | Maiale e piselli | 260 g | 260 | 14 | 80 | 1.90 |
 
 - Se la dieta prevedesse un solo alimento avremo:
-
----
-## Slide 34 – Il problema della dieta (2)
 
 | Alimento | N. porzioni | Costo |
 |---|---:|---:|
@@ -648,9 +621,6 @@ $$
 >> La prima tabella indica quante porzioni servirebbero (e a che costo) se ci si nutrisse di **un solo alimento**: per ogni alimento si prende il massimo, sui tre nutrienti, di (fabbisogno / contenuto per porzione). Ad esempio per i fiocchi d'avena il vincolo più stringente è il calcio: $800/2 = 400$ porzioni, costo $400 \cdot 0.30 = 120$; per il latte è l'energia: $2000/160 = 12.5$ porzioni, costo $6.25$.
 >> Diete del genere sono ovviamente irrealistiche: da qui i limiti superiori sulle porzioni giornaliere.
 
----
-## Slide 35 – Il problema della dieta (3)
-
 - Per formulare matematicamente il problema facciamo uso delle seguenti variabili decisionali:
 	- $x_{j}$: N. di porzioni per l'alimento
 	- $x_1$: N. porzioni di Fiocchi avena
@@ -661,8 +631,6 @@ $$
 	- $x_6$: N. porzioni di Maiale e piselli
 	
 >modellando in porzioni si evita anche il problema dell'unità di misura, che in caso contrario sarebbe stato da uniformare
----
-## Slide 36 – Il problema della dieta (4)
 
 - **Formulazione matematica**
 
@@ -687,7 +655,7 @@ $$
 >> Risolvendo  il rilassamento continuo si ottiene $\mathbf{x}^* = (4,\ 1.56,\ 0,\ 8,\ 0,\ 0)$ con $z^* \approx 6.60$: 4 porzioni di avena, 8 di latte e circa 1.56 di pollo, cioè il pollo serve solo a coprire l'energia mancante ($2000 - 400 - 1280 = 320$ kcal, $320/205 \approx 1.56$). Imponendo porzioni intere l'ottimo diventa $(4, 0, 2, 8, 0, 0)$ con $z = 6.80$.
 
 ---
-## Slide 37 – Il problema della selezione dei fondi di investimento
+## Slide 37 -> 40 – Il problema della selezione dei fondi di investimento
 
 - Si vuole determinare la composizione del portafoglio di fondi di investimento che massimizzi il rendimento complessivo.
 - L'investimento complessivo deve ammontare a 100 KEuro e si vuole garantire che il portafoglio copra per almeno la percentuale $\alpha$ il mercato industriale, $\beta$ il mercato bancario e $\gamma$ quello tecnologico.
@@ -704,9 +672,6 @@ $$
 
 >> Il "rating" qui va letto come un indice di rischio: i fondi con rendimento atteso più alto (C, F) hanno anche rating più alto. Il vincolo sul rating medio serve quindi a limitare il rischio del portafoglio.
 
----
-## Slide 38 – Il problema della selezione dei fondi di investimento (2)
-
 - Denotiamo con $F$ l'insieme dei fondi.
 - I parametri $\alpha$, $\beta$ e $\gamma$ sono delle percentuali, quindi $0 \le \alpha, \beta, \gamma \le 1$.
 - I rimanenti parametri sono i seguenti:
@@ -717,9 +682,6 @@ $$
 	- $\rho_i$: rating fondo $i$;
 	- $\rho$: rating medio.
 - La variabile decisionale $x_i$ indica la somma investita nel fondo $i$.
-
----
-## Slide 39 – Il problema della selezione dei fondi di investimento (3)
 
 - **Modello matematico:**
 
@@ -742,9 +704,6 @@ $$
 >> **Limitatezza:** sì, sempre (quando ammissibile). Il vincolo $\sum_i x_i = 100$ con $x_i \ge 0$ implica $0 \le x_i \le 100$: la regione ammissibile è limitata, quindi la funzione obiettivo non può crescere all'infinito.
 >> Poiché il totale investito è 100, i vincoli sono proprio percentuali: ad esempio $\sum_i \rho_i x_i \le 100\rho$ equivale a dire che la media dei rating pesata con le quote investite è al più $\rho$.
 
----
-## Slide 40 – Il problema della selezione dei fondi di investimento (4)
-
 - Il modello sarebbe ancora valido se il primo vincolo fosse sostituito da $\sum_{i \in F} x_i \le 100$?
 - Vi sono dei parametri che non sono deterministici?
 - Si può usare un modello deterministico in cui si usa il rendimento atteso per valutare il rendimento complessivo. Quali sono i limiti di questo approccio? Come si potrebbe modellare il problema diversamente?
@@ -754,7 +713,7 @@ $$
 >> Il parametro chiaramente aleatorio è il rendimento $r_i$ (e in parte il rating). Usare solo il valore atteso ignora il rischio, cioè la variabilità e le correlazioni tra i fondi. Un'alternativa classica è il modello media-varianza di Markowitz (serve la matrice di covarianza dei rendimenti e il modello diventa quadratico), oppure modelli stocastici/a scenari, che richiedono serie storiche o scenari di rendimento con le relative probabilità.
 
 ---
-## Slide 41 – Il problema dei trasporti
+## Slide 41 -> 43 – Il problema dei trasporti
 
 - Siano dati:
 	- *$n$ origini* con disponibilità pari a $a_i$, $i = 1, \dots, n$;
@@ -766,9 +725,6 @@ $$
 
 >> Con i vincoli di uguaglianza della slide seguente, se $\sum_i a_i \ne \sum_j b_j$ il problema è **inammissibile**: sommando i vincoli di origine si ottiene $\sum_{i,j} x_{ij} = \sum_i a_i$, sommando quelli di destinazione $\sum_{i,j} x_{ij} = \sum_j b_j$.
 >> Se l'offerta supera la domanda ($\sum_i a_i > \sum_j b_j$) basta trasformare i vincoli di origine in $\sum_j x_{ij} \le a_i$, oppure (equivalentemente) aggiungere una **destinazione fittizia** con domanda $\sum_i a_i - \sum_j b_j$ e costi nulli. Se invece la domanda supera l'offerta, non tutta la domanda può essere soddisfatta: si aggiunge un'origine fittizia (la merce "spedita" da essa è domanda non servita, eventualmente con un costo di penalità).
-
----
-## Slide 42 – Il problema dei trasporti (2)
 
 - **Modello matematico:**
 
@@ -788,9 +744,6 @@ $$
 
 >> Il *rilassamento continuo* è lo stesso problema in cui si elimina il vincolo "intera", lasciando solo $x_{ij} \ge 0$: è un problema di PL, risolvibile efficientemente. In generale la sua soluzione ottima può essere frazionaria (si veda il mix di produzione alla slide 53); per il problema dei trasporti invece no, grazie alla struttura della matrice dei vincoli (slide seguente).
 
----
-## Slide 43 – Il problema dei trasporti (3)
-
 - La proprietà che implica l'interezza della soluzione, se i parametri $a_i$ e $b_j$ sono interi, è dovuta alla particolare struttura della matrice dei vincoli, che in questo caso è sempre ***totalmente unimodulare***.
 
 **Definizione.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ si dice totalmente unimodulare se il determinante di ogni sottomatrice quadrata di $\mathbf{A}$ (cioè di ogni minore di $\mathbf{A}$) è uguale a $0$, $+1$ oppure $-1$.
@@ -802,14 +755,11 @@ $$
 >> Nel problema dei trasporti ogni colonna (variabile $x_{ij}$) ha esattamente due coefficienti pari a 1: uno nella riga dell'origine $i$ e uno nella riga della destinazione $j$. Le matrici di questo tipo (righe divisibili in due gruppi, con ogni colonna che ha un 1 in ciascun gruppo) sono totalmente unimodulari: è la matrice di incidenza di un grafo bipartito.
 
 ---
-## Slide 44 – Il problema dei trasporti con costi fissi
+## Slide 44 -> 48 – Il problema dei trasporti con costi fissi
 
 - Il problema dei trasporti è un caso speciale del problema più generale dei ***flussi di costo minimo***, che ha numerose applicazioni a problemi di logistica, telecomunicazioni, finanza, etc.
 - Una applicazione in ambito logitico potrebbe essere il problema della distribuzione di ***un singolo "prodotto"*** in cui vi sono delle *sorgenti* che spediscono il prodotto (e.g., punti di produzione o magazzini) e delle *destinazioni* che lo ricevono (e.g., punti vendita o magazzini).
 - Una possibile applicazione alla finanza è il ***problema del trasferimento ottimo di fondi*** che deve affrontare una multinazionale, in cui delle *sedi* devono inviare delle risorse (e.g., liquidità ottenuta dalla vendita di prodotti) a delle altre che le richiedono (e.g., per pagare i costi di produzione).
-
----
-## Slide 45 – Il problema dei trasporti con costi fissi (2)
 
 - In generale, si può parlare del problema della distribuzione di una singola ***"commodity"***, in cui delle *sorgenti* immettono la commodity (e.g., gas estratto da un pozzo) e delle *destinazioni* la ricevono (e.g., centri di stoccaggio).
 - Il problema dei flussi di costo minimo considera anche la presenza di ***punti di smistamento/transito***.
@@ -821,17 +771,11 @@ $$
 >es di commodity: gas, petrolio, prodotto...
 >**"multi commodity"** -> il problema diventa molto difficile, nella realtà sono quasi tutti multi commodity
 
----
-## Slide 46 – Il problema dei trasporti con costi fissi (3)
-
 - Si vuole determinare come trasferire la commodity dalle origini alle destinazioni rispettando i vincoli su disponibilità e richieste, minimizzando il costo totale.
 - Spesso il costo di ciascun "trasferimento", oltre ad avere un ***costo variabile*** $c_{ij}$ (che è proporzionale alla quantità trasferita), ha anche un ***costo fisso*** $f_{ij}$ (che si paga se viene trasferita una quantità strettamente maggiore di zero da $i$ a $j$).
 - In presenza di costi fissi come si può modellare il problema? E' ancora un problema facile?
 
 >> Il costo del collegamento $(i,j)$ diventa $g(x_{ij}) = 0$ se $x_{ij} = 0$ e $g(x_{ij}) = f_{ij} + c_{ij} x_{ij}$ se $x_{ij} > 0$: una funzione **discontinua** in 0 (e non convessa), che non si può esprimere con sole variabili continue in un modello lineare. Servono variabili binarie, come nella slide seguente.
-
----
-## Slide 47 – Il problema dei trasporti con costi fissi (4)
 
 - **Modello matematico:**
 
@@ -857,15 +801,12 @@ $$
 >> Il vincolo $x_{ij} \le M_{ij} y_{ij}$ (vincolo "big-M") realizza la logica: se $y_{ij} = 0$ allora $x_{ij} = 0$; se $y_{ij} = 1$ il vincolo non limita $x_{ij}$, perché comunque $x_{ij} \le a_i$ e $x_{ij} \le b_j$. L'implicazione inversa ($x_{ij} = 0 \Rightarrow y_{ij} = 0$) non è imposta da un vincolo ma dalla minimizzazione: se $f_{ij} > 0$ conviene porre $y_{ij} = 0$ ogni volta che è possibile.
 >> Scegliere $M_{ij}$ il più piccolo possibile (qui $\min\{a_i, b_j\}$) è importante: un $M$ enorme rende il rilassamento continuo molto debole (con $y_{ij} = x_{ij}/M_{ij}$ frazionario il costo fisso viene quasi azzerato).
 
----
-## Slide 48 – Il problema dei trasporti con costi fissi (5)
-
 - Purtroppo il problema è difficile (NP-Hard) ed è un caso particolare del problema più generale di ***network design***.
 - Solitamente la presenza di costi fissi induce a problemi di programmazione lineare mista intera difficili da risolvere.
 - Inoltre, spesso nelle applicazioni del mondo reale è necessario considerare anche punti di smistamento/transito, per cui abbiamo bisogno del modello più generale del ***problema del flusso di costo minimo***.
 
 ---
-## Slide 49 – Problema del flusso a costo minimo
+## Slide 49 -> 50 – Problema del flusso a costo minimo
 
 - Dato un grafo orientato $G = (V, A)$, dove $V$ è l'insieme dei vertici (nodi) e $A$ è l'insieme degli archi.
 - Il problema del flusso a costo minimo può essere definito utilizzando i seguenti parametri:
@@ -873,9 +814,6 @@ $$
 	- $u_{ij}$: capacità dell'arco $(i, j) \in A$.
 - I nodi con $b_i > 0$ sono le sorgenti, con $b_i < 0$ sono le destinazioni, mentre i nodi con $b_i = 0$ sono i punti di smistamento/transito.
 - Le variabili $x_{ij}$ indicano quante unità di flusso attraversano l'arco $(i, j)$.
-
----
-## Slide 50 – Problema del flusso a costo minimo (2)
 
 - **Modello matematico: problema del flusso a costo minimo**
 
@@ -905,7 +843,7 @@ $$
 >> Nel network design si sottintende $y_{ij} \in \{0,1\}$. Il problema dei trasporti è il caso particolare con grafo bipartito origini → destinazioni, flusso immesso $a_i$ nei nodi origine, flusso immesso $-b_j$ (cioè $b_j$ assorbito) nei nodi destinazione e capacità illimitate. Anche la matrice dei vincoli di flusso (matrice di incidenza nodi-archi di un grafo orientato) è totalmente unimodulare.
 
 ---
-## Slide 51 – Mix ottimale di produzione
+## Slide 51 -> 53 – Mix ottimale di produzione
 
 - Un'azienda che produce infissi in legno (L) e Alluminio(A) ha tre reparti di lavorazione:
 	- lavorazione legno (Rep. L);
@@ -925,9 +863,6 @@ $$
 | Infisso in alluminio |  60   |
 | Infisso in legno     |  180  |
 
----
-## Slide 52 – Mix ottimale di produzione (2)
-
 - Le ore lavorative totali disponibili settimanalmente per ciascun reparto sono:
 
 | Reparto | Ore |
@@ -940,9 +875,6 @@ $$
 - Le variabili decisionali sono le seguenti:
 	- $x_1$: numero infissi in alluminio prodotti;
 	- $x_2$: numero infissi in legno prodotti.
-
----
-## Slide 53 – Mix ottimale di produzione (3)
 
 **Modello matematico:**
 
@@ -1119,7 +1051,7 @@ $$
 >> Le 4 soluzioni base ammissibili sono esattamente i 4 vertici del quadrilatero ammissibile nel piano $(x_1, x_2)$; la soluzione base non ammissibile $(4,0)$ è l'intersezione delle rette $x_1 + x_2 = 4$ e $x_2 = 0$, che cade fuori dalla regione (viola $x_1 \le 3$).
 
 ---
-## Slide 61-62-63-64-65 – Insieme Poliedrico Convesso
+## Slide 61 -> 67 – Insieme Poliedrico Convesso
 
 - Un ***Insieme Poliedrico Convesso*** è definito dall'intersezione di un numero finito di sottospazi chiusi:
 
@@ -1195,9 +1127,6 @@ $$
 >punto p è il risultato della combinazione convessa dei tre estremi a cui applico una combinazione lineare per la direzione da prendere.
 
 >> La figura mostra un poliedro illimitato $X$ con punti estremi $\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3$ e direzioni estreme $\mathbf{d}_1, \mathbf{d}_2$. Un generico punto $\mathbf{x} \in X$ si ottiene partendo da un punto $\mathbf{p} = \sum_i \lambda_i \mathbf{x}_i$ del triangolo formato dai vertici e spostandosi lungo $\sum_j \mu_j \mathbf{d}_j$, cioè in una direzione del "cono" generato da $\mathbf{d}_1$ e $\mathbf{d}_2$.
-
----
-## Slide 66-67 – Insieme Poliedrico Convesso (6-7)
 
 **Teorema.** La soluzione ottima di un problema di programmazione lineare è finita se e solo se        $\mathbf{c}\mathbf{d}_j \ge 0$, $j = 1, \dots, nd$.  In questo caso il minimo si ottiene in corrispondenza di almeno uno dei punti estremi.
 >$cd_{j}$ prodotto scalare
@@ -1405,7 +1334,7 @@ $$W = \{\mathbf{w} : \mathbf{w}\mathbf{A} \leq \mathbf{c}, \mathbf{w} \geq \math
 - Ora si vuole mostrare perché la funzione obiettivo da massimizzare è rappresentata da $\mathbf{w}\mathbf{b}$ (i.e., $z_D = \max\{\mathbf{w}\mathbf{b} : \mathbf{w} \in W\}$). (wb è sempre un lower bound)
 
 ---
-## Slide 80-81 – Dualità debole
+## Slide 80 -> 82 – Dualità debole
 
 **Lemma 1 (Dualità Debole).**
 Se $\tilde{\mathbf{x}} \in X = \{\mathbf{x} : \mathbf{A}\mathbf{x} \geq \mathbf{b}, \mathbf{x} \geq \mathbf{0}\}$ e $\tilde{\mathbf{w}} \in W = \{\mathbf{w} : \mathbf{w}\mathbf{A} \leq \mathbf{c}, \mathbf{w} \geq \mathbf{0}\}$ allora $\tilde{\mathbf{w}}\mathbf{b} \leq \mathbf{c}\tilde{\mathbf{x}}$.
@@ -1430,9 +1359,6 @@ s.t.\ & \mathbf{w}\mathbf{A} \leq \mathbf{c} \\
 \end{aligned}$$
 
 >> Ecco perché l'obiettivo del duale è $\max\,\mathbf{w}\mathbf{b}$: ogni $\mathbf{w} \in W$ fornisce una stima dal basso di $z_P$, e il duale cerca la **stima dal basso più stretta** possibile. Viceversa, ogni $\mathbf{x} \in X$ fornisce un upper bound per $z_D$. Quindi $\mathbf{w}\mathbf{b} \leq z_D \leq z_P \leq \mathbf{c}\mathbf{x}$ per ogni coppia ammissibile.
-
----
-## Slide 82 – Dualità debole
 
 **Corollario 1.** Se $\mathbf{x}^* \in X$ e $\mathbf{w}^* \in W$ soddisfano $\mathbf{w}^*\mathbf{b} = \mathbf{c}\mathbf{x}^*$ (le due funzioni obbiettivo sono uguali) allora $\mathbf{x}^*$ è soluzione ottima del primale e $\mathbf{w}^*$ è soluzione ottima del duale.
 
@@ -1664,7 +1590,7 @@ dalle quali si derivano le seguenti osservazioni:
 >dovrebbe essere un es facile da quanto dice il prof?!
 
 ---
-## Slide 96 – Interpretazione economica della dualità
+## Slide 96 -> 98 – Interpretazione economica della dualità
 
 - Il valore di ciascuna variabile duale corrisponde al valore della risorsa espressa dal termine noto del corrispondente vincolo (**shadow price**)
 - In altre parole, il valore della variabile duale indica il potenziale peggioramento/miglioramento del valore della soluzione ottima se modifico di una unità il termine noto del corrispondente vincolo.
@@ -1673,9 +1599,6 @@ dalle quali si derivano le seguenti osservazioni:
 >se la variabile duale è uguale a zero vuol dire che il suo corrispondente vincolo non è importante e non mi va ad influenzare la soluzione ottima.
 
 >> Perché: all'ottimo $z^* = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} = \mathbf{w}^*\mathbf{b} = \sum_i w_i^* b_i$. Se si cambia $b_i$ di una piccola quantità $\Delta$ e la base $\mathbf{B}$ resta ottima (cioè $\mathbf{B}^{-1}(\mathbf{b} + \Delta\mathbf{e}_i) \geq \mathbf{0}$), allora $z^*$ cambia esattamente di $w_i^*\Delta$: $w_i^* = \partial z^*/\partial b_i$. Per un vincolo $\geq$ in un problema di min, $w_i^* \geq 0$ è il costo aggiuntivo per unità di "requisito" in più; un vincolo non attivo ha shadow price nullo (aumentare un po' la risorsa non serve).
-
----
-## Slide 97 – Interpretazione economica della dualità (2)
 
 **Esempio: il problema della dieta.**
 
@@ -1691,9 +1614,6 @@ $$\begin{array}{lrll}
  & \textit{s.t.} & \sum_{j=1}^{n} a_{ij}x_j \geq r_i, & i = 1, \dots, m \\
  & & x_j \geq 0, & j = 1, \dots, n
 \end{array}$$
-
----
-## Slide 98 – Interpretazione economica della dualità (3)
 
 Si vuole produrre una *pillola* sostitutiva che contenga gli $m$ nutrienti.
 
@@ -2092,7 +2012,7 @@ Quindi partendo dalla soluzione primale $\mathbf{x}$ si è ottenuta una soluzion
 >> Il vincolo duale associato a $x_1$ non deve essere saturo perché $x_1 = 0$ (la complementarietà impone la saturazione solo per le $x_j > 0$).
 
 ---
-## Slide 120 – Il Metodo del Simplesso Formato Tableau
+## Slide 120 -> 122 – Il Metodo del Simplesso Formato Tableau
 
 - Il "*simplesso primale in formato tableau*" permette di semplificare le operazioni di aggiornamento della base, della corrispondente soluzione e dei costi ridotti $\mathbf{w}\mathbf{a}_j - c_j$ ad ogni iterazione:
 
@@ -2113,9 +2033,6 @@ $$\begin{array}{rrcrcrcr}
 
 >> Il secondo sistema si ottiene portando tutto a sinistra nella definizione di $z$ e moltiplicando i vincoli $\mathbf{B}\mathbf{x}_B + \mathbf{N}\mathbf{x}_N = \mathbf{b}$ a sinistra per $\mathbf{B}^{-1}$.
 
----
-## Slide 121 – Il Metodo del Simplesso Formato Tableau (2)
-
 Moltiplicando la seconda equazione per $\mathbf{c}_B$ e sommandola per la prima si ottiene:
 
 $$\begin{array}{rrcrcrcr}
@@ -2135,9 +2052,6 @@ $$\begin{array}{rrcrcrcr}
 dove il Right Hand Side (RHS) contiene il valore della funzione obiettivo e delle variabili base.
 
 >> Nella riga 0 compaiono esattamente i valori $\mathbf{w}\mathbf{a}_j - c_j$ (con $\mathbf{w} = \mathbf{c}_B\mathbf{B}^{-1}$) per le colonne non base, mentre per le colonne in base valgono 0. Le colonne $\mathbf{B}^{-1}\mathbf{N}$ sono i vettori $\mathbf{y}^j = \mathbf{B}^{-1}\mathbf{a}_j$ e la colonna RHS contiene $\bar{\mathbf{b}}$: tutto ciò che serve per test di ottimalità e rapporto minimo si legge direttamente dal tableau.
-
----
-## Slide 122 – Il Metodo del Simplesso Formato Tableau (3)
 
 In una versione di maggiore dettaglio il "*tableau*" è il seguente:
 
@@ -2172,6 +2086,9 @@ z & 1 & 0 & \ldots & 0 & \ldots & 0 & & \mathbf{w}\mathbf{a}_{m+1} - c_{m+1} & \
 
 ---
 ## Slide 124 -> 129 – Simplesso Primale in Formato Tableau by Examples
+
+>all'esame può chiedere di disegnare graficamente l'aria ammissibile e i punti estremi.
+>il poliedro è limitato o illimitato?
 
 Si consideri il problema:
 
@@ -2212,18 +2129,16 @@ Per cui il primo tableau è il seguente:
 >> La base iniziale è quella delle slack $\{x_4, x_5, x_6, x_7\}$ ($\mathbf{B} = \mathbf{I}$, $\mathbf{c}_B = \mathbf{0}$, quindi $\mathbf{w} = \mathbf{0}$): la riga 0 contiene semplicemente $\mathbf{w}\mathbf{a}_j - c_j = -c_j$, cioè $[-1, +2, +6]$ per $x_1, x_2, x_3$. La soluzione corrisponde al vertice $(0,0,0)$ con $z = 0$.
 >> Candidate a entrare sono $x_2$ ($+2$) e $x_3$ ($+6$); la regola del massimo sceglierebbe $k = 3$.
 
----
-## Slide 126 – Simplesso Primale in Formato Tableau by Examples
-
 Cosa succede se scegliamo $k = 2$ invece di $k = 3$?
 
-| $x_1$ | $x_2$ | $x_3$ | $x_4$ | $x_5$ | $x_6$ | $x_7$ |  |  |
-|---|---|---|---|---|---|---|---|---|
-| -1 | +2 | +6 | 0 | 0 | 0 | 0 | 0 |  |
-| 1 | 0 | 0 | 1 | 0 | 0 | 0 | 2 |  |
-| 0 | $\boxed{1}$ | 0 | 0 | 1 | 0 | 0 | 3 | (0,0,0) |
-| 0 | 0 | 1 | 0 | 0 | 1 | 0 | 3 |  |
-| 1 | 1 | 1 | 0 | 0 | 0 | 1 | 4 |  |
+| $x_1$ | $x_2$       | $x_3$ | $x_4$ | $x_5$ | $x_6$ | $x_7$ |     |         |
+| ----- | ----------- | ----- | ----- | ----- | ----- | ----- | --- | ------- |
+| -1    | +2          | +6    | 0     | 0     | 0     | 0     | 0   |         |
+| 1     | 0           | 0     | 1     | 0     | 0     | 0     | 2   |         |
+| 0     | $\boxed{1}$ | 0     | 0     | 1     | 0     | 0     | 3   | (0,0,0) |
+| 0     | 0           | 1     | 0     | 0     | 1     | 0     | 3   |         |
+| 1     | 1           | 1     | 0     | 0     | 0     | 1     | 4   |         |
+>non approssimare i calcoli!!!! si tengono le frazioni di solito.
 
 ![[RO03-s126-1.png|250]]
 
@@ -2239,9 +2154,6 @@ Cosa succede se scegliamo $k = 2$ invece di $k = 3$?
 
 >> Primo pivot: nella colonna di $x_2$ i coefficienti positivi sono nelle righe 2 e 4, con rapporti $3/1 = 3$ e $4/1 = 4$: il minimo è nella riga 2, quindi esce $x_5$. Operazioni: riga 4 $-=$ riga 2, riga 0 $-=$ $2 \cdot$ riga 2. Si passa al vertice $(0,3,0)$ con $z = -6$.
 >> Secondo pivot: entra $x_3$ (unico costo ridotto positivo, $+6$); rapporti $3/1 = 3$ (riga 3) e $1/1 = 1$ (riga 4), quindi esce $x_7$ (pivot riquadrato nella riga 4).
-
----
-## Slide 127 – Simplesso Primale in Formato Tableau by Examples
 
 | $x_1$ | $x_2$ | $x_3$ | $x_4$ | $x_5$ | $x_6$ | $x_7$ |  |  |
 |---|---|---|---|---|---|---|---|---|
@@ -2271,9 +2183,6 @@ La soluzione è ottima!
 >> Dopo il secondo pivot si è nel vertice $(0,3,1)$ con $z = -2 \cdot 3 - 6 \cdot 1 = -12$. Ora l'unico costo ridotto positivo è quello di $x_5$ ($+4$): nella sua colonna i coefficienti positivi sono nelle righe 2 e 3, con rapporti $3/1 = 3$ e $2/1 = 2$, quindi il pivot è nella riga 3 ed esce $x_6$.
 >> Nel tableau finale tutti i valori della riga 0 sono $\le 0$: base ottima $\{x_4, x_2, x_5, x_3\}$ con $x_2 = 1$, $x_3 = 3$ (e $x_4 = 2$, $x_5 = 2$), cioè il vertice $(0,1,3)$ con $z^* = -2 - 18 = -20$. Con la scelta $k = 2$ sono servite 3 iterazioni: $(0,0,0) \to (0,3,0) \to (0,3,1) \to (0,1,3)$.
 
----
-## Slide 128 – Simplesso Primale in Formato Tableau by Examples
-
 Cosa sarebbe successo se avessimo scelto $\mathbf{w}\mathbf{a}_k - c_k = \max_j\left\{\mathbf{w}\mathbf{a}_j - c_j\right\}$.
 
 | $x_1$ | $x_2$ | $x_3$ | $x_4$ | $x_5$ | $x_6$ | $x_7$ |  |  |
@@ -2298,9 +2207,6 @@ Cosa sarebbe successo se avessimo scelto $\mathbf{w}\mathbf{a}_k - c_k = \max_j\
 
 >> Entra $x_3$ (costo ridotto $+6$, il massimo); rapporti $3/1 = 3$ (riga 3) e $4/1 = 4$ (riga 4): esce $x_6$. Si arriva al vertice $(0,0,3)$ con $z = -18$.
 >> Poi entra $x_2$ ($+2$); rapporti $3/1 = 3$ (riga 2) e $1/1 = 1$ (riga 4): esce $x_7$.
-
----
-## Slide 129 – Simplesso Primale in Formato Tableau by Examples
 
 | $x_1$ | $x_2$ | $x_3$ | $x_4$ | $x_5$ | $x_6$ | $x_7$ |  |  |
 |---|---|---|---|---|---|---|---|---|
@@ -2345,6 +2251,7 @@ dove $\mathbf{I} = [\mathbf{e}_1, \ldots, \mathbf{e}_m]$ è la matrice identità
 >> Con $\mathbf{B} = \mathbf{I}$ si ha $\mathbf{x}_\mathbf{B} = \mathbf{x}_\mathbf{S} = \mathbf{b}$ e $\mathbf{x} = \mathbf{0}$: la base iniziale corrisponde all'origine. Se invece qualche $b_i < 0$, moltiplicando il vincolo per $-1$ si ottiene un vincolo $\ge$ la cui slack entra con coefficiente $-1$: la colonna identità si perde e serve un metodo come il Big-M (o le due fasi).
 
 ---
+>all'esame viene semplicemente chiesto di risolvere l'esercizio con il primale senza specificare se con il big M oppure con il 2 fasi, il prof in classe però li svolgerà con il 2-fasi perché lo ritiene più semplice.
 ## Slide 131-132 – Come determinare una base iniziale: ~~Metodo Big-M~~
 
 - Se il problema ha la seguente forma:
@@ -2356,7 +2263,7 @@ z_P = \min \ & \mathbf{c}\mathbf{x} \\
 \end{aligned}$$
 
 non è detto che sia facile individuare una base $\mathbf{B}$ tra le colonne di $\mathbf{A}$.
-- Nell'ipotesi che $\mathbf{b} \ge \mathbf{0}$, si possono aggiungere $m$ variabili $\mathbf{x}_\mathbf{A}$, dette ***artificiali***, alle $n$ variabili originarie, e risolvere il seguente problema:
+- Nell'ipotesi che $\mathbf{b} \ge \mathbf{0}$, si possono aggiungere $m$ variabili $\mathbf{x}_\mathbf{A}$, dette ~~***artificiali***~~, alle $n$ variabili originarie, e risolvere il seguente problema:
 >se b non è >= di 0 moltiplico per -1 entrambi i lati.
 
 $$\begin{aligned}
@@ -2367,7 +2274,7 @@ z_{P(M)} = \min \ & \mathbf{c}\mathbf{x} + \mathbf{M}\mathbf{x}_\mathbf{A} \\
 
 dove $\mathbf{I}$ è la matrice identità di ordine $m$ e $\mathbf{M} = M\mathbf{I}$, con $M > 0$ scelto *sufficientemente grande*.
 
->le variabili artificiali: non le vorrei usare ma sono "costretto" infatti gli do un costo molto elevato per evitare che finiscano in base della soluzione ottimale.
+>le variabili artificiali: non le vorrei usare ma sono "costretto" infatti gli do un costo molto elevato per evitare che finiscano in base della soluzione ottimale. (ad es: 10.000, anche se è rischioso perché magari in qualche caso particolare non basta)
 
 >> Idea: le colonne delle artificiali formano la base iniziale ammissibile $\mathbf{B} = \mathbf{I}$ con $\mathbf{x}_\mathbf{A} = \mathbf{b} \ge \mathbf{0}$. Il costo $M$ molto grande penalizza fortemente ogni artificiale positiva, quindi il simplesso tende a farle uscire dalla base: se il problema originale è ammissibile, all'ottimo di $P(M)$ (per $M$ abbastanza grande) si avrà $\mathbf{x}_\mathbf{A} = \mathbf{0}$.
 >> In pratica il termine $\mathbf{M}\mathbf{x}_\mathbf{A}$ vale $M \sum_{i=1}^m x_{A,i}$. Un'alternativa che evita di fissare un valore numerico di $M$ è il metodo delle due fasi (prima si minimizza $\sum_i x_{A,i}$, poi si ottimizza $\mathbf{c}\mathbf{x}$ partendo dalla base trovata).
@@ -2398,7 +2305,7 @@ $$
 \end{aligned}
 $$
 
-- Nell'ipotesi che $\mathbf{b} \ge \mathbf{0}$, si possono aggiungere $m$ variabili $\mathbf{x_A}$, dette ***artificiali***, alle $n$ variabili originarie, e risolvere il seguente problema:
+- Nell'ipotesi che $\mathbf{b} \ge \mathbf{0}$, si possono aggiungere $m$ variabili $\mathbf{x_A}$, dette ***~~artificiali~~***, alle $n$ variabili originarie, e risolvere il seguente problema:
 
 $$
 \begin{aligned}
@@ -2761,7 +2668,9 @@ In questo caso si presentava una situazione analoga anche se avessimo scelto la 
 >> Controllo: $x_1 - 2x_2 = 8 \ge 8$ e $3x_1 + 2x_2 = 24 + 8t \ge 5$ per ogni $t \ge 0$. Il costo ridotto $+8$ è proprio la pendenza con cui l'obiettivo decresce.
 
 ---
-## Slide 149 – Metodo del Simplesso: Degenerazione e Convergenza
+## Slide 149 -> 151 – Metodo del Simplesso: Degenerazione e Convergenza
+
+>unico caso per il quale non converge è quando c'è degenerazione.
 
 - La ***degenerazione*** si presenta quando alcuni $\bar b_i$ sono nulli.
 - In caso di degenerazione, quando si applica il rapporto minimo, il valore da assegnare alla variabile entrante è sempre nullo:
@@ -2776,9 +2685,6 @@ $$
 >> Precisazione: il passo è nullo quando il minimo del rapporto è raggiunto in una riga con $\bar b_r = 0$ e $y_r^k > 0$; se tutte le righe con $\bar b_i = 0$ hanno $y_i^k \le 0$, il passo può essere comunque positivo.
 >> Con un passo nullo il valore di $z$ non cambia: viene meno l'argomento "$z$ migliora strettamente ad ogni iterazione" che garantisce la terminazione nel caso non degenere.
 
----
-## Slide 150 – Metodo del Simplesso: Degenerazione e Convergenza (2)
-
 - Si consideri il seguente esempio:
 
 $$
@@ -2789,39 +2695,41 @@ x_1 & + & x_2 & \le & 4
 \end{array}
 $$
 
-![[RO03-s150-1.png]]
+![[RO03-s150-1.png|261]]
 
-	Il metodo potrebbe avere un ***ciclo*** che coinvolge le basi associate ai tre punti estremi $A, B$ e $C$ che corrispondono a tre diverse soluzioni base, ma coincidono.
+Il metodo potrebbe avere un ***ciclo*** che coinvolge le basi associate ai tre punti estremi $A, B$ e $C$ che corrispondono a tre diverse soluzioni base, ma coincidono.
 
 >> In forma standard si aggiungono le slack $s_1, s_2, s_3$ (base di dimensione $m = 3$). Nel punto $(2,2)$ si ha $x_1 = x_2 = 2$ e $s_1 = s_2 = s_3 = 0$: passano per quel punto tre rette, una in più di quelle necessarie nel piano.
 >> Le basi $\{x_1, x_2, s_1\}$, $\{x_1, x_2, s_2\}$, $\{x_1, x_2, s_3\}$ sono tutte non singolari e tutte danno lo stesso vertice $(2,2)$ (con una slack in base a valore $0$): sono le tre soluzioni base $A$, $B$, $C$.
 
----
-## Slide 151 – Metodo del Simplesso: Degenerazione e Convergenza (3)
+- La ~~***Regola di Bland*** ~~stabilisce che per evitare la **degenerazione ciclante** è sufficiente scegliere tra le variabili candidate a entrare in base (i.e., $\mathbf{w}\mathbf{a}_j - c_j$ positivi) e quelle candidate a uscire dalla base (i.e., che soddisfano il criterio del rapporto minimo) quelle di indice minimo.
+>posso decidere di applicarla anche solo quando incontro degenerazione.
 
-- La ***Regola di Bland*** stabilisce che per evitare la **degenerazione ciclante** è sufficiente scegliere tra le variabili candidate a entrare in base (i.e., $\mathbf{w}\mathbf{a}_j - c_j$ positivi) e quelle candidate a uscire dalla base (i.e., che soddisfano il criterio del rapporto minimo) quelle di indice minimo.
+>all'esame va applicata solo se chiesto esplicitamente oppure se ci rendiamo conto di essere andati in conto a degenerazione!
+
 - Esistono metodo più complessi, ma più efficienti (i.e., mediamente richiedono un numero più ridotto di iterazioni), rispetto alla Regola di Blend, come la ***Regola Lessicografica***.
+>non la analizziamo nei dettagli. si complica leggermente di più ogni singola iterazione.
+
 - Il metodo del simplesso, se implementa un metodo per evitare la degenerazione ciclante, nel caso peggiore deve generare tutte le possibili basi che sono un numero finito:
 
 $$
 \binom{n}{m} = \frac{n!}{m!\,(n-m)!}
 $$
+>il simplesso primale è esponenziale quindi non polinomiale, ma mediamente si comporta molto bene.
 
 >> Il binomiale conta i modi di scegliere $m$ colonne (la base) tra le $n$ di $\mathbf{A}$: è un limite superiore, perché non tutte le scelte danno matrici non singolari o soluzioni ammissibili. Già con $n = 20$, $m = 10$ si ha $\binom{20}{10} = 184756$.
 >> Senza cicli nessuna base può ripetersi (il valore di $z$ non peggiora mai e, con la regola anti-ciclo, non si torna a una base già vista), da cui la terminazione finita. In pratica il simplesso richiede molte meno iterazioni, anche se esistono esempi (Klee–Minty) con numero di iterazioni esponenziale.
 
 ---
-## Slide 152 – Il Metodo del Simplesso Duale
+## Slide 152 -> 155 – Il Metodo del Simplesso Duale
 
 - Il Simplesso Primale, ad ogni iterazione, soddisfa:
 	- L'ammissibilità primale della soluzione: $\bar b_r \ge 0$ per ogni $r$;
 	- Le Condizioni di Complementarietà.
 - Il Metodo del Simplesso Duale, ad ogni iterazione, soddisfa:
-	- L'ammissibilità duale della soluzione: $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni $j$;
+	- L'~~ammissibilità duale~~ della soluzione: $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni $j$;
 	- Le Condizioni di Complementarietà.
 - Le Condizioni di Complementarietà sono soddisfatte perché le variabili $x_j$ che sono in base hanno $\mathbf{w}\mathbf{a}_j - c_j = 0$, mentre quelle non in base hanno valore nullo ($x_j = 0$).
-
-![[RO03-s152-1.png]]
 
 $$
 \begin{array}{c|c|ccccc|ccccc|c}
@@ -2839,19 +2747,13 @@ $$
 >> È lo stesso tableau: cambia solo quale condizione si mantiene e quale si insegue. Quando entrambe valgono, per la complementarietà la soluzione è ottima.
 >> È molto utile quando si aggiunge un vincolo o si modifica $\mathbf{b}$ a un problema già risolto: la base ottima resta duale ammissibile e si riparte da lì.
 
----
-## Slide 153 – Il Metodo del Simplesso Duale (2)
-
-- Quando applichiamo il Simplesso Duale dobbiamo avere che tutti vincoli duali siano soddisfatti, quindi che $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni $j$.
+- Quando applichiamo il Simplesso Duale dobbiamo avere che tutti vincoli duali siano soddisfatti, quindi che $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni $j$ (costi ridotti <= 0).
 - Se tutte le variabili sono non negative la soluzione è OTTIMA.
 - Se invece almeno una variabile in base ha valore negativo (i.e., esiste almeno un $r$ tale che $\bar b_r < 0$) allora dobbiamo farla diventare maggiore o uguale a zero.
 - Se effettuiamo una operazione di pivoting sulla riga $r$ e su una qualche colonna $k$ tale che $y_r^k < 0$ allora nel nuovo tableau avremo $\bar b_r > 0$, perché $\bar b_r = \bar b_r / y_r^k > 0$).
 - La colonna $k$ deve essere scelta in modo da conservare l'ammissibilità duale: $\mathbf{w}\mathbf{a}_j - c_j \le 0$ per ogni $j$.
 
 >> Nell'uguaglianza $\bar b_r = \bar b_r / y_r^k$ il membro sinistro è il valore **dopo** il pivot (la riga $r$ viene divisa per il pivot): negativo diviso negativo dà un valore positivo, e la variabile $x_k$ entra in base con quel valore al posto di $x_{B_r}$, che esce.
-
----
-## Slide 154 – Il Metodo del Simplesso Duale (3)
 
 - Quando pivoteremo sulla riga $r$ e la colonna $k$ la riga 0 del tableau verrà aggiornata come segue:
 
@@ -2867,11 +2769,10 @@ $$
 
 	Siccome $\frac{\mathbf{w}\mathbf{a}_k - c_k}{y_r^k} \ge 0$, se $y_r^j > 0$ avremo che il valore aggionato di $\mathbf{w}\mathbf{a}_j - c_j$ sarà sicuramente non positivo.
 
+![[Recording 20261017180954.m4a]]
+
 >> Il membro sinistro della prima formula è il valore aggiornato. Il segno di $\frac{\mathbf{w}\mathbf{a}_k - c_k}{y_r^k}$ viene da: numeratore $\le 0$ (ammissibilità duale corrente) e denominatore $< 0$ (pivot negativo).
 >> Se $y_r^j > 0$ si sottrae da una quantità $\le 0$ la quantità $y_r^j \cdot \frac{\mathbf{w}\mathbf{a}_k - c_k}{y_r^k} \ge 0$: il risultato resta $\le 0$. Se $y_r^j = 0$ il costo ridotto non cambia. Il caso delicato è $y_r^j < 0$ (slide successiva).
-
----
-## Slide 155 – Il Metodo del Simplesso Duale (4)
 
 - Invece se $y_r^j < 0$ avremo bisogno di soddisfare il seguente vincolo:
 
@@ -2889,14 +2790,14 @@ $$
 >> Tutti i rapporti considerati sono $\ge 0$ (numeratore $\le 0$, denominatore $< 0$). È il "gemello" del rapporto minimo primale: là si sceglie la **riga** che esce per non perdere $\bar{\mathbf{b}} \ge \mathbf{0}$, qui la **colonna** che entra per non perdere $\mathbf{w}\mathbf{a}_j - c_j \le 0$.
 
 ---
-## Slide 156 – Algoritmo del Simplesso Duale
+## Slide 156 -> 158 – Algoritmo del Simplesso Duale
 
 **Step1. Inizializzazione:**
-	Sia $\mathbf{B}$ una base duale ammissibile: $\mathbf{w}\mathbf{a}_j - c_j = \mathbf{c_B}\mathbf{B}^{-1}\mathbf{a}_j - c_j \le 0$.
+	Sia $\mathbf{B}$ una base duale ammissibile: $\mathbf{w}\mathbf{a}_j - c_j = \mathbf{c_B}\mathbf{B}^{-1}\mathbf{a}_j - c_j \le 0$. (tutti i costi ridotti <= 0)
 
 **Step3. Determinazione riga $r$:**
-	$\bar b_r = \min\{\bar b_i : i = 1, \dots, m\}$.
-	Se $\bar{\mathbf{b}} \ge \mathbf{0}$, allora STOP perché la soluzione è primale ammissibile e quindi *ottima*.
+	$\bar b_r = \min\{\bar b_i : i = 1, \dots, m\}$. (determino il minimo dei termini noti)
+	Se $\bar{\mathbf{b}} \ge \mathbf{0}$, allora STOP perché la soluzione è primale ammissibile e quindi *~~ottima~~*.
 
 **Step4. Determinazione colonna $k$:**
 	Applica il rapporto minimo:
@@ -2905,14 +2806,11 @@ $$
 \frac{\mathbf{w}\mathbf{a}_k - c_k}{y_r^k} = \min\left\{ \frac{\mathbf{w}\mathbf{a}_j - c_j}{y_r^j} : y_r^j < 0,\ j = 1, \dots, n \right\}
 $$
 
-	Se $y_r^j \ge 0$, per ogni $j = 1, \dots, n$, allora STOP perché il duale è illimitato e la soluzione ammissibile del primale non esiste.
+Se $y_r^j \ge 0$, per ogni $j = 1, \dots, n$, allora STOP perché ~~il duale è illimitato e la soluzione ammissibile del primale non esiste~~.
 
 >> La numerazione degli step sulla slide (Step1, Step3, Step4, poi Step3 nella slide seguente) va letta come Step 1, 2, 3, 4: inizializzazione, scelta della riga, scelta della colonna, pivoting.
 >> Scegliere la riga con $\bar b_r$ più negativo è una regola euristica: qualunque riga con $\bar b_r < 0$ andrebbe bene.
 >> Perché il primale è inammissibile se $y_r^j \ge 0$ per ogni $j$: la riga $r$ dice $x_{B_r} + \sum_{j \in N} y_r^j x_j = \bar b_r < 0$, impossibile con $\mathbf{x} \ge \mathbf{0}$ (il membro sinistro sarebbe $\ge 0$).
-
----
-## Slide 157 – Algoritmo del Simplesso Duale (2)
 
 **Step3. Pivoting:**
 	Svolgi un operazione di pivoting sull'elemento $(r, k)$.
@@ -2922,15 +2820,13 @@ $$
 - Il valore della funzione obiettivo $z = \mathbf{c_B}\mathbf{x_B} = \mathbf{c_B}\mathbf{B}^{-1}\mathbf{b}$ è un lower bound.
 - Durante l'esecuzione del simplesso duale il valore della funzione obiettivo cresce in modo monotonico non decrescente, perchè:
 	$\mathbf{c_B}\bar{\mathbf{b}} = \mathbf{c_B}\bar{\mathbf{b}} - \frac{\bar b_r}{y_r^k}(\mathbf{w}\mathbf{a}_k - c_k)$.
+>nel duale finche non arrivo in fondo alla soluzione non ho niente in mano dal punto di vista del primale, ma la funzione obbiettivo del duale è di fatto un lowerbound quindi meglio di niente.
 
 >> Lower bound: $\mathbf{w} = \mathbf{c_B}\mathbf{B}^{-1}$ è ammissibile per il duale e $\mathbf{c_B}\mathbf{B}^{-1}\mathbf{b} = \mathbf{w}\mathbf{b}$ è il suo valore; per la dualità debole $\mathbf{w}\mathbf{b} \le \mathbf{c}\mathbf{x}$ per ogni $\mathbf{x}$ primale ammissibile.
 >> Monotonia (a sinistra il valore nuovo): $\frac{\bar b_r}{y_r^k} > 0$ (entrambi negativi) e $\mathbf{w}\mathbf{a}_k - c_k \le 0$, quindi il termine sottratto è $\le 0$ e il valore non diminuisce. Cresce strettamente se $\mathbf{w}\mathbf{a}_k - c_k < 0$ (caso non degenere per il duale).
 
----
-## Slide 158 – Algoritmo del Simplesso Duale (3)
-
 - Come possiamo gestire il caso in cui la base non sia duale ammissibile (i.e., esiste almeno un $j$ per cui $\mathbf{w}\mathbf{a}_j - c_j > 0$)?
-- Possiamo aggiungere il seguente vincolo artificiale:
+- Possiamo aggiungere il seguente ~~vincolo artificiale~~:
 
 $$
 \sum_{j \in N} x_j \le M \implies \sum_{j \in N} x_j + x_{n+1} = M
@@ -2938,6 +2834,7 @@ $$
 
 	dove $N$ è l'insieme delle variabili non base ed $M$ è un valore positivo sufficientemente grande.
 - Dopodiché si deve pivotare sulla colonna $k$ tale che:
+>come riga scelgo la riga del vincolo artificiale e come colonna quello con costo ridotto più grande.
 
 $$
 \mathbf{w}\mathbf{a}_k - c_k = \max\{\mathbf{w}\mathbf{a}_j - c_j : j \in N\}
@@ -2949,13 +2846,13 @@ $$
 >> Interpretazione dei casi finali: se il vincolo artificiale non è attivo ($x_{n+1} > 0$) non ha influito sull'ottimo; se è attivo, la soluzione "insegue" $M$ e il valore ottimo dipende da $M$, cioè il problema originale è illimitato.
 
 ---
-## Slide 159 – Simplesso Duale: Esempio 1
+## Slide 159->161 – Simplesso Duale: Esempio 1
 
 Si consideri il problema:
 
 $$
 \begin{array}{rrcrcrcr}
-\min z_P = & 2x_1 & & +3x_2 & & 4x_3 & & \\
+\min z_P = & 2x_1 & & +3x_2 & & +4x_3 & & \\
 \text{s.t.} & +x_1 & & +2x_2 & & +x_3 & \ge & +3 \\
  & +2x_1 & & -x_2 & & +3x_3 & \ge & +4 \\
  & x_1 & , & x_2 & , & x_3 & \ge & 0
@@ -2966,7 +2863,7 @@ Aggiungendo le variabili di slack il problema è seguente:
 
 $$
 \begin{array}{rrcrcrcrcrcr}
-\min z_P = & 2x_1 & & +3x_2 & & 4x_3 & & & & & & \\
+\min z_P = & 2x_1 & & +3x_2 & & +4x_3 & & & & & & \\
 \text{s.t.} & -x_1 & & -2x_2 & & -x_3 & & +x_4 & & & = & -3 \\
  & -2x_1 & & +x_2 & & -3x_3 & & & & +x_5 & = & -4 \\
  & x_1 & , & x_2 & , & x_3 & , & x_4 & , & x_5 & \ge & 0
@@ -2974,9 +2871,6 @@ $$
 $$
 
 >> I vincoli $\ge$ sono stati moltiplicati per $-1$ prima di aggiungere le slack: così $x_4, x_5$ formano subito una base identità, primale non ammissibile ($x_4 = -3$, $x_5 = -4$) ma duale ammissibile perché $\mathbf{c} = (2, 3, 4) \ge \mathbf{0}$. È la situazione tipica in cui il simplesso duale evita la fase 1.
-
----
-## Slide 160 – Simplesso Duale: Esempio 1
 
 Il primo tableau è il seguente:
 
@@ -3002,9 +2896,6 @@ $$
 
 >> Riga: $\min\{-3, -4\} = -4$ ⇒ riga 2 ($x_5$ esce). Colonna: tra i $y_2^j < 0$ (colonne $x_1$ e $x_3$) i rapporti sono $\frac{-2}{-2} = 1$ e $\frac{-4}{-3} = \frac{4}{3}$ ⇒ entra $x_1$.
 
----
-## Slide 161 – Simplesso Duale: Esempio 1
-
 Dopo la prima iterazione abbiamo:
 
 $$
@@ -3015,6 +2906,10 @@ x_1 & x_2 & x_3 & x_4 & x_5 & \\
 1 & -1/2 & 3/2 & 0 & -1/2 & 2\\ \hline
 \end{array}
 $$
+>se durante l'esame qualche costo ridotto diventa positivo, bisogna stare attenti perché vuol dire che si è sbagliato qualcosa.
+>cosa fare:
+>-riverificare i rapporti minimi;
+>-ricontrollare i calcoli durante il pivoting.
 
 Dopo la seconda iterazione:
 
@@ -3026,6 +2921,7 @@ x_1 & x_2 & x_3 & x_4 & x_5 & \\
 1 & 0 & 7/5 & -1/5 & -2/5 & 11/5\\ \hline
 \end{array}
 $$
+>bisogna finire i conti!
 
 La soluzione ottima è $\mathbf{x}^* = \left(\frac{11}{5}, \frac{2}{5}, 0\right)$ e il suo costo $z_P^* = \frac{28}{5}$.
 
@@ -3033,7 +2929,7 @@ La soluzione ottima è $\mathbf{x}^* = \left(\frac{11}{5}, \frac{2}{5}, 0\right)
 >> Verifica: $2\cdot\frac{11}{5} + 3\cdot\frac{2}{5} = \frac{28}{5}$. Dalla riga 0 sotto le slack ($-8/5$, $-1/5$) si legge anche, cambiando segno perché i vincoli sono stati moltiplicati per $-1$, la soluzione duale ottima del problema originale $\mathbf{w}^* = \left(\frac{8}{5}, \frac{1}{5}\right)$, e infatti $3\cdot\frac{8}{5} + 4\cdot\frac{1}{5} = \frac{28}{5}$ (dualità forte).
 
 ---
-## Slide 162 – Simplesso Duale: Esempio 2
+## Slide 162->165 – Simplesso Duale: Esempio 2
 
 Si consideri il problema:
 
@@ -3059,9 +2955,6 @@ $$
 
 >> Qui $\mathbf{c}$ ha componenti negative, quindi la base delle slack ha costi ridotti $-c_j > 0$: non è duale ammissibile e serve il vincolo artificiale della slide 158.
 
----
-## Slide 163 – Simplesso Duale: Esempio 2
-
 Il primo tableau è il seguente:
 
 $$
@@ -3086,9 +2979,6 @@ x_1 & x_2 & x_3 & x_4 & x_5 & \\
 $$
 
 >> Il vincolo artificiale è $x_1 + x_2 + x_5 = M$ (le non base sono $x_1, x_2$; $x_5$ è la sua slack). Il pivot $(3,2)$ è nella riga 3 (il nuovo vincolo) e nella colonna di $x_2$, che ha il costo ridotto massimo ($6$).
-
----
-## Slide 164 – Simplesso Duale: Esempio 2
 
 Il pivotaggio permette di avere una base duale ammissibile:
 
@@ -3116,9 +3006,6 @@ $$
 
 >> Con $M$ grande, $-2 + M > 0$ e $3 - 3M < 0$: la riga da cui uscire è la 2. Tra i $y_2^j < 0$ i rapporti sono $\frac{-5}{-2} = \frac{5}{2}$ (per $x_1$) e $\frac{-6}{-3} = 2$ (per $x_5$) ⇒ entra $x_5$, come nella slide.
 >> Il valore dell'obiettivo passa da $-6M$ a $-6$: il lower bound "dipendente da $M$" sparisce non appena il vincolo artificiale smette di essere attivo.
-
----
-## Slide 165 – Simplesso Duale: Esempio 2
 
 Dopo la seconda iterazione:
 

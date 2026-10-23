@@ -9,8 +9,8 @@
 	- [[#Slide 2 – Argomenti|Argomenti trattati: link e flow]]
 	- [[#Slide 3 – Commenti|Commenti HTML: `<!--` … `-->`]]
 2. **Link e àncore** (slide 4–5)
-	- [[#Slide 4 – `<a>`|L'elemento `<a>`: partenza con `href`, arrivo con `id`]]
-	- [[#Slide 5 – `<a>`|Esempio di menu di navigazione e link interno]]
+	- [[#Slide 4 -> 5 – `<a>`|L'elemento `<a>`: partenza con `href`, arrivo con `id`]]
+		- Esempio di menu di navigazione e link interno
 3. **URI: sintassi, caratteri e risoluzione** (slide 6–11)
 	- [[#Slide 6 – URI|Definizione di Uniform Resource Identifier]]
 	- [[#Slide 7 – Sintassi degli URI|schema, host, port, path, query, fragment]]
@@ -19,28 +19,28 @@
 	- [[#Slide 10 – Risolvere URI relativi|Regole di risoluzione di un URI relativo]]
 	- [[#Slide 11 – Prima domanda|Domanda bonus: bersaglio di un frammento]]
 4. **Struttura delle tabelle** (slide 12–16)
-	- [[#Slide 12 – Struttura delle tabelle|`<table>`, `<tr>`, `<td>`, `<th>`]]
-	- [[#Slide 13 – Struttura delle tabelle|Albero della tabella ed esempio completo]]
-	- [[#Slide 14 – `<table>`|Intestazione orizzontale (`<th>` a inizio riga)]]
-	- [[#Slide 15 – `<table>`|Intestazione verticale (prima riga di `<th>`)]]
+	- [[#Slide 12 -> 13 – Struttura delle tabelle|`<table>`, `<tr>`, `<td>`, `<th>`]]
+		- Albero della tabella ed esempio completo
+	- [[#Slide 14 -> 15 – `<table>`|Intestazione orizzontale (`<th>` a inizio riga)]]
+		- Intestazione verticale (prima riga di `<th>`)
 	- [[#Slide 16 – `<caption>`|Titolo della tabella con `<caption>`]]
 5. **Celle estese e accessibilità delle tabelle** (slide 17–21)
-	- [[#Slide 17 – `<td><th>`|`rowspan` e `colspan`]]
-	- [[#Slide 18 – `<td><th>`|`headers`, screen reader e elementi strutturali]]
+	- [[#Slide 17 -> 18 – `<td><th>`|`rowspan` e `colspan`]]
+		- `headers`, screen reader e elementi strutturali
 	- [[#Slide 19 – tabelle|Esempio: rubrica con telefono ripetuto]]
 	- [[#Slide 20 – `<table>`|Codice della rubrica con link `mailto:`]]
 	- [[#Slide 21 – Versione senza ripetizioni|`rowspan="2"` con `headers` su due intestazioni]]
 6. **Esercizio: orario delle lezioni accessibile** (slide 22–25)
 	- [[#Slide 22 – Esempio|Traccia d'esame: tabella con caption e rowspan]]
 	- [[#Slide 23 – Note|Indicazioni su caption, rowspan e celle mancanti]]
-	- [[#Slide 24 – Soluzione (1)|Soluzione: `<caption>` e `<thead>` con `id`]]
-	- [[#Slide 25 – Soluzione (2)|Soluzione: `<tbody>` con `rowspan` e `headers`]]
+	- [[#Slide 24 -> 25 – Soluzione|Soluzione: `<caption>` e `<thead>` con `id`]]
+		- Soluzione: `<tbody>` con `rowspan` e `headers`
 7. **Tabelle a doppia intestazione con `scope`** (slide 26–30)
-	- [[#Slide 26 – Esempio con `scope`|Orario con due livelli di intestazione (giorno e aula)]]
-	- [[#Slide 27 – Esempio con `scope` (1)|Scheletro del documento e stile dei bordi]]
-	- [[#Slide 28 – Esempio con `scope` (2)|`scope="colgroup"` e `scope="col"` nel `<thead>`]]
-	- [[#Slide 29 – Esempio con `scope`(3)|`scope="row"` e celle dati con più coordinate]]
-	- [[#Slide 30 – Esempio con `scope` (4)|Ultima riga e chiusura del documento]]
+	- [[#Slide 26 -> 30 – Esempio con `scope`|Orario con due livelli di intestazione (giorno e aula)]]
+		- Scheletro del documento e stile dei bordi
+		- `scope="colgroup"` e `scope="col"` nel `<thead>`
+		- `scope="row"` e celle dati con più coordinate
+		- Ultima riga e chiusura del documento
 8. **Liste** (slide 31–35)
 	- [[#Slide 31 – Liste|I tre tipi di lista: `<ul>`, `<ol>`, `<dl>`]]
 	- [[#Slide 32 – Struttura delle liste|Struttura ad albero lista → `<li>`]]
@@ -48,9 +48,8 @@
 	- [[#Slide 34 – `<ol></ol>`|Attributi `start`, `type`, `reversed`]]
 	- [[#Slide 35 – Liste annidiate|Annidamento di una lista dentro un `<li>`]]
 9. **Domanda bonus sulle liste annidate** (slide 36–37)
-	- [[#Slide 36 – Seconda domanda|Codice `<ol>` con `<ul>` interni da interpretare]]
-	- [[#Slide 37 – Seconda domanda|Rendering corretto della lista annidata]]
-
+	- [[#Slide 36 -> 37 – Seconda domanda|Codice `<ol>` con `<ul>` interni da interpretare]]
+		- Rendering corretto della lista annidata
 
 ---
 ## Slide 1 – HTML5 – Link, Tabelle e Liste
@@ -79,7 +78,7 @@ sono visualizzati dal browser -->
 >> chiude il commento).
 
 ---
-## Slide 4 – `<a>`
+## Slide 4 -> 5 – `<a>`
 
 - L'elemento **`<a>`** consente di inserire àncore nel documento, ovvero **punti di partenza di un link**.
 	- la destinazione si specifica con un URI attraverso l'attributo **`href`** .
@@ -89,9 +88,6 @@ sono visualizzati dal browser -->
 >> tag dedicato, la partenza (`<a href="...">`). L'arrivo non è più un tag
 >> speciale, ma semplicemente un qualsiasi elemento dotato di `id`
 >> (un `<section>`, un `<h2>`, un `<p>`, ...).
-
----
-## Slide 5 – `<a>`
 
 - Esempi:
 
@@ -207,7 +203,7 @@ Quale elemento può essere correttamente raggiunto dal link `<a href="#primapart
 >> che identifica davvero una parte del documento.
 
 ---
-## Slide 12 – Struttura delle tabelle 
+## Slide 12 -> 13 – Struttura delle tabelle
 
 - Le **tabelle** HTML5:
 	- Sono realizzate attraverso l'elemento **`<table>`**
@@ -216,9 +212,6 @@ Quale elemento può essere correttamente raggiunto dal link `<a href="#primapart
 - Le celle possono essere:
 	- Celle normali, in questo caso sono rese dall'elemento **`<td>`**, table data.
 	- Celle di intestazione, che invece sono realizzate con l'elemento **`<th>`**, table header
-
----
-## Slide 13 – Struttura delle tabelle
 
 - Ogni tabella è composta di righe `<tr>`
 	- Ogni riga è composta di celle di intestazione `<th>` o di contenuto `<td>`
@@ -247,7 +240,7 @@ Risultato:
 ![[TW04-s013-2.png|400]]
 
 ---
-## Slide 14 – `<table>`
+## Slide 14 -> 15 – `<table>`
 
 - Esempio con intestazione orizzontale (**`<th>`** prima cella di ogni riga):
 
@@ -267,9 +260,6 @@ Risultato:
 ```
 
 ![[TW04-s014-1.png|400]]
-
----
-## Slide 15 – `<table>`
 
 - Esempio con intestazione verticale (prima riga con tutte le celle **`<th>`**):
 
@@ -322,7 +312,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_caption_test
 >> di un `<p>` messo lì sopra.
 
 ---
-## Slide 17 – `<td><th>`
+## Slide 17 -> 18 – `<td><th>`
 
 - Una cella di tipo **`<td>`** o **`<th>`** può occupare più righe o più colonne utilizzando rispettivamente l'attributo ==**`rowspan`**== e ==**`colspan`**==
 - Esempio:
@@ -356,9 +346,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 >> Regola pratica: in ogni riga la somma dei `colspan` delle celle deve
 >> dare il numero di colonne della tabella, altrimenti il layout si
 >> "sfalsa".
-
----
-## Slide 18 – `<td><th>`
 
 - Una cella di tipo **`<td>`** o **`<th>`** può fare riferimento (tramite l'attributo **`headers`**), ad altre celle, per specificare che queste rappresentano una intestazione della cella corrente:
 	- Lo scopo di questo sistema di relazioni tra celle è quello di supportare gli screen reader usati dalle persone non vedenti nel riferire correttamente alle celle intestazione di una certa cella. Rivediamo questo attributo parlando di accessibilità.
@@ -480,7 +467,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 24 – Soluzione (1)
+## Slide 24 -> 25 – Soluzione
 
 ```html
 <!DOCTYPE html>
@@ -505,10 +492,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 >> La prima cella della riga di intestazione è un `<th>` vuoto: è l'angolo in
 >> alto a sinistra, che non intesta né una riga né una colonna.
 >> `<caption>` deve essere il primo figlio di `<table>`.
-
----
-
-## Slide 25 – Soluzione (2)
 
 ```html
       <tbody>
@@ -547,7 +530,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 
 ---
 
-## Slide 26 – Esempio con `scope`
+## Slide 26 -> 30 – Esempio con `scope`
 
 ![[TW04-s026-1.png|600]]
 
@@ -555,10 +538,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 >> intestazione di colonna**: il giorno (che copre due colonne) e l'aula. È
 >> esattamente il caso in cui `scope` da solo non basta e servono
 >> `colgroup` + `id`/`headers`.
-
----
-
-## Slide 27 – Esempio con `scope` (1)
 
 ```html
 <!DOCTYPE html>
@@ -577,10 +556,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
        <caption>Orario delle lezioni</caption>
        …
 ```
-
----
-
-## Slide 28 – Esempio con `scope` (2)
 
 ```html
 <thead>
@@ -609,10 +584,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 >> lo dichiarano con `headers="lun"` / `headers="mar"`: si costruisce così la
 >> gerarchia giorno → aula.
 
----
-
-## Slide 29 – Esempio con `scope`(3)
-
 ```html
 <tbody>
   <tr>
@@ -635,10 +606,6 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan
 >> Ogni cella dati elenca ora tre "coordinate": il giorno, l'orario (o gli
 >> orari, se c'è `rowspan`) e l'aula. `scope="row"` sulle fasce orarie evita di
 >> dover ripetere il loro `id` come intestazione di riga per ogni cella.
-
----
-
-## Slide 30 – Esempio con `scope` (4)
 
 ```html
         <tr>
@@ -752,7 +719,7 @@ http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_lists4
 
 ---
 
-## Slide 36 – Seconda domanda
+## Slide 36 -> 37 – Seconda domanda
 
 **DOMANDA 2:**
 Considerare il seguente codice. Come viene visualizzata la lista corrispondente dal browser?
@@ -767,10 +734,6 @@ Considerare il seguente codice. Come viene visualizzata la lista corrispondente 
    <ul> <li> HTTP </li></ul> </li>
 </ol>
 ```
-
----
-
-## Slide 37 – Seconda domanda
 
 ![[TW04-s037-1.png|367]]
 

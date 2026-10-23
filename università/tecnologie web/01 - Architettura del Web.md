@@ -42,11 +42,11 @@
 	- [[#Slide 34 – Confronto MEAN-L(W)AMP|Differenze tra MEAN e L(W)AMP]]
 7. **Da AJAX ai servizi: il Web moderno** (slide 35–39)
 	- [[#Slide 35 – AJAX|Scambio dati in background e Rich Internet Application]]
-	- [[#Slide 36 – Dalle pagine ai servizi|Dalle pagine generate dal server ai client che consumano servizi (esempio applicazione Meteo)]]
+	- [[#Slide 36 -> 39 – Dalle pagine ai servizi|Dalle pagine generate dal server ai client che consumano servizi (esempio applicazione Meteo)]]
 8. **Lo stile architetturale REST** (slide 40–45)
 	- [[#Slide 40 – REST|REST come stile architetturale, non protocollo né framework]]
-	- [[#Slide 41 – REST: resource-oriented architecture|URI che identificano risorse, non azioni]]
-	- [[#Slide 43 – HTTP|Metodi HTTP: GET, POST, PUT, DELETE e status code]]
+	- [[#Slide 41 -> 42 – REST: resource-oriented architecture|URI che identificano risorse, non azioni]]
+	- [[#Slide 43 -> 45 – HTTP|Metodi HTTP: GET, POST, PUT, DELETE e status code]]
 9. **JSON, API e separazione front-end/back-end** (slide 46–48)
 	- [[#Slide 46 – JSON|JSON come rappresentazione della risorsa]]
 	- [[#Slide 47 – Dal punto di vista del browser|Esempio di chiamata con fetch]]
@@ -60,7 +60,6 @@
 	- [[#Slide 54 – Ma quindi?|REST e JSON rispettano ancora i principi del Web]]
 	- [[#Slide 55 – Seconda domanda|Domanda di verifica sulle REST API]]
 	- [[#Slide 56 – Concludendo… quali tecnologie Web?|HTML5, CSS3, JavaScript e PHP]]
-
 
 ## Slide 1 – Architettura del Web
 
@@ -495,17 +494,13 @@ Livelli: MongoDB – Express – Angular – Node
 >> Esempio tipico: i suggerimenti mentre si digita in una casella di ricerca. A ogni tasto, JavaScript invia in background una richiesta (oggi di solito con `fetch()`), riceve i dati in JSON e aggiorna solo la lista dei suggerimenti, senza ricaricare la pagina.
 
 ---
-## Slide 36 – Dalle pagine ai servizi
+## Slide 36 -> 39 – Dalle pagine ai servizi
 
 - Finora abbiamo descritto il Web secondo il suo modello originario: il client (il browser) richiede una risorsa identificata da un URI attraverso HTTP e il server Web restituisce una rappresentazione di quella risorsa
 
 - Inizialmente, nella maggior parte dei casi, questa rappresentazione era una pagina HTML. Il browser chiedeva una pagina e il server restituiva un documento pronto per essere visualizzato
 
 >> Punto chiave: la risorsa non coincide con il file che la rappresenta. L'URI identifica la risorsa (concetto astratto), mentre ciò che viaggia sulla rete è una *rappresentazione* (HTML, JSON, PNG...) scelta in base alla negoziazione del contenuto.
-
----
-
-## Slide 37 – Dalle pagine ai servizi
 
 - Finora abbiamo descritto il Web secondo il suo modello originario: il client richiede una risorsa identificata da un URI attraverso HTTP e il server Web restituisce una rappresentazione di quella risorsa
 - Inizialmente, nella maggior parte dei casi, questa rappresentazione era una pagina HTML: Il browser chiedeva una pagina e il server restituiva un documento pronto per essere visualizzato
@@ -543,10 +538,6 @@ Content-Length: 1024
 - **Representation of the resource** *(in this case HTML)*
 - *The client receives the representation of the requested resource and renders it (e.g., as an HTML page).*
 
----
-
-## Slide 38 – Dalle pagine ai servizi
-
 - Con Javascript e con AJAX questo modello comincia a cambiare: il browser non deve più necessariamente chiedere al server una «*intera*» pagina HTML, ma può chiedere soltanto dei **dati**, riceverli in background e utilizzarli per aggiornare dinamicamente soltanto una parte dell'interfaccia (senza un esplicito reload)
 - Da **pagine generate dal server** a **client che consumano servizi**
 
@@ -582,10 +573,6 @@ Testo della figura:
 - The client uses the data to dynamically update the user interface
 
 >> AJAX (*Asynchronous JavaScript and XML*) è la tecnica che permette al codice JavaScript della pagina di fare richieste HTTP in background: la pagina resta la stessa, cambiano solo i dati e quindi i pezzi di DOM aggiornati. Da qui nasce la separazione tra front-end (presentazione) e back-end (servizi).
-
----
-
-## Slide 39 – Dalle pagine ai servizi
 
 - Esempio:
 	- applicazione Meteo
@@ -644,7 +631,7 @@ Accept: application/json
 
 ---
 
-## Slide 41 – REST: resource-oriented architecture
+## Slide 41 -> 42 – REST: resource-oriented architecture
 
 - Esempio: in un sistema universitario possiamo avere i seguenti URI
 
@@ -661,10 +648,6 @@ Non descrivono azioni ma risorse!
 
 >> `/students` e `/courses` sono *collection* (insiemi di risorse), mentre `/students/123` è un singolo *item* di quella collection: è la struttura gerarchica del path a esprimere la relazione di appartenenza.
 
----
-
-## Slide 42 – REST: resource-oriented architecture
-
 - Esempio:
 
 | URI | Significato |
@@ -678,7 +661,7 @@ Non descrivono azioni ma risorse!
 
 ---
 
-## Slide 43 – HTTP
+## Slide 43 -> 45 – HTTP
 
 - GET
 
@@ -690,10 +673,6 @@ Non descrivono azioni ma risorse!
 
 >> GET è *safe* (non modifica lo stato) e *idempotente*: ripeterlo non cambia nulla. POST non è idempotente: due POST su `/students` creano due studenti distinti.
 
----
-
-## Slide 44 – HTTP
-
 - PUT
 
 	`PUT /students/123` → invio una rappresentazione destinata a sostituire lo stato della risorsa identificata da questo URI
@@ -703,10 +682,6 @@ Non descrivono azioni ma risorse!
 	`DELETE /students/123` → elimina la risorsa studente 123
 
 >> PUT e DELETE sono idempotenti: applicarli più volte con gli stessi dati lascia il sistema nello stesso stato finale. Nota la differenza con POST: PUT si rivolge a un URI di risorsa già noto (sostituzione totale dello stato), POST alla collection.
-
----
-
-## Slide 45 – HTTP
 
 - Ad ogni metodo HTTP viene mandata una risposta con un codice parlante (status code)
 - Alcune risposte

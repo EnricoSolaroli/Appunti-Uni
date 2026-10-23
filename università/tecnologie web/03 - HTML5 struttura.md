@@ -43,10 +43,10 @@
 	- [[#Slide 30 – Esempio con link a pagina esterna|Didascalia con link alla descrizione estesa]]
 	- [[#Slide 31 – Terza domanda|Domanda 3: alt del logo usato come link alla home]]
 9. **Audio e video** (slide 32–35)
-	- [[#Slide 32 – `<video>`|Video nativo in HTML5 e fine dei plug-in]]
-	- [[#Slide 33 – `<video>`|Attributi controls e autoplay, source multipli, fallback]]
-	- [[#Slide 34 – `<audio>`|Inclusione standard di un file audio]]
-	- [[#Slide 35 – `<audio>`|Attributi e formati alternativi dell'audio]]
+	- [[#Slide 32 -> 33 – `<video>`|Video nativo in HTML5 e fine dei plug-in]]
+		- Attributi controls e autoplay, source multipli, fallback
+	- [[#Slide 34 -> 35 – `<audio>`|Inclusione standard di un file audio]]
+		- Attributi e formati alternativi dell'audio
 10. **Contenuti incorporati: iframe, object ed embed** (slide 36–40)
 	- [[#Slide 36 – `<iframe>`|Incorporare un documento o una risorsa esterna]]
 	- [[#Slide 37 – `<iframe>` e Youtube|Perché `<video>` non riproduce YouTube e come usare l'iframe]]
@@ -594,7 +594,7 @@ Quale `alt` indichereste per il logo dell'Università di Bologna nell'intestazio
 >> Qui l'immagine è *funzionale*: è il contenuto di un link verso la home page. L'`alt` deve quindi comunicare dove porta il link, non descrivere la grafica del logo. Per questo `""` e `"Logo Unibo"` non vanno bene (il link resterebbe senza testo accessibile o con un testo inutile), mentre l'ultima opzione è la denominazione completa dell'ateneo.
 
 ---
-## Slide 32 – `<video>`
+## Slide 32 -> 33 – `<video>`
 
 - L'elemento `<video>` definisce un modo standard per **includere un video** in una pagina Web
 - Prima di HTML5, non esisteva uno standard per mostrare i video nelle pagine Web, che potevano essere mandati in play solo con un plug-in (come Flash)
@@ -607,9 +607,6 @@ Quale `alt` indichereste per il logo dell'Università di Bologna nell'intestazio
 </video>
 ```
 
----
-## Slide 33 – `<video>`
-
 - L'attributo `controls` aggiunge i **controlli** per il video: play, pausa, volume, ecc
 - L'attributo `autoplay` permette di far partire il video automaticamente
 - L'attributo `width` definisce la larghezza del video; se non specificato il valore di `height` (altezza), viene calcolato mantenendo le proporzioni originali del video
@@ -619,7 +616,7 @@ Quale `alt` indichereste per il logo dell'Università di Bologna nell'intestazio
 >> Per incorporare un video di YouTube non si usa `<video>` ma un `<iframe>` con l'URL di embed fornito da YouTube: `<video>` si aspetta un file video vero e proprio, non una pagina.
 
 ---
-## Slide 34 – `<audio>`
+## Slide 34 -> 35 – `<audio>`
 
 - L'elemento `<audio>` definisce un modo standard per includere un audio in una pagina Web
 - Anche per gli audio prima di HTML5 non esisteva uno standard per includerli nelle pagine Web, che potevano essere mandati in play solo con un plug-in (come Flash)
@@ -631,9 +628,6 @@ Quale `alt` indichereste per il logo dell'Università di Bologna nell'intestazio
     Il tuo browser non supporta il tag audio
 </audio>
 ```
-
----
-## Slide 35 – `<audio>`
 
 - L'attributo `controls` aggiunge i **controlli** per l'audio: play, pausa, volume, ecc
 - L'attributo `autoplay` permette di far partire l'audio automaticamente

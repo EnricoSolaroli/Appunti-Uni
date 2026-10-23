@@ -6,46 +6,46 @@
 
 1. **Introduzione a JavaScript** (slide 1–5)
 	- [[#Slide 1 – JavaScript|Apertura della lezione e argomenti]]
-	- [[#Slide 3 – Che cos’è JavaScript?|Definizione: tipizzazione dinamica e debole, prototype-based, multi-paradigma]]
-	- [[#Slide 4 – Che cos’è JavaScript?|Single thread, Web API, coda dei callback ed event loop]]
+	- [[#Slide 3 -> 4 – Che cos’è JavaScript?|Definizione: tipizzazione dinamica e debole, prototype-based, multi-paradigma]]
+		- Single thread, Web API, coda dei callback ed event loop
 	- [[#Slide 5 – JavaScript nel Web|Ruoli di HTML, CSS e JavaScript nella pagina]]
 2. **Storia ed ECMAScript** (slide 6–10)
 	- [[#Slide 6 – JavaScript: nascita ed evoluzione|Nascita: Mocha, LiveScript, JavaScript (1995)]]
 	- [[#Slide 7 – ECMAScript|Standard ECMAScript (ECMA-262, ISO/IEC 16262)]]
 	- [[#Slide 8 – Top Programming Languages|Diffusione tra i linguaggi di programmazione]]
-	- [[#Slide 9 – L’evoluzione di Javascript|Timeline delle versioni e JavaScript oggi (server side, AJAX, JSON)]]
+	- [[#Slide 9 -> 10 – L’evoluzione di Javascript|Timeline delle versioni e JavaScript oggi (server side, AJAX, JSON)]]
 3. **JavaScript vs Java: classi e prototipi** (slide 11–16)
-	- [[#Slide 11 – JavaScript vs Java|Nessuna vera relazione tra Java e JavaScript; principali differenze]]
+	- [[#Slide 11 -> 12 – JavaScript vs Java|Nessuna vera relazione tra Java e JavaScript; principali differenze]]
 	- [[#Slide 13 – Linguaggi class-based|Linguaggi class-based]]
 	- [[#Slide 14 – Linguaggi prototype based|Linguaggi prototype-based]]
 	- [[#Slide 15 – Sostanzialmente…|Confronto riassuntivo e tabella delle differenze con Java/C/C#]]
 4. **Tipi di dato, array e oggetti** (slide 17–24)
 	- [[#Slide 17 – Tipi di dato|Tipizzazione dinamica: tipi associati ai valori]]
 	- [[#Slide 18 – Tipi primitivi|I sette tipi primitivi]]
-	- [[#Slide 19 – Array|Array: indici, tipi misti, lunghezza dinamica]]
-	- [[#Slide 21 – Oggetti in JS|Oggetti come collezioni dinamiche di proprietà]]
-	- [[#Slide 23 – Oggetti in JS|Riferimenti, prototipi e differenza tra oggetti e JSON]]
+	- [[#Slide 19 -> 20 – Array|Array: indici, tipi misti, lunghezza dinamica]]
+	- [[#Slide 21 -> 23 – Oggetti in JS|Oggetti come collezioni dinamiche di proprietà]]
+		- Riferimenti, prototipi e differenza tra oggetti e JSON
 	- [[#Slide 24 – Flessibilità: potenza e rischio|Flessibilità: potenza e rischio]]
 5. **Type coercion e verifica dei tipi** (slide 25–31)
-	- [[#Slide 25 – Type coercion|Coercizione implicita, == vs ===]]
+	- [[#Slide 25 -> 26 – Type coercion|Coercizione implicita, == vs ===]]
 	- [[#Slide 27 – Type coercion per gli oggetti|Confronto degli oggetti per identità]]
 	- [[#Slide 28 – Operatore `typeof`|Operatore typeof]]
 	- [[#Slide 29 – Operatore `Array.isArray()`|Array.isArray()]]
 	- [[#Slide 30 – Prima domanda|Domanda bonus 1: array vuoto == false]]
 	- [[#Slide 31 – Type coercion|Spiegazione passo per passo della coercizione]]
 6. **Variabili, scope e hoisting** (slide 32–40)
-	- [[#Slide 32 – Dichiarazione delle variabili|let e const; const rende costante il riferimento]]
+	- [[#Slide 32 -> 33 – Dichiarazione delle variabili|let e const; const rende costante il riferimento]]
 	- [[#Slide 34 – `var`: se lo conosci lo eviti|var: function scope e ridichiarazione]]
 	- [[#Slide 35 – `var`: REGOLA DEL CORSO!|Regola del corso: niente var]]
 	- [[#Slide 36 – Block scope|Block scope]]
-	- [[#Slide 37 – Block scope e Shadowing|Shadowing e scope lessicale]]
+	- [[#Slide 37 -> 38 – Block scope e Shadowing|Shadowing e scope lessicale]]
 	- [[#Slide 39 – Hoisting|Hoisting di var, let e const]]
 	- [[#Slide 40 – Hoisting e Temporal Dead Zone|Temporal Dead Zone]]
 7. **Funzioni** (slide 41–49)
 	- [[#Slide 41 – Funzioni|Funzioni come valori di prima classe]]
 	- [[#Slide 42 – Definire una funzione|Declaration, expression e arrow function]]
 	- [[#Slide 43 – Arrow functions|Sintassi delle arrow function]]
-	- [[#Slide 44 – Callback|Callback: passare greet vs greet(), callback sincrone e per eventi]]
+	- [[#Slide 44 -> 47 – Callback|Callback: passare greet vs greet(), callback sincrone e per eventi]]
 	- [[#Slide 48 – Higher-order function|Higher-order function e closure]]
 	- [[#Slide 49 – `map()`|Il metodo map()]]
 8. **Oggetti, this e prototipi** (slide 50–55)
@@ -58,8 +58,8 @@
 9. **Classi** (slide 56–65)
 	- [[#Slide 56 – Classi|Sintassi class come (quasi) zucchero sintattico]]
 	- [[#Slide 57 – Classi: esempio|Esempio: constructor, new e Student.prototype]]
-	- [[#Slide 58 – Classi: un altro esempio|Metodi condivisi in Student.prototype, verifica con Object.hasOwn]]
-	- [[#Slide 62 – Classi e prototipi|Object.create vs class; perché «quasi» zucchero sintattico]]
+	- [[#Slide 58 -> 61 – Classi: un altro esempio|Metodi condivisi in Student.prototype, verifica con Object.hasOwn]]
+	- [[#Slide 62 -> 63 – Classi e prototipi|Object.create vs class; perché «quasi» zucchero sintattico]]
 	- [[#Slide 64 – Seconda domanda|Domanda bonus 2: dove è definito greet()]]
 	- [[#Slide 65 – Domande?|Domande finali]]
 
@@ -67,8 +67,6 @@
 ## Slide 1 – JavaScript
 
 ![[TW09-s001-1.png|200]]
-
-*2 domande bonus*
 
 ---
 ## Slide 2 – Argomenti
@@ -81,35 +79,22 @@
 		- funzioni
 		- oggetti, classi e prototipi
 
-![[TW09-s002-1.png|250]]
-
-*2 punti bonus*
-
 ---
-## Slide 3 – Che cos’è JavaScript?
+## Slide 3 -> 4 – Che cos’è JavaScript?
 
 - JavaScript è un linguaggio **dinamicamente tipizzato, weakly typed, prototype-based e multi-paradigma**, standardizzato come ECMAScript
 - Nel browser consente di aggiungere comportamento alle pagine Web, reagire agli eventi, modificare il DOM e comunicare in modo asincrono con server e servizi remoti
 - Il browser comprende nativamente HTML per la struttura, CSS per la presentazione e JavaScript per il comportamento e l’interattività della pagina.
 
-![[TW09-s003-1.png|500]]
-
-(HTML – *structure*; CSS – *presentation/appearance*; JavaScript – *dynamism/action*)
-
 >> - **Dinamicamente tipizzato**: il tipo è legato al valore e viene controllato a runtime, non in compilazione (`let x = 42; x = "ciao";` è lecito).
 >> - **Weakly typed**: il linguaggio converte implicitamente i tipi quando servono (type coercion), es. `"4" + 2` → `"42"`, `"4" - 2` → `2`.
 >> - **Multi-paradigma**: supporta stile imperativo, a oggetti (basato su prototipi) e funzionale (funzioni come valori di prima classe).
-
----
-## Slide 4 – Che cos’è JavaScript?
 
 - Javascript viene eseguito in un unico thread (**single-threaded**) a livello del linguaggio: c’è una sola call stack che esegue il codice JavaScript istruzione per istruzione
 - Per operazioni che richiedono tempo (es. richieste HTTP, timer, eventi dell’utente), il browser offre delle Web API che eseguono queste operazioni in maniera asincrona
 - Quando una operazione è completata, il relativo callback viene messo in coda e verrà eseguito dall’event loop quando la call stack è libera
 
 ![[TW09-s004-1.png|600]]
-
-Testo del diagramma:
 
 - **Codice JavaScript**:
 
@@ -139,39 +124,6 @@ console.log("Fine");
 
 ![[TW09-s005-1.png|600]]
 
-- **HTML** – struttura: *Definisce gli elementi della pagina.*
-
-```html
-<button id="mioBottone">
-  Clicca qui!
-</button>
-```
-
-- **CSS** – presentazione: *Controlla l’aspetto degli elementi della pagina.*
-
-```css
-#mioBottone {
-   background-color: #007bff;
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   border-radius: 6px;
-}
-```
-
-- **JavaScript** – comportamento: *Aggiunge interattività alla pagina.*
-
-```js
-const bottone =
-  document.querySelector("#mioBottone");
-
-bottone.addEventListener("click", () => {
-  alert("Hai cliccato sul bottone!");
-});
-```
-
-Risultato: bottone “Clicca qui!” → “Hai cliccato sul bottone!”
-
 HTML → “marca” il bottone, definite con il suo id e con la sua scritta
 CSS → il bottone è rappresentato con sfondo blu, testo bianco, etc
 JavaScript → qualcosa accade quando l’utente clicca il bottone
@@ -183,10 +135,6 @@ JavaScript → qualcosa accade quando l’utente clicca il bottone
 
 - Fu originariamente sviluppato dalla Netscape come Mochan prima e come **LiveScript** poi
 - Il nome fu poi cambiato in **JavaScript** nel 1995 (attraverso un accordo Netscape con Sun) nello stesso periodo in cui Netscape iniziò a includere nel proprio browser il supporto per Java
-
-![[TW09-s006-1.png|350]]
-
-(*When the world still made sense* – JavaScript first appeared in 1995 – Programmers in 1994:)
 
 >> Il primo nome in codice era **Mocha** (scritto da Brendan Eich in circa 10 giorni nel maggio 1995). Il nome "JavaScript" fu una scelta di marketing per sfruttare la popolarità di Java.
 
@@ -208,59 +156,18 @@ JavaScript → qualcosa accade quando l’utente clicca il bottone
 Gli ultimi dati disponibili si riferiscono al 2025
 https://spectrum.ieee.org/top-programming-languages/
 
-![[TW09-s008-1.png|250]]
-
-![[TW09-s008-2.png|500]]
-
-| Linguaggio | Punteggio |
-|---|---|
-| Python | 1 |
-| Java | 0.4986 |
-| C++ | 0.3669 |
-| SQL | 0.3293 |
-| C# | 0.2888 |
-| **JavaScript** | **0.2872** |
-| TypeScript | 0.2807 |
-| C | 0.2767 |
-| Shell | 0.2096 |
-| Go | 0.1866 |
-| R | 0.1814 |
-| PHP | 0.1568 |
-| Kotlin | 0.1316 |
-| Rust | 0.1301 |
-| Dart | 0.1257 |
-| Swift | 0.1172 |
-| Ruby | 0.1165 |
-| HTML | 0.1113 |
-| Objective-C | – |
-| Matlab | – |
-| Lua | – |
+![[TW09-s008-2.png|410]]
 
 >> I punteggi sono normalizzati rispetto al primo classificato (Python = 1). TypeScript, subito sotto, è un superset tipizzato di JavaScript che viene compilato in JavaScript: sommandoli, l'ecosistema JS risulta tra i più diffusi.
 
 ---
-## Slide 9 – L’evoluzione di Javascript
+## Slide 9 -> 10 – L’evoluzione di Javascript
 
 ![[TW09-s009-1.png|650]]
-
-Timeline:
-- 1995 – **JavaScript** is born as LiveScript
-- 1997 – **ECMAScript** standard is established
-- 1999 – **ES3** comes out and IE5 is all the rage
-- 2000 – XMLHttpRequest, a.k.a. AJAX, gains popularity
-- 2009 – **ES5** comes out and standard JSON
-- 2015 – **ES6**/ECMAScript2015 comes out
-- 2016 – **ES7**/ECMAScript2016 comes out
-- 2017 – ES.Next
 
 - Javascript nasce come linguaggio client side interpretato dal browser per realizzare semplici script nella pagina (in origine erano spesso usati per inserire effetti grafici e per dare dinamismo al contenuto Web)
 
 >> ES6/ES2015 è la revisione più importante: ha introdotto `let`/`const`, arrow function, `class`, moduli, Promise, template literal, destructuring. "ES.Next" indica le funzionalità in arrivo nelle edizioni annuali successive.
-
----
-## Slide 10 – L’evoluzione di Javascript
-
-![[TW09-s010-1.png|300]]
 
 - Ma cosa è diventato Javascript ora?
 	1. Un **linguaggio server side**, che concorre con PHP
@@ -273,19 +180,12 @@ Timeline:
 >> - **JSON** = *JavaScript Object Notation*: sintassi derivata dai letterali oggetto/array di JS, es. `{"name": "Alice", "age": 20}`; MongoDB memorizza documenti in un formato binario derivato (BSON).
 
 ---
-## Slide 11 – JavaScript vs Java
-
-![[TW09-s011-1.png|300]]
-
-(*JAVA is to JAVASCRIPT as HAM is to HAMSTER*)
+## Slide 11 -> 12 – JavaScript vs Java
 
 - La scelta di questo nome è ancora oggi fonte di **grande** confusione:
 	- **Non c'è una vera relazione tra Java e JavaScript**
 	- Le somiglianze sono soprattutto sintattiche (causate dal fatto che entrambi i linguaggi si ispirano al C)
 	- In particolare gli object model non hanno relazione e sono ampiamente incompatibili
-
----
-## Slide 12 – JavaScript vs Java
 
 - PRINCIPALI differenze tra Java e Javascript
 	- JavaScript è **interpretato** non compilato
@@ -294,8 +194,6 @@ Timeline:
 		- Non esiste il concetto di classe
 	- JavaScript è debolmente tipizzato (**weakly typed**): Non è necessario definire il tipo di una variabile
 - **SI USANO IN CONTESTI DIVERSI!**
-
-![[TW09-s012-1.png|250]]
 
 >> "Interpretato" va inteso come: non c'è una fase di compilazione separata dallo sviluppatore verso un eseguibile/bytecode. I motori moderni (V8, SpiderMonkey) in realtà compilano il codice **JIT** (just-in-time) in codice macchina durante l'esecuzione (vedi slide 16).
 >> Da ES2015 esiste la parola chiave `class`, ma è *zucchero sintattico* sopra il meccanismo dei prototipi: il modello sottostante resta prototype-based.
@@ -330,8 +228,6 @@ Timeline:
 ---
 ## Slide 15 – Sostanzialmente…
 
-![[TW09-s015-1.png|100]]
-
 - In Java si definisce una classe e da questa si dichiara un oggetto
 - In JavaScript ogni oggetto è creato direttamente, senza bisogno di definire prima una classe.
 
@@ -358,7 +254,7 @@ Timeline:
 ---
 ## Slide 17 – Tipi di dato
 
-- JavaScript è un linguaggio dinamicamente tipizzato: i tipi sono associati ai valori, non alle variabili
+- JavaScript è un linguaggio ~~dinamicamente tipizzato~~: i tipi sono associati ai valori, non alle variabili
 - Una stessa variabile può quindi contenere valori di tipi diversi durante l'esecuzione
 - JavaScript distingue tra tipi primitivi e oggetti
 
@@ -391,7 +287,7 @@ Timeline:
 >> - `typeof 10n` → `"bigint"`, `typeof Symbol("a")` → `"symbol"`, `typeof undefined` → `"undefined"`.
 
 ---
-## Slide 19 – Array
+## Slide 19 -> 20 – Array
 
 - Rappresentano collezioni ordinate di elementi, accessibili attraverso un indice numerico a partire da zero
 - A differenza degli array di molti linguaggi staticamente tipizzati, possono contenere valori di tipi diversi e modificare dinamicamente la propria lunghezza
@@ -410,27 +306,10 @@ values[1] = "world"; // modifica un elemento
 
 >> Verificato con node: dopo le modifiche `values` vale `[10, "world", true, 42]` e `values.length` è `4`; invece `values = []` lancia `TypeError: Assignment to constant variable.`. `const` rende costante il *riferimento*, non il contenuto; per rendere immutabile l'array serve `Object.freeze(values)`.
 
----
-## Slide 20 – Array
-
 ![[TW09-s020-1.png|600]]
 
-- **Array `values` – versione iniziale**: `const values = [10, "hello", true];`
-
-| Indice | [0] | [1] | [2] |
-|---|---|---|---|
-| Valore | 10 | "hello" | true |
-| Tipo | number | string | boolean |
-
-- **Array `values` – dopo le modifiche**: `values.push(42);   values[1] = "world";`
-
-| Indice | [0] | [1] | [2] | [3] |
-|---|---|---|---|---|
-| Valore | 10 | "world" | true | 42 |
-| Tipo | number | string | boolean | number |
-
 ---
-## Slide 21 – Oggetti in JS
+## Slide 21 -> 23 – Oggetti in JS
 
 - Collezioni dinamiche di proprietà, rappresentate da coppie chiave–valore
 - Una proprietà può contenere un valore primitivo, un altro oggetto oppure una funzione (metodo)
@@ -438,75 +317,11 @@ values[1] = "world"; // modifica un elemento
 
 ![[TW09-s021-1.png|600]]
 
-```js
-const student = {
-    name: "Alice",
-    age: 20,
-    courses: "Computer Science and Engineering"
-};
-
-console.log(student.name);     // "Alice"
-console.log(student["age"]);   // 20
-
-student.city = Cesena;
-
-student.age = 21;
-```
-
-Annotazioni: le due `console.log` → *Accesso alle proprietà*; `student.city = Cesena;` → *Aggiunta dinamica di una proprietà*; `student.age = 21;` → *Modifica di una proprietà*
-
->> Attenzione: così com'è scritto, `student.city = Cesena;` (senza virgolette) lancia `ReferenceError: Cesena is not defined` (verificato con node), perché `Cesena` viene interpretato come nome di variabile. La forma corretta è `student.city = "Cesena";`, come nella slide successiva (dove la proprietà si chiama anche `course` e non `courses`).
->> Le due notazioni di accesso sono equivalenti, ma quella a parentesi quadre accetta qualsiasi espressione come chiave: `const k = "age"; student[k]` → `20`. Leggere una proprietà inesistente non dà errore ma restituisce `undefined`.
-
----
-## Slide 22 – Oggetti in JS
+>>  La forma corretta è `student.city = "Cesena";`
 
 ![[TW09-s022-1.png|650]]
 
-**Oggetto `student` – versione iniziale**
-
-```js
-const student = {
-  name: "Alice",
-  age: 20,
-  course: "Computer Science and Engineering"
-};
-```
-
-Rappresentazione dell’oggetto (iniziale):
-
-| student | |
-|---|---|
-| name | "Alice" |
-| age | 20 |
-| course | "Computer Science and Engineering" |
-
-**Oggetto `student` – dopo le modifiche**
-
-```js
-const student = {
-  name: "Alice",
-  age: 20,
-  course: "Computer Science and Engineering"
-};
-// modifica di una proprietà esistente
-student.age = 21;
-// aggiunta di una nuova proprietà
-student.city = "Cesena";
-```
-
-Rappresentazione dell’oggetto (dopo le modifiche):
-
-| student | | |
-|---|---|---|
-| name | "Alice" | |
-| age | 21 | *proprietà modificata (valore aggiornato)* |
-| course | "Computer Science and Engineering" | |
-| city | "Cesena" | *nuova proprietà aggiunta dinamicamente* |
-
 >> Come per gli array, `const student` impedisce solo di riassegnare `student` a un altro oggetto: le proprietà possono essere aggiunte, modificate o rimosse (`delete student.city`). Con `Object.freeze(student)` le modifiche successive vengono ignorate (o lanciano `TypeError` in strict mode).
----
-## Slide 23 – Oggetti in JS
 
 - Proprietà fondamentali
 	- Le proprietà possono essere aggiunte, modificate o eliminate a runtime.
@@ -542,7 +357,7 @@ user.age = 20;
 >> Nel secondo, l'oggetto `user` acquisisce a runtime una nuova proprietà `age`: notare che è lecito anche se `user` è `const` (vedi slide 33).
 
 ---
-## Slide 25 – Type coercion
+## Slide 25 -> 26 – Type coercion
 
 - In JS il risultato di una operazione dipende dal tipo effettivo del valore e dalle regole di coercizione applicate dagli operatori
 
@@ -554,32 +369,15 @@ user.age = 20;
 - Molte «*stranezze*» di JS non sono casuali ma derivano da precise regole del linguaggio
 - Conviene comprendere e distinguere bene tra flessibilità e prevedibilità
 
-![[TW09-s025-1.png|400]]
+![[TW09-s025-1.png|301]]
 
 >> Il meme mostra la console del browser: con `var x = "42";` si ottiene `x + 1` → `"421"` (concatenazione di stringhe) ma `x - 1` → `41` (sottrazione numerica). Verificato con node.
-
----
-## Slide 26 – Type coercion
 
 - JavaScript può convertire implicitamente i valori da un tipo all'altro durante la valutazione delle espressioni
 - La **type coercion** permette a JS di convertire automaticamente i valori tra tipi diversi, ma può produrre risultati inattesi
 - Per i confronti di uguaglianza è generalmente preferibile utilizzare **`===`** e **`!==`**
 
 ![[TW09-s026-1.png|600]]
-
-```js
-"5" + 1      // "51"
-"5" - 1      // 4
-5 == "5"     // true
-5 === "5"    // false
-true + 1     // 2
-```
-
-- `"5" + 1` → ***L'operatore "+" in presenza di una stringa converte il numero 1 in stringa ed esegue una concatenazione***
-- `"5" - 1` → ***L'operatore "-" esegue una sottrazione numerica, quindi converte implicitamente la stringa "5" nel numero 5***
-- `5 == "5"` → ***L'operatore "==" confronta i valori applicando, se necessario, una conversione implicita dei tipi***
-- `5 === "5"` → ***L'operatore "===" esegue un confronto stretto, senza conversioni implicite: numero e stringa sono tipi diversi***
-- `true + 1` → ***In un'operazione aritmetica il valore booleano true viene convertito nel numero 1 (false diventa 0)***
 
 >> Regola pratica: `+` è "ambiguo" (somma o concatenazione) e basta un operando stringa perché vinca la concatenazione; gli altri operatori aritmetici (`-`, `*`, `/`, `%`) convertono sempre a numero.
 >> Esempi extra (verificati con node): `[1, 2] + [3]` → `"1,23"` (gli array vengono convertiti in stringa), `"abc" - 1` → `NaN`.
@@ -639,8 +437,6 @@ Array.isArray(null)      // -> false
 ---
 ## Slide 30 – Prima domanda
 
-*BONUS*
-
 - **DOMANDA 1**:
   Quale risultato viene restituito dalla valutazione della seguente espressione JavaScript?
 
@@ -648,12 +444,10 @@ Array.isArray(null)      // -> false
 [] == false
 ```
 
-- [ ] `true`
+- [x] `true`
 - [ ] `false`
 - [ ] `TypeError`
 - [ ] `undefined`
-
-![[TW09-s030-1.png|300]]
 
 >> **Risposta corretta: `true`** (verificato con node: `[] == false` → `true`).
 >> Motivazione: con `==` il booleano `false` viene convertito nel numero `0`; l'array, essendo un oggetto, viene convertito in primitivo tramite `toString()`, ottenendo la stringa vuota `""`; infine `""` viene convertita in numero, cioè `0`. Il confronto finale è `0 == 0` → `true` (vedi slide successiva).
@@ -664,29 +458,11 @@ Array.isArray(null)      // -> false
 
 ![[TW09-s031-1.png|700]]
 
-1. **Type coercion in JavaScript (1/4)** – La domanda: perché `[] == false` ?
-	- `[] == false // → true`
-	- Come è possibile che un array vuoto sia uguale a `false`?
-2. **Type coercion in JavaScript (2/4)** – Passo 1: l'array viene convertito in una stringa
-	- Per l'operatore `==`, se un operando è un oggetto (inclusi gli array), viene prima convertito in una stringa tramite il metodo `toString()`.
-	- `[].toString() // → "" (stringa vuota)`
-	- `[]` (array vuoto) —`toString()`→ `""` (stringa vuota)
-3. **Type coercion in JavaScript (3/4)** – Passo 2: la stringa viene convertita in numero
-	- Ora l'operatore `==` confronta una stringa con un booleano. Il booleano `false` viene convertito in numero: `0`. La stringa `""` viene a sua volta convertita in numero.
-	- `Number("") // → 0`
-	- `Number(false) // → 0`
-	- `""` (stringa vuota) —`Number()`→ `0` (numero)
-	- `false` (booleano) —`Number()`→ `0` (numero)
-4. **Type coercion in JavaScript (4/4)** – Passo 3: confronto finale
-	- Alla fine, l'operatore `==` confronta i due numeri risultanti.
-	- `0 == 0 // → true`
-	- Quindi `[] == false` restituisce `true`.
-
 >> Precisazione sull'ordine reale previsto dalla specifica (Abstract Equality Comparison): prima viene convertito il booleano (`false` → `0`), poi l'oggetto viene ridotto a primitivo (`[]` → `""`), infine la stringa viene convertita in numero (`""` → `0`). Il risultato non cambia.
 >> Per lo stesso motivo `[0] == false` → `true` e `[1] == 1` → `true`, mentre `null == false` → `false` (`null` è uguale con `==` solo a `null` e `undefined`). Tutti verificati con node.
 
 ---
-## Slide 32 – Dichiarazione delle variabili
+## Slide 32 -> 33 – Dichiarazione delle variabili
 
 - Le variabili vengono dichiarate principalmente utilizzando **`let`** e **`const`**
 - Entrambe hanno *block scope*, ma differiscono per la possibilità di riassegnare un valore alla variabile
@@ -695,23 +471,14 @@ Array.isArray(null)      // -> false
 let score = 18;
 score = 25;           //OK
 score = "passed";     //OK
+//Il valore può essere modificato e può anche cambiare il tipo
 ```
-
-***Il valore può essere modificato e può anche cambiare il tipo***
 
 ```js
 const maxScore = 30;
 maxScore = 35; //TypeErorr
+//Il valore associato alla variabile non può essere riassegnato
 ```
-
-***Il valore associato alla variabile non può essere riassegnato***
-
-![[TW09-s032-1.png|300]]
-
->> Il commento corretto è `TypeError` (verificato con node: `TypeError: Assignment to constant variable.`). Inoltre una `const` va inizializzata nella dichiarazione stessa: `const k;` è un `SyntaxError`.
-
----
-## Slide 33 – Dichiarazione delle variabili
 
 - **`const`** non rende necessariamente immutabile il valore a cui fa riferimento!
 
@@ -755,11 +522,10 @@ if (true) {
 console.log(x); //ReferenceError
 ```
 
-- **`var`** non rispetta il *block scope*: la variabile rimane accessibile fuori dal blocco; **`let`** rispetta il *block scope*: la variabile esiste solo all'interno del blocco
+- ~~**`var`** non rispetta il *block scope*~~: la variabile rimane accessibile fuori dal blocco; **`let`** rispetta il *block scope*: la variabile esiste solo all'interno del blocco
 - **`var`** presenta altre particolarità, es. la possibilità di ridichiarare una variabile nello stesso scope e un comportamento differente rispetto all'***hoisting***
 
 >> `var` ha *function scope*: è visibile in tutta la funzione che la contiene (o globalmente se dichiarata fuori da funzioni), indipendentemente dai blocchi `{ }`.
->> Ridichiarazione: `var a = 1; var a = 2;` è lecito, mentre `let a = 1; let a = 2;` dà `SyntaxError: Identifier 'a' has already been declared`.
 >> Il caso classico che mostra il problema: `for (var i = 0; i < 3; i++) setTimeout(() => console.log(i));` stampa `3 3 3`, mentre con `let i` stampa `0 1 2` (con `let` ogni iterazione ha la propria `i`).
 
 ---
@@ -777,24 +543,11 @@ console.log(x); //ReferenceError
 
 ![[TW09-s036-1.png|650]]
 
-```js
-let score = 18;
-If (score >= 18) {
-    const message = "Exam passed!";
-    console.log(message);         //OK
-};
-console.log(score);          //18
-console.log(message);        //ReferenceError
-```
-
-- `score` ***dichiarata nello scope esterno e quindi accessibile anche dentro il blocco*** `if`
-- `message` ***dichiarata all'interno del blocco*** `if` ***e quindi non può essere usata all'esterno***
-
 >> Nel codice reale la parola chiave va scritta minuscola: `if`. Con `If` maiuscolo JS non riconosce il costrutto (errore di sintassi).
 >> L'errore dell'ultima riga è, più precisamente, `ReferenceError: message is not defined`.
 
 ---
-## Slide 37 – Block scope e Shadowing
+## Slide 37 -> 38 – Block scope e Shadowing
 
 ```js
 let name = "Alice";
@@ -809,43 +562,13 @@ console.log(name);    //Alice
 
 ![[TW09-s037-1.png|450]]
 
-- **Scope esterno**: `name = "Alice"` → Scope esterno `name = "Alice"`
-	- **Scope interno — if**: `name = "Bob"` → La dichiarazione interna nasconde quella esterna, senza modificarla.
-	- Terminato il blocco, **name** nello scope esterno vale ancora `"Alice"`.
 - Lo scope è lessicale: dipende alla struttura del codice, non dal percorso seguito durante l'esecuzione
 
 >> Anche qui `If` va letto come `if`.
 >> Lo shadowing è diverso dalla riassegnazione: se nel blocco si scrivesse `name = "Bob";` (senza `let`) si modificherebbe la variabile esterna, e l'ultima riga stamperebbe `Bob`.
 >> "Scope lessicale" significa che per sapere a quale variabile si riferisce un nome basta guardare dove è scritto nel codice (in quali blocchi/funzioni è annidato), non da dove viene chiamato a runtime.
 
----
-## Slide 38 – Block scope e Shadowing
-
 ![[TW09-s038-1.png|700]]
-
-- Lo **scope** definisce la porzione di codice in cui una variabile è accessibile.
-- Le variabili dichiarate con `let` e `const` hanno **block scope**: sono visibili soltanto all'interno del blocco `{ }` in cui vengono dichiarate e negli eventuali blocchi annidati.
-
-```js
-{
-  let name = "Alice";
-  console.log(name); // "Alice"
-
-  if (true) {
-    let name = "Bob";
-    console.log(name); // "Bob"
-  }
-
-  console.log(name); // "Alice"
-}
-
-// name qui non è accessibile
-```
-
-- **Scope esterno** (righe 2–3): La variabile **name** è dichiarata nello scope esterno del blocco ed è inizializzata con "Alice".
-- **Scope interno — if** (righe 6–7): All'interno del blocco if viene dichiarata una nuova variabile **name**, che nasconde quella esterna. Qui **name** vale "Bob".
-- **Dopo il blocco if** (riga 10): Terminato il blocco if, la variabile **name** nello scope esterno vale ancora "Alice". La dichiarazione interna non ha modificato quella esterna: le due variabili esistono in scope diversi.
-- Schema degli scope: Scope esterno → `name` = `"Alice"`; Scope interno (if) → `name` = `"Bob"` (*nasconde la variabile esterna*); all'uscita dal blocco → `name` = `"Alice"`.
 
 ---
 ## Slide 39 – Hoisting
@@ -886,15 +609,6 @@ Anche `let` e `const` vengono registrate durante la creazione dello *scope*, ma 
 
 ![[TW09-s040-1.png|650]]
 
-- **Hoisting — `var x`**
-	- Prima dell'assegnazione: `x` → `undefined`
-	- Dopo l'assegnazione: `x` → `10`
-	- Le variabili dichiarate con `var` vengono "sollevate" (hoisted) all'inizio dello scope e inizializzate con `undefined`. Prima dell'assegnazione il loro valore è `undefined`.
-- **Temporal Dead Zone — `let y` / `const y`**
-	- Temporal Dead Zone: `y` → `ReferenceError`
-	- Dopo l'inizializzazione: `y` → `20`
-	- Le variabili dichiarate con `let` e `const` **non** sono inizializzate durante l'hoisting. Prima dell'inizializzazione si trovano nella **Temporal Dead Zone** e non possono essere accedute: l'accesso genera un `ReferenceError`. Dopo l'inizializzazione il loro valore è `20`.
-
 >> La TDZ è "temporale" e non "spaziale": conta il momento in cui avviene l'accesso, non la posizione nel codice. Ad esempio una funzione definita prima di `let y = 20;` può leggere `y` senza errori, purché venga *chiamata* dopo l'inizializzazione.
 
 ---
@@ -904,26 +618,6 @@ Anche `let` e `const` vengono registrate durante la creazione dello *scope*, ma 
 - Questa caratteristica rende JavaScript particolarmente adatto alla programmazione basata su eventi e alla gestione di operazioni asincrone
 
 ![[TW09-s041-1.png|650]]
-
-```js
-function add(a, b) {
-    return a + b;
-}
-console.log(add(3, 5)); //8
-```
-
-```js
-const operation = add;
-console.log(operation(3, 5)); //8
-```
-
-`add` ***identifica la funzione come valore, mentre*** `add(3, 5)` ***ne invoca l'esecuzione***
-
-```js
-button.addEventListener("click", handleClick)
-```
-
-`handleClick` ***viene passata come parametro***
 
 >> Errore tipico: scrivere `button.addEventListener("click", handleClick())`. In quel caso la funzione viene eseguita subito, e al listener viene passato il suo valore di ritorno (spesso `undefined`) invece della funzione stessa.
 >> Esempio di funzione restituita come risultato: `function moltiplicatore(k) { return x => x * k; }` → `const doppio = moltiplicatore(2); doppio(5)` vale `10`.
@@ -937,7 +631,7 @@ function add(a, b) {
 }
 ```
 
-***Function Declaration:*** ***una dichiarazione con un nome, utilizzabile anche prima della sua posizione nel codice, grazie all'hoisting***
+***Function Declaration:*** una dichiarazione con un nome, utilizzabile anche prima della sua posizione nel codice, grazie all'hoisting
 
 ```js
 const add = function(a, b) {
@@ -945,13 +639,13 @@ const add = function(a, b) {
 }
 ```
 
-***Function Expression:*** ***una funzione viene creata come espressione e assegnata alla variabile*** **`add`**
+***Function Expression:*** una funzione viene creata come espressione e assegnata alla variabile `add`
 
 ```js
 const add = function(a, b) => a + b;
 ```
 
-***Arrow Function:*** ***sintassi compatta per definire una funzione; in questo esempio il risultato dell'espressione viene restituito implicitamente***
+***Arrow Function:*** sintassi compatta per definire una funzione; in questo esempio il risultato dell'espressione viene restituito implicitamente
 
 - Queste tre forme possono produrre lo stesso risultato, ma non sono completamente equivalenti: differiscono, tra le altre cose, per hoisting e gestione di `this`
 
@@ -986,7 +680,7 @@ const max = (a, b) => {
 >> Altri casi particolari: senza parametri servono le parentesi vuote, `const saluta = () => "ciao";`. Per restituire implicitamente un oggetto letterale bisogna racchiuderlo tra parentesi tonde, `const crea = n => ({ name: n });`, altrimenti le graffe vengono interpretate come blocco del corpo.
 >> Uso tipico come callback: `[1, 2, 3].map(x => x * 2)` → `[2, 4, 6]`.
 ---
-## Slide 44 – Callback
+## Slide 44 -> 47 – Callback
 
 - Una ***callback*** è una funzione passata come argomento ad un'altra funzione, affinché quest'ultima possa richiamarla quando necessari
 - Le callback sono alla base di molti meccanismi JavaScript, tra cui la gestione degli eventi, le operazioni sugli array e numerose API sincrone
@@ -1012,17 +706,11 @@ Hello, Alice
 
 >> `processUser` non sa nulla di `greet`: riceve "qualcosa da chiamare" nel parametro `callback` e lo invoca passandogli `user`. Cambiando la callback (es. una funzione che scrive su file o mostra un alert) si cambia il comportamento di `processUser` senza toccarne il codice.
 
----
-## Slide 45 – Callback
-
 ![[TW09-s045-1.png|450]]
 
 - `processUser(greet)` – Passaggio della funzione come argomento
 - ↓ `callback(user)` – La funzione ricevuta viene invocata
 - ↓ `greet("Alice")` – Esecuzione della callback
-
----
-## Slide 46 – Callback
 
 ```js
 processUser(greet);   // Passa la funzione
@@ -1039,9 +727,6 @@ processUser(greet()); // Esegue subito greet e passa il suo risultato
 >> TypeError: callback is not a function
 >> ```
 >> Regola pratica: senza parentesi (`greet`) passi la funzione come valore; con le parentesi (`greet()`) la esegui subito e passi il suo valore di ritorno.
-
----
-## Slide 47 – Callback
 
 ```js
 button.addEventListener("click", () => ){
@@ -1104,10 +789,6 @@ for (const n of numbers) {
 ```
 
 ![[TW09-s049-1.png|500]]
-
-- `numbers.map(x => x * 2)`
-- ↓ Applicazione di `x => x * 2` a ogni elemento: 1 → 2, 2 → 4, 3 → 6, 4 → 8
-- ↓ Viene creato un nuovo array. `[ 2, 4, 6, 8 ]`
 
 >> Refuso nella slide: l'array è dichiarato come `number` ma poi usato come `numbers` (così com'è darebbe `ReferenceError: numbers is not defined`); va dichiarato `const numbers = [1, 2, 3, 4];`. Con il nome corretto, node stampa `[ 2, 4, 6, 8 ]` e `[ 1, 2, 3, 4 ]`.
 >> Il riquadro di destra è l'equivalente "imperativo" con un ciclo `for...of`: `map` è più conciso e dichiarativo (dici *cosa* trasformare, non *come* iterare). La callback di `map` riceve in realtà anche indice e array: `arr.map((x, i, a) => ...)`.
@@ -1264,7 +945,7 @@ Student.prototype
 >> Cosa fa `new Student("Alice", 23)`, in sintesi: (1) crea un oggetto vuoto; (2) imposta il suo `[[Prototype]]` a `Student.prototype`; (3) esegue `constructor` con `this` = il nuovo oggetto; (4) restituisce l'oggetto. Ecco perché il confronto finale dà `true` (verificato con node).
 
 ---
-## Slide 58 – Classi: un altro esempio
+## Slide 58 -> 61 – Classi: un altro esempio
 
 ```js
 class Student {
@@ -1281,9 +962,6 @@ const bob = new Student("Bob");
 
 *Quando eseguiamo `new Student("Alice")`, JavaScript crea un nuovo oggetto e inizializza la proprietà `name` attraverso il costruttore.*
 *Ma il metodo `greet()` non viene inserito direttamente nell'oggetto `alice`: è definito in `Student.prototype`, che viene condiviso dalle istanze.*
-
----
-## Slide 59 – Classi: un altro esempio
 
 ```js
 console.log(Object.hasOwn(alice, "name"));  // true
@@ -1307,9 +985,6 @@ console.log(alice.greet());  // "Hello, Alice!"
 
 >> `Object.hasOwn(obj, prop)` (ES2022) controlla solo le proprietà *proprie* dell'oggetto, senza risalire la catena; è l'alternativa moderna a `obj.hasOwnProperty(prop)`. Al contrario, l'operatore `in` risale la catena: `"greet" in alice` è `true`.
 
----
-## Slide 60 – Classi: un altro esempio
-
 ![[TW09-s060-1.png|350]]
 
 - **Istanza `alice`**: `name: "Alice"` – `Object.hasOwn(alice, "greet") → false`
@@ -1317,9 +992,6 @@ console.log(alice.greet());  // "Hello, Alice!"
 - **`Student.prototype`**: `greet()` – `Object.hasOwn(Student.prototype, "greet") → true`
 - ↓ `[[Prototype]]`
 - **`Object.prototype`**: `toString()`, `hasOwnProperty()`, …
-
----
-## Slide 61 – Classi: un altro esempio
 
 ```js
 const alice = new Student("Alice");
@@ -1336,7 +1008,7 @@ alice.greet === bob.greet;                   // true
 >> `alice.greet === bob.greet` è `true` perché entrambe le ricerche finiscono sullo *stesso* oggetto funzione in `Student.prototype` (verificato con node): una sola copia in memoria, qualunque sia il numero di istanze. Se invece nel costruttore si scrivesse `this.greet = () => ...`, ogni istanza avrebbe la propria copia e il confronto darebbe `false`.
 
 ---
-## Slide 62 – Classi e prototipi
+## Slide 62 -> 63 – Classi e prototipi
 
 - JavaScript permette di creare oggetti sia direttamente, collegandoli ad altri oggetti attraverso i prototipi, sia attraverso la sintassi `class`
 - In entrambi i casi, la condivisione dei metodi e la ricerca delle proprietà si basano sulla ***prototype chain***
@@ -1372,9 +1044,6 @@ console.log(alice.greet()); // "Hello!"
 ```
 
 >> Nel primo caso il prototipo di `alice` è l'oggetto `person`; nel secondo è `Person.prototype`. La catena ha la stessa forma: istanza → oggetto con `greet` → `Object.prototype` → `null`.
-
----
-## Slide 63 – Classi e prototipi
 
 - Le classi JavaScript offrono una sintassi più familiare e strutturata, ma l'ereditarietà e la condivisione dei metodi continuano a basarsi sui prototipi
 - Tecnicamente le classi moderne introducono anche semantiche specifiche, come campi privati, regole di inizializzazione e modalità di invocazione differenti
@@ -1422,11 +1091,7 @@ const alice = new Student("Alice");
 ---
 ## Slide 65 – Domande?
 
-![[TW09-s065-1.png|300]]
-
-![[TW09-s065-2.png|250]]
-
-![[TW09-s065-3.png|300]]
+![[TW09-s065-1.png|229]]![[TW09-s065-2.png|191]]![[TW09-s065-3.png|229]]
 
 >> Il primo meme ("NULL+TRUE EQUALS 1? THIS IS MADNESS!" / "THIS IS JAVASCRIPT!") richiama la type coercion: `null + true` vale davvero `1`, perché entrambi sono convertiti a numero (`null` → `0`, `true` → `1`).
 
