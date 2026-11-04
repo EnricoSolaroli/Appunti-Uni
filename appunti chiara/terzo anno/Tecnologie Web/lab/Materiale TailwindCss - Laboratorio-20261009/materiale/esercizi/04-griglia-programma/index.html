@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 04 · La griglia del programma
+  Livello 2 · Layout · 10 minuti
+
+  Obiettivo: una griglia di card con CSS grid e un badge posizionato con relative e absolute.
+
+  Consegna
+  1. Sezione centrata, con spazio intorno → max-w-5xl mx-auto px-8 py-12
+  2. Tre colonne, con spazio tra le card → grid grid-cols-3 gap-6
+  3. Card bianca: la copertina non esce dagli angoli → bg-white rounded-xl shadow overflow-hidden
+  4. Badge «Nuovo» nell'angolo in alto a destra → card: relative · badge: absolute top-3 right-3
+  5. Orario e aula ai due lati della card → flex justify-between
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 04 La griglia del programma</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-100">
+  <!-- TODO 1: sezione centrata, con spazio intorno -->
+  <section id="programma" class="max-w-5xl mx-auto px-8 py-12">
+    <h2 class="text-3xl font-bold text-stone-900 mb-8">Programma</h2>
+    <!-- TODO 2: tre colonne, con spazio tra le card -->
+    <div class="grid grid-cols-3 gap-6">
+      <!-- TODO 3: card bianca, la copertina non esce dagli angoli -->
+      <!-- TODO 4: la card fa da riferimento per la posizione del badge -->
+      <article class="bg-white rounded-xl shadow overflow-hidden relative">
+        <div class="h-32 flex items-center justify-center bg-teal-100 text-teal-800 text-2xl font-bold">HTML</div>
+        <!-- TODO 4: badge «Nuovo» nell'angolo in alto a destra -->
+        <span class="bg-orange-700 text-white text-xs font-bold uppercase px-2 py-1 rounded-full absolute top-3 right-3">Nuovo</span>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Pagine accessibili</h3>
+          <p class="mt-1 text-stone-600">Struttura semantica e attributi ARIA, con esempi pratici.</p>
+          <!-- TODO 5: orario e aula ai due lati della card -->
+          <div class="mt-4 text-sm text-stone-500 flex justify-between">
+            <span>10:00</span>
+            <span>Aula 1</span>
+          </div>
+        </div>
+      </article>
+      <!-- TODO 3 e 4: come la prima card -->
+      <article>
+        <div class="h-32 flex items-center justify-center bg-teal-100 text-teal-800 text-2xl font-bold">CSS</div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Layout con grid</h3>
+          <p class="mt-1 text-stone-600">Dalle colonne alle aree: impaginare senza fatica.</p>
+          <!-- TODO 5: come la prima card -->
+          <div class="mt-4 text-sm text-stone-500">
+            <span>11:30</span>
+            <span>Aula 2</span>
+          </div>
+        </div>
+      </article>
+      <!-- TODO 3 e 4: come la prima card -->
+      <article>
+        <div class="h-32 flex items-center justify-center bg-teal-100 text-teal-800 text-2xl font-bold">JS</div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Dati da un'API</h3>
+          <p class="mt-1 text-stone-600">Caricare dati da un server e mostrarli nella pagina.</p>
+          <!-- TODO 5: come la prima card -->
+          <div class="mt-4 text-sm text-stone-500">
+            <span>14:00</span>
+            <span>Aula 1</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "2aea9f61c2987ee3",
+    "type": "split",
+    "children": [
+      {
+        "id": "134147bd4b6acfc1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45d0bf46f2b0823b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Supporto alle decisioni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Supporto alle decisioni"
+            }
+          },
+          {
+            "id": "7e1f074c8104b0b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03. Introduzione alla programmazione lineare.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03. Introduzione alla programmazione lineare"
+            }
+          },
+          {
+            "id": "08b60a17d930c215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04. Programmazione lineare intera.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04. Programmazione lineare intera"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "40eb1b78a908e763",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b62323d134020c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3097cc8a95caa01f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora file"
+            }
+          },
+          {
+            "id": "3049e49a98fe5768",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "05d2505843891043",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c43f8902f5b73d45",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cfc61d034cc3c01",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7cc29938673e7e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Supporto alle decisioni.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "656538ed7ad74912",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Supporto alle decisioni.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "67c23012be11dc60",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "8f1e8a34a05d78fb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "8a3a50d1f7484e8d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Supporto alle decisioni.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "08b60a17d930c215",
+  "lastOpenFiles": [
+    "Pasted image 20261103183027.png",
+    "Pasted image 20261103182448.png",
+    "Pasted image 20261103182058.png",
+    "Pasted image 20261103182006.png",
+    "Pasted image 20261103181829.png",
+    "Pasted image 20261103180324.png",
+    "03. Introduzione alla programmazione lineare.md",
+    "Approfondimento Algoritmo del Simplesso Primale.md",
+    "04. Programmazione lineare intera.md",
+    "Pasted image 20261027115220.png",
+    "Pasted image 20261027110105.png",
+    "Supporto alle decisioni.md",
+    "Senza nome.base",
+    "Pasted image 20261014135331.png",
+    "Pasted image 20261012232503.png",
+    "Pasted image 20261012232423.png",
+    "Benvenuto.md"
+  ]
+}

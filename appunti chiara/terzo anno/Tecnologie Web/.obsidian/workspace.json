@@ -1,0 +1,289 @@
+{
+  "main": {
+    "id": "8c7c318797c1b343",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa2a37a2a715e5b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2dc8485afb452a70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTML5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HTML5"
+            }
+          },
+          {
+            "id": "5dcfc381a3522271",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CSS"
+            }
+          },
+          {
+            "id": "161091796bbe0e28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tailwind CSS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tailwind CSS"
+            }
+          },
+          {
+            "id": "0510cb3d93d18a3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Senza nome"
+            }
+          },
+          {
+            "id": "49458852f0b72910",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Senza nome 1"
+            }
+          },
+          {
+            "id": "b17249c80dfe84c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Asincronismo JS - Await, Async.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Asincronismo JS - Await, Async"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b9f95c79e0b4e2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f1a3f4714c9aa53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22e4ec53692dab6b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora file"
+            }
+          },
+          {
+            "id": "0d4d7bd25f71ca08",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "4b83126c21a5451f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6b191f59d19ee278",
+    "type": "split",
+    "children": [
+      {
+        "id": "00cf3c690130ab09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2f57ecd5f4fa9f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Architettura del Web.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "47353efbdf01c3cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Architettura del Web.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "c0046a8b62e2d5fe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "09e575284feda169",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "03ec860598d0607a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Architettura del Web.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "b17249c80dfe84c2",
+  "lastOpenFiles": [
+    "Asincronismo JS - Await, Async.md",
+    "Senza nome 1.md",
+    "Senza nome.md",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/img/php.png",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/img/html5-js-css3.png",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/img/accessibility.png",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/img",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/css/style.css",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/css/style copy.css",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/css",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/login.html",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/index.html",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/contatti.html",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/archivio.html",
+    "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni",
+    "lab/01-lab-html-css-soluzioni",
+    "CSS.md",
+    "Tailwind CSS.md",
+    "HTML5.md",
+    "Architettura del Web.md",
+    "Pasted image 20260922150627.png",
+    "Pasted image 20260922132840.png",
+    "Pasted image 20260915154216.png"
+  ]
+}

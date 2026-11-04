@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 09 · Da utility a componenti
+  Livello 5 · Per i puristi · 12 minuti
+
+  Obiettivo: lasciare nell'HTML solo nomi semantici e spostare lo stile in @layer components
+  con @apply, senza cambiare l'aspetto della pagina.
+
+  Consegna
+  1. Nella sezione Programma sostituisci le utility con nomi che descrivono il contenuto:
+     program · program-title · talks · talk · talk-cover · talk-badge · talk-body ·
+     talk-title · talk-text · talk-meta
+  2. Sposta le stesse utility nel blocco di stile, dentro @layer components, con @apply.
+  3. Ricarica: la pagina deve restare identica.
+
+  Due trappole: @apply accetta solo utility, quindi @apply talk dà errore. E un errore nel
+  blocco ferma tutto Tailwind: controlla la console.
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 09 Da utility a componenti</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Instrument+Serif&display=swap">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand-50:  #f0fdfa;
+      --color-brand-100: #ccfbf1;
+      --color-brand-500: #14b8a6;
+      --color-brand-700: #0f766e;
+      --color-brand-800: #115e59;
+
+      --font-sans: "DM Sans", sans-serif;
+      --font-display: "Instrument Serif", serif;
+      --text-hero: 4.5rem;
+      --radius-card: 1.25rem;
+      --shadow-soft: 0 10px 30px rgb(0 0 0 / 0.12);
+    }
+
+    /* TODO 2: qui, dentro @layer components, una regola con @apply per ogni nome semantico */
+  </style>
+</head>
+<body class="bg-stone-100">
+  <!-- TODO 1: al posto delle utility, i nomi semantici:
+       section → program · h2 → program-title · griglia → talks · article → talk
+       copertina → talk-cover · badge → talk-badge · corpo della card → talk-body
+       h3 → talk-title · descrizione → talk-text · orario e aula → talk-meta -->
+  <section id="programma" class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+    <h2 class="font-display text-4xl text-stone-900 mb-8">Programma</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="relative bg-white rounded-card shadow-soft overflow-hidden">
+        <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">HTML</div>
+        <span class="absolute top-3 right-3 bg-orange-700 text-white text-xs font-bold uppercase px-2 py-1 rounded-full">Nuovo</span>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Pagine accessibili</h3>
+          <p class="mt-1 text-stone-600">Struttura semantica e attributi ARIA, con esempi pratici.</p>
+          <div class="mt-4 flex justify-between text-sm text-stone-500">
+            <span>10:00</span>
+            <span>Aula 1</span>
+          </div>
+        </div>
+      </article>
+      <article class="relative bg-white rounded-card shadow-soft overflow-hidden">
+        <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">CSS</div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Layout con grid</h3>
+          <p class="mt-1 text-stone-600">Dalle colonne alle aree: impaginare senza fatica.</p>
+          <div class="mt-4 flex justify-between text-sm text-stone-500">
+            <span>11:30</span>
+            <span>Aula 2</span>
+          </div>
+        </div>
+      </article>
+      <article class="relative bg-white rounded-card shadow-soft overflow-hidden">
+        <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">JS</div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-stone-900">Dati da un'API</h3>
+          <p class="mt-1 text-stone-600">Caricare dati da un server e mostrarli nella pagina.</p>
+          <div class="mt-4 flex justify-between text-sm text-stone-500">
+            <span>14:00</span>
+            <span>Aula 1</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

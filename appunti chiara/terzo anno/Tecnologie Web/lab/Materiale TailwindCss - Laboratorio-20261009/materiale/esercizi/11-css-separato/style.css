@@ -1,0 +1,20 @@
+/*
+  Promemoria — i valori delle utility usate nell'esercizio 09
+  Spaziature (1 unità = 0.25rem):
+    p-5 = 1.25rem · py-12 = 3rem · px-4 = 1rem · px-8 = 2rem · gap-6 = 1.5rem
+    mb-8 = 2rem · mt-4 = 1rem · mt-1 = 0.25rem · h-32 = 8rem
+    top-3 / right-3 = 0.75rem · px-2 = 0.5rem · py-1 = 0.25rem
+  Larghezze: max-w-5xl = 64rem
+  Testi (dimensione / interlinea):
+    text-xs = 0.75rem / 1rem · text-sm = 0.875rem / 1.25rem · text-lg = 1.125rem / 1.75rem
+    text-2xl = 1.5rem / 2rem · text-4xl = 2.25rem / 2.5rem
+  Pesi: font-semibold = 600 · font-bold = 700
+  Colori:
+    stone-100 = oklch(97% 0.001 106.424)   stone-500 = oklch(55.3% 0.013 58.071)
+    stone-600 = oklch(44.4% 0.011 73.639)  stone-900 = oklch(21.6% 0.006 56.043)
+    orange-700 = oklch(55.3% 0.195 38.402) white = #fff
+  Raggi: rounded-full = 9999px
+  Breakpoint: sm = 40rem · md = 48rem · lg = 64rem  →  @media (width >= 40rem) { … }
+  Variabili utilizzabili con var(): solo quelle scritte in @theme static
+    (--color-brand-*, --font-sans, --font-display, --text-hero, --radius-card, --shadow-soft)
+*/

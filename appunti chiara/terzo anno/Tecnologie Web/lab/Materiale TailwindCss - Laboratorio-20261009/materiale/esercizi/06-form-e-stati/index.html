@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 06 · Il form: stati e valori arbitrari
+  Livello 3 · Responsive e stati · 8 minuti
+
+  Obiettivo: dare stati interattivi (hover, focus, active, disabled, placeholder) agli
+  elementi del form e usare i valori arbitrari tra parentesi quadre.
+
+  Consegna (rendi interattivo il form)
+  1. hover: al passaggio del mouse → hover:bg-teal-800 transition (bottone Iscriviti)
+  2. focus: campo attivo → focus:outline-none focus:ring-2 focus:ring-teal-500 (campo email)
+  3. active: mentre clicchi → active:scale-95 (bottone Iscriviti)
+  4. disabled: bottone disattivato → disabled:opacity-50 disabled:cursor-not-allowed
+  5. placeholder: testo segnaposto → placeholder:text-stone-400
+  6. [ … ] valori fuori scala → titolo text-[28px] · testo max-w-[45ch]
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 06 Il form: stati e valori arbitrari</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-100 p-10">
+  <section id="iscrizione" class="max-w-xl mx-auto bg-white rounded-2xl shadow p-8">
+    <!-- TODO 6: titolo a 28px, un valore fuori scala -->
+    <h2 class="font-bold text-stone-900">Resta aggiornato</h2>
+    <!-- TODO 6: testo largo al massimo 45 caratteri -->
+    <p class="mt-2 text-stone-600">Ti scriviamo solo quando esce il programma completo.</p>
+    <form action="#" class="mt-6 flex gap-3">
+      <label for="email" class="sr-only">Email</label>
+      <!-- TODO 2 e 5: campo attivo (focus:) e testo segnaposto (placeholder:) -->
+      <input id="email" type="email" placeholder="nome@esempio.it" class="flex-1 border border-stone-300 rounded-lg px-4 py-2">
+      <!-- TODO 1 e 3: passaggio del mouse (hover:) e clic (active:) -->
+      <button type="submit" class="px-5 py-2 rounded-lg bg-teal-700 text-white font-semibold">Iscriviti</button>
+    </form>
+    <!-- TODO 4: bottone disattivato (disabled:) -->
+    <button type="button" disabled class="mt-4 px-5 py-2 rounded-lg bg-teal-700 text-white font-semibold">Workshop al completo</button>
+  </section>
+</body>
+</html>

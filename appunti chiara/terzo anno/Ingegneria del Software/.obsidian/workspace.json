@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "8247966efc8f58e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "1492ecefafba35cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cabdb696f21a1c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. UML - Unified Modeling Language.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. UML - Unified Modeling Language"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ddf73f98c5501ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "39f080884de6f385",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b8f06c776f35ceb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora file"
+            }
+          },
+          {
+            "id": "074cb8c9fbb30120",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "fdd1d9114e3ae989",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "61ea689af0e4b9e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ae73e2a1389f11f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b6909b685cfa343",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ingegneria del Software (1).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "3f0f7963e05310f6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ingegneria del Software (1).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "4ca6da7f389b38ec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "30ab78ec30ea6c9b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "d6046edc5782e225",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ingegneria del Software (1).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "1cabdb696f21a1c1",
+  "lastOpenFiles": [
+    "Pasted image 20261028204119.png",
+    "Pasted image 20261028204102.png",
+    "WhatsApp Image 2026-10-27 at 18.15.44.jpeg",
+    "WhatsApp Image 2026-10-27 at 18.12.22.jpeg",
+    "Pasted image 20261027195050.png",
+    "Pasted image 20261027194833.png",
+    "Pasted image 20261027194528.png",
+    "Pasted image 20261027194509.png",
+    "Pasted image 20261027194351.png",
+    "Pasted image 20261027194314.png",
+    "Pasted image 20261027191613.png",
+    "1. Ingegneria del Software (1).md",
+    "Testi desame e soluzioni-20261012.zip",
+    "Non confermato 951670.crdownload",
+    "2. Il paradigma ad oggetti.md",
+    "3. UML - Unified Modeling Language.md",
+    "esami",
+    "Nuova cartella"
+  ]
+}

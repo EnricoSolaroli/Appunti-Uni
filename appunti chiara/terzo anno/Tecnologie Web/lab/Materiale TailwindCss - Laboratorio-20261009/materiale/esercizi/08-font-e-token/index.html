@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 08 · Font e token
+  Livello 4 · Su misura · 8 minuti
+
+  Obiettivo: aggiungere al tema font, dimensioni, raggi e ombre, e usare le classi che ne
+  derivano.
+
+  Consegna
+  1. Carica i font nella <head>:
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Instrument+Serif&display=swap">
+
+  2. Aggiungi al tema, dopo i colori:
+
+       --font-sans: "DM Sans", sans-serif;
+       --font-display: "Instrument Serif", serif;
+       --text-hero: 4.5rem;
+       --radius-card: 1.25rem;
+       --shadow-soft: 0 10px 30px rgb(0 0 0 / 0.12);
+
+  3. Ogni variabile, la sua classe:
+       --font-sans    → nessuna classe: diventa il font di tutta la pagina;
+       --font-display → font-display su titoli e logo (togli font-bold: il font ha un solo peso);
+       --text-hero    → md:text-hero sul titolo principale, da tablet in su;
+       --radius-card  → rounded-card sulle card del programma e sul box della newsletter;
+       --shadow-soft  → shadow-soft al posto di shadow, sugli stessi elementi.
+  4. Il nome dopo il prefisso diventa il nome della classe.
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 08 Font e token</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- TODO 1: incolla qui le tre righe dei font, tra lo script del CDN e il blocco di stile -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand-50:  #f0fdfa;
+      --color-brand-100: #ccfbf1;
+      --color-brand-500: #14b8a6;
+      --color-brand-700: #0f766e;
+      --color-brand-800: #115e59;
+
+      /* TODO 2: aggiungi qui, dopo i colori, i token della consegna */
+    }
+  </style>
+</head>
+<body class="bg-stone-100">
+  <header class="sticky top-0 flex items-center justify-between bg-white border-b border-stone-200 px-4 md:px-8 py-4">
+    <!-- TODO 3: font-display al posto di font-bold; con questo font serve una taglia in più (text-2xl) -->
+    <a href="#" class="text-xl font-bold text-brand-700">TW Day</a>
+    <nav class="hidden md:flex gap-8 font-medium text-stone-600">
+      <a href="#programma">Programma</a>
+      <a href="#speaker">Speaker</a>
+      <a href="#luogo">Luogo</a>
+    </nav>
+    <a href="#iscrizione" class="px-4 py-2 rounded-lg bg-brand-700 text-white font-semibold">Iscriviti</a>
+  </header>
+  <main>
+    <section class="max-w-5xl mx-auto px-4 md:px-8 py-20 text-center md:text-left">
+      <p class="text-sm font-semibold uppercase tracking-widest text-brand-700">15 maggio 2027 · Aula Magna</p>
+      <!-- TODO 3: font-display al posto di font-bold, text-4xl sul telefono e md:text-hero da tablet in su -->
+      <h1 class="mt-2 text-3xl md:text-5xl font-bold text-stone-900">TW Day 2027</h1>
+      <p class="mt-2 text-lg text-stone-600">La giornata dei progetti di Tecnologie Web.</p>
+      <div class="mt-6">
+        <a href="#iscrizione" class="inline-block px-5 py-2 rounded-lg border-2 border-brand-700 bg-brand-700 text-white font-semibold">Iscriviti</a>
+        <a href="#programma" class="inline-block ml-2 px-5 py-2 rounded-lg border-2 border-brand-700 text-brand-700 font-semibold">Vedi il programma</a>
+      </div>
+    </section>
+    <section id="programma" class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <!-- TODO 3: font-display al posto di font-bold, e una taglia in più (text-4xl) -->
+      <h2 class="text-3xl font-bold text-stone-900 mb-8">Programma</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- TODO 3: rounded-card e shadow-soft al posto di rounded-xl e shadow -->
+        <article class="relative bg-white rounded-xl shadow overflow-hidden">
+          <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">HTML</div>
+          <span class="absolute top-3 right-3 bg-orange-700 text-white text-xs font-bold uppercase px-2 py-1 rounded-full">Nuovo</span>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-stone-900">Pagine accessibili</h3>
+            <p class="mt-1 text-stone-600">Struttura semantica e attributi ARIA, con esempi pratici.</p>
+            <div class="mt-4 flex justify-between text-sm text-stone-500">
+              <span>10:00</span>
+              <span>Aula 1</span>
+            </div>
+          </div>
+        </article>
+        <!-- TODO 3: come la prima card -->
+        <article class="relative bg-white rounded-xl shadow overflow-hidden">
+          <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">CSS</div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-stone-900">Layout con grid</h3>
+            <p class="mt-1 text-stone-600">Dalle colonne alle aree: impaginare senza fatica.</p>
+            <div class="mt-4 flex justify-between text-sm text-stone-500">
+              <span>11:30</span>
+              <span>Aula 2</span>
+            </div>
+          </div>
+        </article>
+        <!-- TODO 3: come la prima card -->
+        <article class="relative bg-white rounded-xl shadow overflow-hidden">
+          <div class="h-32 flex items-center justify-center bg-brand-100 text-brand-800 text-2xl font-bold">JS</div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-stone-900">Dati da un'API</h3>
+            <p class="mt-1 text-stone-600">Caricare dati da un server e mostrarli nella pagina.</p>
+            <div class="mt-4 flex justify-between text-sm text-stone-500">
+              <span>14:00</span>
+              <span>Aula 1</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="iscrizione" class="px-4 pb-16">
+      <!-- TODO 3: rounded-card e shadow-soft al posto di rounded-2xl e shadow -->
+      <div class="max-w-xl mx-auto bg-white rounded-2xl shadow p-8">
+        <!-- TODO 3: font-display al posto di font-bold -->
+        <h2 class="text-[28px] font-bold text-stone-900">Resta aggiornato</h2>
+        <p class="mt-2 max-w-[45ch] text-stone-600">Ti scriviamo solo quando esce il programma completo.</p>
+        <form action="#" class="mt-6 flex gap-3">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" placeholder="nome@esempio.it" class="flex-1 border border-stone-300 rounded-lg px-4 py-2 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <button type="submit" class="px-5 py-2 rounded-lg bg-brand-700 text-white font-semibold transition hover:bg-brand-800 active:scale-95">Iscriviti</button>
+        </form>
+        <button type="button" disabled class="mt-4 px-5 py-2 rounded-lg bg-brand-700 text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed">Workshop al completo</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

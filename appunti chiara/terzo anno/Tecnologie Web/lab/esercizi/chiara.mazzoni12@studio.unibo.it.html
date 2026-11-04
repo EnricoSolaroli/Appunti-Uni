@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Contatti</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contatti</h1>
+        </header>
+        <form>
+            <fieldset>
+                <legend>Informazioni Anagrafiche</legend>
+
+                <label for="id_nome">Nome:</label>
+                <input autocomplete="given-name" type="text" name="nome" id="id_nome"/>
+                <br/>
+                <label for="id_cognome">Cognome:</label>
+                <input type="text" name="cognome" id="id_cognome"/>
+                <br/>
+                <label for="id_cf">Codice Fiscale:</label>
+                <input type="text" name="codice fiscale" id="id_cf"/>
+                <br/>
+                <label for="id_bday">Data di nascita:</label>
+                <input autocomplete="bday" type="date" name="data di nascita" id="id_bday"/>
+                <br/>
+                <label for="id_luogo">Luogo di nascita:</label>
+                <input type="text" name="luogo di nascita" id="id_luogo"/>
+                <br/>
+                <label for="id_ind">Indirizzo:</label>
+                <input autocomplete="street-address" type="text" name="indirizzo" id="id_ind"/>
+                <br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferenze</legend>
+
+                <fieldset>
+                    <legend>Assicurazione</legend>
+                        <input type="radio" name="assicurazione" value="Primo Livello" id="assicurazione_1"/>
+                        <label for="assicurazione_1">Primo Livello</label><br/>
+
+                        <input type="radio" name="assicurazione" value="Secondo Livello" id="assicurazione_2"/>
+                        <label for="assicurazione_2">Secondo Livello</label><br/>
+
+                        <input type="radio" name="assicurazione" value="Terzo Livello" id="assicurazione_3"/>
+                        <label for="assicurazione_3">Terzo Livello</label><br/>
+                </fieldset>
+
+                <br/>
+
+                <label for="id_mezzo">Mezzo Preferito</label><br/>
+                <select name="mezzo" id="id_mezzo">
+                    <option value="auto">Automobile</option>
+                    <option value="moto">Moto</option>
+                    <option value="bici">Bicicletta</option>
+                    <option value="mono">Monopattino</option>
+                </select>
+                <br/>
+
+                <input type="checkbox" name="automunito" value="" id="id_automunito"/>
+                <label for="id_automunito">Automunito</label><br/>
+
+                <br/>
+                <label for="id_desc">Descrizione<br/>
+                    <textarea placeholder="Descrizione..." name="descrizione" rows="4" cols="50" id="id_desc">
+                    </textarea>
+                </label>
+                <br/>
+                <br/>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancella">
+        </form>
+    </body>
+</html>

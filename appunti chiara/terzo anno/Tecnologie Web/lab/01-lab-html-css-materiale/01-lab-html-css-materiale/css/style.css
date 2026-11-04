@@ -1,0 +1,54 @@
+img{
+    width:50px; /*così tutte le immagini hanno qeuste prorpietà*/
+}
+
+/* body > header{ /*stile applicato solo all'header figlio diretto di body, non ad altri*/
+    /* background-color: #1f2937;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+}
+
+body, h1, ul { /*per togliere i bordi bianchi vicino al titolo*/
+    margin: 0;
+    padding: 0;
+}
+
+ul { /*per togliere i pallini*/
+    list-style-type: none; 
+}
+
+header, footer {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /*il padding accetta 4 valori oppure 3 valori e 2 valori facendo unire le direzioni*/
+}
+
+nav {
+    margin: 0 5%;
+}
+
+nav ul li{
+    width: 45%;
+    background-color: #374151;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+nav ul { /*non prendono più tutto lo spazio disponibile e si separano*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none; /*per togliere sottolineatura*/
+    color: #fff; /*perchè se messo dentro nav ul li non si cmabia perchè meno specifico*/
+}
+

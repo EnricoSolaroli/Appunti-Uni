@@ -1,0 +1,246 @@
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    margin: 0 5%;
+}
+
+nav ul, aside ul, form ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav li {
+    width: 45%;
+    background-color: #374151;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 0;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: #2563eb;
+    border-radius: 6px;
+}
+
+body > div > main {
+    margin: 0 5%;
+}
+
+main > h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+}
+
+main > article, main > section, main > form {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #d1d5db;
+    padding: 0 5% 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main > section, main > form {
+    padding: 20px 5%;
+}
+
+main > article > img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+main > article > h2,
+main > article > h3,
+main > article > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+main > article > h2,
+main > article > h3 {
+    color: #111827;
+}
+
+main > article > p {
+    font-size: 12px;
+    color: #4b5563;
+}
+
+main > article > p:nth-of-type(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #374151;
+}
+
+main > article > a, form input[type="submit"] {
+    color: #fff;
+    background-color: #2563eb;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 12px;
+    border: 0;
+    border-radius: 6px;
+}
+
+main > article > a:hover,
+form input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+main > section > h2, main > form > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #d1d5db;
+    padding: 7px 5px;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+}
+
+form {
+    padding: 0 5% 20px;
+}
+
+form ul {
+    width: 80%;
+    margin: 0 10%;
+}
+
+form li {
+    margin-bottom: 20px;
+}
+
+form li:last-child {
+    text-align: right;
+}
+
+form label {
+    display: inline-block;
+    width: 50%;
+    cursor: pointer;
+}
+
+form input:not([type="submit"]) {
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+}
+
+aside {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #d1d5db;
+    margin: 0 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside > section {
+    padding: 0 5% 20px;
+}
+
+aside h2 {
+    color: #111827;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside img {
+    width: 50px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        margin: 0 10%;
+    }
+
+    nav li {
+        width: 19%;
+    }
+
+    body > div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    body > div > main {
+        width: 50%;
+        margin: 0 0 0 10%;
+    }
+
+    main > h2 {
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    aside {
+        width: 25%;
+        margin: 50px 10% 0 5%;
+        box-sizing: border-box;
+    }
+}

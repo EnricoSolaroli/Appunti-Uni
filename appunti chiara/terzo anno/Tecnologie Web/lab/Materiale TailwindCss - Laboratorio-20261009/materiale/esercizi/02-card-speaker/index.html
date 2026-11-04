@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 02 · La card dello speaker
+  Livello 1 · Spartano · 8 minuti
+
+  Obiettivo: costruire una card con il box model di Tailwind: larghezza, spaziature, bordi,
+  ombre e immagine rotonda.
+
+  Consegna
+  1. Pagina grigio chiaro, con spazio intorno → bg-stone-100 p-10
+  2. Card bianca, larga al massimo 24rem e centrata → max-w-sm mx-auto bg-white p-8 text-center
+  3. Bordo sottile, angoli arrotondati e ombra → border border-stone-200 rounded-2xl shadow-md
+  4. Foto rotonda e centrata nella card → size-24 rounded-full mx-auto
+  5. Ruolo in maiuscolo, bottone con solo il bordo → uppercase tracking-wide · border-2 rounded-full
+
+  Spaziature e colori dei testi scegli tu; la soluzione è una delle possibili.
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 02 La card dello speaker</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-100 p-10">
+  <!-- TODO 1: pagina grigio chiaro, con spazio intorno (classi sul body) -->
+  <!-- TODO 2: card bianca, larga al massimo 24rem e centrata -->
+  <!-- TODO 3: bordo sottile, angoli arrotondati e ombra -->
+  <article class="max-w-sm mx-auto bg-white p-8 text-center border border-stone-200 rounded-2xl shadow-md">
+    <!-- TODO 4: foto rotonda e centrata nella card -->
+    <img src="avatar.svg" alt="Foto di Giulia Rossi" class="size-24 rounded-full mx-auto">
+    <h2>Giulia Rossi</h2>
+    <!-- TODO 5: ruolo in maiuscolo -->
+    <p class="uppercase tracking-wide">Speaker · Frontend developer</p>
+    <p>Racconta come ha costruito il sito del suo progetto d'esame scrivendo pochissimo CSS.</p>
+    <!-- TODO 5: bottone con solo il bordo -->
+    <a href="#" class="border-2 rounded-full">Segui</a>
+  </article>
+</body>
+</html>

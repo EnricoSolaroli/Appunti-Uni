@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "f5a4830b021fa573",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2bba153628816b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27504b7326083ad5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "teoria/2. Instradamento nelle reti a pacchetto e in Internet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Instradamento nelle reti a pacchetto e in Internet"
+            }
+          },
+          {
+            "id": "61df825c2b269586",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "teoria/3. MPLS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. MPLS"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1174266fdd9e5968",
+    "type": "split",
+    "children": [
+      {
+        "id": "23e989a18c7c7082",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6ca6f4da28d374e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora file"
+            }
+          },
+          {
+            "id": "bf9516f8cf28cb05",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "09370c5cfcd8d330",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d4647708650c64fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "80e37ef4861fef9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d552c7aa52486983",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "teoria/3. MPLS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "2607e2c0b01e47d2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pasted image 20260914114314.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "b250831e14d54931",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "cfcbdba781d40459",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "66b87f754d17769d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pasted image 20260914114314.png",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "61df825c2b269586",
+  "lastOpenFiles": [
+    "Pasted image 20261103213843.png",
+    "Pasted image 20261103213832.png",
+    "Pasted image 20261103213745.png",
+    "Pasted image 20261103213534.png",
+    "Pasted image 20261102204235.png",
+    "Pasted image 20261102204210.png",
+    "Pasted image 20261102204031.png",
+    "Pasted image 20261102203927.png",
+    "teoria/2. Instradamento nelle reti a pacchetto e in Internet.md",
+    "teoria/3. MPLS.md",
+    "Pasted image 20261023213252.png",
+    "Pasted image 20261021184436.png",
+    "Pasted image 20261021184413.png",
+    "teoria/1. Indirizzamento, instradamento e controllo.md",
+    "teoria/Es. slide 70-78.md",
+    "teoria/Approfondimento slide 70-78.md",
+    "lab/RIP.md",
+    "slide/2627_IP_1.pdf",
+    "Senza nome 1",
+    "Senza nome",
+    "lab",
+    "teoria",
+    "slide/2627_IP_1.pdf.crswap",
+    "slide/Non confermato 410046.crdownload",
+    "slide",
+    "Nuova cartella",
+    "Benvenuto.md"
+  ]
+}

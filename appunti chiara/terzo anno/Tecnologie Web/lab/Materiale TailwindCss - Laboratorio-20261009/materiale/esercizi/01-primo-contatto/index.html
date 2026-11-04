@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 01 · Primo contatto
+  Livello 1 · Spartano · 7 minuti
+
+  Obiettivo: collegare Tailwind dal CDN e usare le prime utility (colori, spaziature,
+  tipografia).
+
+  Consegna
+  1. Aggiungi lo script del CDN nella <head>. Ricarica: titoli e link perdono lo stile del
+     browser. È il Preflight, il reset di Tailwind.
+  2. Applica a ogni elemento le sue classi:
+     - pagina (body) → bg-stone-100 p-10
+     - data → text-sm font-semibold uppercase tracking-widest text-teal-700
+     - titolo → text-5xl font-bold text-stone-900
+     - testo → mt-2 text-lg text-stone-600
+     - link → inline-block mt-6 px-5 py-2 rounded-lg bg-teal-700 text-white font-semibold
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 01 Primo contatto</title>
+  <!-- TODO 1: copia qui sotto, fuori dal commento, la riga dello script del CDN:
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-100 p-10">
+  <!-- TODO 2: aggiungi le classi al body e ai quattro elementi qui sotto -->
+  <p class="text-sm font-semibold uppercase tracking-widest text-teal-700">15 maggio 2027 · Aula Magna</p>
+  <h1 class="text-5xl font-bold text-stone-900">TW Day 2027</h1>
+  <p class="mt-2 text-lg text-stone-600">La giornata dei progetti di Tecnologie Web.</p>
+  <a href="#" class="inline-block mt-6 px-5 py-2 rounded-lg bg-teal-700 text-white font-semibold
+">Iscriviti</a>
+</body>
+</html>

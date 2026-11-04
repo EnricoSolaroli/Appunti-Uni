@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  Esercizio 03 · La navbar
+  Livello 2 · Layout · 8 minuti
+
+  Obiettivo: impaginare una barra di navigazione con flexbox e tenerla in alto con sticky.
+
+  Consegna
+  1. Logo, menu e bottone sulla stessa riga → flex
+  2. Centrati in verticale e spinti agli estremi → items-center justify-between
+  3. Link del menu affiancati e distanziati → flex gap-8
+  4. Sfondo bianco, bordo in basso e padding → bg-white border-b border-stone-200 px-8 py-4
+  5. La barra resta in alto quando scorri → sticky top-0
+
+  Il risultato atteso è nella slide dell'esercizio.
+-->
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Day 2027 · 03 La navbar</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-stone-100">
+  <!-- TODO 1: logo, menu e bottone sulla stessa riga (classi sull'header) -->
+  <!-- TODO 2: centrati in verticale e spinti agli estremi -->
+  <!-- TODO 4: sfondo bianco, bordo in basso e padding -->
+  <!-- TODO 5: la barra resta in alto quando scorri -->
+  <header class="flex items-center justify-between bg-white border-b border-stone-200 px-8 py-4 sticky top-0
+">
+    <a href="#" class="text-xl font-bold text-teal-700">TW Day</a>
+    <!-- TODO 3: link del menu affiancati e distanziati -->
+    <nav class="font-medium text-stone-600 flex gap-8">
+      <a href="#programma">Programma</a>
+      <a href="#speaker">Speaker</a>
+      <a href="#luogo">Luogo</a>
+    </nav>
+    <a href="#iscrizione" class="px-4 py-2 rounded-lg bg-teal-700 text-white font-semibold">Iscriviti</a>
+  </header>
+  <main class="max-w-3xl mx-auto p-8 space-y-4 text-stone-600">
+    <p>
+      Il TW Day 2027 è la giornata dei progetti di Tecnologie Web: per un giorno intero gli studenti
+      del corso mostrano i siti che hanno progettato e costruito durante l'anno, dalla prima bozza
+      disegnata su carta fino alla versione pubblicata online. L'appuntamento è per il 15 maggio 2027
+      in Aula Magna, con un programma che alterna talk brevi, demo dal vivo e momenti di confronto tra
+      gruppi, docenti e ospiti. L'ingresso è libero anche per chi non segue il corso, ma i posti sono
+      limitati e vanno prenotati in anticipo.
+    </p>
+    <p>
+      La mattina si apre con un breve saluto dei docenti e con la presentazione del programma, così
+      tutti sanno fin da subito dove andare, a che ora e in quale aula si svolge ogni intervento.
+      Subito dopo cominciano i talk: interventi brevi e concreti, pensati per chi ha appena iniziato a
+      costruire pagine web e vuole capire come lavora davvero chi lo fa di mestiere. Ogni talk si
+      chiude con qualche minuto dedicato alle domande del pubblico, che spesso sono la parte più
+      interessante e quella da cui nascono le idee migliori.
+    </p>
+    <p>
+      Alle 10:00, in Aula 1, si parla di pagine accessibili: struttura semantica e attributi ARIA, con
+      esempi pratici da applicare subito ai propri progetti e qualche strumento gratuito per
+      controllare il risultato. Alle 11:30 ci si sposta in Aula 2 per scoprire come impaginare con CSS
+      grid, passando dalle semplici colonne alle aree con nome, senza dimenticare gli schermi piccoli.
+      Entrambi i talk partono da problemi veri, incontrati dagli studenti degli anni scorsi mentre
+      preparavano il progetto d'esame.
+    </p>
+    <p>
+      Dopo la pausa pranzo si torna in Aula 1: alle 14:00 si vede come caricare dati da un'API e
+      mostrarli nella pagina senza doverla ricaricare, gestendo anche i casi in cui il server risponde
+      lentamente o non risponde affatto. È il talk giusto per chi vuole collegare il proprio sito a un
+      server vero, per esempio per mostrare un elenco di eventi, i risultati di una ricerca o le
+      previsioni del tempo. Gli esempi usano solo strumenti che hai già visto a lezione, quindi potrai
+      rifarli a casa con calma e riusarli nel tuo progetto.
+    </p>
+    <p>
+      Nel pomeriggio la parola passa ai gruppi, che presentano i loro progetti in demo da cinque
+      minuti ciascuna, una dopo l'altra, sul grande schermo dell'Aula Magna. Ogni gruppo racconta un
+      problema incontrato durante lo sviluppo, il modo in cui è riuscito a risolverlo e che cosa
+      farebbe di diverso se dovesse ricominciare oggi da capo. Non servono slide né presentazioni
+      elaborate: bastano il sito aperto nel browser, qualche minuto di prova il giorno prima e un po'
+      di coraggio.
+    </p>
+    <p>
+      Tra una demo e l'altra c'è spazio per le domande, per scambiarsi consigli e per dare un'occhiata
+      al codice degli altri gruppi, magari scoprendo una proprietà CSS o un trucco di layout che non
+      conoscevi ancora. Porta il portatile: molte idee nascono proprio guardando come qualcun altro ha
+      affrontato lo stesso problema in un modo completamente diverso dal tuo, e spesso più semplice. I
+      docenti restano a disposizione per tutta la giornata, anche per chi vuole un parere sul proprio
+      progetto prima della consegna.
+    </p>
+    <p>
+      La partecipazione è gratuita, ma i posti in Aula Magna sono limitati e vengono assegnati in
+      ordine di iscrizione, quindi conviene non aspettare l'ultimo momento per decidere. Per prenotare
+      il tuo posto usa il bottone Iscriviti in alto a destra: basta un indirizzo email, senza account
+      da creare né moduli lunghi da compilare. Chi si iscrive riceve il programma completo della
+      giornata non appena è pronto, con gli orari definitivi di tutte le demo, l'elenco dei gruppi e
+      le indicazioni per raggiungere l'aula.
+    </p>
+    <p>
+      La giornata si chiude nel tardo pomeriggio con i saluti finali, un piccolo rinfresco e una foto
+      di gruppo sulla scalinata davanti all'Aula Magna, insieme a tutti i gruppi che hanno presentato
+      il loro lavoro. Nei giorni successivi le slide dei talk, gli esempi di codice e i link ai
+      progetti presentati saranno pubblicati sul sito del corso, così potrai rivederli con calma
+      quando vuoi. Segna la data in agenda e passa parola anche ai compagni che non seguono il corso:
+      ti aspettiamo il 15 maggio in Aula Magna!
+    </p>
+  </main>
+</body>
+</html>
