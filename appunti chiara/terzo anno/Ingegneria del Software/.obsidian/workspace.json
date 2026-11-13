@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "3. UML - Unified Modeling Language"
             }
+          },
+          {
+            "id": "e3713bd588c1c23c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Ingegneria del Software.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. Ingegneria del Software"
+            }
+          },
+          {
+            "id": "4664a943e2c34b12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Ingegneria del Software.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. Ingegneria del Software"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -79,13 +108,11 @@
               "title": "Segnalibri"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "61ea689af0e4b9e8",
@@ -190,24 +217,26 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "1cabdb696f21a1c1",
+  "active": "4664a943e2c34b12",
   "lastOpenFiles": [
-    "Pasted image 20261028204119.png",
-    "Pasted image 20261028204102.png",
-    "WhatsApp Image 2026-10-27 at 18.15.44.jpeg",
-    "WhatsApp Image 2026-10-27 at 18.12.22.jpeg",
-    "Pasted image 20261027195050.png",
-    "Pasted image 20261027194833.png",
-    "Pasted image 20261027194528.png",
-    "Pasted image 20261027194509.png",
-    "Pasted image 20261027194351.png",
-    "Pasted image 20261027194314.png",
-    "Pasted image 20261027191613.png",
+    "Pasted image 20261113151155.png",
+    "Pasted image 20261113150758.png",
+    "Pasted image 20261113144730.png",
+    "Pasted image 20261113144459.png",
+    "Pasted image 20261113143540.png",
+    "Pasted image 20261113143520.png",
+    "Pasted image 20261113143326.png",
+    "Esercizi.md",
+    "4. Ingegneria del Software.md",
+    "Pasted image 20261112200208.png",
+    "Pasted image 20261112200202.png",
+    "3. UML - Unified Modeling Language.md",
+    "Pasted image 20261111183819.png",
+    "Pasted image 20261111183246.png",
     "1. Ingegneria del Software (1).md",
     "Testi desame e soluzioni-20261012.zip",
     "Non confermato 951670.crdownload",
     "2. Il paradigma ad oggetti.md",
-    "3. UML - Unified Modeling Language.md",
     "esami",
     "Nuova cartella"
   ]

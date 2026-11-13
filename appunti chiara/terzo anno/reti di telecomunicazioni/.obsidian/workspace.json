@@ -34,9 +34,37 @@
               "icon": "lucide-file",
               "title": "3. MPLS"
             }
+          },
+          {
+            "id": "bfe5e46daf3beb4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Firewall.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. Firewall"
+            }
+          },
+          {
+            "id": "c3c75b3564873ac8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. Strato Fisico.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5. Strato Fisico"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -204,21 +232,23 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "61df825c2b269586",
+  "active": "c3c75b3564873ac8",
   "lastOpenFiles": [
-    "Pasted image 20261103213843.png",
-    "Pasted image 20261103213832.png",
-    "Pasted image 20261103213745.png",
-    "Pasted image 20261103213534.png",
-    "Pasted image 20261102204235.png",
-    "Pasted image 20261102204210.png",
-    "Pasted image 20261102204031.png",
-    "Pasted image 20261102203927.png",
-    "teoria/2. Instradamento nelle reti a pacchetto e in Internet.md",
+    "Pasted image 20261113095140.png",
+    "Pasted image 20261113095128.png",
+    "Pasted image 20261113095109.png",
+    "Pasted image 20261113095057.png",
+    "Pasted image 20261113095040.png",
+    "Pasted image 20261113095004.png",
+    "Pasted image 20261113094944.png",
+    "Pasted image 20261113094911.png",
+    "Pasted image 20261113094800.png",
+    "Pasted image 20261113094750.png",
+    "Pasted image 20261113094739.png",
+    "4. Firewall.md",
+    "5. Strato Fisico.md",
     "teoria/3. MPLS.md",
-    "Pasted image 20261023213252.png",
-    "Pasted image 20261021184436.png",
-    "Pasted image 20261021184413.png",
+    "teoria/2. Instradamento nelle reti a pacchetto e in Internet.md",
     "teoria/1. Indirizzamento, instradamento e controllo.md",
     "teoria/Es. slide 70-78.md",
     "teoria/Approfondimento slide 70-78.md",

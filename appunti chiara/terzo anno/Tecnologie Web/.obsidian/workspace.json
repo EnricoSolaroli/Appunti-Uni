@@ -90,9 +90,23 @@
               "icon": "lucide-file",
               "title": "Asincronismo JS - Await, Async"
             }
+          },
+          {
+            "id": "199e2bbd6c9dce1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHP"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -260,9 +274,12 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "b17249c80dfe84c2",
+  "active": "199e2bbd6c9dce1e",
   "lastOpenFiles": [
+    "Pasted image 20261104122413.png",
+    "Pasted image 20261104122237.png",
     "Asincronismo JS - Await, Async.md",
+    "PHP.md",
     "Senza nome 1.md",
     "Senza nome.md",
     "lab/01-lab-html-css-soluzioni/01-lab-html-css-soluzioni/img/php.png",

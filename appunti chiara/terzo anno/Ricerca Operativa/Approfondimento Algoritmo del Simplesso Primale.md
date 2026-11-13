@@ -1,9 +1,7 @@
-# Spiegazione dettagliata
+## Spiegazione dettagliata
 L'algoritmo del Simplesso Primale risolve problemi di Programmazione Lineare (PL) esplorando in modo efficiente i vertici (soluzioni di base) del poliedro che definisce la regione ammissibile, alla ricerca del punto in cui la funzione obiettivo raggiunge il suo valore ottimo.
 
 Per comprendere la matematica sottostante ai 5 step, consideriamo il problema in forma standard (supponiamo di minimizzare):
-
-  
 
 $$\min z = \mathbf{c}^T\mathbf{x}$$
 
@@ -11,11 +9,7 @@ $$\text{soggetto a: } \mathbf{A}\mathbf{x} = \mathbf{b}, \quad \mathbf{x} \ge \m
 
 La matrice dei vincoli $\mathbf{A}$ viene suddivisa in due componenti: una matrice quadrata e invertibile $\mathbf{B}$ (matrice di base) e la restante matrice $\mathbf{N}$ (matrice non di base). Coerentemente, scomponiamo le incognite $\mathbf{x} = [\mathbf{x}_B, \mathbf{x}_N]$ e i costi $\mathbf{c} = [\mathbf{c}_B, \mathbf{c}_N]$.
 
-  
-
 Il sistema dei vincoli $\mathbf{A}\mathbf{x} = \mathbf{b}$ diventa:
-
-  
 
 $$\mathbf{B}\mathbf{x}_B + \mathbf{N}\mathbf{x}_N = \mathbf{b}$$
 
@@ -27,8 +21,6 @@ $$\mathbf{x}_B = \mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}
 
 Questa equazione è il "motore" di tutto l'algoritmo. Analizziamo i singoli step.
 
-  
-
 ## Step 1: Inizializzazione
 
 In una soluzione di base, per definizione, "spegniamo" le variabili non di base ponendole a zero ($\mathbf{x}_N = \mathbf{0}$). Sostituendo $\mathbf{0}$ nell'equazione motore, otteniamo i valori delle variabili di base:
@@ -39,16 +31,10 @@ $$\mathbf{x}_B = \mathbf{B}^{-1}\mathbf{b} = \mathbf{\bar{b}}$$
 
 Affinché la soluzione sia _ammissibile_ (e non solo una soluzione matematica del sistema), deve rispettare i vincoli di non negatività. Quindi $\mathbf{\bar{b}} \ge \mathbf{0}$. Il valore attuale della funzione obiettivo $z$ si calcola ignorando $\mathbf{x}_N$ (che vale zero):
 
-  
-
 $$z = \mathbf{c}_B\mathbf{x}_B = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b}$$
 
 ## Step 2: Pricing (Costi Ridotti)
-
 Questo step determina _se_ conviene far entrare una variabile $x_j$ (attualmente a zero) in base. Sostituiamo l'equazione motore all'interno della funzione obiettivo $z = \mathbf{c}_B\mathbf{x}_B + \mathbf{c}_N\mathbf{x}_N$:
-
-  
-
 $$z = \mathbf{c}_B(\mathbf{B}^{-1}\mathbf{b} - \mathbf{B}^{-1}\mathbf{N}\mathbf{x}_N) + \mathbf{c}_N\mathbf{x}_N$$
 
 $$z = \mathbf{c}_B\mathbf{B}^{-1}\mathbf{b} - (\mathbf{c}_B\mathbf{B}^{-1}\mathbf{N} - \mathbf{c}_N)\mathbf{x}_N$$
@@ -63,27 +49,16 @@ La quantità $\Delta_j = \mathbf{w}\mathbf{a}_j - c_j$ è il **costo ridotto** (
 
 Scegliamo $\max \{\mathbf{w}\mathbf{a}_j - c_j\}$ per selezionare la variabile $x_k$ che offre il potenziale di miglioramento più ripido (il massimo gradiente di discesa per unità incrementale di $x_k$).
 
-  
-
 ## Step 3: Condizioni di Ottimalità
-
 Se per tutte le variabili non di base risulta $\mathbf{w}\mathbf{a}_j - c_j \le 0$, l'equazione di discesa ci dice che aumentare qualsiasi $x_j$ (che per i vincoli di segno può solo aumentare da $0$ in poi) farebbe aumentare il costo totale $z$ (o mantenerlo invariato).
 
 Poiché nessuna direzione locale migliora la funzione obiettivo e il problema di programmazione lineare è convesso, l'ottimo locale appena trovato è garantito essere l'**ottimo globale**. L'algoritmo termina.
 
-  
-
 ## Step 4: Direzione e Illimitatezza
-
 Abbiamo deciso di aumentare $x_k$ mantenendo a zero le altre variabili non di base. L'equazione motore diventa:
-
-  
-
 $$\mathbf{x}_B = \mathbf{\bar{b}} - (\mathbf{B}^{-1}\mathbf{a}_k)x_k$$
 
-Definendo $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$, riscriviamo:
-
-  
+Definendo $\mathbf{y}^k = \mathbf{B}^{-1}\mathbf{a}_k$, riscriviamo: 
 
 $$\mathbf{x}_B = \mathbf{\bar{b}} - \mathbf{y}^k x_k$$
 
@@ -92,19 +67,12 @@ Il vettore $\mathbf{y}^k$ rappresenta i tassi di sostituzione: ci dice di quanto
 Se ogni componente del vettore è negativa o nulla ($\mathbf{y}^k \le \mathbf{0}$), significa che il termine $-\mathbf{y}^k x_k$ sarà $\ge \mathbf{0}$. Di conseguenza, all'aumentare di $x_k$, il vettore $\mathbf{x}_B$ non farà altro che crescere (o restare fermo). Nessun vincolo di non negatività $\mathbf{x}_B \ge 0$ verrebbe mai violato, permettendoci di far crescere $x_k \to \infty$ e portando il costo $z \to -\infty$. Il poliedro è aperto in quella direzione: il problema è **illimitato**.
 
 ## Step 5: Rapporto Minimo (Test di Ammissibilità)
-
 Se invece almeno un elemento di $\mathbf{y}^k$ è positivo ($y_i^k > 0$), allora all'aumentare di $x_k$, la componente $x_{B_i}$ corrispondente tenderà a diminuire.
 
 Dobbiamo garantire $\mathbf{x}_B \ge 0$ per restare nel poliedro, quindi:
-
-  
-
 $$\bar{b}_i - y_i^k x_k \ge 0 \implies x_k \le \frac{\bar{b}_i}{y_i^k} \quad (\text{per } y_i^k > 0)$$
 
 Poiché questa disuguaglianza deve valere per _tutte_ le righe $i$, il massimo incremento che possiamo dare a $x_k$ è dettato dal vincolo più stringente (il collo di bottiglia):
-
-  
-
 $$x_k = \min \left\{ \frac{\bar{b}_i}{y_i^k} : y_i^k > 0 \right\}$$
 
 La riga $r$ dove si verifica questo minimo identifica la variabile di base $x_r$ che per prima tocca lo zero. In questo momento ci troviamo su un nuovo vertice del poliedro: $x_k$ è entrata a far parte della base con valore strettamente positivo, mentre $x_r$ si è annullata, uscendo dalla base. Si aggiorna la matrice invertibile $\mathbf{B}$ scambiando le due colonne e si riavvia il ciclo.

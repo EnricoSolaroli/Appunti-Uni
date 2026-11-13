@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "04. Programmazione lineare intera"
             }
+          },
+          {
+            "id": "77a51add09dc64ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05. Teoria dei grafi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "05. Teoria dei grafi"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -218,24 +232,27 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "08b60a17d930c215",
+  "active": "77a51add09dc64ad",
   "lastOpenFiles": [
-    "Pasted image 20261103183027.png",
-    "Pasted image 20261103182448.png",
-    "Pasted image 20261103182058.png",
-    "Pasted image 20261103182006.png",
-    "Pasted image 20261103181829.png",
-    "Pasted image 20261103180324.png",
+    "Pasted image 20261112205745.png",
+    "Pasted image 20261112205718.png",
+    "Pasted image 20261112205130.png",
+    "Pasted image 20261112205047.png",
+    "Pasted image 20261112204609.png",
+    "Pasted image 20261112204449.png",
+    "04. Programmazione lineare intera.md",
+    "05. Teoria dei grafi.md",
+    "Pasted image 20261112203616.png",
+    "Pasted image 20261112203547.png",
+    "Pasted image 20261112203507.png",
+    "Pasted image 20261112203252.png",
+    "Pasted image 20261112203222.png",
+    "Programmazione Lineare Intera – Esercizi.md",
+    "Non confermato 698455.crdownload",
     "03. Introduzione alla programmazione lineare.md",
     "Approfondimento Algoritmo del Simplesso Primale.md",
-    "04. Programmazione lineare intera.md",
-    "Pasted image 20261027115220.png",
-    "Pasted image 20261027110105.png",
     "Supporto alle decisioni.md",
     "Senza nome.base",
-    "Pasted image 20261014135331.png",
-    "Pasted image 20261012232503.png",
-    "Pasted image 20261012232423.png",
     "Benvenuto.md"
   ]
 }
