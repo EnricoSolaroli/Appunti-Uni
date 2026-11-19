@@ -5,7 +5,6 @@
 ## Indice
 
 1. **JavaScript nel browser** (slide 1–11)
-	- [[#Slide 1 – JavaScript|Apertura della lezione e argomenti]]
 	- [[#Slide 3 – Javascript nel browser|Motore JavaScript e ambiente del browser]]
 	- [[#Slide 4 – JS nel browser: linguaggio e ambiente di esecuzione|ECMAScript, JavaScript engine e Web API]]
 	- [[#Slide 5 – Browser e JavaScript|Rendering engine, JavaScript engine e Web API]]
@@ -59,20 +58,7 @@
 	- [[#Slide 73 – Validazione lato client e lato server|Validazione lato client e lato server]]
 9. **Domanda bonus 2** (slide 74–75)
 	- [[#Slide 74 -> 75 – Seconda domanda|Domanda 2: validazione nativa e listener submit]]
-
----
-## Slide 1 – JavaScript
-
-![[TW10-s001-1.png|200]]
-
----
-## Slide 2 – Argomenti
-
-- JavaScript:
-	- Javascript nel browser
-	- DOM
-	- Eventi
-	- Form e Validazione
+	
 ---
 ## Slide 3 – Javascript nel browser
 

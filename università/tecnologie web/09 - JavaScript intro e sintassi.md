@@ -459,7 +459,7 @@ Array.isArray(null)      // -> false
 ![[TW09-s031-1.png|700]]
 
 >> Precisazione sull'ordine reale previsto dalla specifica (Abstract Equality Comparison): prima viene convertito il booleano (`false` → `0`), poi l'oggetto viene ridotto a primitivo (`[]` → `""`), infine la stringa viene convertita in numero (`""` → `0`). Il risultato non cambia.
->> Per lo stesso motivo `[0] == false` → `true` e `[1] == 1` → `true`, mentre `null == false` → `false` (`null` è uguale con `==` solo a `null` e `undefined`). Tutti verificati con node.
+>> Per lo stesso motivo `[0] == false` → `true` e `[1] == 1` → `true`, mentre `null == false` → `false` (`null` è uguale con `==` solo a `null` e `undefined`).
 
 ---
 ## Slide 32 -> 33 – Dichiarazione delle variabili
@@ -522,18 +522,18 @@ if (true) {
 console.log(x); //ReferenceError
 ```
 
-- ~~**`var`** non rispetta il *block scope*~~: la variabile rimane accessibile fuori dal blocco; **`let`** rispetta il *block scope*: la variabile esiste solo all'interno del blocco
+- **`var`** non rispetta il *block scope*: la variabile rimane accessibile fuori dal blocco; **`let`** rispetta il *block scope*: la variabile esiste solo all'interno del blocco
 - **`var`** presenta altre particolarità, es. la possibilità di ridichiarare una variabile nello stesso scope e un comportamento differente rispetto all'***hoisting***
 
->> `var` ha *function scope*: è visibile in tutta la funzione che la contiene (o globalmente se dichiarata fuori da funzioni), indipendentemente dai blocchi `{ }`.
+>> ~~`var` ha *function scope*~~: è visibile in tutta la funzione che la contiene (o globalmente se dichiarata fuori da funzioni), indipendentemente dai blocchi `{ }`.
 >> Il caso classico che mostra il problema: `for (var i = 0; i < 3; i++) setTimeout(() => console.log(i));` stampa `3 3 3`, mentre con `let i` stampa `0 1 2` (con `let` ogni iterazione ha la propria `i`).
 
 ---
 ## Slide 35 – `var`: REGOLA DEL CORSO!
 
-***`var` esiste e postreste incontrarlo nel codice JavaScript più vecchio***
+`var` esiste e postreste incontrarlo nel codice JavaScript più vecchio
 
-***Dovete sapere che cosa fa, ma NON VOGLIO VEDERLO NEI VOSTRI ELABORATI NE' NEL CODICE CHE CONSEGNERETE ALL'ESAME IN LABORATORIO***
+Dovete sapere che cosa fa, ma **NON VOGLIO VEDERLO NEI VOSTRI ELABORATI NE' NEL CODICE CHE CONSEGNERETE ALL'ESAME IN LABORATORIO**
 
 ---
 ## Slide 36 – Block scope
@@ -558,17 +558,14 @@ If (true) {
 console.log(name);    //Alice
 ```
 
-***All'interno del blocco viene dichiarata una nuova variabile con lo stesso nome, che nasconde temporaneamente quella dello scope esterno (variabile shadowing). Le due variabili sono distinte***
-
-![[TW09-s037-1.png|450]]
-
-- Lo scope è lessicale: dipende alla struttura del codice, non dal percorso seguito durante l'esecuzione
+All'interno del blocco viene dichiarata una nuova variabile con lo stesso nome, che nasconde temporaneamente quella dello scope esterno (**variabile shadowing**). Le due variabili sono distinte
+Una volta terminato il blocco dell'if la variabile 'name' torna a valere 'alice'.
+- ~~Lo scope è lessicale~~: dipende alla struttura del codice, non dal percorso seguito durante l'esecuzione
 
 >> Anche qui `If` va letto come `if`.
->> Lo shadowing è diverso dalla riassegnazione: se nel blocco si scrivesse `name = "Bob";` (senza `let`) si modificherebbe la variabile esterna, e l'ultima riga stamperebbe `Bob`.
->> "Scope lessicale" significa che per sapere a quale variabile si riferisce un nome basta guardare dove è scritto nel codice (in quali blocchi/funzioni è annidato), non da dove viene chiamato a runtime.
+>> **Lo shadowing è diverso dalla riassegnazione**: se nel blocco si scrivesse `name = "Bob";` (senza `let`) si modificherebbe la variabile esterna, e l'ultima riga stamperebbe `Bob`.
 
-![[TW09-s038-1.png|700]]
+![[TW09-s038-1.png|520]]
 
 ---
 ## Slide 39 – Hoisting
@@ -597,7 +594,6 @@ console.log(y);        //20
 
 Anche `let` e `const` vengono registrate durante la creazione dello *scope*, ma non possono essere usate prima dell'inizializzazione
 
->> Verificato con node: il primo `console.log(y)` genera `ReferenceError: Cannot access 'y' before initialization` (e quindi interrompe l'esecuzione: la terza riga verrebbe raggiunta solo se l'errore fosse gestito).
 >> Notare la differenza di messaggio: una variabile mai dichiarata dà `... is not defined`, una variabile `let`/`const` in TDZ dà `Cannot access ... before initialization`: la variabile "esiste" già nello scope, ma non è ancora utilizzabile.
 
 ---
@@ -609,7 +605,7 @@ Anche `let` e `const` vengono registrate durante la creazione dello *scope*, ma 
 
 ![[TW09-s040-1.png|650]]
 
->> La TDZ è "temporale" e non "spaziale": conta il momento in cui avviene l'accesso, non la posizione nel codice. Ad esempio una funzione definita prima di `let y = 20;` può leggere `y` senza errori, purché venga *chiamata* dopo l'inizializzazione.
+>> La TDZ è "temporale" e non "spaziale": conta il momento in cui avviene l'accesso, non la posizione nel codice.
 
 ---
 ## Slide 41 – Funzioni
@@ -620,7 +616,6 @@ Anche `let` e `const` vengono registrate durante la creazione dello *scope*, ma 
 ![[TW09-s041-1.png|650]]
 
 >> Errore tipico: scrivere `button.addEventListener("click", handleClick())`. In quel caso la funzione viene eseguita subito, e al listener viene passato il suo valore di ritorno (spesso `undefined`) invece della funzione stessa.
->> Esempio di funzione restituita come risultato: `function moltiplicatore(k) { return x => x * k; }` → `const doppio = moltiplicatore(2); doppio(5)` vale `10`.
 
 ---
 ## Slide 42 – Definire una funzione
@@ -642,20 +637,19 @@ const add = function(a, b) {
 ***Function Expression:*** una funzione viene creata come espressione e assegnata alla variabile `add`
 
 ```js
-const add = function(a, b) => a + b;
+const add = (a, b) => a + b;
 ```
 
 ***Arrow Function:*** sintassi compatta per definire una funzione; in questo esempio il risultato dell'espressione viene restituito implicitamente
 
-- Queste tre forme possono produrre lo stesso risultato, ma non sono completamente equivalenti: differiscono, tra le altre cose, per hoisting e gestione di `this`
+- Queste tre forme possono produrre lo stesso risultato, ma non sono completamente equivalenti: ~~differiscono~~, tra le altre cose, ~~per hoisting e gestione di `this`~~
 
->> Attenzione: la riga dell'arrow function sulla slide contiene un refuso. Scritta così (`function(a, b) => ...`) è un errore di sintassi (verificato con node). La forma corretta è `const add = (a, b) => a + b;`.
->> Differenza di hoisting (verificata con node): una function declaration si può chiamare prima della riga in cui è definita. Una function expression o arrow assegnata a `const` invece no: chiamarla prima dà `ReferenceError` (TDZ), e con `var` si otterrebbe `TypeError: ... is not a function`, perché la variabile vale ancora `undefined`.
+>> Differenza di hoisting: una function declaration si può chiamare prima della riga in cui è definita. Una function expression o arrow assegnata a `const` invece no: chiamarla prima dà `ReferenceError` (TDZ), e con `var` si otterrebbe `TypeError: ... is not a function`, perché la variabile vale ancora `undefined`.
 
 ---
 ## Slide 43 – Arrow functions
 
-- Le ***arrow functions***, introdotte con ECMAScript 2015, permettono di definire funzioni attraverso una sintassi più compatta basata sull'operatore =>
+- Le ***arrow functions***, introdotte con ECMAScript 2015, permettono di definire funzioni attraverso una sintassi più compatta basata sull'operatore **=>**
 - Sono particolarmente utilizzate come callback e nelle operazioni sugli array
 
 ```js
@@ -674,15 +668,15 @@ const max = (a, b) => {
 }
 ```
 
-***Se il corpo contiene una sola espressione, il valore viene restituito implicitamente. Se si utilizzano { } per delimitare il corso della funzione, occorre un*** `return` ***esplicito per restituire un valore. Le arrow function non definiscono un proprio*** `this`***, ma usano quello del contesto lessicale esterno.***
+Se il corpo contiene una sola espressione, il valore viene restituito implicitamente. ~~Se si utilizzano { } per delimitare il corso della funzione, occorre un `return` esplicito per restituire un valore~~. ~~Le arrow function non definiscono un proprio `this`~~, ma usano quello del contesto lessicale esterno.
 
 >> "corso della funzione" va letto come "corpo della funzione".
->> Altri casi particolari: senza parametri servono le parentesi vuote, `const saluta = () => "ciao";`. Per restituire implicitamente un oggetto letterale bisogna racchiuderlo tra parentesi tonde, `const crea = n => ({ name: n });`, altrimenti le graffe vengono interpretate come blocco del corpo.
+>> Altri casi particolari: ~~senza parametri servono le parentesi vuote~~, `const saluta = () => "ciao";`. Per restituire implicitamente un oggetto letterale bisogna racchiuderlo tra parentesi tonde, `const crea = n => ({ name: n });`, altrimenti le graffe vengono interpretate come blocco del corpo.
 >> Uso tipico come callback: `[1, 2, 3].map(x => x * 2)` → `[2, 4, 6]`.
 ---
 ## Slide 44 -> 47 – Callback
 
-- Una ***callback*** è una funzione passata come argomento ad un'altra funzione, affinché quest'ultima possa richiamarla quando necessari
+- Una ***callback*** è una funzione passata come argomento ad un'altra funzione, affinché quest'ultima possa richiamarla quando necessario
 - Le callback sono alla base di molti meccanismi JavaScript, tra cui la gestione degli eventi, le operazioni sugli array e numerose API sincrone
 
 ```js
@@ -706,8 +700,6 @@ Hello, Alice
 
 >> `processUser` non sa nulla di `greet`: riceve "qualcosa da chiamare" nel parametro `callback` e lo invoca passandogli `user`. Cambiando la callback (es. una funzione che scrive su file o mostra un alert) si cambia il comportamento di `processUser` senza toccarne il codice.
 
-![[TW09-s045-1.png|450]]
-
 - `processUser(greet)` – Passaggio della funzione come argomento
 - ↓ `callback(user)` – La funzione ricevuta viene invocata
 - ↓ `greet("Alice")` – Esecuzione della callback
@@ -721,15 +713,8 @@ processUser(greet()); // Esegue subito greet e passa il suo risultato
 - Nel secondo caso `greet()` viene invocata senza argomenti e restituisce `undefined`; quindi `processUser` riceve `undefined` e genera un errore quando tenta di chiamarlo come funzione
 - Attenzione! **Una callback non è necessariamente asincrona!** Nell'esempio viene eseguita immediatamente, durante l'esecuzione di `processUser`
 
->> Eseguendo davvero il secondo caso con node si ottiene prima la stampa di `greet()` (chiamata senza argomenti, quindi `name` vale `undefined`) e poi l'errore:
->> ```
->> Hello, undefined
->> TypeError: callback is not a function
->> ```
->> Regola pratica: senza parentesi (`greet`) passi la funzione come valore; con le parentesi (`greet()`) la esegui subito e passi il suo valore di ritorno.
-
 ```js
-button.addEventListener("click", () => ){
+button.addEventListener("click", () => {
 	console.log("Button clicked!");
 });
 ```
@@ -737,19 +722,13 @@ button.addEventListener("click", () => ){
 - La funzione viene passata al **browser**, che la invocherà quando si verificherà l'evento ***click*** per il bottone in questione
 - In JavaScript le funzioni non sono soltanto blocchi di codice da eseguire: sono valori che possono essere passati, restituiti e utilizzati per definire il comportamento del programma.
 
->> Attenzione: nel codice della slide c'è un refuso (la `)` dopo `=>`), che lo rende un errore di sintassi. La forma corretta è:
->> ```js
->> button.addEventListener("click", () => {
->> 	console.log("Button clicked!");
->> });
->> ```
 >> Qui, a differenza della slide 46, la callback viene eseguita "più tardi" (quando l'utente clicca), cioè in modo asincrono rispetto al codice che registra il listener.
 
 ---
 ## Slide 48 – Higher-order function
 
 - Le funzioni possono restituire altre funzioni
-- Una funzione che riceve altre funzioni come argomenti oppure restituisce una funzione è detta ***higher-order function***
+- ~~Una funzione che riceve altre funzioni come argomenti oppure restituisce una funzione è detta ***higher-order function***~~
 - Questo permette di costruire comportamenti riutilizzabili e parametrizzabili
 
 ```js
@@ -766,7 +745,7 @@ console.log(triple(5));       // 15
 
 *La funzione interna mantiene accesso alle variabili del contesto lessicale in cui è stata creata, anche dopo la conclusione della funzione esterna. Questo meccanismo prende il nome di* ***closure***
 
->> `multiplyBy` è una "fabbrica di funzioni": ogni chiamata crea una nuova funzione interna che "ricorda" il proprio `factor`. `double` ricorda `factor = 2`, `triple` ricorda `factor = 3`, anche se `multiplyBy` è già terminata (risultati verificati con node: `10` e `15`).
+>> `multiplyBy` è una "fabbrica di funzioni": ogni chiamata crea una nuova funzione interna che "ricorda" il proprio `factor`. `double` ricorda `factor = 2`, `triple` ricorda `factor = 3`, anche se `multiplyBy` è già terminata.
 >> `addEventListener` (slide 47) e `map` (slide 49) sono higher-order function perché ricevono una funzione come argomento.
 
 ---
@@ -775,7 +754,7 @@ console.log(triple(5));       // 15
 - Il metodo `map()` applica una funzione a ciascun elemento di un array e restituisce un nuovo array contenente i risultati, senza modificare l'array originale
 
 ```js
-const number = [1, 2, 3, 4];
+const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(x => x * 2);
 console.log(doubled); // [2, 4, 6, 8]
 console.log(numbers); // [1, 2, 3, 4]
@@ -788,10 +767,7 @@ for (const n of numbers) {
 }
 ```
 
-![[TW09-s049-1.png|500]]
-
->> Refuso nella slide: l'array è dichiarato come `number` ma poi usato come `numbers` (così com'è darebbe `ReferenceError: numbers is not defined`); va dichiarato `const numbers = [1, 2, 3, 4];`. Con il nome corretto, node stampa `[ 2, 4, 6, 8 ]` e `[ 1, 2, 3, 4 ]`.
->> Il riquadro di destra è l'equivalente "imperativo" con un ciclo `for...of`: `map` è più conciso e dichiarativo (dici *cosa* trasformare, non *come* iterare). La callback di `map` riceve in realtà anche indice e array: `arr.map((x, i, a) => ...)`.
+>> La callback di `map` riceve in realtà anche indice e array: `arr.map((x, i, a) => ...)`.
 
 ---
 ## Slide 50 – Oggetti e metodi
@@ -805,35 +781,21 @@ for (const n of numbers) {
 ---
 ## Slide 51 – `this`
 
-![[TW09-s051-1.png|600]]
-
 ```js
 const user = {
    name: "Alice",
    age: 20,
-   greet() {
-      return ‘Hello, ${this.name}!’;
+   greet() { //Forma breve per dichiarare un metodo all'interno di un oggetto
+      return `Hello, ${this.name}!`;
    }
 };
 console.log(user.name);       // "Alice"
 console.log(user.greet());    // "Hello, Alice!"
 ```
 
-*Forma abbreviata per dichiarare un metodo all'interno di un oggetto*
-
 - All'interno di un metodo, `this` permette di accedere all'oggetto utilizzato per invocare il metodo. Il suo valore dipende dalla modalità di invocazione della funzione
 - In questo esempio, **`user.greet()`** viene invocato attraverso **`user`**, quindi **`this`** fa riferimento a **`user`**
 - **Attenzione!** A differenza di molti linguaggi OO tradizionali, in JavaScript `this` non è necessariamente legato in modo permanente all'oggetto in cui una funzione è stata definita
-
->> Nella slide la stringa è racchiusa tra apici tipografici `‘…’`: in JS è un errore di sintassi (`SyntaxError: Invalid or unexpected token`). Per l'interpolazione `${...}` servono i backtick: `` `Hello, ${this.name}!` `` (template literal).
->> `greet() { ... }` equivale a `greet: function() { ... }`.
->> Esempio di `this` "staccato" dall'oggetto (verificato con node):
->> ```js
->> const g = user.greet;
->> g(); // "Hello, undefined!" in modalità non strict (this = oggetto globale);
->>      // TypeError in strict mode / moduli (this = undefined)
->> ```
->> Il valore di `this` si decide quindi al momento della chiamata, guardando ciò che sta a sinistra del punto.
 
 ---
 ## Slide 52 – Ereditarietà basata sui prototipi
@@ -841,12 +803,10 @@ console.log(user.greet());    // "Hello, Alice!"
 - JS utilizza un modello di ereditarietà ***prototype-based***: ogni oggetto può avere un collegamento interno ad un altro oggetto, chiamato ***prototipo***
 - Attraverso questo collegamento, un oggetto può accedere a proprietà e metodi definiti nel proprio prototipo, senza doverli possedere direttamente
 
-![[TW09-s052-1.png|650]]
-
 ```js
 const person = {
    greet() {
-      return ‘Hello, ${this.name}!’;
+      return `Hello, ${this.name}!`;
    }
 };
 const student = Object.create(person);
@@ -860,14 +820,12 @@ console.log(student.greet()); // "Hello, Alice!"
 - *`student` possiede direttamente la proprietà `name` ma non il metodo `greet()`*
 - *Quando invochiamo `student.greet()` JS trova il metodo nel prototipo `person`*
 
->> Anche qui gli apici `‘…’` vanno letti come backtick (template literal). Nota che dentro `greet`, `this` è `student` (l'oggetto usato per l'invocazione), non `person`: per questo stampa `"Hello, Alice!"` anche se il metodo è definito in `person` (verificato con node).
+>>Nota che dentro `greet`, `this` è `student` (l'oggetto usato per l'invocazione), non `person`: per questo stampa `"Hello, Alice!"` anche se il metodo è definito in `person`.
 
 ---
 ## Slide 53 – Relazione tra oggetto e prototipo
 
-![[TW09-s053-1.png|300]]
-
-(`student` con `name: "Alice"` → `[[Prototype]]` → `person` con `greet()`)
+![[TW09-s053-1.png|194]]
 
 - L'ereditarietà in JS si basa sulla condivisione e sulla ricerca delle proprietà attraverso una catena di oggetti, non sulla necessità di definire una gerarchia di classi
 
@@ -876,14 +834,12 @@ console.log(student.greet()); // "Hello, Alice!"
 
 ![[TW09-s054-1.png|300]]
 
-(`student` – `name: "Alice"` – Oggetto corrente → `[[Prototype]]` → `person` – `greet()` – Prototipo di student → `[[Prototype]]` → `Object.prototype` – `toString()`, `hasOwnProperty()`, … → `[[Prototype]]` → `null` – Fine della catena)
-
 - Quando si accede a una proprietà, JS la cerca inizialmente nell'oggetto stesso
 - Se non la trova, prosegue la ricerca nel suo prototipo e, se necessario, nei prototipi successivi
 - Questa sequenza di collegamenti prende il nome di ***prototype chain***
 - La ricerca termina quando la proprietà viene trovata oppure quando si raggiunge un prototipo `null`
 
->> Se la ricerca arriva a `null` senza trovare nulla, il risultato è `undefined` (nessun errore). Si può verificare che la catena finisce davvero lì: `Object.getPrototypeOf(Object.prototype)` restituisce `null`.
+>> Se la ricerca arriva a `null` senza trovare nulla, il risultato è `undefined` (nessun errore).
 
 ---
 ## Slide 55 – Prototype chain: esempio
@@ -899,8 +855,7 @@ console.log(Object.getPrototypeOf(student) === person);   // true
 
 - **Attenzione**! La proprietà interna `[[Prototype]]` non deve essere confusa con la proprietà `.prototype` delle funzioni costruttrici, che incontreremo indirettamente parlando delle ***classi***
 
->> Verificato con node: `student.toString()` restituisce `"[object Object]"`, `student.unknown` è `undefined`, il confronto stampa `true`.
->> Differenza chiave: `[[Prototype]]` è il collegamento *di ogni oggetto* verso il suo prototipo (si legge con `Object.getPrototypeOf(obj)`, o col vecchio `obj.__proto__`); `.prototype` è una normale proprietà *delle funzioni costruttrici/classi*, che indica l'oggetto da usare come `[[Prototype]]` delle istanze create con `new`. Quindi `Object.getPrototypeOf(new F()) === F.prototype`.
+>> Differenza chiave: `[[Prototype]]` è il collegamento *di ogni oggetto* verso il suo prototipo (si legge con `Object.getPrototypeOf(obj)`); `.prototype` è una normale proprietà *delle funzioni costruttrici/classi*, che indica l'oggetto da usare come `[[Prototype]]` delle istanze create con `new`. Quindi `Object.getPrototypeOf(new F()) === F.prototype`.
 
 ---
 ## Slide 56 – Classi
@@ -908,13 +863,8 @@ console.log(Object.getPrototypeOf(student) === person);   // true
 - A partire da ECMAScript 2015, JavaScript mette a disposizione la sintassi `class`, che permette di definire costruttori, metodi ed ereditarietà attraverso una notazione simile a quella dei linguaggi OO tradizionali
 - **Le classi JavaScript non sostituiscono il modello prototype-based**: rappresentano una sintassi più strutturata costruita sopra il meccanismo dei prototipi
 - Di fatto, le classi JavaScript sono **QUASI** zucchero sintattico: rendono più familiare la programmazione orientata agli oggetti, ma sotto il cofano continua a funzionare la **prototype chain**
-
->> Prova che una classe è "sotto" una funzione: `typeof Student` restituisce `"function"` (verificato con node).
-
 ---
 ## Slide 57 – Classi: esempio
-
-![[TW09-s057-1.png|650]]
 
 ```js
 class Student {
@@ -942,7 +892,7 @@ Student.prototype
 - *`greet()` è il metodo condiviso attraverso `Student.prototype`*
 - *Il prototipo di `alice` è `Student.prototype`*
 
->> Cosa fa `new Student("Alice", 23)`, in sintesi: (1) crea un oggetto vuoto; (2) imposta il suo `[[Prototype]]` a `Student.prototype`; (3) esegue `constructor` con `this` = il nuovo oggetto; (4) restituisce l'oggetto. Ecco perché il confronto finale dà `true` (verificato con node).
+>> Cosa fa `new Student("Alice", 23)`, in sintesi: (1) crea un oggetto vuoto; (2) imposta il suo `[[Prototype]]` a `Student.prototype`; (3) esegue `constructor` con `this` = il nuovo oggetto; (4) restituisce l'oggetto. Ecco perché il confronto finale dà `true`.
 
 ---
 ## Slide 58 -> 61 – Classi: un altro esempio
@@ -985,14 +935,6 @@ console.log(alice.greet());  // "Hello, Alice!"
 
 >> `Object.hasOwn(obj, prop)` (ES2022) controlla solo le proprietà *proprie* dell'oggetto, senza risalire la catena; è l'alternativa moderna a `obj.hasOwnProperty(prop)`. Al contrario, l'operatore `in` risale la catena: `"greet" in alice` è `true`.
 
-![[TW09-s060-1.png|350]]
-
-- **Istanza `alice`**: `name: "Alice"` – `Object.hasOwn(alice, "greet") → false`
-- ↓ `[[Prototype]]`
-- **`Student.prototype`**: `greet()` – `Object.hasOwn(Student.prototype, "greet") → true`
-- ↓ `[[Prototype]]`
-- **`Object.prototype`**: `toString()`, `hasOwnProperty()`, …
-
 ```js
 const alice = new Student("Alice");
 const bob = new Student("Bob");
@@ -1005,7 +947,7 @@ alice.greet === bob.greet;                   // true
 *I metodi dichiarati nel corpo di una classe vengono normalmente definiti nel prototipo della classe (`Student.prototype`), non nelle singole istanze*
 *Le istanze possono accedervi attraverso la* ***prototype chain****, condividendo così la stessa funzione*
 
->> `alice.greet === bob.greet` è `true` perché entrambe le ricerche finiscono sullo *stesso* oggetto funzione in `Student.prototype` (verificato con node): una sola copia in memoria, qualunque sia il numero di istanze. Se invece nel costruttore si scrivesse `this.greet = () => ...`, ogni istanza avrebbe la propria copia e il confronto darebbe `false`.
+>> `alice.greet === bob.greet` è `true` perché entrambe le ricerche finiscono sullo *stesso* oggetto funzione in `Student.prototype`: una sola copia in memoria, qualunque sia il numero di istanze. Se invece nel costruttore si scrivesse `this.greet = () => ...`, ogni istanza avrebbe la propria copia e il confronto darebbe `false`.
 
 ---
 ## Slide 62 -> 63 – Classi e prototipi
@@ -1059,8 +1001,6 @@ console.log(alice.greet()); // "Hello!"
 ---
 ## Slide 64 – Seconda domanda
 
-*BONUS*
-
 - **DOMANDA 2**: Consideriamo il codice
 
 ```js
@@ -1076,25 +1016,9 @@ const alice = new Student("Alice");
 ```
 
 - [ ] Il metodo `greet()` viene copiato all'interno di ogni nuova istanza della classe `Student`
-- [ ] Il metodo `greet()` è definito in `Student.prototype` ed è accessibile alle istanze attraverso la prototype chain
+- [x] Il metodo `greet()` è definito in `Student.prototype` ed è accessibile alle istanze attraverso la prototype chain
 - [ ] Il metodo `greet()` appartiene direttamente a `Object.prototype`
 - [ ] Il metodo `greet()` può essere invocato soltanto attraverso `Student.prototype`, non attraverso le istanze
-
->> **Risposta corretta: la seconda** (`greet()` è definito in `Student.prototype` ed è accessibile alle istanze tramite la prototype chain). Verificato con node:
->> ```js
->> Object.hasOwn(alice, "greet");             // false -> non è copiato nell'istanza (esclude la 1ª)
->> Object.hasOwn(Student.prototype, "greet"); // true
->> Object.hasOwn(Object.prototype, "greet");  // false -> esclude la 3ª
->> alice.greet();                             // "Hello, Alice!" -> esclude la 4ª
->> ```
-
----
-## Slide 65 – Domande?
-
-![[TW09-s065-1.png|229]]![[TW09-s065-2.png|191]]![[TW09-s065-3.png|229]]
-
->> Il primo meme ("NULL+TRUE EQUALS 1? THIS IS MADNESS!" / "THIS IS JAVASCRIPT!") richiama la type coercion: `null + true` vale davvero `1`, perché entrambi sono convertiti a numero (`null` → `0`, `true` → `1`).
-
 ---
 ## Riassunto
 

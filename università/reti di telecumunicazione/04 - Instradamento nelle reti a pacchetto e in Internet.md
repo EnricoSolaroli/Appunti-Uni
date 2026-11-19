@@ -4,6 +4,13 @@
 
 >> Continua la lezione [[01 - Instradamento IPv4 e IPv6]]: lì la tabella di instradamento è data, qui si vede come i router la costruiscono (algoritmi e protocolli di routing). Nei punti di contatto trovi una riga **Collegamento con 01**.
 
+>> **Da analizzare: slide nuove della versione del 26/10** (spunta quando le hai studiate)
+>> - [ ] [[#Slide 145 – EGP come funzionano?|145–159]]: EGP e BGP (sessioni, path vector, policy, messaggi, attributi, scelta del percorso)
+>>
+>> **Slide già viste ma modificate dal prof** (da rileggere)
+>> - [ ] [[#Slide 90 – Router designato|90]] Router designato, [[#Slide 92 – Identificazione dei router e priorità|92]] priorità 0, [[#Slide 100 – Sinconizzazione dei database|100]] sincronizzazione dei database
+>> - [ ] [[#Slide 107 – Verso le rotte inter-area|107]] Summary-LSA, [[#Slide 108 – Tipologia di rotte|108]] ordine di preferenza delle rotte, [[#Slide 111 – Tipologia di aree|111]] tipologia di aree, [[#Slide 112 – Da ricordare|112]] Da ricordare
+ 
 ## Indice
 
 1. **Il problema dell'instradamento: algoritmi e protocolli** (slide 2–6)
@@ -80,65 +87,85 @@
 	- [[#Slide 68 – Raccolta delle informazioni|Hello, echo e Link State Packet]]
 	- [[#Slide 69 – Diffusione ed elaborazione delle informazioni|Flooding degli LSP e calcolo con Dijkstra]]
 	- [[#Slide 70->78 – Esempio|Esempio di Dijkstra passo per passo]]
-11. **OSPF: principi, vicini e Designated Router** (slide 79–89)
+11. **OSPF: principi, LSA, vicini e Designated Router** (slide 79–96)
 	- [[#Slide 79 – Open Shortest Path First (OSPF)|Caratteristiche di OSPF]]
 	- [[#Slide 80 – OSPF in sintesi|OSPF in sintesi]]
 	- [[#Slide 81 – Il costo in OSPF|Il costo delle interfacce]]
 	- [[#Slide 82 – LSDB|LSA e Link State Database]]
-	- [[#Slide 83 – Vicinanza e adiacenza|Vicini e adiacenti]]
-	- [[#Slide 84 – Hello|Pacchetti Hello]]
-	- [[#Slide 85 – Tipologie di rete|Tipologie di rete e stella equivalente]]
-	- [[#Slide 86 – Router designato|Designated Router e Backup DR]]
-	- [[#Slide 88 – Identificazione dei router e priorità|Router ID e priorità]]
-	- [[#Slide 89 – Elezione del DR|Elezione di DR e BDR]]
-12. **OSPF: messaggi, sincronizzazione e aree** (slide 90–105)
-	- [[#Slide 90 – Più funzioni per un solo protocollo|Funzioni e tipi di pacchetto]]
-	- [[#Slide 91 – OSPF: intestazione comune|Intestazione comune]]
-	- [[#Slide 92 – Sinconizzazione dei database|Sincronizzazione dei database]]
-	- [[#Slide 93 – Le fasi di OSPF|Fasi Hello, Exchange e Update]]
-	- [[#Slide 94 – Relazione con un vicino|Stati della relazione con un vicino]]
-	- [[#Slide 95 – Aree di routing|Aree di routing e tipi di router]]
-	- [[#Slide 97 – LSA e LSU|LSA, LSU e acknowledgment]]
-	- [[#Slide 98 – Tipologie di LSA|Tipi di LSA]]
-	- [[#Slide 99 – Quali LSA attraversano i confini delle aree?|LSA ai confini delle aree]]
-	- [[#Slide 100 – Verso le rotte inter-area|Summary-LSA e rotte inter-area]]
-	- [[#Slide 101 – Tipologia di rotte|Rotte intra-area, inter-area ed esterne]]
-	- [[#Slide 102 – Link state o distance vector|Link state o distance vector?]]
-	- [[#Slide 103 – Calcolo delle rotte inter-area|Esempio di calcolo di una rotta inter-area]]
-	- [[#Slide 104 – Tipologia di aree|Aree normali, stub, totally stubby e NSSA]]
-	- [[#Slide 105 – Da ricordare|Riepilogo]]
-13. **Struttura gerarchica di Internet: gli Autonomous System** (slide 106–118)
-	- [[#Slide 106 – Com'è implementata effettivamente la struttura gerarchica di Internet?|Verso il routing fra AS]]
-	- [[#Slide 107 – Internet = rete di reti|Internet come rete di reti]]
-	- [[#Slide 108 – Internet = sistemi interconnessi|Internet come sistemi interconnessi]]
-	- [[#Slide 109 – Internet: grafo semplificato|Grafo semplificato degli AS]]
-	- [[#Slide 110 – Il routing a livello globale|Routing gerarchico e due tipi di grafo]]
-	- [[#Slide 111 – Authonomous Systems|Definizione classica di AS]]
-	- [[#Slide 112 – I protocolli di routing|IGP ed EGP]]
-	- [[#Slide 113 – RFC 1930|Definizione moderna di AS (RFC 1930)]]
-	- [[#Slide 114 – Esempio|Esempio: GARR, AS137]]
-	- [[#Slide 115 – Internet Routing Registries|Internet Routing Registries]]
-	- [[#Slide 116 – AS 137|Regole di import ed export di AS137]]
-	- [[#Slide 117 – AS20965 Regole di Import|Regole di import di GEANT]]
-	- [[#Slide 118 – Interconnessione fra AS|Rotte intra-dominio, inter-dominio e peering]]
-14. **ISP, peering e Internet Exchange** (slide 119–136)
-	- [[#Slide 119 – Internet Service Provider|Internet Service Provider]]
-	- [[#Slide 120 – Internet region|Internet region]]
-	- [[#Slide 121 -> 122 – Classificazione degli ISP|ISP Tier 1, 2 e 3]]
-	- [[#Slide 123 – In sintesi|Gerarchia degli ISP]]
-	- [[#Slide 124 – In Italia|Il Tier 1 italiano]]
-	- [[#Slide 125 – Il Peering|Il peering]]
-	- [[#Slide 126 – Peering policy|Peering policy]]
-	- [[#Slide 127 – In sintesi|Transito a pagamento e peering]]
-	- [[#Slide 128 – ISP locali e POP|ISP locali e Point of Presence]]
-	- [[#Slide 129 – Esempio|Esempio di ISP locale]]
-	- [[#Slide 130 – Indirizzamento|Indirizzamento di un ISP]]
-	- [[#Slide 131 – Interconnessione|Interconnettere tutti i POP o pochi POP]]
-	- [[#Slide 132 – Non utilizzata|Interconnessione di tutti i POP]]
-	- [[#Slide 133 – Peering diretto tramite due POP|Peering tramite due POP]]
-	- [[#Slide 134 – Da Tier 3 a Tier 1|AS di transito e NSP]]
-	- [[#Slide 135 – Internet Exchange|Internet Exchange Point]]
-	- [[#Slide 136 – IXP in Italia|IXP in Italia]]
+	- [[#Slide 83 – Esempio|Esempio: il Router-LSA di R2]]
+	- [[#Slide 84 – Un esempio più realistico|Router-LSA con reti stub]]
+	- [[#Slide 85 – Dal punto di vista di R1|Dijkstra dal punto di vista di R1]]
+	- [[#Slide 86 – LSA e LSU|LSA, LSU e acknowledgment]]
+	- [[#Slide 87 – Vicinanza e adiacenza|Vicini e adiacenti]]
+	- [[#Slide 88 – Hello|Pacchetti Hello]]
+	- [[#Slide 89 – Tipologie di rete|Tipologie di rete e stella equivalente]]
+	- [[#Slide 90 – Router designato|Designated Router e Backup DR]]
+	- [[#Slide 92 – Identificazione dei router e priorità|Router ID e priorità]]
+	- [[#Slide 93 – Elezione del DR|Elezione di DR e BDR]]
+	- [[#Slide 94 -> 96 – Esempio|Esempio: elezione del DR, Router-LSA e Network-LSA]]
+12. **OSPF: messaggi, sincronizzazione e aree** (slide 97–112)
+	- [[#Slide 97 – Più funzioni per un solo protocollo|Funzioni e tipi di pacchetto]]
+	- [[#Slide 98 – OSPF: intestazione comune|Intestazione comune]]
+	- [[#Slide 99 – I messaggi OSPF|I 5 tipi di messaggio OSPF]]
+	- [[#Slide 100 – Sinconizzazione dei database|Sincronizzazione dei database]]
+	- [[#Slide 101 – Le fasi di OSPF|Fasi Hello, Exchange e Update]]
+	- [[#Slide 102 – Relazione con un singolo vicino|Stati della relazione con un vicino]]
+	- [[#Slide 103 – Aree di routing|Aree di routing e tipi di router]]
+	- [[#Slide 105 – Tipologie di LSA|Tipi di LSA]]
+	- [[#Slide 106 – La raggiungibilità attraverso i confini delle aree?|LSA ai confini delle aree]]
+	- [[#Slide 107 – Verso le rotte inter-area|Summary-LSA e rotte inter-area]]
+	- [[#Slide 108 – Tipologia di rotte|Rotte intra-area, inter-area ed esterne]]
+	- [[#Slide 109 – Calcolo delle rotte inter-area|Esempio di calcolo di una rotta inter-area]]
+	- [[#Slide 110 – Link state o distance vector|Link state o distance vector?]]
+	- [[#Slide 111 – Tipologia di aree|Aree normali, stub, totally stubby e NSSA]]
+	- [[#Slide 112 – Da ricordare|Riepilogo]]
+13. **Struttura gerarchica di Internet: gli Autonomous System** (slide 113–126)
+	- [[#Slide 113 – Com'è implementata effettivamente la struttura gerarchica di Internet?|Verso il routing fra AS]]
+	- [[#Slide 114 – Internet = rete di reti|Internet come rete di reti]]
+	- [[#Slide 115 – Internet = sistemi interconnessi|Internet come sistemi interconnessi]]
+	- [[#Slide 116 – Internet: grafo semplificato|Grafo semplificato degli AS]]
+	- [[#Slide 117 – Il routing a livello globale|Routing gerarchico e due tipi di grafo]]
+	- [[#Slide 118 – Autonomous Systems|Definizione classica di AS]]
+	- [[#Slide 119 – I protocolli di routing|IGP ed EGP]]
+	- [[#Slide 120 – RFC 1930|Definizione moderna di AS (RFC 1930)]]
+	- [[#Slide 121 – AS|Un AS con le sue aree e il router di confine]]
+	- [[#Slide 122 – Esempio|Esempio: GARR, AS137]]
+	- [[#Slide 123 – Internet Routing Registries|Internet Routing Registries]]
+	- [[#Slide 124 – AS 137|Regole di import ed export di AS137]]
+	- [[#Slide 125 – AS20965 Regole di Import|Regole di import di GEANT]]
+	- [[#Slide 126 – Interconnessione fra AS|Rotte intra-dominio, inter-dominio e peering]]
+14. **ISP, peering e Internet Exchange** (slide 127–144)
+	- [[#Slide 127 – Internet Service Provider|Internet Service Provider]]
+	- [[#Slide 128 – Internet region|Internet region]]
+	- [[#Slide 129 -> 130 – Classificazione degli ISP|ISP Tier 1, 2 e 3]]
+	- [[#Slide 131 – In sintesi|Gerarchia degli ISP]]
+	- [[#Slide 132 – In Italia|Il Tier 1 italiano]]
+	- [[#Slide 133 – In sintesi|Transito a pagamento e peering]]
+	- [[#Slide 134 – ISP locali e POP|ISP locali e Point of Presence]]
+	- [[#Slide 135 – Esempio|Esempio di ISP locale]]
+	- [[#Slide 136 – Indirizzamento|Indirizzamento di un ISP]]
+	- [[#Slide 137 – Interconnessione|Interconnettere tutti i POP o pochi POP]]
+	- [[#Slide 138 – Non utilizzata|Interconnessione di tutti i POP]]
+	- [[#Slide 139 – Peering diretto tramite due POP|Peering tramite due POP]]
+	- [[#Slide 140 – Il Peering|Il peering]]
+	- [[#Slide 141 – Peering policy|Peering policy]]
+	- [[#Slide 142 – Da Tier 3 a Tier 1|AS di transito e NSP]]
+	- [[#Slide 143 – Internet Exchange|Internet Exchange Point]]
+	- [[#Slide 144 – IXP in Italia|IXP in Italia]]
+15. **EGP e BGP** (slide 145–159)
+	- [[#Slide 145 – EGP come funzionano?|EGP: come funzionano?]]
+	- [[#Slide 146 – Exterior Gateway Protocols|Differenze fra EGP e IGP: le politiche]]
+	- [[#Slide 147 – BGP: Border Gateway Protocol|BGP-4: sessioni TCP, eBGP e iBGP]]
+	- [[#Slide 148 – BGP: interconnessione tra AS|BGP fra gli AS]]
+	- [[#Slide 149 – BGP: sessioni interne ed esterne|Sessioni eBGP e iBGP]]
+	- [[#Slide 150 – Path Vector|Path vector ed eliminazione dei cicli]]
+	- [[#Slide 151 – Routing policies|Import ed export policy]]
+	- [[#Slide 152 -> 154 – BGP: scambio di path vector|Esempio di scambio dei path vector]]
+	- [[#Slide 155 – BGP: tipi di messaggio|Open, Update, Notification, Keepalive]]
+	- [[#Slide 156 – Attributi|Attributi: well-known, optional, partial]]
+	- [[#Slide 157 – Esempi|Origin, AS path, Next hop]]
+	- [[#Slide 158 – Esempio: path vector|Esempio: costruzione dell'AS_PATH]]
+	- [[#Slide 159 – Scelta del percorso|Scelta del percorso e LOCAL_PREF]]
 
 ---
 ## Slide 2 – Nelle reti a pacchetto chi e come si decide che strada devono seguire i dati?
@@ -834,7 +861,6 @@ Il blocco da "address family identifier" a "metric" è **ripetuto** per ogni ent
 
 - A riceve un RESPONSE da B
 	- Si controlla la correttezza dei dati (indirizzi IP e metriche validi)
-	- Si considerano solo le voci *i* con distanze $d_i < \infty$
 	- Si calcola $d_i = d_i + 1$
 - Esiste già una entry per la destinazione *i* ?
 	- NO
@@ -861,8 +887,8 @@ Il blocco da "address family identifier" a "metric" è **ripetuto** per ogni ent
 	- RESPONSE di interfacce diverse possono essere diverse
 - Fa uso di triggered update
 	- non è necessario indicare nella RESPONSE tutte le entry della tabella ma solamente quelle appena modificate
-- Non supporta il CIDR
-- È un protocollo insicuro
+- Il RIPv1 non supporta il CIDR
+- Il RIPv1 è un protocollo insicuro
 	- Chiunque trasmetta datagrammi dalla porta UDP 520 viene considerato come un router autorizzato
 	- Esempio di malfunzionamento indotto:
 		- un router non autorizzato trasmette messaggi contenenti indicazione di una distanza 0 tra se stesso e tutti gli altri della rete
@@ -910,7 +936,6 @@ Il blocco da "address family identifier" a "metric" è **ripetuto** per ogni ent
 	- tramite il campo **subnet mask**
 - Possibilità di **autenticare** chi invia i messaggi
 - Possibilità di indicare il proprio AS e di scambiare informazioni con protocolli EGP
-	- tramite i campi **route tag** e **routing domain**
 - Possibilità di specificare un **next hop** più appropriato
 - Comunque non adatto ad AS grandi
 - Comunque ha problemi di convergenza
@@ -1161,9 +1186,9 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 ---
 ## Slide 80 – OSPF in sintesi
 
-![[RT04n-s080-1.png|287]]
+![[RT04v3-s080-1.png|287]]
 
->> La pipeline in breve: con gli Hello si scopre *chi* c'è; fra alcuni vicini si formano adiacenze; sulle adiacenze si sincronizzano i database e si propagano gli LSA (flooding); quando tutti i router dell'area hanno lo stesso LSDB (qui scritto "LSBD"), ciascuno esegue Dijkstra con sé stesso come radice; i risultati popolano la RIB e da questa la FIB usata per l'inoltro.
+>> La pipeline in breve: con gli Hello si scopre *chi* c'è; fra alcuni vicini si formano adiacenze; sulle adiacenze si sincronizzano i database e si propagano gli LSA (flooding); quando tutti i router dell'area hanno lo stesso LSDB, ciascuno esegue Dijkstra con sé stesso come radice; i risultati popolano la RIB e da questa la FIB usata per l'inoltro.
 
 ---
 ## Slide 81 – Il costo in OSPF
@@ -1192,7 +1217,85 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Il flooding è "affidabile" perché ogni LSA ricevuto deve essere confermato (Link State Acknowledgment) e viene ritrasmesso finché non arriva la conferma.
 
 ---
-## Slide 83 – Vicinanza e adiacenza
+## Slide 83 – Esempio
+
+![[RT04v3-s083-1.png|350]]
+
+- LSA generato da R2 (router LSA type 1)
+	- Collegamento R2-R1 costo 2
+	- Collegamento R2-R3 costo 3
+- Ogni router descrive la propria porzione di topologia mediante LSA.
+- La raccolta degli LSA permette a tutti i router dell'area di ricostruire il grafo completo
+	- $LSDB = \{LSA(R1), LSA(R2), LSA(R3)\}$
+
+>> Gli altri due LSA dell'esempio sono LSA(R1) = {R1-R2 costo 2, R1-R3 costo 8} e LSA(R3) = {R3-R1 costo 8, R3-R2 costo 3}. Ogni router descrive solo i propri collegamenti, quindi ogni arco compare due volte, una per ciascun estremo. Mettendo insieme i tre LSA, ogni router ottiene lo stesso grafo a triangolo.
+>>
+>> In OSPF il costo è associato all'interfaccia *in uscita*, quindi in generale R2-R1 e R1-R2 potrebbero avere costi diversi. Qui sono simmetrici. Già da questo grafo si vede che per R1 conviene raggiungere R3 passando per R2 (2 + 3 = 5) invece di usare il link diretto (8).
+
+---
+## Slide 84 – Un esempio più realistico
+
+![[RT04v3-s084-1.png|450]]
+
+- LSA di R1 (router LSA type 1)
+	- R1-R2 costo 2
+	- R1-R3 costo 8
+	- 198.51.30.0/24 costo 1
+- LSA di R2 (router LSA type 1)
+	- R2-R3 costo 3
+	- R2-R1 costo 2
+	- 192.168.10.0/24 costo 1
+- LSA di R3 (router LSA type 1)
+	- R3-R1 costo 8
+	- R3-R2 costo 3
+	- 203.0.113.0/24 costo 1
+
+>> Rispetto alla slide precedente, ogni Router-LSA contiene due tipi di informazione: i collegamenti verso altri router, cioè gli archi del grafo usati da Dijkstra, e le reti **stub** direttamente collegate (N1, N2, N3). Le reti stub sono reti "foglia", senza altri router OSPF, e diventano le destinazioni IP vere e proprie delle rotte.
+>>
+>> Le reti stub non sono "nodi di transito": nessun percorso le attraversa per arrivare altrove. Per questo nel calcolo vengono appese all'albero dei cammini minimi come foglie, sommando il costo del router che le annuncia.
+
+---
+## Slide 85 – Dal punto di vista di R1
+
+| Destinazione | Percorso minimo | Costo totale |
+|---|---|---|
+| 195.51.30.0/24 | Direttamente connessa | 1 |
+| 198.168.10.0/24 | R1 → R2 → N2 | 2 + 1 = 3 |
+| 203.0.113.0/24 | R1 → R2 → R3 → N3 | 2 + 3 + 1 = 6 |
+
+- Il percorso diretto R1->R3->N3 avrebbe costo 8+1=9 e risulta quindi meno conveniente del percorso R1->R2->R3->N3
+- Quindi
+	- Gli LSA distribuiscono informazioni topologiche,
+	- Dijkstra utilizza queste informazioni
+	- il risultato del calcolo permette la costruzione delle rotte verso i prefissi IP
+
+>> **Refusi nella tabella**: due prefissi non corrispondono alla figura della slide precedente. N1 è **198.51.30.0/24**, non 195.51.30.0/24, e N2 è **192.168.10.0/24**, non 198.168.10.0/24. I costi invece sono corretti.
+>>
+>> Dijkstra eseguito da R1 sul grafo della slide 84:
+>> 1. Si parte da R1 = 0. I candidati sono N1 = 1, R2 = 2 e R3 = 8.
+>> 2. Si fissa N1 (1). È una rete stub, quindi non ha archi uscenti.
+>> 3. Si fissa R2 (2). R3 scende da 8 a min(8, 2 + 3) = 5 passando per R2, e N2 diventa 2 + 1 = 3.
+>> 4. Si fissa N2 (3).
+>> 5. Si fissa R3 (5). N3 diventa 5 + 1 = 6.
+>> 6. Si fissa N3 (6).
+>>
+>> Nella tabella di routing di R1 conta solo il **next hop**: N1 è direttamente connessa, mentre N2 (costo 3) e N3 (costo 6) si raggiungono entrambe con next hop R2. Il link R1-R3 di costo 8 non viene usato per nessuna destinazione, ma resta come alternativa se cade R2 o uno dei suoi link.
+
+---
+## Slide 86 – LSA e LSU
+
+- Link State Advertisement (LSA)
+	- Oggetto informativo che descrive una parte della topologia o una destinazione
+- Link State Update (LSU)
+	- Pacchetto OSPF
+- Un singolo LSU può trasportare uno o più LSA
+- Link State Acknowledgment
+	- conferma la ricezione degli LSA
+
+>> Distinzione importante: l'LSA è l'**informazione** (la "lettera"), l'LSU è il **pacchetto** OSPF che la trasporta (la "busta"). Ogni LSA è identificato da tipo, Link State ID e router che lo ha originato; ha un **numero di sequenza** (per riconoscere la versione più recente) e un'**età** (LS Age): l'originatore lo rinfresca ogni 30 minuti e, se raggiunge MaxAge (1 ora), viene eliminato dalla LSDB.
+
+---
+## Slide 87 – Vicinanza e adiacenza
 
 - Vicini (**neighbour**)
 	- Due router che scambiano pacchetti sulla stessa rete
@@ -1204,10 +1307,10 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 	- tutti i router adiacenti sono anche vicini
 	- non tutti i router vicini diventano adiacenti
 
->> L'adiacenza è quindi un sottoinsieme della relazione di vicinanza. Su una LAN con DR (slide 86) due router qualsiasi sono vicini, ma diventano adiacenti solo con il DR e il BDR; nello stato finale dei due router non-DR la relazione si ferma a "2-Way".
+>> L'adiacenza è quindi un sottoinsieme della relazione di vicinanza. Su una LAN con DR (slide 90) due router qualsiasi sono vicini, ma diventano adiacenti solo con il DR e il BDR; nello stato finale dei due router non-DR la relazione si ferma a "2-Way".
 
 ---
-## Slide 84 – Hello
+## Slide 88 – Hello
 
 - I pacchetti **Hello** vengono inviati per farsi riconoscere come router OSPF dai vicini
 	- Vengono inviati **periodicamente** sulle interfacce abilitate in base a quanto specificato dal parametro **HelloInterval**
@@ -1224,7 +1327,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Valori tipici su LAN: HelloInterval = 10 s, RouterDeadInterval = 40 s (4 volte l'Hello). Se per un RouterDeadInterval non arriva alcun Hello, il vicino è dichiarato non più attivo.
 
 ---
-## Slide 85 – Tipologie di rete
+## Slide 89 – Tipologie di rete
 
 - OSPF è progettato per operare correttamente con reti:
 	- Point-to-Point (punto-punto fra due router)
@@ -1240,20 +1343,20 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Il multicast da solo non basta: evita di inviare N copie dello stesso pacchetto, ma non risolve il problema di tenere sincronizzati i database di ogni coppia di router. Per questo serve un punto di riferimento comune.
 
 ---
-## Slide 86 – Router designato
+## Slide 90 – Router designato
 
 - Si elegge un **Router designato (DR)**
 - Ogni router della LAN è adiacente solo al DR (e al BDR)
-	- lo scambio di informazioni di routing avviene solo tra router adiacenti (cioè DR fa da tramite)
-	- inoltre il DR è l'unico a comunicare i prefissi di questa sezione di rete al mondo esterno
+	- Il DR ha un ruolo centrale nel flooding degli LSA sulla LAN e genera il Network-LSA di tipo 2 che rappresenta la rete multiaccesso nella topologia OSPF dell'area
+- Per ogni rete multi-accesso viene eletto un DR
 - Per ragioni di affidabilità occorre avere anche un Backup Designated Router (BDR) adiacente a tutti i router locali
 
->> Indirizzi multicast in pratica: i router non-DR inviano i propri aggiornamenti a 224.0.0.6 (AllDRouters, ascoltato da DR e BDR); il DR li ridistribuisce a 224.0.0.5 (AllSPFRouters, tutti i router OSPF). Il DR genera anche l'LSA di rete (Network-LSA) che rappresenta la LAN come un unico nodo nel grafo.
+>> Indirizzi multicast in pratica: i router non-DR inviano i propri aggiornamenti a 224.0.0.6 (AllDRouters, ascoltato da DR e BDR); il DR li ridistribuisce a 224.0.0.5 (AllSPFRouters, tutti i router OSPF).
 >>
 >> Il BDR ascolta tutto e ha già le adiacenze con ogni router: se il DR cade lo sostituisce subito, senza dover risincronizzare i database.
 
 ---
-## Slide 87 – Esempio
+## Slide 91 – Esempio
 
 ![[RT04n-s087-1.png|600]]
 
@@ -1264,27 +1367,26 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Il router a destra, collegato con un link punto-punto, resta adiacente direttamente al suo vicino: sui collegamenti point-to-point non si elegge un DR e i due estremi diventano sempre adiacenti.
 
 ---
-## Slide 88 – Identificazione dei router e priorità
+## Slide 92 – Identificazione dei router e priorità
 
 - Ogni router di un dominio OSPF deve avere un identificativo univoco (router ID) di 32 bit:
-	- di default si prende l'indirizzo IP più alto fra quelli assegnati alle interfacce del router
+	- in generale di default si prende l'indirizzo IP più alto fra quelli assegnati alle interfacce del router
 	- si può assegnare manualmente un router ID ad ogni router configurando opportunamente l'interfaccia di loop-back
 	- configurare l'interfaccia di loop-back è un modo più stabile e sicuro di assegnare il router ID perché questa interfaccia non viene mai disabilitata
 - Ai singoli router possono essere associate delle priorità
 	- utilizzate nell'elezione del DR
 	- valore di priorità compreso tra 0 e 255 (8 bit)
-	- di default tutti i router hanno priorità 1 (più bassa)
+	- I router a priorità 0 non sono eleggibili
+	- di default tutti i router hanno priorità 1
 
 >> Precisazione: su molte implementazioni (es. Cisco) l'ordine è router ID configurato esplicitamente con il comando `router-id`, poi l'IP più alto fra le loopback, poi l'IP più alto fra le interfacce fisiche attive. Il router ID è scritto in notazione puntata come un indirizzo IP, ma è solo un identificativo e non deve essere per forza raggiungibile.
->>
->> Priorità 1 è la più bassa fra quelle *eleggibili*: la priorità 0 significa "mai DR/BDR" (vedi slide successiva).
 
 ---
-## Slide 89 – Elezione del DR
+## Slide 93 – Elezione del DR
 
 - Ciascun router nella rete BMA:
 	- Esamina la lista dei suoi vicini
-	- Elimina dalla lista tutti i router non eleggibili (ad esempio tutti quelli che hanno priorità nulla)
+	- Elimina dalla lista tutti i router non eleggibili (ad esempio tutti quelli che hanno priorità 0)
 	- Fra quelli rimasti seleziona il router avente la priorità maggiore
 	- Sceglie il più alto router ID in caso di uguale priorità
 - Il router selezionato è il DR
@@ -1298,11 +1400,77 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Nelle implementazioni reali l'elezione non è preemptive: se in seguito si aggiunge un router con priorità più alta, questo non prende il posto del DR in carica. Il ruolo cambia solo se il DR cade (e allora il BDR viene promosso).
 
 ---
-## Slide 90 – Più funzioni per un solo protocollo
+## Slide 94 -> 96 – Esempio
+
+![[RT04v3-s094-1.png|450]]
+
+| Router ID | Priorità |
+|---|---|
+| R1 : 1.1.1.1 | 2 |
+| R2 : 2.2.2.2 | 0 |
+| R3 : 3.3.3.3 | 1 |
+| R4 : 4.4.4.4 | 1 |
+| R5 : 5.5.5.5 | 0 |
+
+L'algoritmo di elezione del DR selezione
+- DR = R1 per maggiore priorità
+- BDR = R4 per maggiore Id rispetto a R3 a parità di priorità
+
+>> Applicando le regole della slide 93: R2 e R5 hanno priorità 0, quindi non sono eleggibili, anche se R5 ha il router ID più alto di tutti. Restano R1 (2), R3 (1) e R4 (1). R1 ha la priorità maggiore e diventa DR. Escluso R1, R3 e R4 hanno la stessa priorità e vince il router ID più alto, quindi il BDR è R4 (4.4.4.4 > 3.3.3.3).
+>>
+>> Priorità 0 vuol dire solo "mai DR o BDR". R2 e R5 partecipano comunque a OSPF e formano l'adiacenza Full con DR e BDR come tutti gli altri.
+
+![[RT04v3-s095-1.png|450]]
+
+R3 manda al DR un LSU (pacchetto OSPF Type 4) contenente il suo Router-LSA Type 1
+
+Destinazione multicast: 224.0.0.6 (AllDRouters) -> cioè l'indirizzo ascoltato solo da DR e BDR.
+
+**Router-LSA originato da R3**
+- LSA Type 1 · Originatore: R3
+- Router ID = 3.3.3.3
+- Collegamento alla LAN transit
+	- Link ID: 10.0.0.1 (IP del DR)
+	- IP di R3 sulla LAN: 10.0.0.3
+	- Costo verso la LAN: 10
+- Rete stub direttamente collegata
+	- **10.30.0.0/24 · costo 1**
+- Ogni router origina il proprio Router-LSA. Non annuncia reti remote come direttamente collegate.
+
+>> Come leggere il Router-LSA di R3:
+>> - **Transit**: la LAN comune (10.0.0.0/24, vedi la netmask nella slide successiva) ha più router e un DR, quindi R3 non elenca i singoli vicini. Descrive invece un collegamento verso una rete di transito, identificata dall'IP del DR (Link ID = 10.0.0.1). L'IP di R3 sulla LAN (10.0.0.3) è il campo che la RFC chiama *Link Data*. Il costo 10 è quello dell'interfaccia di R3 verso la LAN.
+>> - **Stub**: 10.30.0.0/24 è collegata solo a R3, quindi compare come rete stub (foglia) con il suo costo.
+>> - Allo stesso modo R4 annuncerà nel proprio Router-LSA la stub 10.40.0.0/24. R3 non la annuncia, perché "non annuncia reti remote come direttamente collegate".
+
+![[RT04v3-s096-1.png|450]]
+
+1. R1 distribuisce il router LSA ricevuto da R3 (e anche da tutti gli altri router) i router LSA (tipo 1 ) ricevuti
+	- Destinazione multicast: 224.0.0.5 (All SPF Routers)
+2. R1 origina un Network LSA (tipo 2)
+	- Destinazione multicast: 224.0.0.5
+	- Il Network-LSA elenca i router con adiacenza Full al DR; non contiene né le LAN stub 10.30.0.0/24 e 10.40.0.0/24 né i costi dei link
+
+**Network-LSA originato da R1**
+- LSA Type 2 · Originatore: R1
+- Router ID = 1.1.1.1
+- Link state ID: 10.0.0.1 (IP del DR)
+- Netmask : 255.255.255.0 (10.0.0.0/24)
+- Attached routers: R1, R2, R3, R4, R5
+
+>> Il punto 1 è scritto in modo confuso. Il senso è che il DR rifà il flooding verso tutti (224.0.0.5) dei Router-LSA ricevuti da R3 e dagli altri router, senza modificarli. Ogni Router-LSA resta "firmato" dal router che lo ha originato.
+>>
+>> Come si costruisce il grafo da questi LSA:
+>> - La LAN diventa un **nodo** a sé (pseudo-nodo), descritto dal DR con il Network-LSA. Gli archi *router → LAN* hanno il costo scritto in ciascun Router-LSA (es. 10 per R3). Gli archi *LAN → router* hanno costo 0, ed è per questo che il Network-LSA non contiene costi.
+>> - Il prefisso della LAN (10.0.0.0/24) si ricava da Link State ID e Netmask del Network-LSA. Le stub 10.30.0.0/24 e 10.40.0.0/24 si trovano invece solo nei Router-LSA di R3 e R4.
+>> - Gli *Attached routers* comprendono anche il DR stesso e i router con priorità 0 (R2, R5), perché anche loro sono in Full con il DR. Nel pacchetto reale compaiono come router ID (1.1.1.1 … 5.5.5.5).
+>> - Esempio di calcolo: se tutte le interfacce sulla LAN costano 10, R1 raggiunge 10.30.0.0/24 con costo R1 → LAN (10) + LAN → R3 (0) + stub (1) = 11, con next hop 10.0.0.3. In questo modo si contano 5 archi verso lo pseudo-nodo, invece di 5·4 = 20 archi orientati (10 coppie) in una maglia completa.
+
+---
+## Slide 97 – Più funzioni per un solo protocollo
 
 - OSPF implementa tre funzioni con diversi scopi:
 	- **hello, exchange, flooding**
-- Per ogni funzione si utilizza un messaggio specifico
+- Per ogni funzione si utilizzano messaggi specifici
 - I messaggi hanno una intestazione comune
 	- vengono aggiunte informazioni per il particolare scopo a cui il messaggio è destinato (tipo di pacchetto)
 
@@ -1313,7 +1481,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> I tipi di pacchetto (campo Type) sono 5: 1 = Hello (funzione *hello*); 2 = Database Description e 3 = Link State Request (funzione *exchange*, cioè la sincronizzazione iniziale); 4 = Link State Update e 5 = Link State Acknowledgment (funzione *flooding* affidabile).
 
 ---
-## Slide 91 – OSPF: intestazione comune
+## Slide 98 – OSPF: intestazione comune
 
 - **Version** indica la versione di OSPF (versione 2)
 - **Type** indica il tipo di pacchetto
@@ -1333,9 +1501,30 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> L'area 0 (backbone) è obbligatoria in un dominio multi-area: tutte le altre aree devono essere collegate a essa.
 
 ---
-## Slide 92 – Sinconizzazione dei database
+## Slide 99 – I messaggi OSPF
 
-- Quando si stabilisce un'adiacenza si eleggono un **Leader** e un **Follower** e si sincronizzano gli LSDB
+- Complessivamente 5 tipologie di messaggio
+	- HELLO: scoperta e mantenimento dei vicini
+	- DB DESCRIPTION (DBD): confronto delle informazioni contenute nel LSDB del vicino
+	- LINK STATE REQUEST (LSR): richiesta di specifici LSA
+	- LINK STATE UPDATE (LSU): Invio di uno o più LSA
+	- LINK STATE ACK (LSACK): conferma della ricezione del LSA
+- Questi messaggi sono funzionali alle tre fasi principali di funzionamento del protocollo
+
+>> Il campo *Type* dell'intestazione comune vale 1 = Hello, 2 = DBD, 3 = LSR, 4 = LSU, 5 = LSAck. Per questo l'LSU della slide 95 è il "pacchetto OSPF Type 4". Non vanno confusi con i *tipi di LSA* (1 = Router, 2 = Network, …), che sono il contenuto trasportato dagli LSU.
+>>
+>> Corrispondenza con le tre fasi:
+>> - **Hello**: pacchetti Hello.
+>> - **Exchange**: DBD, poi LSR e LSU per gli LSA mancanti.
+>> - **Flooding**: LSU e LSAck, che rendono il flooding affidabile.
+>>
+>> I pacchetti OSPF viaggiano direttamente su IP (protocol number 89), senza TCP né UDP.
+
+---
+## Slide 100 – Sinconizzazione dei database
+
+- Quando si stabilisce un'adiacenza si eleggono un **Leader** e un **Follower** e si controlla che gli LSDB contengano informazioni coerenti
+	- Si confrontano i database (DBD) e vengono richieste le informazioni necessarie per allinearli (LSR, LSU e LSA)
 - Perché sincronizzare?
 	- Un nuovo vicino può avere un database incompleto
 		- non ha ricevuto gli LSA distribuiti prima della formazione dell'adiacenza;
@@ -1347,7 +1536,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Il Leader/Follower riguarda la singola adiacenza ed è indipendente dal ruolo DR/BDR.
 
 ---
-## Slide 93 – Le fasi di OSPF
+## Slide 101 – Le fasi di OSPF
 
 ![[RT04n-s093-1.png|600]]
 
@@ -1356,7 +1545,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> - **Update**: per ciascun LSA mancante o obsoleto il router invia un Link State Request; il vicino risponde con un Link State Update che contiene gli LSA completi, e la ricezione viene confermata con un Link State Ack (il flooding di OSPF è affidabile).
 
 ---
-## Slide 94 – Relazione con un vicino
+## Slide 102 – Relazione con un singolo vicino
 
 ![[RT04n-s094-1.png|600]]
 
@@ -1370,7 +1559,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Quindi: vicino ≠ adiacente. Gli LSA vengono scambiati solo fra router adiacenti.
 
 ---
-## Slide 95 – Aree di routing
+## Slide 103 – Aree di routing
 
 - Una rete può può essere suddiviso in «**Routing Area** (RA)» interconnesse da un backbone (Area 0)
 	- ciascuna area risulta separata dalle altre per quanto riguarda lo scambio delle informazioni di routing e si comporta come un'entità indipendente (3° livello gerarchico di routing)
@@ -1379,7 +1568,7 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 	- **Internal Router**: router interni a ciascuna area
 	- **Area Border Router**: router che scambiano informazioni con altre aree
 	- **Backbone Router**: router che si interfacciano con il backbone
-	- **AS Boundary Router**: router che scambiano informazioni con altri AS usando un protocollo EGP
+	- **AS Boundary Router**: router che scambiano informazioni con altri AS usando rotte statiche o apprese da altri protocolli inclusi gli EGP
 
 >> Perché le aree: il flooding degli LSA di topologia e il calcolo di Dijkstra restano confinati dentro l'area. Una variazione di un link in un'area non costringe i router delle altre aree a rifare lo Shortest Path, e la LSDB di ogni router contiene solo la topologia della propria area: meno memoria, meno CPU, meno traffico di controllo.
 >>
@@ -1388,36 +1577,23 @@ B è il primo nodo che A incontra sul percorso ottimo verso G
 >> Un router può avere più ruoli contemporaneamente (es. un ABR è anche Backbone Router, perché ha almeno un'interfaccia nell'Area 0).
 
 ---
-## Slide 96 – Esempio
+## Slide 104 – Esempio
 
 ![[RT04n-s096-1.png|600]]
 
 >> Lettura della figura: l'AS a sinistra è diviso in tre Routing Area più l'Area 0. Il router del backbone collegato all'AS di destra è ASBR (parla con l'altro AS con un EGP) e allo stesso tempo Backbone Router. I router che hanno interfacce sia nell'Area 0 sia in un'altra area sono ABR + Backbone Router. La stub area non riceve le rotte esterne: le raggiunge con una rotta di default verso il proprio ABR.
 
 ---
-## Slide 97 – LSA e LSU
+## Slide 105 – Tipologie di LSA
 
-- Link State Advertisement (LSA)
-	- Oggetto informativo che descrive una parte della topologia o una destinazione
-- Link State Update (LSU)
-	- Pacchetto OSPF
-- Un singolo LSU può trasportare uno o più LSA
-- Link State Acknowledgment
-	- conferma la ricezione degli LSA
-
->> Distinzione importante: l'LSA è l'**informazione** (la "lettera"), l'LSU è il **pacchetto** OSPF che la trasporta (la "busta"). Ogni LSA è identificato da tipo, Link State ID e router che lo ha originato; ha un **numero di sequenza** (per riconoscere la versione più recente) e un'**età** (LS Age): l'originatore lo rinfresca ogni 30 minuti e, se raggiunge MaxAge (1 ora), viene eliminato dalla LSDB.
-
----
-## Slide 98 – Tipologie di LSA
-
-![[RT04n-s098-1.png|600]]
+![[RT04v3-s105-1.png|600]]
 
 >> **DR** = *Designated Router*: su una rete multiaccesso con $n$ router, invece di avere $n(n-1)/2$ adiacenze (tutti con tutti) ogni router forma l'adiacenza solo con il DR (e con il BDR, il suo backup). La rete viene rappresentata come un nodo "virtuale", descritto dal DR con il Network-LSA, a cui tutti i router sono collegati. Le adiacenze passano così da $O(n^2)$ a $O(n)$: ad es. con $n=10$ si passa da 45 a $2(n-2)+1 = 17$ (con DR e BDR).
 >>
 >> Il tipo 4 serve perché il tipo 5 dice "la destinazione esterna X si raggiunge tramite l'ASBR Y", ma i router di un'altra area non conoscono la topologia che porta a Y: l'ABR annuncia con il tipo 4 il costo per raggiungere Y.
 
 ---
-## Slide 99 – Quali LSA attraversano i confini delle aree?
+## Slide 106 – La raggiungibilità attraverso i confini delle aree?
 
 ![[RT04n-s099-1.png|600]]
 
@@ -1426,15 +1602,14 @@ Gli ABR non trasferiscono nelle altre aree i Router-LSA e i Network-LSA: la topo
 >> "Una singola area" per i tipi 3 e 4 significa che ogni Summary-LSA vive solo nell'area in cui l'ABR lo immette: per arrivare in un'altra area l'informazione non viene inoltrata così com'è, ma un ABR ne genera uno nuovo (vedi slide seguente). Il tipo 5, invece, è l'unico che viene propagato inalterato in tutto il dominio OSPF (escluse le aree stub). Il tipo 7 nasce dentro una NSSA, dove i tipi 5 non sono ammessi, e l'ABR della NSSA lo traduce in tipo 5 per il resto dell'AS.
 
 ---
-## Slide 100 – Verso le rotte inter-area
+## Slide 107 – Verso le rotte inter-area
 
 - Un ABR appartiene ad almeno due aree e mantiene una LSDB distinta per ciascuna.
 	- Esegue Shortest Path separatamente nelle diverse aree.
 	- Dalle rotte calcolate ricava le destinazioni da annunciare al di fuori dell'area
-- Per ogni destinazione genera un nuovo Summary-LSA di tipo 3, contenente:
-	- il prefisso;
-	- la maschera;
-	- il costo calcolato dall'ABR verso quella destinazione.
+- L'ABR origina Summary-LSA Type 3 per annunciare i prefissi raggiungibili da altre aree, eventualmente aggregandoli secondo la configurazione:
+	- Può contenere anche un solo prefisso
+	- Gli eventuali prefissi vengono aggregati se possibile in base alla configurazione
 - Gli altri router apprendono destinazione e distanza, ma non la topologia dell'area remota.
 
 Un Summary-LSA non è la copia di un Route-LSA proveniente da un'altra area: è un nuovo annuncio generato dall'ABR
@@ -1446,7 +1621,7 @@ Un Summary-LSA non è la copia di un Route-LSA proveniente da un'altra area: è 
 >> Se l'Area 1 usa prefissi contigui, l'ABR può anche **aggregarli** in un unico Summary-LSA (route summarization), riducendo ulteriormente le informazioni propagate.
 
 ---
-## Slide 101 – Tipologia di rotte
+## Slide 108 – Tipologia di rotte
 
 - Rotta intra-area
 	- calcolate dalla LSDB dell'area usando gli LSA 1 e 2.
@@ -1455,10 +1630,27 @@ Un Summary-LSA non è la copia di un Route-LSA proveniente da un'altra area: è 
 - Rotta esterna
 	- apprese mediante LSA 5 originati da un ASBR, oppure mediante LSA 7 all'interno di una NSSA
 
+- Nella scelta della rotta verso una destinazione l'ordine di preferenza è : rotta intra-area, rotta inter-area, rotta esterna.
+
 >> Se la stessa destinazione è raggiungibile con rotte di tipo diverso, OSPF preferisce sempre, indipendentemente dal costo: intra-area > inter-area > esterna. Il costo serve a scegliere solo fra rotte dello stesso tipo.
 
 ---
-## Slide 102 – Link state o distance vector
+## Slide 109 – Calcolo delle rotte inter-area
+
+![[RT04n-s103-1.png|550]]
+
+- R1 conosce il percorso verso B mediante Area0 e Area 2: costo 9.
+- R1 annuncia all'Area 1, mediante un LSA Type 3, la raggiungibilità della network fra R2 e B con costo 9.
+- A sa che R1 è raggiungibile con costo 4
+- A calcola la distanza da B facendo 4+9 = 13
+
+A non conosce la topologia completa dell'Area 2.
+Conosce il costo per raggiungere R1 e il costo verso B annunciato da R1
+
+>> Il 9 è il costo calcolato da R1 (ABR fra Area 1 e Area 0): 3 fino a R2 + 6 fino a B. È il meccanismo "alla distance vector" della slide successiva: A somma il proprio costo verso l'ABR al costo annunciato, esattamente come in Bellman-Ford, senza vedere la topologia dell'Area 0 e dell'Area 2.
+
+---
+## Slide 110 – Link state o distance vector
 
 - OSPF è un protocollo link state.
 - Nel calcolo delle rotte
@@ -1478,32 +1670,20 @@ Un Summary-LSA non è la copia di un Route-LSA proveniente da un'altra area: è 
 >> I problemi tipici del DV (cicli, count to infinity) sono evitati dalla struttura gerarchica: tutte le aree comunicano solo attraverso l'Area 0 (topologia a stella fra aree) e un ABR non ri-annuncia nell'Area 0 i Summary-LSA che ha ricevuto da un'area non-backbone.
 
 ---
-## Slide 103 – Calcolo delle rotte inter-area
-
-![[RT04n-s103-1.png|550]]
-
-- R1 conosce il percorso verso B mediante Area0 e Area 2: costo 9.
-- R1 annuncia all'Area 1, mediante un LSA Type 3, la raggiungibilità di B con costo 9.
-- A sa che R1 è raggiungibile con costo 4
-- A calcola la distanza da B facendo 4+9 = 13
-
-A non conosce la topologia completa dell'Area 2.
-Conosce il costo per raggiungere R1 e il costo verso A annunciato da R1
-
->> Il 9 è il costo calcolato da R1 (ABR fra Area 1 e Area 0): 3 fino a R2 + 6 fino a B. Nell'ultima riga della slide "il costo verso A" va letto come "il costo verso **B**" annunciato da R1. È il meccanismo "alla distance vector" della slide precedente: A somma il proprio costo verso l'ABR al costo annunciato, esattamente come in Bellman-Ford, senza vedere la topologia dell'Area 0 e dell'Area 2.
-
----
-## Slide 104 – Tipologia di aree
+## Slide 111 – Tipologia di aree
 
 - Area normale
-	- Accetta tutti i tipi di route
-- Stub area (e totally stubby area)
-	- Accetta route intra e inter area
-	- Tutti i router della stub area usano un "default route" verso destinazioni al di fuori dell'AS
-		- Comunicato dall'Area Border Router (ABR)
+	- Accetta LSA intra-area, inter-area ed esterni
+- Stub area
+	- Informazioni intra-area e inter-area; niente LSA esterni Type 5;
+	- default annunciata dall'ABR per le destinazioni esterne
 	- I requisiti di memoria dei router sono ridotti
+- Totally stubby area
+	- Informazioni intra area;
+	- Normalmente una default dall'ABR
 - Not so stubby area
 	- Stub area che importa alcuni route esterni
+	- Consente di originare informazion esterne tramite LSA di tipo 7
 	- Uno dei router dell'area è connesso a un AS diverso e diventa un ASBR
 
 >> Riassunto in termini di LSA ammessi:
@@ -1518,46 +1698,48 @@ Conosce il costo per raggiungere R1 e il costo verso A annunciato da R1
 >> La *totally stubby* è una stub area in cui l'ABR blocca anche i Summary-LSA (tipo 3): dentro l'area si conoscono solo le rotte intra-area più una rotta di default verso l'ABR. Ha senso quando l'area ha un'unica uscita (o poche), perché allora conoscere i dettagli delle destinazioni esterne non cambierebbe la scelta del next hop.
 
 ---
-## Slide 105 – Da ricordare
+## Slide 112 – Da ricordare
 
-**OSPF: link state**
-- molto più avanzato adatto a reti grandi
-- complesso da configurare
+OSPF è un protocollo **Link State**: ogni router ricostruisce la topologia della propria area
 
-Tre fasi: Hello, Exchange, Update
+Hello, adiacenze e sincronizzazione permettono di costruire LSDB coerenti; il flooding li mantiene aggiornati
+
+Dijkstra calcola i percorsi minimi e permette di derivare le rotte.
+
+La suddivisione in aree **migliora la scalabilità**, introducendo annunci di raggiungibilità tramite ABR.
 
 >> Rispetto a RIP (distance vector): OSPF converge più rapidamente, non soffre di count to infinity, usa costi configurabili sui link invece del semplice numero di hop (e non ha il limite di 15 hop), e scala grazie alle aree; il prezzo è maggiore complessità, memoria (LSDB) e CPU (Dijkstra).
 
 ---
-## Slide 106 – Com'è implementata effettivamente la struttura gerarchica di Internet?
+## Slide 113 – Com'è implementata effettivamente la struttura gerarchica di Internet?
 
 Com'è implementata effettivamente la struttura gerarchica di Internet?
 
 >> OSPF (come RIP) è un protocollo di routing interno a un Autonomous System (IGP). Il livello gerarchico superiore, cioè l'instradamento fra AS diversi, è affidato a un protocollo EGP: in Internet si usa BGP.
 
 ---
-## Slide 107 – Internet = rete di reti
+## Slide 114 – Internet = rete di reti
 
 ![[RT04n-s107-1.png|520]]
 
 >> Stessa figura della [[#Slide 30 – Internet = rete di reti|slide 30]]: router, LAN e collegamenti visti "in piano", senza alcuna struttura amministrativa.
 
 ---
-## Slide 108 – Internet = sistemi interconnessi
+## Slide 115 – Internet = sistemi interconnessi
 
 ![[RT04n-s108-1.png|520]]
 
 >> Rispetto alla [[#Slide 31 – Internet = network interconnesse|slide 31]] ora i domini hanno un nome: AS1…AS5 sono gli **Autonomous System**, definiti nelle slide seguenti.
 
 ---
-## Slide 109 – Internet: grafo semplificato
+## Slide 116 – Internet: grafo semplificato
 
 ![[RT04n-s109-1.png|520]]
 
 >> Il grafo semplificato della [[#Slide 32 – Internet: grafo semplificato|slide 32]] con gli AS etichettati: le linee continue fra AS diversi sono gestite dagli EGP, le tratteggiate interne dagli IGP.
 
 ---
-## Slide 110 – Il routing a livello globale
+## Slide 117 – Il routing a livello globale
 
 - Routing gerarchico:
 	- Identificazione di sottoinsiemi di rete autonomi per quanto riguarda l'instradamento
@@ -1574,7 +1756,7 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 >> È la stessa idea delle aree OSPF portata un livello più su: dentro un AS si usa il grafo di dettaglio (IGP), fra AS il grafo semplificato in cui ogni AS è un nodo (EGP). Nessun livello vede i dettagli dell'altro, ed è questo che rende il routing di Internet scalabile.
 
 ---
-## Slide 111 – Autonomous Systems
+## Slide 118 – Autonomous Systems
 
 - I sottoinsiemi in cui viene suddivisa logicamente la rete Internet sono detti
 	**Autonomous Systems (AS)**
@@ -1585,8 +1767,9 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 		- un solo protocollo di routing
 		- un'unica logica per definire le metriche
 - Questa definizione *era applicabile* nella prima fase di sviluppo di Internet ma è diventata *troppo limitata* con l'evolversi della rete
+
 ---
-## Slide 112 – I protocolli di routing
+## Slide 119 – I protocolli di routing
 
 - Un AS deve implementare il routing al suo interno
 	- Lo fa utilizzando uno o più protocolli di routing detti Interior Gateway protocols (IGP)
@@ -1596,7 +1779,7 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 >> IGP visti nel corso: RIP (distance vector) e OSPF (link state). L'EGP usato oggi in Internet è **BGP** (Border Gateway Protocol, versione 4), di tipo *path vector*.
 
 ---
-## Slide 113 – RFC 1930
+## Slide 120 – RFC 1930
 
 - L'evoluzione di Internet e l'introduzione del CIDR richiedono una definizione più estensiva dell'AS
 - Oggi un AS è
@@ -1613,7 +1796,16 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 >> Il passaggio chiave: l'AS non è più definito da *chi* gestisce i router o da *quale* IGP usa, ma dall'avere **un'unica politica di routing verso l'esterno**. Ogni AS è identificato da un numero (ASN), assegnato dai registri regionali (in Europa il RIPE NCC).
 
 ---
-## Slide 114 – Esempio
+## Slide 121 – AS
+
+![[RT04v3-s121-1.png|600]]
+
+>> La figura riprende lo schema delle aree OSPF dentro un AS. A sinistra c'è un AS diviso in tre aree collegate all'Area 0 (backbone). A destra c'è un secondo AS, di cui si vede solo il router di confine. Il router dell'Area 0 collegato all'altro AS ha due ruoli: è **Backbone Router**, perché sta nell'Area 0, ed è **AS Boundary Router (ASBR)**, perché scambia rotte con l'altro AS tramite un protocollo EGP (BGP).
+>>
+>> La suddivisione in aree è un fatto interno all'AS: dall'esterno l'AS appare come un'unica entità, che annuncia i propri prefissi tramite l'ASBR.
+
+---
+## Slide 122 – Esempio
 
 - Università di Bologna -> 137.204.0.0/16
 - Politecnico di Torino -> 130.192.0.0/16
@@ -1623,7 +1815,7 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 - Non c'è bisogno di avere un AS per ogni ateneo e infatti il GARR (e tutte le reti connesse ad esso) costituiscono un unico AS (AS137)
 
 ---
-## Slide 115 – Internet Routing Registries
+## Slide 123 – Internet Routing Registries
 
 - Database contenenti le politiche di routing degli AS
 
@@ -1632,7 +1824,7 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 >> Nella figura: la ricerca di AS137 sul registro **RADb** (Routing Assets Database), con il risultato riportato per esteso nella slide seguente.
 
 ---
-## Slide 116 – AS 137
+## Slide 124 – AS 137
 
 ![[RT04n-s116-1.png|600]]
 
@@ -1642,7 +1834,7 @@ Com'è implementata effettivamente la struttura gerarchica di Internet?
 >> Lettura dell'oggetto *aut-num*: AS137 è **ASGARR** (Consortium GARR). Le righe `import` dicono da chi accetta rotte (da AS20965, cioè GEANT, e da AS1299) e con che preferenza (`pref`: valore più basso = più preferito, quindi per IPv4 unicast le rotte di AS1299, pref=100, sono preferite a quelle di GEANT, pref=300). Le righe `export` dicono cosa annuncia e a chi: a GEANT annuncia `AS-GARRTOGEANT`, ad AS1299 annuncia `AS-GARR`, cioè gli insiemi di prefissi del GARR. Le righe `mp-import`/`mp-export` sono le stesse regole per multicast e IPv6.
 
 ---
-## Slide 117 – AS20965 Regole di Import
+## Slide 125 – AS20965 Regole di Import
 
 ![[RT04n-s117-1.png|300]]
 
@@ -1656,7 +1848,7 @@ Importa ed esporta informazioni di routing verso numerosi AS
 >> La prima riga dell'elenco (`from AS137 accept AS-GARRTOGEANT`) è la controparte dell'`export` visto nella slide precedente: GARR annuncia quei prefissi e GEANT li accetta. Le politiche dei due AS devono essere coerenti perché la rotta si propaghi.
 
 ---
-## Slide 118 – Interconnessione fra AS
+## Slide 126 – Interconnessione fra AS
 
 ![[RT04n-s118-1.png|520]]
 
@@ -1666,7 +1858,7 @@ Importa ed esporta informazioni di routing verso numerosi AS
 >> - **rotta inter-dominio indiretta** da AS1 ad AS2 (in azzurro, tratteggiata): non c'è un collegamento diretto, quindi il traffico passa per AS5, che fa da AS di *transito*.
 
 ---
-## Slide 119 – Internet Service Provider
+## Slide 127 – Internet Service Provider
 
 - Un Internet Service Provider (ISP) è un'organizzazione che fornisce servizi per l'utilizzo di Internet
 - Servizi:
@@ -1682,7 +1874,7 @@ Importa ed esporta informazioni di routing verso numerosi AS
 - Tipicamente un ISP si registra come AS
 
 ---
-## Slide 120 – Internet region
+## Slide 128 – Internet region
 
 - Gli AS non sono necessariamente vincolate ad aree geografiche e/o confini nazionali
 - Internet region
@@ -1693,7 +1885,7 @@ Importa ed esporta informazioni di routing verso numerosi AS
 	- Uno stesso ISP può servire più Internet Region
 
 ---
-## Slide 121 -> 122 – Classificazione degli ISP
+## Slide 129 -> 130 – Classificazione degli ISP
 
 - Tier 1 ISP
 	- Un ISP che all'interno di una "Internet Region" raggiunge tutte le reti senza accedere a servizi a pagamento di altri
@@ -1715,14 +1907,14 @@ Importa ed esporta informazioni di routing verso numerosi AS
 >> *Incumbent* = l'ex operatore monopolista nazionale, che possiede storicamente l'infrastruttura (in Italia TIM). In sintesi: il Tier 1 non paga nessuno per il transito, il Tier 2 paga un Tier 1, il Tier 3 paga un Tier 2.
 
 ---
-## Slide 123 – In sintesi
+## Slide 131 – In sintesi
 
 ![[RT04n-s123-1.png|500]]
 
 >> La gerarchia dentro una Internet Region: i Local ISP (Tier 3) si appoggiano ai Tier 2, che a loro volta si collegano al Tier 1. Ogni linea verso l'alto è un collegamento con un ISP di livello superiore.
 
 ---
-## Slide 124 – In Italia
+## Slide 132 – In Italia
 
 - Il principale ISP Tier 1 è Telecom Italia Sparkle
 	- Da RadB
@@ -1735,35 +1927,14 @@ remarks: International Internet Backbone
 ```
 
 ---
-## Slide 125 – Il Peering
-
-- Relazione di peering
-	- Interconnessione fra due AS stabilita al fine di scambiarsi traffico
-		- Con operatore di contenuti (Amazon, Aruba, Netflix)
-- La relazione di peering non ha carattere economico
-	- Gli AS non devono pagarsi reciprocamente per lo scambio di traffico
-	- I loro introiti rimangono limitati alla tariffazione dei rispettivi utenti
-- Tipicamente il peering avviene fra ISP del medesimo livello
-
->> Peering e transito sono le due relazioni possibili fra AS: nel **transito** un AS paga un altro AS (di livello superiore) per raggiungere tutta Internet; nel **peering** due AS si scambiano gratuitamente solo il traffico diretto alle rispettive reti. Conviene a entrambi quando i volumi scambiati sono simili, perché fa risparmiare sul transito a pagamento.
-
----
-## Slide 126 – Peering policy
-
-- Ristretta
-	- Devi chiedere di fare peering e la richiesta va approvata
-- Aperta
-	- Approvato di default
-
----
-## Slide 127 – In sintesi
+## Slide 133 – In sintesi
 
 ![[RT04n-s127-1.png|500]]
 
->> Stessa gerarchia della [[#Slide 123 – In sintesi|slide 123]], con i due tipi di relazione evidenziati: le linee verso il livello superiore sono **interconnessioni a pagamento** (transito), la linea rossa fra due ISP locali dello stesso livello è un **peering**.
+>> Stessa gerarchia della [[#Slide 131 – In sintesi|slide 131]], con i due tipi di relazione evidenziati: le linee verso il livello superiore sono **interconnessioni a pagamento** (transito), la linea rossa fra due ISP locali dello stesso livello è un **peering**.
 
 ---
-## Slide 128 – ISP locali e POP
+## Slide 134 – ISP locali e POP
 
 - Un ISP locale fornisce il servizio a gruppi di utenti co-localizzati (singola città, area industriale ecc.)
 - Realizza un'infrastruttura con router e switch in un punto della zona detto <u>Point of Presence</u> o <u>POP</u>
@@ -1776,14 +1947,14 @@ remarks: International Internet Backbone
 >> FTTH = *Fiber To The Home*, fibra fino a casa; FTTC = *Fiber To The Cabinet*, fibra fino all'armadio di strada e poi rame fino all'utente.
 
 ---
-## Slide 129 – Esempio
+## Slide 135 – Esempio
 
 ![[RT04n-s129-1.png|450]]
 
 >> Un ISP locale con tre POP collegati fra loro: ognuno serve gli utenti della propria zona con una tecnologia d'accesso diversa (ADSL, ADSL/FTTH, Wi-Fi).
 
 ---
-## Slide 130 – Indirizzamento
+## Slide 136 – Indirizzamento
 
 - Un ISP dispone di un sottoinsieme di numeri IP da utilizzare per i suoi clienti
 	- Se sono consecutivi possono avere lo stesso prefisso quindi unico Network ID
@@ -1793,7 +1964,7 @@ remarks: International Internet Backbone
 >> Avere un solo prefisso aggregato (CIDR) significa annunciare una sola rotta agli altri AS, quindi tabelle di routing più piccole.
 
 ---
-## Slide 131 – Interconnessione
+## Slide 137 – Interconnessione
 
 - Come scambiano traffico ISP che coprono la medesima zona geografica
 - Interconnettere fra loro tutti i POP?
@@ -1807,21 +1978,42 @@ remarks: International Internet Backbone
 	- Percorsi potenzialmente più lunghi
 
 ---
-## Slide 132 – Non utilizzata
+## Slide 138 – Non utilizzata
 
 ![[RT04n-s132-1.png|500]]
 
 >> Prima soluzione della slide precedente: due ISP (i due piani, POP verdi e rossi) con i POP collegati a coppie (linee tratteggiate). Il traffico fra due utenti (quadratini gialli) segue il percorso più corto, ma servono molti collegamenti e un routing complicato: per questo in pratica **non viene utilizzata**.
 
 ---
-## Slide 133 – Peering diretto tramite due POP
+## Slide 139 – Peering diretto tramite due POP
 
 ![[RT04n-s133-1.png|500]]
 
 >> Seconda soluzione: i due ISP sono collegati in un solo punto. Il percorso fra i due utenti (linea punteggiata) diventa più lungo perché deve passare dai due POP di interconnessione, ma i collegamenti sono pochi e il routing è semplice.
 
 ---
-## Slide 134 – Da Tier 3 a Tier 1
+## Slide 140 – Il Peering
+
+- Relazione di peering
+	- Interconnessione fra due AS stabilita al fine di scambiarsi traffico
+		- Con operatore di contenuti (Amazon, Aruba, Netflix)
+- La relazione di peering non ha carattere economico
+	- Gli AS non devono pagarsi reciprocamente per lo scambio di traffico
+	- I loro introiti rimangono limitati alla tariffazione dei rispettivi utenti
+- Tipicamente il peering avviene fra ISP del medesimo livello
+
+>> Peering e transito sono le due relazioni possibili fra AS: nel **transito** un AS paga un altro AS (di livello superiore) per raggiungere tutta Internet; nel **peering** due AS si scambiano gratuitamente solo il traffico diretto alle rispettive reti. Conviene a entrambi quando i volumi scambiati sono simili, perché fa risparmiare sul transito a pagamento.
+
+---
+## Slide 141 – Peering policy
+
+- Ristretta
+	- Devi chiedere di fare peering e la richiesta va approvata
+- Aperta
+	- Approvato di default
+
+---
+## Slide 142 – Da Tier 3 a Tier 1
 
 - Teoricamente ogni ISP dovrebbe fare peering con ogni altro ISP con cui vuole scambiare traffico
 	- Ogni AS dovrebbe essere connesso con ogni altro AS
@@ -1830,10 +2022,10 @@ remarks: International Internet Backbone
 	- Gli ISP specializzati nel fornire servizi di transito sono anche detti Network Service provider (NSP)
 - Talvolta gli NSP coincidono con ISP Tier 1
 
->> È lo stesso ragionamento della stella equivalente con il DR in OSPF ([[#Slide 85 – Tipologie di rete|slide 85]]): con N AS una maglia completa richiede N(N−1)/2 collegamenti, una stella intorno a un AS di transito solo N.
+>> È lo stesso ragionamento della stella equivalente con il DR in OSPF ([[#Slide 89 – Tipologie di rete|slide 89]]): con N AS una maglia completa richiede N(N−1)/2 collegamenti, una stella intorno a un AS di transito solo N.
 
 ---
-## Slide 135 – Internet Exchange
+## Slide 143 – Internet Exchange
 
 - Per favorire l'interconnessione fra ISP e NSP (ssia fra i loro AS) esistono gli IXP
 - Internet Exchange Point (IX o IXP)
@@ -1843,9 +2035,26 @@ remarks: International Internet Backbone
 - Un elenco degli IXP nel mondo si può trovare alla pagina `www.internetexchangemap.com`
 
 >> In pratica un IXP è un grande switch (di livello 2) in un data center neutrale a cui i router di confine dei vari AS si collegano: con un solo collegamento fisico un AS può fare peering con molti altri AS, ciascuno tramite una propria sessione BGP.
+>>
+>> **Riassunto slide 136–143: come si collegano fra loro gli ISP?**
+>> 1. **Punto di partenza (136):** un ISP gestisce un blocco di IP (meglio un solo prefisso, quindi una sola rotta da annunciare) e una rete di POP.
+>> 2. **Due ISP nella stessa zona (137–139):** il compromesso fra le due soluzioni.
+>>
+>> | | Tutti i POP collegati (138) | Uno o pochi POP collegati (139) |
+>> |---|---|---|
+>> | Collegamenti | molti | pochi |
+>> | Routing | complesso (rotte per ogni POP) | semplice |
+>> | Percorsi | i più brevi | più lunghi |
+>> | Nella pratica | **non usata** | usata (peering diretto) |
+>>
+>> 3. **Tanti ISP (142–143):** invece della maglia completa ($N(N-1)/2$ collegamenti):
+>> 	- **transito**: una stella intorno a un AS di transito (NSP, spesso Tier 1), con $N$ collegamenti, a pagamento;
+>> 	- **IXP**: un punto d'incontro neutrale (es. MIX) dove molti AS fanno peering diretto con un solo collegamento fisico.
+>>
+>> Filo conduttore: il compromesso **numero di collegamenti ↔ semplicità del routing ↔ lunghezza dei percorsi**, che si ripete alle due scale.
 
 ---
-## Slide 136 – IXP in Italia
+## Slide 144 – IXP in Italia
 
 - MIX (Milan Internet eXchange)
 	- Milano, Palermo, Catania
@@ -1857,6 +2066,265 @@ remarks: International Internet Backbone
 	- Firenze
 - PCIX
 	- Piacenza
+
+---
+## Slide 145 – EGP come funzionano?
+
+EGP come funzionano?
+Why the protocol BGP seems to be the substitutor of the AGP EGP in the slide 137 in the PDF 3
+---
+## Slide 146 – Exterior Gateway Protocols
+
+- I protocolli di tipo EGP sono diversi da quelli di tipo IGP
+- All'interno di un AS si persegue l'ottimizzazione dei percorsi
+- Nel routing tra diversi AS si deve tener conto anche (e soprattutto) delle **politiche di instradamento**
+	- ogni AS vuole mantenere una propria autonomia ed indipendenza dagli altri e non vuole subire decisioni prese da altri
+	- alcuni AS non vogliono permettere ad altri AS di instradare il traffico attraverso le loro reti
+	- in altri casi bisogna operare secondo accordi internazionali
+- Attualmente il protocollo EGP dominante è il **Border Gateway Protocol** (BGP)
+
+>> In sintesi: un IGP (RIP, OSPF) cerca il percorso *migliore* secondo una metrica comune a tutto l'AS. Un EGP deve invece trovare un percorso *ammesso* dagli accordi commerciali fra AS (cliente/fornitore, peering), anche se non è il più corto. Per questo fra AS non si usa una metrica condivisa: ogni AS ragiona con le proprie regole.
+
+---
+## Slide 147 – BGP: Border Gateway Protocol
+
+- **BGP** è stato concepito come sostituto di EGP
+- Oggi è in uso la versione 4 (RFC 4271)
+- I router BGP si scambiano informazioni attraverso connessioni TCP (porta 179) chiamate **sessioni BGP**
+	- le comunicazioni sono affidabili
+	- funzionalità di controllo degli errori demandate allo strato di trasporto → BGP più semplice
+- Si distinguono due tipi di sessioni BGP:
+	- sessioni BGP **esterne** (**eBGP**) instaurate tra router BGP appartenenti ad AS diversi
+	- sessioni BGP **interne** (**iBGP**) instaurate tra router BGP appartenenti allo stesso AS
+- Le informazioni scambiate riguardano la raggiungibilità di reti IP secondo lo scema classless (CIDR)
+
+>> Attenzione al doppio significato di "EGP": qui indica il vecchio protocollo specifico chiamato proprio *Exterior Gateway Protocol* (RFC 904, anni '80), non la categoria dei protocolli EGP di cui BGP fa parte.
+>>
+>> Ruolo delle due sessioni:
+>> - **eBGP**: di solito fra due router di bordo direttamente collegati, di AS diversi. Serve a imparare e annunciare le rotte verso l'esterno.
+>> - **iBGP**: fra router dello stesso AS. Serve a distribuire *dentro* l'AS le rotte esterne imparate dai router di bordo, così tutti i router di bordo hanno la stessa visione. Non sostituisce l'IGP: la raggiungibilità interna (ad esempio il next hop) resta compito di OSPF o RIP.
+>>
+>> Su iBGP l'AS_PATH non viene modificato. Per evitare cicli dentro l'AS, una rotta imparata via iBGP non viene ri-annunciata ad altri peer iBGP. Per questo servono sessioni iBGP fra tutte le coppie di router (full mesh) oppure dei *route reflector*.
+
+---
+## Slide 148 – BGP: interconnessione tra AS
+
+![[RT04v3-s148-1.png|600]]
+
+- Cinque AS (AS1 … AS5), ognuno con la propria rete interna
+- **BGP** sui collegamenti fra i router di bordo di AS diversi
+
+---
+## Slide 149 – BGP: sessioni interne ed esterne
+
+![[RT04v3-s149-1.png|600]]
+
+- **eBGP**: linee continue fra router di bordo di AS diversi
+- **iBGP**: linee tratteggiate fra router di bordo dello stesso AS
+
+>> Le linee tratteggiate sono sessioni TCP logiche, non per forza link fisici diretti: i due router di AS4 possono essere lontani e comunicare attraverso altri router interni, raggiunti tramite l'IGP. In AS5, che ha tre router di bordo, le sessioni iBGP formano un full mesh (triangolo), come richiesto dalla regola vista alla slide 147.
+
+---
+## Slide 150 – Path Vector
+
+- BGP è un protocollo di tipo **Path Vector**
+	- nel **vettore dei percorsi** (path) si elencano tutti gli AS da attraversare per raggiungere una destinazione
+		- Elencati dal primo all'ultimo
+	- risolve il problema dei percorsi ciclici
+	- più consono a definire le politiche di routing tra AS rispetto alla semplice distanza
+- Come si evitano i cicli:
+	- quando un router di bordo di un AS riceve un path vector controlla se il suo AS è già elencato al suo interno
+	- se lo è, esiste un loop e quel path vector non viene considerato
+	- altrimenti il path vector viene aggiornato con l'indicazione dell'AS di appartenenza e comunicato ai vicini, in quanto considerato corretto
+
+>> Rispetto al distance vector (RIP), al posto della sola distanza si annuncia l'intera sequenza di AS. In questo modo un AS riconosce subito un percorso che passa già per sé stesso, e il conteggio all'infinito non si verifica.
+>>
+>> "Dal primo all'ultimo" significa che in testa c'è l'AS più vicino (l'ultimo che ha annunciato la rotta) e in fondo l'AS di origine della destinazione. Ogni AS, quando ri-annuncia la rotta via eBGP, aggiunge il proprio numero **in testa** (*prepend*).
+>>
+>> Il controllo dei cicli avviene a livello di AS, non di singolo router: un path vector non dice nulla sul percorso dentro ogni AS, che è deciso dal suo IGP.
+ 
+---
+## Slide 151 – Routing policies
+
+- Come si applicano le politiche di routing:
+	- si comunicano ai vicini solo i path vector relativi alle destinazioni verso le quali si vuole permettere il transito (**export policies**)
+	- dal path vector è possibile risalire agli AS da attraversare per raggiungere una destinazione e possono essere applicate la **import policies**:
+		- se nel path vector ricevuto da un vicino sono presenti uno o più AS incompatibili con le politiche di routing stabilite, esso viene ignorato
+		- Possono essere assegnate preferenze specifiche a certe rotte in base agli AS da attraversare
+- L'approccio basato sul percorso invece che sulla distanza non richiede che tutti i router usino la stessa metrica → possibilità di scelte arbitrarie
+- Elevati requisiti di memoria nei router per mantenere le tabelle
+
+>> Esempio tipico di export policy: un AS *stub* (cliente) collegato a due fornitori non ri-annuncia al fornitore A le rotte imparate dal fornitore B. Altrimenti diventerebbe un AS di transito fra i due e pagherebbe traffico che non è suo.
+>>
+>> Esempio di import policy: si scarta ogni rotta il cui AS_PATH contiene un AS non affidabile, oppure si dà una preferenza più alta (LOCAL_PREF, slide 159) alle rotte ricevute da un cliente rispetto a quelle ricevute da un fornitore.
+>>
+>> Sulla memoria: la tabella BGP completa di Internet contiene ormai circa un milione di prefissi IPv4 (più quelli IPv6), e per ognuno un router può tenere più rotte alternative, con l'AS_PATH e gli altri attributi.
+
+---
+## Slide 152 -> 154 – BGP: scambio di path vector
+
+![[RT04v3-s152-1.png|600]]
+
+- AS3 contiene le reti 151.16.0.0/16, 151.17.0.0/16, 151.18.0.0/15
+- AS2 contiene 80.128.0.0/12, AS4 contiene 211.47.64.0/21
+- AS3 annuncia ad AS5:
+	- AS-PATH
+	- 151.16.0.0/14
+	- AS3
+
+>> AS3 non annuncia le tre reti separate ma un unico prefisso **aggregato** (supernetting CIDR). Verifica: 151.16.0.0/14 copre gli indirizzi da 151.16.0.0 a 151.19.255.255, cioè 151.16/16 + 151.17/16 + 151.18/15 (che a sua volta copre 151.18 e 151.19). L'aggregato coincide esattamente con l'unione delle tre reti.
+
+![[RT04v3-s153-1.png|600]]
+
+- AS5 propaga l'informazione al suo interno (frecce sulle sessioni iBGP) e la annuncia ad AS1, AS2 e AS4:
+	- AS-PATH
+	- 151.16.0.0/14
+	- AS5
+	- AS3
+
+>> Semplificazione della figura: il box con "AS5 AS3" è disegnato anche vicino alle frecce *interne* ad AS5. In BGP reale, su iBGP l'AS_PATH resta "AS3", e AS5 viene aggiunto in testa solo quando la rotta esce verso un altro AS via eBGP (verso AS1, AS2, AS4).
+
+![[RT04v3-s154-1.png|600]]
+
+- In AS1 l'informazione passa via iBGP all'altro router di bordo, che la annuncia ad AS5:
+	- AS-PATH
+	- 151.16.0.0/14
+	- AS1
+	- AS5
+	- AS3
+- AS2 annuncia ad AS4:
+	- AS-PATH
+	- 151.16.0.0/14
+	- AS2
+	- AS5
+	- AS3
+- AS2 annuncia ad AS4 la propria rete:
+	- AS-PATH
+	- 80.128.0.0/12
+	- AS2
+- AS4 annuncia ad AS2 la propria rete:
+	- AS-PATH
+	- 211.47.64.0/21
+	- AS4
+- AS4 annuncia ad AS2:
+	- AS-PATH
+	- 151.16.0.0/14
+	- AS4
+	- AS5
+	- AS3
+
+>> Cosa succede a questi annunci:
+>> - **AS1 → AS5** con "AS1 AS5 AS3": AS5 trova il proprio numero nel path, quindi riconosce il ciclo e **scarta** l'annuncio (regola della slide 150).
+>> - **AS2 → AS4** con "AS2 AS5 AS3": non c'è ciclo, ma AS4 conosce già "AS5 AS3" (2 AS) direttamente da AS5. A parità di altri criteri sceglie il percorso più corto e tiene l'altro come alternativa.
+>> - **AS4 → AS2** con "AS4 AS5 AS3": vale lo stesso discorso, perché AS2 preferisce "AS5 AS3".
+>>
+>> Si vede anche l'export policy: se AS1 o AS2 fossero AS stub (clienti di AS5), di norma *non* ri-annuncerebbero ad altri le rotte imparate da AS5, per non diventare AS di transito. La figura mostra invece il comportamento "senza politiche", per illustrare la propagazione e il controllo dei cicli.
+
+---
+## Slide 155 – BGP: tipi di messaggio
+
+- **Open**: primo messaggio trasmesso quando viene attivata una connessione verso un router BGP vicino, contiene
+	- informazioni di identificazione dell'AS di chi trasmette
+	- durata del timeout per considerare un vicino non più attivo
+	- dati di autenticazione
+- **Update**: contiene il path vector e i relativi attributi
+- **Notification**: messaggio di notifica di errori e/o di chiusura della connessione
+- **Keepalive**: non contiene informazioni aggiuntive, ma è usato per comunicare ad un router BGP vicino, in assenza di nuove informazioni di routing, che il trasmettitore è comunque attivo, anche se silente
+
+>> Dettagli utili:
+>> - L'**Open** contiene versione (4), numero di AS, *Hold Time* (il timeout), *BGP Identifier* (router ID) e parametri opzionali. Nel BGP-4 attuale il campo di autenticazione non c'è più: la sessione si protegge a livello TCP (opzione MD5 o TCP-AO).
+>> - L'**Update** serve sia ad annunciare nuove rotte (NLRI + attributi) sia a **ritirarle** (campo *withdrawn routes*). BGP è incrementale: dopo lo scambio iniziale della tabella si inviano solo le variazioni, non aggiornamenti periodici come in RIP.
+>> - Il **Keepalive** si invia di solito ogni 1/3 dell'Hold Time (valori tipici 60 s e 180 s). Se entro l'Hold Time non arriva nessun messaggio, il vicino è considerato non attivo e le sue rotte vengono rimosse.
+>> - Dopo una **Notification** la sessione TCP viene chiusa.
+
+---
+## Slide 156 – Attributi
+
+- A ciascun path vector sono associati degli **attributi** che ne specificano la natura (ad es. il "path" è un attributo)
+- Un determinato attributo può essere:
+	- **well-known**: riconoscibile da tutte le implementazioni BGP, deve essere inoltrato assieme al path vector (dopo un eventuale aggiornamento)
+		- **mandatory**: deve essere presente nel path vector
+		- **discretionary**: può anche non essere indicato
+	- **optional**: può non essere riconosciuto da alcuni router
+		- **transitive**: deve essere inoltrato anche se non riconosciuto
+		- **non-transitive**: deve essere ignorato se non riconosciuto
+	- **partial**: si tratta di un attributo optional-transitive che è stato ritrasmesso senza modifiche da un router perché non lo ha riconosciuto (indica se un determinato path vector è stato riconosciuto o meno da tutti i router attraversati)
+
+>> Esempi delle quattro categorie:
+>>
+>> | Categoria | Attributi |
+>> |---|---|
+>> | well-known mandatory | ORIGIN, AS_PATH, NEXT_HOP |
+>> | well-known discretionary | LOCAL_PREF, ATOMIC_AGGREGATE |
+>> | optional transitive | COMMUNITY, AGGREGATOR |
+>> | optional non-transitive | MULTI_EXIT_DISC (MED) |
+>>
+>> "Partial" non è una quarta categoria: è un bit (flag) nell'intestazione dell'attributo, che si accende quando un router ha inoltrato un attributo optional transitive senza capirlo.
+
+---
+## Slide 157 – Esempi
+
+- **Origin** (Code = 1): è well-known mandatory
+	- **0 = IGP**: l'informazione è stata ottenuta direttamente dal protocollo di routing operante all'interno dell'AS in cui si trova la destinazione e per cui la si ritiene veritiera
+	- **1 = EGP**: l'informazione è stata appresa dal protocollo EGP, che non funziona se vi sono cicli → un percorso caratterizzato da questo valore è peggiore di uno di tipo IGP
+	- **2 = incomplete**: serve ad indicare che il percorso è stato determinato in altro modo (es. statico) oppure è utilizzato per marcare un percorso di AS che è stato troncato perché la destinazione è al momento non raggiungibile
+- **AS path** (Code = 2): è well-known mandatory
+	- consiste nell'elenco degli AS da attraversare lungo il percorso verso la destinazione
+- **Next hop** (Code = 3): è well-known mandatory
+	- indica l'indirizzo IP del router di bordo dell'AS che deve essere usato come next hop verso la destinazione specificata
+
+>> Il "Code" è il *type code* dell'attributo nel messaggio Update. Qui "EGP" è di nuovo il vecchio protocollo omonimo. Nella scelta fra due rotte, a parità dei criteri precedenti, si preferisce l'ORIGIN più basso: IGP (0) < EGP (1) < incomplete (2). Oggi "incomplete" compare soprattutto per rotte ridistribuite da rotte statiche o direttamente connesse.
+>>
+>> NEXT_HOP: su eBGP è l'indirizzo del router di bordo vicino che ha annunciato la rotta. Su iBGP di norma viene inoltrato *invariato*, quindi i router interni devono saper raggiungere quell'indirizzo esterno tramite l'IGP (in alternativa il router di bordo si configura con *next-hop-self*).
+
+---
+## Slide 158 – Esempio: path vector
+
+Prefisso considerato P = 203.0.113.0/24
+
+![[RT04v3-s158-1.png|650]]
+
+- AS 65030: Al suo interno si trova P. Origina la rotta per il prefisso
+- AS 65020: riceve e riannuncia
+- AS 65010: riceve e riannuncia
+
+BGP Update generato da AS65030
+- NLRI = 203.0.113.0/24
+- AS_PATH = AS65030
+
+BGP Update generato da AS65020
+- NLRI = 203.0.113.0/24
+- AS_PATH = AS65020 AS65030
+
+BGP Update generato da AS65020
+- NLRI = 203.0.113.0/24
+- AS_PATH = AS65010 AS65020 AS65030
+
+>> **Refuso**: il terzo update è generato da **AS65010** (che si aggiunge in testa), non da AS65020. È l'annuncio che AS65010 invia ai suoi vicini *successivi*: ciò che AS65010 *riceve* da AS65020 è "AS65020 AS65030".
+>>
+>> NLRI (*Network Layer Reachability Information*) è il prefisso annunciato. Il path cresce di un AS a ogni passaggio eBGP, con l'AS più recente in testa e l'origine (AS65030) sempre in fondo.
+>>
+>> I numeri usati sono "da documentazione": gli AS 64512–65534 sono riservati all'uso privato e 203.0.113.0/24 (TEST-NET-3) è riservato agli esempi.
+
+---
+## Slide 159 – Scelta del percorso
+
+- Non è detto che il percorso più breve sia selezionato
+- Dal punto di vista di AS 65300 per P = 203.0.113.0/24
+
+| Rotta ricevuta | AS_PATH | LOCAL_PREF |
+|---|---|---|
+| Via AS 65100 | 65100 65300 | 100 |
+| **Via AS 65200** | **65200 65350 65300** | **200** |
+
+- AS 65300 sceglie la seconda rotta perché preferibile
+	- LOCAL_PREF esprime una preferenza per ragioni amministrative/gestionali
+
+>> **Incongruenza della slide**: entrambi gli AS_PATH terminano con 65300, quindi 65300 è l'AS di *origine* di P. Un AS che riceve un path contenente il proprio numero lo scarta come ciclo (slide 150), quindi AS 65300 non potrebbe valutare queste rotte. Il punto di vista corretto è quello di un altro AS (ad esempio un ipotetico AS X collegato sia ad AS 65100 che ad AS 65200) che riceve due rotte verso P, originato da AS 65300.
+>>
+>> **LOCAL_PREF** (well-known discretionary): non arriva dal vicino. Lo assegna l'AS stesso alle rotte che riceve via eBGP, con la sua import policy, e lo propaga solo al proprio interno via iBGP, così tutti i suoi router scelgono la stessa uscita. Vince il valore **più alto**: 200 > 100, quindi viene scelta la rotta via AS 65200, anche se il suo AS_PATH è più lungo (3 AS contro 2).
+>>
+>> Ordine semplificato del processo di decisione BGP: (1) LOCAL_PREF più alto, (2) AS_PATH più corto, (3) ORIGIN più basso, (4) MED più basso, (5) eBGP preferito a iBGP, (6) costo IGP minore verso il NEXT_HOP, (7) router ID più basso. La lunghezza del path conta solo se le preferenze locali sono uguali.
 
 ---
 ## Riassunto
@@ -1916,3 +2384,12 @@ remarks: International Internet Backbone
 >> - **Transito**: a pagamento, verso il livello superiore. **Peering**: scambio gratuito fra AS, di solito dello stesso livello; policy ristretta o aperta.
 >> - L'ISP locale serve gli utenti tramite i **POP** (accesso in rame, FTTH, FTTC, radio). Interconnettere tutti i POP dà percorsi minimi ma troppi link; pochi punti di interconnessione semplificano ma allungano i percorsi.
 >> - **NSP** = AS di transito che collegano gli ISP "a stella". Gli **IXP** (in Italia MIX, NaMeX, TOP-IX…) permettono il peering diretto fra molti AS in un unico punto.
+>>
+>> **BGP (EGP)**
+>> - Fra AS contano soprattutto le **politiche** (autonomia, transito ammesso o no, accordi), non solo il percorso ottimo. L'EGP usato oggi è **BGP-4** (RFC 4271).
+>> - Sessioni su **TCP porta 179**, quindi affidabili. **eBGP** fra router di AS diversi, **iBGP** fra router dello stesso AS. Si scambiano prefissi CIDR.
+>> - **Path vector**: per ogni destinazione si annuncia la lista degli AS da attraversare. Un AS che trova il proprio numero nel path scarta l'annuncio: così si evitano i cicli. Ogni AS aggiunge il proprio numero prima di propagare.
+>> - **Export policy**: a chi annunciare cosa (cioè a chi offrire transito). **Import policy**: quali rotte accettare o preferire. Non serve una metrica comune fra AS, ma le tabelle sono grandi.
+>> - Messaggi: **Open**, **Update** (path vector + attributi), **Notification** (errori o chiusura), **Keepalive**.
+>> - Attributi: **well-known** (mandatory o discretionary), **optional** (transitive o non-transitive), **partial**. Esempi: ORIGIN (0 IGP, 1 EGP, 2 incomplete), AS_PATH, NEXT_HOP (tutti well-known mandatory).
+>> - Non vince per forza il percorso più corto: prima conta il **LOCAL_PREF** più alto, assegnato dall'AS per ragioni amministrative.

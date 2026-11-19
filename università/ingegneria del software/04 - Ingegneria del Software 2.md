@@ -90,8 +90,6 @@
 ---
 ## Slide 1 – Ingegneria del Software - 2
 
-INGEGNERIA DEL SOFTWARE - 2
-
 ---
 ## Slide 2 -> 3 – Misurazione
 
@@ -131,7 +129,7 @@ INGEGNERIA DEL SOFTWARE - 2
 	- **Numero di istruzioni da codificare (benefici del riuso)**
 	- Capacità, motivazione e coordinamento degli addetti allo sviluppo
 	- Complessità del programma
-	- Stabilità dei requisiti
+	- Stabilità dei requisiti (dipende anche da quanto sono chiari i clienti)
 	- Caratteristiche dell'ambiente di sviluppo
 
 >> Attenzione alla differenza: le *fonti* di costo sono le voci di spesa (dove vanno i soldi),
@@ -148,16 +146,16 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 
 **Indici di qualità**
 
-| | |
-|---|---|
-| *Produttività*: | $P = LOC/M$ |
-| *Qualità*: | $Q = E/LOC$ |
+|                   |              |
+| ----------------- | ------------ |
+| *Produttività*:   | $P = LOC/M$  |
+| *Qualità*:        | $Q = E/LOC$  |
 | *Costo unitario*: | $C = \$/LOC$ |
 | *Documentazione*: | $D = PD/LOC$ |
 
 - **Metriche funzionali**
 	- si basano sulle caratteristiche funzionali del programma
-	- Metodo dei Punti Funzione (*Function Points*)
+	- Metodo dei Punti Funzione (***Function Points*** -> misura il software in modo indipendente dal linguaggio)
 
 >> Tutti e quattro gli indici sono rapporti che normalizzano rispetto alla dimensione: per
 >> esempio $Q = E/LOC$ è la densità di errori, confrontabile fra programmi di taglia diversa.
@@ -169,12 +167,12 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 ## Slide 6 -> 7 – Il metodo Function Points
 
 - Fra le metriche del software riguardanti la dimensione, i FP sono la più vecchia (Allan Albrecht, metà degli anni 70) e tuttora la più diffusa:
-	- Restituisce un *parametro adimensionale*
+	- Restituisce un ~~*parametro adimensionale*~~ (function point)
 	- Misura la dimensione di un sw in termini delle *funzionalità* offerte all'utente (niente a che vedere con le funzioni dei linguaggi di programmazione!)
 	- La misurazione si basa sul *disegno logico* del software espresso in una forma qualsiasi: specifiche in linguaggio naturale, schemi Entity-Relationship, diagrammi di flusso dei dati, ecc.
 	- Può essere utilizzato a partire dalla *prima fase dello sviluppo* per poi ripetere la misura nel caso le specifiche siano cambiate
 	- E' *indipendente dall'ambiente tecnologico* in cui si sviluppa il progetto
-	- Consente *confronti* fra differenti progetti e organizzazioni
+	- Consente *confronti* fra differenti progetti e organizzazioni (migliore il software con > function point)
 
 >> Il punto chiave: i FP si contano dal *cosa* fa il software (visto dall'utente), non dal
 >> *come* è scritto. Per questo si possono calcolare già sui requisiti, cioè quando il codice
@@ -198,8 +196,6 @@ M = mesi uomo tot., E = numero tot. errori, \$ = costo tot., PD = pagine doc.
 		- input esterno
 		- output esterno
 		- interrogazioni esterne
-
-![[ISW4-s008-1.png|500]]
 
 | Tipo | Peso (semplice) | Peso (medio) | Peso (complesso) |
 |---|---|---|---|
@@ -288,14 +284,14 @@ Flusso del conteggio:
 ---
 ## Slide 14 – Funzioni di tipo transazione
 
-- **Input Esterno** (External Input: EI)
+- **Input Esterno** (External Input: **EI**)
 	- è un processo elementare dell'applicazione che elabora dati o informazioni di controllo provenienti dall'esterno del confine dell'applicazione
 	- Il compito principale di un EI è di mantenere uno o più ILFs e/o di modificare il comportamento del sistema
-- **Output Esterno** (External Output: EO)
+- **Output Esterno** (External Output: **EO**)
 	- è un processo elementare dell'applicazione che manda dati o informazioni di controllo all'esterno del confine dell'applicazione
 	- Il compito principale di un EO è di presentare informazioni all'utente attraverso una logica di processo diversa dal, o in aggiunta al, recupero di dati o informazioni di controllo
 	- La logica di processo deve contenere almeno una formula matematica o calcolo, creare dati derivati, mantenere uno o più ILFs o modificare il comportamento del sistema
-- **Interrogazione Esterna** (External Inquiry: EQ)
+- **Interrogazione Esterna** (External Inquiry: **EQ**)
 	- è un processo elementare che manda dati o informazioni di controllo fuori dal confine dell'applicazione
 	- Il compito principale di una EQ è di presentare informazioni all'utente attraverso il recupero di dati o informazioni di controllo da un ILF o EIF
 	- La logica di processo non contiene formule matematiche o calcoli e non crea dati derivati
@@ -308,11 +304,16 @@ Flusso del conteggio:
 ## Slide 15 -> 16 – Fattore di aggiustamento
 
 - Il numero totale di FP viene moltiplicato per un **fattore di aggiustamento** per tenere conto di quelle funzionalità generali del sistema non sufficientemente rappresentate dalle funzioni dati e transazionali
+
+>per raffinare la stima in base ad alcune caratteristiche generali che deve avere il sistema.
+
+
 - Il valore del fattore di aggiustamento varia fra 0.65 e 1.35 (+/-35%) e viene calcolato sulla base del grado di influenza di ciascuna delle 14 Caratteristiche Generali del Sistema
 
 - Il grado di influenza di una caratteristica è compreso tra 0 (nessuna influenza) e 5 (forte influenza):
 
 $$\text{fattore di aggiustamento} = 0.65 + (TDI \times 0.01)$$
+>metodo empirico derivato dall'esperienza.
 
 con TDI (Total Degree of Influence) somma dei gradi di influenza per ciascuna caratteristica:
 
@@ -338,13 +339,15 @@ con TDI (Total Degree of Influence) somma dei gradi di influenza per ciascuna ca
 ---
 ## Slide 17 -> 22 – Il numero ciclomatico
 
+>altro metodo di numerazione, metodo teorico basato sui grafi. richiede una visibilità maggiore del software e non può essere utilizzato su larga scala, ma solo su procedure specifiche. indipendente dal linguaggio necessita dello speudo-codice.
+
 - Modello di metrica del software proposto da McCabe nel 1976
 - Il numero ciclomatico è una definizione operativa di complessità del flusso di controllo di un programma, ed è legato all'identificazione di tutti i cammini che permettono di raggiungere una copertura accettabile del programma
 	- Misura della sola complessità del software intesa in riferimento alla sua produzione, comprensione e modifica
 	- Viene preso in considerazione il solo flusso di controllo, senza alcun riferimento alla complessità dei dati (grafo del flusso di controllo)
 	- Metrica svincolata dalle particolarità di un linguaggio
 
-- Il numero ciclomatico di un grafo fortemente connesso è il numero minimo di archi che occorre eliminare per trasformarlo in un albero
+- ~~Il numero ciclomatico di un grafo fortemente connesso è il numero minimo di archi che occorre eliminare per trasformarlo in un albero~~ (grafo aciclico, in cui scegli un nodo chiamato "radice" e si orientano tutti i nodi in allontanamento da quella radice)
 
 ESEMPIO: numero ciclomatico = 3
 
@@ -354,7 +357,7 @@ $$e - n + 1$$
 
 dove e è il numero degli archi ed n è il numero dei nodi
 
-![[ISW4-s018-1.png|300]]
+![[ISW4-s018-1.png|188]]
 
 >> L'intuizione: un albero con $n$ nodi ha esattamente $n-1$ archi, quindi da un grafo con $e$
 >> archi bisogna toglierne $e-(n-1) = e-n+1$. Il numero ciclomatico conta quindi i "cicli
@@ -373,20 +376,15 @@ $$v(G) = e - n + 2$$
 
 ![[ISW4-s020-1.png|400]]
 
-- v(G)=1
-- v(G)=2
-- v(G)=2
-- v(G)=2
-
 >> Verifica sul primo caso: due nodi e un arco, $v(G) = 1 - 2 + 2 = 1$; un programma
 >> puramente sequenziale ha un solo cammino, e infatti $v(G)=1$. Ogni punto di decisione
 >> aggiunge 1.
 
-- ***Teorema di Mills***:
+- ***Teorema di Mills*** (altro modo per calcolare il numero ciclomatico):
 
 $$v(G) = d + 1$$
 
-dove d è il numero dei punti di decisione del programma (assumendo che un punto di decisione a k uscite contribuisca come k-1 punti di decisione a 2 uscite)
+dove ~~d è il numero dei punti di decisione del programma~~ (assumendo che un punto di decisione a k uscite contribuisca come k-1 punti di decisione a 2 uscite)
 
 - Se il programma ha procedure al suo interno, il numero ciclomatico dell'intero grafo è dato dalla somma dei numeri ciclomatici dei singoli grafi indipendenti:
 
@@ -399,14 +397,16 @@ dove e ed n sono rispettivamente archi e nodi del grafo nel suo insieme, p è il
 
 - Il numero ciclomatico cattura almeno in parte ciò che intuitivamente è la complessità del flusso di controllo
 - Esistono conferme sperimentali che indicano che si ha un buon grado di correlazione tra il numero ciclomatico e grandezze sicuramente influenzate notevolmente dalla complessità del flusso di controllo, come ad esempio il numero degli errori riscontrati
-- Raccomandazione: *la complessità ciclomatica di un modulo non dovrebbe superare il valore 10*
+- Raccomandazione: ***la complessità ciclomatica di un modulo non dovrebbe superare il valore 10*** (buona pratica di buona modularizazzione del software)
 
 >> $v(G)$ è anche un limite inferiore al numero di casi di test necessari per la copertura dei
 >> cammini indipendenti: un modulo con $v(G)=30$ richiederebbe almeno 30 test, ed è questo
 >> che rende la soglia di 10 una regola pratica sensata.
 
 ---
-## Slide 23 -> 25 – Constructive Cost Model
+## Slide 23 -> 25 – **Constructive Cost Model**
+
+>in abbinamento al function point per stimare il tempo per realizzare il software
 
 - Si calcola una stima iniziale dei costi di sviluppo in base alla dimensione del software da produrre, poi la si migliora sulla base di un insieme di parametri
 
@@ -437,17 +437,6 @@ L'appartenenza ad uno dei tre profili viene determinata sulla base dei seguenti 
 
 ![[ISW4-s024-1.png|600]]
 
-| | *Organic* | *Semi-det.* | *Embedded* |
-|---|---|---|---|
-| Conoscenza richiesta nel settore applicativo | Limitata | Normale | Completa |
-| Esperienza del team nello sviluppo di software dello stesso tipo | Estesa | Considerevole | Moderata |
-| Necessità di comunicare con sistemi esterni | Limitata | Considerevole | Elevata |
-| Presenza di vincoli di progetto | Limitata | Considerevole | Elevata |
-| Necessità di sviluppare apparecchiature hardware | Limitata | Normale | Elevata |
-| Necessità di sviluppare strutture dati e algoritmi innovativi | Limitata | Normale | Elevata |
-| Esistono premi per la consegna anticipata | Bassi | Normali | Elevati |
-| Dimensione del prodotto | <50 KDSI | <300 KDSI | >300 KDSI |
-
 >> Tutti e tre gli esponenti sono maggiori di 1: lo sforzo cresce *più che linearmente* con la
 >> dimensione (diseconomia di scala, dovuta al costo di comunicazione e coordinamento). E
 >> l'esponente cresce passando da Organic a Embedded, cioè i progetti più vincolati
@@ -458,28 +447,6 @@ L'appartenenza ad uno dei tre profili viene determinata sulla base dei seguenti 
 $$M = M_{Nom} \times \prod_{i=1}^{15} c_i$$
 
 ![[ISW4-s025-1.png|600]]
-
-| | Molto Bassa | Bassa | Normale | Alta | Molto Alta | Extra |
-|---|---|---|---|---|---|---|
-| **Proprietà del prodotto** | | | | | | |
-| - Affidabilità del software richiesto | 0.75 | 0.88 | 1.00 | 1.15 | 1.40 | |
-| - Complessità della base di dati | | 0.94 | 1.00 | 1.08 | 1.16 | |
-| - Complessità del prodotto | 0.70 | 0.85 | 1.00 | 1.15 | 1.30 | 1.65 |
-| **Caratteristiche dell'hardware** | | | | | | |
-| - Vincoli di efficienza | | 1.00 | 1.11 | 1.30 | 1.66 | |
-| - Vincoli di memoria | | 1.00 | 1.06 | 1.21 | 1.56 | |
-| - Variabilità dell'ambiente di sviluppo | | 0.87 | 1.00 | 1.15 | 1.30 | |
-| - Tempi di risposta | 0.87 | 1.00 | 1.07 | 1.15 | | |
-| **Caratteristiche del team** | | | | | | |
-| - Capacità degli analisti | 1.46 | 1.19 | 1.00 | 0.86 | 0.71 | |
-| - Esperienza nella classe di applicazioni | 1.29 | 1.13 | 1.00 | 0.91 | 0.82 | |
-| - Capacità dei programmatori | 1.42 | 1.17 | 1.00 | 0.86 | 0.70 | |
-| - Esperienza nel linguaggio di programmazione | 1.14 | 1.07 | 1.00 | 0.95 | | |
-| - Esperienza nell'ambiente di sviluppo | 1.21 | 1.10 | 1.00 | 0.90 | | |
-| **Caratteristiche del progetto** | | | | | | |
-| - Modernità del processo di sviluppo | 1.24 | 1.10 | 1.00 | 0.91 | 0.82 | |
-| - Utilizzo di tool di sviluppo | 1.24 | 1.10 | 1.00 | 0.91 | 0.83 | |
-| - Presenza di un piano temporale di sviluppo | 1.23 | 1.08 | 1.00 | 1.04 | 1.10 | |
 
 >> I $c_i$ sono moltiplicatori centrati su 1.00 ("Normale"): valori $>1$ allungano il progetto,
 >> valori $<1$ lo accorciano. Si noti l'inversione di segno nelle caratteristiche del team

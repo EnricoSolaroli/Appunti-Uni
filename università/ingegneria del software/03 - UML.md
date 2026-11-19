@@ -1522,12 +1522,12 @@ Da `InConnessione` (`do/connetti`) si arriva al rombo di selezione, da cui escon
 ---
 ## Slide 102 -> 103 – Stati compositi
 
-- Uno stato composito è uno stato che contiene altri stati annidati, organizzati in uno o più automi
+- Uno **stato composito** è uno stato che contiene altri stati annidati, organizzati in uno o più automi
 - Ogni stato annidato eredita tutte le transizioni dello stato che lo contiene
 
 ![[ISW3-s102-1.png|650]]
 
-**stato composito semplice**
+**stato composito semplice**: dentro di se ha un piccolo diagramma degli stati. chiamata anche decomposizione "or" perché quando l'oggetto di trova nel superstato in realtà si trova in uno o l'altro sottostato, mai in più di uno contemporaneamente.  
 
 Vista compressa: stato `ComposizioneNumero` (con l'icona di stato annidato) con transizione uscente `riaggancia`.
 Vista espansa: dentro `ComposizioneNumero`, stato iniziale → `Inizio` (`entry / inizioTono`, `exit / fineTono`) --`cifra(n)`--> `NumeroParziale` (`entry / appendi(n)`), con autotransizione `cifra(n)`, e uscita `numeroValido` verso lo stato finale.
@@ -1536,13 +1536,15 @@ Vista espansa: dentro `ComposizioneNumero`, stato iniziale → `Inizio` (`entry 
 
 ![[ISW3-s103-1.png|600]]
 
-**stato composito ortogonale**
+**stato composito ortogonale**: chiamata anche decomposizione "and", quando l'oggetto si trova nel superstrato si può trovare contemporaneamente in più sottostati. Ci permette di modellare modelli di concorrenza. In ogni corsia posso disegnare un automa.
 
 Stato composito `InCorsoDiSuperamento`, che contiene lo stato `Incompleto` suddiviso in tre regioni concorrenti:
 
 - `Lab1` --`labSvolto`--> `Lab2` --`labSvolto`--> finale della regione
 - `Progetto` --`fattoProgetto`--> finale della regione
 - `ProvaFinale` --`superata`--> finale della regione
+>non ci sono vincoli d'ordine, l'unico è che il lab 1 deve essere svolto prima di lab 2.
+>basta la prova finale per far fallire tutto.
 
 Quando tutte le regioni terminano si passa a `Superato`; la transizione `fallita`, uscente da `ProvaFinale`, porta a `Fallito`.
 
@@ -1550,6 +1552,8 @@ Quando tutte le regioni terminano si passa a `Superato`; la transizione `fallita
 >> contemporaneamente in uno stato per ciascuna regione. Lo stato finale di una regione
 >> chiude solo quella regione; si esce dallo stato composito solo quando tutte le regioni
 >> hanno raggiunto il proprio stato finale (ricongiunzione implicita).
+
+![[Recording 20261023144505.m4a]]
 
 ---
 ## Slide 104 – Comunicazione tra automi
@@ -1570,9 +1574,7 @@ Stato composito ortogonale `ProcessoOrdini` con due regioni:
 ---
 ## Slide 105 – Diagrammi di attività
 
-**9**
-
-- Modellano un processo come un'attività costituita da un insieme di nodi connessi da archi
+- ~~Modellano un processo come un'attività costituita da un insieme di nodi connessi da archi~~
 - In UML 2 hanno una nuova semantica basata sulle reti di Petri, differenziandosi completamente dai diagrammi degli stati
 - Un'attività può essere associata a qualunque elemento di modellazione, che ne diviene il contesto:
 	- caso d'uso
@@ -1582,6 +1584,8 @@ Stato composito ortogonale `ProcessoOrdini` con due regioni:
 	- componente
 	- collaborazione
 - I diagrammi di attività possono anche essere usati per modellare efficacemente processi di business e workflow
+
+>diagramma dinamico, si racconta come avviene un caso d'uso ad esempio ma mostriamo anche "chi fa cosa", si utilizzano moltissimo per descrivere dei work flow.
 
 >> La semantica "a reti di Petri" significa che il flusso è modellato con *token* che
 >> viaggiano lungo gli archi: un nodo si attiva quando ha token su tutti gli archi in
@@ -1593,9 +1597,14 @@ Stato composito ortogonale `ProcessoOrdini` con due regioni:
 
 ![[ISW3-s106-1.png|520]]
 
-Attività `Preparazione bevanda`: dal nodo iniziale a `Cerca bevanda`; decisione con guardie `[trovatoCaffe]`, `[nonTrovatoCaffe]`, `[trovataCola]`, `[nonTrovataCola]`.
+Attività `Preparazione bevanda`: dal nodo iniziale a `Cerca bevanda` (nodo azione); decisione con guardie `[trovatoCaffe]`, `[nonTrovatoCaffe]`, `[trovataCola]`, `[nonTrovataCola]`.
 Ramo caffè: biforcazione verso `Metti caffè nel filtro` → `Metti filtro nella macchina`, `Aggiungi acqua al recipiente`, `Prendi le tazze`; ricongiunzione → `Accendi macchina` → `Miscelazione`; l'evento `LaLuceSiSpegne` porta a `Versa caffè` → `Bevi`.
 Ramo cola: `Prendi lattine` → `Bevi`. Da `Bevi` si va al nodo finale.
+
+>**nodo azione** (rettangolo stondato) -> mi interessa vedere all'istante cosa succede
+>**[...]** -> condizioni
+>**rombo** -> if, punto in cui ho una biforcazione/decisione.
+>**barra nera** -> fork, da li in poi partono tre flussi di processi concorrenti. sono come parentesi: tante ne aprite tante ne dovrete chiudere.
 
 ---
 ## Slide 107 – Attività
@@ -1615,15 +1624,16 @@ Ramo cola: `Prendi lattine` → `Bevi`. Da `Bevi` si va al nodo finale.
 - **Nodo azione di chiamata**
 	- chiama un comportamento
 	- chiama un'attività
-	- chiama un'operazione
+	- chiama un'operazione -> specifico quale operazione di quale classe
 
-![[ISW3-s108-1.png|220]]
+![[ISW3-s108-1.png|188]] 
 
 I tre riquadri: `Crea ordine` (chiamata di comportamento), `Crea ordine` con l'icona del "rastrello" (chiamata di attività), `Stampa ordine (Ordine::stampa)` (chiamata di operazione).
 
 - **Nodo azione di accettazione evento temporale**
-	- produce un evento temporale ogni volta che la condizione temporale diventa vera
+	- ~~produce un evento temporale ogni volta che la condizione temporale diventa vera~~
 	- diventa attivo solo quando si attiva l'arco
+	- si aggiunge un timing per il passaggio da un'azione e un'altra oppure per innescare periodicamente una azione.
 
 ![[ISW3-s108-2.png|420]]
 
@@ -1633,14 +1643,14 @@ Esempi: `Apri porta` → clessidra `aspetta 10 sec` → `Chiudi porta`; clessidr
 ## Slide 109 – Nodi controllo
 
 - **Nodo iniziale**: indica l'inizio del flusso
-- **Nodo finale dell'attività**: termina un'attività
-- **Nodo finale del flusso**: termina uno specifico flusso
+- **Nodo finale dell'attività**: termina un'attività (occhio di bue)
+- **Nodo finale del flusso**: termina uno specifico flusso, simile a quello sopra ma è più debole, lascia gli altri flussi presenti in essere.
 - **Nodo decisione**: divide il flusso in più flussi alternativi
 - **Nodo fusione**: ricongiunge i flussi a valle di un nodo decisione
 - **Nodo biforcazione**: divide il flusso in più flussi concorrenti
 - **Nodo ricongiunzione**: sincronizza flussi concorrenti
 
-![[ISW3-s109-1.png|250]]
+![[ISW3-s109-1.png|213]]
 
 Simboli, nell'ordine: cerchio pieno; cerchio pieno dentro un cerchio; cerchio con la X; rombo con guardie `[condizione1]`, `[condizione2]`, `else`; rombo con più archi entranti e uno uscente; barra spessa con un arco entrante e più uscenti; barra spessa con più archi entranti e uno uscente.
 
@@ -1654,7 +1664,8 @@ Simboli, nell'ordine: cerchio pieno; cerchio pieno dentro un cerchio; cerchio co
 
 - I nodi oggetto indicano che sono disponibili istanze di una data classe in un punto specifico dell'attività
 - Gli archi in entrata e uscita dai nodi oggetto rappresentano flussi di oggetti creati e consumati da nodi azione
-- E' possibile rappresentare esplicitamente lo stato di un oggetto
+- E' possibile rappresentare esplicitamente lo stato di un oggetto (nelle parentesi quadre '[]')
+>sono istanze di classificatori, mi aspetto che ordine sia una classe nel diagramma delle classi.
 
 ![[ISW3-s110-1.png|500]]
 
@@ -1679,7 +1690,7 @@ Attività `Vendita` con dimensione `Ruolo` e corsie `Cliente`, `Ufficio vendite`
 ---
 ## Slide 112 – Diagramma dei componenti
 
-**10**
+>diagrammi di tipo statico per l'architettura software.
 
 - Mostra i componenti e le loro interdipendenze
 - Un **componente** è una parte modulare di un sistema che incapsula i suoi contenuti (black box)
@@ -1688,7 +1699,7 @@ Attività `Vendita` con dimensione `Ruolo` e corsie `Cliente`, `Ufficio vendite`
 ![[ISW3-s112-1.png|650]]
 
 A sinistra, **in UML 1**: `database server` contenente i componenti `<<Table>> Ordini` e `<<Table>> Clienti`, con dipendenza da `Form Inserimento Ordine` e la nota *"Il Form conosce il DataBase Server, e può essere coinvolto da ogni suo cambiamento"*.
-A destra, **in UML 2**: il componente `«component» C` con `InterfacciaFornita` (pallino, lollipop) e `InterfacciaRichiesta` (semicerchio, socket).
+A destra, **in UML 2**: il componente `«component» C` con **`InterfacciaFornita`** (pallino, ~~lollipop~~) e **`InterfacciaRichiesta`** (semicerchio, ~~socket~~).
 
 >> In UML 2 il componente non dipende direttamente da un altro componente, ma dalle
 >> *interfacce*: questo è ciò che lo rende sostituibile (black box). L'accoppiamento è
@@ -1700,49 +1711,52 @@ A destra, **in UML 2**: il componente `«component» C` con `InterfacciaFornita`
 - I componenti possono contenere oggetti, ad indicare che essi ne sono parte integrante
 - I componenti sono connessi tra loro mediante **dipendenze**, possibilmente tramite **interfacce**, ad indicare che un componente usa i servizi di un altro componente
 
-![[ISW3-s113-1.png|400]]
+![[ISW3-s113-1.png|324]]
 
-Componenti `Scheduler`, `Planner`, `GUI` con le interfacce `reservations` e `update`.
+Componenti `Scheduler`, `Planner`, `GUI` con le interfacce `reservations` e `update` (ogni componente fornisce un'interfaccia).
 
 ![[ISW3-s113-2.png|650]]
 
 Secondo esempio: `Dizionario` fornisce le interfacce `controllo ortografico` e `sinonimi`; `Elaborazioni Periodiche`, `Interfaccia con DBMS`, `Gestione Anagrafica`, `Applicazioni` (contenente `Contabilità` e `Personale`), `Libreria VB` e `GUI`, connessi da dipendenze.
 
 ---
-## Slide 114 – Esempio
+## Slide 114 – Esempio (UML 2)
 
 ![[ISW3-s114-1.png|700]]
 
 Componenti di UI: `Seminar Management <<UI>>` e `Student Administration <<UI>>`, che dipendono (tramite le interfacce `DataAccess`, `Facilities`, `Student`, `Seminar`, `Schedule`) dai componenti `Facilities`, `Student`, `Seminar`, `Schedule` (`<<component>>`). Questi usano le interfacce `Encryption` e `Access Control` di `Security <<infrastructure>>` e l'interfaccia `Persistence` di `Persistence <<infrastructure>>`, che a sua volta ha una dipendenza `<<requires>>` verso `University DB <<database>>` attraverso `JDBC`.
 
+> #es : non si disegnano per l'esame, solo parte a quiz.
+
 ---
 ## Slide 115 – Diagramma di deployment
 
-**11**
+>diagramma di tipo statico, mostra architettura hardware e fa da ponte verso la struttura del software.
 
 - Specifica l'hardware su cui verrà eseguito il software e il modo in cui il software è dislocato sull'hardware
 - Può avere due forme:
 	- **descrittore**, che contiene nodi, relazioni tra nodi e manufatti; modella *tipi* di architetture
 	- **istanza**, che contiene istanze di nodi, di relazioni tra nodi e di manufatti; modella un deployment dell'architettura su un particolare sito
 
-![[ISW3-s115-1.png|600]]
+![[ISW3-s115-1.png|413]]
 
-Forma **descrittore**: `«device» PCWindows` con `«executionEnvironment» Firefox`, collegato con molteplicità `*`—`*` tramite **associazione di comunicazione** `«http»` a `«device» PCLinux` con `«executionEnvironment» Apache`.
+Forma **descrittore**: `«device» PCWindows` con `«executionEnvironment» Firefox`, collegato con molteplicità `*`—`*` tramite **associazione di comunicazione** (viste nei diagrammi di casi d'uso) `«http»` a `«device» PCLinux` con `«executionEnvironment» Apache`.
 Forma **istanza**: `«device» MioPC:PCWindows` e `«device» TuoPC:PCWindows`, ciascuno con `«executionEnvironment» :Firefox`, collegati via `«http»` a `«device» Server:PCLinux` con `«executionEnvironment» :Apache`.
 
 ---
 ## Slide 116 – Nodi
 
 - Un *nodo* rappresenta un tipo di risorsa computazionale su cui i manufatti possono essere dislocati per l'esecuzione
+- si rappresentano con dei cubi
 - Due stereotipi standard:
-	- `«device»` rappresenta un tipo di periferica fisica, per esempio un PC
-	- `«executionEnvironment»` rappresenta un tipo di ambiente software di esecuzione, per esempio un web server
-- I nodi possono essere annidati in nodi
+	- **`«device»`** rappresenta un tipo di periferica ~~fisica~~, per esempio un PC
+	- **`«executionEnvironment»`** rappresenta un tipo di ~~ambiente software di esecuzione~~, per esempio un web server
+- ~~I nodi possono essere annidati in nodi!~~
 - Un'associazione tra nodi rappresenta un canale di comunicazione tra di essi
 - Si possono usare ulteriori stereotipi e icone per aumentare la leggibilità del diagramma
 
 ---
-## Slide 117 – Manufatti
+## Slide 117 – Manufatti (artifact)
 
 - Un manufatto rappresenta un'entità concreta del mondo reale, per esempio:
 	- **file sorgenti**
@@ -1755,8 +1769,10 @@ Forma **istanza**: `«device» MioPC:PCWindows` e `«device» TuoPC:PCWindows`, 
 
 ![[ISW3-s117-1.png|550]]
 
-A sinistra: `«artifact» libreriaSistema.jar` con dipendenza `«deploy»` verso `«device» Server` e dipendenza `«manifest»` verso `«component» Libreria`.
-A destra: notazione alternativa, il `«device» Server` che contiene direttamente `«artifact» libreriaSistema.jar`.
+A sinistra: `«artifact» libreriaSistema.jar` con dipendenza `«deploy»` verso `«device» Server` e dipendenza `«manifest»` verso `«component» Libreria` -> dico la stessa cosa ma stabilendo un collegamento ulteriore con un componente 'Libreria', indica che su questo server è installato un file di modulo Libreria.
+A destra: notazione alternativa, il `«device» Server` che contiene direttamente `«artifact» libreriaSistema.jar` -> mostro che sul mio server sta fisicamente un file che ha quel nome.
+
+> #controllare: capire meglio la differenza fra component e artifact!!!
 
 >> `«manifest»` dice che il manufatto *realizza* (è la forma concreta di) un componente del
 >> modello; `«deploy»` dice su quale nodo quel manufatto viene installato.
@@ -1764,7 +1780,7 @@ A destra: notazione alternativa, il `«device» Server` che contiene direttament
 ---
 ## Slide 118 – Esempio
 
-![[ISW3-s118-1.png|420]]
+![[ISW3-s118-1.png|356]]
 
 - `«device» ClientPC` —`*`……`1`— `«device» Server`
 - `«device» AdminPC` —`1`……`1`— `«device» BackUpStation`
@@ -1773,9 +1789,7 @@ A destra: notazione alternativa, il `«device» Server` che contiene direttament
 ---
 ## Slide 119 – Benefici di UML
 
-**12**
-
-- Superamento della "guerra dei metodi"
+- Superamento della ~~"guerra dei metodi"~~
 	- decine di metodi di analisi e disegno proposti e praticati
 	- difficoltà per chi vuole passare all'approccio object-oriented: qual è il metodo migliore?
 	- quale strumento scegliere, se non c'è chiarezza nel campo dei metodi?
@@ -1799,6 +1813,8 @@ A destra: notazione alternativa, il `«device» Server` che contiene direttament
 - UML può essere utilizzato da tutti, perché è sufficientemente complesso per potersi adattare a tutte le esigenze….
 - …ma non ha senso che tutti utilizzino UML esattamente nello stesso modo: per scegliere il percorso "ottimale", e quali diagrammi utilizzare davvero tra tutti quelli che UML mette a disposizione, è necessario verificare quali siano le esigenze da soddisfare
 
+>steriotipi e property!
+
 ---
 ## Slide 122 – Quindi:
 
@@ -1808,6 +1824,11 @@ A destra: notazione alternativa, il `«device» Server` che contiene direttament
 
 ---
 ## Riassunto
+
+#es suggerimento sull'esercizio principale dell'esame:
+
+![[Recording 20261106143858.m4a]]
+
 
 >> **Cos'è UML**
 >> - Un *linguaggio* (notazione) standard, non un metodo: non prescrive una sequenza di processo. Nato dai *tres amigos* (Booch, Jacobson, Rumbaugh), standard OMG dal 1997, versione 2.5.
